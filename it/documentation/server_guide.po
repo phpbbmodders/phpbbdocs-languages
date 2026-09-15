@@ -1,0 +1,562 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-09-15 01:33-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr ""
+
+#. (itstool) path: chapterinfo/releaseinfo
+#: en/chapters/server_guide.xml:5
+msgid "$Id$"
+msgstr ""
+
+#. (itstool) path: chapterinfo/copyright
+#: en/chapters/server_guide.xml:6
+msgid "<year>2022</year> <holder>phpBB Group</holder>"
+msgstr ""
+
+#. (itstool) path: chapter/title
+#: en/chapters/server_guide.xml:11
+msgid "Server Guide"
+msgstr "Guida al server"
+
+#. (itstool) path: abstract/para
+#: en/chapters/server_guide.xml:13
+msgid "This chapter describes the server configuration related to phpBB."
+msgstr ""
+
+#. (itstool) path: section/title
+#: en/chapters/server_guide.xml:17
+msgid "Sphinx search configuration"
+msgstr "Configurazione della ricerca Sphinx"
+
+#. (itstool) path: section/para
+#: en/chapters/server_guide.xml:18
+msgid ""
+"Sphinx fulltext search allows using the <ulink "
+"url=\"https://sphinxsearch.com/\">Sphinx Open Source Search Server</ulink> "
+"for phpBB 3.1 search. Using Sphinx will improve the performance of searching"
+" as well as indexing particularly in boards with large databases. Sphinx "
+"server being both flexible and fast, provides a better alternative as a "
+"search backend."
+msgstr ""
+"La ricerca full-text Sphinx permette di utilizzare <ulink "
+"url=\"https://sphinxsearch.com/\">Sphinx Open Source Search Server</ulink> "
+"per la ricerca in phpBB 3.1. L'uso di Sphinx migliora le prestazioni sia "
+"della ricerca che dell'indicizzazione, in particolare nei forum con database"
+" di grandi dimensioni. Il server Sphinx, essendo flessibile e veloce, "
+"rappresenta un'alternativa migliore come motore di ricerca."
+
+#. (itstool) path: section/title
+#: en/chapters/server_guide.xml:24
+msgid "Minimum Requirements"
+msgstr "Requisiti minimi"
+
+#. (itstool) path: section/para
+#: en/chapters/server_guide.xml:25
+msgid "The minimum requirements for using Sphinx are as follows:"
+msgstr "I requisiti minimi per utilizzare Sphinx sono i seguenti:"
+
+#. (itstool) path: listitem/para
+#: en/chapters/server_guide.xml:27
+msgid "Sphinx Search server &gt;2.0.1 &amp;&amp; &lt;3.0"
+msgstr "Sphinx Search server &gt;2.0.1 &amp;&amp; &lt;3.0"
+
+#. (itstool) path: listitem/para
+#: en/chapters/server_guide.xml:28
+msgid "phpBB 3.1+"
+msgstr "phpBB 3.1+"
+
+#. (itstool) path: listitem/para
+#: en/chapters/server_guide.xml:29
+msgid "MySQL or PostgreSQL Database"
+msgstr "Database MySQL o PostgreSQL"
+
+#. (itstool) path: section/title
+#: en/chapters/server_guide.xml:33
+msgid "Installation Instructions"
+msgstr "Istruzioni per l'installazione"
+
+#. (itstool) path: section/title
+#: en/chapters/server_guide.xml:35
+msgid "Sphinx Installation"
+msgstr "Installazione di Sphinx"
+
+#. (itstool) path: section/para
+#: en/chapters/server_guide.xml:36
+msgid ""
+"Follow the <ulink "
+"url=\"https://sphinxsearch.com/docs/current.html#installation\">Instructions</ulink>"
+" to install sphinx. Only the actual installation is required, no need to "
+"follow \"Sphinx Quick Usage Tour\" for phpBB search."
+msgstr ""
+"Segui le <ulink "
+"url=\"https://sphinxsearch.com/docs/current.html#installation\">istruzioni</ulink>"
+" per installare Sphinx. È necessaria solo l'installazione vera e propria; "
+"non occorre seguire il \"Sphinx Quick Usage Tour\" per la ricerca di phpBB."
+
+#. (itstool) path: section/title
+#: en/chapters/server_guide.xml:39
+msgid "Sphinx Configuration"
+msgstr "Configurazione di Sphinx"
+
+#. (itstool) path: section/para
+#: en/chapters/server_guide.xml:40
+msgid ""
+"Sphinx configuration file data can either be generated through ACP and then "
+"copy pasted into the <code>sphinx.conf</code> or the <ulink "
+"url=\"https://github.com/phpbb/phpbb/blob/master/phpBB/docs/sphinx.sample.conf\">Sphinx"
+" Sample Config</ulink> can be manually edited and used. Following "
+"folders/files need to be created and defined in the sphinx.conf:"
+msgstr ""
+"I dati del file di configurazione di Sphinx possono essere generati tramite "
+"l'ACP e poi copiati in <code>sphinx.conf</code>, oppure il <ulink "
+"url=\"https://github.com/phpbb/phpbb/blob/master/phpBB/docs/sphinx.sample.conf\">file"
+" di configurazione di esempio di Sphinx</ulink> può essere modificato "
+"manualmente e utilizzato. Le seguenti cartelle/file devono essere creati e "
+"definiti in sphinx.conf:"
+
+#. (itstool) path: listitem/para
+#: en/chapters/server_guide.xml:46
+msgid ""
+"Config directory which will have sphinx.conf and stopwords.txt (If defined)."
+msgstr ""
+"Cartella di configurazione, che conterrà sphinx.conf e stopwords.txt (se "
+"definito)."
+
+#. (itstool) path: listitem/para
+#: en/chapters/server_guide.xml:47
+msgid "Data directory which will have binary and index files."
+msgstr "Cartella dei dati, che conterrà i file binari e gli indici."
+
+#. (itstool) path: listitem/para
+#: en/chapters/server_guide.xml:48
+msgid ""
+"Log directory as a sub directory of Data directory which will save all logs "
+"related to sphinx search server."
+msgstr ""
+"Cartella dei log, come sottocartella della cartella dei dati, in cui "
+"verranno salvati tutti i log relativi al server di ricerca Sphinx."
+
+#. (itstool) path: section/title
+#: en/chapters/server_guide.xml:52
+msgid "Creating Required Directories"
+msgstr "Creazione delle cartelle necessarie"
+
+#. (itstool) path: listitem/para
+#: en/chapters/server_guide.xml:55
+msgid "Data directory"
+msgstr "Cartella dei dati"
+
+#. (itstool) path: listitem/para
+#: en/chapters/server_guide.xml:56
+msgid "<code>mkdir -p {DATA_PATH}</code>"
+msgstr "<code>mkdir -p {DATA_PATH}</code>"
+
+#. (itstool) path: listitem/para
+#: en/chapters/server_guide.xml:59
+msgid "Log directory"
+msgstr "Cartella dei log"
+
+#. (itstool) path: listitem/para
+#: en/chapters/server_guide.xml:60
+msgid "<code>mkdir -p {DATA_PATH}/log</code>"
+msgstr "<code>mkdir -p {DATA_PATH}/log</code>"
+
+#. (itstool) path: section/title
+#: en/chapters/server_guide.xml:65
+msgid "Indexing"
+msgstr "Indicizzazione"
+
+#. (itstool) path: section/para
+#: en/chapters/server_guide.xml:66
+msgid ""
+"Board administrator needs to select <code>Sphinx Fulltext Search</code> as "
+"the search backend and Create Search Index through the ACP UI. This will "
+"create a <code>SPHINX_TABLE</code> in the database. Then the sphinx indexer "
+"should be manually run from the shell."
+msgstr ""
+"L'amministratore del forum deve selezionare <code>Sphinx Fulltext "
+"Search</code> come motore di ricerca e creare l'indice di ricerca tramite "
+"l'interfaccia dell'ACP. Questo creerà una <code>SPHINX_TABLE</code> nel "
+"database. A questo punto l'indicizzatore di Sphinx deve essere eseguito "
+"manualmente dalla shell."
+
+#. (itstool) path: listitem/para
+#: en/chapters/server_guide.xml:73
+msgid "Index Main"
+msgstr "Indicizza principale"
+
+#. (itstool) path: listitem/para
+#: en/chapters/server_guide.xml:74
+msgid ""
+"<code>indexer --config {CONFIG_PATH}/sphinx.conf "
+"index_phpbb_{SPHINX_ID}_main &gt;&gt; {DATA_PATH}/log/indexer.log "
+"2&gt;&amp;1 &amp;</code>"
+msgstr ""
+"<code>indexer --config {CONFIG_PATH}/sphinx.conf "
+"index_phpbb_{SPHINX_ID}_main &gt;&gt; {DATA_PATH}/log/indexer.log "
+"2&gt;&amp;1 &amp;</code>"
+
+#. (itstool) path: listitem/para
+#: en/chapters/server_guide.xml:77
+msgid "Index Delta"
+msgstr "Indicizza delta"
+
+#. (itstool) path: listitem/para
+#: en/chapters/server_guide.xml:78
+msgid ""
+"<code>indexer --config {CONFIG_PATH}/sphinx.conf "
+"index_phpbb_{SPHINX_ID}_delta &gt;&gt; {DATA_PATH}/log/indexer.log "
+"2&gt;&amp;1 &amp;</code>"
+msgstr ""
+"<code>indexer --config {CONFIG_PATH}/sphinx.conf "
+"index_phpbb_{SPHINX_ID}_delta &gt;&gt; {DATA_PATH}/log/indexer.log "
+"2&gt;&amp;1 &amp;</code>"
+
+#. (itstool) path: listitem/para
+#: en/chapters/server_guide.xml:81
+msgid "Re-index"
+msgstr "Reindicizza"
+
+#. (itstool) path: listitem/para
+#: en/chapters/server_guide.xml:82
+msgid ""
+"<code>indexer --rotate --config {CONFIG_PATH}/sphinx.conf "
+"index_phpbb_{SPHINX_ID}_delta &gt;&gt; {DATA_PATH}/log/indexer.log "
+"2&gt;&amp;1 &amp;</code>"
+msgstr ""
+"<code>indexer --rotate --config {CONFIG_PATH}/sphinx.conf "
+"index_phpbb_{SPHINX_ID}_delta &gt;&gt; {DATA_PATH}/log/indexer.log "
+"2&gt;&amp;1 &amp;</code>"
+
+#. (itstool) path: section/title
+#: en/chapters/server_guide.xml:87
+msgid "Test Sphinx"
+msgstr "Testare Sphinx"
+
+#. (itstool) path: section/para
+#: en/chapters/server_guide.xml:88
+msgid ""
+"Test whether sphinx is working. The following command will return the search"
+" result."
+msgstr ""
+"Verifica se Sphinx funziona correttamente. Il seguente comando restituirà il"
+" risultato della ricerca."
+
+#. (itstool) path: section/para
+#: en/chapters/server_guide.xml:89
+msgid "<code>search --config {CONFIG_PATH}/sphinx.conf search string</code>"
+msgstr "<code>search --config {CONFIG_PATH}/sphinx.conf search string</code>"
+
+#. (itstool) path: section/title
+#: en/chapters/server_guide.xml:92
+msgid "Incremental Updates"
+msgstr "Aggiornamenti incrementali"
+
+#. (itstool) path: section/para
+#: en/chapters/server_guide.xml:93
+msgid "Crontab file on most Unix Systems can be edited by"
+msgstr ""
+"Il file crontab, sulla maggior parte dei sistemi Unix, può essere modificato"
+" con"
+
+#. (itstool) path: section/para
+#: en/chapters/server_guide.xml:94
+msgid "<code>crontab -e</code>"
+msgstr "<code>crontab -e</code>"
+
+#. (itstool) path: section/para
+#: en/chapters/server_guide.xml:95
+msgid "Add this line to update the delta index every five minutes"
+msgstr "Aggiungi questa riga per aggiornare l'indice delta ogni cinque minuti"
+
+#. (itstool) path: section/para
+#: en/chapters/server_guide.xml:96
+msgid ""
+"<code>*/5 * * * * indexer --rotate --config {CONFIG_PATH}/sphinx.conf "
+"index_phpbb_{SPHINX_ID}_delta &gt;&gt; {DATA_PATH}/log/indexer.log "
+"2&gt;&amp;1 &amp;</code>"
+msgstr ""
+"<code>*/5 * * * * indexer --rotate --config {CONFIG_PATH}/sphinx.conf "
+"index_phpbb_{SPHINX_ID}_delta &gt;&gt; {DATA_PATH}/log/indexer.log "
+"2&gt;&amp;1 &amp;</code>"
+
+#. (itstool) path: section/para
+#: en/chapters/server_guide.xml:97
+msgid "Add this line to set up cron job for full index once every night"
+msgstr ""
+"Aggiungi questa riga per impostare un cron job per un'indicizzazione "
+"completa ogni notte"
+
+#. (itstool) path: section/para
+#: en/chapters/server_guide.xml:98
+msgid ""
+"<code>0 3 * * * indexer --rotate --config {CONFIG_PATH}/sphinx.conf "
+"index_phpbb_{SPHINX_ID}_main &gt;&gt; {DATA_PATH}/log/indexer.log "
+"2&gt;&amp;1 &amp;</code>"
+msgstr ""
+"<code>0 3 * * * indexer --rotate --config {CONFIG_PATH}/sphinx.conf "
+"index_phpbb_{SPHINX_ID}_main &gt;&gt; {DATA_PATH}/log/indexer.log "
+"2&gt;&amp;1 &amp;</code>"
+
+#. (itstool) path: section/title
+#: en/chapters/server_guide.xml:101
+msgid "Start Searchd"
+msgstr "Avvio di Searchd"
+
+#. (itstool) path: section/para
+#: en/chapters/server_guide.xml:102
+msgid "Start sphinx daemon."
+msgstr "Avvia il demone Sphinx."
+
+#. (itstool) path: section/para
+#: en/chapters/server_guide.xml:103
+msgid ""
+"<code>searchd --config {CONFIG_PATH}/sphinx.conf &gt;&gt; "
+"{DATA_PATH}/log/searchd-startup.log 2&gt;&amp;1 &amp;</code>"
+msgstr ""
+"<code>searchd --config {CONFIG_PATH}/sphinx.conf &gt;&gt; "
+"{DATA_PATH}/log/searchd-startup.log 2&gt;&amp;1 &amp;</code>"
+
+#. (itstool) path: section/title
+#: en/chapters/server_guide.xml:106
+msgid "Troubleshooting"
+msgstr "Risoluzione dei problemi"
+
+#. (itstool) path: section/para
+#: en/chapters/server_guide.xml:107
+msgid ""
+"Log files present in the <code>{DATA_PATH}/log/</code> directory can be "
+"checked for errors. See <ulink url=\"https://sphinxsearch.com/docs/\">Sphinx"
+" Documentation</ulink> for details."
+msgstr ""
+"I file di log presenti nella cartella <code>{DATA_PATH}/log/</code> possono "
+"essere controllati per individuare eventuali errori. Consulta la <ulink "
+"url=\"https://sphinxsearch.com/docs/\">documentazione di Sphinx</ulink> per "
+"maggiori dettagli."
+
+#. (itstool) path: section/title
+#: en/chapters/server_guide.xml:111
+msgid "Manual Configuration"
+msgstr "Configurazione manuale"
+
+#. (itstool) path: section/para
+#: en/chapters/server_guide.xml:112
+msgid ""
+"Sample Sphinx config file for phpBB sphinx search backend is available "
+"<ulink "
+"url=\"https://github.com/phpbb/phpbb/blob/master/phpBB/docs/sphinx.sample.conf\">here</ulink>."
+" It has many options which include database details as well as the directory"
+" details for sphinx data and config folders."
+msgstr ""
+"Un file di configurazione di esempio per Sphinx per il motore di ricerca "
+"Sphinx di phpBB è disponibile <ulink "
+"url=\"https://github.com/phpbb/phpbb/blob/master/phpBB/docs/sphinx.sample.conf\">qui</ulink>."
+" Contiene molte opzioni, tra cui i dettagli del database e delle cartelle di"
+" dati e configurazione di Sphinx."
+
+#. (itstool) path: section/title
+#: en/chapters/server_guide.xml:117
+msgid "Database Details"
+msgstr "Dettagli del database"
+
+#. (itstool) path: section/para
+#: en/chapters/server_guide.xml:118
+msgid "Database details on which sphinx daemon and the board are running."
+msgstr ""
+"Dettagli del database su cui sono in esecuzione il demone Sphinx e il forum."
+
+#. (itstool) path: listitem/para
+#: en/chapters/server_guide.xml:120
+msgid "<emphasis role=\"bold\">type</emphasis> - database type , default mysql."
+msgstr ""
+"<emphasis role=\"bold\">type</emphasis> - tipo di database, predefinito "
+"mysql."
+
+#. (itstool) path: listitem/para
+#: en/chapters/server_guide.xml:121
+msgid "<emphasis role=\"bold\">sql_host</emphasis> - hostname, default localhost"
+msgstr ""
+"<emphasis role=\"bold\">sql_host</emphasis> - nome host, predefinito "
+"localhost"
+
+#. (itstool) path: listitem/para
+#: en/chapters/server_guide.xml:122
+msgid "<emphasis role=\"bold\">sql_user</emphasis>"
+msgstr "<emphasis role=\"bold\">sql_user</emphasis>"
+
+#. (itstool) path: listitem/para
+#: en/chapters/server_guide.xml:123
+msgid "<emphasis role=\"bold\">sql_pass</emphasis>"
+msgstr "<emphasis role=\"bold\">sql_pass</emphasis>"
+
+#. (itstool) path: listitem/para
+#: en/chapters/server_guide.xml:124
+msgid ""
+"<emphasis role=\"bold\">sql_port</emphasis> - database port, default 3306 "
+"for mysql"
+msgstr ""
+"<emphasis role=\"bold\">sql_port</emphasis> - porta del database, "
+"predefinita 3306 per mysql"
+
+#. (itstool) path: listitem/para
+#: en/chapters/server_guide.xml:125
+msgid "<emphasis role=\"bold\">db_name</emphasis>"
+msgstr "<emphasis role=\"bold\">db_name</emphasis>"
+
+#. (itstool) path: section/title
+#: en/chapters/server_guide.xml:129
+msgid "Searchd Details"
+msgstr "Dettagli di Searchd"
+
+#. (itstool) path: listitem/para
+#: en/chapters/server_guide.xml:131
+msgid ""
+"<emphasis role=\"bold\">listen</emphasis> - IP address : Sphinx Daemon port,"
+" default <code>127.0.0.1:3312</code>"
+msgstr ""
+"<emphasis role=\"bold\">listen</emphasis> - indirizzo IP : porta del demone "
+"Sphinx, predefinito <code>127.0.0.1:3312</code>"
+
+#. (itstool) path: listitem/para
+#: en/chapters/server_guide.xml:132
+msgid ""
+"<emphasis role=\"bold\">read_timeout</emphasis> - Network client request "
+"read timeout in seconds, default 5"
+msgstr ""
+"<emphasis role=\"bold\">read_timeout</emphasis> - timeout in secondi per la "
+"lettura delle richieste dei client di rete, predefinito 5"
+
+#. (itstool) path: listitem/para
+#: en/chapters/server_guide.xml:133
+msgid ""
+"<emphasis role=\"bold\">max_children</emphasis> - Maximum amount of children"
+" to fork (concurrent searches to run in parallel), default 30"
+msgstr ""
+"<emphasis role=\"bold\">max_children</emphasis> - numero massimo di processi"
+" figli da generare (ricerche simultanee eseguite in parallelo), predefinito "
+"30"
+
+#. (itstool) path: listitem/para
+#: en/chapters/server_guide.xml:134
+msgid ""
+"<emphasis role=\"bold\">max_matches</emphasis> - the number of search hits "
+"to display per result page, default 20000"
+msgstr ""
+"<emphasis role=\"bold\">max_matches</emphasis> - numero di risultati di "
+"ricerca da visualizzare per pagina, predefinito 20000"
+
+#. (itstool) path: section/title
+#: en/chapters/server_guide.xml:138
+msgid "Wildcard searching"
+msgstr "Ricerca con caratteri jolly"
+
+#. (itstool) path: section/para
+#: en/chapters/server_guide.xml:139
+msgid ""
+"By default, wildcard searching is DISABLED and use of * operator will not "
+"work. To enable wildcard searching, consider configuring the following "
+"parameters:"
+msgstr ""
+"Per impostazione predefinita, la ricerca con caratteri jolly è DISABILITATA "
+"e l'uso dell'operatore * non funzionerà. Per abilitare la ricerca con "
+"caratteri jolly, valuta la possibilità di configurare i seguenti parametri:"
+
+#. (itstool) path: listitem/para
+#: en/chapters/server_guide.xml:142
+msgid ""
+"<emphasis role=\"bold\">ignore_chars</emphasis> - characters (in Unicode "
+"format) ignored and truncated in search index. default none. "
+"<code>ignore_chars = U+00AD, U+002D</code> will truncate hyphenated words "
+"into single word eg \"re-establish\" will be indexed as \"reestablish\". "
+"Ignored characters cannot be listed in charset_table."
+msgstr ""
+"<emphasis role=\"bold\">ignore_chars</emphasis> - caratteri (in formato "
+"Unicode) ignorati e troncati nell'indice di ricerca. Predefinito nessuno. "
+"<code>ignore_chars = U+00AD, U+002D</code> troncherà le parole con trattino "
+"unendole in un'unica parola, ad esempio \"ri-stabilire\" verrà indicizzato "
+"come \"ristabilire\". I caratteri ignorati non possono essere elencati in "
+"charset_table."
+
+#. (itstool) path: listitem/para
+#: en/chapters/server_guide.xml:149
+msgid ""
+"<emphasis role=\"bold\">min_prefix_len</emphasis> - minimum prefix length to"
+" index. Value greater than 0 will enable partial word match using wordstart*"
+" wildcard, default 0 (wildcards disabled). Suggested value 3 (tes* will find"
+" test, tested, testing etc)"
+msgstr ""
+"<emphasis role=\"bold\">min_prefix_len</emphasis> - lunghezza minima del "
+"prefisso da indicizzare. Un valore maggiore di 0 abiliterà la corrispondenza"
+" parziale delle parole usando il carattere jolly inizioparola*, predefinito "
+"0 (caratteri jolly disabilitati). Valore consigliato 3 (tes* troverà test, "
+"testato, testando ecc.)"
+
+#. (itstool) path: listitem/para
+#: en/chapters/server_guide.xml:155
+msgid ""
+"<emphasis role=\"bold\">min_infix_len</emphasis> - minimum infix length to "
+"index. Value greater than 0 will enable partial word match using 'start*', "
+"'*end', and '*middle*' wildcards, default 0 (wildcards disabled). Suggested "
+"value 3 (*est* will find test, tested, testing, estimated, shortest etc)."
+msgstr ""
+"<emphasis role=\"bold\">min_infix_len</emphasis> - lunghezza minima "
+"dell'infisso da indicizzare. Un valore maggiore di 0 abiliterà la "
+"corrispondenza parziale delle parole usando i caratteri jolly 'inizio*', "
+"'*fine' e '*centro*', predefinito 0 (caratteri jolly disabilitati). Valore "
+"consigliato 3 (*est* troverà test, testato, testando, stimato, più corto "
+"ecc.)."
+
+#. (itstool) path: section/note
+#: en/chapters/server_guide.xml:161
+msgid ""
+"Only use one of either min_prefix_len or min_infix_len, not both. The unused"
+" parameter should be set as 0. Enabling wildcard indexing will increase "
+"search index size."
+msgstr ""
+"Utilizza solo uno tra min_prefix_len e min_infix_len, non entrambi. Il "
+"parametro non utilizzato deve essere impostato a 0. Abilitare "
+"l'indicizzazione con caratteri jolly aumenterà le dimensioni dell'indice di "
+"ricerca."
+
+#. (itstool) path: section/title
+#: en/chapters/server_guide.xml:164
+msgid "Stopwords"
+msgstr "Stopword"
+
+#. (itstool) path: section/para
+#: en/chapters/server_guide.xml:165
+msgid ""
+"Sphinx config file provides an option for specifying a file containing "
+"search stop words. Stop words are those common words like 'a' and 'the' that"
+" appear commonly in text and should really be ignored from searching. A "
+"somewhat complete list of English stop words can be found <ulink "
+"url=\"https://github.com/stopwords-iso/stopwords-en\">here</ulink>. These "
+"words can be copied into a text file and added to sphinx.conf under "
+"index_phpbb section as"
+msgstr ""
+"Il file di configurazione di Sphinx offre un'opzione per specificare un file"
+" contenente le stopword di ricerca. Le stopword sono parole comuni come "
+"\"a\" e \"the\" (o \"il\" e \"di\" in italiano) che compaiono frequentemente"
+" nel testo e che dovrebbero essere ignorate durante la ricerca. Un elenco "
+"pressoché completo di stopword inglesi è disponibile <ulink "
+"url=\"https://github.com/stopwords-iso/stopwords-en\">qui</ulink>. Queste "
+"parole possono essere copiate in un file di testo e aggiunte a sphinx.conf, "
+"nella sezione index_phpbb, come"
+
+#. (itstool) path: section/para
+#: en/chapters/server_guide.xml:170
+msgid "<code>stopwords = path/to/stopwords.txt</code>"
+msgstr "<code>stopwords = path/to/stopwords.txt</code>"

@@ -1,0 +1,5 @@
+code = "fr"
+name = "French"
+native_name = "Français"
+locale = "fr_FR"
+status = "active"

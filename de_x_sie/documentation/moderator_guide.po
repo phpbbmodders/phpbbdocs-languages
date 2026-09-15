@@ -1,0 +1,1037 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-09-15 01:32-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de_x_sie\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr ""
+
+#. (itstool) path: chapterinfo/releaseinfo
+#: en/chapters/moderator_guide.xml:5
+msgid "$Id$"
+msgstr ""
+
+#. (itstool) path: chapterinfo/copyright
+#: en/chapters/moderator_guide.xml:6
+msgid "<year>2006</year> <holder>phpBB Group</holder>"
+msgstr ""
+
+#. (itstool) path: chapter/title
+#: en/chapters/moderator_guide.xml:11
+msgid "Moderator Guide"
+msgstr "Moderatorenhandbuch"
+
+#. (itstool) path: abstract/para
+#: en/chapters/moderator_guide.xml:13
+msgid "This chapter describes the phpBB 3.3 forum moderation controls."
+msgstr ""
+
+#. (itstool) path: authorgroup/author
+#: en/chapters/moderator_guide.xml:18 en/chapters/moderator_guide.xml:87
+#: en/chapters/moderator_guide.xml:119 en/chapters/moderator_guide.xml:145
+#: en/chapters/moderator_guide.xml:159 en/chapters/moderator_guide.xml:179
+#: en/chapters/moderator_guide.xml:194 en/chapters/moderator_guide.xml:209
+#: en/chapters/moderator_guide.xml:225 en/chapters/moderator_guide.xml:241
+#: en/chapters/moderator_guide.xml:258 en/chapters/moderator_guide.xml:276
+#: en/chapters/moderator_guide.xml:293 en/chapters/moderator_guide.xml:359
+#: en/chapters/moderator_guide.xml:374
+msgid "<othername>camm15h</othername>"
+msgstr "<othername>camm15h</othername>"
+
+#. (itstool) path: authorgroup/author
+#: en/chapters/moderator_guide.xml:21 en/chapters/moderator_guide.xml:90
+#: en/chapters/moderator_guide.xml:122 en/chapters/moderator_guide.xml:148
+#: en/chapters/moderator_guide.xml:162 en/chapters/moderator_guide.xml:182
+#: en/chapters/moderator_guide.xml:197 en/chapters/moderator_guide.xml:212
+#: en/chapters/moderator_guide.xml:228 en/chapters/moderator_guide.xml:244
+#: en/chapters/moderator_guide.xml:261 en/chapters/moderator_guide.xml:279
+#: en/chapters/moderator_guide.xml:296 en/chapters/moderator_guide.xml:362
+#: en/chapters/moderator_guide.xml:377
+msgid "<othername>MennoniteHobbit</othername>"
+msgstr "<othername>MennoniteHobbit</othername>"
+
+#. (itstool) path: section/title
+#: en/chapters/moderator_guide.xml:26
+msgid "Editing posts"
+msgstr "Beiträge bearbeiten"
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:27
+msgid ""
+"Moderators with privileges in the relevant forums are able to edit topics "
+"and posts, even if the forum is locked. You can usually view who the "
+"moderators are beneath the forum description on the index page. A user with "
+"moderator privileges is able to select the edit button beside each post. "
+"Beyond this point, they are able to:"
+msgstr ""
+"Moderatoren mit Rechten in den betreffenden Foren können Themen und Beiträge"
+" bearbeiten, selbst wenn das Forum gesperrt ist. Sie können in der Regel "
+"unterhalb der Forenbeschreibung auf der Übersichtsseite sehen, wer die "
+"Moderatoren sind. Ein Benutzer mit Moderatorenrechten kann die Bearbeiten-"
+"Schaltfläche neben jedem Beitrag auswählen. Darüber hinaus können sie:"
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/moderator_guide.xml:31
+msgid "Delete posts"
+msgstr "Beiträge löschen"
+
+#. (itstool) path: listitem/para
+#: en/chapters/moderator_guide.xml:33
+msgid ""
+"This option removes the post from the topic. Remember that it cannot be "
+"recovered once deleted."
+msgstr ""
+"Diese Option entfernt den Beitrag aus dem Thema. Denken Sie daran, dass er "
+"nach dem Löschen nicht wiederhergestellt werden kann."
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/moderator_guide.xml:38
+msgid "Change or remove the post icon"
+msgstr "Das Beitragssymbol ändern oder entfernen"
+
+#. (itstool) path: listitem/para
+#: en/chapters/moderator_guide.xml:40
+msgid ""
+"Decides whether or not an icon accompanies the post, and if so, which icon."
+msgstr "Legt fest, ob und, falls ja, welches Symbol den Beitrag begleitet."
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/moderator_guide.xml:45
+msgid "Alter the subject and message body"
+msgstr "Betreff und Nachrichtentext ändern"
+
+#. (itstool) path: listitem/para
+#: en/chapters/moderator_guide.xml:47
+msgid "Allows the moderator to alter the contents of the post."
+msgstr "Erlaubt es dem Moderator, den Inhalt des Beitrags zu ändern."
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/moderator_guide.xml:52
+msgid "Alter the post options - disabling BBCode/Smilies parsing URLs etc."
+msgstr ""
+"Die Beitragsoptionen ändern – BBCode/Smileys deaktivieren, URLs erkennen "
+"usw."
+
+#. (itstool) path: listitem/para
+#: en/chapters/moderator_guide.xml:54
+msgid "Determines whether certain features are enabled in the post."
+msgstr "Legt fest, ob bestimmte Funktionen im Beitrag aktiviert sind."
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/moderator_guide.xml:59
+msgid "Lock the topic or post"
+msgstr "Das Thema oder den Beitrag sperren"
+
+#. (itstool) path: listitem/para
+#: en/chapters/moderator_guide.xml:61
+msgid "Allows the moderator to lock the current post, or the full topic."
+msgstr ""
+"Erlaubt es dem Moderator, den aktuellen Beitrag oder das gesamte Thema zu "
+"sperren."
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/moderator_guide.xml:66
+msgid "Add, alter or remove attachments"
+msgstr "Anhänge hinzufügen, ändern oder entfernen"
+
+#. (itstool) path: listitem/para
+#: en/chapters/moderator_guide.xml:68
+msgid ""
+"Select attachments to be removed or edited (if option is enabled and "
+"attachments are present)."
+msgstr ""
+"Anhänge zum Entfernen oder Bearbeiten auswählen (sofern die Option aktiviert"
+" ist und Anhänge vorhanden sind)."
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/moderator_guide.xml:73
+msgid "Modify poll settings"
+msgstr "Umfrageeinstellungen ändern"
+
+#. (itstool) path: listitem/para
+#: en/chapters/moderator_guide.xml:75
+msgid ""
+"Alter the current poll settings (if option is enabled and a poll is "
+"present)."
+msgstr ""
+"Die aktuellen Umfrageeinstellungen ändern (sofern die Option aktiviert ist "
+"und eine Umfrage vorhanden ist)."
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:80
+msgid ""
+"If, for any case the moderator decides that the post should not be edited, "
+"they may lock the post to prevent the user doing so. The user will be shown "
+"a notice when they attempt to edit the post in future. Should the moderator "
+"wish to state why the post was edited, they may enter a reason when editing "
+"the post."
+msgstr ""
+"Sollte der Moderator in irgendeinem Fall entscheiden, dass der Beitrag nicht"
+" bearbeitet werden sollte, kann er den Beitrag sperren, um den Benutzer "
+"daran zu hindern, dies zu tun. Dem Benutzer wird ein Hinweis angezeigt, wenn"
+" er zukünftig versucht, den Beitrag zu bearbeiten. Möchte der Moderator "
+"angeben, warum der Beitrag bearbeitet wurde, kann er beim Bearbeiten des "
+"Beitrags einen Grund eingeben."
+
+#. (itstool) path: section/title
+#: en/chapters/moderator_guide.xml:95
+msgid "Moderation tools"
+msgstr "Moderationswerkzeuge"
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:96
+msgid ""
+"Beneath topics, the moderator has various options in a dropdown box which "
+"modify the topic in different ways. These include the ability to lock, "
+"unlock, delete, move, split, merge and copy the topic. As well as these, "
+"they are also able to change the topic type (Sticky/Announcement/Global), "
+"and also view the topics logs. The following subsections detail each action "
+"on a topic that a moderator can perform."
+msgstr ""
+"Unterhalb von Themen verfügt der Moderator über verschiedene Optionen in "
+"einem Auswahlfeld, mit denen sich das Thema auf unterschiedliche Weise "
+"ändern lässt. Dazu gehört die Möglichkeit, das Thema zu sperren, zu "
+"entsperren, zu löschen, zu verschieben, aufzuteilen, zusammenzuführen und zu"
+" kopieren. Ebenso können sie die Themenart ändern "
+"(Wichtig/Ankündigung/Global) und die Themenprotokolle einsehen. Die "
+"folgenden Unterabschnitte beschreiben jede Aktion an einem Thema, die ein "
+"Moderator durchführen kann."
+
+#. (itstool) path: figure/title
+#: en/chapters/moderator_guide.xml:99
+msgid "Quick Mod Tools"
+msgstr "Schnellmoderation"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: en/chapters/moderator_guide.xml:102
+msgctxt "_"
+msgid ""
+"external ref='../images/moderator_guide/quick_mod_tools.png' "
+"md5='6c657e3ce10241b27490ebf79f748c34'"
+msgstr ""
+"external ref='../images/moderator_guide/quick_mod_tools.png' "
+"md5='6c657e3ce10241b27490ebf79f748c34'"
+
+#. (itstool) path: caption/para
+#: en/chapters/moderator_guide.xml:105
+msgid ""
+"The quick moderator tools. As you can see, these tools are located at the "
+"end of each topic at the bottom of the page, before the last post on that "
+"page. Clicking on the mallet icon will show you all of the actions you may "
+"perform."
+msgstr ""
+"Die schnellen Moderatorenwerkzeuge. Wie Sie sehen, befinden sich diese "
+"Werkzeuge am Ende jedes Themas am unteren Rand der Seite, vor dem letzten "
+"Beitrag auf dieser Seite. Ein Klick auf das Hammersymbol zeigt Ihnen alle "
+"Aktionen, die Sie durchführen können."
+
+#. (itstool) path: section/title
+#: en/chapters/moderator_guide.xml:111
+msgid "Locking a topic or post"
+msgstr "Ein Thema oder einen Beitrag sperren"
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:112
+msgid ""
+"This outlines how a moderator may lock whole topics or individual posts. "
+"There are various ways a moderator may do this, either by using the <link "
+"linkend=\"moderator_mcp\">Moderator Control Panel</link> when viewing a "
+"forum, navigating to the selection menu beneath the topic in question, or "
+"editing any post within a topic and checking the relevant checkbox."
+msgstr ""
+"Dies beschreibt, wie ein Moderator ganze Themen oder einzelne Beiträge "
+"sperren kann. Ein Moderator kann dies auf verschiedene Weise tun: entweder "
+"über den <link linkend=\"moderator_mcp\">Moderations-Bereich</link> beim "
+"Betrachten eines Forums, über das Auswahlmenü unterhalb des betreffenden "
+"Themas, oder durch Bearbeiten eines beliebigen Beitrags innerhalb eines "
+"Themas und Aktivieren des entsprechenden Kästchens."
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:113
+msgid ""
+"Locking a whole topic ensures that no user can reply to it, whereas locking "
+"individual posts denies the post author any editing permissions for that "
+"post."
+msgstr ""
+"Das Sperren eines gesamten Themas stellt sicher, dass kein Benutzer darauf "
+"antworten kann, während das Sperren einzelner Beiträge dem Verfasser des "
+"Beitrags jegliche Bearbeitungsrechte für diesen Beitrag entzieht."
+
+#. (itstool) path: section/title
+#: en/chapters/moderator_guide.xml:127
+msgid "Deleting a topic or post"
+msgstr "Ein Thema oder einen Beitrag löschen"
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:128
+msgid ""
+"If enabled within the <link linkend=\"admin_control_panel\">Administration "
+"Control Panel</link> permissions, a user may delete their own posts when "
+"either viewing a topic or editing a previous post. The user may only delete "
+"a topic or post if it has not yet been replied to."
+msgstr ""
+"Wenn dies in den Berechtigungen des <link "
+"linkend=\"admin_control_panel\">Administrations-Bereichs</link> aktiviert "
+"ist, kann ein Benutzer seine eigenen Beiträge löschen, entweder beim "
+"Betrachten eines Themas oder beim Bearbeiten eines vorherigen Beitrags. Der "
+"Benutzer darf ein Thema oder einen Beitrag nur löschen, wenn noch nicht "
+"darauf geantwortet wurde."
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:129
+msgid ""
+"To delete other user's posts, one must have appropriate moderator forum-"
+"based permission - <guilabel>Can delete posts</guilabel>. Using the "
+"selection menu beneath topics allows quick removal. The <link "
+"linkend=\"moderator_mcp\">Moderator Control Panel</link> allows multiple "
+"deletions of separate posts."
+msgstr ""
+"Um die Beiträge anderer Benutzer zu löschen, benötigt man die entsprechende "
+"forenbasierte Moderatorenberechtigung – <guilabel>Kann Beiträge dauerhaft "
+"löschen</guilabel>. Die Verwendung des Auswahlmenüs unterhalb der Themen "
+"erlaubt ein schnelles Entfernen. Der <link "
+"linkend=\"moderator_mcp\">Moderations-Bereich</link> erlaubt das Löschen "
+"mehrerer einzelner Beiträge gleichzeitig."
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:130
+msgid ""
+"When deleting a topic or post, you will be prompted to provide a reason for "
+"its deletion. This message will appear in the moderator logs. Additionally, "
+"if you have the <guilabel>Soft Delete</guilabel> moderator permission, you "
+"will be asked if you would like to permanently delete the topic/post or not."
+" If you choose not to, it will only be hidden from view with the option to "
+"restore it."
+msgstr ""
+"Beim Löschen eines Themas oder Beitrags werden Sie aufgefordert, einen Grund"
+" für die Löschung anzugeben. Diese Nachricht erscheint in den "
+"Moderatorprotokollen. Wenn Sie zusätzlich über die Moderatorenberechtigung "
+"<guilabel>Kann Beiträge als gelöscht markieren</guilabel> verfügen, werden "
+"Sie gefragt, ob Sie das Thema/den Beitrag endgültig löschen möchten oder "
+"nicht. Wenn Sie sich dagegen entscheiden, wird es nur ausgeblendet, mit der "
+"Möglichkeit, es wiederherzustellen."
+
+#. (itstool) path: tip/para
+#: en/chapters/moderator_guide.xml:132
+msgid ""
+"Please note that if you choose to permanently delete a topic or post, it "
+"cannot be undone."
+msgstr ""
+"Bitte beachten Sie, dass ein endgültig gelöschtes Thema oder ein endgültig "
+"gelöschter Beitrag nicht rückgängig gemacht werden kann."
+
+#. (itstool) path: section/title
+#: en/chapters/moderator_guide.xml:137
+msgid "Restoring a topic or post"
+msgstr "Ein Thema oder einen Beitrag wiederherstellen"
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:138
+msgid ""
+"If a topic or post has been deleted, it may be possible to restore it. If a "
+"user chose not to permanently delete the topic or post, it will be listed "
+"with an icon next to it indicating that it is eligible for restoration."
+msgstr ""
+"Wenn ein Thema oder ein Beitrag gelöscht wurde, kann es möglich sein, es "
+"wiederherzustellen. Wenn ein Benutzer sich dagegen entschieden hat, das "
+"Thema oder den Beitrag endgültig zu löschen, wird es mit einem Symbol "
+"daneben aufgeführt, das anzeigt, dass es für eine Wiederherstellung infrage "
+"kommt."
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:139
+msgid ""
+"If a user has selected to permanently delete a post or topic, it cannot be "
+"recovered."
+msgstr ""
+"Wenn ein Benutzer sich dafür entschieden hat, einen Beitrag oder ein Thema "
+"endgültig zu löschen, kann es nicht wiederhergestellt werden."
+
+#. (itstool) path: section/title
+#: en/chapters/moderator_guide.xml:153
+msgid "Moving a topic into another forum"
+msgstr "Ein Thema in ein anderes Forum verschieben"
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:154
+msgid ""
+"To move a topic to another forum, navigate to the <guilabel>Quick MOD "
+"Tools</guilabel> area beneath the topic and select <guilabel>Move "
+"Topic</guilabel> from the selection menu. You will then be met with another "
+"selection menu of a location (another forum) to move it to. If you would "
+"like to leave a <link linkend=\"modtools_move_shadow\">Shadow Topic</link> "
+"behind, leave the box checked. Select the desired forum and click "
+"<guilabel>Yes</guilabel>."
+msgstr ""
+"Um ein Thema in ein anderes Forum zu verschieben, navigieren Sie zum Bereich"
+" <guilabel>Schnellmoderation</guilabel> unterhalb des Themas und wählen Sie "
+"<guilabel>Thema verschieben</guilabel> aus dem Auswahlmenü. Anschließend "
+"erscheint ein weiteres Auswahlmenü mit einem Zielort (einem anderen Forum), "
+"in das es verschoben werden soll. Wenn Sie ein <link "
+"linkend=\"modtools_move_shadow\">Schattenthema</link> zurücklassen möchten, "
+"lassen Sie das Kästchen aktiviert. Wählen Sie das gewünschte Forum aus und "
+"klicken Sie auf <guilabel>Ja</guilabel>."
+
+#. (itstool) path: section/title
+#: en/chapters/moderator_guide.xml:167
+msgid "Shadow Topics"
+msgstr "Schattenthemen"
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:168
+msgid ""
+"Shadow topics can be created when moving a topic from one forum to another. "
+"A shadow topic is simply a link to the topic in the forum it’s been moved "
+"from. You may choose whether or not to leave a shadow topic by selecting or "
+"unselecting the checkbox in the <guilabel>Move Topic</guilabel> dialog."
+msgstr ""
+"Schattenthemen können erstellt werden, wenn ein Thema von einem Forum in ein"
+" anderes verschoben wird. Ein Schattenthema ist einfach ein Link zu dem "
+"Thema in dem Forum, aus dem es verschoben wurde. Sie können wählen, ob Sie "
+"ein Schattenthema zurücklassen möchten, indem Sie das Kästchen im Dialog "
+"<guilabel>Thema verschieben</guilabel> aktivieren oder deaktivieren."
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:169
+msgid ""
+"To delete a shadow topic, navigate to the forum containing the shadow topic,"
+" and use the <link linkend=\"moderator_mcp\">Moderator Control Panel</link> "
+"to select and delete the topic."
+msgstr ""
+"Um ein Schattenthema zu löschen, navigieren Sie zu dem Forum, das das "
+"Schattenthema enthält, und verwenden Sie den <link "
+"linkend=\"moderator_mcp\">Moderations-Bereich</link>, um das Thema "
+"auszuwählen und zu löschen."
+
+#. (itstool) path: note/para
+#: en/chapters/moderator_guide.xml:171
+msgid ""
+"Deleting a shadow topic will <emphasis>not</emphasis> delete the original "
+"topic that it is a shadow of."
+msgstr ""
+"Das Löschen eines Schattenthemas löscht <emphasis>nicht</emphasis> das "
+"ursprüngliche Thema, dessen Schatten es ist."
+
+#. (itstool) path: section/title
+#: en/chapters/moderator_guide.xml:187
+msgid "Duplicating a topic"
+msgstr "Ein Thema duplizieren"
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:188
+msgid ""
+"Moderators are also allowed to duplicate topics. Duplicating a topic simply "
+"creates a copy of the selected topic in another forum. This can be achieved "
+"by using the <guilabel>Quick MOD Tools</guilabel> area beneath the topic you"
+" want to duplicate, or through the <link linkend=\"moderator_mcp\">Moderator"
+" Control Panel</link> when viewing the forum. From this, you simply select "
+"the destination forum you wish to duplicate the topic to. Click "
+"<guilabel>Yes</guilabel> to duplicate the topic."
+msgstr ""
+"Moderatoren dürfen außerdem Themen duplizieren. Das Duplizieren eines Themas"
+" erstellt einfach eine Kopie des ausgewählten Themas in einem anderen Forum."
+" Dies kann über den Bereich <guilabel>Schnellmoderation</guilabel> unterhalb"
+" des zu duplizierenden Themas oder über den <link "
+"linkend=\"moderator_mcp\">Moderations-Bereich</link> beim Betrachten des "
+"Forums erreicht werden. Von dort aus wählen Sie einfach das Zielforum aus, "
+"in das das Thema dupliziert werden soll. Klicken Sie auf "
+"<guilabel>Ja</guilabel>, um das Thema zu duplizieren."
+
+#. (itstool) path: section/title
+#: en/chapters/moderator_guide.xml:202
+msgid "Announcements and stickies"
+msgstr "Ankündigungen und wichtige Themen"
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:203
+msgid ""
+"There are various types of topics the forum administrators and moderators "
+"(if they have the appropriate permissions) can assign to specific topics. "
+"These special topic types are: <guilabel>Global Announcements</guilabel>, "
+"<guilabel>Announcements</guilabel>, and <guilabel>Stickies</guilabel>. The "
+"<link linkend=\"posting_special\">Topic Type</link> can be chosen when "
+"posting a new topic or editing the first post of a previously posted topic. "
+"You may choose which type of topic you would prefer by selecting the "
+"relevant radio button. When viewing the forum, <guilabel>global "
+"announcements</guilabel> and basic <guilabel>announcements</guilabel> are "
+"displayed under a separate heading than that of "
+"<guilabel>stickies</guilabel> and normal topics."
+msgstr ""
+"Es gibt verschiedene Themenarten, die Forenadministratoren und Moderatoren "
+"(sofern sie über die entsprechenden Berechtigungen verfügen) bestimmten "
+"Themen zuweisen können. Diese besonderen Themenarten sind: <guilabel>Globale"
+" Bekanntmachungen</guilabel>, <guilabel>Bekanntmachungen</guilabel> und "
+"<guilabel>Wichtige Themen</guilabel>. Die <link "
+"linkend=\"posting_special\">Themenart</link> kann beim Verfassen eines neuen"
+" Themas oder beim Bearbeiten des ersten Beitrags eines bereits "
+"veröffentlichten Themas gewählt werden. Sie können auswählen, welche "
+"Themenart Sie bevorzugen, indem Sie das entsprechende Optionsfeld "
+"aktivieren. Beim Betrachten des Forums werden <guilabel>globale "
+"Bekanntmachungen</guilabel> und einfache "
+"<guilabel>Bekanntmachungen</guilabel> unter einer anderen Überschrift "
+"angezeigt als <guilabel>wichtige Themen</guilabel> und normale Themen."
+
+#. (itstool) path: section/title
+#: en/chapters/moderator_guide.xml:217
+msgid "Splitting posts off a topic"
+msgstr "Beiträge von einem Thema abtrennen"
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:218
+msgid ""
+"Moderators also have the ability to split posts from a topic. This can be "
+"useful if certain discussions have spawned a new idea worthy of its own "
+"thread, thus needing to be split from the original topic. Splitting posts "
+"involves moving individual posts from an existing topic to a new topic. You "
+"may do this by using the <guilabel>Quick MOD Tools</guilabel> area beneath "
+"the topic you want to split or from the <link "
+"linkend=\"moderator_mcp\">Moderator Control Panel</link> within the topic."
+msgstr ""
+"Moderatoren haben außerdem die Möglichkeit, Beiträge von einem Thema "
+"abzutrennen. Dies kann nützlich sein, wenn bestimmte Diskussionen eine neue,"
+" einen eigenen Thread wert seiende Idee hervorgebracht haben und daher vom "
+"ursprünglichen Thema abgetrennt werden müssen. Das Abtrennen von Beiträgen "
+"bedeutet, einzelne Beiträge aus einem bestehenden Thema in ein neues Thema "
+"zu verschieben. Sie können dies über den Bereich "
+"<guilabel>Schnellmoderation</guilabel> unterhalb des abzutrennenden Themas "
+"oder über den <link linkend=\"moderator_mcp\">Moderations-Bereich</link> "
+"innerhalb des Themas tun."
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:219
+msgid ""
+"While splitting, you may choose a title for the new topic, a different forum"
+" for the new topic, and also a different icon. You may also override the "
+"default board settings for the amount of posts to be displayed per page. The"
+" <guilabel>Splitting from the selected post</guilabel> option will split all"
+" posts from the checked post, to the last post. The <guilabel>Splitting "
+"selected posts</guilabel> option will only split the current selected posts."
+msgstr ""
+"Beim Abtrennen können Sie einen Titel für das neue Thema, ein anderes Forum "
+"für das neue Thema und auch ein anderes Symbol auswählen. Sie können "
+"außerdem die Standardeinstellung des Forums für die Anzahl der pro Seite "
+"angezeigten Beiträge überschreiben. Die Option <guilabel>Thema ab dem "
+"gewählten Beitrag teilen</guilabel> trennt alle Beiträge vom markierten "
+"Beitrag bis zum letzten Beitrag ab. Die Option <guilabel>Ausgewählte "
+"Beiträge abtrennen</guilabel> trennt nur die aktuell ausgewählten Beiträge "
+"ab."
+
+#. (itstool) path: section/title
+#: en/chapters/moderator_guide.xml:233
+msgid "Merge topics"
+msgstr "Themen zusammenführen"
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:234
+msgid ""
+"In phpBB3, it is now possible to merge topics together, in addition to "
+"splitting topics. This can be useful if, for example, two separate topics "
+"are related and involve the same discussion. The merging topics feature "
+"allows existing topics to be merged into one another."
+msgstr ""
+"In phpBB3 ist es nun möglich, Themen zusätzlich zum Abtrennen auch "
+"zusammenzuführen. Dies kann nützlich sein, wenn beispielsweise zwei separate"
+" Themen zusammenhängen und dieselbe Diskussion betreffen. Die Funktion zum "
+"Zusammenführen von Themen erlaubt es, bestehende Themen ineinander "
+"zusammenzuführen."
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:235
+msgid ""
+"To merge topics together, start by locating selection menu beneath the topic"
+" in question, which brings you to the <link "
+"linkend=\"moderator_mcp\">Moderator Control Panel</link>. From here, you "
+"need to enter the topic ID of the topic you want to move the posts to. You "
+"can click <guilabel>Select topic</guilabel> to see a list of the topics "
+"available and specify which. Checking the <guilabel>Mark all</guilabel> "
+"section will select all the posts in the current topic and allow moving to "
+"the existing topic. The posts merged into the new topic will retain their "
+"existing timestamp (e.g. they will not appear at the end of the topic they "
+"are being merged to, but will be sorted based on their timestamp)."
+msgstr ""
+"Um Themen zusammenzuführen, suchen Sie zunächst das Auswahlmenü unterhalb "
+"des betreffenden Themas, das Sie zum <link "
+"linkend=\"moderator_mcp\">Moderations-Bereich</link> führt. Von dort aus "
+"müssen Sie die Themen-ID des Themas eingeben, in das Sie die Beiträge "
+"verschieben möchten. Sie können auf <guilabel>Thema auswählen</guilabel> "
+"klicken, um eine Liste der verfügbaren Themen anzuzeigen und das gewünschte "
+"auszuwählen. Durch Aktivieren des Bereichs <guilabel>Alle "
+"markieren</guilabel> werden alle Beiträge im aktuellen Thema ausgewählt und "
+"können in das bestehende Thema verschoben werden. Die in das neue Thema "
+"zusammengeführten Beiträge behalten ihren bestehenden Zeitstempel (das "
+"heißt, sie erscheinen nicht am Ende des Themas, in das sie zusammengeführt "
+"werden, sondern werden nach ihrem Zeitstempel sortiert)."
+
+#. (itstool) path: section/title
+#: en/chapters/moderator_guide.xml:249
+msgid "Merge posts into another topic"
+msgstr "Beiträge in ein anderes Thema zusammenführen"
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:250
+msgid ""
+"Rather than just merging topics together, you can also merge specific posts "
+"into any other topic."
+msgstr ""
+"Anstatt nur Themen zusammenzuführen, können Sie auch bestimmte Beiträge in "
+"ein beliebiges anderes Thema zusammenführen."
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:251
+msgid ""
+"To merge specific posts into another topic, start by locating the selection "
+"menu beneath the topic, and get to the <link "
+"linkend=\"moderator_mcp\">Moderator Control Panel</link>. From here, you "
+"need to enter the topic ID of the topic you want to move the posts to. You "
+"can click <guilabel>Select topic</guilabel> to see a list of the topics "
+"available and specify which. Select the posts which you wish to merge from "
+"the current topic, into the existing topic. The posts merged into the new "
+"topic will retain their existing timestamp (e.g. they will not appear at the"
+" end of the topic they are being merged to, but will be sorted based on "
+"their timestamp)."
+msgstr ""
+"Um bestimmte Beiträge in ein anderes Thema zusammenzuführen, suchen Sie "
+"zunächst das Auswahlmenü unterhalb des Themas und gelangen Sie zum <link "
+"linkend=\"moderator_mcp\">Moderations-Bereich</link>. Von dort aus müssen "
+"Sie die Themen-ID des Themas eingeben, in das Sie die Beiträge verschieben "
+"möchten. Sie können auf <guilabel>Thema auswählen</guilabel> klicken, um "
+"eine Liste der verfügbaren Themen anzuzeigen und das gewünschte auszuwählen."
+" Wählen Sie die Beiträge aus, die Sie aus dem aktuellen Thema in das "
+"bestehende Thema zusammenführen möchten. Die in das neue Thema "
+"zusammengeführten Beiträge behalten ihren bestehenden Zeitstempel (das "
+"heißt, sie erscheinen nicht am Ende des Themas, in das sie zusammengeführt "
+"werden, sondern werden nach ihrem Zeitstempel sortiert)."
+
+#. (itstool) path: section/title
+#: en/chapters/moderator_guide.xml:266
+msgid "What is the “Moderation queue”?"
+msgstr "Was ist die „Moderationswarteschlange“?"
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:267
+msgid ""
+"The <guilabel>Moderation Queue</guilabel> is an area where topics and posts "
+"which need to be approved are listed. If a forum or user’s permissions are "
+"set to <guilabel>moderator queue</guilabel> via the <link "
+"linkend=\"admin_control_panel\">Administration Control Panel</link>, all "
+"posts made in that forum or by this user will need to be approved by an "
+"administrator or moderator before they are displayed to other users. Topics "
+"and posts which require approval can be viewed through the <link "
+"linkend=\"moderator_mcp\">Moderator Control Panel</link>."
+msgstr ""
+"Die <guilabel>Moderations-Warteschlange</guilabel> ist ein Bereich, in dem "
+"Themen und Beiträge aufgelistet werden, die freigegeben werden müssen. Wenn "
+"die Berechtigungen eines Forums oder Benutzers über den <link "
+"linkend=\"admin_control_panel\">Administrations-Bereich</link> auf "
+"<guilabel>Moderations-Warteschlange</guilabel> gesetzt sind, müssen alle in "
+"diesem Forum oder von diesem Benutzer erstellten Beiträge von einem "
+"Administrator oder Moderator freigegeben werden, bevor sie anderen Benutzern"
+" angezeigt werden. Themen und Beiträge, die eine Freigabe benötigen, können "
+"über den <link linkend=\"moderator_mcp\">Moderations-Bereich</link> "
+"eingesehen werden."
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:268
+msgid ""
+"When viewing a forum, topics which have not yet been approved will be marked"
+" with an icon, clicking on this icon will take you directly to the Moderator"
+" Control Panel where you may approve or disapprove the topic. Likewise, when"
+" viewing the topic itself, the post requiring approval will be accompanied "
+"with a message which also links to the post waiting approval."
+msgstr ""
+"Beim Betrachten eines Forums werden noch nicht freigegebene Themen mit einem"
+" Symbol gekennzeichnet; ein Klick auf dieses Symbol führt Sie direkt zum "
+"Moderations-Bereich, wo Sie das Thema freigeben oder ablehnen können. Ebenso"
+" wird beim Betrachten des Themas selbst der freizugebende Beitrag von einer "
+"Nachricht begleitet, die ebenfalls auf den auf Freigabe wartenden Beitrag "
+"verweist."
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:269
+msgid ""
+"If you choose to approve a topic or post, you will be given the option to "
+"notify the user of its approval. If you choose to disapprove a topic or "
+"post, you will be given the option to notify the user of its disapproval and"
+" also specify why you have disapproved the post, and enter a description."
+msgstr ""
+"Wenn Sie sich dafür entscheiden, ein Thema oder einen Beitrag freizugeben, "
+"erhalten Sie die Möglichkeit, den Benutzer über die Freigabe zu "
+"benachrichtigen. Wenn Sie sich dafür entscheiden, ein Thema oder einen "
+"Beitrag abzulehnen, erhalten Sie die Möglichkeit, den Benutzer über die "
+"Ablehnung zu benachrichtigen und zudem anzugeben, warum Sie den Beitrag "
+"abgelehnt haben, sowie eine Beschreibung einzugeben."
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:270 en/chapters/moderator_guide.xml:287
+msgid ""
+"For further information regarding the Moderator Control Panel, see <xref "
+"linkend=\"moderator_mcp\"/>."
+msgstr ""
+"Weitere Informationen zum Moderations-Bereich finden Sie unter <xref "
+"linkend=\"moderator_mcp\"/>."
+
+#. (itstool) path: section/title
+#: en/chapters/moderator_guide.xml:284
+msgid "What are “Reported posts”?"
+msgstr "Was sind „gemeldete Beiträge“?"
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:285
+msgid ""
+"Unlike phpBB2, phpBB3 now allows users to report a post, for reasons the "
+"board administrator can define within the <link "
+"linkend=\"admin_control_panel\">Administration Control Panel</link>. If a "
+"user finds a post unsuitable for any reason, they may report it using the "
+"<guilabel>Report Post</guilabel> button beside the offending message. This "
+"report is then displayed within the Moderator Control Panel where the "
+"Administrator or Moderators can view, close, or delete the report."
+msgstr ""
+"Anders als phpBB2 erlaubt phpBB3 Benutzern nun, einen Beitrag zu melden, aus"
+" Gründen, die der Forenadministrator im <link "
+"linkend=\"admin_control_panel\">Administrations-Bereich</link> festlegen "
+"kann. Findet ein Benutzer einen Beitrag aus irgendeinem Grund unangemessen, "
+"kann er ihn über die Schaltfläche <guilabel>Diesen Beitrag melden</guilabel>"
+" neben der betreffenden Nachricht melden. Diese Meldung wird dann im "
+"Moderations-Bereich angezeigt, wo der Administrator oder die Moderatoren die"
+" Meldung einsehen, schließen oder löschen können."
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:286
+msgid ""
+"When viewing a forum with post reports within topics, the topic title will "
+"be accompanied by a red exclamation icon. This alerts the administrator(s) "
+"or moderators that there a post has been reported. When viewing topics, "
+"reported posts are accompanied by a red exclamation and text. Clicking this "
+"icon or text will bring them to the Reported Posts section of the Moderator "
+"Control Panel."
+msgstr ""
+"Beim Betrachten eines Forums mit gemeldeten Beiträgen innerhalb von Themen "
+"wird der Themen­titel von einem roten Ausrufezeichen-Symbol begleitet. Dies "
+"weist den/die Administrator(en) oder Moderatoren darauf hin, dass ein "
+"Beitrag gemeldet wurde. Beim Betrachten von Themen werden gemeldete Beiträge"
+" von einem roten Ausrufezeichen und Text begleitet. Ein Klick auf dieses "
+"Symbol oder den Text bringt sie zum Bereich Gemeldete Beiträge des "
+"Moderations-Bereichs."
+
+#. (itstool) path: section/title
+#: en/chapters/moderator_guide.xml:301
+msgid "The Moderator Control Panel (MCP)"
+msgstr "Der Moderations-Bereich (MCP)"
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:302
+msgid ""
+"Another new feature in phpBB3 is the <guilabel>Moderator Control "
+"Panel</guilabel>, where any moderator will feel at home. Similar to the "
+"Administration Control Panel, this area outlines any current moderator "
+"duties that need to be acted upon. After navigating to the MCP, the "
+"moderator will be greeted with any posts waiting for approval, any post "
+"reports and the five latest logged actions - performed by administrators, "
+"moderators, and users."
+msgstr ""
+"Eine weitere neue Funktion in phpBB3 ist der <guilabel>Moderations-"
+"Bereich</guilabel>, in dem sich jeder Moderator zurechtfinden wird. Ähnlich "
+"wie der Administrations-Bereich zeigt dieser Bereich alle aktuellen "
+"Moderatorenaufgaben an, die erledigt werden müssen. Nach dem Navigieren zum "
+"MCP wird der Moderator mit allen auf Freigabe wartenden Beiträgen, allen "
+"Beitragsmeldungen und den fünf zuletzt protokollierten Aktionen begrüßt – "
+"durchgeführt von Administratoren, Moderatoren und Benutzern."
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/moderator_guide.xml:306
+msgid "Main"
+msgstr "Übersicht"
+
+#. (itstool) path: listitem/para
+#: en/chapters/moderator_guide.xml:308
+msgid ""
+"This contains pre-approved posts, reported posts and the five latest logged "
+"actions."
+msgstr ""
+"Dies enthält auf Freigabe wartende Beiträge, gemeldete Beiträge und die fünf"
+" zuletzt protokollierten Aktionen."
+
+#. (itstool) path: varlistentry/term
+#. (itstool) path: section/title
+#: en/chapters/moderator_guide.xml:313 en/chapters/moderator_guide.xml:367
+msgid "Moderation queue"
+msgstr "Moderationswarteschlange"
+
+#. (itstool) path: listitem/para
+#: en/chapters/moderator_guide.xml:315
+msgid ""
+"This area lists any topics or posts waiting for approval. It also lists "
+"topics and posts that have been soft-deleted."
+msgstr ""
+"Dieser Bereich listet alle Themen oder Beiträge auf, die auf Freigabe "
+"warten. Er listet außerdem Themen und Beiträge auf, die vorübergehend "
+"gelöscht wurden."
+
+#. (itstool) path: varlistentry/term
+#. (itstool) path: section/title
+#: en/chapters/moderator_guide.xml:320 en/chapters/moderator_guide.xml:382
+msgid "Reported posts"
+msgstr "Gemeldete Beiträge"
+
+#. (itstool) path: listitem/para
+#: en/chapters/moderator_guide.xml:322
+msgid "A list of all open or closed reported posts."
+msgstr "Eine Liste aller offenen oder geschlossenen gemeldeten Beiträge."
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/moderator_guide.xml:327
+msgid "User notes"
+msgstr "Benutzernotizen"
+
+#. (itstool) path: listitem/para
+#: en/chapters/moderator_guide.xml:329
+msgid ""
+"This is an area for administrators or moderators to leave feedback on "
+"certain users."
+msgstr ""
+"Dies ist ein Bereich, in dem Administratoren oder Moderatoren Rückmeldungen "
+"zu bestimmten Benutzern hinterlassen können."
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/moderator_guide.xml:334
+msgid "Warnings"
+msgstr "Verwarnungen"
+
+#. (itstool) path: listitem/para
+#: en/chapters/moderator_guide.xml:336
+msgid ""
+"The ability to warn a user, view current users with warnings and view the "
+"five latest warnings."
+msgstr ""
+"Die Möglichkeit, einen Benutzer zu verwarnen, aktuelle Benutzer mit "
+"Verwarnungen anzuzeigen und die fünf letzten Verwarnungen einzusehen."
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/moderator_guide.xml:341
+msgid "Moderator logs"
+msgstr "Moderatorprotokolle"
+
+#. (itstool) path: listitem/para
+#: en/chapters/moderator_guide.xml:343
+msgid ""
+"This is an in-depth list of the five latest actions performed by "
+"administrators, moderators or users, as shown on the main page of the MCP."
+msgstr ""
+"Dies ist eine ausführliche Liste der fünf letzten Aktionen, die von "
+"Administratoren, Moderatoren oder Benutzern durchgeführt wurden, wie sie auf"
+" der Hauptseite des MCP angezeigt werden."
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/moderator_guide.xml:348
+msgid "Banning"
+msgstr "Sperren"
+
+#. (itstool) path: listitem/para
+#: en/chapters/moderator_guide.xml:350
+msgid "The option to ban users by username, IP address or email address."
+msgstr ""
+"Die Möglichkeit, Benutzer anhand von Benutzername, IP-Adresse oder E-Mail-"
+"Adresse zu sperren."
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:303
+msgid ""
+"On the left side is a menu containing all the relevant areas within the MCP."
+" This guide outlines each individual section and what kind of information "
+"they each contain: <_:variablelist-1/>"
+msgstr ""
+"Auf der linken Seite befindet sich ein Menü mit allen relevanten Bereichen "
+"innerhalb des MCP. Dieser Leitfaden beschreibt jeden einzelnen Abschnitt und"
+" welche Art von Informationen er jeweils enthält: <_:variablelist-1/>"
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:368
+msgid ""
+"The moderation queue lists topics or posts which require moderator action. "
+"The moderation queue is accessible from the <link "
+"linkend=\"moderator_mcp\">Moderator Control Panel</link>. For more "
+"information regarding the moderation queue, see <xref "
+"linkend=\"moderator_queue\"/>."
+msgstr ""
+"Die Moderationswarteschlange listet Themen oder Beiträge auf, die eine "
+"Moderatorenaktion erfordern. Die Moderationswarteschlange ist über den <link"
+" linkend=\"moderator_mcp\">Moderations-Bereich</link> zugänglich. Weitere "
+"Informationen zur Moderationswarteschlange finden Sie unter <xref "
+"linkend=\"moderator_queue\"/>."
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:383
+msgid ""
+"Reported posts are reports submitted by users regarding problematic posts. "
+"Any current reported posts are accessible from the <link "
+"linkend=\"moderator_mcp\">Moderator Control Panel</link>. For more "
+"information regarding reported posts, see <xref "
+"linkend=\"moderator_reported\"/>."
+msgstr ""
+"Gemeldete Beiträge sind von Benutzern eingereichte Meldungen zu "
+"problematischen Beiträgen. Alle aktuellen gemeldeten Beiträge sind über den "
+"<link linkend=\"moderator_mcp\">Moderations-Bereich</link> zugänglich. "
+"Weitere Informationen zu gemeldeten Beiträgen finden Sie unter <xref "
+"linkend=\"moderator_reported\"/>."
+
+#. (itstool) path: section/title
+#: en/chapters/moderator_guide.xml:387
+msgid "Forum moderation"
+msgstr "Forenmoderation"
+
+#. (itstool) path: listitem/para
+#: en/chapters/moderator_guide.xml:390
+msgid "<guilabel>Delete</guilabel>: Deletes the selected topic(s)."
+msgstr ""
+"<guilabel>Löschen</guilabel>: Löscht das/die ausgewählte(n) Thema/Themen."
+
+#. (itstool) path: listitem/para
+#: en/chapters/moderator_guide.xml:391
+msgid ""
+"<guilabel>Restore</guilabel>: Restores the selected soft-deleted topic(s)."
+msgstr ""
+"<guilabel>Wiederherstellen</guilabel>: Stellt das/die ausgewählte(n) "
+"vorübergehend gelöschte(n) Thema/Themen wieder her."
+
+#. (itstool) path: listitem/para
+#: en/chapters/moderator_guide.xml:392
+msgid ""
+"<guilabel>Move</guilabel>: Moves the selected topic(s) to another forum of "
+"your preference."
+msgstr ""
+"<guilabel>Verschieben</guilabel>: Verschiebt das/die ausgewählte(n) "
+"Thema/Themen in ein anderes Forum Ihrer Wahl."
+
+#. (itstool) path: listitem/para
+#: en/chapters/moderator_guide.xml:393
+msgid ""
+"<guilabel>Copy</guilabel>: Creates a duplicate of the selected topic(s) in "
+"another forum of your preference."
+msgstr ""
+"<guilabel>Kopieren</guilabel>: Erstellt ein Duplikat des/der ausgewählten "
+"Themas/Themen in einem anderen Forum Ihrer Wahl."
+
+#. (itstool) path: listitem/para
+#: en/chapters/moderator_guide.xml:394
+msgid "<guilabel>Lock</guilabel>: Locks the selected topic(s)."
+msgstr ""
+"<guilabel>Sperren</guilabel>: Sperrt das/die ausgewählte(n) Thema/Themen."
+
+#. (itstool) path: listitem/para
+#: en/chapters/moderator_guide.xml:395
+msgid "<guilabel>Unlock</guilabel>: Unlocks the selected topic(s)."
+msgstr ""
+"<guilabel>Entsperren</guilabel>: Entsperrt das/die ausgewählte(n) "
+"Thema/Themen."
+
+#. (itstool) path: listitem/para
+#: en/chapters/moderator_guide.xml:396
+msgid "<guilabel>Resync</guilabel>: Resynchronise the selected topic(s)."
+msgstr ""
+"<guilabel>Resynchronisierung</guilabel>: Gleicht das/die ausgewählte(n) "
+"Thema/Themen neu ab."
+
+#. (itstool) path: listitem/para
+#: en/chapters/moderator_guide.xml:397
+msgid ""
+"<guilabel>Change topic type</guilabel>: Change the topic type to either "
+"<guilabel>Global Announcement</guilabel>, <guilabel>Announcement</guilabel>,"
+" <guilabel>Sticky</guilabel>, or <guilabel>Regular Topic</guilabel>."
+msgstr ""
+"<guilabel>Themenart ändern</guilabel>: Ändert die Themenart entweder zu "
+"<guilabel>Globale Bekanntmachung</guilabel>, "
+"<guilabel>Bekanntmachung</guilabel>, <guilabel>Wichtig</guilabel> oder "
+"<guilabel>Normal</guilabel>."
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:388
+msgid ""
+"When viewing any particular forum, clicking <guilabel>Moderator Control "
+"Panel</guilabel> will take you to the forum moderation area. Here, you are "
+"able to mass moderate topics within that forum via the dropdown box. The "
+"available actions are: <_:itemizedlist-1/>"
+msgstr ""
+"Beim Betrachten eines bestimmten Forums bringt Sie ein Klick auf "
+"<guilabel>Moderations-Bereich</guilabel> zum Bereich der Forenmoderation. "
+"Hier können Sie über das Auswahlfeld Themen innerhalb dieses Forums "
+"massenmoderieren. Die verfügbaren Aktionen sind: <_:itemizedlist-1/>"
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:401
+msgid ""
+"You can also mass-moderate posts within topics. This can be done by "
+"navigating through the MCP when viewing the forum, and clicking on the topic"
+" itself. Another way to accomplish this is to click the MCP link whilst "
+"viewing the particular topic you wish to moderate."
+msgstr ""
+"Sie können auch Beiträge innerhalb von Themen massenmoderieren. Dies kann "
+"erreicht werden, indem Sie beim Betrachten des Forums durch das MCP "
+"navigieren und auf das Thema selbst klicken. Eine andere Möglichkeit besteht"
+" darin, beim Betrachten des jeweiligen zu moderierenden Themas auf den MCP-"
+"Link zu klicken."
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:402
+msgid ""
+"When moderating inside a topic, you can: rename the topic title, move the "
+"topic to a different forum, alter the topic icon, merge the topic with "
+"another topic, or define how many posts per page will be displayed (this "
+"will override the board setting)."
+msgstr ""
+"Beim Moderieren innerhalb eines Themas können Sie: den Themen­titel "
+"umbenennen, das Thema in ein anderes Forum verschieben, das Themensymbol "
+"ändern, das Thema mit einem anderen Thema zusammenführen oder festlegen, wie"
+" viele Beiträge pro Seite angezeigt werden (dies überschreibt die "
+"Foreneinstellung)."
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:403
+msgid ""
+"From the selection menu, you may also: lock and unlock individual posts, "
+"delete the selected post(s), merge the selected post(s), or split or split "
+"from the selected post(s)."
+msgstr ""
+"Über das Auswahlmenü können Sie außerdem: einzelne Beiträge sperren und "
+"entsperren, die ausgewählten Beiträge löschen, die ausgewählten Beiträge "
+"zusammenführen oder die ausgewählten Beiträge abtrennen bzw. ab dem "
+"ausgewählten Beitrag abtrennen."
+
+#. (itstool) path: section/para
+#: en/chapters/moderator_guide.xml:404
+msgid ""
+"The <guilabel>Post Details</guilabel> link next to posts also entitle you to"
+" alter other settings. As well as viewing the poster’s <glossterm>IP "
+"address</glossterm>, profile and notes, and the ability to warn the poster, "
+"you also have the option to change the poster ID assigned to the post. You "
+"can also lock or delete the post from this page."
+msgstr ""
+"Der Link <guilabel>Beitrags-Details</guilabel> neben Beiträgen berechtigt "
+"Sie außerdem, weitere Einstellungen zu ändern. Neben der Ansicht der "
+"<glossterm>IP-Adresse</glossterm>, des Profils und der Notizen des "
+"Verfassers sowie der Möglichkeit, den Verfasser zu verwarnen, haben Sie auch"
+" die Möglichkeit, die dem Beitrag zugewiesene Verfasser-ID zu ändern. Sie "
+"können den Beitrag von dieser Seite aus auch sperren oder löschen."
+
+#. (itstool) path: note/para
+#: en/chapters/moderator_guide.xml:407
+msgid ""
+"Depending on the specific permissions set to your user account, some of the "
+"aforementioned options and abilities may not be available to you."
+msgstr ""
+"Je nach den für Ihr Benutzerkonto festgelegten spezifischen Berechtigungen "
+"stehen Ihnen möglicherweise nicht alle der genannten Optionen und "
+"Fähigkeiten zur Verfügung."

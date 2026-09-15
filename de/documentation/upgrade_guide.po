@@ -1,0 +1,1345 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-09-15 01:32-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr ""
+
+#. (itstool) path: chapterinfo/releaseinfo
+#: en/chapters/upgrade_guide.xml:5
+msgid "$Id$"
+msgstr ""
+
+#. (itstool) path: chapterinfo/copyright
+#: en/chapters/upgrade_guide.xml:6
+msgid "<year>2009</year> <holder>phpBB Group</holder>"
+msgstr ""
+
+#. (itstool) path: chapter/title
+#: en/chapters/upgrade_guide.xml:11
+msgid "Upgrade Guide"
+msgstr "Aktualisierungshandbuch"
+
+#. (itstool) path: abstract/para
+#: en/chapters/upgrade_guide.xml:13
+msgid ""
+"Do you want to upgrade your phpBB2 forum to version 3.3? This chapter will "
+"tell and show you how it is done."
+msgstr ""
+
+#. (itstool) path: authorgroup/author
+#: en/chapters/upgrade_guide.xml:18
+msgid "<othername>Techie-Micheal</othername>"
+msgstr "<othername>Techie-Micheal</othername>"
+
+#. (itstool) path: section/title
+#: en/chapters/upgrade_guide.xml:23
+msgid "Upgrading from 2.0 to 3.3"
+msgstr "Aktualisierung von 2.0 auf 3.3"
+
+#. (itstool) path: section/para
+#: en/chapters/upgrade_guide.xml:24 en/chapters/upgrade_guide.xml:527
+msgid ""
+"In order to allow administrators of phpBB2 boards to use phpBB3 and all of "
+"its features. There is a convertor packed with the default installation. The"
+" conversion framework is flexible and allows you to convert other bulletin "
+"board systems as well. Read more if you need help with converting your board"
+" to phpBB3"
+msgstr ""
+"Damit Administratoren von phpBB2-Foren phpBB3 und all seine Funktionen "
+"nutzen können, ist der Standardinstallation ein Konverter beigefügt. Das "
+"Konvertierungsframework ist flexibel und erlaubt es dir, auch andere "
+"Forensysteme zu konvertieren. Lies weiter, wenn du Hilfe bei der "
+"Konvertierung deines Forums zu phpBB3 benötigst"
+
+#. (itstool) path: section/para
+#: en/chapters/upgrade_guide.xml:26
+msgid ""
+"The process is in the form of a PHP file, similar to the update file found "
+"in phpBB 2.0.x. The file will take you through wizard-like screens until "
+"your phpBB is running 3.3.x. Basic instructions and troubleshooting for "
+"doing this conversion are <ulink "
+"url=\"https://www.phpbb.com/community/docs/INSTALL.html#convert\">here</ulink>."
+msgstr ""
+"Der Vorgang erfolgt in Form einer PHP-Datei, ähnlich der "
+"Aktualisierungsdatei aus phpBB 2.0.x. Die Datei führt dich durch "
+"assistentenartige Bildschirme, bis dein phpBB unter 3.3.x läuft. "
+"Grundlegende Anweisungen und Fehlerbehebung für diese Konvertierung findest "
+"du <ulink "
+"url=\"https://www.phpbb.com/community/docs/INSTALL.html#convert\">hier</ulink>."
+
+#. (itstool) path: section/para
+#: en/chapters/upgrade_guide.xml:28
+msgid ""
+"Warning: Be sure to backup both the database and the files before attempting"
+" to upgrade."
+msgstr ""
+"Warnung: Stelle sicher, dass du sowohl die Datenbank als auch die Dateien "
+"sicherst, bevor du die Aktualisierung versuchst."
+
+#. (itstool) path: authorgroup/author
+#: en/chapters/upgrade_guide.xml:34 en/chapters/upgrade_guide.xml:105
+#: en/chapters/upgrade_guide.xml:249 en/chapters/upgrade_guide.xml:271
+#: en/chapters/upgrade_guide.xml:343 en/chapters/upgrade_guide.xml:397
+#: en/chapters/upgrade_guide.xml:458
+msgid "<othername>Noxwizard</othername>"
+msgstr "<othername>Noxwizard</othername>"
+
+#. (itstool) path: section/title
+#: en/chapters/upgrade_guide.xml:39
+msgid "Upgrading from 3.0 to 3.3"
+msgstr "Aktualisierung von 3.0 auf 3.3"
+
+#. (itstool) path: warning/para
+#: en/chapters/upgrade_guide.xml:41
+msgid ""
+"Upgrading to phpBB 3.3 will render previously installed MODifications and "
+"styles unusable. If you have a custom logo, it will need to be redone after "
+"the upgrade. See <ulink "
+"url=\"https://www.phpbb.com/support/docs/en/3.3/kb/article/how-to-change-"
+"your-board-logo/\">Knowledge Base: How to Change your Board Logo</ulink>."
+msgstr ""
+"Die Aktualisierung auf phpBB 3.3 macht zuvor installierte Modifikationen und"
+" Stile unbrauchbar. Wenn du ein eigenes Logo verwendest, muss dieses nach "
+"der Aktualisierung neu eingerichtet werden. Siehe <ulink "
+"url=\"https://www.phpbb.com/support/docs/en/3.3/kb/article/how-to-change-"
+"your-board-logo/\">Wissensdatenbank: Ändern des Forenlogos</ulink>."
+
+#. (itstool) path: section/para
+#: en/chapters/upgrade_guide.xml:44
+msgid ""
+"phpBB 3.3 is not compatible with 3.0 and most of the previous files will "
+"need to be removed prior to upgrading."
+msgstr ""
+"phpBB 3.3 ist nicht mit 3.0 kompatibel, und die meisten der vorherigen "
+"Dateien müssen vor der Aktualisierung entfernt werden."
+
+#. (itstool) path: section/para
+#: en/chapters/upgrade_guide.xml:45 en/chapters/upgrade_guide.xml:116
+#: en/chapters/upgrade_guide.xml:188
+msgid "To upgrade, perform the following steps:"
+msgstr "Um zu aktualisieren, führe die folgenden Schritte aus:"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:47 en/chapters/upgrade_guide.xml:118
+#: en/chapters/upgrade_guide.xml:190
+msgid ""
+"Ensure that your server meets the requirements for running phpBB 3.3: <xref "
+"linkend=\"quick_requirements\"/>"
+msgstr ""
+"Stelle sicher, dass dein Server die Anforderungen zum Betrieb von phpBB 3.3 "
+"erfüllt: <xref linkend=\"quick_requirements\"/>"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:48 en/chapters/upgrade_guide.xml:119
+#: en/chapters/upgrade_guide.xml:191 en/chapters/upgrade_guide.xml:279
+#: en/chapters/upgrade_guide.xml:352 en/chapters/upgrade_guide.xml:408
+#: en/chapters/upgrade_guide.xml:467
+msgid "<emphasis role=\"bold\">Make a backup of the original files</emphasis>"
+msgstr ""
+"<emphasis role=\"bold\">Erstelle eine Sicherung der ursprünglichen "
+"Dateien</emphasis>"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:49 en/chapters/upgrade_guide.xml:120
+#: en/chapters/upgrade_guide.xml:192 en/chapters/upgrade_guide.xml:280
+#: en/chapters/upgrade_guide.xml:353 en/chapters/upgrade_guide.xml:409
+#: en/chapters/upgrade_guide.xml:468
+msgid "<emphasis role=\"bold\">Make a backup of the database</emphasis>"
+msgstr "<emphasis role=\"bold\">Erstelle eine Sicherung der Datenbank</emphasis>"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:50 en/chapters/upgrade_guide.xml:121
+#: en/chapters/upgrade_guide.xml:193
+msgid "Deactivate all styles except for prosilver"
+msgstr "Deaktiviere alle Stile außer prosilver"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:51
+msgid ""
+"Remove all MOD-related changes from the database. The <ulink "
+"url=\"http://www.phpbb.com/support/stk/\">Support Toolkit</ulink>'s Database"
+" Cleaner can be used for this."
+msgstr ""
+"Entferne alle MOD-bezogenen Änderungen aus der Datenbank. Der Database "
+"Cleaner des <ulink url=\"http://www.phpbb.com/support/stk/\">Support "
+"Toolkit</ulink> kann hierfür verwendet werden."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:52 en/chapters/upgrade_guide.xml:123
+#: en/chapters/upgrade_guide.xml:195
+msgid "Set British English as the only language pack"
+msgstr "Lege britisches Englisch als einziges Sprachpaket fest"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:53 en/chapters/upgrade_guide.xml:124
+#: en/chapters/upgrade_guide.xml:196
+msgid ""
+"Download the phpBB 3.3 <ulink "
+"url=\"https://www.phpbb.com/downloads/#install\">Full Package</ulink> "
+"archive"
+msgstr ""
+"Lade das <ulink "
+"url=\"https://www.phpbb.com/downloads/#install\">vollständige Paket</ulink> "
+"von phpBB 3.3 herunter"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:54 en/chapters/upgrade_guide.xml:125
+#: en/chapters/upgrade_guide.xml:197
+msgid ""
+"Extract the contents of the archive to your computer and open the phpBB3 "
+"directory"
+msgstr ""
+"Entpacke den Inhalt des Archivs auf deinen Computer und öffne das "
+"Verzeichnis phpBB3"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:55 en/chapters/upgrade_guide.xml:126
+#: en/chapters/upgrade_guide.xml:198 en/chapters/upgrade_guide.xml:283
+msgid "Delete the following files from the package:"
+msgstr "Lösche die folgenden Dateien aus dem Paket:"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:57 en/chapters/upgrade_guide.xml:65
+#: en/chapters/upgrade_guide.xml:128 en/chapters/upgrade_guide.xml:136
+#: en/chapters/upgrade_guide.xml:200 en/chapters/upgrade_guide.xml:208
+msgid "The config.php file"
+msgstr "Die Datei config.php"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:58 en/chapters/upgrade_guide.xml:66
+#: en/chapters/upgrade_guide.xml:130 en/chapters/upgrade_guide.xml:139
+#: en/chapters/upgrade_guide.xml:201 en/chapters/upgrade_guide.xml:210
+msgid "The files/ directory"
+msgstr "Das Verzeichnis files/"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:59 en/chapters/upgrade_guide.xml:67
+#: en/chapters/upgrade_guide.xml:129 en/chapters/upgrade_guide.xml:138
+#: en/chapters/upgrade_guide.xml:202 en/chapters/upgrade_guide.xml:211
+msgid "The images/ directory"
+msgstr "Das Verzeichnis images/"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:60 en/chapters/upgrade_guide.xml:68
+#: en/chapters/upgrade_guide.xml:131 en/chapters/upgrade_guide.xml:140
+#: en/chapters/upgrade_guide.xml:203 en/chapters/upgrade_guide.xml:212
+msgid "The store/ directory"
+msgstr "Das Verzeichnis store/"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:63 en/chapters/upgrade_guide.xml:134
+#: en/chapters/upgrade_guide.xml:206 en/chapters/upgrade_guide.xml:291
+msgid ""
+"On your website, delete all files from your board <emphasis "
+"role=\"bold\">EXCEPT</emphasis> for:"
+msgstr ""
+"Lösche auf deiner Website alle Dateien deines Forums <emphasis "
+"role=\"bold\">AUSSER</emphasis>:"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:71 en/chapters/upgrade_guide.xml:143
+#: en/chapters/upgrade_guide.xml:215
+msgid ""
+"Upload the contents of the phpBB3 directory from your computer to your "
+"forum's directory. You may be prompted to overwrite the remaining "
+"<emphasis>files</emphasis>. If prompted to merge or overwrite "
+"<emphasis>directories</emphasis>, choose to merge them."
+msgstr ""
+"Lade den Inhalt des Verzeichnisses phpBB3 von deinem Computer in das "
+"Verzeichnis deines Forums hoch. Möglicherweise wirst du aufgefordert, die "
+"verbleibenden <emphasis>Dateien</emphasis> zu überschreiben. Wirst du "
+"aufgefordert, <emphasis>Verzeichnisse</emphasis> zusammenzuführen oder zu "
+"überschreiben, wähle das Zusammenführen."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:73 en/chapters/upgrade_guide.xml:145
+#: en/chapters/upgrade_guide.xml:217 en/chapters/upgrade_guide.xml:305
+#: en/chapters/upgrade_guide.xml:366 en/chapters/upgrade_guide.xml:485
+msgid "Update the database:"
+msgstr "Aktualisiere die Datenbank:"
+
+#. (itstool) path: tip/para
+#: en/chapters/upgrade_guide.xml:76 en/chapters/upgrade_guide.xml:148
+#: en/chapters/upgrade_guide.xml:220 en/chapters/upgrade_guide.xml:316
+#: en/chapters/upgrade_guide.xml:377 en/chapters/upgrade_guide.xml:496
+msgid ""
+"For large boards, you may wish to update via the command line instead of "
+"using a web browser. From your board's root, execute the following command: "
+"<code>php ./bin/phpbbcli.php db:migrate --safe-mode</code>"
+msgstr ""
+"Bei großen Foren möchtest du die Aktualisierung möglicherweise über die "
+"Befehlszeile statt über einen Webbrowser durchführen. Führe im "
+"Wurzelverzeichnis deines Forums den folgenden Befehl aus: <code>php "
+"./bin/phpbbcli.php db:migrate --safe-mode</code>"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:78 en/chapters/upgrade_guide.xml:150
+#: en/chapters/upgrade_guide.xml:222
+msgid ""
+"Using your web browser, visit install/ in your board's root. (e.g. "
+"http://www.example.com/yourforum/install)"
+msgstr ""
+"Rufe mit deinem Webbrowser install/ im Wurzelverzeichnis deines Forums auf. "
+"(z. B. http://www.example.com/yourforum/install)"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:79 en/chapters/upgrade_guide.xml:151
+#: en/chapters/upgrade_guide.xml:223 en/chapters/upgrade_guide.xml:434
+msgid "Click the Update tab"
+msgstr "Klicke auf den Reiter Aktualisieren"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:80 en/chapters/upgrade_guide.xml:152
+#: en/chapters/upgrade_guide.xml:224
+msgid "Click the Update button"
+msgstr "Klicke auf die Schaltfläche Aktualisieren"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:81 en/chapters/upgrade_guide.xml:153
+#: en/chapters/upgrade_guide.xml:225 en/chapters/upgrade_guide.xml:322
+#: en/chapters/upgrade_guide.xml:383 en/chapters/upgrade_guide.xml:502
+msgid "Select \"Update database only\" and click Submit"
+msgstr "Wähle „Nur Datenbank aktualisieren“ und klicke auf Absenden"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:82 en/chapters/upgrade_guide.xml:154
+#: en/chapters/upgrade_guide.xml:226 en/chapters/upgrade_guide.xml:324
+#: en/chapters/upgrade_guide.xml:385 en/chapters/upgrade_guide.xml:504
+msgid ""
+"Wait for the progress bar to reach 100% and for a message indicating that "
+"the update has completed"
+msgstr ""
+"Warte, bis der Fortschrittsbalken 100 % erreicht und eine Meldung anzeigt, "
+"dass die Aktualisierung abgeschlossen ist"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:85 en/chapters/upgrade_guide.xml:157
+#: en/chapters/upgrade_guide.xml:229
+msgid "Delete the install/ directory"
+msgstr "Lösche das Verzeichnis install/"
+
+#. (itstool) path: note/para
+#: en/chapters/upgrade_guide.xml:88 en/chapters/upgrade_guide.xml:160
+#: en/chapters/upgrade_guide.xml:232 en/chapters/upgrade_guide.xml:332
+msgid ""
+"Ensure that the root level <emphasis>.htaccess</emphasis> file is included "
+"in the upload. Some FTP clients do not show files whose names start with a "
+"period and you may need to enable the display of hidden files."
+msgstr ""
+"Stelle sicher, dass die Datei <emphasis>.htaccess</emphasis> auf oberster "
+"Ebene beim Hochladen enthalten ist. Manche FTP-Clients zeigen Dateien, deren"
+" Namen mit einem Punkt beginnen, standardmäßig nicht an; möglicherweise "
+"musst du die Anzeige versteckter Dateien aktivieren."
+
+#. (itstool) path: note/para
+#: en/chapters/upgrade_guide.xml:91 en/chapters/upgrade_guide.xml:163
+#: en/chapters/upgrade_guide.xml:235
+msgid ""
+"If your board made use of language packs other than British English, you "
+"will need to download a version that is compatible with phpBB 3.3 from "
+"<ulink "
+"url=\"https://www.phpbb.com/languages/\">https://www.phpbb.com/languages/</ulink>"
+msgstr ""
+"Wenn dein Forum andere Sprachpakete als britisches Englisch verwendet hat, "
+"musst du eine mit phpBB 3.3 kompatible Version von <ulink "
+"url=\"https://www.phpbb.com/languages/\">https://www.phpbb.com/languages/</ulink>"
+" herunterladen"
+
+#. (itstool) path: important/para
+#: en/chapters/upgrade_guide.xml:94 en/chapters/upgrade_guide.xml:166
+#: en/chapters/upgrade_guide.xml:238
+msgid ""
+"When uploading the 3.3 files to your server, do <emphasis "
+"role=\"bold\">NOT</emphasis> overwrite your config.php."
+msgstr ""
+"Überschreibe beim Hochladen der 3.3-Dateien auf deinen Server <emphasis "
+"role=\"bold\">NICHT</emphasis> deine config.php."
+
+#. (itstool) path: important/para
+#: en/chapters/upgrade_guide.xml:97 en/chapters/upgrade_guide.xml:169
+#: en/chapters/upgrade_guide.xml:241
+msgid ""
+"When backing up your files, ensure that your FTP client is in binary mode or"
+" transfers files without extensions in binary mode."
+msgstr ""
+"Stelle beim Sichern deiner Dateien sicher, dass sich dein FTP-Client im "
+"Binärmodus befindet oder Dateien ohne Erweiterung im Binärmodus überträgt."
+
+#. (itstool) path: important/para
+#: en/chapters/upgrade_guide.xml:98 en/chapters/upgrade_guide.xml:170
+#: en/chapters/upgrade_guide.xml:242 en/chapters/upgrade_guide.xml:336
+msgid ""
+"For more information, see: <ulink "
+"url=\"https://www.phpbb.com/support/docs/en/3.0/kb/article/transferring-"
+"attachment-files-with-filezilla/\">Knowledge Base: Transferring attachment "
+"files with Filezilla</ulink>"
+msgstr ""
+"Weitere Informationen finden du unter: <ulink "
+"url=\"https://www.phpbb.com/support/docs/en/3.0/kb/article/transferring-"
+"attachment-files-with-filezilla/\">Wissensdatenbank: Übertragen von "
+"Anhangsdateien mit Filezilla</ulink>"
+
+#. (itstool) path: section/title
+#: en/chapters/upgrade_guide.xml:110
+msgid "Upgrading from 3.1 to 3.3"
+msgstr "Aktualisierung von 3.1 auf 3.3"
+
+#. (itstool) path: warning/para
+#: en/chapters/upgrade_guide.xml:112
+msgid ""
+"Upgrading to phpBB 3.3 may cause some extensions to no longer work. All "
+"styles will need to be updated, even if they give the appearance of working."
+" If you have a custom logo, it will need to be redone after the upgrade. See"
+" <ulink url=\"https://www.phpbb.com/support/docs/en/3.3/kb/article/how-to-"
+"change-your-board-logo/\">Knowledge Base: How to Change your Board "
+"Logo</ulink>."
+msgstr ""
+"Die Aktualisierung auf phpBB 3.3 kann dazu führen, dass manche Erweiterungen"
+" nicht mehr funktionieren. Alle Stile müssen aktualisiert werden, selbst "
+"wenn sie den Anschein erwecken, zu funktionieren. Wenn du ein eigenes Logo "
+"verwendest, muss dieses nach der Aktualisierung neu eingerichtet werden. "
+"Siehe <ulink url=\"https://www.phpbb.com/support/docs/en/3.3/kb/article/how-"
+"to-change-your-board-logo/\">Wissensdatenbank: Ändern des "
+"Forenlogos</ulink>."
+
+#. (itstool) path: section/para
+#: en/chapters/upgrade_guide.xml:115
+msgid ""
+"phpBB 3.3 is not completely backwards compatible with 3.1 and custom edits "
+"may no longer work. The easiest upgrade method is to remove all existing "
+"files prior to upgrading and re-applying custom changes after verifying "
+"their correctness."
+msgstr ""
+"phpBB 3.3 ist nicht vollständig abwärtskompatibel mit 3.1, und "
+"benutzerdefinierte Anpassungen funktionieren möglicherweise nicht mehr. Die "
+"einfachste Aktualisierungsmethode besteht darin, alle vorhandenen Dateien "
+"vor der Aktualisierung zu entfernen und benutzerdefinierte Änderungen nach "
+"Überprüfung ihrer Korrektheit erneut anzuwenden."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:122 en/chapters/upgrade_guide.xml:194
+msgid ""
+"Deactivate any extensions which are not compatible with phpBB 3.3. Check "
+"with the extension author to find out if an extension is compatible or not."
+msgstr ""
+"Deaktiviere alle Erweiterungen, die nicht mit phpBB 3.3 kompatibel sind. "
+"Erkundige dich beim Autor der Erweiterung, ob eine Erweiterung kompatibel "
+"ist oder nicht."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:137 en/chapters/upgrade_guide.xml:209
+msgid "The ext/ directory"
+msgstr "Dem Verzeichnis ext/"
+
+#. (itstool) path: authorgroup/author
+#: en/chapters/upgrade_guide.xml:177
+msgid "<othername>Marc</othername>"
+msgstr "<othername>Marc</othername>"
+
+#. (itstool) path: section/title
+#: en/chapters/upgrade_guide.xml:182
+msgid "Upgrading from 3.2 to 3.3"
+msgstr "Aktualisierung von 3.2 auf 3.3"
+
+#. (itstool) path: warning/para
+#: en/chapters/upgrade_guide.xml:184
+msgid ""
+"Upgrading to phpBB 3.3 may cause some styles and extensions to no longer "
+"work. If you have a custom logo, it might need to be redone after the "
+"upgrade. See <ulink "
+"url=\"https://www.phpbb.com/support/docs/en/3.3/kb/article/how-to-change-"
+"your-board-logo/\">Knowledge Base: How to Change your Board Logo</ulink>."
+msgstr ""
+"Die Aktualisierung auf phpBB 3.3 kann dazu führen, dass manche Stile und "
+"Erweiterungen nicht mehr funktionieren. Wenn du ein eigenes Logo verwendest,"
+" muss dieses möglicherweise nach der Aktualisierung neu eingerichtet werden."
+" Siehe <ulink "
+"url=\"https://www.phpbb.com/support/docs/en/3.3/kb/article/how-to-change-"
+"your-board-logo/\">Wissensdatenbank: Ändern des Forenlogos</ulink>."
+
+#. (itstool) path: section/para
+#: en/chapters/upgrade_guide.xml:187
+msgid ""
+"phpBB 3.3 should be backwards compatible with 3.2, however some extensions "
+"and custom edits may no longer work. The easiest upgrade method is to remove"
+" all existing files prior to upgrading and re-applying custom changes after "
+"verifying their correctness."
+msgstr ""
+"phpBB 3.3 sollte abwärtskompatibel mit 3.2 sein, allerdings funktionieren "
+"manche Erweiterungen und benutzerdefinierten Anpassungen möglicherweise "
+"nicht mehr. Die einfachste Aktualisierungsmethode besteht darin, alle "
+"vorhandenen Dateien vor der Aktualisierung zu entfernen und "
+"benutzerdefinierte Änderungen nach Überprüfung ihrer Korrektheit erneut "
+"anzuwenden."
+
+#. (itstool) path: section/title
+#: en/chapters/upgrade_guide.xml:254
+msgid "Minor Updates Within 3.3.x"
+msgstr "Kleinere Aktualisierungen innerhalb von 3.3.x"
+
+#. (itstool) path: note/para
+#: en/chapters/upgrade_guide.xml:256
+msgid ""
+"phpBB aims to be backwards compatible within minor releases, but if you are "
+"using extensions, language packs, or custom styles, you should check them "
+"for updates prior to updating phpBB."
+msgstr ""
+"phpBB strebt Abwärtskompatibilität innerhalb von Nebenversionen an, aber "
+"wenn du Erweiterungen, Sprachpakete oder benutzerdefinierte Stile verwenden,"
+" solltest du diese vor der Aktualisierung von phpBB auf Updates überprüfen."
+
+#. (itstool) path: section/para
+#: en/chapters/upgrade_guide.xml:259
+msgid ""
+"There are several update paths available depending on the types of edits you"
+" have made to your board:"
+msgstr ""
+"Es stehen mehrere Aktualisierungswege zur Verfügung, abhängig von der Art "
+"der Änderungen, die du an deinem Forum vorgenommen hast:"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:261
+msgid ""
+"If you have made no modifications to core files, this is the easiest "
+"approach."
+msgstr ""
+"Wenn du keine Änderungen an Kerndateien vorgenommen hast, ist dies der "
+"einfachste Ansatz."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:262
+msgid ""
+"If you wish to only update the files that have changed between two releases,"
+" use this approach."
+msgstr ""
+"Wenn du nur die zwischen zwei Versionen geänderten Dateien aktualisieren "
+"möchtest, verwende diesen Ansatz."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:263
+msgid ""
+"If you have made modifications to core files and do not want to manually re-"
+"apply them, use this approach."
+msgstr ""
+"Wenn du Änderungen an Kerndateien vorgenommen hast und diese nicht manuell "
+"erneut anwenden möchtest, verwende diesen Ansatz."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:264
+msgid ""
+"For those comfortable using the <command>patch</command> utility, patch "
+"files are available."
+msgstr ""
+"Für alle, die mit dem Werkzeug <command>patch</command> vertraut sind, "
+"stehen Patch-Dateien zur Verfügung."
+
+#. (itstool) path: section/title
+#: en/chapters/upgrade_guide.xml:276
+msgid "Full Package"
+msgstr "Vollständiges Paket"
+
+#. (itstool) path: section/para
+#: en/chapters/upgrade_guide.xml:277
+msgid ""
+"This update method will remove most existing files and then put the new ones"
+" in place."
+msgstr ""
+"Diese Aktualisierungsmethode entfernt die meisten vorhandenen Dateien und "
+"setzen anschließend die neuen an ihre Stelle."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:281
+msgid ""
+"Download the phpBB 3.3 <ulink "
+"url=\"https://www.phpbb.com/downloads/3.3/install\">Full Package</ulink> "
+"archive"
+msgstr ""
+"Lade das <ulink "
+"url=\"https://www.phpbb.com/downloads/3.3/install\">vollständige "
+"Paket</ulink> von phpBB 3.3 herunter"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:282
+msgid ""
+"Extract the contents of the archive to your computer and open the <filename "
+"class=\"directory\">phpBB3</filename> directory"
+msgstr ""
+"Entpacke den Inhalt des Archivs auf deinen Computer und öffne das "
+"Verzeichnis <filename class=\"directory\">phpBB3</filename>"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:285 en/chapters/upgrade_guide.xml:293
+msgid "The <filename>config.php</filename> file"
+msgstr "Die Datei <filename>config.php</filename>"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:286 en/chapters/upgrade_guide.xml:295
+msgid "The <filename class=\"directory\">files/</filename> directory"
+msgstr "Das Verzeichnis <filename class=\"directory\">files/</filename>"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:287 en/chapters/upgrade_guide.xml:296
+msgid "The <filename class=\"directory\">images/</filename> directory"
+msgstr "Das Verzeichnis <filename class=\"directory\">images/</filename>"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:288 en/chapters/upgrade_guide.xml:297
+msgid "The <filename class=\"directory\">store/</filename> directory"
+msgstr "Das Verzeichnis <filename class=\"directory\">store/</filename>"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:294
+msgid "The <filename class=\"directory\">ext/</filename> directory"
+msgstr "Das Verzeichnis <filename class=\"directory\">ext/</filename>"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:298
+msgid "The <filename class=\"directory\">styles/</filename> directory"
+msgstr "Das Verzeichnis <filename class=\"directory\">styles/</filename>"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:302
+msgid ""
+"Upload the contents of the <filename class=\"directory\">phpBB3</filename> "
+"directory from your computer to your forum's directory. You may be prompted "
+"to overwrite the remaining <emphasis>files</emphasis>. If prompted to merge "
+"or overwrite <emphasis>directories</emphasis>, choose to merge them."
+msgstr ""
+"Lade den Inhalt des Verzeichnisses <filename "
+"class=\"directory\">phpBB3</filename> von deinem Computer in das Verzeichnis"
+" deines Forums hoch. Möglicherweise wirst du aufgefordert, die verbleibenden"
+" <emphasis>Dateien</emphasis> zu überschreiben. Wirst du aufgefordert, "
+"<emphasis>Verzeichnisse</emphasis> zusammenzuführen oder zu überschreiben, "
+"wähle das Zusammenführen."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:303
+msgid ""
+"The <filename class=\"directory\">docs/</filename> folder is for your "
+"personal use and it is not necessary to upload it to your forum."
+msgstr ""
+"Der Ordner <filename class=\"directory\">docs/</filename> ist für deinen "
+"persönlichen Gebrauch bestimmt; es ist nicht notwendig, ihn zu deinem Forum "
+"hochzuladen."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:310 en/chapters/upgrade_guide.xml:371
+#: en/chapters/upgrade_guide.xml:425 en/chapters/upgrade_guide.xml:490
+msgid "<filename>store/install_config.php</filename>"
+msgstr "<filename>store/install_config.php</filename>"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:311 en/chapters/upgrade_guide.xml:372
+#: en/chapters/upgrade_guide.xml:426 en/chapters/upgrade_guide.xml:491
+msgid "<filename>store/io_lock.lock</filename>"
+msgstr "<filename>store/io_lock.lock</filename>"
+
+#. (itstool) path: important/para
+#: en/chapters/upgrade_guide.xml:308 en/chapters/upgrade_guide.xml:369
+#: en/chapters/upgrade_guide.xml:423 en/chapters/upgrade_guide.xml:488
+msgid ""
+"If you have previously attempted to update using a different method, you "
+"will need to remove the following files from the server before updating the "
+"database: <_:itemizedlist-1/>"
+msgstr ""
+"Wenn du zuvor versucht hast, mit einer anderen Methode zu aktualisieren, "
+"musst du die folgenden Dateien vor dem Aktualisieren der Datenbank vom "
+"Server entfernen: <_:itemizedlist-1/>"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:319 en/chapters/upgrade_guide.xml:380
+#: en/chapters/upgrade_guide.xml:499
+msgid ""
+"Using your web browser, visit /install/app.php/update in your board's root "
+"(e.g. http://www.example.com/yourforum/install/app.php/update). You will see"
+" the following warning message: <emphasis role=\"bold\">No valid update "
+"directory was found, please make sure you uploaded the relevant "
+"files.</emphasis> This is expected and not an error."
+msgstr ""
+"Rufe mit deinem Webbrowser /install/app.php/update im Wurzelverzeichnis "
+"deines Forums auf (z. B. "
+"http://www.example.com/yourforum/install/app.php/update). Du siehst die "
+"folgende Warnmeldung: <emphasis role=\"bold\">No valid update directory was "
+"found, please make sure you uploaded the relevant files.</emphasis> Dies ist"
+" zu erwarten und kein Fehler."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:325 en/chapters/upgrade_guide.xml:386
+#: en/chapters/upgrade_guide.xml:505
+msgid ""
+"Depending on your previous version this will make a number of database "
+"changes. You may receive FAILURES during this procedure. They should not be "
+"a cause for concern unless you see an actual ERROR, in which case the script"
+" will stop (in this case you should seek help via our forums)."
+msgstr ""
+"Je nach deiner vorherigen Version werden dabei eine Reihe von "
+"Datenbankänderungen vorgenommen. Möglicherweise erhältst du während dieses "
+"Vorgangs FAILURES (Fehlschläge). Diese sollten kein Grund zur Sorge sein, es"
+" sei denn, du siehst einen tatsächlichen ERROR (Fehler), in welchem Fall das"
+" Skript anhält (in diesem Fall solltest du über unsere Foren Hilfe suchen)."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:329 en/chapters/upgrade_guide.xml:390
+#: en/chapters/upgrade_guide.xml:451 en/chapters/upgrade_guide.xml:509
+msgid ""
+"Delete the <filename class=\"directory\">install/</filename> directory on "
+"the server"
+msgstr ""
+"Lösche das Verzeichnis <filename class=\"directory\">install/</filename> auf"
+" dem Server"
+
+#. (itstool) path: important/para
+#: en/chapters/upgrade_guide.xml:335
+msgid ""
+"When backing up your files via FTP, ensure that the client is in binary "
+"mode. If using Filezilla, ensure that the \"transfer files without "
+"extensions\" setting is set to \"binary mode\"."
+msgstr ""
+"Stelle beim Sichern deiner Dateien per FTP sicher, dass sich der Client im "
+"Binärmodus befindet. Wenn du Filezilla verwendest, stelle sicher, dass die "
+"Einstellung „Dateien ohne Erweiterung übertragen“ auf „Binärmodus“ gesetzt "
+"ist."
+
+#. (itstool) path: section/title
+#: en/chapters/upgrade_guide.xml:348
+msgid "Changed Files"
+msgstr "Geänderte Dateien"
+
+#. (itstool) path: section/para
+#: en/chapters/upgrade_guide.xml:349
+msgid ""
+"This method is meant for those wanting to only replace the files that were "
+"changed between a previous version and the latest version."
+msgstr ""
+"Diese Methode ist für alle gedacht, die nur die zwischen einer vorherigen "
+"Version und der neuesten Version geänderten Dateien ersetzen möchten."
+
+#. (itstool) path: section/para
+#: en/chapters/upgrade_guide.xml:350
+msgid ""
+"This package contains a number of sub-archives, each contains the files "
+"changed from a given release to the latest version. You should select the "
+"appropriate archive for your current version, e.g. if you currently have "
+"3.3.0 and are updating to 3.3.1, you should select the "
+"phpBB-3.3.0_to_3.3.1.zip/tar.bz2 sub-archive."
+msgstr ""
+"Dieses Paket enthält eine Reihe von Unterarchiven, von denen jedes die "
+"Dateien enthält, die von einer bestimmten Version zur neuesten Version "
+"geändert wurden. Du solltest das passende Archiv für deine aktuelle Version "
+"auswählen, z. B. solltest du, wenn du derzeit 3.3.0 verwenden und auf 3.3.1 "
+"aktualisierst, das Unterarchiv phpBB-3.3.0_to_3.3.1.zip/tar.bz2 auswählen."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:354 en/chapters/upgrade_guide.xml:410
+#: en/chapters/upgrade_guide.xml:469
+msgid "Locally, perform for the following steps:"
+msgstr "Führe lokal die folgenden Schritte aus:"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:356
+msgid ""
+"Download the phpBB 3.3 <ulink "
+"url=\"https://www.phpbb.com/downloads/3.3/changedfiles\">Changed "
+"Files</ulink> archive"
+msgstr ""
+"Lade das <ulink "
+"url=\"https://www.phpbb.com/downloads/3.3/changedfiles\">Archiv „Geänderte "
+"Dateien“</ulink> von phpBB 3.3 herunter"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:357 en/chapters/upgrade_guide.xml:413
+#: en/chapters/upgrade_guide.xml:472
+msgid "Extract the <filename class=\"directory\">install/</filename> directory"
+msgstr ""
+"Entpacke das Verzeichnis <filename class=\"directory\">install/</filename>"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:358 en/chapters/upgrade_guide.xml:414
+#: en/chapters/upgrade_guide.xml:473
+msgid "Extract the <filename class=\"directory\">vendor/</filename> directory"
+msgstr "Entpacke das Verzeichnis <filename class=\"directory\">vendor/</filename>"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:359
+msgid "Extract the contents of the desired sub-archive for your version"
+msgstr "Entpacke den Inhalt des gewünschten Unterarchivs für deine Version"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:362 en/chapters/upgrade_guide.xml:417
+#: en/chapters/upgrade_guide.xml:477
+msgid ""
+"On your web server, delete the <filename "
+"class=\"directory\">vendor/</filename> directory"
+msgstr ""
+"Lösche auf deinem Webserver das Verzeichnis <filename "
+"class=\"directory\">vendor/</filename>"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:363 en/chapters/upgrade_guide.xml:418
+#: en/chapters/upgrade_guide.xml:478
+msgid "Upload the <filename class=\"directory\">install/</filename> directory"
+msgstr ""
+"Lade das Verzeichnis <filename class=\"directory\">install/</filename> hoch"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:364 en/chapters/upgrade_guide.xml:419
+#: en/chapters/upgrade_guide.xml:479
+msgid "Upload the <filename class=\"directory\">vendor/</filename> directory"
+msgstr ""
+"Lade das Verzeichnis <filename class=\"directory\">vendor/</filename> hoch"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:365
+msgid "Upload the contents of the selected sub-archive"
+msgstr "Lade den Inhalt des ausgewählten Unterarchivs hoch"
+
+#. (itstool) path: section/title
+#: en/chapters/upgrade_guide.xml:402
+msgid "Advanced Update (Expert users)"
+msgstr "Erweiterte Aktualisierung (für erfahrene Benutzer)"
+
+#. (itstool) path: section/para
+#: en/chapters/upgrade_guide.xml:403
+msgid ""
+"This update method should only be used for installations with modifications "
+"to core phpBB files. If you simply use Extensions or custom Styles and have "
+"not modified core files, please use the Full Package update."
+msgstr ""
+"Diese Aktualisierungsmethode sollte nur für Installationen mit Änderungen an"
+" den Kerndateien von phpBB verwendet werden. Wenn du lediglich Erweiterungen"
+" oder benutzerdefinierte Stile verwendest und keine Kerndateien geändert "
+"hast, verwende bitte die Aktualisierung mit dem vollständigen Paket."
+
+#. (itstool) path: section/para
+#: en/chapters/upgrade_guide.xml:404
+msgid ""
+"This update was renamed from Automatic Update to Advanced Update to more "
+"clearly state that it should only be used by advanced users."
+msgstr ""
+"Diese Aktualisierung wurde von „Automatische Aktualisierung“ in „Erweiterte "
+"Aktualisierung“ umbenannt, um deutlicher zu machen, dass sie nur von "
+"erfahrenen Benutzern verwendet werden sollte."
+
+#. (itstool) path: section/para
+#: en/chapters/upgrade_guide.xml:405
+msgid ""
+"This package detects changed files and merges in changes if needed. Since "
+"this type of update has a potential to cause issues while upgrading, it is "
+"not recommended being used for updates and/or upgrades."
+msgstr ""
+"Dieses Paket erkennt geänderte Dateien und führt bei Bedarf Änderungen "
+"zusammen. Da diese Art der Aktualisierung das Potenzial hat, während der "
+"Aktualisierung Probleme zu verursachen, wird sie für Aktualisierungen "
+"und/oder Upgrades nicht empfohlen."
+
+#. (itstool) path: section/para
+#: en/chapters/upgrade_guide.xml:406
+msgid ""
+"A number of advanced update files are available, and you should choose the "
+"one that corresponds to the version of the board that you are currently "
+"running. For example, if your current version is 3.3.0 and you are updating "
+"to 3.3.1, you need the phpBB-3.3.0_to_3.3.1.zip/tar.bz2 file."
+msgstr ""
+"Es stehen mehrere erweiterte Aktualisierungsdateien zur Verfügung, und du "
+"solltest die auswählen, die der Version des Forums entspricht, das du "
+"derzeit betreibst. Wenn deine aktuelle Version beispielsweise 3.3.0 ist und "
+"du auf 3.3.1 aktualisierst, benötigst du die Datei "
+"phpBB-3.3.0_to_3.3.1.zip/tar.bz2."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:412
+msgid ""
+"Download the phpBB 3.3 <ulink "
+"url=\"https://www.phpbb.com/downloads/3.3/update\">Advanced Update</ulink> "
+"archive"
+msgstr ""
+"Lade das Archiv der <ulink "
+"url=\"https://www.phpbb.com/downloads/3.3/update\">erweiterten "
+"Aktualisierung</ulink> von phpBB 3.3 herunter"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:420
+msgid "Run the updater:"
+msgstr "Führe das Aktualisierungsprogramm aus:"
+
+#. (itstool) path: tip/para
+#: en/chapters/upgrade_guide.xml:431
+msgid ""
+"For large boards, you may wish to update the database via the command line "
+"instead of using a web browser. From your board's root, execute the "
+"following command: <code>php ./bin/phpbbcli.php db:migrate --safe-"
+"mode</code>"
+msgstr ""
+"Bei großen Foren möchtest du die Datenbank möglicherweise über die "
+"Befehlszeile statt über einen Webbrowser aktualisieren. Führe im "
+"Wurzelverzeichnis deines Forums den folgenden Befehl aus: <code>php "
+"./bin/phpbbcli.php db:migrate --safe-mode</code>"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:433
+msgid ""
+"Using your web browser, visit /install in your board's root (e.g. "
+"http://www.example.com/yourforum/install)."
+msgstr ""
+"Rufe mit deinem Webbrowser /install im Wurzelverzeichnis deines Forums auf "
+"(z. B. http://www.example.com/yourforum/install)."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:435
+msgid "Click Update"
+msgstr "Klicke auf Aktualisieren"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:436
+msgid "Select \"Update filesystem and database\" and click Submit"
+msgstr ""
+"Wähle „Dateisystem und Datenbank aktualisieren“ und klicke auf Absenden"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:440
+msgid ""
+"<emphasis role=\"bold\">Download modified files in an archive:</emphasis> "
+"This will generate an archive containing all of the updated files. After "
+"downloading it, you upload its contents to the server."
+msgstr ""
+"<emphasis role=\"bold\">Geänderte Dateien als Archiv "
+"herunterladen:</emphasis> Dadurch wird ein Archiv mit allen aktualisierten "
+"Dateien erzeugt. Nach dem Herunterladen lädst du dessen Inhalt auf den "
+"Server hoch."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:441
+msgid ""
+"<emphasis role=\"bold\">Update files via FTP (Automatic):</emphasis> You "
+"provide FTP credentials and file paths so that the server may FTP the files "
+"in place."
+msgstr ""
+"<emphasis role=\"bold\">Dateien per FTP aktualisieren "
+"(automatisch):</emphasis> Du gibst FTP-Zugangsdaten und Dateipfade an, damit"
+" der Server die Dateien per FTP an ihren Platz übertragen kann."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:442
+msgid ""
+"<emphasis role=\"bold\">Update files via direct access "
+"(Automatic):</emphasis> If the web server has write permissions, the updater"
+" can write the changes directly to the files"
+msgstr ""
+"<emphasis role=\"bold\">Dateien per direktem Zugriff aktualisieren "
+"(automatisch):</emphasis> Wenn der Webserver Schreibrechte besitzt, kann das"
+" Aktualisierungsprogramm die Änderungen direkt in die Dateien schreiben"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:438
+msgid ""
+"Depending on file ownership, there are several options available to perform "
+"this update: <_:itemizedlist-1/>"
+msgstr ""
+"Je nach Dateibesitz stehen mehrere Optionen zur Durchführung dieser "
+"Aktualisierung zur Verfügung: <_:itemizedlist-1/>"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:445
+msgid "If there are conflicts, you will be prompted to resolve them."
+msgstr "Wenn es Konflikte gibt, wirst du aufgefordert, diese zu lösen."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:447
+msgid "Click Update Files"
+msgstr "Klicke auf Dateien aktualisieren"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:448
+msgid "Click \"Continue Update Process\" to update the database"
+msgstr ""
+"Klicke auf „Aktualisierungsvorgang fortsetzen“, um die Datenbank zu "
+"aktualisieren"
+
+#. (itstool) path: section/title
+#: en/chapters/upgrade_guide.xml:463
+msgid "Patch Files"
+msgstr "Patch-Dateien"
+
+#. (itstool) path: section/para
+#: en/chapters/upgrade_guide.xml:464
+msgid ""
+"This method is for advanced users who wish to use a patch/diff style update "
+"process. If you don't know what the <command>patch</command> utility is, "
+"this method is not for you."
+msgstr ""
+"Diese Methode ist für erfahrene Benutzer gedacht, die einen Patch-/Diff-"
+"artigen Aktualisierungsvorgang verwenden möchten. Wenn du nicht weißt, was "
+"das Werkzeug <command>patch</command> ist, ist diese Methode nichts für "
+"dich."
+
+#. (itstool) path: section/para
+#: en/chapters/upgrade_guide.xml:465
+msgid ""
+"A number of patch files are provided and you should choose the one that "
+"corresponds to the version of the board that you are currently running. For "
+"example, if your current version is 3.3.0 and you are updating to 3.3.1, you"
+" need the phpBB-3.3.0_to_3.3.1.patch file."
+msgstr ""
+"Es stehen mehrere Patch-Dateien zur Verfügung, und du solltest die "
+"auswählen, die der Version des Forums entspricht, das du derzeit betreibst. "
+"Wenn deine aktuelle Version beispielsweise 3.3.0 ist und du auf 3.3.1 "
+"aktualisierst, benötigst du die Datei phpBB-3.3.0_to_3.3.1.patch."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:471
+msgid ""
+"Download the phpBB 3.3 <ulink "
+"url=\"https://www.phpbb.com/downloads/3.3/patch\">Patch Files</ulink> "
+"archive"
+msgstr ""
+"Lade das Archiv der <ulink "
+"url=\"https://www.phpbb.com/downloads/3.3/patch\">Patch-Dateien</ulink> von "
+"phpBB 3.3 herunter"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:474
+msgid "Extract the desired patch file for your version"
+msgstr "Entpacke die gewünschte Patch-Datei für deine Version"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:480
+msgid ""
+"Upload the patch file to the parent directory containing the phpBB core "
+"files (i.e. index.php, viewforum.php, etc.). With this done you should run "
+"the following command: <code>patch -cl -d [PHPBB DIRECTORY] -p1 &lt; [PATCH "
+"NAME]</code> (where PHPBB DIRECTORY is the directory name your phpBB "
+"Installation resides in, for example phpBB, and where PATCH NAME is the "
+"relevant filename of the selected patch file). This should complete quickly,"
+" hopefully without any HUNK FAILED comments."
+msgstr ""
+"Lade die Patch-Datei in das übergeordnete Verzeichnis hoch, das die phpBB-"
+"Kerndateien enthält (d. h. index.php, viewforum.php usw.). Führe danach den "
+"folgenden Befehl aus: <code>patch -cl -d [PHPBB-VERZEICHNIS] -p1 &lt; "
+"[PATCH-NAME]</code> (wobei PHPBB-VERZEICHNIS der Verzeichnisname ist, in dem"
+" sich deine phpBB-Installation befindet, zum Beispiel phpBB, und PATCH-NAME "
+"der entsprechende Dateiname der ausgewählten Patch-Datei ist). Dies sollte "
+"schnell abgeschlossen sein, hoffentlich ohne HUNK-FAILED-Meldungen."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:483
+msgid ""
+"If you do get failures, you should look at using the <ulink "
+"url=\"https://area51.phpbb.com/code-changes/\">Code Changes</ulink> page to "
+"update the files which failed to patch. Alternatively, if you know how, you "
+"can examine the .rej files to determine what failed where and make manual "
+"adjustments to the relevant source."
+msgstr ""
+"Falls Fehlschläge auftreten, solltest du die Seite <ulink "
+"url=\"https://area51.phpbb.com/code-changes/\">Code Changes</ulink> nutzen, "
+"um die Dateien zu aktualisieren, deren Patch fehlgeschlagen ist. Alternativ "
+"kannst du, wenn du weißt wie, die .rej-Dateien untersuchen, um "
+"festzustellen, was wo fehlgeschlagen ist, und manuelle Anpassungen am "
+"betreffenden Quelltext vornehmen."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:510
+msgid "Delete the uploaded patch file from the server"
+msgstr "Lösche die hochgeladene Patch-Datei vom Server"
+
+#. (itstool) path: authorgroup/author
+#: en/chapters/upgrade_guide.xml:518 en/chapters/upgrade_guide.xml:532
+#: en/chapters/upgrade_guide.xml:552 en/chapters/upgrade_guide.xml:572
+msgid "<othername>Dicky</othername>"
+msgstr "<othername>Dicky</othername>"
+
+#. (itstool) path: authorgroup/author
+#: en/chapters/upgrade_guide.xml:521 en/chapters/upgrade_guide.xml:535
+#: en/chapters/upgrade_guide.xml:555 en/chapters/upgrade_guide.xml:575
+msgid "<othername>ameeck</othername>"
+msgstr "<othername>ameeck</othername>"
+
+#. (itstool) path: section/title
+#: en/chapters/upgrade_guide.xml:526
+msgid "Upgrading from any board software to phpBB3"
+msgstr "Aktualisierung von jeder anderen Forensoftware zu phpBB3"
+
+#. (itstool) path: note/para
+#: en/chapters/upgrade_guide.xml:528
+msgid ""
+"The convertor will not harm the database of the board software you are "
+"converting from. In case of a problem, your old board software will still be"
+" fully operational."
+msgstr ""
+"Der Konverter beschädigt nicht die Datenbank der Forensoftware, von der aus "
+"du konvertierst. Im Falle eines Problems bleibt deine alte Forensoftware "
+"weiterhin voll funktionsfähig."
+
+#. (itstool) path: section/title
+#: en/chapters/upgrade_guide.xml:540
+msgid "Requirements"
+msgstr "Anforderungen"
+
+#. (itstool) path: section/para
+#: en/chapters/upgrade_guide.xml:541
+msgid ""
+"In order for the conversion to be smooth as possible, check and prepare "
+"these items. You will need them to perform a succesful conversion."
+msgstr ""
+"Damit die Konvertierung möglichst reibungslos verläuft, prüfe und bereite "
+"diese Punkte vor. Du benötigst sie, um eine erfolgreiche Konvertierung "
+"durchzuführen."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:543
+msgid ""
+"An installation of phpBB3 has to be present on your server. See <xref "
+"linkend=\"quick_requirements\"/> for more information on how to install "
+"phpBB3."
+msgstr ""
+"Eine phpBB3-Installation muss auf deinem Server vorhanden sein. Weitere "
+"Informationen zur Installation von phpBB3 findest du unter <xref "
+"linkend=\"quick_requirements\"/>."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:544
+msgid ""
+"Prepare the connection details to the database where the old board was "
+"stored. If you are unsure, you can find these details in the config file."
+msgstr ""
+"Bereite die Verbindungsdaten zu der Datenbank vor, in der das alte Forum "
+"gespeichert war. Wenn du dir nicht sicher bist, findest du diese Angaben in "
+"der Konfigurationsdatei."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:545
+msgid ""
+"Make sure the old forum is still installed on your server alongside the "
+"phpBB3 installations. The files of the old board should be kept as is, some "
+"of them will be transferred to phpBB3 (e.g. avatars, attachments, smilies or"
+" ranks)."
+msgstr ""
+"Stelle sicher, dass das alte Forum weiterhin neben der phpBB3-Installation "
+"auf deinem Server installiert ist. Die Dateien des alten Forums sollten "
+"unverändert erhalten bleiben, da einige davon (z. B. Avatare, Anhänge, "
+"Smileys oder Ränge) zu phpBB3 übertragen werden."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:546
+msgid ""
+"The files and database need to be on the same server as the phpBB3 "
+"installation and the files need to be in the same domain. If you are using "
+"subdomains, the files need to be in the same subdomain."
+msgstr ""
+"Die Dateien und die Datenbank müssen sich auf demselben Server wie die "
+"phpBB3-Installation befinden, und die Dateien müssen sich in derselben "
+"Domain befinden. Wenn du Subdomains verwendest, müssen sich die Dateien in "
+"derselben Subdomain befinden."
+
+#. (itstool) path: section/title
+#: en/chapters/upgrade_guide.xml:560
+msgid "Preliminary steps"
+msgstr "Vorbereitende Schritte"
+
+#. (itstool) path: section/para
+#: en/chapters/upgrade_guide.xml:561
+msgid ""
+"phpBB3 needs to be installed. Once phpBB3 is installed, do "
+"<emphasis>not</emphasis> delete the <filename "
+"class=\"directory\">install</filename> directory if you will be converting "
+"immediately. If you will be testing and setting up your phpBB3 board prior "
+"to the conversion and converting at a later time, rename the <filename "
+"class=\"directory\">install</filename> directory to something like _install."
+" This will allow you to use your phpBB3 board. You will be needing the "
+"install directory later for the conversion."
+msgstr ""
+"phpBB3 muss installiert sein. Sobald phpBB3 installiert ist, lösche "
+"<emphasis>nicht</emphasis> das Verzeichnis <filename "
+"class=\"directory\">install</filename>, wenn du sofort konvertieren "
+"möchtest. Wenn du dein phpBB3-Forum vor der Konvertierung testen und "
+"einrichten und erst später konvertieren möchtest, benenne das Verzeichnis "
+"<filename class=\"directory\">install</filename> in etwas wie _install um. "
+"Dadurch kannst du dein phpBB3-Forum nutzen. Du benötigst das install-"
+"Verzeichnis später für die Konvertierung."
+
+#. (itstool) path: section/para
+#: en/chapters/upgrade_guide.xml:563
+msgid ""
+"You will need specific convertor files for the board software you are "
+"converting from. The phpBB2 specific convertor files are included with the "
+"phpBB3 installation files. For other board softwares, you will need to get "
+"the convertor files from the appropriate phpBB3 convertor topic. These "
+"topics can be found in the <ulink "
+"url=\"https://www.phpbb.com/community/viewforum.php?f=666\">[3.3.x] "
+"Convertors forum</ulink> on phpBB.com"
+msgstr ""
+"Du benötigst bestimmte Konverterdateien für die Forensoftware, von der aus "
+"du konvertierst. Die spezifischen phpBB2-Konverterdateien sind den "
+"phpBB3-Installationsdateien beigefügt. Für andere Forensoftware musst du die"
+" Konverterdateien aus dem entsprechenden phpBB3-Konverter-Thema beziehen. "
+"Diese Themen findest du im <ulink "
+"url=\"https://www.phpbb.com/community/viewforum.php?f=666\">Forum [3.3.x] "
+"Convertors</ulink> auf phpBB.com"
+
+#. (itstool) path: section/para
+#: en/chapters/upgrade_guide.xml:565
+msgid ""
+"For converting from phpBB2, you only need to point your browser to "
+"{phpBB3_root_directory}/install, click the <guilabel>Convert</guilabel> tab "
+"and follow the instructions. For other board softwares, you will need to "
+"upload the convertor files to the appropriate directories. The convertor "
+"files you get will consist of two or three files, convert_xxx.php, "
+"functions_xxx.php and, optionally, auth_xxx.php. The xxx will generally be "
+"the name of the software you are converting from."
+msgstr ""
+"Um von phpBB2 zu konvertieren, musst du lediglich deinen Browser auf "
+"{phpBB3_root_directory}/install richten, auf den Reiter "
+"<guilabel>Konvertieren</guilabel> klicken und den Anweisungen folgen. Für "
+"andere Forensoftware musst du die Konverterdateien in die entsprechenden "
+"Verzeichnisse hochladen. Die Konverterdateien, die du erhältst, bestehen aus"
+" zwei oder drei Dateien: convert_xxx.php, functions_xxx.php und optional "
+"auth_xxx.php. Das xxx steht im Allgemeinen für den Namen der Software, von "
+"der aus du konvertierst."
+
+#. (itstool) path: section/title
+#: en/chapters/upgrade_guide.xml:580
+msgid "Conversion steps"
+msgstr "Konvertierungsschritte"
+
+#. (itstool) path: section/para
+#: en/chapters/upgrade_guide.xml:581
+msgid "After preparing everything, follow these steps to convert your board:"
+msgstr ""
+"Nachdem du alles vorbereitet hast, folge diesen Schritten, um dein Forum zu "
+"konvertieren:"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:583
+msgid ""
+"Install phpBB3. The old message board and the phpBB3 board need to be "
+"installed on the same server."
+msgstr ""
+"Installiere phpBB3. Das alte Forum und das phpBB3-Forum müssen auf demselben"
+" Server installiert sein."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:584
+msgid ""
+"If you are converting from a board other than phpBB2, upload the convertor "
+"files which you downloaded from the appropriate topic in the <ulink "
+"url=\"https://www.phpbb.com/community/viewforum.php?f=666\">[3.3.x] "
+"Convertors forum</ulink>."
+msgstr ""
+"Wenn du von einer anderen Software als phpBB2 konvertierst, lade die "
+"Konverterdateien hoch, die du aus dem entsprechenden Thema im <ulink "
+"url=\"https://www.phpbb.com/community/viewforum.php?f=666\">Forum [3.3.x] "
+"Convertors</ulink> heruntergeladen hast."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:585
+msgid ""
+"Point your browser to {phpbb_root_directory}/install, click the "
+"<guilabel>Convert</guilabel> tab and select the appropriate convertor from "
+"the list of available convertors."
+msgstr ""
+"Richte deinen Browser auf {phpbb_root_directory}/install, klicke auf den "
+"Reiter <guilabel>Konvertieren</guilabel> und wähle den passenden Konverter "
+"aus der Liste der verfügbaren Konverter aus."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:586
+msgid ""
+"Next you will be asked for database information. The database information "
+"you are being asked for, is for the database that holds the tables for the "
+"board software you are converting from. You will be presented with an option"
+" for <guilabel>Refresh page to continue conversion</guilabel> The default is"
+" set to <guilabel>Yes</guilabel>. Normally, you will want to leave it at "
+"<guilabel>Yes</guilabel>. The <guilabel>No</guilabel> option is mainly for "
+"test purposes."
+msgstr ""
+"Als Nächstes wirst du nach Datenbankinformationen gefragt. Die abgefragten "
+"Datenbankinformationen betreffen die Datenbank, die die Tabellen der "
+"Forensoftware enthält, von der aus du konvertierst. Du erhältst die Option "
+"<guilabel>Seite aktualisieren, um Konvertierung fortzusetzen</guilabel>. "
+"Standardmäßig ist diese auf <guilabel>Ja</guilabel> gesetzt. Normalerweise "
+"solltest du sie auf <guilabel>Ja</guilabel> belassen. Die Option "
+"<guilabel>Nein</guilabel> ist hauptsächlich für Testzwecke gedacht."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:587
+msgid ""
+"After entering the database information and pressing the <guilabel>Begin "
+"conversion</guilabel> button, the convertor will verify that you have "
+"entered the correct information. If the information is confirmed, you will "
+"have another <guilabel>Begin Conversion</guilabel> button."
+msgstr ""
+"Nachdem du die Datenbankinformationen eingegeben und die Schaltfläche "
+"<guilabel>Konvertieren</guilabel> gedrückt hast, überprüft der Konverter, ob"
+" du die richtigen Informationen eingegeben hast. Sind die Informationen "
+"bestätigt, erhältst du eine weitere Schaltfläche "
+"<guilabel>Konvertieren</guilabel>."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:588
+msgid ""
+"After you click the <guilabel>Begin Conversion</guilabel> button, the "
+"convertor will check the convertor files. If everything is okay, you will be"
+" presented with a <guilabel>Continue Conversion</guilabel> button."
+msgstr ""
+"Nachdem du auf die Schaltfläche <guilabel>Konvertieren</guilabel> geklickt "
+"hast, überprüft der Konverter die Konverterdateien. Ist alles in Ordnung, "
+"wird dir eine Schaltfläche <guilabel>Konvertierung fortsetzen</guilabel> "
+"angezeigt."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:590
+msgid ""
+"The convertor will now proceed to convert your old board. Pages will be "
+"displayed informing you about the progress of the conversion."
+msgstr ""
+"Der Konverter fährt nun mit der Konvertierung deines alten Forums fort. Es "
+"werden Seiten angezeigt, die dich über den Fortschritt der Konvertierung "
+"informieren."
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:591
+msgid ""
+"When the convertor is finished, you will see a message that the Search Index"
+" has not been converted. You must go into the Administration Control Panel "
+"and build the <guilabel>Search Index</guilabel>. In the "
+"<acronym>ACP</acronym>, click the <guilabel>Maintenance</guilabel> tab and "
+"select <guilabel>Search Index</guilabel> from the submenu. The default "
+"search backend index is <guilabel>Fulltext native</guilabel> and will be "
+"marked active. This is normally the index that you want to use to create "
+"your search index. For more information about search indexing, see <xref "
+"linkend=\"acp_maintenance_search\"/>"
+msgstr ""
+"Wenn der Konverter fertig ist, siehst du eine Meldung, dass der Suchindex "
+"nicht konvertiert wurde. Du musst in den Administrations-Bereich gehen und "
+"die <guilabel>Such-Indizes</guilabel> aufbauen. Klicke im "
+"<acronym>ACP</acronym> auf den Reiter <guilabel>Wartung</guilabel> und wähle"
+" <guilabel>Such-Indizes</guilabel> aus dem Untermenü. Der standardmäßige "
+"Such-Backend-Index ist <guilabel>Fulltext native</guilabel> und wird als "
+"aktiv markiert sein. Dies ist normalerweise der Index, den du zum Erstellen "
+"deines Suchindex verwenden möchtest. Weitere Informationen zur "
+"Suchindexierung findest du unter <xref linkend=\"acp_maintenance_search\"/>"
+
+#. (itstool) path: listitem/para
+#: en/chapters/upgrade_guide.xml:592
+msgid ""
+"You should now check your phpBB3 board for proper operation, that "
+"permissions are set correctly and forums &amp; posts are displaying "
+"correctly. Also make sure files got copied from the old location, for "
+"example avatars and smilies and attachments (if you have them.)"
+msgstr ""
+"Du solltest nun dein phpBB3-Forum auf ordnungsgemäßen Betrieb überprüfen, "
+"sicherstellen, dass die Berechtigungen korrekt gesetzt sind und Foren &amp; "
+"Beiträge korrekt angezeigt werden. Stelle außerdem sicher, dass Dateien vom "
+"alten Speicherort kopiert wurden, zum Beispiel Avatare, Smileys und Anhänge "
+"(sofern vorhanden)."

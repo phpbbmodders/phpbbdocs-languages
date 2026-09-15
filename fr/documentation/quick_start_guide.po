@@ -1,0 +1,1965 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-09-15 01:22-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr ""
+
+#. (itstool) path: chapterinfo/releaseinfo
+#: en/chapters/quick_start_guide.xml:5
+msgid "$Id$"
+msgstr ""
+
+#. (itstool) path: chapterinfo/copyright
+#: en/chapters/quick_start_guide.xml:6
+msgid "<year>2006</year> <holder>phpBB Group</holder>"
+msgstr ""
+
+#. (itstool) path: chapter/title
+#: en/chapters/quick_start_guide.xml:11
+msgid "Quick Start Guide"
+msgstr "Guide de démarrage rapide"
+
+#. (itstool) path: abstract/para
+#: en/chapters/quick_start_guide.xml:13
+msgid ""
+"A quick guide through the first steps of installing and configuring up your "
+"very own phpBB 3.3 forum."
+msgstr ""
+
+#. (itstool) path: authorgroup/author
+#: en/chapters/quick_start_guide.xml:18
+msgid "<othername>Graham</othername>"
+msgstr "<othername>Graham</othername>"
+
+#. (itstool) path: section/title
+#: en/chapters/quick_start_guide.xml:23 en/chapters/quick_start_guide.xml:122
+msgid "Requirements"
+msgstr "Prérequis"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:24
+msgid ""
+"phpBB has a few requirements which must be met before you are able to "
+"install and use it. In this section, these requirements are explained."
+msgstr ""
+"phpBB a quelques prérequis qui doivent être satisfaits avant de pouvoir "
+"l'installer et l'utiliser. Cette section explique ces prérequis."
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:27
+msgid ""
+"A webserver or web hosting account running on any major Operating System "
+"with support for PHP"
+msgstr ""
+"Un serveur web ou un compte d'hébergement web fonctionnant sur n'importe "
+"quel système d'exploitation majeur avec prise en charge de PHP"
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:30
+msgid "A SQL database system, one of:"
+msgstr "Un système de base de données SQL, parmi les suivants :"
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:33
+msgid "MySQL 4.1.3 or above (MySQLi required)"
+msgstr "MySQL 4.1.3 ou supérieur (MySQLi requis)"
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:36
+msgid "MariaDB 5.1 or above"
+msgstr "MariaDB 5.1 ou supérieur"
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:39
+msgid "MS SQL Server 2000 or above (via ODBC or the native adapter)"
+msgstr "MS SQL Server 2000 ou supérieur (via ODBC ou l'adaptateur natif)"
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:42
+msgid "Oracle"
+msgstr "Oracle"
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:45
+msgid "PostgreSQL 8.3+"
+msgstr "PostgreSQL 8.3+"
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:48
+msgid "SQLite 3.6.15+"
+msgstr "SQLite 3.6.15+"
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:53
+msgid ""
+"PHP 7.2.0+ up to and including PHP 8.3 with support for the database you "
+"intend to use."
+msgstr ""
+"PHP 7.2.0+ jusqu'à PHP 8.3 inclus, avec prise en charge de la base de "
+"données que vous prévoyez d'utiliser."
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:56
+msgid "getimagesize() function enabled"
+msgstr "La fonction getimagesize() activée"
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:59
+msgid "The following PHP modules are required:"
+msgstr "Les modules PHP suivants sont requis :"
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:62
+msgid "json"
+msgstr "json"
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:65
+msgid "mbstring"
+msgstr "mbstring"
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:68
+msgid "XML support"
+msgstr "Prise en charge XML"
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:71
+msgid "Corresponding PHP module for the database system you intend to use"
+msgstr ""
+"Le module PHP correspondant au système de base de données que vous prévoyez "
+"d'utiliser"
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:76
+msgid ""
+"The following PHP modules are optional, but will provide access to "
+"additional features."
+msgstr ""
+"Les modules PHP suivants sont facultatifs, mais donneront accès à des "
+"fonctionnalités supplémentaires."
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:79
+msgid "zlib Compression support"
+msgstr "Prise en charge de la compression zlib"
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:82
+msgid "Remote FTP support"
+msgstr "Prise en charge du FTP distant"
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:85
+msgid "GD support"
+msgstr "Prise en charge de GD"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:90
+msgid ""
+"The presence of each of these required features will be checked during the "
+"installation process, explained in <xref linkend=\"quick_installation\"/>."
+msgstr ""
+"La présence de chacune de ces fonctionnalités requises sera vérifiée au "
+"cours du processus d'installation, expliqué dans <xref "
+"linkend=\"quick_installation\"/>."
+
+#. (itstool) path: authorgroup/author
+#: en/chapters/quick_start_guide.xml:95 en/chapters/quick_start_guide.xml:299
+msgid "<othername>dhn</othername>"
+msgstr "<othername>dhn</othername>"
+
+#. (itstool) path: section/title
+#: en/chapters/quick_start_guide.xml:100
+msgid "Installation"
+msgstr "Installation"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:101
+msgid ""
+"phpBB 3.3 Proteus has an easy to use installation system that will guide you"
+" through the installation process."
+msgstr ""
+"phpBB 3.3 Proteus dispose d'un système d'installation facile à utiliser qui "
+"vous guidera tout au long du processus d'installation."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:102
+msgid ""
+"After you have decompressed the phpBB3 archive and uploaded the files to the"
+" location where you want it to be installed, you need to enter the "
+"<acronym>URL</acronym> into your browser to open the installation screen. "
+"The first time you point your browser to the <acronym>URL</acronym> "
+"(<uri>http://www.example.com/phpBB3</uri> for instance), phpBB will detect "
+"that it is not yet installed and automatically redirect you to the "
+"installation screen."
+msgstr ""
+"Après avoir décompressé l'archive phpBB3 et téléversé les fichiers à "
+"l'emplacement où vous souhaitez l'installer, vous devez saisir "
+"l'<acronym>URL</acronym> dans votre navigateur pour ouvrir l'écran "
+"d'installation. La première fois que vous pointez votre navigateur vers "
+"l'<acronym>URL</acronym> (<uri>http://www.example.com/phpBB3</uri> par "
+"exemple), phpBB détectera qu'il n'est pas encore installé et vous redirigera"
+" automatiquement vers l'écran d'installation."
+
+#. (itstool) path: figure/title
+#. (itstool) path: section/title
+#: en/chapters/quick_start_guide.xml:104 en/chapters/quick_start_guide.xml:118
+msgid "Introduction"
+msgstr "Introduction"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: en/chapters/quick_start_guide.xml:107
+msgctxt "_"
+msgid ""
+"external ref='../images/quick_start_guide/installation_intro.png' "
+"md5='41ba5f5862f602b1ea4d5f3d408ac7dc'"
+msgstr ""
+"external ref='../images/quick_start_guide/installation_intro.png' "
+"md5='41ba5f5862f602b1ea4d5f3d408ac7dc'"
+
+#. (itstool) path: caption/para
+#: en/chapters/quick_start_guide.xml:110
+msgid "The introduction page of the installation system."
+msgstr "La page d'introduction du système d'installation."
+
+#. (itstool) path: important/para
+#: en/chapters/quick_start_guide.xml:115
+msgid ""
+"Make sure the <emphasis>.htaccess</emphasis> file in the root level of the "
+"phpBB3 folder is included in the upload."
+msgstr ""
+"Assurez-vous que le fichier <emphasis>.htaccess</emphasis> situé à la racine"
+" du dossier phpBB3 est bien inclus dans le téléversement."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:119
+msgid ""
+"The installation screen gives you a short introduction into phpBB. It allows"
+" you to read the license phpBB 3.3 is released under (the <ulink "
+"url=\"http://opensource.org/licenses/gpl-2.0.php\">General Public "
+"License</ulink>) and provides information about how you can receive support."
+" To start the installation, click the <guilabel>Install</guilabel> tab (see "
+"<xref linkend=\"img_quick_installation_intro\"/>)."
+msgstr ""
+"L'écran d'installation vous présente une courte introduction à phpBB. Il "
+"vous permet de lire la licence sous laquelle phpBB 3.3 est publié (la <ulink"
+" url=\"http://opensource.org/licenses/gpl-2.0.php\">Licence publique "
+"générale</ulink>) et fournit des informations sur la manière d'obtenir de "
+"l'aide. Pour démarrer l'installation, cliquez sur l'onglet "
+"<guilabel>Installer</guilabel> (voir <xref "
+"linkend=\"img_quick_installation_intro\"/>)."
+
+#. (itstool) path: important/para
+#: en/chapters/quick_start_guide.xml:124
+msgid ""
+"Please read the <link linkend=\"quick_requirements\">section on phpBB3's "
+"requirements</link> to find out more about the phpBB 3.3's minimum "
+"requirements."
+msgstr ""
+"Veuillez lire la <link linkend=\"quick_requirements\">section sur les "
+"prérequis de phpBB3</link> pour en savoir plus sur les prérequis minimaux de"
+" phpBB 3.3."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:126
+msgid ""
+"The requirements list is the first page you will see after starting the "
+"installation if you are missing any necessary PHP extensions or have a "
+"server setting misconfigured. phpBB 3.3 automatically checks if everything "
+"that it needs to run properly is installed on your server. In order to "
+"continue the installation, you will need to have <acronym>PHP</acronym> "
+"installed (the minimum version number is shown on the requirements page), "
+"and at least one database available to continue the installation. It is also"
+" important that all shown folders are available and have the correct "
+"permissions set. Please see the description of each section to find out if "
+"they are optional or required for phpBB 3.3 to run. If everything is in "
+"order, you can continue the installation by clicking the <guilabel>Start "
+"Install</guilabel> button."
+msgstr ""
+"La liste des prérequis est la première page que vous verrez après avoir "
+"démarré l'installation s'il vous manque des extensions PHP nécessaires ou si"
+" un paramètre du serveur est mal configuré. phpBB 3.3 vérifie "
+"automatiquement que tout ce dont il a besoin pour fonctionner correctement "
+"est installé sur votre serveur. Pour poursuivre l'installation, vous devrez "
+"avoir <acronym>PHP</acronym> installé (le numéro de version minimal est "
+"indiqué sur la page des prérequis), ainsi qu'au moins une base de données "
+"disponible. Il est également important que tous les dossiers affichés soient"
+" disponibles et disposent des permissions appropriées. Veuillez consulter la"
+" description de chaque section pour savoir si elle est facultative ou "
+"requise pour le bon fonctionnement de phpBB 3.3. Si tout est en ordre, vous "
+"pouvez poursuivre l'installation en cliquant sur le bouton "
+"<guilabel>Démarrer l'installation</guilabel>."
+
+#. (itstool) path: section/title
+#: en/chapters/quick_start_guide.xml:129
+msgid "Administrator details"
+msgstr "Informations sur l'administrateur"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:130
+msgid ""
+"Now you have to create your administration user. This user will have full "
+"administration access and he will be the first user on your forum."
+msgstr ""
+"Vous devez maintenant créer votre utilisateur administrateur. Cet "
+"utilisateur disposera d'un accès administrateur complet et sera le premier "
+"utilisateur de votre forum."
+
+#. (itstool) path: section/title
+#. (itstool) path: figure/title
+#: en/chapters/quick_start_guide.xml:133 en/chapters/quick_start_guide.xml:157
+msgid "Database settings"
+msgstr "Paramètres de la base de données"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:134
+msgid ""
+"You now have to decide which database to use. See the <link "
+"linkend=\"quick_requirements\">Requirements section</link> for information "
+"on which databases are supported. If you do not know your database settings,"
+" please contact your hosting company and ask for them. You will not be able "
+"to continue without them. You need:"
+msgstr ""
+"Vous devez maintenant décider quelle base de données utiliser. Consultez la "
+"<link linkend=\"quick_requirements\">section Prérequis</link> pour connaître"
+" les bases de données prises en charge. Si vous ne connaissez pas les "
+"paramètres de votre base de données, veuillez contacter votre hébergeur pour"
+" les obtenir. Vous ne pourrez pas continuer sans ces informations. Vous avez"
+" besoin de :"
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:137
+msgid ""
+"The <guilabel>Database Type</guilabel> - the database you will be using "
+"(e.g. MySQL, SQL server, Oracle)"
+msgstr ""
+"Le <guilabel>Type de base de données</guilabel> - la base de données que "
+"vous allez utiliser (par exemple MySQL, SQL Server, Oracle)"
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:140
+msgid ""
+"The <guilabel>Database server hostname or DSN</guilabel> - the address of "
+"the database server."
+msgstr ""
+"Le <guilabel>Nom d'hôte du serveur de votre base de données ou "
+"DSN</guilabel> - l'adresse du serveur de base de données."
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:143
+msgid ""
+"The <guilabel>Database server port</guilabel> - the port of the database "
+"server (most of the time this is not needed)."
+msgstr ""
+"Le <guilabel>Port du serveur de votre base de données</guilabel> - le port "
+"du serveur de base de données (la plupart du temps, ceci n'est pas "
+"nécessaire)."
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:146
+msgid ""
+"The <guilabel>Database name</guilabel>- the name of the database on the "
+"server."
+msgstr ""
+"Le <guilabel>Nom de votre base de données</guilabel> - le nom de la base de "
+"données sur le serveur."
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:149
+msgid ""
+"The <guilabel>Database username</guilabel> and <guilabel>Database "
+"password</guilabel> - the login data to access the database."
+msgstr ""
+"Le <guilabel>Nom d'utilisateur de votre base de données</guilabel> et le "
+"<guilabel>Mot de passe de votre base de données</guilabel> - les "
+"identifiants d'accès à la base de données."
+
+#. (itstool) path: tip/para
+#: en/chapters/quick_start_guide.xml:153
+msgid ""
+"PostgreSQL Users: Use localhost to connect to the local server via UNIX "
+"domain socket and 127.0.0.1 to connect via TCP."
+msgstr ""
+"Utilisateurs de PostgreSQL : utilisez localhost pour vous connecter au "
+"serveur local via un socket de domaine UNIX, et 127.0.0.1 pour vous "
+"connecter via TCP."
+
+#. (itstool) path: tip/para
+#: en/chapters/quick_start_guide.xml:154
+msgid ""
+"SQLite Users: Enter the full path (absolute) to your database file in the "
+"DSN field and leave the username and password fields blank. For security "
+"reasons, you should make sure that the database file is not stored in a "
+"location accessible from the web."
+msgstr ""
+"Utilisateurs de SQLite : saisissez le chemin complet (absolu) vers votre "
+"fichier de base de données dans le champ DSN et laissez les champs nom "
+"d'utilisateur et mot de passe vides. Pour des raisons de sécurité, assurez-"
+"vous que le fichier de base de données n'est pas stocké dans un emplacement "
+"accessible depuis le web."
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: en/chapters/quick_start_guide.xml:160
+msgctxt "_"
+msgid ""
+"external ref='../images/quick_start_guide/installation_database.png' "
+"md5='5fee040a433d04ac71ae377ee8111953'"
+msgstr ""
+"external ref='../images/quick_start_guide/installation_database.png' "
+"md5='5fee040a433d04ac71ae377ee8111953'"
+
+#. (itstool) path: caption/para
+#: en/chapters/quick_start_guide.xml:163
+msgid ""
+"The database settings screen, please make sure to have all the required data"
+" available"
+msgstr ""
+"L'écran des paramètres de la base de données, assurez-vous d'avoir toutes "
+"les informations requises à portée de main"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:167
+msgid ""
+"You don't need to change the <guilabel>Prefix for tables in "
+"database</guilabel> setting, unless you plan on using multiple phpBB "
+"installations on one database. In this case you can use a different prefix "
+"for each installation to make it work."
+msgstr ""
+"Vous n'avez pas besoin de modifier le paramètre <guilabel>Préfixe des tables"
+" de votre base de données</guilabel>, sauf si vous prévoyez d'utiliser "
+"plusieurs installations de phpBB sur une même base de données. Dans ce cas, "
+"vous pouvez utiliser un préfixe différent pour chaque installation afin que "
+"cela fonctionne."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:168
+msgid ""
+"After you have entered your details, you can continue by clicking the "
+"<guilabel>Submit</guilabel> button. Now, phpBB 3.3 will test and verify the "
+"data you entered."
+msgstr ""
+"Après avoir saisi vos informations, vous pouvez continuer en cliquant sur le"
+" bouton <guilabel>Envoyer</guilabel>. phpBB 3.3 va maintenant tester et "
+"vérifier les données que vous avez saisies."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:169
+msgid ""
+"If you see a \"<guilabel>Could not connect to the database</guilabel>\" "
+"error, this means that you didn't enter the database information correctly "
+"and it is not possible for phpBB to connect. Make sure that everything you "
+"entered is in order and try again. Again, if you are unsure about your "
+"database settings, please contact your host."
+msgstr ""
+"Si vous voyez une erreur « <guilabel>Impossible de se connecter à la base de"
+" données</guilabel> », cela signifie que vous n'avez pas saisi correctement "
+"les informations de la base de données et que phpBB ne peut pas s'y "
+"connecter. Assurez-vous que tout ce que vous avez saisi est correct et "
+"réessayez. Là encore, si vous n'êtes pas sûr de vos paramètres de base de "
+"données, veuillez contacter votre hébergeur."
+
+#. (itstool) path: tip/para
+#: en/chapters/quick_start_guide.xml:171
+msgid ""
+"Remember that your database username and password are case sensitive. You "
+"must use the exact one you have set up or been given by your host"
+msgstr ""
+"N'oubliez pas que votre nom d'utilisateur et votre mot de passe de base de "
+"données sont sensibles à la casse. Vous devez utiliser exactement ceux que "
+"vous avez configurés ou qui vous ont été fournis par votre hébergeur"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:173
+msgid ""
+"If you installed another version of phpBB before on the same database with "
+"the same prefix, phpBB will inform you and you just need to enter a "
+"different database prefix."
+msgstr ""
+"Si vous avez déjà installé une autre version de phpBB sur la même base de "
+"données avec le même préfixe, phpBB vous en informera et vous devrez "
+"simplement saisir un préfixe de base de données différent."
+
+#. (itstool) path: section/title
+#: en/chapters/quick_start_guide.xml:176
+msgid "Configuration file"
+msgstr "Fichier de configuration"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:177
+msgid ""
+"In this step, phpBB will automatically try to write the configuration file. "
+"The forum needs the configuration to run properly. It contains all of the "
+"database settings, so without it, phpBB will not be able to access the "
+"database."
+msgstr ""
+"À cette étape, phpBB va automatiquement essayer d'écrire le fichier de "
+"configuration. Le forum a besoin de cette configuration pour fonctionner "
+"correctement. Elle contient tous les paramètres de la base de données, donc "
+"sans elle, phpBB ne pourra pas accéder à la base de données."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:178
+msgid ""
+"Usually, automatically writing the configuration file works fine. But in "
+"some cases it can fail due to wrong file permissions, for instance. In this "
+"case, you need to upload the file manually. phpBB asks you to "
+"<guilabel>download</guilabel> the config.php file and tells you what to do "
+"with it. Please read the instructions carefully. After you have uploaded the"
+" file, click <guilabel>Done</guilabel> to get to the last step. If "
+"<guilabel>Done</guilabel> returns you to the same page as before, and does "
+"not return a success message, you did not upload the file correctly."
+msgstr ""
+"Habituellement, l'écriture automatique du fichier de configuration "
+"fonctionne sans problème. Mais dans certains cas, cela peut échouer, par "
+"exemple en raison de permissions de fichiers incorrectes. Dans ce cas, vous "
+"devez téléverser le fichier manuellement. phpBB vous demande de "
+"<guilabel>Télécharger</guilabel> le fichier config.php et vous indique ce "
+"qu'il faut en faire. Veuillez lire attentivement les instructions. Après "
+"avoir téléversé le fichier, cliquez sur <guilabel>Effectué</guilabel> pour "
+"passer à la dernière étape. Si <guilabel>Effectué</guilabel> vous ramène à "
+"la même page qu'avant, sans afficher de message de réussite, c'est que vous "
+"n'avez pas téléversé le fichier correctement."
+
+#. (itstool) path: section/title
+#: en/chapters/quick_start_guide.xml:181
+msgid "Advanced settings"
+msgstr "Paramètres avancés"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:182
+msgid ""
+"The next several sections allow you to set some more advanced parameters of "
+"the board configuration. They are optional, and you can always change them "
+"later if you wish. So if you are unsure of what these settings mean, ignore "
+"them and proceed to the final step to finish the installation."
+msgstr ""
+"Les sections suivantes vous permettent de définir des paramètres plus "
+"avancés de la configuration du forum. Elles sont facultatives et vous "
+"pourrez toujours les modifier ultérieurement si vous le souhaitez. Donc, si "
+"vous n'êtes pas sûr de la signification de ces paramètres, ignorez-les et "
+"passez à l'étape finale pour terminer l'installation."
+
+#. (itstool) path: section/title
+#: en/chapters/quick_start_guide.xml:185
+msgid "Final Steps"
+msgstr "Dernières étapes"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:186
+msgid ""
+"At the end of the installation, you can set the default language of your "
+"board, a title for your board, and a short description of it. In a vanilla "
+"(basic) phpBB 3.3 installation we only include <guilabel>English "
+"[GB]</guilabel>. You can download further languages from <ulink "
+"url=\"https://www.phpbb.com/languages/\">www.phpbb.com</ulink>, and add them"
+" later."
+msgstr ""
+"À la fin de l'installation, vous pouvez définir la langue par défaut de "
+"votre forum, un titre pour votre forum, ainsi qu'une courte description de "
+"celui-ci. Dans une installation basique (standard) de phpBB 3.3, seul "
+"<guilabel>Anglais [GB]</guilabel> est inclus. Vous pouvez télécharger "
+"d'autres langues depuis <ulink "
+"url=\"https://www.phpbb.com/languages/\">www.phpbb.com</ulink> et les "
+"ajouter par la suite."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:187
+msgid ""
+"After clicking <guilabel>Submit</guilabel>, a progress bar will appear and "
+"will be updated with the status of the board installation. Please be patient"
+" as this may take a few moments."
+msgstr ""
+"Après avoir cliqué sur <guilabel>Envoyer</guilabel>, une barre de "
+"progression apparaîtra et sera mise à jour avec l'état de l'installation du "
+"forum. Veuillez patienter, cela peut prendre quelques instants."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:188
+msgid ""
+"If the installation was successful, you can now use the "
+"<guilabel>ACP</guilabel> link to visit the <guilabel>Administration Control "
+"Panel</guilabel>. Congratulations, you have installed phpBB 3.3 "
+"successfully. But there is still a lot of work ahead!"
+msgstr ""
+"Si l'installation a réussi, vous pouvez maintenant utiliser le lien "
+"<guilabel>ACP</guilabel> pour accéder au <guilabel>Panneau de contrôle "
+"d'administration</guilabel>. Félicitations, vous avez installé phpBB 3.3 "
+"avec succès. Mais il reste encore beaucoup de travail à faire !"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:189
+msgid ""
+"If you are unable to get phpBB 3.3 installed even after reading this guide, "
+"please look at the <link linkend=\"quick_support\">support section</link> to"
+" find out where you can ask for further assistance."
+msgstr ""
+"Si vous n'arrivez pas à installer phpBB 3.3 même après avoir lu ce guide, "
+"veuillez consulter la <link linkend=\"quick_support\">section support</link>"
+" pour savoir où obtenir une aide supplémentaire."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:190
+msgid ""
+"At this point if you are upgrading from phpBB 2.0 or phpBB 3.0, you should "
+"refer to the <link linkend=\"upgrade_guide\">upgrade guide</link> for "
+"further information. If not, you should remove the install directory from "
+"your server as you will only be able to access the Administration Control "
+"Panel whilst it is present."
+msgstr ""
+"À ce stade, si vous effectuez une mise à niveau depuis phpBB 2.0 ou phpBB "
+"3.0, vous devriez consulter le <link linkend=\"upgrade_guide\">guide de mise"
+" à niveau</link> pour plus d'informations. Sinon, vous devriez supprimer le "
+"dossier install de votre serveur, car vous ne pourrez accéder au Panneau de "
+"contrôle d'administration que tant qu'il est présent."
+
+#. (itstool) path: section/title
+#: en/chapters/quick_start_guide.xml:193
+msgid "Supporting the phpBB organization"
+msgstr "Soutenir l'organisation phpBB"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:194
+msgid ""
+"When visiting the ACP for the first time after installing phpBB, a screen "
+"will be presented which provides ways for you to assist the phpBB "
+"organization."
+msgstr ""
+"Lors de votre première visite de l'ACP après l'installation de phpBB, un "
+"écran s'affichera pour vous proposer différentes façons d'aider "
+"l'organisation phpBB."
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:197
+msgid ""
+"<guilabel>Send Statistics</guilabel> - Sends us information about your "
+"server, such as PHP version, selected database type, some PHP settings, "
+"etc... All sensitive information has been removed. Clicking the "
+"<guilabel>Show details</guilabel> link shows exactly what information will "
+"be sent. This information helps up make design decisions for future versions"
+" of phpBB."
+msgstr ""
+"<guilabel>Envoyer les statistiques</guilabel> - Nous envoie des informations"
+" sur votre serveur, telles que la version de PHP, le type de base de données"
+" sélectionné, certains paramètres PHP, etc. Toutes les informations "
+"sensibles ont été supprimées. Cliquer sur le lien <guilabel>Afficher les "
+"informations</guilabel> montre exactement quelles informations seront "
+"envoyées. Ces informations nous aident à prendre des décisions de conception"
+" pour les futures versions de phpBB."
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:200
+msgid ""
+"<guilabel>VigLink</guilabel> - This option adds referral codes to certain "
+"links which are posted on your board by your users. When certain actions are"
+" taken on these links (such as purchasing an item from a posted Amazon "
+"link), VigLink receives a commission, of which a share is donated to the "
+"phpBB project. These funds will be used to further the development of phpBB."
+" You can also choose to use your own VigLink account by clicking "
+"<guilabel>Convert account</guilabel> under <guilabel>VigLink "
+"settings</guilabel> in the <guilabel>Board Configuration</guilabel> section "
+"of the Administration Control Panel."
+msgstr ""
+"<guilabel>VigLink</guilabel> - Cette option ajoute des codes de parrainage à"
+" certains liens publiés sur votre forum par vos utilisateurs. Lorsque "
+"certaines actions sont effectuées sur ces liens (comme l'achat d'un article "
+"via un lien Amazon publié), VigLink reçoit une commission, dont une partie "
+"est reversée au projet phpBB. Ces fonds serviront à poursuivre le "
+"développement de phpBB. Vous pouvez également choisir d'utiliser votre "
+"propre compte VigLink en cliquant sur <guilabel>Convertir le "
+"compte</guilabel> sous <guilabel>Paramètres VigLink</guilabel>, dans la "
+"section <guilabel>Configuration du forum</guilabel> du Panneau de contrôle "
+"d'administration."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:203
+msgid ""
+"Both of these actions are optional and will <emphasis "
+"role=\"strong\">not</emphasis> be enabled without your explicit consent. "
+"Clicking away from this page without pressing <guilabel>Submit</guilabel> "
+"will deactivate the options. If you wish to enable or disable these options "
+"at a later time, this can be done through the <guilabel>Help support "
+"phpBB</guilabel> page of the <guilabel>Administration Control "
+"Panel</guilabel> under <guilabel>Server Configuration</guilabel>."
+msgstr ""
+"Ces deux actions sont facultatives et ne seront <emphasis "
+"role=\"strong\">pas</emphasis> activées sans votre consentement explicite. "
+"Quitter cette page sans cliquer sur <guilabel>Envoyer</guilabel> désactivera"
+" les options. Si vous souhaitez activer ou désactiver ces options "
+"ultérieurement, vous pouvez le faire depuis la page <guilabel>Aider et "
+"soutenir phpBB</guilabel> du <guilabel>Panneau de contrôle "
+"d'administration</guilabel>, sous <guilabel>Configuration du "
+"serveur</guilabel>."
+
+#. (itstool) path: authorgroup/author
+#: en/chapters/quick_start_guide.xml:209 en/chapters/quick_start_guide.xml:405
+#: en/chapters/quick_start_guide.xml:458
+msgid "<othername>zeroK</othername>"
+msgstr "<othername>zeroK</othername>"
+
+#. (itstool) path: section/title
+#: en/chapters/quick_start_guide.xml:214
+msgid "General settings"
+msgstr "Paramètres généraux"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:215
+msgid ""
+"In this section you will learn how to change some of the basic settings of "
+"your new board."
+msgstr ""
+"Dans cette section, vous apprendrez à modifier certains des paramètres de "
+"base de votre nouveau forum."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:216
+msgid ""
+"Right after the installation you will be redirected to the so called "
+"\"Administration Control Panel\" (<acronym>ACP</acronym>). You can also "
+"access this panel by clicking the <guilabel>[Administration Control "
+"Panel]</guilabel> link at the bottom of your forum. In this interface you "
+"can change everything about your board."
+msgstr ""
+"Juste après l'installation, vous serez redirigé vers le « Panneau de "
+"contrôle d'administration » (<acronym>ACP</acronym>). Vous pouvez également "
+"accéder à ce panneau en cliquant sur le lien <guilabel>[Panneau de contrôle "
+"d'administration]</guilabel> en bas de votre forum. Cette interface vous "
+"permet de tout modifier concernant votre forum."
+
+#. (itstool) path: section/title
+#. (itstool) path: figure/title
+#: en/chapters/quick_start_guide.xml:218 en/chapters/quick_start_guide.xml:221
+msgid "Board Settings"
+msgstr "Paramètres du forum"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:219
+msgid ""
+"The first section of the <acronym>ACP</acronym> you will probably want to "
+"visit right after the installation is \"Board Settings\". Here you can first"
+" of all change the name (<guilabel>Site name</guilabel>) and description "
+"(<guilabel>Site description</guilabel>) of your board."
+msgstr ""
+"La première section de l'<acronym>ACP</acronym> que vous voudrez "
+"probablement consulter juste après l'installation est « Paramètres du forum "
+"». Vous pouvez y modifier tout d'abord le nom (<guilabel>Nom du "
+"forum</guilabel>) et la description (<guilabel>Description du "
+"forum</guilabel>) de votre forum."
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: en/chapters/quick_start_guide.xml:224
+msgctxt "_"
+msgid ""
+"external ref='../images/quick_start_guide/settings_sitename.png' "
+"md5='15ec87c4e216845e020b9bc56d6031f8'"
+msgstr ""
+"external ref='../images/quick_start_guide/settings_sitename.png' "
+"md5='15ec87c4e216845e020b9bc56d6031f8'"
+
+#. (itstool) path: caption/para
+#: en/chapters/quick_start_guide.xml:227
+msgid "Here you can edit the Site name and Site description of your board."
+msgstr ""
+"Ici, vous pouvez modifier le nom du site et la description du site de votre "
+"forum."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:231
+msgid ""
+"This form also holds the options for changing things like the main site URL "
+"as well as the date format used to render dates/times (<guilabel>Date "
+"format</guilabel>)."
+msgstr ""
+"Ce formulaire contient également les options permettant de modifier des "
+"éléments tels que l'URL principale du site ainsi que le format de date "
+"utilisé pour afficher les dates et heures (<guilabel>Format de la "
+"date</guilabel>)."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:232
+msgid ""
+"There you can also select a new style (after having installed it) for your "
+"board and enforce it on all members ignoring whatever style they've selected"
+" in their \"User Control Panel\". The style will also be used for all forums"
+" where you haven't specified a different one. For details on where to get "
+"new styles and how to install them, please visit the <ulink "
+"url=\"https://www.phpbb.com/styles/\">styles home page</ulink> at <ulink "
+"url=\"https://www.phpbb.com/\">phpbb.com</ulink>."
+msgstr ""
+"Vous pouvez également y sélectionner un nouveau style (après l'avoir "
+"installé) pour votre forum et l'imposer à tous les membres, quel que soit le"
+" style qu'ils ont sélectionné dans leur « Panneau de contrôle utilisateur »."
+" Ce style sera également utilisé pour tous les forums pour lesquels vous "
+"n'en avez pas spécifié un différent. Pour savoir où trouver de nouveaux "
+"styles et comment les installer, veuillez consulter la <ulink "
+"url=\"https://www.phpbb.com/styles/\">page des styles</ulink> sur <ulink "
+"url=\"https://www.phpbb.com/\">phpbb.com</ulink>."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:233
+msgid ""
+"If you want to use your board for a non-English community, this form also "
+"lets you change the default language (<guilabel>Default Language</guilabel>)"
+" (which can be overridden by each user in their UCPs). By default, phpBB3 "
+"only ships with the English language pack. So, before using this field, you "
+"will have to download the language pack for the language you want to use and"
+" install it. For details, please read <link "
+"linkend=\"acp_customise_language\">Language packs</link> ."
+msgstr ""
+"Si vous souhaitez utiliser votre forum pour une communauté non anglophone, "
+"ce formulaire vous permet également de modifier la langue par défaut "
+"(<guilabel>Langue par défaut</guilabel>) (qui peut être remplacée par chaque"
+" utilisateur dans son PCU). Par défaut, phpBB3 n'est fourni qu'avec le pack "
+"de langue anglais. Vous devrez donc, avant d'utiliser ce champ, télécharger "
+"et installer le pack de langue correspondant à la langue que vous souhaitez "
+"utiliser. Pour plus de détails, veuillez lire <link "
+"linkend=\"acp_customise_language\">Packs de langue</link> ."
+
+#. (itstool) path: section/title
+#. (itstool) path: figure/title
+#: en/chapters/quick_start_guide.xml:237 en/chapters/quick_start_guide.xml:240
+msgid "Board Features"
+msgstr "Fonctionnalités du forum"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:238
+msgid ""
+"If you want to enable or disable some of the basic features of your board, "
+"this is the place to go. Here you can allow and disallow for example "
+"username changes (<guilabel>Allow Username changes</guilabel>) or the "
+"creation of attachments (<guilabel>Allow Attachments</guilabel>). You can "
+"even disable <acronym>BBCode</acronym> altogether (<guilabel>Allow "
+"BBCode</guilabel>)."
+msgstr ""
+"Si vous souhaitez activer ou désactiver certaines des fonctionnalités de "
+"base de votre forum, c'est ici que cela se passe. Vous pouvez par exemple "
+"autoriser ou interdire les changements de nom d'utilisateur "
+"(<guilabel>Autoriser la modification des noms d'utilisateurs</guilabel>) ou "
+"la création de pièces jointes (<guilabel>Activer les pièces "
+"jointes</guilabel>). Vous pouvez même désactiver complètement le "
+"<acronym>BBCode</acronym> (<guilabel>Activer les BBCodes</guilabel>)."
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: en/chapters/quick_start_guide.xml:243
+msgctxt "_"
+msgid ""
+"external ref='../images/quick_start_guide/settings_features.png' "
+"md5='2ee165f2e9264b9312cb0b17591c7103'"
+msgstr ""
+"external ref='../images/quick_start_guide/settings_features.png' "
+"md5='2ee165f2e9264b9312cb0b17591c7103'"
+
+#. (itstool) path: caption/para
+#: en/chapters/quick_start_guide.xml:246
+msgid "Enabling and disabling basic features with just 2 clicks"
+msgstr ""
+"Activer et désactiver les fonctionnalités de base en seulement 2 clics"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:250
+msgid ""
+"If disabling BBCode completely is a bit too harsh for your taste, but you "
+"don't want your users to abuse the signature field for tons of images? "
+"Simply set <guilabel>Allow use of IMG BBCode Tag in user "
+"signatures</guilabel> to \"No\". If you want to be a little bit more "
+"specific on what you want to allow and disallow in users' signatures, have a"
+" look at the \"Signature Settings\" form."
+msgstr ""
+"Si désactiver complètement le BBCode est un peu trop radical à votre goût, "
+"mais que vous ne voulez pas que vos utilisateurs abusent du champ signature "
+"avec des tonnes d'images ? Réglez simplement <guilabel>Autoriser "
+"l'utilisation de la balise BBCode IMG dans les signatures des "
+"utilisateurs</guilabel> sur « Non ». Si vous souhaitez être un peu plus "
+"précis sur ce que vous voulez autoriser ou interdire dans les signatures des"
+" utilisateurs, jetez un œil au formulaire « Paramètres de signature »."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:251
+msgid ""
+"The \"Board Features\" form offers you a great way to control the features "
+"in an all-or-nothing way. If you want to get into the details on each "
+"feature, there is for everything also a separated form which let's you "
+"specify everything from the maximum number of characters allowed in a post "
+"(<guilabel>Max characters per post</guilabel> in \"Post Settings\") to how "
+"large a user's avatar can be (<guilabel>Maximum Avatar Dimensions</guilabel>"
+" in \"Avatar Settings\")."
+msgstr ""
+"Le formulaire « Fonctionnalités du forum » vous offre un excellent moyen de "
+"contrôler les fonctionnalités de manière globale, tout ou rien. Si vous "
+"souhaitez entrer dans les détails de chaque fonctionnalité, il existe "
+"également un formulaire distinct pour chacune, qui vous permet de définir "
+"tout, depuis le nombre maximal de caractères autorisés dans un message "
+"(<guilabel>Nombre maximal de caractères par message</guilabel> dans « "
+"Paramètres des messages ») jusqu'à la taille maximale de l'avatar d'un "
+"utilisateur (<guilabel>Dimensions maximales des avatars</guilabel> dans « "
+"Paramètres des avatars »)."
+
+#. (itstool) path: important/para
+#: en/chapters/quick_start_guide.xml:253
+msgid ""
+"If you disable features, these will also be unavailable to users who would "
+"normally have them according to their respective permissions. For details on"
+" the permissions system, please read <xref linkend=\"quick_permissions\"/> "
+"or the <link linkend=\"acp_permissions\">in-depth guide in the Administrator"
+" Guide.</link>"
+msgstr ""
+"Si vous désactivez des fonctionnalités, celles-ci seront également "
+"indisponibles pour les utilisateurs qui y auraient normalement accès selon "
+"leurs permissions respectives. Pour plus de détails sur le système de "
+"permissions, veuillez lire <xref linkend=\"quick_permissions\"/> ou le <link"
+" linkend=\"acp_permissions\">guide approfondi dans le Guide de "
+"l'administrateur.</link>"
+
+#. (itstool) path: authorgroup/author
+#: en/chapters/quick_start_guide.xml:261
+msgid "<othername>Anon</othername>"
+msgstr "<othername>Anon</othername>"
+
+#. (itstool) path: authorgroup/author
+#: en/chapters/quick_start_guide.xml:264
+msgid "<othername>MennoniteHobbit</othername>"
+msgstr "<othername>MennoniteHobbit</othername>"
+
+#. (itstool) path: section/title
+#: en/chapters/quick_start_guide.xml:269
+msgid "Creating and setting up forums"
+msgstr "Créer et configurer des forums"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:270
+msgid ""
+"Forums are the sections where topics are stored. Without forums, your users "
+"would have nowhere to post! Creating forums is very easy."
+msgstr ""
+"Les forums sont les sections où sont stockés les sujets. Sans forums, vos "
+"utilisateurs n'auraient nulle part où poster ! Créer des forums est très "
+"simple."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:271
+msgid ""
+"Firstly, make sure you are logged in. Find the <guilabel>[ Administration "
+"Control Panel ]</guilabel> link at the bottom of the page, and click it. You"
+" should be in the Administration Index. You can administer your board here."
+msgstr ""
+"Tout d'abord, assurez-vous d'être connecté. Trouvez le lien <guilabel>[ "
+"Panneau de contrôle d'administration ]</guilabel> en bas de la page, et "
+"cliquez dessus. Vous devriez vous trouver dans l'index de l'administration. "
+"Vous pouvez administrer votre forum ici."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:272
+msgid ""
+"There are tabs at the top for the Administration Control Panel that will "
+"guide you to each category. You must get to the Forum Administration section"
+" to create a forum, so click the <guilabel>Forums</guilabel> tab."
+msgstr ""
+"Des onglets se trouvent en haut du Panneau de contrôle d'administration et "
+"vous guident vers chaque catégorie. Vous devez accéder à la section "
+"Administration des forums pour créer un forum, cliquez donc sur l'onglet "
+"<guilabel>Forums</guilabel>."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:273
+msgid ""
+"The Forum Administration Index is where you can manage forums on your site. "
+"Along with being able to create forums, you are also able to create "
+"subforums. Subforums are forums that are located in a parent forum in a "
+"hierachy. For more information about subforums, see the <link "
+"linkend=\"acp_forums_subforums\">administration guide on subforums</link>."
+msgstr ""
+"L'index de l'administration des forums est l'endroit où vous pouvez gérer "
+"les forums de votre site. En plus de pouvoir créer des forums, vous pouvez "
+"également créer des sous-forums. Les sous-forums sont des forums situés dans"
+" un forum parent, formant une hiérarchie. Pour plus d'informations sur les "
+"sous-forums, consultez le <link linkend=\"acp_forums_subforums\">guide "
+"d'administration sur les sous-forums</link>."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:274
+msgid ""
+"Find the <guilabel>Create new forum</guilabel> button on the right side of "
+"the page. Type in the name of the forum you wish in the textbox located "
+"directly to the left of this button. For example, if the forum name was to "
+"be Test, in the text box put Test. Once you are done, click the "
+"<guilabel>Create new forum</guilabel> button create the forum."
+msgstr ""
+"Trouvez le bouton <guilabel>Créer un nouveau forum</guilabel> sur le côté "
+"droit de la page. Saisissez le nom du forum souhaité dans la zone de texte "
+"située directement à gauche de ce bouton. Par exemple, si le nom du forum "
+"devait être Test, saisissez Test dans la zone de texte. Une fois cela fait, "
+"cliquez sur le bouton <guilabel>Créer un nouveau forum</guilabel> pour créer"
+" le forum."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:275
+msgid ""
+"You should see a page headed with the text \"Create new forum :: Test\". You"
+" can change options for your forum; for example you can set what forum image"
+" the forum can use, if it's a category, or what forum rules text will belong"
+" to the forum. You should type up a brief description for the forum as users"
+" will be able to figure out what the forum is for."
+msgstr ""
+"Vous devriez voir une page intitulée « Créer un nouveau forum :: Test ». "
+"Vous pouvez modifier les options de votre forum ; vous pouvez par exemple "
+"définir quelle image de forum le forum peut utiliser, s'il s'agit d'une "
+"catégorie, ou à quel texte de règles du forum le forum sera associé. Vous "
+"devriez rédiger une brève description du forum, afin que les utilisateurs "
+"puissent comprendre à quoi il sert."
+
+#. (itstool) path: figure/title
+#: en/chapters/quick_start_guide.xml:277
+msgid "Creating a new forum"
+msgstr "Créer un nouveau forum"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: en/chapters/quick_start_guide.xml:280
+msgctxt "_"
+msgid ""
+"external ref='../images/quick_start_guide/creating_forums.png' "
+"md5='4bc19a6841ffcf44cdceae27d2c5498b'"
+msgstr ""
+"external ref='../images/quick_start_guide/creating_forums.png' "
+"md5='4bc19a6841ffcf44cdceae27d2c5498b'"
+
+#. (itstool) path: caption/para
+#: en/chapters/quick_start_guide.xml:283
+msgid "Here you can choose the name and the description of your a new forum."
+msgstr ""
+"Ici, vous pouvez choisir le nom et la description de votre nouveau forum."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:287
+msgid ""
+"The default settings are usually good enough to get your new forum up and "
+"running; however, you may change them to suit your needs. But there are "
+"three key forum settings that you should pay attention to. The Parent Forum "
+"setting allows you to choose which forum your new forum will belong to. Be "
+"careful to what level you want your forum to be in. (The Parent Forum "
+"setting is important when creating subforums. For more information on "
+"subforums, continue reading to the section on creating subforums) The \"Copy"
+" Permissions\" setting allows you to copy the permissions from an existing "
+"forum to your new forum. Use this if you want to keep permissions constant. "
+"The forum style setting allows you to set which style your new forum will "
+"display. Your new forum can show a different style to another. For more "
+"information on each forum setting, see the <xref linkend=\"acp_forums\">in-"
+"depth section on forum creation</xref>"
+msgstr ""
+"Les paramètres par défaut sont généralement suffisants pour mettre votre "
+"nouveau forum en service ; vous pouvez toutefois les modifier selon vos "
+"besoins. Mais il y a trois paramètres clés du forum auxquels vous devriez "
+"prêter attention. Le paramètre Forum parent vous permet de choisir à quel "
+"forum votre nouveau forum appartiendra. Faites attention au niveau auquel "
+"vous souhaitez que votre forum se situe. (Le paramètre Forum parent est "
+"important lors de la création de sous-forums. Pour plus d'informations sur "
+"les sous-forums, continuez la lecture jusqu'à la section sur la création de "
+"sous-forums) Le paramètre « Copier les permissions » vous permet de copier "
+"les permissions d'un forum existant vers votre nouveau forum. Utilisez ceci "
+"si vous souhaitez garder des permissions constantes. Le paramètre de style "
+"du forum vous permet de définir le style qu'affichera votre nouveau forum. "
+"Votre nouveau forum peut afficher un style différent d'un autre. Pour plus "
+"d'informations sur chaque paramètre de forum, consultez la <xref "
+"linkend=\"acp_forums\">section approfondie sur la création de forums</xref>"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:288
+msgid ""
+"Once you're done configuring the settings of your new forum, scroll to the "
+"bottom of the page and click the <guilabel>Submit</guilabel> button to "
+"create your forum and it's settings. If your new forum was created "
+"successfully, the screen will show you a success message."
+msgstr ""
+"Une fois la configuration des paramètres de votre nouveau forum terminée, "
+"faites défiler jusqu'en bas de la page et cliquez sur le bouton "
+"<guilabel>Envoyer</guilabel> pour créer votre forum et ses paramètres. Si "
+"votre nouveau forum a été créé avec succès, l'écran affichera un message de "
+"réussite."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:289
+msgid ""
+"If you wish to set permissions for the forum (or if you do not click on "
+"anything), you will see the forum permissions screen. If you do not want to "
+"(and want to use the default permissions for your new forum), click on the "
+"<guilabel>Back to previous page</guilabel> link. Otherwise, continue and set"
+" each setting to what you wish. Once you are done, click the <guilabel>Apply"
+" all Permissions</guilabel> button at the bottom of the page. You will see "
+"the successful forum permissions updated screen if it worked."
+msgstr ""
+"Si vous souhaitez définir des permissions pour le forum (ou si vous ne "
+"cliquez sur rien), vous verrez l'écran des permissions du forum. Si vous ne "
+"le souhaitez pas (et voulez utiliser les permissions par défaut pour votre "
+"nouveau forum), cliquez sur le lien <guilabel>Revenir à la page "
+"précédente</guilabel>. Sinon, continuez et définissez chaque paramètre selon"
+" vos souhaits. Une fois terminé, cliquez sur le bouton <guilabel>Appliquer "
+"toutes les permissions</guilabel> en bas de la page. Vous verrez l'écran de "
+"mise à jour réussie des permissions du forum si l'opération a fonctionné."
+
+#. (itstool) path: important/para
+#: en/chapters/quick_start_guide.xml:291
+msgid ""
+"If you do not set any permissions on this forum it will not be accessible to"
+" anyone (including yourself)."
+msgstr ""
+"Si vous ne définissez aucune permission sur ce forum, il ne sera accessible "
+"à personne (y compris vous-même)."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:293
+msgid ""
+"You have successfully updated your forum permissions and set up your new "
+"forum. To create more forums, follow this general procedure again."
+msgstr ""
+"Vous avez mis à jour avec succès les permissions de votre forum et configuré"
+" votre nouveau forum. Pour créer d'autres forums, suivez à nouveau cette "
+"procédure générale."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:294
+msgid ""
+"For more information on setting permissions, see <xref "
+"linkend=\"quick_permissions\"/>"
+msgstr ""
+"Pour plus d'informations sur la définition des permissions, consultez <xref "
+"linkend=\"quick_permissions\"/>"
+
+#. (itstool) path: section/title
+#: en/chapters/quick_start_guide.xml:304
+msgid "Setting permissions"
+msgstr "Définir les permissions"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:305
+msgid ""
+"After you created your first forum, you have to decide who has access to it "
+"and what your users are allowed to do and what not. This is what Permissions"
+" are for. You can disallow guests to post or hand out moderating powers, for"
+" instance. Almost every aspect of user interaction with phpBB 3.3 Proteus "
+"can be adjusted with permissions."
+msgstr ""
+"Après avoir créé votre premier forum, vous devez décider qui y a accès et ce"
+" que vos utilisateurs sont autorisés à faire ou non. C'est à cela que "
+"servent les permissions. Vous pouvez par exemple interdire aux invités de "
+"poster ou accorder des pouvoirs de modération. Presque tous les aspects de "
+"l'interaction des utilisateurs avec phpBB 3.3 Proteus peuvent être ajustés "
+"grâce aux permissions."
+
+#. (itstool) path: section/title
+#: en/chapters/quick_start_guide.xml:308
+msgid "Permission types"
+msgstr "Types de permissions"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:309
+msgid "There are four different types of permissions:"
+msgstr "Il existe quatre types de permissions différents :"
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:312
+msgid "User/Group permissions (global) - e.g. disallow changing avatar"
+msgstr ""
+"Permissions utilisateur/groupe (globales) - par exemple, interdire de "
+"changer d'avatar"
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:315
+msgid "Administrator permissions (global) - e.g. allow to manage forums"
+msgstr ""
+"Permissions d'administrateur (globales) - par exemple, autoriser la gestion "
+"des forums"
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:318
+msgid ""
+"Moderator permissions (global or local) - e.g. allow to lock topics or ban "
+"users (only global)"
+msgstr ""
+"Permissions de modérateur (globales ou locales) - par exemple, autoriser à "
+"verrouiller des sujets ou à bannir des utilisateurs (globales uniquement)"
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:321
+msgid "Forum permissions (local) - e.g. allow to see a forum or post topics"
+msgstr ""
+"Permissions de forum (locales) - par exemple, autoriser à voir un forum ou à"
+" poster des sujets"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:324
+msgid ""
+"Each permission type consists of a different set of permissions and can "
+"apply either locally or globally. A global permission type is set for your "
+"whole bulletin board. If you disallow one of your users to send Private "
+"Messages, for instance, you have to do this with the global user permission."
+" Administrator permission are also global."
+msgstr ""
+"Chaque type de permission comprend un ensemble différent de permissions et "
+"peut s'appliquer localement ou globalement. Un type de permission global "
+"s'applique à l'ensemble de votre forum. Si vous interdisez à l'un de vos "
+"utilisateurs d'envoyer des messages privés, par exemple, vous devez le faire"
+" via la permission utilisateur globale. Les permissions d'administrateur "
+"sont également globales."
+
+#. (itstool) path: figure/title
+#. (itstool) path: caption/para
+#: en/chapters/quick_start_guide.xml:326 en/chapters/quick_start_guide.xml:332
+msgid "Global and local permissions"
+msgstr "Permissions globales et locales"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: en/chapters/quick_start_guide.xml:329
+msgctxt "_"
+msgid ""
+"external ref='../images/quick_start_guide/permissions_types.png' "
+"md5='cfa2b3d18716500c7b3f73747cb21503'"
+msgstr ""
+"external ref='../images/quick_start_guide/permissions_types.png' "
+"md5='cfa2b3d18716500c7b3f73747cb21503'"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:336
+msgid ""
+"On the other hand local permissions do only apply to specific forums. So if "
+"you disallow someone to post in one forum, for instance, it will not impact "
+"the rest of the board. The user will still be able to post in any other "
+"forum he has the local permission to post."
+msgstr ""
+"Les permissions locales, en revanche, ne s'appliquent qu'à des forums "
+"spécifiques. Ainsi, si vous interdisez à quelqu'un de poster dans un forum, "
+"par exemple, cela n'aura aucun impact sur le reste du forum. L'utilisateur "
+"pourra toujours poster dans n'importe quel autre forum où il possède la "
+"permission locale de le faire."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:337
+msgid ""
+"You can appoint moderators either globally or locally. If you trust some of "
+"your users enough, you can make them Global Moderators. They can moderate "
+"all forums they have access to with the permissions you assign to them. "
+"Compared to that, local moderators will only be able to moderate the number "
+"of forums you select for them. They can also have different moderator "
+"permissions for different forums. While they are able to delete topics in "
+"one forum, they may not be allowed to do it in another. Global moderators "
+"will have the same permissions for all forums."
+msgstr ""
+"Vous pouvez nommer des modérateurs, soit globalement, soit localement. Si "
+"vous faites suffisamment confiance à certains de vos utilisateurs, vous "
+"pouvez en faire des modérateurs globaux. Ils pourront modérer tous les "
+"forums auxquels ils ont accès, avec les permissions que vous leur attribuez."
+" En comparaison, les modérateurs locaux ne pourront modérer que le nombre de"
+" forums que vous aurez sélectionnés pour eux. Ils peuvent également avoir "
+"des permissions de modérateur différentes selon les forums. Alors qu'ils "
+"peuvent supprimer des sujets dans un forum, il se peut qu'ils n'y soient pas"
+" autorisés dans un autre. Les modérateurs globaux auront les mêmes "
+"permissions sur tous les forums."
+
+#. (itstool) path: section/title
+#: en/chapters/quick_start_guide.xml:340
+msgid "Setting forum permissions"
+msgstr "Définir les permissions de forum"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:341
+msgid ""
+"To set the permissions for your new forum we need the local <guilabel>Forum "
+"Based Permissions</guilabel>. First you have to decide how you want to set "
+"the permissions. If you want to set them for a single group or user, you "
+"should use the <guilabel>Group</guilabel> or <guilabel>User Forum "
+"Permissions</guilabel>. They will allow you to select one group or user, and"
+" then select the forums you want to set the permissions for."
+msgstr ""
+"Pour définir les permissions de votre nouveau forum, nous avons besoin des "
+"<guilabel>Permissions liées aux forums</guilabel> locales. Vous devez "
+"d'abord décider comment vous souhaitez les définir. Si vous voulez les "
+"définir pour un seul groupe ou utilisateur, vous devez utiliser les "
+"<guilabel>Permissions de forum par groupe</guilabel> ou <guilabel>par "
+"utilisateur</guilabel>. Elles vous permettront de sélectionner un groupe ou "
+"un utilisateur, puis de sélectionner les forums pour lesquels vous souhaitez"
+" définir les permissions."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:342
+msgid ""
+"But for this Quick Start Guide we will concentrate on the <guilabel>Forum "
+"Permissions</guilabel>. Instead of selecting a user or group, you select the"
+" forums you want to change first. You can select them either by selecting "
+"the forums manually in the top list, or by single forum and single forum "
+"plus subforums respectively in the lower pull down menus. "
+"<guilabel>Submit</guilabel> will bring you to the next page."
+msgstr ""
+"Mais pour ce guide de démarrage rapide, nous allons nous concentrer sur les "
+"<guilabel>Permissions des forums</guilabel>. Au lieu de sélectionner un "
+"utilisateur ou un groupe, vous sélectionnez d'abord les forums que vous "
+"souhaitez modifier. Vous pouvez les sélectionner soit manuellement dans la "
+"liste du haut, soit par forum unique ou par forum unique plus ses sous-"
+"forums, respectivement dans les menus déroulants du bas. "
+"<guilabel>Envoyer</guilabel> vous amènera à la page suivante."
+
+#. (itstool) path: figure/title
+#: en/chapters/quick_start_guide.xml:344
+msgid "Select Groups"
+msgstr "Sélectionner des groupes"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: en/chapters/quick_start_guide.xml:347
+msgctxt "_"
+msgid ""
+"external ref='../images/quick_start_guide/permissions_select.png' "
+"md5='a0e52655609e1e236f3515d5ddd2857b'"
+msgstr ""
+"external ref='../images/quick_start_guide/permissions_select.png' "
+"md5='a0e52655609e1e236f3515d5ddd2857b'"
+
+#. (itstool) path: caption/para
+#: en/chapters/quick_start_guide.xml:350
+msgid "Select Groups or Users to set Forum Permissions"
+msgstr ""
+"Sélectionner des groupes ou des utilisateurs pour définir les permissions de"
+" forum"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:354
+msgid ""
+"The <guilabel>Forum Permissions</guilabel> page shows you two columns, one "
+"for users and one for groups to select (see <xref "
+"linkend=\"img_quick_permissions_select\"/>). The top lists on both columns "
+"labelled as <guilabel>Manage Users</guilabel> and <guilabel> Manage "
+"Groups</guilabel> show users and groups that already have permissions on at "
+"least one of your selected forums set. You can select them and change their "
+"permissions with the <guilabel>Edit Permissions</guilabel> button, or use "
+"<guilabel>Remove Permissions</guilabel> to remove them which leads to them "
+"not having permissions set, and therefore not being able to see the forum or"
+" have any access to it (unless they have access to it through another "
+"group). The bottom boxes allow you to add new users or groups, that do not "
+"currently have permissions set on at least one of your selected forums."
+msgstr ""
+"La page <guilabel>Permissions des forums</guilabel> vous présente deux "
+"colonnes, une pour les utilisateurs et une pour les groupes à sélectionner "
+"(voir <xref linkend=\"img_quick_permissions_select\"/>). Les listes en haut "
+"de chaque colonne, intitulées <guilabel>Gérer les utilisateurs</guilabel> et"
+" <guilabel> Gérer les groupes</guilabel>, affichent les utilisateurs et "
+"groupes qui possèdent déjà des permissions sur au moins un des forums que "
+"vous avez sélectionnés. Vous pouvez les sélectionner et modifier leurs "
+"permissions avec le bouton <guilabel>Modifier les permissions</guilabel>, ou"
+" utiliser <guilabel>Supprimer des permissions</guilabel> pour les retirer, "
+"ce qui fait qu'ils n'auront plus de permissions définies et ne pourront donc"
+" plus voir le forum ni y avoir accès (à moins d'y avoir accès via un autre "
+"groupe). Les cases du bas vous permettent d'ajouter de nouveaux utilisateurs"
+" ou groupes qui n'ont actuellement aucune permission définie sur au moins un"
+" des forums que vous avez sélectionnés."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:355
+msgid ""
+"To add permissions for groups, select one or more groups either in the "
+"<guilabel>Add Groups</guilabel> list (this works similar with users, but if "
+"you want to add new users, you have to type them in manually in the "
+"<guilabel>Add Users</guilabel> text box or use the <guilabel>Find a "
+"member</guilabel> function). <guilabel>Add Permissions</guilabel> will take "
+"you to the permission interface. Each forum you selected is listed, with the"
+" groups or users to change the permissions for below them."
+msgstr ""
+"Pour ajouter des permissions pour des groupes, sélectionnez un ou plusieurs "
+"groupes dans la liste <guilabel>Ajouter des groupes "
+"d'utilisateurs</guilabel> (le fonctionnement est similaire pour les "
+"utilisateurs, mais si vous souhaitez ajouter de nouveaux utilisateurs, vous "
+"devez les saisir manuellement dans la zone de texte <guilabel>Ajouter des "
+"utilisateurs</guilabel> ou utiliser la fonction <guilabel>Trouver un "
+"membre</guilabel>). <guilabel>Ajouter des permissions</guilabel> vous "
+"amènera à l'interface des permissions. Chaque forum que vous avez "
+"sélectionné est répertorié, avec en dessous les groupes ou utilisateurs pour"
+" lesquels modifier les permissions."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:356
+msgid ""
+"There are two ways to assign permissions: You can set them manually or use "
+"predefined <guilabel>Permission Roles</guilabel> for a simpler but less "
+"powerful way. You can switch between both approaches any time you want. You "
+"can skip the manual permission introduction and <link "
+"linkend=\"quick_permissions_roles\">jump directly into the section on "
+"\"Permissions Roles\"</link>, if you are eager to get everything running as "
+"quickly as possible. But remember that permission roles do only offer a "
+"small bit of what the permission system has to offer and we believe that to "
+"be a good Proteus administrator, you have to fully grasp permissions."
+msgstr ""
+"Il existe deux façons de définir les permissions : vous pouvez les définir "
+"manuellement ou utiliser des <guilabel>Rôles des permissions</guilabel> "
+"prédéfinis, pour une méthode plus simple mais moins puissante. Vous pouvez "
+"passer de l'une à l'autre approche à tout moment. Vous pouvez sauter "
+"l'introduction aux permissions manuelles et <link "
+"linkend=\"quick_permissions_roles\">passer directement à la section sur les "
+"« Rôles des permissions »</link>, si vous êtes impatient de tout mettre en "
+"route le plus rapidement possible. Mais rappelez-vous que les rôles de "
+"permission n'offrent qu'une petite partie de ce que le système de "
+"permissions propose, et nous pensons que pour être un bon administrateur de "
+"Proteus, vous devez pleinement comprendre les permissions."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:357
+msgid ""
+"Both ways only differ in the way you set them. They both share the same "
+"interface."
+msgstr ""
+"Les deux méthodes ne diffèrent que par la façon dont vous les définissez. "
+"Elles partagent la même interface."
+
+#. (itstool) path: section/title
+#. (itstool) path: figure/title
+#: en/chapters/quick_start_guide.xml:360 en/chapters/quick_start_guide.xml:375
+msgid "Manual permissions"
+msgstr "Permissions manuelles"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:361
+msgid ""
+"This is the most important aspect of permissions. You need to understand "
+"this to properly work with them. There are three different values that a "
+"permission can take:"
+msgstr ""
+"Il s'agit de l'aspect le plus important des permissions. Vous devez le "
+"comprendre pour travailler correctement avec elles. Une permission peut "
+"prendre trois valeurs différentes :"
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:364
+msgid ""
+"<guilabel>YES</guilabel> will allow a permission setting "
+"<emphasis>unless</emphasis> it is overwritten by a "
+"<guilabel>NEVER</guilabel>."
+msgstr ""
+"<guilabel>Oui</guilabel> autorisera un paramètre de permission, "
+"<emphasis>sauf</emphasis> s'il est remplacé par un "
+"<guilabel>Jamais</guilabel>."
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:367
+msgid ""
+"<guilabel>NO</guilabel> will be disallow a permission setting "
+"<emphasis>unless</emphasis> it is overwritten by a <guilabel>YES</guilabel>."
+msgstr ""
+"<guilabel>Non</guilabel> interdira un paramètre de permission, "
+"<emphasis>sauf</emphasis> s'il est remplacé par un <guilabel>Oui</guilabel>."
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:370
+msgid ""
+"<guilabel>NEVER</guilabel> will completely disallow a permission setting for"
+" a user. It <emphasis>cannot</emphasis> be overwritten by a "
+"<guilabel>YES</guilabel>."
+msgstr ""
+"<guilabel>Jamais</guilabel> interdira complètement un paramètre de "
+"permission pour un utilisateur. Il <emphasis>ne peut pas</emphasis> être "
+"remplacé par un <guilabel>Oui</guilabel>."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:373
+msgid ""
+"The three values are important as it is possible for a user to have more "
+"than one set of permissions for the same setting through multiple groups. If"
+" the user is a member of the default \"Registered Users\" group and a custom"
+" group called \"Senior Users\" you created for your most dedicated members, "
+"both could have different permissions for seeing a forum. In this example "
+"you want to make a forum called \"Good old times\" only available to the "
+"\"Senior Users\" group, but don't want all \"Registered Users\" to see it. "
+"You will of course set the <guilabel>Can see forum</guilabel> permission to "
+"<guilabel>Yes</guilabel> for \"Senior Users\". But <emphasis>do "
+"not</emphasis> set the permission to <guilabel>Never</guilabel> for "
+"\"Registered Users\". If you do this, \"Senior Members\" will not see the "
+"forum as the <guilabel>Never</guilabel> overrides any "
+"<guilabel>Yes</guilabel> they have. Leave the setting at "
+"<guilabel>No</guilabel> instead. <guilabel>No</guilabel> is a weak "
+"<guilabel>Never</guilabel> that a <guilabel>Yes</guilabel> can override."
+msgstr ""
+"Ces trois valeurs sont importantes, car il est possible qu'un utilisateur "
+"dispose de plusieurs jeux de permissions pour le même paramètre via "
+"plusieurs groupes. Si l'utilisateur est membre du groupe par défaut « "
+"Utilisateurs enregistrés » et d'un groupe personnalisé appelé « Utilisateurs"
+" seniors » que vous avez créé pour vos membres les plus assidus, les deux "
+"groupes pourraient avoir des permissions différentes pour voir un forum. "
+"Dans cet exemple, vous voulez rendre un forum appelé « Le bon vieux temps » "
+"accessible uniquement au groupe « Utilisateurs seniors », mais vous ne "
+"voulez pas que tous les « Utilisateurs enregistrés » le voient. Vous allez "
+"bien sûr régler la permission <guilabel>Peut voir le forum</guilabel> sur "
+"<guilabel>Oui</guilabel> pour « Utilisateurs seniors ». Mais <emphasis>ne "
+"réglez pas</emphasis> la permission sur <guilabel>Jamais</guilabel> pour « "
+"Utilisateurs enregistrés ». Si vous faites cela, les « Membres seniors » ne "
+"verront pas le forum, car le <guilabel>Jamais</guilabel> annule tout "
+"<guilabel>Oui</guilabel> qu'ils pourraient avoir. Laissez plutôt le "
+"paramètre sur <guilabel>Non</guilabel>. <guilabel>Non</guilabel> est un "
+"<guilabel>Jamais</guilabel> faible, qu'un <guilabel>Oui</guilabel> peut "
+"remplacer."
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: en/chapters/quick_start_guide.xml:378
+msgctxt "_"
+msgid ""
+"external ref='../images/quick_start_guide/permissions_manual.png' "
+"md5='e6ada7fb4b5315e58e4aa9b5fb4efb9b'"
+msgstr ""
+"external ref='../images/quick_start_guide/permissions_manual.png' "
+"md5='e6ada7fb4b5315e58e4aa9b5fb4efb9b'"
+
+#. (itstool) path: caption/para
+#: en/chapters/quick_start_guide.xml:381
+msgid "Setting permissions manually"
+msgstr "Définir les permissions manuellement"
+
+#. (itstool) path: section/title
+#: en/chapters/quick_start_guide.xml:387
+msgid "Permissions roles"
+msgstr "Rôles des permissions"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:388
+msgid ""
+"phpBB 3.3 Proteus ships with a number of default permission roles, that "
+"offer you a wide variety of options for setting permissions. Instead of "
+"having to check each radio button manually, you can select a predefined role"
+" in the <guilabel>Role</guilabel>pull down list. Each role has a detailed "
+"description, that will pop up when you hover your mouse over it. Submit your"
+" changes with <guilabel>Apply Permissions</guilabel> or <guilabel>Apply All "
+"Permissions</guilabel> when you are satisfied with them. That will set the "
+"permissions and you are done."
+msgstr ""
+"phpBB 3.3 Proteus est fourni avec un certain nombre de rôles de permission "
+"par défaut, qui vous offrent une large gamme d'options pour définir les "
+"permissions. Plutôt que de devoir cocher chaque bouton radio manuellement, "
+"vous pouvez sélectionner un rôle prédéfini dans la liste déroulante "
+"<guilabel>Rôle</guilabel>. Chaque rôle dispose d'une description détaillée, "
+"qui apparaît lorsque vous passez la souris dessus. Validez vos modifications"
+" avec <guilabel>Appliquer les permissions</guilabel> ou <guilabel>Appliquer "
+"toutes les permissions</guilabel> lorsque vous en êtes satisfait. Cela "
+"définira les permissions et vous aurez terminé."
+
+#. (itstool) path: figure/title
+#: en/chapters/quick_start_guide.xml:390
+msgid "Permission roles"
+msgstr "Rôles des permissions"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: en/chapters/quick_start_guide.xml:393
+msgctxt "_"
+msgid ""
+"external ref='../images/quick_start_guide/permissions_roles.png' "
+"md5='45c136b62bab83ce603f2bc4029a3614'"
+msgstr ""
+"external ref='../images/quick_start_guide/permissions_roles.png' "
+"md5='45c136b62bab83ce603f2bc4029a3614'"
+
+#. (itstool) path: caption/para
+#: en/chapters/quick_start_guide.xml:396
+msgid "Setting permissions with roles"
+msgstr "Définir les permissions avec des rôles"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:400
+msgid ""
+"But permission roles are not only a quick and easy way to set permissions, "
+"they are also a powerful tool for experienced board administrators to manage"
+" permissions on bigger boards. You can create your own roles and edit "
+"existing ones. Roles are dynamic, so when you edit a role, all groups and "
+"users that have the role assigned will automatically be updated."
+msgstr ""
+"Mais les rôles de permission ne sont pas seulement un moyen rapide et facile"
+" de définir les permissions, ce sont aussi un outil puissant pour les "
+"administrateurs de forum expérimentés qui gèrent des forums plus importants."
+" Vous pouvez créer vos propres rôles et modifier ceux qui existent déjà. Les"
+" rôles sont dynamiques, donc lorsque vous modifiez un rôle, tous les groupes"
+" et utilisateurs auxquels ce rôle est attribué seront automatiquement mis à "
+"jour."
+
+#. (itstool) path: section/title
+#: en/chapters/quick_start_guide.xml:410
+msgid "Assign moderators to forums"
+msgstr "Assigner des modérateurs aux forums"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:411
+msgid ""
+"A quite common use case for permissions and roles are forum moderation. "
+"phpBB3 makes assigning users as moderators of forums really simple."
+msgstr ""
+"Un cas d'usage assez courant pour les permissions et les rôles est la "
+"modération de forum. phpBB3 rend l'attribution du rôle de modérateur de "
+"forum à des utilisateurs vraiment simple."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:412
+msgid ""
+"As you might have already guessed, moderation of specific forums is a local "
+"setting, so you can find <guilabel>Forum Moderators</guilabel> in the "
+"section for <guilabel>Forum Based Permissions</guilabel>. First of all, you "
+"will have to select the forum (or forums) you want to assign new moderators "
+"to. This form is divided into two sections. In the first one, you can select"
+" multiple forums (select multiple by holding down the CTRL button on your "
+"keyboard, or cmd (under MacOS X)), where the moderator settings you will set"
+" in the following form will only apply to these exact forums. The second "
+"area allows you to select only one forum but your changes will apply not "
+"only to this forum but also all its subforums."
+msgstr ""
+"Comme vous l'avez peut-être déjà deviné, la modération de forums spécifiques"
+" est un paramètre local, vous pouvez donc trouver <guilabel>Permissions des "
+"forums aux modérateurs</guilabel> dans la section <guilabel>Permissions "
+"liées aux forums</guilabel>. Tout d'abord, vous devrez sélectionner le forum"
+" (ou les forums) auxquels vous souhaitez attribuer de nouveaux modérateurs. "
+"Ce formulaire est divisé en deux sections. Dans la première, vous pouvez "
+"sélectionner plusieurs forums (sélection multiple en maintenant la touche "
+"CTRL de votre clavier enfoncée, ou cmd sous MacOS X), où les paramètres de "
+"modérateur que vous définirez dans le formulaire suivant s'appliqueront "
+"uniquement à ces forums précis. La deuxième zone vous permet de sélectionner"
+" un seul forum, mais vos modifications s'appliqueront non seulement à ce "
+"forum, mais aussi à tous ses sous-forums."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:413
+msgid ""
+"After selecting the forums and clicking <guilabel>Submit</guilabel>, you "
+"will be greeted by a form you should already be familiar with from one of "
+"the previous sections in this guide: <xref "
+"linkend=\"img_quick_permissions_select\"/>. Here you can select the users or"
+" groups that should receive some kind of moderation ability over the "
+"selected forums. So go ahead: Select some users and/or groups and press the "
+"<guilabel>Set Permissions</guilabel> button."
+msgstr ""
+"Après avoir sélectionné les forums et cliqué sur "
+"<guilabel>Envoyer</guilabel>, vous serez accueilli par un formulaire que "
+"vous devriez déjà connaître grâce à l'une des sections précédentes de ce "
+"guide : <xref linkend=\"img_quick_permissions_select\"/>. Vous pouvez ici "
+"sélectionner les utilisateurs ou groupes qui devraient recevoir un certain "
+"type de capacité de modération sur les forums sélectionnés. Alors allez-y : "
+"sélectionnez des utilisateurs et/ou des groupes et appuyez sur le bouton "
+"<guilabel>Définir les permissions</guilabel>."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:414
+msgid ""
+"In the next form you can choose, what moderator permissions the selected "
+"users/groups should receive. First of all, there are some predefined roles "
+"from which you can select:"
+msgstr ""
+"Dans le formulaire suivant, vous pouvez choisir quelles permissions de "
+"modérateur les utilisateurs/groupes sélectionnés devraient recevoir. Tout "
+"d'abord, il existe des rôles prédéfinis parmi lesquels vous pouvez choisir :"
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/quick_start_guide.xml:417
+msgid "Standard Moderator"
+msgstr "Modérateur standard"
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:419
+msgid ""
+"A Standard Moderator can approve or disapprove, edit and delete posts, "
+"delete or close reports, but not necessarily change the owner of a post. "
+"This kind of moderator can also issue warnings and view details of a post."
+msgstr ""
+"Un modérateur standard peut approuver ou refuser, modifier et supprimer des "
+"messages, supprimer ou fermer des signalements, mais pas nécessairement "
+"changer le propriétaire d'un message. Ce type de modérateur peut également "
+"émettre des avertissements et consulter les détails d'un message."
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/quick_start_guide.xml:423
+msgid "Simple Moderator"
+msgstr "Modérateur simple"
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:425
+msgid ""
+"A Simple Moderator can edit posts and close and delete reports and can also "
+"view post details."
+msgstr ""
+"Un modérateur simple peut modifier des messages, fermer et supprimer des "
+"signalements, et peut également consulter les détails des messages."
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/quick_start_guide.xml:429
+msgid "Queue Moderator"
+msgstr "Modérateur de file d'attente"
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:431
+msgid ""
+"As a Queue Moderator, you can only approve or disapprove posts that landed "
+"in the moderator queue and edit posts."
+msgstr ""
+"En tant que modérateur de file d'attente, vous ne pouvez qu'approuver ou "
+"refuser les messages arrivés dans la file d'attente de modération, et "
+"modifier des messages."
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/quick_start_guide.xml:435
+msgid "Full Moderator"
+msgstr "Modérateur complet"
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:437
+msgid ""
+"Full Moderators can do everything moderation-related; they can even ban "
+"users."
+msgstr ""
+"Les modérateurs complets peuvent tout faire en matière de modération ; ils "
+"peuvent même bannir des utilisateurs."
+
+#. (itstool) path: figure/title
+#: en/chapters/quick_start_guide.xml:442
+msgid "The Forum Moderator's Permissions"
+msgstr "Les permissions du modérateur de forum"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: en/chapters/quick_start_guide.xml:445
+msgctxt "_"
+msgid ""
+"external ref='../images/quick_start_guide/permissions_moderator.png' "
+"md5='d7faf21e3416978db0796f2706c8c242'"
+msgstr ""
+"external ref='../images/quick_start_guide/permissions_moderator.png' "
+"md5='d7faf21e3416978db0796f2706c8c242'"
+
+#. (itstool) path: caption/para
+#: en/chapters/quick_start_guide.xml:448
+msgid "Set the moderator's permissions"
+msgstr "Définir les permissions du modérateur"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:452
+msgid ""
+"When you're done simply hit <guilabel>Apply all Permissions</guilabel>. All "
+"the permissions mentioned here can also be selected from the right side of "
+"the form to give you more granular options."
+msgstr ""
+"Une fois terminé, cliquez simplement sur <guilabel>Appliquer toutes les "
+"permissions</guilabel>. Toutes les permissions mentionnées ici peuvent "
+"également être sélectionnées depuis le côté droit du formulaire pour vous "
+"offrir des options plus précises."
+
+#. (itstool) path: section/title
+#: en/chapters/quick_start_guide.xml:463
+msgid "Setting global permissions"
+msgstr "Définir les permissions globales"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:464
+msgid ""
+"Local Permissions are too local for you? Well, then phpBB3 has something to "
+"offer for you, too: Global Permissions:"
+msgstr ""
+"Les permissions locales sont trop locales pour vous ? Eh bien, phpBB3 a "
+"aussi quelque chose à vous offrir : les permissions globales :"
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:466
+msgid "Users Permissions"
+msgstr "Permissions des utilisateurs"
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:467
+msgid "Groups Permissions"
+msgstr "Permissions des groupes"
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:468
+msgid "Administrators"
+msgstr "Administrateurs"
+
+#. (itstool) path: listitem/para
+#: en/chapters/quick_start_guide.xml:469
+msgid "Global Moderators"
+msgstr "Modérateurs globaux"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:471
+msgid ""
+"In \"User Permissions\" and \"Group Permissions\" you can allow and disallow"
+" features like attachments, signatures and avatars for specific users and "
+"user groups. Note that some of these settings only matter if the respective "
+"feature is enabled in the \"Board Features\" (see <xref "
+"linkend=\"quick_settings_boardfeatures\"/> for details)."
+msgstr ""
+"Dans « Permissions utilisateur » et « Permissions de groupe », vous pouvez "
+"autoriser ou interdire des fonctionnalités telles que les pièces jointes, "
+"les signatures et les avatars pour des utilisateurs et groupes "
+"d'utilisateurs spécifiques. Notez que certains de ces paramètres n'ont "
+"d'importance que si la fonctionnalité correspondante est activée dans « "
+"Fonctionnalités du forum » (voir <xref "
+"linkend=\"quick_settings_boardfeatures\"/> pour plus de détails)."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:472
+msgid ""
+"Under \"Administrators\" you can give users or groups administrator "
+"privileges like the ability to manage forums or change user permissions. For"
+" details on these settings please read the <xref "
+"linkend=\"acp_permissions\"/>."
+msgstr ""
+"Sous « Administrateurs », vous pouvez accorder à des utilisateurs ou groupes"
+" des privilèges d'administrateur, comme la possibilité de gérer les forums "
+"ou de modifier les permissions des utilisateurs. Pour plus de détails sur "
+"ces paramètres, veuillez lire le <xref linkend=\"acp_permissions\"/>."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:473
+msgid ""
+"The \"Global Moderators\" form offers you the same settings as the forum "
+"specific form (described in <xref "
+"linkend=\"quick_permissions_moderators\"/>) but applies to all forums on "
+"your board."
+msgstr ""
+"Le formulaire « Modérateurs globaux » vous offre les mêmes paramètres que le"
+" formulaire spécifique à un forum (décrit dans <xref "
+"linkend=\"quick_permissions_moderators\"/>), mais s'applique à tous les "
+"forums de votre site."
+
+#. (itstool) path: section/title
+#: en/chapters/quick_start_guide.xml:478
+msgid "Obtaining support"
+msgstr "Obtenir de l'aide"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:479
+msgid ""
+"The <ulink url=\"https://www.phpbb.com/about/\">phpBB Team</ulink> provides "
+"many options for users to find support for their phpBB install. In addition "
+"to this very documentation, the <ulink "
+"url=\"https://www.phpbb.com/community/viewforum.php?f=556\">support forum on"
+" www.phpbb.com</ulink> has many answers that users like you are searching "
+"for. Therefore, we highly recommend the use of the search feature before "
+"asking a new question. If you are unable to find an answer, feel free to "
+"post a new topic asking for help. Be sure to be descriptive when explaining "
+"your problem! The more we know about what is happening, the faster we can "
+"provide you with the answer you are looking for. Be sure to fill out the "
+"<ulink url=\"https://www.phpbb.com/support/srt/\">Support Request "
+"Template</ulink> with the information it asks for and provide it in your "
+"post."
+msgstr ""
+"L'<ulink url=\"https://www.phpbb.com/about/\">équipe phpBB</ulink> propose "
+"de nombreuses options aux utilisateurs pour trouver de l'aide concernant "
+"leur installation de phpBB. En plus de cette documentation, le <ulink "
+"url=\"https://www.phpbb.com/community/viewforum.php?f=661\">forum de support"
+" sur www.phpbb.com</ulink> contient de nombreuses réponses aux questions que"
+" se posent des utilisateurs comme vous. Nous vous recommandons donc vivement"
+" d'utiliser la fonction de recherche avant de poser une nouvelle question. "
+"Si vous ne trouvez pas de réponse, n'hésitez pas à publier un nouveau sujet "
+"pour demander de l'aide. Veillez à être précis lorsque vous expliquez votre "
+"problème ! Plus nous en savons sur ce qui se passe, plus vite nous pouvons "
+"vous fournir la réponse que vous recherchez. Veillez à remplir le <ulink "
+"url=\"https://www.phpbb.com/support/srt/\">modèle de demande de "
+"support</ulink> avec les informations demandées et à l'inclure dans votre "
+"message."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:481
+msgid ""
+"In addition to the support forum on www.phpbb.com, we provide a <ulink "
+"url=\"https://www.phpbb.com/kb/\">Knowledge Base</ulink> for users to read "
+"and submit articles on common answers to questions. Our community has taken "
+"a lot of time in writing these articles, so be sure to check them out."
+msgstr ""
+"En plus du forum de support sur www.phpbb.com, nous proposons une <ulink "
+"url=\"https://www.phpbb.com/kb/\">base de connaissances</ulink> permettant "
+"aux utilisateurs de lire et de soumettre des articles sur les réponses "
+"courantes aux questions. Notre communauté a passé beaucoup de temps à "
+"rédiger ces articles, alors n'hésitez pas à les consulter."
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:483
+msgid ""
+"We provide realtime support in <ulink "
+"url=\"irc://irc.phpbb.com/phpbb\">#phpBB</ulink> on the popular Open Source "
+"IRC network, <ulink url=\"http://www.freenode.net/\">Freenode</ulink>. You "
+"can typically find someone from each of the teams in here, as well as fellow"
+" users who are more than happy to help you out. Be sure to read the <ulink "
+"url=\"https://www.phpbb.com/support/irc/\">IRC rules</ulink> before joining "
+"the channel, as we have a few basic netiquette rules that we ask users to "
+"follow. At any given time, there can be as many as 60 users, if not more in "
+"the channel, so you are almost certain to find someone there to help you. "
+"However, it is important that you read and follow the IRC rules as people "
+"may not answer you. An example of this is that oftentimes users come in to "
+"the channel and ask if anybody is around and then end up leaving 30 seconds "
+"later before someone has the chance to answer. Instead, be sure to ask your "
+"question and wait. As the saying goes, \"don't ask to ask, just ask!\""
+msgstr ""
+"Nous offrons une assistance en temps réel sur <ulink "
+"url=\"irc://irc.phpbb.com/phpbb\">#phpBB</ulink>, sur le réseau IRC Open "
+"Source populaire, <ulink url=\"http://www.freenode.net/\">Freenode</ulink>. "
+"Vous pourrez généralement y trouver quelqu'un de chaque équipe, ainsi que "
+"d'autres utilisateurs qui seront plus qu'heureux de vous aider. Veillez à "
+"lire les <ulink url=\"https://www.phpbb.com/support/irc/\">règles "
+"IRC</ulink> avant de rejoindre le canal, car nous avons quelques règles de "
+"savoir-vivre de base que nous demandons aux utilisateurs de respecter. À "
+"tout moment, il peut y avoir jusqu'à 60 utilisateurs, voire plus, dans le "
+"canal, vous êtes donc presque certain d'y trouver quelqu'un pour vous aider."
+" Cependant, il est important de lire et de suivre les règles IRC, car les "
+"gens pourraient ne pas vous répondre. Un exemple de cela est que souvent des"
+" utilisateurs arrivent sur le canal, demandent si quelqu'un est présent, "
+"puis finissent par partir 30 secondes plus tard avant que quelqu'un ait eu "
+"l'occasion de répondre. Au lieu de cela, posez directement votre question et"
+" attendez. Comme le dit le dicton, « ne demandez pas si vous pouvez "
+"demander, demandez tout simplement ! »"
+
+#. (itstool) path: section/para
+#: en/chapters/quick_start_guide.xml:485
+msgid ""
+"English is not your native language? Not a problem! We also provide an "
+"<ulink url=\"https://www.phpbb.com/support/intl/\">International Support "
+"page</ulink> with links to various websites that provide support in Espanol,"
+" Deutsch, Francais, and more."
+msgstr ""
+"L'anglais n'est pas votre langue maternelle ? Aucun problème ! Nous "
+"proposons également une <ulink "
+"url=\"https://www.phpbb.com/support/intl/\">page de support "
+"international</ulink> avec des liens vers divers sites web proposant une "
+"assistance en espagnol, allemand, français, et bien d'autres langues."

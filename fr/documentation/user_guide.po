@@ -1,0 +1,3750 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-09-15 01:22-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr ""
+
+#. (itstool) path: chapterinfo/releaseinfo
+#: en/chapters/user_guide.xml:5
+msgid "$Id$"
+msgstr ""
+
+#. (itstool) path: chapterinfo/copyright
+#: en/chapters/user_guide.xml:6
+msgid "<year>2006</year> <holder>phpBB Group</holder>"
+msgstr ""
+
+#. (itstool) path: chapter/title
+#: en/chapters/user_guide.xml:11
+msgid "User Guide"
+msgstr "Guide de l'utilisateur"
+
+#. (itstool) path: abstract/para
+#: en/chapters/user_guide.xml:13
+msgid ""
+"This chapter is targeted at the forum users. It explains all user facing "
+"functions that are needed to use phpBB 3.3"
+msgstr ""
+
+#. (itstool) path: authorgroup/author
+#: en/chapters/user_guide.xml:18 en/chapters/user_guide.xml:301
+msgid "<othername>AdamR</othername>"
+msgstr "<othername>AdamR</othername>"
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:23
+msgid "How user permissions affect forum experience"
+msgstr "Comment les permissions utilisateur affectent l'expérience du forum"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:24
+msgid ""
+"phpBB3 uses permissions on a per-user or per-usergroup basis to allow or "
+"disallow users access to certain functions or features which software "
+"offers. These may include the ability to post in certain forums, having an "
+"avatar, or being able to communicate through private messages. All of the "
+"permissions can be set through the Administration Panel."
+msgstr ""
+"phpBB3 utilise des permissions par utilisateur ou par groupe d'utilisateurs "
+"pour autoriser ou interdire l'accès à certaines fonctions ou fonctionnalités"
+" proposées par le logiciel. Celles-ci peuvent inclure la possibilité de "
+"publier dans certains forums, d'avoir un avatar, ou de pouvoir communiquer "
+"par messages privés. Toutes ces permissions peuvent être définies depuis le "
+"Panneau de contrôle de l'administration."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:25
+msgid ""
+"Permissions can also be set allowing appointed members to perform special "
+"tasks or have special abilities on the bulletin board. Permissions allow the"
+" Administrator to define which moderation functions and in which forums "
+"certain users or groups of users are allowed to use. This allows for "
+"appointed users to become moderators on the bulletin board. The "
+"administrator can also give users access to certain sections of the "
+"Administration panel, keeping important settings or functions restricted and"
+" safe from malicious acts. For example, a select group of moderators could "
+"be allowed to modify a user's avatar or signature if said avatar or "
+"signature is not allowed under a paticular forum's rules. Without these "
+"abilities set, the moderator would need to notify an administrator in order "
+"to have the user's profile changed."
+msgstr ""
+"Les permissions peuvent également permettre à des membres désignés "
+"d'effectuer des tâches spéciales ou de disposer de capacités particulières "
+"sur le forum. Les permissions permettent à l'administrateur de définir "
+"quelles fonctions de modération, et dans quels forums, certains utilisateurs"
+" ou groupes d'utilisateurs sont autorisés à utiliser. Cela permet à des "
+"utilisateurs désignés de devenir modérateurs sur le forum. L'administrateur "
+"peut également donner aux utilisateurs l'accès à certaines sections du "
+"Panneau de contrôle de l'administration, afin de garder les paramètres ou "
+"fonctions importants restreints et à l'abri des actions malveillantes. Par "
+"exemple, un groupe restreint de modérateurs pourrait être autorisé à "
+"modifier l'avatar ou la signature d'un utilisateur si cet avatar ou cette "
+"signature n'est pas conforme au règlement d'un forum particulier. Sans ces "
+"capacités, le modérateur devrait avertir un administrateur afin de faire "
+"modifier le profil de l'utilisateur."
+
+#. (itstool) path: authorgroup/author
+#: en/chapters/user_guide.xml:30
+msgid "<othername>zeroK</othername>"
+msgstr "<othername>zeroK</othername>"
+
+#. (itstool) path: authorgroup/author
+#: en/chapters/user_guide.xml:33 en/chapters/user_guide.xml:810
+msgid "<othername>battye</othername>"
+msgstr "<othername>battye</othername>"
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:38
+msgid "Registering on a phpBB3 board"
+msgstr "S'inscrire sur un forum phpBB3"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:39
+msgid ""
+"Registering an account on a phpBB3 board is typically a simple and straight "
+"forward procedure."
+msgstr ""
+"L'inscription d'un compte sur un forum phpBB3 est généralement une procédure"
+" simple et directe."
+
+#. (itstool) path: figure/title
+#: en/chapters/user_guide.xml:41
+msgid "The Typical Registration Page"
+msgstr "La page d'inscription typique"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: en/chapters/user_guide.xml:44
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/typical_registration_page.png' "
+"md5='6f2bfd6dbb3dede5326127929bdb0b0d'"
+msgstr ""
+"external ref='../images/user_guide/typical_registration_page.png' "
+"md5='6f2bfd6dbb3dede5326127929bdb0b0d'"
+
+#. (itstool) path: caption/para
+#: en/chapters/user_guide.xml:47
+msgid "This is what you should expect to see on a typical registration page."
+msgstr ""
+"Voici ce que vous devriez normalement voir sur une page d'inscription "
+"typique."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:51
+msgid ""
+"After clicking the <guilabel>Register</guilabel> link, the terms and "
+"conditions of registering will be displayed, which you must accept to "
+"proceed. Some websites will ask you to select whether you are under the age "
+"of thirteen in order to comply with <acronym>COPPA</acronym> (the United "
+"States' Children's Online Privacy Protection Act of 1998; more details can "
+"be found at <ulink "
+"url=\"http://www.coppa.org\">http://www.coppa.org</ulink>). If you are "
+"younger than thirteen years of age, your account will stay inactive until it"
+" is approved by a parent or guardian. You will receive an e-mail in which "
+"the next steps required for your account activation are outlined."
+msgstr ""
+"Après avoir cliqué sur le lien <guilabel>Inscription</guilabel>, les "
+"conditions générales d'inscription s'affichent ; vous devez les accepter "
+"pour continuer. Certains sites vous demanderont de préciser si vous avez "
+"moins de treize ans, afin de respecter la loi <acronym>COPPA</acronym> "
+"(Children's Online Privacy Protection Act de 1998, la loi américaine sur la "
+"protection de la vie privée des enfants en ligne ; plus de détails sont "
+"disponibles sur <ulink "
+"url=\"http://www.coppa.org\">http://www.coppa.org</ulink>). Si vous avez "
+"moins de treize ans, votre compte restera inactif jusqu'à ce qu'il soit "
+"approuvé par un parent ou un tuteur. Vous recevrez un e-mail détaillant les "
+"étapes suivantes nécessaires à l'activation de votre compte."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:52
+msgid ""
+"Beyond accepting the terms and conditions, you need to fill out some "
+"important details such as selecting a username, entering your e-mail address"
+" and desired password. You can also select your timezone and language."
+msgstr ""
+"Au-delà de l'acceptation des conditions générales, vous devez renseigner "
+"quelques informations importantes telles que le choix d'un nom "
+"d'utilisateur, la saisie de votre adresse e-mail et du mot de passe "
+"souhaité. Vous pouvez également choisir votre fuseau horaire et votre "
+"langue."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:53
+msgid ""
+"If you see in the form where you can specify your username, password etc. a "
+"graphic with some odd-looking characters, then you are seeing the so-called "
+"<emphasis>Visual Confirmation</emphasis>. Many boards will have this, "
+"otherwise known as a <acronym>CAPTCHA</acronym>, which is an image with "
+"distorted letters and numbers which you must then type into an adjacent box."
+" The reason for this is to ensure that you are a legitimate user registering"
+" (as opposed to a spam robot performing an automated registration). Simply "
+"enter the characters you see into the <guilabel>Confirmation code</guilabel>"
+" field and proceed with the registration. If you cannot understand the code,"
+" refresh the page to get a new code."
+msgstr ""
+"Si, dans le formulaire où vous indiquez votre nom d'utilisateur, votre mot "
+"de passe, etc., vous voyez une image comportant des caractères à l'aspect "
+"étrange, il s'agit de ce que l'on appelle la <emphasis>confirmation "
+"visuelle</emphasis>. De nombreux forums l'utilisent ; on parle aussi de "
+"<acronym>CAPTCHA</acronym>, une image contenant des lettres et des chiffres "
+"déformés que vous devez ensuite saisir dans un champ adjacent. Le but est de"
+" vérifier que vous êtes bien un utilisateur légitime en train de s'inscrire "
+"(et non un robot spammeur effectuant une inscription automatisée). Saisissez"
+" simplement les caractères que vous voyez dans le champ <guilabel>Code de "
+"confirmation</guilabel> et poursuivez l'inscription. Si vous ne parvenez pas"
+" à lire le code, actualisez la page pour en obtenir un nouveau."
+
+#. (itstool) path: figure/title
+#: en/chapters/user_guide.xml:55
+msgid "The Visual Confirmation Object"
+msgstr "L'objet de confirmation visuelle"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: en/chapters/user_guide.xml:58
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/visual_confirmation.png' "
+"md5='9f5f17352e5d208d9e28fc56595ab396'"
+msgstr ""
+"external ref='../images/user_guide/visual_confirmation.png' "
+"md5='9f5f17352e5d208d9e28fc56595ab396'"
+
+#. (itstool) path: caption/para
+#: en/chapters/user_guide.xml:61
+msgid "This is an example of a visual confirmation code you might see."
+msgstr ""
+"Voici un exemple de code de confirmation visuelle que vous pourriez voir."
+
+#. (itstool) path: para/blockquote
+#: en/chapters/user_guide.xml:65
+msgid ""
+"<guilabel> Your account has been created. However, this forum requires "
+"account activation, an activation key has been sent to the e-mail address "
+"you provided. Please check your e-mail for further information </guilabel>"
+msgstr ""
+"<guilabel> Votre compte a été créé. Cependant, ce forum nécessite une "
+"activation du compte ; une clé d'activation a été envoyée à l'adresse e-mail"
+" que vous avez fournie. Veuillez consulter votre messagerie pour plus "
+"d'informations </guilabel>"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:65
+msgid ""
+"Another option available is the account activation. Here, the administrator "
+"can make it a requirement that you have to follow a link mailed to you after"
+" registering before your account is activated. In this case you will see a "
+"message similiar to this one: <_:blockquote-1/> It is also possible that the"
+" administrator himself/herself has to activate the account."
+msgstr ""
+"Une autre option disponible est l'activation du compte. Dans ce cas, "
+"l'administrateur peut exiger que vous suiviez un lien qui vous est envoyé "
+"par e-mail après l'inscription avant que votre compte ne soit activé. Vous "
+"verrez alors un message similaire à celui-ci : <_:blockquote-1/> Il est "
+"également possible que l'administrateur doive lui-même activer le compte."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:66
+msgid ""
+"Some boards will have custom profile fields. If the administrator has "
+"elected to display custom profile fields on the registration screen, these "
+"will also appear. In some cases, these custom profile fields will also be "
+"required fields, meaning they must not be left blank."
+msgstr ""
+"Certains forums disposent de champs de profil personnalisés. Si "
+"l'administrateur a choisi d'afficher des champs de profil personnalisés sur "
+"l'écran d'inscription, ceux-ci apparaîtront également. Dans certains cas, "
+"ces champs de profil personnalisés seront également obligatoires, c'est-à-"
+"dire qu'ils ne devront pas être laissés vides."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:67
+msgid ""
+"Once you have completed all of the fields on the registration page, clicking"
+" the <guilabel>Submit</guilabel> button will complete the process. If you "
+"wish to clear all fields, clicking the <guilabel>Reset</guilabel> button "
+"will do this for you. After clicking <guilabel>Submit</guilabel>, you will "
+"be advised of your next step. In most cases, you will be sent an e-mail to "
+"the address you specified with a link to finalise the registration. Other "
+"options also include being able to login immediately (i.e. there are no "
+"further actions for the registration process) or waiting until an "
+"administrator reviews your registration and accepts it, in which case you "
+"will be notified by e-mail."
+msgstr ""
+"Une fois que vous avez rempli tous les champs de la page d'inscription, "
+"cliquer sur le bouton <guilabel>Envoyer</guilabel> permet de terminer le "
+"processus. Si vous souhaitez effacer tous les champs, le bouton "
+"<guilabel>Réinitialiser</guilabel> vous permet de le faire. Après avoir "
+"cliqué sur <guilabel>Envoyer</guilabel>, vous serez informé de la prochaine "
+"étape à suivre. Dans la plupart des cas, un e-mail contenant un lien pour "
+"finaliser l'inscription vous sera envoyé à l'adresse que vous avez indiquée."
+" Parmi les autres possibilités, vous pouvez également être en mesure de vous"
+" connecter immédiatement (c'est-à-dire qu'aucune autre action n'est "
+"nécessaire pour le processus d'inscription), ou devoir attendre qu'un "
+"administrateur examine votre inscription et l'accepte, auquel cas vous serez"
+" averti par e-mail."
+
+#. (itstool) path: authorgroup/author
+#: en/chapters/user_guide.xml:72
+msgid "<othername>Heimidal</othername>"
+msgstr "<othername>Heimidal</othername>"
+
+#. (itstool) path: authorgroup/author
+#: en/chapters/user_guide.xml:75
+msgid "<othername>iWisdom</othername>"
+msgstr "<othername>iWisdom</othername>"
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:80
+msgid "Orienting Yourself in the User Control Panel"
+msgstr "Se repérer dans le Panneau de configuration de l'utilisateur"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:81
+msgid ""
+"The User Control Panel (<glossterm>UCP</glossterm>) allows you to alter "
+"personal preferences, manage posts you are watching, send and receive "
+"private messages, and change the way information about you appears to other "
+"users. To view the UCP, click the 'User Control Panel' link that appears "
+"after logging in."
+msgstr ""
+"Le Panneau de configuration de l'utilisateur (<glossterm>UCP</glossterm>) "
+"vous permet de modifier vos préférences personnelles, de gérer les messages "
+"que vous surveillez, d'envoyer et de recevoir des messages privés, et de "
+"modifier la façon dont les informations vous concernant apparaissent aux "
+"autres utilisateurs. Pour accéder à l'UCP, cliquez sur le lien « Panneau de "
+"configuration de l'utilisateur » qui apparaît après votre connexion."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:82
+msgid ""
+"The UCP is separated into six tabs: Overview, Private Messages, Profile, "
+"Preferences, Friends and Foes, and Groups. Within each tab are several sub "
+"pages, accessed by clicking the desired link on the left side of the UCP "
+"interface. Some of these areas may not be available depending on the "
+"permissions set for you by the administrator."
+msgstr ""
+"L'UCP est divisé en six onglets : Vue d'ensemble, Messages privés, Profil, "
+"Préférences, Amis et ennemis, et Groupes. Chaque onglet contient plusieurs "
+"sous-pages, accessibles en cliquant sur le lien souhaité sur le côté gauche "
+"de l'interface de l'UCP. Certaines de ces zones peuvent ne pas être "
+"disponibles selon les permissions qui vous ont été accordées par "
+"l'administrateur."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:83
+msgid ""
+"Every page of the UCP displays your Friends List on the left side. To send a"
+" private message to a friend, click their user name."
+msgstr ""
+"Chaque page de l'UCP affiche votre liste d'amis sur le côté gauche. Pour "
+"envoyer un message privé à un ami, cliquez sur son nom d'utilisateur."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:84
+msgid ""
+"Private Messaging is discussed more in depth in <xref linkend=\"user_pm\"/>."
+msgstr ""
+"Les messages privés sont abordés plus en détail dans <xref "
+"linkend=\"user_pm\"/>."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:86
+msgid "Overview"
+msgstr "Vue d'ensemble"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:87
+msgid ""
+"The Overview displays a snapshot of information about your posting habits "
+"such as the date you joined the forum, your most active topic, and how many "
+"total posts you have submitted. Overview sub pages include Subscriptions, "
+"Bookmarks, and Drafts."
+msgstr ""
+"La Vue d'ensemble affiche un aperçu d'informations sur vos habitudes de "
+"publication, telles que la date à laquelle vous avez rejoint le forum, votre"
+" sujet le plus actif, et le nombre total de messages que vous avez publiés. "
+"Les sous-pages de la Vue d'ensemble comprennent Abonnements, Signets et "
+"Brouillons."
+
+#. (itstool) path: figure/title
+#: en/chapters/user_guide.xml:90
+msgid "User Control Panel Overview (Index)"
+msgstr "Vue d'ensemble du Panneau de configuration de l'utilisateur (Index)"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: en/chapters/user_guide.xml:93
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/ucp_overview.png' "
+"md5='0756fb591b4afe784b31136a611b182e'"
+msgstr ""
+"external ref='../images/user_guide/ucp_overview.png' "
+"md5='0756fb591b4afe784b31136a611b182e'"
+
+#. (itstool) path: caption/para
+#: en/chapters/user_guide.xml:96
+msgid "The <glossterm>UCP</glossterm> Overview section"
+msgstr "La section Vue d'ensemble de l'<glossterm>UCP</glossterm>"
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:102
+msgid "Subscriptions"
+msgstr "Abonnements"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:103
+msgid ""
+"Subscriptions are forums or individual topics that you have elected to watch"
+" for any new posts. Whenever a new post is made inside an area you have "
+"subscribed to, an e-mail will be sent you to informing you of the new "
+"addition. To create a subscription, visit the forum or topic you would like "
+"to subscribe to and click the 'Subscribe' link located at the bottom of the "
+"page."
+msgstr ""
+"Les abonnements sont des forums ou des sujets individuels que vous avez "
+"choisi de surveiller pour être averti de tout nouveau message. Chaque fois "
+"qu'un nouveau message est publié dans une zone à laquelle vous êtes abonné, "
+"un e-mail vous sera envoyé pour vous en informer. Pour créer un abonnement, "
+"rendez-vous sur le forum ou le sujet auquel vous souhaitez vous abonner et "
+"cliquez sur le lien « S'abonner » situé en bas de la page."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:104
+msgid ""
+"To remove a subscription, check the box next to the subscription you would "
+"like to remove and click the 'Unsubscribe' button."
+msgstr ""
+"Pour supprimer un abonnement, cochez la case à côté de l'abonnement que vous"
+" souhaitez supprimer et cliquez sur le bouton « Se désabonner »."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:107
+msgid "Bookmarks"
+msgstr "Signets"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:108
+msgid ""
+"Bookmarks, much like subscriptions, are topics you've chosen to watch. "
+"However, there are two key differences: 1) only individual topics may be "
+"bookmarked, and 2) an e-mail will not be sent to inform you of new posts."
+msgstr ""
+"Les signets, tout comme les abonnements, sont des sujets que vous avez "
+"choisi de surveiller. Cependant, il existe deux différences essentielles : "
+"1) seuls les sujets individuels peuvent être mis en signet, et 2) aucun "
+"e-mail ne vous sera envoyé pour vous informer des nouveaux messages."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:109
+msgid ""
+"To create a bookmark, visit the topic you would like to watch and click the "
+"'Bookmark Topic' link located at the bottom of the page."
+msgstr ""
+"Pour créer un signet, rendez-vous sur le sujet que vous souhaitez surveiller"
+" et cliquez sur le lien « Mettre le sujet en signet » situé en bas de la "
+"page."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:110
+msgid ""
+"To remove a bookmark, check the box next to the bookmark you would like to "
+"remove and click the 'Remove marked bookmarks' button."
+msgstr ""
+"Pour supprimer un signet, cochez la case à côté du signet que vous souhaitez"
+" supprimer et cliquez sur le bouton « Supprimer les signets sélectionnés »."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:113 en/chapters/user_guide.xml:419
+msgid "Drafts"
+msgstr "Brouillons"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:114
+msgid ""
+"Drafts are created when you click the 'Save' button on the New Post or Post "
+"Reply page. Displayed are the title of your post, the forum or topic that "
+"the draft was made in, and the date you saved it."
+msgstr ""
+"Les brouillons sont créés lorsque vous cliquez sur le bouton « Enregistrer »"
+" sur la page Nouveau message ou Répondre. Sont affichés le titre de votre "
+"message, le forum ou le sujet dans lequel le brouillon a été créé, ainsi que"
+" la date à laquelle vous l'avez enregistré."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:115
+msgid ""
+"To continue editing a draft for future submission, click the 'View/Edit' "
+"link. If you plan to finish and post the message, click 'Load Draft'. To "
+"delete a draft, check the box next to the draft you wish to remove and click"
+" 'Delete Marked'."
+msgstr ""
+"Pour continuer à modifier un brouillon en vue d'une publication ultérieure, "
+"cliquez sur le lien « Voir/Modifier ». Si vous prévoyez de terminer et de "
+"publier le message, cliquez sur « Charger le brouillon ». Pour supprimer un "
+"brouillon, cochez la case à côté du brouillon que vous souhaitez supprimer "
+"et cliquez sur « Supprimer la sélection »."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:118 en/chapters/user_guide.xml:257
+msgid "Notifications"
+msgstr "Notifications"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:119
+msgid ""
+"Notifications alert you to events that have taken place on the board. They "
+"will appear in the Notifications menu at the top of your screen. Events "
+"include:"
+msgstr ""
+"Les notifications vous alertent des événements survenus sur le forum. Elles "
+"apparaissent dans le menu Notifications en haut de votre écran. Les "
+"événements comprennent :"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:121
+msgid "New Private Message has arrived"
+msgstr "Un nouveau message privé est arrivé"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:122
+msgid "New topic was created in a subscribed forum"
+msgstr "Un nouveau sujet a été créé dans un forum auquel vous êtes abonné"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:123
+msgid "New post was created in a subscribed topic"
+msgstr "Un nouveau message a été publié dans un sujet auquel vous êtes abonné"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:124
+msgid "A new post is awaiting moderation"
+msgstr "Un nouveau message est en attente de modération"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:125
+msgid "A post has been reported"
+msgstr "Un message a été signalé"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:126
+msgid "Your topic/post has been approved/disapproved"
+msgstr "Votre sujet/message a été approuvé/rejeté"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:127
+msgid "You have been quoted in a post"
+msgstr "Vous avez été cité dans un message"
+
+#. (itstool) path: figure/title
+#: en/chapters/user_guide.xml:130
+msgid "Notifications Menu"
+msgstr "Menu Notifications"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: en/chapters/user_guide.xml:133
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/notifications_menu.png' "
+"md5='ec3f7d10d1f37611a7aa22969bf52a92'"
+msgstr ""
+"external ref='../images/user_guide/notifications_menu.png' "
+"md5='ec3f7d10d1f37611a7aa22969bf52a92'"
+
+#. (itstool) path: caption/para
+#: en/chapters/user_guide.xml:136
+msgid "The <glossterm>Notification</glossterm>s menu"
+msgstr "Le menu des <glossterm>notification</glossterm>s"
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:143
+msgid "Profile"
+msgstr "Profil"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:144
+msgid ""
+"This section lets you set your profile information. Your profile information"
+" contains general information that other users on the board will able to "
+"see. Think of your profile as a sign of your public presence. This section "
+"is separated from your preferences. (Preferences are the individual settings"
+" that you set and manage on your own, and control your forum experience. "
+"Thus, this is separated from your profile settings.)"
+msgstr ""
+"Cette section vous permet de définir les informations de votre profil. Les "
+"informations de votre profil contiennent des renseignements généraux que les"
+" autres utilisateurs du forum pourront voir. Considérez votre profil comme "
+"le signe de votre présence publique. Cette section est distincte de vos "
+"préférences. (Les préférences sont les paramètres individuels que vous "
+"définissez et gérez vous-même, et qui contrôlent votre expérience du forum. "
+"C'est pourquoi elles sont distinctes des paramètres de votre profil.)"
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:146
+msgid "Personal settings"
+msgstr "Paramètres personnels"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:147
+msgid ""
+"Personal settings control the information that is displayed when a user "
+"views your profile."
+msgstr ""
+"Les paramètres personnels contrôlent les informations affichées lorsqu'un "
+"utilisateur consulte votre profil."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:149
+msgid ""
+"<guilabel>ICQ Number</guilabel>: Your account number associated with <ulink "
+"url=\"http://www.icq.com/\">ICQ</ulink> system."
+msgstr ""
+"<guilabel>Numéro ICQ</guilabel>: Votre numéro de compte associé au système "
+"<ulink url=\"http://www.icq.com/\">ICQ</ulink>."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:150
+msgid ""
+"<guilabel>AOL Instant Messenger</guilabel>: Your screen name associated with"
+" <ulink url=\"http://aim.com\">AOL Instant Messenger</ulink> system."
+msgstr ""
+"<guilabel>AOL Instant Messenger</guilabel>: Votre pseudonyme associé au "
+"système <ulink url=\"http://aim.com\">AOL Instant Messenger</ulink>."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:151
+msgid ""
+"<guilabel>Windows Live Messenger</guilabel>: Your email address associated "
+"with the <ulink url=\"http://home.live.com/\">Windows Live</ulink> service."
+msgstr ""
+"<guilabel>Windows Live Messenger</guilabel>: Votre adresse e-mail associée "
+"au service <ulink url=\"http://home.live.com/\">Windows Live</ulink>."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:152
+msgid ""
+"<guilabel>Yahoo Messenger</guilabel>: Your username associated with the "
+"<ulink url=\"http://messenger.yahoo.com/\">Yahoo Messenger</ulink> service."
+msgstr ""
+"<guilabel>Yahoo Messenger</guilabel>: Votre nom d'utilisateur associé au "
+"service <ulink url=\"http://messenger.yahoo.com/\">Yahoo Messenger</ulink>."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:153
+msgid ""
+"<guilabel>Jabber Address</guilabel>: Your username associated with the "
+"<ulink url=\"http://www.jabber.org/\">Jabber</ulink> service."
+msgstr ""
+"<guilabel>Adresse Jabber</guilabel>: Votre nom d'utilisateur associé au "
+"service <ulink url=\"http://www.jabber.org/\">Jabber</ulink>."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:154
+msgid ""
+"<guilabel>Facebook</guilabel>: Your unique username/page name associated "
+"with the <ulink url=\"https://www.facebook.com/\">Facebook</ulink> service."
+msgstr ""
+"<guilabel>Facebook</guilabel>: Votre nom d'utilisateur ou nom de page unique"
+" associé au service <ulink "
+"url=\"https://www.facebook.com/\">Facebook</ulink>."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:155
+msgid ""
+"<guilabel>Twitter</guilabel>: Your username associated with the <ulink "
+"url=\"https://twitter.com/\">Twitter</ulink> service."
+msgstr ""
+"<guilabel>Twitter</guilabel>: Votre nom d'utilisateur associé au service "
+"<ulink url=\"https://twitter.com/\">Twitter</ulink>."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:156
+msgid ""
+"<guilabel>Skype</guilabel>: Your username associated with the <ulink "
+"url=\"http://www.skype.com/\">Skype</ulink> service."
+msgstr ""
+"<guilabel>Skype</guilabel>: Votre nom d'utilisateur associé au service "
+"<ulink url=\"http://www.skype.com/\">Skype</ulink>."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:157
+msgid ""
+"<guilabel>Website</guilabel>: Your website's address. Must be prepended with"
+" the appropriate protocol reference (i.e. http://)"
+msgstr ""
+"<guilabel>Site web</guilabel>: L'adresse de votre site web. Doit être "
+"précédée du protocole approprié (c'est-à-dire http://)"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:158
+msgid ""
+"<guilabel>Location</guilabel>: Your physical location. Note that this is "
+"generally displayed along with your user information with every post, so "
+"standard caution regarding releasing personal information on the Internet "
+"should apply."
+msgstr ""
+"<guilabel>Localisation</guilabel>: Votre emplacement géographique. Notez que"
+" cette information est généralement affichée avec vos informations "
+"d'utilisateur sur chaque message ; la prudence habituelle concernant la "
+"divulgation d'informations personnelles sur Internet s'applique donc."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:159
+msgid ""
+"<guilabel>Occupation</guilabel>: Your occupation. The information entered "
+"will appear only on the viewprofile page."
+msgstr ""
+"<guilabel>Profession</guilabel>: Votre profession. L'information saisie "
+"n'apparaîtra que sur la page de visualisation du profil."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:160
+msgid ""
+"<guilabel>Interests</guilabel>: Your personal interests. The information "
+"entered here will appear only on the viewprofile page."
+msgstr ""
+"<guilabel>Centres d'intérêt</guilabel>: Vos centres d'intérêt personnels. "
+"L'information saisie ici n'apparaîtra que sur la page de visualisation du "
+"profil."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:161
+msgid ""
+"<guilabel>Birthday</guilabel>: Your birthday. This information is used for "
+"displaying your username in the Birthday section of the Board Index. If year"
+" is specified, your age will be displayed in your profile."
+msgstr ""
+"<guilabel>Anniversaire</guilabel>: Votre date de naissance. Cette "
+"information est utilisée pour afficher votre nom d'utilisateur dans la "
+"section Anniversaires de l'index du forum. Si l'année est indiquée, votre "
+"âge sera affiché sur votre profil."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:165
+msgid "Signature"
+msgstr "Signature"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:166
+msgid ""
+"Your signature appears, at your option, below every post you make. "
+"Signatures may be formatted using <link "
+"linkend=\"posting_bbcodes\">BBCode</link>. The board administrator may "
+"specifiy a maximum length for signatures. You can check this limit by noting"
+" the line <guilabel>There is a x character limit.</guilabel> above the "
+"signature editing textbox, where x is the currently set limit."
+msgstr ""
+"Votre signature apparaît, si vous le souhaitez, sous chaque message que vous"
+" publiez. Les signatures peuvent être mises en forme à l'aide du <link "
+"linkend=\"posting_bbcodes\">BBCode</link>. L'administrateur du forum peut "
+"définir une longueur maximale pour les signatures. Vous pouvez vérifier "
+"cette limite en consultant la ligne <guilabel>La limite est de x "
+"caractères.</guilabel> au-dessus de la zone de texte d'édition de la "
+"signature, où x est la limite actuellement définie."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:169
+msgid "Avatar"
+msgstr "Avatar"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:170
+msgid ""
+"Your avatar is an image the displays with every post you make. Depending on "
+"board settings, avatars may be completely disabled, or may appear in one (or"
+" more) of three forms: \"<guilabel>Upload from your machine</guilabel>\", "
+"\"<guilabel>Upload from a URL</guilabel>\", and \"<guilabel>Link off-"
+"site</guilabel>."
+msgstr ""
+"Votre avatar est une image qui s'affiche avec chaque message que vous "
+"publiez. Selon les paramètres du forum, les avatars peuvent être entièrement"
+" désactivés, ou peuvent se présenter sous une (ou plusieurs) des trois "
+"formes suivantes : « <guilabel>Importer depuis votre ordinateur</guilabel> "
+"», « <guilabel>Importer depuis un lien</guilabel> » et « <guilabel>Lien "
+"externe</guilabel> »."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:173
+msgid ""
+"<guilabel>Gravatar</guilabel>: If you use the Gravatar.com avatar service, "
+"you can specify your Gravatar e-mail address here to use your Gravatar image"
+" as your avatar."
+msgstr ""
+"<guilabel>Avatar de Gravatar</guilabel>: Si vous utilisez le service "
+"d'avatar Gravatar.com, vous pouvez indiquer ici votre adresse e-mail "
+"Gravatar afin d'utiliser votre image Gravatar comme avatar."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:174
+msgid ""
+"<guilabel>Upload from your machine</guilabel>: You may upload an avatar from"
+" your machine to be hosted on the board's server."
+msgstr ""
+"<guilabel>Importer depuis votre ordinateur</guilabel>: Vous pouvez "
+"téléverser un avatar depuis votre ordinateur pour qu'il soit hébergé sur le "
+"serveur du forum."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:175
+msgid ""
+"<guilabel>Upload from a URL</guilabel>: You may specify the URL of an "
+"existing image. This will cause the image to be copied to the board's server"
+" and hosted on it."
+msgstr ""
+"<guilabel>Importer depuis un lien</guilabel>: Vous pouvez indiquer l'URL "
+"d'une image existante. L'image sera alors copiée sur le serveur du forum et "
+"y sera hébergée."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:176
+msgid ""
+"<guilabel>Link off-site</guilabel>: You may specify the URL of an existing "
+"image. This will not cause the image to be hosted on the board's server, but"
+" rather hotlinked to its current location."
+msgstr ""
+"<guilabel>Lien externe</guilabel>: Vous pouvez indiquer l'URL d'une image "
+"existante. L'image ne sera pas hébergée sur le serveur du forum, mais sera "
+"plutôt liée directement à son emplacement actuel."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:179
+msgid ""
+"Additionally, a board administrator may opt to provide an avatar gallery for"
+" users to make use of. These images are pre-selected by the administrator "
+"and are able to be used by any of a board's members."
+msgstr ""
+"De plus, un administrateur de forum peut choisir de mettre à disposition une"
+" galerie d'avatars destinée aux utilisateurs. Ces images sont "
+"présélectionnées par l'administrateur et peuvent être utilisées par tous les"
+" membres du forum."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:182
+msgid "Login Keys"
+msgstr "Clés de connexion"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:183
+msgid ""
+"If you choose to have the board log you in automatically when you visit (the"
+" \"Remember Me\" check box), you are given a login key for your browser to "
+"use when you visit the site. As long as your browser has this key, you will "
+"be automatically logged in. When you log out, the key is only deleted from "
+"your browser and not from the board."
+msgstr ""
+"Si vous choisissez que le forum vous connecte automatiquement lors de vos "
+"visites (case à cocher « Se souvenir de moi »), une clé de connexion est "
+"attribuée à votre navigateur pour qu'il l'utilise lors de vos visites du "
+"site. Tant que votre navigateur possède cette clé, vous serez "
+"automatiquement connecté. Lorsque vous vous déconnectez, la clé n'est "
+"supprimée que de votre navigateur, et non du forum."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:184
+msgid ""
+"This section allows you to view all of the login keys associated with your "
+"account, when they were created, and from what IP address. You can delete "
+"login keys from this page as well."
+msgstr ""
+"Cette section vous permet de consulter toutes les clés de connexion "
+"associées à votre compte, leur date de création, ainsi que l'adresse IP dont"
+" elles proviennent. Vous pouvez également supprimer des clés de connexion "
+"depuis cette page."
+
+#. (itstool) path: note/para
+#: en/chapters/user_guide.xml:185
+msgid ""
+"Deleting a login key that you are currently using will log you out of the "
+"board."
+msgstr ""
+"La suppression d'une clé de connexion que vous utilisez actuellement vous "
+"déconnectera du forum."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:188
+msgid "External Accounts"
+msgstr "Comptes externes"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:189
+msgid ""
+"If the board administrator has enabled <link "
+"linkend=\"acp_client_auth\">OAuth authentication</link>, you will be able to"
+" login with your account from OAuth providers such as Bitly, Facebook, and "
+"Google."
+msgstr ""
+"Si l'administrateur du forum a activé l'<link "
+"linkend=\"acp_client_auth\">authentification OAuth</link>, vous pourrez vous"
+" connecter avec votre compte auprès de fournisseurs OAuth tels que Bitly, "
+"Facebook et Google."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:190
+msgid ""
+"Click the <guilabel>Link</guilabel> button for each service to link your "
+"accounts to the board. You will be prompted to log in again. Use your login "
+"credentials for the board. <emphasis role=\"strong\">DO NOT</emphasis> use "
+"your external account yet. When you log in, you will be sent to your account"
+" page which will show that an ID has been generated for your external "
+"account."
+msgstr ""
+"Cliquez sur le bouton <guilabel>Associer</guilabel> pour chaque service afin"
+" de lier vos comptes au forum. Il vous sera demandé de vous reconnecter. "
+"Utilisez vos identifiants de connexion du forum. <emphasis "
+"role=\"strong\">N'utilisez PAS</emphasis> encore votre compte externe. "
+"Lorsque vous vous connectez, vous serez redirigé vers votre page de compte, "
+"qui indiquera qu'un identifiant a été généré pour votre compte externe."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:191
+msgid "Once an account has been linked, you can unlink it from the same page."
+msgstr ""
+"Une fois qu'un compte a été lié, vous pouvez le délier depuis la même page."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:192
+msgid ""
+"After linking the account, you can now use it to log into the board. Just "
+"click the appropriate service button on the login page."
+msgstr ""
+"Une fois le compte lié, vous pouvez désormais l'utiliser pour vous connecter"
+" au forum. Cliquez simplement sur le bouton du service approprié sur la page"
+" de connexion."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:196
+msgid "Preferences"
+msgstr "Préférences"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:197
+msgid ""
+"Preferences allow you to dictate various behaviours of the phpBB software in"
+" regards to your interaction with it."
+msgstr ""
+"Les préférences vous permettent de définir divers comportements du logiciel "
+"phpBB concernant votre interaction avec celui-ci."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:199
+msgid "Global"
+msgstr "Général"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:200
+msgid ""
+"Global settings control various overall interactions with the phpBB "
+"software."
+msgstr ""
+"Les paramètres généraux contrôlent divers aspects globaux de l'interaction "
+"avec le logiciel phpBB."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:203
+msgid ""
+"<guilabel>Users can contact by e-mail</guilabel>: If "
+"<guilabel>Yes</guilabel> is selected, users can e-mail you via the "
+"\"e-mail\" button in your profile."
+msgstr ""
+"<guilabel>Autoriser les utilisateurs à me contacter par e-mail</guilabel>: "
+"Si <guilabel>Oui</guilabel> est sélectionné, les utilisateurs peuvent vous "
+"envoyer un e-mail via le bouton « e-mail » de votre profil."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:204
+msgid ""
+"<guilabel>Administratos can email me information</guilabel>: If "
+"<guilabel>Yes</guilabel> is selected, you will receive mass-emails sent out "
+"by the board administrator."
+msgstr ""
+"<guilabel>Autoriser les administrateurs à me contacter par "
+"e-mail</guilabel>: Si <guilabel>Oui</guilabel> est sélectionné, vous "
+"recevrez les e-mails groupés envoyés par l'administrateur du forum."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:205
+msgid ""
+"<guilabel>Allow users to send you private messages</guilabel>: If "
+"<guilabel>Yes</guilabel> is selected, users can send you private messages "
+"via the board."
+msgstr ""
+"<guilabel>Autoriser les utilisateurs à me contacter par message "
+"privé</guilabel>: Si <guilabel>Oui</guilabel> est sélectionné, les "
+"utilisateurs peuvent vous envoyer des messages privés via le forum."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:206
+msgid ""
+"<guilabel>Hide my online status</guilabel>: If <guilabel>Yes</guilabel> is "
+"selected, your online status will be hidden to users. Note that "
+"administrators and moderators will still be able to view your online status."
+msgstr ""
+"<guilabel>Masquer ma présence</guilabel>: Si <guilabel>Oui</guilabel> est "
+"sélectionné, votre statut de connexion sera masqué aux utilisateurs. Notez "
+"que les administrateurs et les modérateurs pourront toujours voir votre "
+"statut de connexion."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:207
+msgid ""
+"<guilabel>My board style</guilabel>: Allows you to specify what style the "
+"board utilizes. This setting may not be available if the board administrator"
+" has selected to override users' styles."
+msgstr ""
+"<guilabel>Mon style sur le forum</guilabel>: Vous permet de définir le style"
+" utilisé par le forum. Ce paramètre peut ne pas être disponible si "
+"l'administrateur du forum a choisi de forcer le style pour tous les "
+"utilisateurs."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:208
+msgid ""
+"<guilabel>My language</guilabel>: Allows you to specify what language pack "
+"the board utilizes. Note that this setting applies only to board language "
+"strings; posts will be rendered in the language they were written."
+msgstr ""
+"<guilabel>Ma langue</guilabel>: Vous permet de définir le pack de langue "
+"utilisé par le forum. Notez que ce paramètre ne s'applique qu'aux chaînes de"
+" langue du forum ; les messages seront affichés dans la langue dans laquelle"
+" ils ont été écrits."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:209
+msgid ""
+"<guilabel>My timezone</guilabel>: Allows you to specify what timezone board "
+"times should appear in."
+msgstr ""
+"<guilabel>Mon fuseau horaire</guilabel>: Vous permet de définir le fuseau "
+"horaire dans lequel les heures du forum doivent s'afficher."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:210
+msgid ""
+"<guilabel>My date format</guilabel>: Controls what format times are rendered"
+" in. You may select one of the options in the dropdown box -- advanced users"
+" may select \"<guilabel>Custom</guilabel>\" and input a custom format (in "
+"the format of the <ulink url=\"http://www.php.net/date\">php.net date "
+"function</ulink>)."
+msgstr ""
+"<guilabel>Mon format de date</guilabel>: Contrôle le format d'affichage des "
+"heures. Vous pouvez sélectionner l'une des options de la liste déroulante --"
+" les utilisateurs avancés peuvent sélectionner "
+"\"<guilabel>Personnalisé</guilabel>\" et saisir un format personnalisé (au "
+"format de la <ulink url=\"http://www.php.net/date\">fonction date de "
+"php.net</ulink>)."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:215
+msgid "Posting"
+msgstr "Publication"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:216
+msgid ""
+"Posting settings control the default settings of the posting editors when "
+"you create a post. Note that these options are controllable on an individual"
+" basis while posting."
+msgstr ""
+"Les paramètres de publication contrôlent les réglages par défaut des "
+"éditeurs de messages lorsque vous créez un message. Notez que ces options "
+"peuvent être modifiées individuellement lors de la publication."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:219
+msgid ""
+"<guilabel>Enable BBCode by default</guilabel>: When <guilabel>Yes</guilabel>"
+" is selected, BBCode is enabled within the post editor."
+msgstr ""
+"<guilabel>Activer les BBCodes par défaut</guilabel>: Lorsque "
+"<guilabel>Oui</guilabel> est sélectionné, le BBCode est activé dans "
+"l'éditeur de messages."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:220
+msgid ""
+"<guilabel>Enable smiles by default</guilabel>: When <guilabel>Yes</guilabel>"
+" is selected, smiles will be rendered within your posts."
+msgstr ""
+"<guilabel>Activer les émoticônes par défaut</guilabel>: Lorsque "
+"<guilabel>Oui</guilabel> est sélectionné, les émoticônes seront affichées "
+"dans vos messages."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:221
+msgid ""
+"<guilabel>Attach my signature by default</guilabel>: When "
+"<guilabel>Yes</guilabel> is selected, your signature will be appended to "
+"your posts."
+msgstr ""
+"<guilabel>Insérer ma signature par défaut</guilabel>: Lorsque "
+"<guilabel>Oui</guilabel> est sélectionné, votre signature sera ajoutée à vos"
+" messages."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:222
+msgid ""
+"<guilabel>Notify me upon replies by default</guilabel>: When "
+"<guilabel>yes</guilabel> is selected, you will be notified by email when a "
+"reply to your post is made."
+msgstr ""
+"<guilabel>Recevoir une notification par défaut lors de la réception d'un "
+"nouveau message</guilabel>: Lorsque <guilabel>oui</guilabel> est "
+"sélectionné, vous serez averti par e-mail lorsqu'une réponse est apportée à "
+"votre message."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:228
+msgid "Display"
+msgstr "Affichage"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:229
+msgid ""
+"Display settings control how posts and topics are rendered in the various "
+"board views."
+msgstr ""
+"Les paramètres d'affichage contrôlent la façon dont les messages et les "
+"sujets sont présentés dans les différentes vues du forum."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:233
+msgid ""
+"<guilabel>Display images within posts</guilabel>: When "
+"<guilabel>Yes</guilabel> is selected, images will be displayed."
+msgstr ""
+"<guilabel>Afficher les images dans les messages</guilabel>: Lorsque "
+"<guilabel>Oui</guilabel> est sélectionné, les images seront affichées."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:234
+msgid ""
+"<guilabel>Display Flash animations</guilabel>: When <guilabel>Yes</guilabel>"
+" is selected, Flash animations will be rendered."
+msgstr ""
+"<guilabel>Afficher les animations Flash</guilabel>: Lorsque "
+"<guilabel>Oui</guilabel> est sélectionné, les animations Flash seront "
+"affichées."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:235
+msgid ""
+"<guilabel>Display smilies as images</guilabel>: When "
+"<guilabel>Yes</guilabel> is selected, smilies will be rendered as images "
+"instead of as their text equivalent."
+msgstr ""
+"<guilabel>Afficher les émoticônes comme des images</guilabel>: Lorsque "
+"<guilabel>Oui</guilabel> est sélectionné, les émoticônes seront affichées "
+"sous forme d'images plutôt que sous leur forme textuelle."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:236
+msgid ""
+"<guilabel>Display signatures</guilabel>: When <guilabel>yes</guilabel> is "
+"selected, user signatures will be displayed."
+msgstr ""
+"<guilabel>Afficher les signatures</guilabel>: Lorsque "
+"<guilabel>oui</guilabel> est sélectionné, les signatures des utilisateurs "
+"seront affichées."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:237
+msgid ""
+"<guilabel>Display avatars</guilabel>: When <guilabel>yes</guilabel> is "
+"selected, user avatars will be shown."
+msgstr ""
+"<guilabel>Afficher les avatars</guilabel>: Lorsque <guilabel>oui</guilabel> "
+"est sélectionné, les avatars des utilisateurs seront affichés."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:238
+msgid ""
+"<guilabel>Enable word censoring</guilabel>: When <guilabel>yes</guilabel> is"
+" selected, the text of posts and private messages will be censored according"
+" to the <link linkend=\"acp_posting_censors\">word cesnor list</link> "
+"defined by the administrator."
+msgstr ""
+"<guilabel>Activer la censure de mots</guilabel>: Lorsque "
+"<guilabel>oui</guilabel> est sélectionné, le texte des messages et des "
+"messages privés sera censuré selon la <link "
+"linkend=\"acp_posting_censors\">liste de mots censurés</link> définie par "
+"l'administrateur."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:230
+msgid ""
+"The following settings control how the contents of posts and private "
+"messages are rendered. <_:itemizedlist-1/>"
+msgstr ""
+"Les paramètres suivants contrôlent la façon dont le contenu des messages et "
+"des messages privés est affiché. <_:itemizedlist-1/>"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:243
+msgid ""
+"<guilabel>Display topics from previous days</guilabel>: This setting limits "
+"the age of topics which should be displayed. By default, all topics are "
+"shown."
+msgstr ""
+"<guilabel>Afficher les sujets triés selon leur ancienneté</guilabel>: Ce "
+"paramètre limite l'ancienneté des sujets à afficher. Par défaut, tous les "
+"sujets sont affichés."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:244
+msgid ""
+"<guilabel>Display topics ordering by</guilabel>: This setting changes the "
+"order of how topics are shown. Topics can be ordered by "
+"<guilabel>author</guilabel>, <guilabel>post time</guilabel>, "
+"<guilabel>number of replies</guilabel>, <guilabel>subject</guilabel>, or "
+"<guilabel>number of views</guilabel>."
+msgstr ""
+"<guilabel>Afficher les sujets triés par</guilabel>: Ce paramètre modifie "
+"l'ordre d'affichage des sujets. Les sujets peuvent être triés par "
+"<guilabel>auteur</guilabel>, <guilabel>date du message</guilabel>, "
+"<guilabel>nombre de réponses</guilabel>, <guilabel>sujet</guilabel>, ou "
+"<guilabel>nombre de vues</guilabel>."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:245
+msgid ""
+"<guilabel>Display topic order direction</guilabel>: Topics can be displayed "
+"in either <guilabel>ascending</guilabel> or <guilabel>descending</guilabel> "
+"order."
+msgstr ""
+"<guilabel>Afficher les sujets triés par ordre</guilabel>: Les sujets peuvent"
+" être affichés par ordre <guilabel>croissant</guilabel> ou "
+"<guilabel>décroissant</guilabel>."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:241
+msgid ""
+"The following settings control how topics are displayed in the forum view. "
+"<_:itemizedlist-1/>"
+msgstr ""
+"Les paramètres suivants contrôlent la façon dont les sujets sont affichés "
+"dans la vue du forum. <_:itemizedlist-1/>"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:250
+msgid ""
+"<guilabel>Display posts from previous days</guilabel>: This setting limits "
+"the age of posts which should be displayed. By default, all posts are shown."
+msgstr ""
+"<guilabel>Afficher les messages triés selon leur ancienneté</guilabel>: Ce "
+"paramètre limite l'ancienneté des messages à afficher. Par défaut, tous les "
+"messages sont affichés."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:251
+msgid ""
+"<guilabel>Display posts ordering by</guilabel>: This setting changes the "
+"order of how posts are shown. Posts can be ordered by "
+"<guilabel>author</guilabel>, <guilabel>post time</guilabel>, "
+"<guilabel>number of replies</guilabel>, <guilabel>subject</guilabel>, or "
+"<guilabel>number of views</guilabel>."
+msgstr ""
+"<guilabel>Afficher les messages triés par</guilabel>: Ce paramètre modifie "
+"l'ordre d'affichage des messages. Les messages peuvent être triés par "
+"<guilabel>auteur</guilabel>, <guilabel>date du message</guilabel>, "
+"<guilabel>nombre de réponses</guilabel>, <guilabel>sujet</guilabel>, ou "
+"<guilabel>nombre de vues</guilabel>."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:252
+msgid ""
+"<guilabel>Display topic order direction</guilabel>: Posts can be displayed "
+"in either <guilabel>ascending</guilabel> or <guilabel>descending</guilabel> "
+"order."
+msgstr ""
+"<guilabel>Afficher les sujets triés par ordre</guilabel>: Les messages "
+"peuvent être affichés par ordre <guilabel>croissant</guilabel> ou "
+"<guilabel>décroissant</guilabel>."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:248
+msgid ""
+"The following settings control how posts are displayed in the topic view. "
+"<_:itemizedlist-1/>"
+msgstr ""
+"Les paramètres suivants contrôlent la façon dont les messages sont affichés "
+"dans la vue du sujet. <_:itemizedlist-1/>"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:258
+msgid ""
+"Notification settings control which events will trigger a notification and "
+"how you will receive the notification."
+msgstr ""
+"Les paramètres de notification contrôlent quels événements déclenchent une "
+"notification et la façon dont vous la recevrez."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:262
+msgid ""
+"<guilabel>Someone replies to a topic you have bookmarked</guilabel>: A user "
+"has posted a reply to a topic which you have bookmarked."
+msgstr ""
+"<guilabel>Quelqu'un a répondu à un sujet que vous avez mis en "
+"favori</guilabel>: Un utilisateur a publié une réponse à un sujet que vous "
+"avez mis en signet."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:263
+msgid ""
+"<guilabel>Someone replies to a topic to which you are subscribed</guilabel>:"
+" A user has posted a reply to a topich which you have subscribed to."
+msgstr ""
+"<guilabel>Quelqu'un a répondu à un sujet auquel vous êtes abonné</guilabel>:"
+" Un utilisateur a publié une réponse à un sujet auquel vous êtes abonné."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:264
+msgid ""
+"<guilabel>Someone quotes you in a post</guilabel>: A post you made has been "
+"quoted by another user."
+msgstr ""
+"<guilabel>Quelqu'un vous a cité dans un message</guilabel>: Un message que "
+"vous avez publié a été cité par un autre utilisateur."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:265
+msgid ""
+"<guilabel>Someone creates a topic in a forum to which you are "
+"subscribed</guilabel>: A user has posted a new topic in a forum which you "
+"have subscribed to."
+msgstr ""
+"<guilabel>Quelqu'un a créé un sujet dans un forum auquel vous êtes "
+"abonné</guilabel>: Un utilisateur a publié un nouveau sujet dans un forum "
+"auquel vous êtes abonné."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:259
+msgid ""
+"The following settings control events related to posting. "
+"<_:itemizedlist-1/>"
+msgstr ""
+"Les paramètres suivants contrôlent les événements liés à la publication. "
+"<_:itemizedlist-1/>"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:271
+msgid ""
+"<guilabel>A post or topic needs approval</guilabel>: A user has made a new "
+"post or topic which requires approval."
+msgstr ""
+"<guilabel>Un sujet ou un message est en attente d'approbation</guilabel>: Un"
+" utilisateur a publié un nouveau message ou sujet qui nécessite une "
+"validation."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:272
+msgid ""
+"<guilabel>Someone reports a post</guilabel>: A user has reported a post."
+msgstr ""
+"<guilabel>Quelqu'un a signalé un message</guilabel>: Un utilisateur a "
+"signalé un message."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:268
+msgid ""
+"The following settings control events related to moderation. "
+"<_:itemizedlist-1/>"
+msgstr ""
+"Les paramètres suivants contrôlent les événements liés à la modération. "
+"<_:itemizedlist-1/>"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:278
+msgid ""
+"<guilabel>Someone requests to join a group you lead</guilabel>: A user has "
+"requested to join a usergroup which you are a leader of."
+msgstr ""
+"<guilabel>Quelqu'un a demandé à rejoindre un groupe dont vous êtes "
+"responsable</guilabel>: Un utilisateur a demandé à rejoindre un groupe "
+"d'utilisateurs dont vous êtes le responsable."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:279
+msgid ""
+"<guilabel>Someone sends you a private message</guilabel>: You have received "
+"a private message."
+msgstr ""
+"<guilabel>Quelqu'un vous a envoyé un message privé</guilabel>: Vous avez "
+"reçu un message privé."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:275
+msgid ""
+"The following settings control various other events. <_:itemizedlist-1/>"
+msgstr ""
+"Les paramètres suivants contrôlent divers autres événements. "
+"<_:itemizedlist-1/>"
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:285
+msgid "Friends and Foes"
+msgstr "Amis et ennemis"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:286
+msgid ""
+"Users can be marked as a <guilabel>Friend</guilabel> or a "
+"<guilabel>Foe</guilabel> in order to allow for filtering of their messages. "
+"If a style supports it, posts made by users on your Foe list will be hidden "
+"from view and posts from users on your Friend list will be highlighted. "
+"Private Message rules can make use of the Friend and Foes list for filtering"
+" incoming PMs."
+msgstr ""
+"Les utilisateurs peuvent être marqués comme <guilabel>Ami</guilabel> ou "
+"<guilabel>Ennemi</guilabel> afin de permettre le filtrage de leurs messages."
+" Si un style le prend en charge, les messages publiés par les utilisateurs "
+"figurant sur votre liste d'ennemis seront masqués, et les messages des "
+"utilisateurs figurant sur votre liste d'amis seront mis en évidence. Les "
+"règles de messages privés peuvent utiliser les listes d'amis et d'ennemis "
+"pour filtrer les messages privés entrants."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:289 en/chapters/user_guide.xml:395
+msgid "Attachments"
+msgstr "Pièces jointes"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:290
+msgid ""
+"The attachment section of the UCP shows a list of all attachments that you "
+"have uploaded to the board. Each entry contains a link to the message in "
+"which the attachment is contained, the size of the attachment, the number of"
+" times it has been downloaded, and the time at which it was uploaded. "
+"Through this page, you can delete attachments from the board. Inline "
+"references to a deleted attachment will still remain in the original post, "
+"but the attachment will not be rendered in any way other than the file name."
+msgstr ""
+"La section des fichiers joints de l'UCP affiche la liste de tous les "
+"fichiers que vous avez téléversés sur le forum. Chaque entrée contient un "
+"lien vers le message dans lequel se trouve le fichier joint, la taille du "
+"fichier, le nombre de fois qu'il a été téléchargé, ainsi que sa date de "
+"téléversement. Cette page vous permet de supprimer des fichiers joints du "
+"forum. Les références insérées dans le texte vers un fichier joint supprimé "
+"resteront présentes dans le message d'origine, mais le fichier ne sera plus "
+"affiché que sous la forme de son nom."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:293
+msgid "Usergroups"
+msgstr "Groupes d'utilisateurs"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:294
+msgid ""
+"Usergroup membership can be managed through the Usergroups section of the "
+"UCP. The page lists groups for which the user is a member of, a leader of, "
+"and all other usergroups. Groups which are open for membership have a radio "
+"button allowing the user to request membership. Users may also remove "
+"themselves from groups in which they hold membership. If a user has the "
+"<guilabel>Can change default usergroup</guilabel>, they change choose which "
+"group to be their default here. The default usergroup dictates the user's "
+"username color which is shown throughout the board."
+msgstr ""
+"L'appartenance aux groupes d'utilisateurs peut être gérée depuis la section "
+"Groupes d'utilisateurs de l'UCP. La page répertorie les groupes dont "
+"l'utilisateur est membre, ceux dont il est responsable, ainsi que tous les "
+"autres groupes d'utilisateurs. Les groupes ouverts à l'adhésion disposent "
+"d'un bouton radio permettant à l'utilisateur de faire une demande "
+"d'adhésion. Les utilisateurs peuvent également se retirer des groupes "
+"auxquels ils appartiennent. Si un utilisateur dispose de la permission "
+"<guilabel>Peut modifier son groupe d'utilisateurs par défaut</guilabel>, il "
+"peut choisir ici quel groupe sera son groupe par défaut. Le groupe "
+"d'utilisateurs par défaut détermine la couleur du nom d'utilisateur affichée"
+" dans tout le forum."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:295
+msgid ""
+"Users who are designated as a group leader are able to manage the group's "
+"membership. Users can be added, removed, pending join requests can be "
+"approved or denied, and have their default usergroup changed here."
+msgstr ""
+"Les utilisateurs désignés comme responsables d'un groupe peuvent gérer "
+"l'appartenance à ce groupe. Il est possible d'ajouter ou de retirer des "
+"utilisateurs, d'approuver ou de refuser les demandes d'adhésion en attente, "
+"et de modifier leur groupe d'utilisateurs par défaut depuis cette page."
+
+#. (itstool) path: authorgroup/author
+#: en/chapters/user_guide.xml:304
+msgid "<othername>Noxwizard</othername>"
+msgstr "<othername>Noxwizard</othername>"
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:309
+msgid "Mastering the Posting Screen"
+msgstr "Maîtriser l'écran de publication"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:310
+msgid ""
+"Posting is the primary purpose of bulletin boards. There are two main types "
+"of posts you can make: a topic or a reply. Selecting the <guilabel>New "
+"Topic</guilabel> button in a forum button will take you to the posting "
+"screen. After submitting your post, a new topic will appear in that forum "
+"with your post as the first displayed. Other users (and you as well) are now"
+" able to reply to your topic by using the <guilabel>Post Reply</guilabel> "
+"button. This will once again bring you to the posting screen, allowying you "
+"to enter your post."
+msgstr ""
+"La publication est la finalité première des forums de discussion. Il existe "
+"deux principaux types de messages que vous pouvez créer : un sujet ou une "
+"réponse. Cliquer sur le bouton <guilabel>Nouveau sujet</guilabel> dans un "
+"forum vous amène à l'écran de publication. Après l'envoi de votre message, "
+"un nouveau sujet apparaîtra dans ce forum, avec votre message affiché en "
+"premier. D'autres utilisateurs (ainsi que vous-même) peuvent désormais "
+"répondre à votre sujet en utilisant le bouton <guilabel>Répondre</guilabel>."
+" Cela vous ramènera à l'écran de publication, vous permettant de saisir "
+"votre message."
+
+#. (itstool) path: section/title
+#. (itstool) path: figure/title
+#: en/chapters/user_guide.xml:312 en/chapters/user_guide.xml:315
+msgid "Posting Form"
+msgstr "Formulaire de publication"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:313
+msgid ""
+"You will be taken to the posting form when you decide to post either a new "
+"topic or reply, where you can enter your post content."
+msgstr ""
+"Vous serez dirigé vers le formulaire de publication lorsque vous décidez de "
+"publier un nouveau sujet ou une réponse, où vous pourrez saisir le contenu "
+"de votre message."
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: en/chapters/user_guide.xml:318
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/posting_screen.png' "
+"md5='0d14a94ea675d5eed50d417012ce1423'"
+msgstr ""
+"external ref='../images/user_guide/posting_screen.png' "
+"md5='0d14a94ea675d5eed50d417012ce1423'"
+
+#. (itstool) path: caption/para
+#: en/chapters/user_guide.xml:321
+msgid "The screen presented while creating a new topic."
+msgstr "L'écran présenté lors de la création d'un nouveau sujet."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:326
+msgid ""
+"<guilabel>Topic/Post Icon</guilabel>: The topic/post icon is a small icon "
+"that will display to the left of your post subject. This helps identify your"
+" post and make it stand out, though it is completely optional."
+msgstr ""
+"<guilabel>Icône du sujet/message</guilabel>: L'icône du sujet/message est "
+"une petite icône qui s'affiche à gauche du sujet de votre message. Elle "
+"permet d'identifier votre message et de le distinguer, bien qu'elle soit "
+"totalement facultative."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:327
+msgid ""
+"<guilabel>Subject</guilabel>: If you are creating a new topic with your "
+"post, the subject is required and will become the title of the topic. If you"
+" are replying to an existing topic, this is optional, but it can be changed."
+msgstr ""
+"<guilabel>Sujet</guilabel>: Si vous créez un nouveau sujet avec votre "
+"message, le sujet est obligatoire et deviendra le titre du sujet. Si vous "
+"répondez à un sujet existant, ce champ est facultatif, mais il peut être "
+"modifié."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:328
+msgid ""
+"Post Content - While not being labeled, the large text box is where your "
+"actual post content will be entered. Here, along with your text, you may use"
+" things like <link linkend=\"posting_smilies\">Smilies</link> or <link "
+"linkend=\"posting_bbcodes\">BBCode</link> if the board administrator has "
+"them enabled. Content entered as HTML will be rendered as text, HTML input "
+"is not supported."
+msgstr ""
+"Contenu du message - Bien qu'elle ne soit pas étiquetée, la grande zone de "
+"texte est l'endroit où sera saisi le contenu réel de votre message. Ici, en "
+"plus de votre texte, vous pouvez utiliser des éléments tels que des <link "
+"linkend=\"posting_smilies\">émoticônes</link> ou du <link "
+"linkend=\"posting_bbcodes\">BBCode</link> si l'administrateur du forum les a"
+" activés. Le contenu saisi en HTML sera affiché tel quel sous forme de texte"
+" ; la saisie HTML n'est pas prise en charge."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:329
+msgid ""
+"Smilies - Smilies, or emoticons, are small images which can be inserted into"
+" your post to add expression emphasis. If Smilies are enabled, you will see "
+"the text \"<guilabel>Smilies are ON</guilabel>\" to the righthand of the "
+"Post Content box. Otherwise, you will see the text \"<guilabel>Smilies are "
+"OFF</guilabel>.\" See <link linkend=\"posting_smilies\">Posting "
+"Smilies</link> for further details."
+msgstr ""
+"Émoticônes - Les émoticônes, ou smilies, sont de petites images pouvant être"
+" insérées dans votre message pour renforcer l'expression. Si les émoticônes "
+"sont activées, vous verrez le texte « <guilabel>Émoticônes "
+"activées</guilabel> » à droite de la zone de contenu du message. Dans le cas"
+" contraire, vous verrez le texte « <guilabel>Émoticônes "
+"désactivées</guilabel> ». Consultez <link "
+"linkend=\"posting_smilies\">Publier des émoticônes</link> pour plus de "
+"détails."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:330
+msgid ""
+"BBCode - BBCode is a type of formatting that can be applied to your post "
+"content if BBCode has been enabled by the board administrator. If BBCode is "
+"enabled, you will see the text \"<guilabel>BBCode is ON</guilabel>\" to the "
+"righthand of the Post Content box. Otherwise, you will see the text "
+"\"<guilabel>BBCode is OFF</guilabel>.\" See <link "
+"linkend=\"posting_bbcodes\">Posting BBCode</link> for further details."
+msgstr ""
+"BBCode - Le BBCode est un type de mise en forme pouvant être appliqué au "
+"contenu de votre message si l'administrateur du forum l'a activé. Si le "
+"BBCode est activé, vous verrez le texte « <guilabel>BBCode activé</guilabel>"
+" » à droite de la zone de contenu du message. Dans le cas contraire, vous "
+"verrez le texte « <guilabel>BBCode désactivé</guilabel> ». Consultez <link "
+"linkend=\"posting_bbcodes\">Publier avec le BBCode</link> pour plus de "
+"détails."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:335
+msgid "Smilies"
+msgstr "Émoticônes"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: en/chapters/user_guide.xml:336
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/smilies/smile.gif' "
+"md5='805b1427686e4b3364bae67dec9aba15'"
+msgstr ""
+"external ref='../images/user_guide/smilies/smile.gif' "
+"md5='805b1427686e4b3364bae67dec9aba15'"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: en/chapters/user_guide.xml:336
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/smilies/wink.gif' "
+"md5='f02b549d40afaba96b0f836ba3fa065b'"
+msgstr ""
+"external ref='../images/user_guide/smilies/wink.gif' "
+"md5='f02b549d40afaba96b0f836ba3fa065b'"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: en/chapters/user_guide.xml:336
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/smilies/rolleyes.gif' "
+"md5='e85b73f8dca334bcfa98a08b93b31e82'"
+msgstr ""
+"external ref='../images/user_guide/smilies/rolleyes.gif' "
+"md5='e85b73f8dca334bcfa98a08b93b31e82'"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: en/chapters/user_guide.xml:336
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/smilies/cry.gif' "
+"md5='ecee292b2bddbf4657dbc9e9fcdc869d'"
+msgstr ""
+"external ref='../images/user_guide/smilies/cry.gif' "
+"md5='ecee292b2bddbf4657dbc9e9fcdc869d'"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:336
+msgid ""
+"Smilies, or emoticons, are small images which can be inserted into your post"
+" to add expression emphasis. To use Smiles, certain characters are put "
+"together to get the desired output. For example, typing :) will insert "
+"<inlinemediaobject><imageobject><imagedata "
+"fileref=\"../images/user_guide/smilies/smile.gif\"/></imageobject></inlinemediaobject>,"
+" ;) will insert <inlinemediaobject><imageobject><imagedata "
+"fileref=\"../images/user_guide/smilies/wink.gif\"/></imageobject></inlinemediaobject>,"
+" etc. Other smilies require the format :texthere: to display. For example, "
+":roll: will insert smilie whose eyes are rolling: "
+"<inlinemediaobject><imageobject><imagedata "
+"fileref=\"../images/user_guide/smilies/rolleyes.gif\"/></imageobject></inlinemediaobject>,"
+" and :cry: will insert a smilie who is crying: "
+"<inlinemediaobject><imageobject><imagedata "
+"fileref=\"../images/user_guide/smilies/cry.gif\"/></imageobject></inlinemediaobject>."
+msgstr ""
+"Les émoticônes, ou smilies, sont de petites images pouvant être insérées "
+"dans votre message pour renforcer l'expression. Pour utiliser les "
+"émoticônes, certains caractères sont combinés pour obtenir le résultat "
+"souhaité. Par exemple, taper :) insérera "
+"<inlinemediaobject><imageobject><imagedata "
+"fileref=\"../images/user_guide/smilies/smile.gif\"/></imageobject></inlinemediaobject>,"
+" ;) insérera <inlinemediaobject><imageobject><imagedata "
+"fileref=\"../images/user_guide/smilies/wink.gif\"/></imageobject></inlinemediaobject>,"
+" etc. D'autres émoticônes nécessitent le format :texte: pour s'afficher. Par"
+" exemple, :roll: insérera une émoticône dont les yeux roulent : "
+"<inlinemediaobject><imageobject><imagedata "
+"fileref=\"../images/user_guide/smilies/rolleyes.gif\"/></imageobject></inlinemediaobject>,"
+" et :cry: insérera une émoticône qui pleure : "
+"<inlinemediaobject><imageobject><imagedata "
+"fileref=\"../images/user_guide/smilies/cry.gif\"/></imageobject></inlinemediaobject>."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:337
+msgid ""
+"In many cases you can also select which smilie you'd like to insert by "
+"clicking its picture on the right side of the Post Content text box. When "
+"clicked, the smilie's characters will appear at the current location of the "
+"curser in the text box."
+msgstr ""
+"Dans de nombreux cas, vous pouvez également choisir l'émoticône que vous "
+"souhaitez insérer en cliquant sur son image sur le côté droit de la zone de "
+"texte du contenu du message. Lorsque vous cliquez dessus, les caractères de "
+"l'émoticône apparaîtront à l'emplacement actuel du curseur dans la zone de "
+"texte."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:338
+msgid ""
+"If you wish to be able to use these characters in your post, but not have "
+"them appear as smilies, please see <link linkend=\"posting_options\">Posting"
+" Options</link>."
+msgstr ""
+"Si vous souhaitez pouvoir utiliser ces caractères dans votre message sans "
+"qu'ils n'apparaissent sous forme d'émoticônes, consultez <link "
+"linkend=\"posting_options\">Options de publication</link>."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:342
+msgid "BBCodes"
+msgstr "BBCodes"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:343
+msgid ""
+"BBCode is a type of formatting that can be applied to your post content, "
+"much like HTML. Unlike HTML, however, BBCode uses square brackets [ and ] "
+"instead of angled brackets &lt; and &gt;. Depending on the permissions the "
+"board administrator has set, you may be able to use only certain BBCodes or "
+"even none at all."
+msgstr ""
+"Le BBCode est un type de mise en forme pouvant être appliqué au contenu de "
+"votre message, un peu à la manière du HTML. Contrairement au HTML, "
+"cependant, le BBCode utilise des crochets [ et ] au lieu des chevrons &lt; "
+"et &gt;. Selon les permissions définies par l'administrateur du forum, vous "
+"ne pourrez peut-être utiliser que certains BBCodes, voire aucun."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:344
+msgid ""
+"For detailed instructions on the usage of BBCode, you can click the "
+"<guilabel>BBCode</guilabel> link to the righthand of the Post Content text "
+"box. Please note that the administrator has the option to add new and custom"
+" BBCodes, so others may be availible to you which are not on this list."
+msgstr ""
+"Pour des instructions détaillées sur l'utilisation du BBCode, vous pouvez "
+"cliquer sur le lien <guilabel>BBCode</guilabel> à droite de la zone de texte"
+" du contenu du message. Notez que l'administrateur a la possibilité "
+"d'ajouter de nouveaux BBCodes personnalisés ; d'autres options peuvent donc "
+"être disponibles pour vous en plus de celles de cette liste."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:345
+msgid "Basic BBCodes and their outputs are as follows:"
+msgstr "Voici les BBCodes de base et leur résultat :"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:346
+msgid "[b]Boldface text[/b]: <emphasis role=\"strong\">Boldface text</emphasis>"
+msgstr "[b]Texte en gras[/b] : <emphasis role=\"strong\">Texte en gras</emphasis>"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:347
+msgid "[i]Italicised text[/i]: <emphasis>Italicised text</emphasis>"
+msgstr "[i]Texte en italique[/i] : <emphasis>Texte en italique</emphasis>"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:348
+msgid ""
+"[u]Underlined text[/u]: <emphasis role=\"underline\">Underlined "
+"text</emphasis>"
+msgstr ""
+"[u]Texte souligné[/u] : <emphasis role=\"underline\">Texte "
+"souligné</emphasis>"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:349
+msgid "[quote]Quoted text[/quote]:"
+msgstr "[quote]Texte cité[/quote] :"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: en/chapters/user_guide.xml:349
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/quoted_text.png' "
+"md5='8fb3b9c9fe03612f292590c82f7b0290'"
+msgstr ""
+"external ref='../images/user_guide/quoted_text.png' "
+"md5='8fb3b9c9fe03612f292590c82f7b0290'"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:350
+msgid "[quote=\"Name to quote\"]Quoted text[/quote]:"
+msgstr "[quote=\"Nom à citer\"]Texte cité[/quote] :"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: en/chapters/user_guide.xml:350
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/quoted_text_author.png' "
+"md5='d108782df4a95d73f2b247f6ea776999'"
+msgstr ""
+"external ref='../images/user_guide/quoted_text_author.png' "
+"md5='d108782df4a95d73f2b247f6ea776999'"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:351
+msgid ""
+"[url]https://www.phpbb.com[/url]: <ulink "
+"url=\"https://www.phpbb.com\">https://www.phpbb.com</ulink>"
+msgstr ""
+"[url]https://www.phpbb.com[/url] : <ulink "
+"url=\"https://www.phpbb.com\">https://www.phpbb.com</ulink>"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:352
+msgid ""
+"[url=https://www.phpbb.com]Linked text[/url]: <ulink "
+"url=\"https://www.phpbb.com\">Linked text</ulink>"
+msgstr ""
+"[url=https://www.phpbb.com]Texte du lien[/url] : <ulink "
+"url=\"https://www.phpbb.com\">Texte du lien</ulink>"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:353
+msgid ""
+"[flash=width,height]Path to flash[/flash] will play the flash animation with"
+" the specified dimensions."
+msgstr ""
+"[flash=largeur,hauteur]Chemin vers le flash[/flash] permet de lire "
+"l'animation flash avec les dimensions indiquées."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:354
+msgid ""
+"For more detailed instructions on the usage of BBCode and the many other "
+"available BBCodes, please click the <guilabel>BBCode</guilabel> link to the "
+"righthand of the Post Content text bos."
+msgstr ""
+"Pour des instructions plus détaillées sur l'utilisation du BBCode et les "
+"nombreux autres BBCodes disponibles, cliquez sur le lien "
+"<guilabel>BBCode</guilabel> à droite de la zone de texte du contenu du "
+"message."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:358
+msgid "Post Options"
+msgstr "Options de publication"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:359
+msgid ""
+"When posting either a new topic or reply, there are several post options "
+"that are available to you. You can view these options by selecting the "
+"<guilabel>Options</guilabel> tab from the section below the posting form. "
+"Depending on the permissions the board administrator has assigned to you or "
+"whether you are posting a topic or reply, these options will be different."
+msgstr ""
+"Lorsque vous publiez un nouveau sujet ou une réponse, plusieurs options de "
+"message sont à votre disposition. Vous pouvez consulter ces options en "
+"sélectionnant l'onglet <guilabel>Options</guilabel> dans la section située "
+"sous le formulaire de publication. Selon les permissions que "
+"l'administrateur du forum vous a attribuées, ou selon que vous publiez un "
+"sujet ou une réponse, ces options varieront."
+
+#. (itstool) path: figure/title
+#: en/chapters/user_guide.xml:361
+msgid "Posting Options"
+msgstr "Options de publication"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: en/chapters/user_guide.xml:364
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/posting_options.png' "
+"md5='e82b23855285d4d6054a0304ad3f80c8'"
+msgstr ""
+"external ref='../images/user_guide/posting_options.png' "
+"md5='e82b23855285d4d6054a0304ad3f80c8'"
+
+#. (itstool) path: caption/para
+#: en/chapters/user_guide.xml:367
+msgid "The options presented while creating a reply."
+msgstr "Les options présentées lors de la création d'une réponse."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:371
+msgid ""
+"The default status of these options will depend on your <link "
+"linkend=\"ucp_posting\">Posting Defaults</link> settings on the User Control"
+" Panel's <guilabel>Board Preferences</guilabel> page."
+msgstr ""
+"L'état par défaut de ces options dépendra de vos paramètres <link "
+"linkend=\"ucp_posting\">Publication</link> sur la page <guilabel>Préférences"
+" du forum</guilabel> du Panneau de configuration de l'utilisateur."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:373
+msgid ""
+"<guilabel>Disable BBCode</guilabel>: If BBCode is enabled on the board and "
+"you are allowed to use it, this option will be available. Checking this box "
+"will not convert any BBCode in your post content into its respected output. "
+"For example, [b]Bolded text[/b] will be seen in your post as exactly "
+"[b]Bolded text[/b]."
+msgstr ""
+"<guilabel>Désactiver les BBCodes</guilabel>: Si le BBCode est activé sur le "
+"forum et que vous êtes autorisé à l'utiliser, cette option sera disponible. "
+"Cocher cette case empêchera la conversion de tout BBCode présent dans le "
+"contenu de votre message vers sa mise en forme correspondante. Par exemple, "
+"[b]Texte en gras[/b] apparaîtra dans votre message exactement tel quel : "
+"[b]Texte en gras[/b]."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:374
+msgid ""
+"<guilabel>Disable Smilies</guilabel>: If Smilies are enabled on the board "
+"and you are allowed to use them, this option will be available. Checking "
+"this box will not convert any of the smilie's characters to their respected "
+"image. For example, ;) will be seen in your post as exactly ;)."
+msgstr ""
+"<guilabel>Désactiver les émoticônes</guilabel>: Si les émoticônes sont "
+"activées sur le forum et que vous êtes autorisé à les utiliser, cette option"
+" sera disponible. Cocher cette case empêchera la conversion des caractères "
+"d'émoticônes vers leur image correspondante. Par exemple, ;) apparaîtra dans"
+" votre message exactement tel quel : ;)."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:375
+msgid ""
+"<guilabel>Do not automatically parse URLs</guilabel>: When entering a URL "
+"directly into your post content (in the format of http://....com or "
+"www.etc.com), by default it will be converted to a clickable string of text."
+" However, if this box is checked when posting, these URLs will stay as a "
+"standard string of text."
+msgstr ""
+"<guilabel>Ne pas analyser automatiquement la syntaxe des liens</guilabel>: "
+"Lorsque vous saisissez directement une URL dans le contenu de votre message "
+"(au format http://....com ou www.etc.com), elle est par défaut convertie en "
+"texte cliquable. Cependant, si cette case est cochée lors de la publication,"
+" ces URL resteront sous forme de texte standard."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:376
+msgid ""
+"<guilabel>Attach a signature (signatures can be altered via the "
+"UCP)</guilabel>: If this box is checked, the signature you have set in your "
+"profile will be attached to the post provided signatures have been enabled "
+"by the administrator and you have the proper permissions. For more "
+"information about signatures, please see <link linkend=\"ucp_signature\">UCP"
+" Signatures</link>."
+msgstr ""
+"<guilabel>Insérer une signature (personnalisable dans le panneau de contrôle"
+" utilisateur)</guilabel>: Si cette case est cochée, la signature définie "
+"dans votre profil sera jointe au message, à condition que les signatures "
+"aient été activées par l'administrateur et que vous disposiez des "
+"permissions nécessaires. Pour plus d'informations sur les signatures, "
+"consultez <link linkend=\"ucp_signature\">Signatures de l'UCP</link>."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:377
+msgid ""
+"<guilabel>Send me an email when a reply is posted</guilabel>: If this box is"
+" checked, you will receive a notification (either by email, Jabber, etc) "
+"every time another user replies to the topic. This is called subscribing to "
+"the topic. For more information, please see <link "
+"linkend=\"ucp_subscriptions\">UCP Subscriptions</link>."
+msgstr ""
+"<guilabel>M'envoyer un e-mail lorsqu'une réponse est publiée</guilabel>: Si "
+"cette case est cochée, vous recevrez une notification (par e-mail, Jabber, "
+"etc.) chaque fois qu'un autre utilisateur répond au sujet. C'est ce que l'on"
+" appelle s'abonner au sujet. Pour plus d'informations, consultez <link "
+"linkend=\"ucp_subscriptions\">Abonnements de l'UCP</link>."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:378
+msgid ""
+"<guilabel>Lock topic</guilabel>: Provided you have moderation permissions in"
+" this forum, checking this box will result in the topic being locked after "
+"your reply has been posted. At this point, no one but moderators or "
+"administrators may reply to the topic. For more information, please see "
+"<link linkend=\"modtools_lock\">Locking a topic or post</link>."
+msgstr ""
+"<guilabel>Verrouiller le sujet</guilabel>: Si vous disposez des permissions "
+"de modération dans ce forum, cocher cette case entraînera le verrouillage du"
+" sujet une fois votre réponse publiée. Seuls les modérateurs ou les "
+"administrateurs pourront alors répondre au sujet. Pour plus d'informations, "
+"consultez <link linkend=\"modtools_lock\">Verrouiller un sujet ou un "
+"message</link>."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:382
+msgid "Topic Types"
+msgstr "Types de sujets"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:383
+msgid ""
+"Provided you have the right permissions, you have the option of selecting "
+"various topic types when posting a new topic by using <guilabel>Post topic "
+"as</guilabel>. The four possible types are: <guilabel>Normal</guilabel>, "
+"<guilabel>Sticky</guilabel>, <guilabel>Announcement</guilabel>, and "
+"<guilabel>Global</guilabel>. By default, all new posts are "
+"<guilabel>Normal</guilabel>."
+msgstr ""
+"Si vous disposez des permissions appropriées, vous avez la possibilité de "
+"sélectionner différents types de sujets lors de la publication d'un nouveau "
+"sujet à l'aide de <guilabel>Publier le sujet comme</guilabel>. Les quatre "
+"types possibles sont : <guilabel>Normal</guilabel>, "
+"<guilabel>Épinglé</guilabel>, <guilabel>Annonce</guilabel>, et "
+"<guilabel>Annonce générale</guilabel>. Par défaut, tous les nouveaux "
+"messages sont de type <guilabel>Normal</guilabel>."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:385
+msgid ""
+"<guilabel>Normal</guilabel>: By selecting normal, your new topic will be a "
+"standard topic in the forum."
+msgstr ""
+"<guilabel>Normal</guilabel>: En sélectionnant Normal, votre nouveau sujet "
+"sera un sujet standard dans le forum."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:386
+msgid ""
+"<guilabel>Sticky</guilabel>: Stickies are special topics in the forum. They "
+"are \"stuck\" to the top of the first page of the forum in which they are "
+"posted, above every Normal topic."
+msgstr ""
+"<guilabel>Épinglé</guilabel>: Les sujets épinglés sont des sujets spéciaux "
+"du forum. Ils sont « épinglés » en haut de la première page du forum dans "
+"lequel ils sont publiés, au-dessus de tous les sujets normaux."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:387
+msgid ""
+"<guilabel>Announcement</guilabel>: Announcements are much like Stickies in "
+"that they are \"stuck\" to the top of the forum. However, they are different"
+" from stickies in two ways: 1) they are above Stickies, and 2) they appear "
+"at the top of <emphasis>every</emphasis> page of the forum instead of only "
+"the first page of topics."
+msgstr ""
+"<guilabel>Annonce</guilabel>: Les annonces ressemblent beaucoup aux sujets "
+"épinglés, en ce sens qu'elles sont « épinglées » en haut du forum. "
+"Cependant, elles diffèrent des sujets épinglés sur deux points : 1) elles "
+"apparaissent au-dessus des sujets épinglés, et 2) elles apparaissent en haut"
+" de <emphasis>chaque</emphasis> page du forum, et non uniquement de la "
+"première page de sujets."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:388
+msgid ""
+"<guilabel>Global</guilabel>: Global, or Global Announcements, are special "
+"types of Announcements which appear at the top of every page of every forum "
+"on the board. They appear above every other type of special topic."
+msgstr ""
+"<guilabel>Annonce générale</guilabel>: Les annonces globales sont un type "
+"spécial d'annonces qui apparaissent en haut de chaque page de chaque forum "
+"du site. Elles apparaissent au-dessus de tout autre type de sujet spécial."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:390
+msgid ""
+"You also have the ability to specify how long the special (stickies, "
+"announcements, and global announcements) keep their type. For example, an "
+"announcement is created and specified to stay \"stuck\" for 4 days. After "
+"the 4 days are over, the announcement will automatically be switched to a "
+"Normal topic."
+msgstr ""
+"Vous avez également la possibilité de spécifier la durée pendant laquelle "
+"les sujets spéciaux (sujets épinglés, annonces et annonces globales) "
+"conservent leur type. Par exemple, une annonce est créée avec une durée "
+"d'affichage de 4 jours. Une fois ces 4 jours écoulés, l'annonce sera "
+"automatiquement transformée en sujet normal."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:396
+msgid ""
+"Attachments allow users to upload files and attach them to their post. The "
+"ability to attach and download attachments is determined by the \"Can attach"
+" files\" and \"Can download files\" permissions respectively."
+msgstr ""
+"Les fichiers joints permettent aux utilisateurs de téléverser des fichiers "
+"et de les joindre à leur message. La possibilité de joindre et de "
+"télécharger des fichiers est déterminée respectivement par les permissions "
+"\"Peut joindre des fichiers\" et \"Peut télécharger des fichiers\"."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:397
+msgid ""
+"To add an attachment, find the <guilabel>Attachments</guilabel> section of "
+"the posting page and click the <guilabel>Add files</guilabel> button. A "
+"comment may be placed in the <guilabel>File comment</guilabel> text box. "
+"Clicking <guilabel>Add the file</guilabel> will upload and attach the file "
+"to the post. To upload multiple files, repeat the process. Attachments may "
+"also be uploaded by dragging and dropping a file onto the message area of "
+"the posting screen."
+msgstr ""
+"Pour ajouter un fichier joint, recherchez la section <guilabel>Pièces "
+"jointes</guilabel> de la page de publication et cliquez sur le bouton "
+"<guilabel>Ajouter des fichiers</guilabel>. Un commentaire peut être ajouté "
+"dans la zone de texte <guilabel>Description du fichier</guilabel>. Cliquer "
+"sur <guilabel>Ajouter le fichier</guilabel> permet de téléverser et de "
+"joindre le fichier au message. Pour téléverser plusieurs fichiers, répétez "
+"la procédure. Les fichiers joints peuvent également être téléversés en "
+"faisant glisser-déposer un fichier dans la zone de message de l'écran de "
+"publication."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:398
+msgid ""
+"To delete an attachment, find the attachments list at the bottom of the "
+"<guilabel>Attachments</guilabel> section of the posting page and click the "
+"<guilabel>Delete file</guilabel> button for the desired attachment."
+msgstr ""
+"Pour supprimer un fichier joint, recherchez la liste des fichiers joints en "
+"bas de la section <guilabel>Pièces jointes</guilabel> de la page de "
+"publication et cliquez sur le bouton <guilabel>Supprimer le "
+"fichier</guilabel> correspondant au fichier souhaité."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:399
+msgid ""
+"Attachments can be displayed within the post text by clicking the "
+"<guilabel>Place inline</guilabel> button for the desired attachment. When an"
+" attachment is placed inline, text similar to a BBCode is inserted into the "
+"post text so that it may be moved. If an attachment is not placed inline, it"
+" will be displayed at the end of the post."
+msgstr ""
+"Les fichiers joints peuvent être affichés dans le texte du message en "
+"cliquant sur le bouton <guilabel>Insérer dans le texte</guilabel> "
+"correspondant au fichier souhaité. Lorsqu'un fichier joint est inséré dans "
+"le texte, un code semblable à du BBCode est ajouté au texte du message afin "
+"qu'il puisse être déplacé. Si un fichier joint n'est pas inséré dans le "
+"texte, il sera affiché à la fin du message."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:400
+msgid ""
+"Attachments are controlled by a set of restrictions, namely file size and "
+"file type."
+msgstr ""
+"Les fichiers joints sont soumis à un ensemble de restrictions, à savoir la "
+"taille et le type de fichier."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:402
+msgid ""
+"File Size: The maximum file size for uploaded files is set by the "
+"Administrator. The default is 256KiB."
+msgstr ""
+"Taille du fichier : la taille maximale des fichiers téléversés est définie "
+"par l'administrateur. La valeur par défaut est de 256 Kio."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:403
+msgid ""
+"File Type: The types of files allowed for upload are restricted by their "
+"file extension. The allowed extensions are set by the Administrator."
+msgstr ""
+"Type de fichier : les types de fichiers autorisés au téléversement sont "
+"limités par leur extension. Les extensions autorisées sont définies par "
+"l'administrateur."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:405
+msgid ""
+"For more information on changing attachment settings, please see <link "
+"linkend=\"acp_attach_settings\">ACP Attachment Settings</link>."
+msgstr ""
+"Pour plus d'informations sur la modification des paramètres des fichiers "
+"joints, consultez <link linkend=\"acp_attach_settings\">Paramètres des "
+"fichiers joints de l'ACP</link>."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:408
+msgid "Polls"
+msgstr "Sondages"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:409
+msgid ""
+"Polls allow users to use a topic to vote about an idea or issue. Polls can "
+"only be created in the first post of a topic. The ability to create and vote"
+" in polls is determined by the \"Polls\" set by the administrator."
+msgstr ""
+"Les sondages permettent aux utilisateurs d'utiliser un sujet pour voter sur "
+"une idée ou une question. Les sondages ne peuvent être créés que dans le "
+"premier message d'un sujet. La possibilité de créer des sondages et d'y "
+"voter est déterminée par la permission \"Sondages\" définie par "
+"l'administrateur."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:411
+msgid ""
+"<guilabel>Poll question</guilabel> - This is the idea or issue that is being"
+" voted on in the poll. This is required to start a poll."
+msgstr ""
+"<guilabel>Question du sondage</guilabel> - Il s'agit de l'idée ou de la "
+"question soumise au vote dans le sondage. Ce champ est obligatoire pour "
+"créer un sondage."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:412
+msgid ""
+"<guilabel>Poll options</guilabel> - These are the allowed answers to the "
+"poll question. When entering a poll option, each should be placed on a "
+"separate line of the textbox. At least two poll options are required."
+msgstr ""
+"<guilabel>Options du sondage</guilabel> - Il s'agit des réponses possibles à"
+" la question du sondage. Lors de la saisie d'une option de sondage, chacune "
+"doit être placée sur une ligne distincte de la zone de texte. Au moins deux "
+"options de sondage sont requises."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:413
+msgid ""
+"<guilabel>Options per user</guilabel> - This is the number of options each "
+"user may select when voting. When a user is allowed more than one option, a "
+"series of checkboxes replaces the radio buttons of the standard poll."
+msgstr ""
+"<guilabel>Options par utilisateur</guilabel> - Il s'agit du nombre d'options"
+" que chaque utilisateur peut sélectionner lors du vote. Lorsqu'un "
+"utilisateur est autorisé à choisir plusieurs options, une série de cases à "
+"cocher remplace les boutons radio du sondage standard."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:414
+msgid ""
+"<guilabel>Run poll for</guilabel> - This is the number of days in which "
+"users can vote in the poll. Once the time has passed, no more votes can be "
+"made and the results will be displayed."
+msgstr ""
+"<guilabel>Durée du sondage</guilabel> - Il s'agit du nombre de jours pendant"
+" lesquels les utilisateurs peuvent voter dans le sondage. Une fois ce délai "
+"écoulé, plus aucun vote ne peut être effectué et les résultats sont "
+"affichés."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:415
+msgid ""
+"<guilabel>Allow revoting</guilabel> - If this is chosen, users will be able "
+"re-cast their votes."
+msgstr ""
+"<guilabel>Autoriser à revoter</guilabel> - Si cette option est choisie, les "
+"utilisateurs pourront modifier leur vote."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:420
+msgid ""
+"When creating a post, it can be saved or loaded using the drafts feature. If"
+" the board permissions allow drafts to be saved, then "
+"<guilabel>Save</guilabel> and <guilabel>Load</guilabel> buttons will appear "
+"on the posting page."
+msgstr ""
+"Lors de la création d'un message, celui-ci peut être enregistré ou chargé "
+"grâce à la fonctionnalité de brouillons. Si les permissions du forum "
+"autorisent l'enregistrement de brouillons, les boutons "
+"<guilabel>Enregistrer</guilabel> et <guilabel>Charger</guilabel> "
+"apparaîtront sur la page de publication."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:422
+msgid ""
+"<guilabel>Save</guilabel> - Saves a post as a draft. When a draft is saved, "
+"only the subject and message of the post are stored. Topic icons, "
+"attachments, etc... will be lost."
+msgstr ""
+"<guilabel>Enregistrer</guilabel> - Enregistre un message en tant que "
+"brouillon. Lorsqu'un brouillon est enregistré, seuls le sujet et le message "
+"sont conservés. Les icônes de sujet, les fichiers joints, etc. seront "
+"perdus."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:423
+msgid ""
+"<guilabel>Load</guilabel> - Loads a saved draft. When clicked, a listing of "
+"available drafts will appear. Click the title of the desired post to load "
+"the draft. Any information in the current post will be lost and replaced "
+"with that of the draft."
+msgstr ""
+"<guilabel>Charger</guilabel> - Charge un brouillon enregistré. Lorsque vous "
+"cliquez dessus, une liste des brouillons disponibles s'affiche. Cliquez sur "
+"le titre du message souhaité pour charger le brouillon. Toute information "
+"présente dans le message en cours sera perdue et remplacée par celle du "
+"brouillon."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:425
+msgid ""
+"Once a draft is used, it is removed. For more information on managing "
+"drafts, please see <link linkend=\"ucp_drafts\">UCP Drafts</link>."
+msgstr ""
+"Une fois qu'un brouillon est utilisé, il est supprimé. Pour plus "
+"d'informations sur la gestion des brouillons, consultez <link "
+"linkend=\"ucp_drafts\">Brouillons de l'UCP</link>."
+
+#. (itstool) path: note/para
+#: en/chapters/user_guide.xml:427
+msgid ""
+"If there are no drafts available, the <guilabel>Load</guilabel> button will "
+"not appear."
+msgstr ""
+"S'il n'y a aucun brouillon disponible, le bouton "
+"<guilabel>Charger</guilabel> n'apparaîtra pas."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:432
+msgid "Communicate with Private Messages"
+msgstr "Communiquer avec les messages privés"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:433
+msgid ""
+"phpBB 3.3 allows its users to communicate privately by using Private "
+"Messages. To visit the Private Messages section, you either can click on the"
+" [X new messages] link on the left hand side below the forum header, or you "
+"can directly access it through the <link linkend=\"user_control_panel\">User"
+" Control Panel.</link>."
+msgstr ""
+"phpBB 3.3 permet à ses utilisateurs de communiquer en privé grâce aux "
+"messages privés. Pour accéder à la section des messages privés, vous pouvez "
+"soit cliquer sur le lien [X nouveaux messages] situé à gauche sous l'en-tête"
+" du forum, soit y accéder directement via le <link "
+"linkend=\"user_control_panel\">Panneau de configuration de "
+"l'utilisateur.</link>."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:434
+msgid ""
+"Depending on the communication methods allowed by the board administrator, "
+"there can be 3 ways of being notified of a new Private Message's arrival:"
+msgstr ""
+"Selon les méthodes de communication autorisées par l'administrateur du "
+"forum, il existe 3 façons d'être averti de l'arrivée d'un nouveau message "
+"privé :"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:437
+msgid "By receiving an e-mail or Jabber message"
+msgstr "En recevant un e-mail ou un message Jabber"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:440
+msgid "An entry will appear in the notifications menu"
+msgstr "Une entrée apparaîtra dans le menu des notifications"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:443
+msgid ""
+"The <guilabel>Private Messages [X]</guilabel> link will show the number of "
+"currently unread messages"
+msgstr ""
+"Le lien <guilabel>Messages privés [X]</guilabel> affichera le nombre de "
+"messages actuellement non lus"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:446
+msgid ""
+"You can set the options to your liking in the <link "
+"linkend=\"ucp_preferences\">Preferences section</link>."
+msgstr ""
+"Vous pouvez configurer ces options selon vos préférences dans la <link "
+"linkend=\"ucp_preferences\">section Préférences</link>."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:447
+msgid ""
+"You can choose to not receive Private Messages by other users in your <link "
+"linkend=\"ucp_preferences\">Preferences</link>. Note, that moderators and "
+"administrators will still be able send you Private Messages, even if you "
+"have disabled them."
+msgstr ""
+"Vous pouvez choisir de ne pas recevoir de messages privés d'autres "
+"utilisateurs dans vos <link linkend=\"ucp_preferences\">Préférences</link>. "
+"Notez que les modérateurs et les administrateurs pourront toujours vous "
+"envoyer des messages privés, même si vous les avez désactivés."
+
+#. (itstool) path: note/para
+#: en/chapters/user_guide.xml:449
+msgid ""
+"These features are only available to registered users who have the correct "
+"permissions."
+msgstr ""
+"Ces fonctionnalités ne sont disponibles que pour les utilisateurs inscrits "
+"disposant des permissions appropriées."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:452
+msgid "Message display"
+msgstr "Affichage des messages"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:453
+msgid ""
+"The Inbox is the default incoming folder, which contains a list of your "
+"recently received Private Messages."
+msgstr ""
+"La boîte de réception est le dossier de réception par défaut ; elle contient"
+" la liste des messages privés que vous avez récemment reçus."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:456
+msgid "Composing a new message"
+msgstr "Rédiger un nouveau message"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:457
+msgid ""
+"The screen presented while composing a Private Message is nearly identical "
+"to the screen for creating a new post. The main difference is the addition "
+"of an address field for adding recipients."
+msgstr ""
+"L'écran présenté lors de la rédaction d'un message privé est presque "
+"identique à celui de la création d'un nouveau message. La principale "
+"différence est l'ajout d'un champ d'adresse permettant d'ajouter des "
+"destinataires."
+
+#. (itstool) path: figure/title
+#: en/chapters/user_guide.xml:459
+msgid "Private Message Fields"
+msgstr "Champs du message privé"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: en/chapters/user_guide.xml:462
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/private_messsage_fields.png' "
+"md5='63434630caaf1b2ba1598f5a97efada5'"
+msgstr ""
+"external ref='../images/user_guide/private_messsage_fields.png' "
+"md5='63434630caaf1b2ba1598f5a97efada5'"
+
+#. (itstool) path: caption/para
+#: en/chapters/user_guide.xml:465
+msgid "Fields for adding recipients to a Private Message."
+msgstr "Champs permettant d'ajouter des destinataires à un message privé."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:469
+msgid ""
+"Usernames should be entered into the text area and then either the "
+"<guilabel>Add</guilabel> or <guilabel>Add [BCC]</guilabel> used to add the "
+"user to the appropriate recipient list. If you are unsure of a user's name, "
+"you can use the <guilabel>Find a member</guilabel> link to search the "
+"memberlist for the user. Place a check next to the desired user(s) in the "
+"memberlist and press <guilabel>Select marked</guilabel> to add the user to "
+"the recipient field."
+msgstr ""
+"Les noms d'utilisateur doivent être saisis dans la zone de texte, puis les "
+"boutons <guilabel>Ajouter</guilabel> ou <guilabel>Ajouter [CCI]</guilabel> "
+"permettent d'ajouter l'utilisateur à la liste de destinataires appropriée. "
+"Si vous n'êtes pas sûr du nom d'un utilisateur, vous pouvez utiliser le lien"
+" <guilabel>Trouver un membre</guilabel> pour rechercher l'utilisateur dans "
+"la liste des membres. Cochez la case à côté du ou des utilisateurs souhaités"
+" dans la liste des membres, puis cliquez sur <guilabel>Valider la "
+"sélection</guilabel> pour ajouter l'utilisateur au champ des destinataires."
+
+#. (itstool) path: authorgroup/author
+#: en/chapters/user_guide.xml:474 en/chapters/user_guide.xml:490
+#: en/chapters/user_guide.xml:504 en/chapters/user_guide.xml:520
+msgid "<othername>dhn</othername>"
+msgstr "<othername>dhn</othername>"
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:479
+msgid "Message Folders"
+msgstr "Dossiers de messages"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:480
+msgid ""
+"Just like in your e-mail client, all <glossterm>private messages</glossterm>"
+" are stored in folders. Working with folders is similar to working with "
+"forums in phpBB 3.3. The <guilabel>Inbox</guilabel> is your default incoming"
+" message folder. All messages you receive will appear in here."
+msgstr ""
+"Comme dans votre client de messagerie, tous les <glossterm>messages "
+"privés</glossterm> sont stockés dans des dossiers. La gestion des dossiers "
+"est similaire à celle des forums dans phpBB 3.3. La <guilabel>Boîte de "
+"réception</guilabel> est votre dossier de réception par défaut. Tous les "
+"messages que vous recevez y apparaîtront."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:481
+msgid ""
+"<guilabel>Sent messages</guilabel> will appear in either the "
+"<guilabel>Outbox</guilabel> or the <guilabel>Sent messages</guilabel> "
+"folder. As long as the recipient(s) have not yet read the message, it will "
+"stay in the <guilabel>Outbox</guilabel>. As soon as someone reads the "
+"message it will be archived to the <guilabel>Sent messages</guilabel> "
+"folder. If the administrator allows it, you can edit messages after sending "
+"them as long as they are in the <guilabel>Outbox</guilabel> and the "
+"recipients have not yet read them."
+msgstr ""
+"<guilabel>Messages envoyés</guilabel> apparaîtront soit dans la "
+"<guilabel>Boîte d'envoi</guilabel>, soit dans le dossier <guilabel>Messages "
+"envoyés</guilabel>. Tant que le ou les destinataires n'ont pas encore lu le "
+"message, celui-ci restera dans la <guilabel>Boîte d'envoi</guilabel>. Dès "
+"que quelqu'un lit le message, il est archivé dans le dossier "
+"<guilabel>Messages envoyés</guilabel>. Si l'administrateur l'autorise, vous "
+"pouvez modifier des messages après leur envoi, tant qu'ils se trouvent dans "
+"la <guilabel>Boîte d'envoi</guilabel> et que les destinataires ne les ont "
+"pas encore lus."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:482
+msgid ""
+"Each folder, including <guilabel>Sent messages</guilabel> and "
+"<guilabel>Outbox</guilabel>, can hold a board-defined amount of messages. "
+"This is a global setting that only a board administrator can change. An info"
+" text displays the current number of allowed messages and the current "
+"percentage of space your messages are using at the top of each folder. If no"
+" restriction is displayed, you are allowed unlimited messages in each "
+"folder."
+msgstr ""
+"Chaque dossier, y compris <guilabel>Messages envoyés</guilabel> et "
+"<guilabel>Boîte d'envoi</guilabel>, peut contenir un nombre de messages "
+"défini par le forum. Il s'agit d'un paramètre global que seul un "
+"administrateur du forum peut modifier. Un texte d'information affiche, en "
+"haut de chaque dossier, le nombre de messages actuellement autorisés ainsi "
+"que le pourcentage d'espace utilisé par vos messages. Si aucune restriction "
+"n'est affichée, vous êtes autorisé à avoir un nombre illimité de messages "
+"dans chaque dossier."
+
+#. (itstool) path: note/para
+#: en/chapters/user_guide.xml:484
+msgid ""
+"Please note that the total amount of messages allowed is a per-folder "
+"setting. You can have multiple folders which each allow 50 messages for "
+"instance. If you have 3 folders, your actual global limit is 150 messages, "
+"but each folder can only contain up to 50 messages by itself. It is not "
+"possible to merge folders and have one with more messages than the limit."
+msgstr ""
+"Notez que le nombre total de messages autorisés est un paramètre par "
+"dossier. Vous pouvez par exemple avoir plusieurs dossiers autorisant chacun "
+"50 messages. Si vous avez 3 dossiers, votre limite globale réelle est de 150"
+" messages, mais chaque dossier ne peut contenir que 50 messages au maximum à"
+" lui seul. Il n'est pas possible de fusionner des dossiers pour en obtenir "
+"un contenant plus de messages que la limite autorisée."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:495
+msgid "Custom Folders"
+msgstr "Dossiers personnalisés"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:497
+msgid ""
+"If the administrator allows it, you can create your own custom "
+"<glossterm>private message</glossterm> folders in phpBB 3.3. To check "
+"whether you can add folders, visit the <guimenuitem>Edit "
+"options</guimenuitem> section of the <guilabel>private message</guilabel> "
+"area."
+msgstr ""
+"Si l'administrateur l'autorise, vous pouvez créer vos propres dossiers de "
+"<glossterm>messages privés</glossterm> personnalisés dans phpBB 3.3. Pour "
+"vérifier si vous pouvez ajouter des dossiers, rendez-vous dans la section "
+"<guimenuitem>Modifier les options</guimenuitem> de la zone des "
+"<guilabel>messages privés</guilabel>."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:498
+msgid ""
+"To add a new folder, enter the folder's name into the <guilabel>Add "
+"folder</guilabel> input box. If creation was successful, your new folder "
+"will appear at the bottom of the folder list. You can then use it like a "
+"normal message folder and move messages into it or set a filter (see the "
+"section on <link linkend=\"pm_rules\">Private Message Rules</link> for more "
+"information about filters) to automatically do it for you."
+msgstr ""
+"Pour ajouter un nouveau dossier, saisissez son nom dans le champ "
+"<guilabel>Ajouter un dossier</guilabel>. Si la création réussit, votre "
+"nouveau dossier apparaîtra en bas de la liste des dossiers. Vous pouvez "
+"ensuite l'utiliser comme un dossier de messages normal et y déplacer des "
+"messages, ou définir un filtre (consultez la section <link "
+"linkend=\"pm_rules\">Règles de messages privés</link> pour plus "
+"d'informations sur les filtres) pour le faire automatiquement à votre place."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:509
+msgid "Moving Messages"
+msgstr "Déplacer des messages"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:511
+msgid ""
+"It wouldn't make sense to have custom folders if you weren't able to move "
+"messages between them. To do exactly that, visit the folder from which you "
+"want to move the messages away. Select the messages you want to move, and "
+"use the <guilabel>Moved marked</guilabel> pull-down menu to select the "
+"destination folder."
+msgstr ""
+"Il ne serait pas très utile de disposer de dossiers personnalisés si vous ne"
+" pouviez pas y déplacer des messages. Pour ce faire, rendez-vous dans le "
+"dossier depuis lequel vous souhaitez déplacer les messages. Sélectionnez les"
+" messages à déplacer, puis utilisez le menu déroulant <guilabel>Déplacer la "
+"sélection</guilabel> pour choisir le dossier de destination."
+
+#. (itstool) path: note/para
+#: en/chapters/user_guide.xml:513
+msgid ""
+"Please note that if after the move, the destination folder would have more "
+"messages in it than the message limit allows, you will receive an error "
+"message and the move will be discarded."
+msgstr ""
+"Notez que si, après le déplacement, le dossier de destination contient plus "
+"de messages que la limite autorisée, vous recevrez un message d'erreur et le"
+" déplacement sera annulé."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:525
+msgid "Message Markers"
+msgstr "Marqueurs de message"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:527
+msgid ""
+"Messages inside folders can have colour markings. Please refer to the "
+"<guilabel>Message colours</guilabel> legend to see what each colour means. "
+"The exact type of colouring depends on the used theme. Coloured messages can"
+" have four different meanings:"
+msgstr ""
+"Les messages présents dans les dossiers peuvent comporter des marquages de "
+"couleur. Reportez-vous à la légende <guilabel>Légende de couleurs des "
+"messages</guilabel> pour connaître la signification de chaque couleur. Le "
+"type exact de coloration dépend du thème utilisé. Les messages colorés "
+"peuvent avoir quatre significations différentes :"
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/user_guide.xml:530
+msgid "Marked message"
+msgstr "Message marqué"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:532
+msgid ""
+"You can set a message as marked with the <guilabel>Mark as "
+"important</guilabel> option from the pull-down menu."
+msgstr ""
+"Vous pouvez marquer un message avec l'option <guilabel>Marquer ou non comme "
+"important</guilabel> du menu déroulant."
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/user_guide.xml:537
+msgid "Replied to message"
+msgstr "Message auquel il a été répondu"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:539
+msgid ""
+"If you reply to a message, the message will be marked as this. This way, you"
+" can keep hold of which messages still need your attention and which "
+"messages you have already replied to."
+msgstr ""
+"Si vous répondez à un message, celui-ci sera marqué de cette façon. Cela "
+"vous permet de garder une trace des messages qui nécessitent encore votre "
+"attention et de ceux auxquels vous avez déjà répondu."
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/user_guide.xml:544
+msgid "Message from a friend"
+msgstr "Message d'un ami"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:546
+msgid ""
+"If the sender of a message is in your friends list (see the section on <link"
+" linkend=\"ucp_friends_foes\">Friends &amp; Foes</link> for more "
+"information), this colour will highlight the message."
+msgstr ""
+"Si l'expéditeur d'un message figure sur votre liste d'amis (consultez la "
+"section <link linkend=\"ucp_friends_foes\">Amis &amp; ennemis</link> pour "
+"plus d'informations), cette couleur mettra le message en évidence."
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/user_guide.xml:551
+msgid "Message from a foe"
+msgstr "Message d'un ennemi"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:553
+msgid ""
+"If the sender of a message is one of your foes, this colour will highlight "
+"this."
+msgstr ""
+"Si l'expéditeur d'un message fait partie de vos ennemis, cette couleur le "
+"mettra en évidence."
+
+#. (itstool) path: note/para
+#: en/chapters/user_guide.xml:559
+msgid ""
+"Please note that a message can only have one label, and it will always be "
+"the last action you take. If you mark a message as "
+"<guilabel>important</guilabel> and reply to it afterwards, for instance, the"
+" <guilabel>replied to</guilabel> label will overwrite the "
+"<guilabel>important</guilabel> label."
+msgstr ""
+"Notez qu'un message ne peut avoir qu'une seule étiquette, correspondant "
+"toujours à la dernière action effectuée. Si vous marquez par exemple un "
+"message comme <guilabel>important</guilabel> puis y répondez ensuite, "
+"l'étiquette <guilabel>répondu</guilabel> remplacera l'étiquette "
+"<guilabel>important</guilabel>."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:564
+msgid "Message rules"
+msgstr "Règles de messages"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:565
+msgid ""
+"Private Messages can be filtered by creating rules that perform actions on "
+"the message based on its metadata. When a Private Message arrives, it can be"
+" automatically sorted into specific folders, deleted, or highlighted."
+msgstr ""
+"Les messages privés peuvent être filtrés en créant des règles qui effectuent"
+" des actions sur le message en fonction de ses métadonnées. À l'arrivée d'un"
+" message privé, celui-ci peut être automatiquement trié dans des dossiers "
+"spécifiques, supprimé ou mis en évidence."
+
+#. (itstool) path: note/para
+#: en/chapters/user_guide.xml:567
+msgid ""
+"Private Message rules cannot be edited. If a rule needs to be changed, you "
+"will need to delete the current rule and make it again."
+msgstr ""
+"Les règles de messages privés ne peuvent pas être modifiées. Si une règle "
+"doit être changée, vous devrez supprimer la règle actuelle et en créer une "
+"nouvelle."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:570
+msgid "Matchable fields"
+msgstr "Champs correspondants"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:571
+msgid "Messages can be filtered based on the following fields:"
+msgstr "Les messages peuvent être filtrés selon les champs suivants :"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:573
+msgid "<guilabel>Subject</guilabel> - The subject of the message."
+msgstr "<guilabel>Sujet</guilabel> - Le sujet du message."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:574
+msgid "<guilabel>Sender</guilabel> - The username of the message sender."
+msgstr ""
+"<guilabel>Expéditeur</guilabel> - Le nom d'utilisateur de l'expéditeur du "
+"message."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:575
+msgid "<guilabel>Message</guilabel> - The content of the message."
+msgstr "<guilabel>Message</guilabel> - Le contenu du message."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:576
+msgid ""
+"<guilabel>Message status</guilabel> - Whether a message has been replied to "
+"or forwarded."
+msgstr ""
+"<guilabel>Statut du message</guilabel> - Si un message a fait l'objet d'une "
+"réponse ou d'un transfert."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:577
+msgid ""
+"<guilabel>Sent to</guilabel> - Whether the message was sent directly to you "
+"or to a usergroup you are a member of."
+msgstr ""
+"<guilabel>Envoyé à</guilabel> - Si le message vous a été envoyé directement "
+"ou à un groupe d'utilisateurs dont vous êtes membre."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:582
+msgid "Matching conditions"
+msgstr "Conditions de correspondance"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:583
+msgid ""
+"Several conditions are available for filtering the fields. Not all of the "
+"conditions listed below are avaialbe for every field. The following is the "
+"full list of conditions available:"
+msgstr ""
+"Plusieurs conditions sont disponibles pour filtrer les champs. Toutes les "
+"conditions listées ci-dessous ne sont pas disponibles pour chaque champ. "
+"Voici la liste complète des conditions disponibles :"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:585
+msgid "<guilabel>Is like</guilabel> - The field contains the supplied string."
+msgstr ""
+"<guilabel>Est comme</guilabel> - Le champ contient la chaîne indiquée."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:586
+msgid ""
+"<guilabel>Is not like</guilabel> - The field does <emphasis "
+"role=\"strong\">not</emphasis> contain the supplied string."
+msgstr ""
+"<guilabel>N'est pas comme</guilabel> - Le champ ne contient <emphasis "
+"role=\"strong\">pas</emphasis> la chaîne indiquée."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:587
+msgid ""
+"<guilabel>Is</guilabel> - The field matches the supplied string exactly."
+msgstr ""
+"<guilabel>Est</guilabel> - Le champ correspond exactement à la chaîne "
+"indiquée."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:588
+msgid ""
+"<guilabel>Is not</guilabel> - The field's content is <emphasis "
+"role=\"strong\">not</emphasis> the same as the supplied string."
+msgstr ""
+"<guilabel>N'est pas</guilabel> - Le contenu du champ n'est <emphasis "
+"role=\"strong\">pas</emphasis> identique à la chaîne indiquée."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:589
+msgid ""
+"<guilabel>Begins with</guilabel> - The field begins with the supplied "
+"string."
+msgstr ""
+"<guilabel>Commence par</guilabel> - Le champ commence par la chaîne "
+"indiquée."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:590
+msgid ""
+"<guilabel>Ends with</guilabel> - The field ends with the supplied string."
+msgstr ""
+"<guilabel>Se termine par</guilabel> - Le champ se termine par la chaîne "
+"indiquée."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:591
+msgid "<guilabel>Is friend</guilabel> - If the sender is on your Friend list."
+msgstr ""
+"<guilabel>Est un ami</guilabel> - Si l'expéditeur figure sur votre liste "
+"d'amis."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:592
+msgid "<guilabel>Is foe</guilabel> - If the sender is on your Foe list."
+msgstr ""
+"<guilabel>Est un ignoré</guilabel> - Si l'expéditeur figure sur votre liste "
+"d'ennemis."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:593
+msgid ""
+"<guilabel>Is user</guilabel> - The sender's name matches the supplied "
+"string."
+msgstr ""
+"<guilabel>Est un utilisateur</guilabel> - Le nom de l'expéditeur correspond "
+"à la chaîne indiquée."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:594
+msgid ""
+"<guilabel>Is in usergroup</guilabel> - The sender belongs to the specified "
+"usergroup."
+msgstr ""
+"<guilabel>Est dans un groupe d'utilisateurs</guilabel> - L'expéditeur "
+"appartient au groupe d'utilisateurs indiqué."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:595
+msgid ""
+"<guilabel>Answered</guilabel> - Whether the message has been replied to."
+msgstr ""
+"<guilabel>Répondu</guilabel> - Si le message a fait l'objet d'une réponse."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:596
+msgid ""
+"<guilabel>Forwarded</guilabel> - Whether the message has been forwarded."
+msgstr "<guilabel>Transféré</guilabel> - Si le message a été transféré."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:597
+msgid ""
+"<guilabel>To my default usergroup</guilabel> - Whether the message has been "
+"sent to your usergroup."
+msgstr ""
+"<guilabel>À mon groupe d'utilisateurs par défaut</guilabel> - Si le message "
+"a été envoyé à votre groupe d'utilisateurs."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:598
+msgid ""
+"<guilabel>To me</guilabel> - Whether a message has been sent directly to "
+"you."
+msgstr ""
+"<guilabel>À moi</guilabel> - Si un message vous a été envoyé directement."
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:600
+msgid ""
+"The following list shows which conditions are available for each field:"
+msgstr ""
+"La liste suivante indique les conditions disponibles pour chaque champ :"
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/user_guide.xml:603
+msgid "Subject"
+msgstr "Sujet"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:605
+msgid ""
+"<guilabel>Is like</guilabel>, <guilabel>Is not like</guilabel>, "
+"<guilabel>Is</guilabel>, <guilabel>Is not</guilabel>, <guilabel>Begins "
+"with</guilabel>, <guilabel>Ends with</guilabel>"
+msgstr ""
+"<guilabel>Est comme</guilabel>, <guilabel>N'est pas comme</guilabel>, "
+"<guilabel>Est</guilabel>, <guilabel>N'est pas</guilabel>, <guilabel>Commence"
+" par</guilabel>, <guilabel>Se termine par</guilabel>"
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/user_guide.xml:610
+msgid "Sender"
+msgstr "Expéditeur"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:612
+msgid ""
+"<guilabel>Is like</guilabel>, <guilabel>Is not like</guilabel>, "
+"<guilabel>Is</guilabel>, <guilabel>Is not</guilabel>, <guilabel>Begins "
+"with</guilabel>, <guilabel>Ends with</guilabel>, <guilabel>Is "
+"friend</guilabel>, <guilabel>Is foe</guilabel>, <guilabel>Is "
+"user</guilabel>, <guilabel>Is in usergroup</guilabel>"
+msgstr ""
+"<guilabel>Est comme</guilabel>, <guilabel>N'est pas comme</guilabel>, "
+"<guilabel>Est</guilabel>, <guilabel>N'est pas</guilabel>, <guilabel>Commence"
+" par</guilabel>, <guilabel>Se termine par</guilabel>, <guilabel>Est un "
+"ami</guilabel>, <guilabel>Est un ignoré</guilabel>, <guilabel>Est un "
+"utilisateur</guilabel>, <guilabel>Est dans un groupe "
+"d'utilisateurs</guilabel>"
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/user_guide.xml:617
+msgid "Message"
+msgstr "Message"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:619
+msgid ""
+"<guilabel>Is like</guilabel>, <guilabel>Is not like</guilabel>, "
+"<guilabel>Is</guilabel>, <guilabel>Is not</guilabel>"
+msgstr ""
+"<guilabel>Est comme</guilabel>, <guilabel>N'est pas comme</guilabel>, "
+"<guilabel>Est</guilabel>, <guilabel>N'est pas</guilabel>"
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/user_guide.xml:624
+msgid "Message status"
+msgstr "État du message"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:626
+msgid "<guilabel>Answered</guilabel>, <guilabel>Forwarded</guilabel>"
+msgstr "<guilabel>Répondu</guilabel>, <guilabel>Transféré</guilabel>"
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/user_guide.xml:631
+msgid "Sent To"
+msgstr "Envoyé à"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:633
+msgid ""
+"<guilabel>To my default usergroup</guilabel>, <guilabel>To me</guilabel>"
+msgstr ""
+"<guilabel>À mon groupe d'utilisateurs par défaut</guilabel>, <guilabel>À "
+"moi</guilabel>"
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:640
+msgid "Rule action"
+msgstr "Action de la règle"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:641
+msgid ""
+"Once a message has been matched, an action can be perfromed on the message. "
+"The available actions are:"
+msgstr ""
+"Une fois qu'un message a été mis en correspondance, une action peut être "
+"effectuée sur celui-ci. Les actions disponibles sont :"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:643
+msgid ""
+"<guilabel>Place into folder -&gt; X</guilabel> - Places the message into the"
+" specified folder."
+msgstr ""
+"<guilabel>Placer dans le dossier -&gt; X</guilabel> - Place le message dans "
+"le dossier indiqué."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:644
+msgid ""
+"<guilabel>Mark as read</guilabel> - The message is immediately marked as "
+"read. Notifications still inform you of a new message, but the message will "
+"already be marked as read when you view your Private Message list."
+msgstr ""
+"<guilabel>Marquer comme lu</guilabel> - Le message est immédiatement marqué "
+"comme lu. Les notifications continuent de vous informer d'un nouveau "
+"message, mais celui-ci sera déjà marqué comme lu lorsque vous consulterez "
+"votre liste de messages privés."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:645
+msgid ""
+"<guilabel>Mark message</guilabel> - The message is marked as important and "
+"highlighted in your Private Message list."
+msgstr ""
+"<guilabel>Marquer le message</guilabel> - Le message est marqué comme "
+"important et mis en évidence dans votre liste de messages privés."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:646
+msgid ""
+"<guilabel>Delete message</guilabel> - The message is deleted instead of "
+"being shown. A message will be shown informing you that messages were "
+"received and deleted according to your message rules. Messages sent from "
+"board administrators and moderators will <emphasis "
+"role=\"strong\">not</emphasis> be deleted."
+msgstr ""
+"<guilabel>Supprimer le message</guilabel> - Le message est supprimé au lieu "
+"d'être affiché. Un message vous informera que des messages ont été reçus et "
+"supprimés conformément à vos règles de messages. Les messages envoyés par "
+"les administrateurs et les modérateurs du forum ne seront <emphasis "
+"role=\"strong\">pas</emphasis> supprimés."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:652
+msgid "Search - How to Find What You are Looking For"
+msgstr "Recherche - Comment trouver ce que vous cherchez"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:653
+msgid ""
+"As the board grows and accumulates posts, it becomes difficult to find "
+"specific content quickly. To aid in finding posts, phpBB contains a search "
+"utility. Common searches are offered in the form of links on the index (new "
+"posts, unanswered posts, etc.), keyword searches can be performed from the "
+"header, forum view, and topic view (in supported styles), and custom search "
+"queries can be created using the Advanced Search feature."
+msgstr ""
+"À mesure que le forum se développe et accumule des messages, il devient "
+"difficile de retrouver rapidement un contenu spécifique. Pour faciliter la "
+"recherche de messages, phpBB dispose d'un outil de recherche. Les recherches"
+" courantes sont proposées sous forme de liens sur l'index (nouveaux "
+"messages, sujets sans réponse, etc.), les recherches par mots-clés peuvent "
+"être effectuées depuis l'en-tête, la vue du forum et la vue du sujet (dans "
+"les styles qui le prennent en charge), et des requêtes de recherche "
+"personnalisées peuvent être créées à l'aide de la fonctionnalité de "
+"recherche avancée."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:656
+msgid "Predefined searches"
+msgstr "Recherches prédéfinies"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:657
+msgid ""
+"phpBB comes with several predefined searches to easily perform certain types"
+" of queries."
+msgstr ""
+"phpBB propose plusieurs recherches prédéfinies permettant d'effectuer "
+"facilement certains types de requêtes."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:659
+msgid ""
+"<guilabel>View your posts</guilabel> - Returns a list of topics that you "
+"have posted in, sorted by the time of the last post in the topic."
+msgstr ""
+"<guilabel>Voir vos messages</guilabel> - Renvoie la liste des sujets dans "
+"lesquels vous avez publié un message, triée par date du dernier message du "
+"sujet."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:660
+msgid ""
+"<guilabel>View unanswered topics</guilabel> - Returns all topics which "
+"contain no replies."
+msgstr ""
+"<guilabel>Voir les sujets sans réponse</guilabel> - Renvoie tous les sujets "
+"ne contenant aucune réponse."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:661
+msgid ""
+"<guilabel>View unread posts</guilabel> - Returns a list of topics containing"
+" posts which you have yet to read."
+msgstr ""
+"<guilabel>Voir les messages non lus</guilabel> - Renvoie la liste des sujets"
+" contenant des messages que vous n'avez pas encore lus."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:662
+msgid ""
+"<guilabel>View new posts</guilabel> - Returns a list of topics containing "
+"posts which have been made since the last time you logged in."
+msgstr ""
+"<guilabel>Voir les nouveaux messages</guilabel> - Renvoie la liste des "
+"sujets contenant des messages publiés depuis votre dernière connexion."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:663
+msgid ""
+"<guilabel>View active topics</guilabel> - Returns a list of topics which "
+"have been posted in during the last few days. The number of days can be "
+"changed after loading the search page."
+msgstr ""
+"<guilabel>Voir les sujets actifs</guilabel> - Renvoie la liste des sujets "
+"ayant reçu des messages au cours des derniers jours. Le nombre de jours peut"
+" être modifié après le chargement de la page de recherche."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:668
+msgid "Forum and topic search"
+msgstr "Recherche dans un forum ou un sujet"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:669
+msgid ""
+"Some styles provide search fields on the forum view and the topic view. "
+"These fields allow you to perform a keyword search within the forum or "
+"within the current topic."
+msgstr ""
+"Certains styles proposent des champs de recherche dans la vue du forum et la"
+" vue du sujet. Ces champs vous permettent d'effectuer une recherche par mot-"
+"clé dans le forum ou dans le sujet en cours."
+
+#. (itstool) path: figure/title
+#: en/chapters/user_guide.xml:672
+msgid "Search within topics"
+msgstr "Recherche dans les sujets"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: en/chapters/user_guide.xml:675
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/search_topic.png' "
+"md5='037ea787dbcbc6399349349bcef8c1bf'"
+msgstr ""
+"external ref='../images/user_guide/search_topic.png' "
+"md5='037ea787dbcbc6399349349bcef8c1bf'"
+
+#. (itstool) path: caption/para
+#: en/chapters/user_guide.xml:678
+msgid "Search field within a topic."
+msgstr "Champ de recherche dans un sujet."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:685
+msgid "Advanced search"
+msgstr "Recherche avancée"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:686
+msgid ""
+"In addition to the predefined searches provided by phpBB, it is possible to "
+"create your own search queries. Searches can based on keywords, author, and "
+"forum selections."
+msgstr ""
+"En plus des recherches prédéfinies proposées par phpBB, il est possible de "
+"créer vos propres requêtes de recherche. Les recherches peuvent être basées "
+"sur des mots-clés, un auteur et une sélection de forums."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:688
+msgid "The search query"
+msgstr "La requête de recherche"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:689
+msgid ""
+"In order to perform a search of the board, you must specify what it is that "
+"you would like to search for. You can specify keywords to search for as well"
+" as a post author. Two query options are provided for performing the search:"
+msgstr ""
+"Pour effectuer une recherche sur le forum, vous devez préciser ce que vous "
+"souhaitez rechercher. Vous pouvez indiquer des mots-clés à rechercher ainsi "
+"qu'un auteur de message. Deux options de requête sont proposées pour "
+"effectuer la recherche :"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:691
+msgid ""
+"<guilabel>Search for all terms or use query as entered</guilabel> - If "
+"multiple keywords are provided, <emphasis role=\"strong\">all</emphasis> "
+"keywords must be found in the result. Alternatively, you can provide a query"
+" using special identifiers."
+msgstr ""
+"<guilabel>Rechercher tous les termes ou utiliser la requête telle que "
+"saisie</guilabel> - Si plusieurs mots-clés sont fournis, <emphasis "
+"role=\"strong\">tous</emphasis> les mots-clés doivent figurer dans le "
+"résultat. Vous pouvez également fournir une requête utilisant des "
+"identifiants spéciaux."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:692
+msgid ""
+"<guilabel>Search for any terms</guilabel> - If multiple keywords are "
+"provided, then results containing <emphasis role=\"strong\">any</emphasis> "
+"of the provided keywords will be returned."
+msgstr ""
+"<guilabel>Rechercher l'un de ces termes</guilabel> - Si plusieurs mots-clés "
+"sont fournis, les résultats contenant <emphasis role=\"strong\">l'un "
+"quelconque</emphasis> des mots-clés fournis seront renvoyés."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:695
+msgid "Keywords"
+msgstr "Mots-clés"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:696
+msgid ""
+"In addition to supplying keywords, special identifiers can be used to add or"
+" detract from the importance of certain words."
+msgstr ""
+"En plus de fournir des mots-clés, des identifiants spéciaux peuvent être "
+"utilisés pour renforcer ou diminuer l'importance de certains mots."
+
+#. (itstool) path: variablelist/title
+#: en/chapters/user_guide.xml:698
+msgid "Identifiers"
+msgstr "Identifiants"
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/user_guide.xml:700
+msgid "+"
+msgstr "+"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:702
+msgid ""
+"When placed before a keyword, that keyword must be found in the result text."
+msgstr ""
+"Placé avant un mot-clé, celui-ci doit obligatoirement figurer dans le texte "
+"du résultat."
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/user_guide.xml:706
+msgid "-"
+msgstr "-"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:708
+msgid ""
+"When placed before a keyword, that keyword must not be present in the result"
+" text."
+msgstr ""
+"Placé avant un mot-clé, celui-ci ne doit pas être présent dans le texte du "
+"résultat."
+
+#. (itstool) path: variablelist/title
+#: en/chapters/user_guide.xml:710 en/chapters/user_guide.xml:725
+#: en/chapters/user_guide.xml:746
+msgid "Examples"
+msgstr "Exemples"
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/user_guide.xml:712
+msgid "+dog -cat"
+msgstr "+dog -cat"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:714
+msgid "Returns results which contain the word \"dog\", but not \"cat\"."
+msgstr "Renvoie les résultats contenant le mot « dog », mais pas « cat »."
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/user_guide.xml:721
+msgid "|"
+msgstr "|"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:723
+msgid ""
+"This token can be used to separate a list of keywords, of which at least one"
+" of the keywords should be found in the text. Words may be placed inside of "
+"parentheses and combined with a + or - to indicated that at least one of the"
+" words must or must not appear in each result."
+msgstr ""
+"Ce symbole permet de séparer une liste de mots-clés, dont au moins un doit "
+"être trouvé dans le texte. Les mots peuvent être placés entre parenthèses et"
+" combinés avec un + ou un - pour indiquer qu'au moins un des mots doit ou ne"
+" doit pas apparaître dans chaque résultat."
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/user_guide.xml:727
+msgid "dog|cat"
+msgstr "dog|cat"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:729
+msgid "Returns results which contain either the word \"dog\" or the word \"cat\"."
+msgstr ""
+"Renvoie les résultats contenant soit le mot « dog », soit le mot « cat »."
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/user_guide.xml:733
+msgid "-(dog|cat)"
+msgstr "-(dog|cat)"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:735
+msgid "Returns results which contain neither the word \"dog\" nor the word \"cat\"."
+msgstr ""
+"Renvoie les résultats ne contenant ni le mot « dog » ni le mot « cat »."
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/user_guide.xml:742
+msgid "*"
+msgstr "*"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:744
+msgid "An asterisk in a keyword allows for partial keyword matches."
+msgstr "Un astérisque dans un mot-clé permet des correspondances partielles."
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/user_guide.xml:748
+msgid "cat*"
+msgstr "cat*"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:750
+msgid ""
+"Returns results which begin with the word \"cat\", such as \"cats\" and "
+"\"catastrophe\"."
+msgstr ""
+"Renvoie les résultats commençant par le mot « cat », tels que « cats » et « "
+"catastrophe »."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:760
+msgid "Author"
+msgstr "Auteur"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:761
+msgid ""
+"The search query can be further refined by providing the author of the post."
+" If an author is specified, then only posts made by that author which meets "
+"the query requirements will be returned. The author field allows for the use"
+" of wildcards (*) to perform partial matches on the author name."
+msgstr ""
+"La requête de recherche peut être affinée en indiquant l'auteur du message. "
+"Si un auteur est précisé, seuls les messages de cet auteur répondant aux "
+"critères de la requête seront renvoyés. Le champ auteur permet l'utilisation"
+" de caractères génériques (*) pour effectuer des correspondances partielles "
+"sur le nom de l'auteur."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:766
+msgid "The search options"
+msgstr "Les options de recherche"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:767
+msgid ""
+"Searches can be further restricted to specific forums or specific parts of "
+"the topics."
+msgstr ""
+"Les recherches peuvent être davantage restreintes à des forums spécifiques "
+"ou à des parties spécifiques des sujets."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:769
+msgid ""
+"<guilabel>Search in forums</guilabel> - Here you can select specific forums "
+"in which the search should be performed. Multiple forums can be selected by "
+"holding down the \"control\" or \"command\" key."
+msgstr ""
+"<guilabel>Rechercher dans les forums</guilabel> - Vous pouvez sélectionner "
+"ici les forums spécifiques dans lesquels la recherche doit être effectuée. "
+"Plusieurs forums peuvent être sélectionnés en maintenant la touche « Ctrl » "
+"ou « Commande » enfoncée."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:770
+msgid ""
+"<guilabel>Search in subforums</guilabel> - If this option is selected, then "
+"any subforums of the selected forums will be searched as well."
+msgstr ""
+"<guilabel>Rechercher dans les sous-forums</guilabel> - Si cette option est "
+"sélectionnée, tous les sous-forums des forums sélectionnés seront également "
+"inclus dans la recherche."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:772
+msgid ""
+"<guilabel>Search within</guilabel> - This allows you to specify which part "
+"of the posts should be searched."
+msgstr ""
+"<guilabel>Rechercher dans</guilabel> - Cela vous permet de préciser quelle "
+"partie des messages doit être recherchée."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:774
+msgid ""
+"<guilabel>Post subjects and message text</guilabel> - Both the post subject "
+"and the post body will be searched."
+msgstr ""
+"<guilabel>Titres des sujets et contenu des messages</guilabel> - Le sujet et"
+" le corps du message seront tous deux recherchés."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:775
+msgid ""
+"<guilabel>Message text only</guilabel> - Only the body of the posts will be "
+"searched and not its title."
+msgstr ""
+"<guilabel>Contenu des messages uniquement</guilabel> - Seul le corps des "
+"messages sera recherché, et non son titre."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:776
+msgid ""
+"<guilabel>Topic titles only</guilabel> - Only the topic titles will be "
+"searched."
+msgstr ""
+"<guilabel>Titres des sujets uniquement</guilabel> - Seuls les titres des "
+"sujets seront recherchés."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:777
+msgid ""
+"<guilabel>First post of topics only</guilabel> - The first post of each "
+"topic will be searched and no other posts in the topic."
+msgstr ""
+"<guilabel>Premier message des sujets uniquement</guilabel> - Seul le premier"
+" message de chaque sujet sera recherché, et aucun autre message du sujet."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:780
+msgid ""
+"<guilabel>Display results as</guilabel> - This option formats the search "
+"results to only show either the post contents or just topic titles."
+msgstr ""
+"<guilabel>Afficher les résultats sous forme de</guilabel> - Cette option met"
+" en forme les résultats de recherche pour n'afficher soit que le contenu des"
+" messages, soit uniquement les titres des sujets."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:781
+msgid ""
+"<guilabel>Sort results by</guilabel> - Orders the results based on either "
+"<guilabel>author</guilabel>, <guilabel>post time</guilabel>, "
+"<guilabel>forum</guilabel>, <guilabel>topic title</guilabel> or "
+"<guilabel>post subject</guilabel>. The results can be displayed in "
+"<guilabel>ascending</guilabel> or <guilabel>descending</guilabel> order."
+msgstr ""
+"<guilabel>Trier les résultats par</guilabel> - Trie les résultats selon "
+"<guilabel>l'auteur</guilabel>, la <guilabel>date du message</guilabel>, le "
+"<guilabel>forum</guilabel>, le <guilabel>titre du sujet</guilabel> ou le "
+"<guilabel>sujet du message</guilabel>. Les résultats peuvent être affichés "
+"par ordre <guilabel>croissant</guilabel> ou "
+"<guilabel>décroissant</guilabel>."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:782
+msgid ""
+"<guilabel>Limit results to previous</guilabel> - Limits the results to posts"
+" made in specific time frame."
+msgstr ""
+"<guilabel>Limiter les résultats selon leur ancienneté</guilabel> - Limite "
+"les résultats aux messages publiés au cours d'une période spécifique."
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:783
+msgid ""
+"<guilabel>Return first</guilabel> - Formats the results to only contain a "
+"specific number of characters of the matching posts."
+msgstr ""
+"<guilabel>Afficher seulement les premiers</guilabel> - Met en forme les "
+"résultats pour ne contenir qu'un nombre de caractères spécifique des "
+"messages correspondants."
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:787
+msgid "Further refinement"
+msgstr "Affinement supplémentaire"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:788
+msgid ""
+"On the result page, it is possible to further refine your search by "
+"providing more search terms."
+msgstr ""
+"Sur la page de résultats, il est possible d'affiner davantage votre "
+"recherche en fournissant des termes de recherche supplémentaires."
+
+#. (itstool) path: figure/title
+#: en/chapters/user_guide.xml:790
+msgid "Search refinement"
+msgstr "Affinement de la recherche"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: en/chapters/user_guide.xml:793
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/search_refinement.png' "
+"md5='652330ba4844c5163629a598fd3f285d'"
+msgstr ""
+"external ref='../images/user_guide/search_refinement.png' "
+"md5='652330ba4844c5163629a598fd3f285d'"
+
+#. (itstool) path: caption/para
+#: en/chapters/user_guide.xml:796
+msgid "Refining the search results to include the word \"cat\"."
+msgstr "Affinage des résultats de recherche pour inclure le mot « cat »."
+
+#. (itstool) path: authorgroup/author
+#: en/chapters/user_guide.xml:807
+msgid "<othername>pentapenguin</othername>"
+msgstr "<othername>pentapenguin</othername>"
+
+#. (itstool) path: section/title
+#: en/chapters/user_guide.xml:815
+msgid "The Memberlist - More Than Meets the Eye"
+msgstr "La liste des membres - Plus qu'il n'y paraît"
+
+#. (itstool) path: section/para
+#: en/chapters/user_guide.xml:816
+msgid "phpBB3 introduces several new ways to search for users."
+msgstr ""
+"phpBB3 introduit plusieurs nouvelles façons de rechercher des utilisateurs."
+
+#. (itstool) path: figure/title
+#: en/chapters/user_guide.xml:819
+msgid "Sorting the memberlist"
+msgstr "Trier la liste des membres"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: en/chapters/user_guide.xml:822
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/memberlist_sorting.png' "
+"md5='33f8e926c1247146120de8338f5d3073'"
+msgstr ""
+"external ref='../images/user_guide/memberlist_sorting.png' "
+"md5='33f8e926c1247146120de8338f5d3073'"
+
+#. (itstool) path: caption/para
+#: en/chapters/user_guide.xml:825
+msgid "Choosing an option to sort the memberlist by."
+msgstr "Choix d'une option de tri pour la liste des membres."
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/user_guide.xml:832
+msgid "Sort By Username"
+msgstr "Trier par nom d'utilisateur"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:834
+msgid ""
+"If you want to find all members whose usernames start with a certain letter,"
+" then you may select the letter from the list of letters shown at the top of"
+" the memberlist. For instance, clicking \"A\" will display all usernames "
+"beginning with the letter A, while clicking \"B\" will list all usernames "
+"beginning with B. Clicking the hash (#) will display a list of usernames "
+"that do not begin with one of the twenty-six letters: in other words, "
+"numbers and other characters."
+msgstr ""
+"Si vous souhaitez trouver tous les membres dont le nom d'utilisateur "
+"commence par une certaine lettre, vous pouvez sélectionner cette lettre dans"
+" la liste affichée en haut de la liste des membres. Par exemple, cliquer sur"
+" « A » affichera tous les noms d'utilisateur commençant par la lettre A, "
+"tandis que cliquer sur « B » listera tous les noms d'utilisateur commençant "
+"par B. Cliquer sur le dièse (#) affichera une liste des noms d'utilisateur "
+"ne commençant par aucune des vingt-six lettres, c'est-à-dire par des "
+"chiffres ou d'autres caractères."
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/user_guide.xml:839
+msgid "Sort By Column Headers"
+msgstr "Trier par en-têtes de colonne"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:841
+msgid ""
+"Each of the column headings are also sort links. That means you can click "
+"<guilabel>Username</guilabel>, <guilabel>Rank</guilabel>, "
+"<guilabel>Posts</guilabel>, <guilabel>Website</guilabel>, "
+"<guilabel>Location</guilabel>, <guilabel>&gt;Joined</guilabel>, or "
+"<guilabel>Last Active</guilabel> to sort by that group. Upon clicking this "
+"for the first time, the lists will be sorted in ascending order (meaning "
+"that usernames would be listed A to Z and joined date would be listed "
+"earliest to most recent.) If you want to order the list in descending order,"
+" wait until the page has loaded in ascending order and click the column "
+"heading you wish to order by for a second time."
+msgstr ""
+"Chaque en-tête de colonne est également un lien de tri. Vous pouvez ainsi "
+"cliquer sur <guilabel>Nom d'utilisateur</guilabel>, "
+"<guilabel>Rang</guilabel>, <guilabel>Messages</guilabel>, <guilabel>Site "
+"web</guilabel>, <guilabel>Localisation</guilabel>, <guilabel>Inscrit "
+"le</guilabel>, ou <guilabel>Dernière visite</guilabel> pour trier selon ce "
+"critère. Lors du premier clic, les listes seront triées par ordre croissant "
+"(c'est-à-dire que les noms d'utilisateur seront classés de A à Z et les "
+"dates d'inscription de la plus ancienne à la plus récente.) Si vous "
+"souhaitez trier la liste par ordre décroissant, attendez que la page se soit"
+" chargée par ordre croissant, puis cliquez une seconde fois sur l'en-tête de"
+" colonne selon lequel vous souhaitez trier."
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/user_guide.xml:846
+msgid "Sort By Other Options"
+msgstr "Trier selon d'autres options"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:848
+msgid ""
+"You may also sort the memberlist by using the dropdown boxes on the bottom "
+"of the page."
+msgstr ""
+"Vous pouvez également trier la liste des membres à l'aide des listes "
+"déroulantes situées en bas de la page."
+
+#. (itstool) path: varlistentry/term
+#: en/chapters/user_guide.xml:853
+msgid "Find a Member Search Tool"
+msgstr "Outil de recherche « Rechercher un membre »"
+
+#. (itstool) path: listitem/para
+#: en/chapters/user_guide.xml:855
+msgid ""
+"You can narrow down your search results using the <guilabel>Find a "
+"member</guilabel> search function. This feature allows you to find members "
+"by their username, ICQ number, AIM, YIM, MSN Messenger/Windows Live "
+"Messenger address, join date, last active date, number of posts, IP address,"
+" and usergroup membership(s). All dates should be entered in the format "
+"YYYY-MM-DD (such as 2004-02-28 to represent February 28, 2004). The asterix "
+"(*) can be used as a wildcard for partial matches, such as entering \"Ar*\" "
+"into the username field to find all usernames beginning with Ar. Press the "
+"<guilabel>Submit</guilabel> button to begin the search, or the "
+"<guilabel>Reset</guilabel> button if you wish to clear all fields and start "
+"the search again."
+msgstr ""
+"Vous pouvez affiner vos résultats de recherche à l'aide de la fonction de "
+"recherche <guilabel>Trouver un membre</guilabel>. Cette fonctionnalité vous "
+"permet de trouver des membres par leur nom d'utilisateur, leur numéro ICQ, "
+"leur adresse AIM, YIM, MSN Messenger/Windows Live Messenger, leur date "
+"d'inscription, leur date de dernière visite, leur nombre de messages, leur "
+"adresse IP et leur(s) appartenance(s) à des groupes d'utilisateurs. Toutes "
+"les dates doivent être saisies au format AAAA-MM-JJ (par exemple 2004-02-28 "
+"pour représenter le 28 février 2004). L'astérisque (*) peut être utilisé "
+"comme caractère générique pour des correspondances partielles, par exemple "
+"en saisissant « Ar* » dans le champ du nom d'utilisateur pour trouver tous "
+"les noms d'utilisateur commençant par Ar. Cliquez sur le bouton "
+"<guilabel>Envoyer</guilabel> pour lancer la recherche, ou sur le bouton "
+"<guilabel>Réinitialiser</guilabel> si vous souhaitez effacer tous les champs"
+" et recommencer la recherche."
+
+#. (itstool) path: note/para
+#: en/chapters/user_guide.xml:861
+msgid "The availability of the sort method selection boxes varies by style."
+msgstr ""
+"La disponibilité des listes de sélection de méthode de tri varie selon le "
+"style."

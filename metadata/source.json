@@ -1,0 +1,30 @@
+{
+  "languages": {
+    "da": {
+      "documentation": {
+        "commit": "d848ba6b9afb76043702533f1b3a027114d71c47"
+      }
+    },
+    "de": {
+      "documentation": {
+        "commit": "d848ba6b9afb76043702533f1b3a027114d71c47"
+      }
+    },
+    "de_x_sie": {
+      "documentation": {
+        "commit": "d848ba6b9afb76043702533f1b3a027114d71c47"
+      }
+    },
+    "fr": {
+      "documentation": {
+        "commit": "d848ba6b9afb76043702533f1b3a027114d71c47"
+      }
+    },
+    "it": {
+      "documentation": {
+        "commit": "d848ba6b9afb76043702533f1b3a027114d71c47"
+      }
+    }
+  },
+  "upstream": {}
+}
