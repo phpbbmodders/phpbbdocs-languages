@@ -1,0 +1,64 @@
+name: Bug report
+description: Something is wrong with a translation or the catalogs themselves
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. If this is a question, feature idea, or general discussion rather than something concretely wrong, please use [Discussions](../../discussions) instead.
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language
+      description: Which translation is this about? Pick "Other" if it's not listed and say which in the description below.
+      options:
+        - da (Danish)
+        - de (German, Casual/Du)
+        - de-x-sie (German, Formal/Sie)
+        - fr (French)
+        - it (Italian)
+        - Not language-specific (catalogs/tooling/metadata in general)
+        - Other (specify below)
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Chapter or file
+      description: Which chapter (e.g. admin_guide, user_guide, glossary) or file path is affected?
+      placeholder: e.g. admin_guide.po, or metadata/languages.json
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem is this?
+      description: Pick the closest match — a maintainer may adjust the label after triage.
+      options:
+        - Mistranslation or wording issue in existing translated text
+        - Missing or incomplete translation
+        - Terminology drift from phpBB's real language pack
+        - Something else (metadata, tooling, catalog structure)
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current text
+      description: The msgid/msgstr, or quote the text as it currently reads.
+    validations:
+      required: false
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected text
+      description: What should it say instead, and why?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Anything else worth knowing — links to phpBB's real language pack, related issues, etc.
+    validations:
+      required: false
