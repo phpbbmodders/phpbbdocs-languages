@@ -83,6 +83,9 @@ msgid ""
 "which stands for \"Administration Control Panel\", is the main place from "
 "which you, the administrator, can control every aspect of your forum."
 msgstr ""
+"<link linkend=\"admin_control_panel\"><acronym>ACP</acronym></link> er en "
+"forkortelse af \"Administratorkontrolpanel\". Her kan du som administrator, "
+"kontrollere og indstille alle funktioner på dit board."
 
 #. (itstool) path: varlistentry/term
 #: glossary.xml:51
@@ -99,6 +102,12 @@ msgid ""
 ".sql, .cfg, .htm, and .tpl), except for the image files, should be uploaded "
 "in ASCII mode."
 msgstr ""
+"<acronym>ASCII</acronym>, eller \"American Standard Code for Information "
+"Interchange\", er en almindelig anvendt indkoding af data som skal flyttes "
+"til en anden computer. <acronym>FTP</acronym>-klienter bruger ASCII-mode når"
+" filer flyttes. Alle phpBB-filer (filtyperne .php, .inc, .sql, .cfg, .htm, "
+"and .tpl) skal uploades i ASCII-mode. Eneste undtagelse er grafikfiler, som "
+"skal uploades i BINARY-mode."
 
 #. (itstool) path: varlistentry/term
 #: glossary.xml:58
@@ -166,6 +175,12 @@ msgid ""
 " phpBB's images (found mainly in the images/ directory and the style's "
 "directories) should be uploaded in binary mode."
 msgstr ""
+"I phpBB-sammenhæng refererer \"binær\" eller på engelsk \"binary\" normalt "
+"til en måde at indkode filer der skal flyttes (den anden metode er "
+"<acronym>ASCII</acronym>). Den anvendes ofte af "
+"<acronym>FTP</acronym>-klienter ved upload af filer. Alle phpBB's "
+"grafikfiler (i mapperne images/ , styles/prosilver/imageset og "
+"styles/subsilver2/imageset/ ) skal uploades i BINARY-mode."
 
 #. (itstool) path: varlistentry/term
 #: glossary.xml:86
@@ -262,6 +277,13 @@ msgid ""
 "database to store information such as user details, posts, and categories. "
 "Data stored in a database can usually be backed up and restored easily."
 msgstr ""
+"En database er information gemt på en struktureret og organiseret måde (i "
+"tabeller, række og kolonner). Databaser giver en hurtig og fleksibel metode "
+"til at opbevare data, i modsætning til den anden også meget anvendte metode,"
+" hvor data gemmes i \"flade\" filer. phpBB 3.0 understøtter flere "
+"forskellige <acronym>DBMSs</acronym> og gemmer information om brugere, "
+"indlæg, emner m.m. i databasesystemet. Det er nemt at foretage backup af "
+"databasen og gendanne denne."
 
 #. (itstool) path: varlistentry/term
 #: glossary.xml:128
@@ -276,6 +298,11 @@ msgid ""
 "little overhead. All code made for phpBB (including MODs) need to use the "
 "phpBB <acronym>DBAL</acronym> for compatibility and performance purposes."
 msgstr ""
+"<acronym>DBAL</acronym>, eller \"Database Abstraction Layer\", er et system "
+"som giver phpBB 3.0 mulighed for at anvende mange forskellige "
+"<acronym>DBMSs</acronym> med lidt overhead. Al kode til phpBB (MODs "
+"inklusive) skal gøre brug af phpBB-<acronym>DBAL</acronym> af hensyn til "
+"kompabilitet og ydeevne."
 
 #. (itstool) path: varlistentry/term
 #: glossary.xml:135
@@ -289,6 +316,10 @@ msgid ""
 " software designed to manage a database. phpBB 3.3 supports the following "
 "DBMSs: Microsoft SQL Server, MySQL, Oracle, postgreSQL, and SQLite."
 msgstr ""
+"<acronym>DBMS</acronym>, eller \"Database Management System\", er et system "
+"eller en software designet for at håndtere en database. phpBB 3.0 "
+"understøtter følgende DBMSs: Firebird, MS SQL Server, mySQL, Oracle, "
+"postgreSQL, og SQLite."
 
 #. (itstool) path: varlistentry/term
 #: glossary.xml:142
@@ -342,6 +373,10 @@ msgid ""
 "<acronym>FTP</acronym> clients are programs that are used to transfer files "
 "via <acronym>FTP</acronym>."
 msgstr ""
+"<acronym>FTP</acronym>, eller \"File Transfer Protocol\". Protokollen "
+"anvendes til at flytte filer mellem computere. "
+"<acronym>FTP</acronym>-klienter er de programmer man anvender til at flytte "
+"filer med <acronym>FTP</acronym>."
 
 #. (itstool) path: varlistentry/term
 #: glossary.xml:163
@@ -403,6 +438,9 @@ msgid ""
 "more information on XMPP's role in phpBB, see <xref "
 "linkend=\"acp_client_jabber\"/>."
 msgstr ""
+"Jabber er en open-source protokol der kan anvendes til instant messenging. "
+"Yderligere information om Jabber's rolle i phpBB, se <xref "
+"linkend=\"acp_client_jabber\"/>."
 
 #. (itstool) path: varlistentry/term
 #: glossary.xml:191
@@ -419,6 +457,12 @@ msgid ""
 "templates, modify the output. An alternative name for a listener is a "
 "\"hook\"."
 msgstr ""
+"En listener udløses af et <glossterm>event</glossterm>. Den kan benyttes af "
+"en <glossterm>extension</glossterm> til at behandle indkommende data og "
+"manipulere variabler inden for eventets rækkevidde. På den måde kan den "
+"ændre phpBB's opførsel, tilføje eller fjerne funktioner, eller, hvis den "
+"bruges i skabelonsammenhæng, ændre outputtet. Et alternativt navn for en "
+"listener er en \"hook\"."
 
 #. (itstool) path: varlistentry/term
 #: glossary.xml:198
@@ -451,6 +495,10 @@ msgid ""
 "way hash, meaning that you cannot \"decrypt\" (reverse) an MD5 hash and get "
 "users' passwords. User passwords are stored as MD5 hashes in the database."
 msgstr ""
+"<acronym>MD5</acronym> (Message Digest algorithm 5) er en kryptografisk "
+"hashfunktion med en 128-bit (16 bytes) hashværdi. I phhBB bruges MD5 til at "
+"kryptere brugernes kodeord i en envejs hash, som betyder at man ikke kan "
+"\"dekryptere\" kodeordet i phpBB's database."
 
 #. (itstool) path: varlistentry/term
 #: glossary.xml:212
@@ -503,6 +551,12 @@ msgid ""
 "on. For more information about <acronym>PHP</acronym>, please see the <ulink"
 " url=\"http://www.php.net\">PHP</ulink> home page."
 msgstr ""
+"<acronym>PHP</acronym>, eller \"PHP: Hypertext Preprocessor\" er et populært"
+" og meget anvendt open-source programmeringsprog. phpBB er kodet i "
+"<acronym>PHP</acronym> og kræver <acronym>PHP</acronym>'s runtime engine er "
+"installeret og konfigureret korrekt på den server hvor phpBB er installeret."
+" Læs mere information om <acronym>PHP</acronym> på <ulink "
+"url=\"http://www.php.net\">PHP</ulink>'s hjemmeside."
 
 #. (itstool) path: varlistentry/term
 #: glossary.xml:233
@@ -669,6 +723,13 @@ msgid ""
 "send emails if the required <acronym>SMTP</acronym> data is correctly set "
 "up."
 msgstr ""
+"<acronym>SMTP</acronym> eller \"Simple Mail Transfer Protocol\" er den "
+"protokol der anvendes for at afsende email. Som standard anvender phpBB "
+"<acronym>PHP</acronym>'s indbyggede <ulink "
+"url=\"http://www.php.net/manual/en/function.mail.php\">mail()</ulink>-funtionalitet"
+" til at afsende email. phpBB kan imidlertid indstilles til at bruge "
+"<acronym>SMTP</acronym> til afsendelse, hvis de korrekte "
+"<acronym>SMTP</acronym>-parametre anvendes."
 
 #. (itstool) path: varlistentry/term
 #: glossary.xml:286
