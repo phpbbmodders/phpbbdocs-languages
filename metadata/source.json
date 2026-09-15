@@ -26,5 +26,8 @@
       }
     }
   },
-  "upstream": {}
+  "upstream": {
+    "branch": "3.3.x",
+    "repository": "phpbb/documentation"
+  }
 }
