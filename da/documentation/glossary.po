@@ -1,0 +1,793 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-09-15 03:05-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr ""
+
+#. (itstool) path: chapterinfo/releaseinfo
+#: glossary.xml:5
+msgid "$Id$"
+msgstr ""
+
+#. (itstool) path: chapterinfo/copyright
+#: glossary.xml:6
+msgid "<year>2006</year> <holder>phpBB Group</holder>"
+msgstr ""
+
+#. (itstool) path: chapter/title
+#: glossary.xml:11
+msgid "Glossary"
+msgstr "Ordliste"
+
+#. (itstool) path: abstract/para
+#: glossary.xml:13
+msgid ""
+"A guide to the terms used in the phpBB Documentation and on the forums."
+msgstr ""
+
+#. (itstool) path: authorgroup/author
+#: glossary.xml:19
+msgid "<othername>MennoniteHobbit</othername>"
+msgstr ""
+
+#. (itstool) path: authorgroup/author
+#: glossary.xml:23
+msgid "<othername>pentapenguin</othername>"
+msgstr ""
+
+#. (itstool) path: authorgroup/author
+#: glossary.xml:27
+msgid "<othername>Techie-Micheal</othername>"
+msgstr ""
+
+#. (itstool) path: authorgroup/author
+#: glossary.xml:31
+msgid "<othername>ameeck</othername>"
+msgstr ""
+
+#. (itstool) path: section/title
+#: glossary.xml:37
+msgid "Terms"
+msgstr "Termer"
+
+#. (itstool) path: section/para
+#: glossary.xml:38
+msgid ""
+"There are quite a few terms that are commonly used throughout phpBB and the "
+"support forums. Here is some information on these terms."
+msgstr ""
+"I phpBB og på phpBB's supportboards anvendes en række termer og "
+"forkortelser. Nedenfor gennemgås på de mest alment anvendte."
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:44
+msgid "ACP"
+msgstr "ACP"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:46
+msgid ""
+"The <link linkend=\"admin_control_panel\"><acronym>ACP</acronym></link>, "
+"which stands for \"Administration Control Panel\", is the main place from "
+"which you, the administrator, can control every aspect of your forum."
+msgstr ""
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:51
+msgid "ASCII"
+msgstr "ASCII"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:53
+msgid ""
+"<acronym>ASCII</acronym>, or \"American Standard Code for Information "
+"Interchange\", is a common way of encoding data to transfer it to a "
+"different computer. <acronym>FTP</acronym> clients have ASCII as a mode to "
+"transfer files. All phpBB files (files with the file extensions .php, .inc, "
+".sql, .cfg, .htm, and .tpl), except for the image files, should be uploaded "
+"in ASCII mode."
+msgstr ""
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:58
+msgid "Attachments"
+msgstr "Vedhæftede filer"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:60
+msgid ""
+"<link linkend=\"acp_board_attachments\">Attachments</link> are files that "
+"can be attached to posts, like e-mail attachments. Certain restrictions, set"
+" by the board administrator, control what users can attach."
+msgstr ""
+"Der kan <link linkend=\"acp_board_attachments\">vedhæftes filer</link> til "
+"indlæg, på tilsvarende måde som når man skriver en email. "
+"Boardadministratoren kan have valgt visse restriktioner og bestemt at kun "
+"nogle filtyper kan vedhæftes og også begrænset størrelsen på den enkelte "
+"vedhæftede fil."
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:65
+msgid "Avatar"
+msgstr "Avatar"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:67
+msgid ""
+"<link linkend=\"ucp_avatar\">Avatars</link> are small images that are "
+"displayed next to a username. Avatars can be changed in your profile and "
+"settings (such as allow/disallow uploading) edited from the "
+"<acronym>ACP</acronym>."
+msgstr ""
+"<link linkend=\"ucp_avatar\">Avatars</link> er små billeder som vises sammen"
+" med brugernavn. En avatar kan ændres under dine profilindstillinger. I "
+"<acronym>ACP</acronym> kan den overordnede brug af avatars tillades eller "
+"forbydes."
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:72
+msgid "BBCode"
+msgstr "BBkode"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:74
+msgid ""
+"<link linkend=\"posting_bbcodes\">BBCode</link> is a special way of "
+"formatting posts that offers great control over what and how something is "
+"displayed. BBCode has a syntax similar to HTML."
+msgstr ""
+"<link linkend=\"posting_bbcodes\">BBkode</link> er en måde at formatere "
+"indlæg på, som giver fin kontrol over hvordan indlægget vises. Syntaksen i "
+"BBkoder er meget lig HTML."
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:79
+msgid "Binary"
+msgstr "Binær (Binary)"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:81
+msgid ""
+"Within phpBB, \"binary\" usually refers to another common way of encoding "
+"data for transfer (the other being <acronym>ASCII</acronym>. This is often "
+"found as a mode in an <acronym>FTP</acronym> clients to upload files. All of"
+" phpBB's images (found mainly in the images/ directory and the style's "
+"directories) should be uploaded in binary mode."
+msgstr ""
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:86
+msgid "Cache"
+msgstr "Mellemlager (Cache)"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:88
+msgid ""
+"Cache is a way of storing frequently-accessed data. By storing this data, "
+"your server will have less load put on it, allowing it to process other "
+"tasks. By default, phpBB caches its templates, when they are compiled and "
+"used, and common static SQL queries."
+msgstr ""
+"Mellemlagring er en metode til at gemme data der ofte hentes. Ved benyttelse"
+" af denne metode aflastes din server. Som standard er phpBB3 indstillet til "
+"at mellemlagre skabelonfilerne."
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:93
+msgid "Category"
+msgstr "Kategori"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:95
+msgid ""
+"A category is a group of any sort of similar items; for example, forums."
+msgstr ""
+"En kategori er en gruppe af alle slags identiske enheder, for eksempel fora."
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:100
+msgid "chmod"
+msgstr "Chmod"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:102
+msgid ""
+"<abbrev>chmod</abbrev> is a way of changing the permissions of a file on a "
+"*nix (UNIX, Linux, etc.) server. Files in phpBB should be chmodded 644. "
+"Directories should be chmodded to 755. Avatar upload directories and "
+"templates cache directories should be chmodded to 777. For more information "
+"regarding chmod, please consult your <acronym>FTP</acronym> client's "
+"documentation."
+msgstr ""
+"<abbrev>Chmod</abbrev> er definitionen på mappe- og fil-tilladelser på en "
+"*nix-server (UNIX, Linux, etc.). Filerne i phpBB skal være chmodded til 644,"
+" mapper til 755. Avatar uploadmappen og cachemappen til 777. Du kan finde "
+"mere information om chmod i dokumentationen til din "
+"<acronym>FTP</acronym>-klient."
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:107
+msgid "Client"
+msgstr "Klient"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:109
+msgid ""
+"A client is a computer that accesses another computer's service(s) via a "
+"network."
+msgstr ""
+"En klient er betegnelsen for en computer som tilgår en anden computer via et"
+" netværk og benytter sig af dennes service."
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:114
+msgid "Cookie"
+msgstr "Cookie"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:116
+msgid ""
+"A cookie is a small piece of data put onto the user's computer. Cookies are "
+"used with phpBB to store login information (used for automatic logins)."
+msgstr ""
+"En cookie er en lille tekst-fil, som placeres på brugerens computer. phpBB "
+"anvender cookies til at gemme information om log ind og er nødvendig for at "
+"brugeren kan logges automatisk ind."
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:121
+msgid "Database"
+msgstr "Database"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:123
+msgid ""
+"A database is a collection stored in a structured, organized manner (with "
+"different tables, rows, and columns, etc.). Databases provide a fast and "
+"flexible way of storing data, instead of the other commonly used data "
+"storage system of flat files where data is stored in a file. phpBB 3.3 "
+"supports a number of different <acronym>DBMSs</acronym> and uses the "
+"database to store information such as user details, posts, and categories. "
+"Data stored in a database can usually be backed up and restored easily."
+msgstr ""
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:128
+msgid "DBAL"
+msgstr "DBAL"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:130
+msgid ""
+"<acronym>DBAL</acronym>, or \"Database Abstraction Layer\", is a system that"
+" allows phpBB 3.3 to access many different <acronym>DBMSs</acronym> with "
+"little overhead. All code made for phpBB (including MODs) need to use the "
+"phpBB <acronym>DBAL</acronym> for compatibility and performance purposes."
+msgstr ""
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:135
+msgid "DBMS"
+msgstr "DBMS"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:137
+msgid ""
+"A <acronym>DBMS</acronym>, or \"Database Management System\", is a system or"
+" software designed to manage a database. phpBB 3.3 supports the following "
+"DBMSs: Microsoft SQL Server, MySQL, Oracle, postgreSQL, and SQLite."
+msgstr ""
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:142
+msgid "Event"
+msgstr "Event"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:144
+msgid ""
+"Events are injection points in the core phpBB code, similar to an anchor. "
+"When the event is triggered a <glossterm>listener</glossterm> in an "
+"<glossterm>extension</glossterm> that is subscribed to the event will inject"
+" code at that point, but without editing the core file."
+msgstr ""
+"Events er injektionspunkter i phpBB's kernekode, svarende til et anker. Når "
+"et event udløses, kan en <glossterm>listener</glossterm> i en "
+"<glossterm>extension</glossterm>, der abonnerer på eventet, injicere kode på"
+" dette sted, uden at redigere kernefilen."
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:149
+msgid "Extension"
+msgstr "Extension"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:151
+msgid ""
+"Is the successor to a <glossterm>MOD</glossterm>. Like MODs they are to add "
+"or remove features or functionality, or in some other way modify behaviour "
+"of the standard software. They differ from MODs in that they are contained "
+"in their own directories and do not make changes to the core software. "
+"Instead they make use of <glossterm>Events</glossterm> and "
+"<glossterm>Listeners</glossterm>."
+msgstr ""
+"Er efterfølgeren til et <glossterm>MOD</glossterm>. Ligesom MODs tilføjer "
+"eller fjerner de funktioner eller ændrer på anden vis standardsoftwarens "
+"opførsel. De adskiller sig fra MODs ved at være indeholdt i deres egne "
+"mapper og ikke foretager ændringer i kernesoftwaren. I stedet gør de brug af"
+" <glossterm>Events</glossterm> og <glossterm>Listeners</glossterm>."
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:156
+msgid "FTP"
+msgstr "FTP"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:158
+msgid ""
+"<acronym>FTP</acronym> stands for \"File Transfer Protocol\". It is a "
+"protocol which allows files to be transferred between computers. "
+"<acronym>FTP</acronym> clients are programs that are used to transfer files "
+"via <acronym>FTP</acronym>."
+msgstr ""
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:163
+msgid "Founder"
+msgstr "Grundlægger"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:165
+msgid ""
+"A founder is a special board administrator that cannot be edited or deleted."
+msgstr ""
+"En grundlægger er en særlig boardadministrator som ikke kan ændres eller "
+"slettes. Det er en ny brugerprofil introduceret i phpBB 3.0."
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:170
+msgid "GZip"
+msgstr "GZip"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:172
+msgid ""
+"GZip is a compression method often used in web applications and software "
+"such as phpBB to improve speed. Most modern browsers support this on-the-fly"
+" algorithm. Gzip is also used to compress an archive of files. Higher "
+"compression levels, however, will increase server load."
+msgstr ""
+"GZip er en komprimeringsteknik som ofte anvendes i web-applikationer og "
+"software som for eksempel phpBB. Teknikken kan være med til at øge "
+"overførselshastighed og mindske båndbreddeforbrug, til gengæld øges "
+"belastningen på serveren. De fleste moderne browsere understøtter denne "
+"teknik. Gzip bruges også til at komprimere eller pakke filer og mapper med, "
+"fuldstændig som med zip."
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:177
+msgid "IP address"
+msgstr "IP-adresse"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:179
+msgid ""
+"An IP address, or Internet Protocol address, is a unique address that "
+"identifies a specific computer or user."
+msgstr ""
+"En IP-adresse, eller Internet Protocol adresse, er en unik adresse som "
+"identificerer en specifik computer eller bruger."
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:184
+msgid "Jabber"
+msgstr "Jabber"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:186
+msgid ""
+"Jabber is the former name of Extensible Messaging and Presence Protocol "
+"(XMPP) an open-source protocol that can be used for instant messenging. For "
+"more information on XMPP's role in phpBB, see <xref "
+"linkend=\"acp_client_jabber\"/>."
+msgstr ""
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:191
+msgid "Listener"
+msgstr "Listener"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:193
+msgid ""
+"A listeners are triggered by an <glossterm>event</glossterm>. They can be "
+"used by an <glossterm>extension</glossterm> to process incoming data and "
+"manipulate variables in the scope of the event. So they can change phpBB's "
+"behaviour, add or remove functionality or if used in the context of "
+"templates, modify the output. An alternative name for a listener is a "
+"\"hook\"."
+msgstr ""
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:198
+msgid "MCP"
+msgstr "MCP"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:200
+msgid ""
+"The <acronym>MCP</acronym>, or Moderation Control Panel, is the central "
+"point from which all moderators can moderate their forums. All moderation-"
+"related features are contained in this control panel."
+msgstr ""
+"<acronym>MCP</acronym>, eller redaktørkontrolpanelet, er det centrale "
+"menupunkt hvorfra alle redaktører kan redigere deres fora. Alle funktioner "
+"relateret til redigering er indeholdt i dette kontrolpanel."
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:205
+msgid "MD5"
+msgstr "MD5"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:207
+msgid ""
+"<acronym>MD5</acronym> (Message Digest algorithm 5) is a commonly-used hash "
+"function used by phpBB. MD5 is an algorithm which takes an input of any "
+"length and outputs a message digest of a fixed length (128-bit, 32 "
+"characters). MD5 is used in phpBB to turn the users' passwords into a one-"
+"way hash, meaning that you cannot \"decrypt\" (reverse) an MD5 hash and get "
+"users' passwords. User passwords are stored as MD5 hashes in the database."
+msgstr ""
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:212
+msgid "MOD"
+msgstr "MOD"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:214
+msgid ""
+"A <abbrev>MOD</abbrev> is a code modification for phpBB that either adds, "
+"changes, or in some other way enhances, phpBB. <abbrev>MODs</abbrev> are "
+"written by third-party authors; as such, the phpBB Group does not assume any"
+" responsibility for MODs."
+msgstr ""
+"Et <abbrev>MOD</abbrev> er en kodemodifikation til phpBB som ændrer, "
+"tilføjer eller udvider phpBB's funktioner. <abbrev>MODs</abbrev> kodes og "
+"frigives af selvstændige udviklere. phpBB Group påtager sig ikke ansvaret "
+"for om installation af MODs medfører fejl eller lignende."
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:219
+msgid "Notifications"
+msgstr "Notifikationer"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:221
+msgid ""
+"When users perform certain actions on the board notifications will be "
+"generated to the affected users. For example, moderators can select to be "
+"notified when a post requires approval. Notification methods include board "
+"notification and email notification."
+msgstr ""
+"Når en bruger udfører bestemte handlinger på boardet, genereres der "
+"notifikationer til de berørte brugere. Redaktører kan for eksempel vælge at "
+"blive notificeret, når et indlæg skal godkendes. Notifikationsmetoder "
+"omfatter notifikation på boardet og notifikation via e-mail."
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:226
+msgid "PHP"
+msgstr "PHP"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:228
+msgid ""
+"<acronym>PHP</acronym>, or \"PHP: Hypertext Preprocessor\", is a commonly-"
+"used open-source scripting language. phpBB is written in "
+"<acronym>PHP</acronym> and requires the <acronym>PHP</acronym> runtime "
+"engine to be installed and properly configured on the server phpBB is run "
+"on. For more information about <acronym>PHP</acronym>, please see the <ulink"
+" url=\"http://www.php.net\">PHP</ulink> home page."
+msgstr ""
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:233
+msgid "phpMyAdmin"
+msgstr "phpMyAdmin"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:235
+msgid ""
+"phpMyAdmin is a popular open-source program that is used to manage MySQL "
+"databases. When <abbrev>MODding</abbrev> phpBB or otherwise changing it, you"
+" may have to edit your database. phpMyAdmin is one such tool that will allow"
+" you to do so. For more information regarding phpMyAdmin, please see the "
+"<ulink url=\"http://www.phpmyadmin.net\">phpMyAdmin project home "
+"page</ulink>."
+msgstr ""
+"phpMyAdmin er et populært open-source program som bruges til at administrere"
+" MySQL databaser. Når man <abbrev>MOD'er</abbrev> phpBB eller på anden måde "
+"ændrer i funktionaliteterne, kan det være nødvendigt at ændre i databasen. "
+"phpMyAdmin er et af værktøjerne der kan bruges til det. Læs mere information"
+" om phpMyAdmin på <ulink url=\"http://www.phpmyadmin.net\">phpMyAdmin's "
+"hjemmeside</ulink>."
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:240
+msgid "Private Messages"
+msgstr "Private beskeder"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:242
+msgid ""
+"Private messages are a way for registered members to communicate privately "
+"through your board without the need to fall back to e-mail or instant "
+"messaging. They can be sent between users (they can also be forwarded and "
+"have copies sent) that cannot be viewed by anyone other than the intended "
+"recipient. The user guide contains more information on <link "
+"linkend=\"user_pm\">using phpBB3's private messaging system</link>."
+msgstr ""
+"Private beskeder giver tilmeldte brugere mulighed for at kommunikere privat "
+"via boardet uden at skulle gøre brug af email eller instant messaging. "
+"Private beskeder kan sendes mellem brugere, kan videresendes og kopier "
+"tilsendes, og kan kun læses af modtager. Brugermanualen indeholder uddybende"
+" information om <link linkend=\"user_pm\">brug af phpBB3's "
+"beskedsystem</link>."
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:247
+msgid "Rank"
+msgstr "Rang"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:249
+msgid ""
+"A rank is a sort of title that is assigned to a user. Ranks can be added, "
+"edited, and deleted by administrators."
+msgstr ""
+"En rang er en slags titel som kan tildeles en bruger. Rangordner kan "
+"oprettes, ændres og slettes af administratorerne."
+
+#. (itstool) path: note/para
+#: glossary.xml:252
+msgid ""
+"When assigning a special rank name to a user, remember that no permissions "
+"are associated. For example, if you create a \"Support Moderator\" rank and "
+"assign it to a user, that user will not automatically get moderator "
+"permissions. You must assign the user the special permissions separately."
+msgstr ""
+"Når en bruger tildeles en specialrang tilknyttes ingen særlige tilladelser. "
+"Hvis du eksempelvis opretter en rang med titlen \"Supportredaktør\" og "
+"tildeler den til en bruger, får brugeren ikke automatisk "
+"redaktørtilladelser. Tilladelserne skal gives til brugeren særskilt, eller "
+"ved at indmelde brugeren i en gruppe, der har de rette tilladelser."
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:258
+msgid "Server-writable"
+msgstr "Skrivbar"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:260
+msgid ""
+"Anything on your server that is server-writable means that the file(s) or "
+"folder(s) in question have their permissions properly set so that the server"
+" can write to them. Some phpBB3 functions that may require some files and/or"
+" folders to be writable by the server include caching and the actual "
+"installation of phpBB3 (the config.php file needs to be written during the "
+"installation process). Making files or folders server-writable, however, "
+"depends on the operating system that the server is running under. On *nix-"
+"based servers, users can configure file and folder permissions via the "
+"<glossterm>CHMOD</glossterm> utility, while Windows-based servers offer "
+"their own permissions scheme. It is possible with some "
+"<glossterm>FTP</glossterm> clients to change file and folder permissions as "
+"well."
+msgstr ""
+"Alt på din server som skal være server-skrivbart betyder at omtalte filer og"
+" mapper skal have indstillet tilladelser korrekt for at serveren kan skrive "
+"til disse. Nogle af phpBB3's funktioner forudsætter at serveren kan skrive "
+"til bestemte filer og mapper, bl.a. cache-funktionen og under selve "
+"installationen af phpBB3 skal serveren kunne skrive til config.php-filen. "
+"Metoden til at ændre fil- og mappe tilladelserne til at være serverskrivbare"
+" afhænger af det operativsystem din server afvikles på. På *nix-baserede "
+"servere kan tilladelserne ændres med "
+"<glossterm>CHMOD</glossterm>-kommandoen, mens Windows-baserede servere "
+"anvender et andet tilladelsesystem. I nogle "
+"<glossterm>FTP</glossterm>-klienter er det også muligt at ændre fil- og "
+"mappetilladelser på serveren."
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:265
+msgid "Session"
+msgstr "Session"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:267
+msgid ""
+"A session is a visit to your phpBB forums. For phpBB, a session is how long "
+"you spend on the forums. It is created when you login deleted when you log "
+"off. Session <acronym>IDs</acronym> are usually stored in a cookie, but if "
+"phpBB is unable to get cookie information from your computer, then a session"
+" <acronym>ID</acronym> is appended to the URL (e.g. index.php?sid=999). This"
+" session <acronym>ID</acronym> preserves the user's session without use of a"
+" cookie. If sessions were not preserved, then you would find yourself being "
+"logged out every time you clicked on a link in the forum."
+msgstr ""
+"En session er et besøg på dit phpBB-board og sessionen bliver oprettet når "
+"der logges ind og den bliver nedlagt igen når der logges af. "
+"Session-<acronym>IDs</acronym> gemmes normalt i en cookie. Er phpBB ikke i "
+"stand til at hente cookieinformation fra din computer tilføjes i stedet en "
+"session-<acronym>ID</acronym> til URL'en (f.eks. index.php?sid=999). Denne "
+"session-<acronym>ID</acronym> er i stand til at fastholde brugerens session "
+"uden at gøre brug af en cookie. Hvis sessionerne ikke blev fastholdt ville "
+"du blive logget af hver gang du klikkede på et link på boardet."
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:272
+msgid "Signature"
+msgstr "Signatur"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:274
+msgid ""
+"A signature is a message displayed at the end of a user's post. Signatures "
+"are set by the user. Whether or not a signature is displayed after a post is"
+" set by the user's profile settings."
+msgstr ""
+"En signatur er en tekst eller et billede der vises som afslutning i "
+"brugerens indlæg. Signaturen oprettes af brugeren, og vises hvis brugeren "
+"har tilvalgt muligheden i brugerkontrolpanelet. Boardadministratoren skal "
+"desuden have tilladt anvendelse af signaturer på boardet."
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:279
+msgid "SMTP"
+msgstr "SMTP"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:281
+msgid ""
+"<acronym>SMTP</acronym> stands for \"Simple Mail Transfer Protocol\". It is "
+"a protocol for sending email. By default, phpBB uses "
+"<acronym>PHP</acronym>'s built-in <ulink "
+"url=\"http://www.php.net/manual/en/function.mail.php\">mail()</ulink> "
+"function to send email. However, phpBB will use <acronym>SMTP</acronym> to "
+"send emails if the required <acronym>SMTP</acronym> data is correctly set "
+"up."
+msgstr ""
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:286
+msgid "Style"
+msgstr "Typografi"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:288
+msgid ""
+"A style is made up of a template set, image set, and stylesheet. A style "
+"controls the overall look of your forum."
+msgstr ""
+"En typografi består af en skabelon, et tema og en grafikpakke. Typografien "
+"bestemmer det overordnede udseende af dit board."
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:293
+msgid "Sub-forum"
+msgstr "Underforum"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:295
+msgid "Sub-forums are forums that are nested in, or located in, other forums."
+msgstr ""
+"Muligheden for at oprette underfora er ny i phpBB 3.0. Underfora er "
+"indeholdt eller placeret i andre fora."
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:300
+msgid "Template"
+msgstr "Skabelon"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:302
+msgid ""
+"A template is what controls the layout of a style. phpBB 3.3 template files "
+"have the .html file extension. These template files contain mostly "
+"<acronym>HTML</acronym> (no <acronym>PHP</acronym>, however), with some "
+"variables that phpBB uses (contained in braces: { and })."
+msgstr ""
+"En skabelon omfatter alle de markeringer der bruges for at skabe dit boards "
+"udseende. phpBB 3.0 skabelonfilerne er html-filer. Disse skabelonfiler "
+"indeholder hovedsaglig <acronym>HTML</acronym>-kode (ingen "
+"<acronym>PHP</acronym>-kode) og nogle variabler phpBB bruger (indeholdt i: {"
+" og })."
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:307
+msgid "Twig"
+msgstr "Twig"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:309
+msgid ""
+"phpBB uses the <ulink url=\"http://twig.sensiolabs.org/\">Twig</ulink> "
+"template engine to combine data and <glossterm>template</glossterm> files to"
+" generate dynamic web pages on demand."
+msgstr ""
+"phpBB benytter <ulink "
+"url=\"http://twig.sensiolabs.org/\">Twig</ulink>-skabelonmotoren til at "
+"kombinere data og <glossterm>skabelon</glossterm>filer for at generere "
+"dynamiske websider on demand."
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:314
+msgid "UCP"
+msgstr "UCP"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:316
+msgid ""
+"The <acronym>UCP</acronym>, or User Control Panel, is the central point from"
+" which users can manage all of the settings and features that pertain to "
+"their accounts."
+msgstr ""
+"<acronym>UCP</acronym> eller brugerkontrolpanelet, er stedet hvor brugere "
+"kan indstille og ændre alle muligheder og indstillinger tilhørende deres "
+"personlige brugerkonti."
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:321
+msgid "UNIX Timestamp"
+msgstr "UNIX tidstempel"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:323
+msgid ""
+"phpBB stores all times in the <ulink "
+"url=\"http://en.wikipedia.org/wiki/Unix_time\">UNIX timestamp</ulink> format"
+" for easy conversion to other time zones and time formats."
+msgstr ""
+"phpBB gemmer alle tider i formatet <ulink "
+"url=\"http://en.wikipedia.org/wiki/Unix_time\">UNIX tidstempel</ulink> for "
+"at lette omsætning til andre tidzoner og tidformater."
+
+#. (itstool) path: varlistentry/term
+#: glossary.xml:328
+msgid "Usergroup"
+msgstr "Brugergruppe"
+
+#. (itstool) path: listitem/para
+#: glossary.xml:330
+msgid ""
+"Usergroups are a way of grouping users. This makes it easier to set "
+"permissions to many people at the same time (e.g. create a moderator group "
+"and give it moderating permissions to a certain forum instead of giving lots"
+" of individual people moderating permissions separately). A usergroup has a "
+"usergroup moderator (a leader, essentially), who has the ability to add or "
+"delete users from the group. Usergroups can be set to hidden, closed or "
+"open. If a usergroup is open, users can try requesting membership via the "
+"proper page within the <link linkend=\"user_control_panel\">group control "
+"panel</link>. phpBB 3.3 has six pre-defined usergroups."
+msgstr ""
+"Brugergrupper er en måde at gruppere brugere på. Det gør det enkelt at "
+"indstille og ændre tilladelser for mange brugere samtidig (f.eks. oprette en"
+" redaktørgruppe og tildele denne gruppe redaktørtilladelser i et bestemt "
+"forum, fremfor at tildele en hel række brugere separate redaktørtilladelser "
+"i dette forum). En brugergruppe kan have gruppeledere som kan tilføje og "
+"fjerne fra gruppen. Brugergrupper kan være skjulte, lukkede eller åbne. Hvis"
+" en brugergruppe er åben, kan brugere anmode om medlemskab i denne i <link "
+"linkend=\"user_control_panel\">brugerkontrolpanelet</link>. phpBB 3.0.x "
+"indeholder seks faste brugergrupper."
