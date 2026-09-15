@@ -442,7 +442,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: en/chapters/upgrade_guide.xml:137 en/chapters/upgrade_guide.xml:209
 msgid "The ext/ directory"
-msgstr "Dem Verzeichnis ext/"
+msgstr "Das Verzeichnis ext/"
 
 #. (itstool) path: authorgroup/author
 #: en/chapters/upgrade_guide.xml:177
