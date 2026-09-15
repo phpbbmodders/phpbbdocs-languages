@@ -1,0 +1,3604 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-09-15 03:04-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr ""
+
+#. (itstool) path: chapterinfo/releaseinfo
+#: user_guide.xml:5
+msgid "$Id$"
+msgstr ""
+
+#. (itstool) path: chapterinfo/copyright
+#: user_guide.xml:6
+msgid "<year>2006</year> <holder>phpBB Group</holder>"
+msgstr ""
+
+#. (itstool) path: chapter/title
+#: user_guide.xml:11
+msgid "User Guide"
+msgstr "Brugervejledning"
+
+#. (itstool) path: abstract/para
+#: user_guide.xml:13
+msgid ""
+"This chapter is targeted at the forum users. It explains all user facing "
+"functions that are needed to use phpBB 3.3"
+msgstr ""
+
+#. (itstool) path: authorgroup/author
+#: user_guide.xml:18 user_guide.xml:301
+msgid "<othername>AdamR</othername>"
+msgstr ""
+
+#. (itstool) path: section/title
+#: user_guide.xml:23
+msgid "How user permissions affect forum experience"
+msgstr "Hvordan brugertilladelser påvirker din oplevelse af forummet"
+
+#. (itstool) path: section/para
+#: user_guide.xml:24
+msgid ""
+"phpBB3 uses permissions on a per-user or per-usergroup basis to allow or "
+"disallow users access to certain functions or features which software "
+"offers. These may include the ability to post in certain forums, having an "
+"avatar, or being able to communicate through private messages. All of the "
+"permissions can be set through the Administration Panel."
+msgstr ""
+"phpBB3 bruger tilladelser pr. bruger eller pr. brugergruppe til at give "
+"eller nægte brugere adgang til bestemte funktioner, som softwaren tilbyder. "
+"Dette kan omfatte muligheden for at skrive indlæg i bestemte fora, have en "
+"avatar, eller kunne kommunikere via private beskeder. Alle tilladelser kan "
+"indstilles via administratorkontrolpanelet."
+
+#. (itstool) path: section/para
+#: user_guide.xml:25
+msgid ""
+"Permissions can also be set allowing appointed members to perform special "
+"tasks or have special abilities on the bulletin board. Permissions allow the"
+" Administrator to define which moderation functions and in which forums "
+"certain users or groups of users are allowed to use. This allows for "
+"appointed users to become moderators on the bulletin board. The "
+"administrator can also give users access to certain sections of the "
+"Administration panel, keeping important settings or functions restricted and"
+" safe from malicious acts. For example, a select group of moderators could "
+"be allowed to modify a user's avatar or signature if said avatar or "
+"signature is not allowed under a paticular forum's rules. Without these "
+"abilities set, the moderator would need to notify an administrator in order "
+"to have the user's profile changed."
+msgstr ""
+"Tilladelser giver også mulighed for at udpege bestemte medlemmer til at "
+"udføre særlige opgaver eller have særlige beføjelser på boardet. Tilladelser"
+" gør det muligt for administratoren at bestemme hvilke redaktørfunktioner, "
+"og i hvilke fora, bestemte brugere eller brugergrupper må benytte. Dette gør"
+" det muligt at udpege brugere til at blive redaktører på boardet. "
+"Administratoren kan også give brugere adgang til bestemte dele af "
+"administratorkontrolpanelet, så vigtige indstillinger og funktioner "
+"forbliver begrænsede og sikre mod misbrug. En udvalgt gruppe af redaktører "
+"kunne for eksempel få tilladelse til at ændre en brugers avatar eller "
+"signatur, hvis avataren eller signaturen ikke overholder et bestemt forums "
+"regler. Uden disse beføjelser ville redaktøren være nødt til at underrette "
+"en administrator for at få brugerens profil ændret."
+
+#. (itstool) path: authorgroup/author
+#: user_guide.xml:30
+msgid "<othername>zeroK</othername>"
+msgstr ""
+
+#. (itstool) path: authorgroup/author
+#: user_guide.xml:33 user_guide.xml:810
+msgid "<othername>battye</othername>"
+msgstr ""
+
+#. (itstool) path: section/title
+#: user_guide.xml:38
+msgid "Registering on a phpBB3 board"
+msgstr "Tilmelding på et phpBB3-board"
+
+#. (itstool) path: section/para
+#: user_guide.xml:39
+msgid ""
+"Registering an account on a phpBB3 board is typically a simple and straight "
+"forward procedure."
+msgstr ""
+"Tilmelding på et phpBB3-board er som regel en enkel og ligetil procedure."
+
+#. (itstool) path: figure/title
+#: user_guide.xml:41
+msgid "The Typical Registration Page"
+msgstr "En typisk tilmeldingsside"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: user_guide.xml:44
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/typical_registration_page.png' "
+"md5='6f2bfd6dbb3dede5326127929bdb0b0d'"
+msgstr ""
+"external ref='../images/user_guide/typical_registration_page.png' "
+"md5='8c4c8e5d546f10b88ab35a6828279178'"
+
+#. (itstool) path: caption/para
+#: user_guide.xml:47
+msgid "This is what you should expect to see on a typical registration page."
+msgstr "Dette er hvad du typisk kan forvente at se på en tilmeldingsside."
+
+#. (itstool) path: section/para
+#: user_guide.xml:51
+msgid ""
+"After clicking the <guilabel>Register</guilabel> link, the terms and "
+"conditions of registering will be displayed, which you must accept to "
+"proceed. Some websites will ask you to select whether you are under the age "
+"of thirteen in order to comply with <acronym>COPPA</acronym> (the United "
+"States' Children's Online Privacy Protection Act of 1998; more details can "
+"be found at <ulink "
+"url=\"http://www.coppa.org\">http://www.coppa.org</ulink>). If you are "
+"younger than thirteen years of age, your account will stay inactive until it"
+" is approved by a parent or guardian. You will receive an e-mail in which "
+"the next steps required for your account activation are outlined."
+msgstr ""
+"Efter du har klikket på linket <guilabel>Tilmeld</guilabel>, vises "
+"tilmeldingsbetingelserne, som du skal acceptere for at fortsætte. Nogle "
+"websites vil bede dig angive om du er under 13 år, for at overholde "
+"<acronym>COPPA</acronym> (den amerikanske lov Children's Online Privacy "
+"Protection Act af 1998; læs mere på <ulink "
+"url=\"http://www.coppa.org\">http://www.coppa.org</ulink>). Er du under 13 "
+"år, forbliver din konto inaktiv indtil den er godkendt af en forælder eller "
+"værge. Du modtager en e-mail, der beskriver de næste trin for at aktivere "
+"din konto."
+
+#. (itstool) path: section/para
+#: user_guide.xml:52
+msgid ""
+"Beyond accepting the terms and conditions, you need to fill out some "
+"important details such as selecting a username, entering your e-mail address"
+" and desired password. You can also select your timezone and language."
+msgstr ""
+"Ud over at acceptere betingelserne, skal du udfylde nogle vigtige "
+"oplysninger såsom brugernavn, e-mailadresse og ønsket adgangskode. Du kan "
+"også vælge tidszone og sprog."
+
+#. (itstool) path: section/para
+#: user_guide.xml:53
+msgid ""
+"If you see in the form where you can specify your username, password etc. a "
+"graphic with some odd-looking characters, then you are seeing the so-called "
+"<emphasis>Visual Confirmation</emphasis>. Many boards will have this, "
+"otherwise known as a <acronym>CAPTCHA</acronym>, which is an image with "
+"distorted letters and numbers which you must then type into an adjacent box."
+" The reason for this is to ensure that you are a legitimate user registering"
+" (as opposed to a spam robot performing an automated registration). Simply "
+"enter the characters you see into the <guilabel>Confirmation code</guilabel>"
+" field and proceed with the registration. If you cannot understand the code,"
+" refresh the page to get a new code."
+msgstr ""
+"Ser du i formularen, hvor du angiver brugernavn, adgangskode osv., en grafik"
+" med nogle mærkelige tegn, ser du den såkaldte <emphasis>visuelle "
+"bekræftelse</emphasis>. Mange boards har denne funktion, også kaldet "
+"<acronym>CAPTCHA</acronym>, som er et billede med forvrængede bogstaver og "
+"tal, som du skal indtaste i et felt ved siden af. Formålet er at sikre, at "
+"du er en rigtig bruger, der tilmelder dig (i modsætning til en spamrobot, "
+"der udfører en automatisk tilmelding). Indtast blot de tegn du ser i feltet "
+"<guilabel>Bekræftelseskode</guilabel> og fortsæt tilmeldingen. Kan du ikke "
+"tyde koden, kan du genindlæse siden for at få en ny kode."
+
+#. (itstool) path: figure/title
+#: user_guide.xml:55
+msgid "The Visual Confirmation Object"
+msgstr "Den visuelle bekræftelse"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: user_guide.xml:58
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/visual_confirmation.png' "
+"md5='9f5f17352e5d208d9e28fc56595ab396'"
+msgstr ""
+"external ref='../images/user_guide/visual_confirmation.png' "
+"md5='3ce4c7209a168c8824fe042a1be71be9'"
+
+#. (itstool) path: caption/para
+#: user_guide.xml:61
+msgid "This is an example of a visual confirmation code you might see."
+msgstr ""
+"Dette er et eksempel på en visuel bekræftelseskode, du kan komme til at se."
+
+#. (itstool) path: para/blockquote
+#: user_guide.xml:65
+msgid ""
+"<guilabel> Your account has been created. However, this forum requires "
+"account activation, an activation key has been sent to the e-mail address "
+"you provided. Please check your e-mail for further information </guilabel>"
+msgstr ""
+"<guilabel>Din konto er nu oprettet. Dette forum kræver dog aktivering af "
+"kontoen. En aktiveringsnøgle er sendt til den e-mailadresse du har angivet. "
+"Tjek venligst din e-mail for yderligere information</guilabel>"
+
+#. (itstool) path: section/para
+#: user_guide.xml:65
+msgid ""
+"Another option available is the account activation. Here, the administrator "
+"can make it a requirement that you have to follow a link mailed to you after"
+" registering before your account is activated. In this case you will see a "
+"message similiar to this one: <_:blockquote-1/> It is also possible that the"
+" administrator himself/herself has to activate the account."
+msgstr ""
+"En anden mulighed er kontoaktivering. Her kan administratoren gøre det til "
+"et krav, at du skal følge et link tilsendt via e-mail efter tilmelding, før "
+"din konto aktiveres. I så fald ser du en besked svarende til denne: "
+"<_:blockquote-1/> Det er også muligt, at administratoren selv skal aktivere "
+"kontoen."
+
+#. (itstool) path: section/para
+#: user_guide.xml:66
+msgid ""
+"Some boards will have custom profile fields. If the administrator has "
+"elected to display custom profile fields on the registration screen, these "
+"will also appear. In some cases, these custom profile fields will also be "
+"required fields, meaning they must not be left blank."
+msgstr ""
+"Nogle boards har brugerdefinerede profilfelter. Har administratoren valgt at"
+" vise disse på tilmeldingssiden, vises de også her. I nogle tilfælde er "
+"disse felter påkrævede, hvilket betyder at de ikke må stå tomme."
+
+#. (itstool) path: section/para
+#: user_guide.xml:67
+msgid ""
+"Once you have completed all of the fields on the registration page, clicking"
+" the <guilabel>Submit</guilabel> button will complete the process. If you "
+"wish to clear all fields, clicking the <guilabel>Reset</guilabel> button "
+"will do this for you. After clicking <guilabel>Submit</guilabel>, you will "
+"be advised of your next step. In most cases, you will be sent an e-mail to "
+"the address you specified with a link to finalise the registration. Other "
+"options also include being able to login immediately (i.e. there are no "
+"further actions for the registration process) or waiting until an "
+"administrator reviews your registration and accepts it, in which case you "
+"will be notified by e-mail."
+msgstr ""
+"Når du har udfyldt alle felterne på tilmeldingssiden, fuldføres processen "
+"ved at klikke på knappen <guilabel>Send</guilabel>. Ønsker du at rydde alle "
+"felter, kan du klikke på knappen <guilabel>Nulstil</guilabel>. Efter du har "
+"klikket på <guilabel>Send</guilabel>, informeres du om det næste trin. I de "
+"fleste tilfælde sendes en e-mail til den angivne adresse med et link til at "
+"fuldføre tilmeldingen. Andre muligheder er at kunne logge ind med det samme "
+"(dvs. ingen yderligere trin i tilmeldingsprocessen), eller at vente indtil "
+"en administrator har gennemgået og godkendt din tilmelding, hvorefter du "
+"underrettes via e-mail."
+
+#. (itstool) path: authorgroup/author
+#: user_guide.xml:72
+msgid "<othername>Heimidal</othername>"
+msgstr ""
+
+#. (itstool) path: authorgroup/author
+#: user_guide.xml:75
+msgid "<othername>iWisdom</othername>"
+msgstr ""
+
+#. (itstool) path: section/title
+#: user_guide.xml:80
+msgid "Orienting Yourself in the User Control Panel"
+msgstr "Bliv fortrolig med brugerkontrolpanelet"
+
+#. (itstool) path: section/para
+#: user_guide.xml:81
+msgid ""
+"The User Control Panel (<glossterm>UCP</glossterm>) allows you to alter "
+"personal preferences, manage posts you are watching, send and receive "
+"private messages, and change the way information about you appears to other "
+"users. To view the UCP, click the 'User Control Panel' link that appears "
+"after logging in."
+msgstr ""
+"Brugerkontrolpanelet (<glossterm>UCP</glossterm>) giver dig mulighed for at "
+"ændre personlige indstillinger, administrere emner du overvåger, sende og "
+"modtage private beskeder, samt ændre hvordan oplysninger om dig vises for "
+"andre brugere. For at se UCP'en, klik på linket \"Brugerkontrolpanel\", som "
+"fremgår efter du er logget ind."
+
+#. (itstool) path: section/para
+#: user_guide.xml:82
+msgid ""
+"The UCP is separated into six tabs: Overview, Private Messages, Profile, "
+"Preferences, Friends and Foes, and Groups. Within each tab are several sub "
+"pages, accessed by clicking the desired link on the left side of the UCP "
+"interface. Some of these areas may not be available depending on the "
+"permissions set for you by the administrator."
+msgstr ""
+"UCP'en er opdelt i seks faneblade: Oversigt, Private beskeder, Profil, "
+"Boardindstillinger, Venner og ignorerede brugere, samt Grupper. Under hvert "
+"faneblad findes adskillige undersider, som tilgås ved at klikke på det "
+"ønskede link i venstre side af UCP-grænsefladen. Nogle af disse områder er "
+"muligvis ikke tilgængelige, afhængigt af de tilladelser administratoren har "
+"tildelt dig."
+
+#. (itstool) path: section/para
+#: user_guide.xml:83
+msgid ""
+"Every page of the UCP displays your Friends List on the left side. To send a"
+" private message to a friend, click their user name."
+msgstr ""
+"Hver side i UCP'en viser din venneliste i venstre side. For at sende en "
+"privat besked til en ven, klik på dennes brugernavn."
+
+#. (itstool) path: section/para
+#: user_guide.xml:84
+msgid ""
+"Private Messaging is discussed more in depth in <xref linkend=\"user_pm\"/>."
+msgstr "Private beskeder gennemgås mere detaljeret i <xref linkend=\"user_pm\"/>."
+
+#. (itstool) path: section/title
+#: user_guide.xml:86
+msgid "Overview"
+msgstr "Oversigt"
+
+#. (itstool) path: section/para
+#: user_guide.xml:87
+msgid ""
+"The Overview displays a snapshot of information about your posting habits "
+"such as the date you joined the forum, your most active topic, and how many "
+"total posts you have submitted. Overview sub pages include Subscriptions, "
+"Bookmarks, and Drafts."
+msgstr ""
+"Oversigten viser et øjebliksbillede af information om dine indlægsvaner, "
+"såsom den dato du tilmeldte dig forummet, dit mest aktive emne, samt det "
+"samlede antal indlæg du har skrevet. Underliggende sider til Oversigt "
+"omfatter Overvågninger, Bogmærker og Kladder."
+
+#. (itstool) path: figure/title
+#: user_guide.xml:90
+msgid "User Control Panel Overview (Index)"
+msgstr "Oversigt i brugerkontrolpanelet (indeks)"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: user_guide.xml:93
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/ucp_overview.png' "
+"md5='0756fb591b4afe784b31136a611b182e'"
+msgstr ""
+"external ref='../images/user_guide/ucp_overview.png' "
+"md5='5f210844d7a3bba6497640695b19e82e'"
+
+#. (itstool) path: caption/para
+#: user_guide.xml:96
+msgid "The <glossterm>UCP</glossterm> Overview section"
+msgstr "Sektionen Oversigt i <glossterm>UCP</glossterm>"
+
+#. (itstool) path: section/title
+#: user_guide.xml:102
+msgid "Subscriptions"
+msgstr "Overvågninger"
+
+#. (itstool) path: section/para
+#: user_guide.xml:103
+msgid ""
+"Subscriptions are forums or individual topics that you have elected to watch"
+" for any new posts. Whenever a new post is made inside an area you have "
+"subscribed to, an e-mail will be sent you to informing you of the new "
+"addition. To create a subscription, visit the forum or topic you would like "
+"to subscribe to and click the 'Subscribe' link located at the bottom of the "
+"page."
+msgstr ""
+"Overvågninger er fora eller enkelte emner, du har valgt at overvåge for nye "
+"indlæg. Når der skrives et nyt indlæg i et område du overvåger, sendes der "
+"en e-mail, der informerer dig om det nye indlæg. For at oprette en "
+"overvågning, besøg forummet eller emnet du ønsker at overvåge, og klik på "
+"linket \"Overvåg\" nederst på siden."
+
+#. (itstool) path: section/para
+#: user_guide.xml:104
+msgid ""
+"To remove a subscription, check the box next to the subscription you would "
+"like to remove and click the 'Unsubscribe' button."
+msgstr ""
+"For at fjerne en overvågning, sæt et mærke i boksen ved siden af den "
+"overvågning du ønsker at fjerne, og klik på knappen \"Fjern overvågning\"."
+
+#. (itstool) path: section/title
+#: user_guide.xml:107
+msgid "Bookmarks"
+msgstr "Bogmærker"
+
+#. (itstool) path: section/para
+#: user_guide.xml:108
+msgid ""
+"Bookmarks, much like subscriptions, are topics you've chosen to watch. "
+"However, there are two key differences: 1) only individual topics may be "
+"bookmarked, and 2) an e-mail will not be sent to inform you of new posts."
+msgstr ""
+"Bogmærker er, ligesom overvågninger, emner du har valgt at følge. Der er dog"
+" to vigtige forskelle: 1) kun enkelte emner kan bogmærkes, og 2) der sendes "
+"ikke en e-mail for at informere dig om nye indlæg."
+
+#. (itstool) path: section/para
+#: user_guide.xml:109
+msgid ""
+"To create a bookmark, visit the topic you would like to watch and click the "
+"'Bookmark Topic' link located at the bottom of the page."
+msgstr ""
+"For at oprette et bogmærke, besøg det emne du ønsker at følge, og klik på "
+"linket \"Bogmærk emne\" nederst på siden."
+
+#. (itstool) path: section/para
+#: user_guide.xml:110
+msgid ""
+"To remove a bookmark, check the box next to the bookmark you would like to "
+"remove and click the 'Remove marked bookmarks' button."
+msgstr ""
+"For at fjerne et bogmærke, sæt et mærke i boksen ved siden af det bogmærke "
+"du ønsker at fjerne, og klik på knappen \"Fjern markerede bogmærker\"."
+
+#. (itstool) path: section/title
+#: user_guide.xml:113 user_guide.xml:419
+msgid "Drafts"
+msgstr "Kladder"
+
+#. (itstool) path: section/para
+#: user_guide.xml:114
+msgid ""
+"Drafts are created when you click the 'Save' button on the New Post or Post "
+"Reply page. Displayed are the title of your post, the forum or topic that "
+"the draft was made in, and the date you saved it."
+msgstr ""
+"Kladder oprettes, når du klikker på knappen \"Gem\" på siden for at skrive "
+"et nyt indlæg eller svar. Der vises titlen på dit indlæg, forummet eller "
+"emnet kladden blev oprettet i, samt datoen du gemte den."
+
+#. (itstool) path: section/para
+#: user_guide.xml:115
+msgid ""
+"To continue editing a draft for future submission, click the 'View/Edit' "
+"link. If you plan to finish and post the message, click 'Load Draft'. To "
+"delete a draft, check the box next to the draft you wish to remove and click"
+" 'Delete Marked'."
+msgstr ""
+"For at fortsætte redigeringen af en kladde til senere indsendelse, klik på "
+"linket \"Vis/Rediger\". Vil du fuldføre og indsende beskeden, klik på "
+"\"Indlæs kladde\". For at slette en kladde, sæt et mærke i boksen ved siden "
+"af den kladde du vil fjerne, og klik på \"Slet markerede\"."
+
+#. (itstool) path: section/title
+#: user_guide.xml:118 user_guide.xml:257
+msgid "Notifications"
+msgstr "Notifikationer"
+
+#. (itstool) path: section/para
+#: user_guide.xml:119
+msgid ""
+"Notifications alert you to events that have taken place on the board. They "
+"will appear in the Notifications menu at the top of your screen. Events "
+"include:"
+msgstr ""
+"Notifikationer gør dig opmærksom på begivenheder, der er sket på boardet. De"
+" vises i notifikationsmenuen øverst på skærmen. Begivenheder omfatter:"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:121
+msgid "New Private Message has arrived"
+msgstr "En ny privat besked er ankommet"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:122
+msgid "New topic was created in a subscribed forum"
+msgstr "Et nyt emne er oprettet i et forum du overvåger"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:123
+msgid "New post was created in a subscribed topic"
+msgstr "Et nyt indlæg er skrevet i et emne du overvåger"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:124
+msgid "A new post is awaiting moderation"
+msgstr "Et nyt indlæg afventer godkendelse"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:125
+msgid "A post has been reported"
+msgstr "Et indlæg er blevet rapporteret"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:126
+msgid "Your topic/post has been approved/disapproved"
+msgstr "Dit emne/indlæg er blevet godkendt/afvist"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:127
+msgid "You have been quoted in a post"
+msgstr "Du er blevet citeret i et indlæg"
+
+#. (itstool) path: figure/title
+#: user_guide.xml:130
+msgid "Notifications Menu"
+msgstr "Notifikationsmenuen"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: user_guide.xml:133
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/notifications_menu.png' "
+"md5='ec3f7d10d1f37611a7aa22969bf52a92'"
+msgstr ""
+"external ref='../images/user_guide/notifications_menu.png' "
+"md5='ec3f7d10d1f37611a7aa22969bf52a92'"
+
+#. (itstool) path: caption/para
+#: user_guide.xml:136
+msgid "The <glossterm>Notification</glossterm>s menu"
+msgstr "Menuen for <glossterm>notifikationer</glossterm>"
+
+#. (itstool) path: section/title
+#: user_guide.xml:143
+msgid "Profile"
+msgstr "Profil"
+
+#. (itstool) path: section/para
+#: user_guide.xml:144
+msgid ""
+"This section lets you set your profile information. Your profile information"
+" contains general information that other users on the board will able to "
+"see. Think of your profile as a sign of your public presence. This section "
+"is separated from your preferences. (Preferences are the individual settings"
+" that you set and manage on your own, and control your forum experience. "
+"Thus, this is separated from your profile settings.)"
+msgstr ""
+"Denne fane giver dig mulighed for at indstille dine profiloplysninger. Din "
+"profil indeholder generelle oplysninger, som andre brugere på boardet kan "
+"se. Betragt din profil som et udtryk for din offentlige tilstedeværelse. "
+"Denne fane er adskilt fra dine boardindstillinger. (Boardindstillinger er de"
+" individuelle indstillinger, du selv sætter og administrerer, og som styrer "
+"din oplevelse af forummet. Derfor er den holdt adskilt fra din profil.)"
+
+#. (itstool) path: section/title
+#: user_guide.xml:146
+msgid "Personal settings"
+msgstr "Personlige indstillinger"
+
+#. (itstool) path: section/para
+#: user_guide.xml:147
+msgid ""
+"Personal settings control the information that is displayed when a user "
+"views your profile."
+msgstr ""
+"Personlige indstillinger bestemmer de oplysninger, der vises, når en bruger "
+"ser din profil."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:149
+msgid ""
+"<guilabel>ICQ Number</guilabel>: Your account number associated with <ulink "
+"url=\"http://www.icq.com/\">ICQ</ulink> system."
+msgstr ""
+"<guilabel>ICQ-nummer</guilabel>: Dit kontonummer hos <ulink "
+"url=\"http://www.icq.com/\">ICQ</ulink>."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:150
+msgid ""
+"<guilabel>AOL Instant Messenger</guilabel>: Your screen name associated with"
+" <ulink url=\"http://aim.com\">AOL Instant Messenger</ulink> system."
+msgstr ""
+"<guilabel>AOL Instant Messenger</guilabel>: Dit skærmnavn hos <ulink "
+"url=\"http://aim.com\">AOL Instant Messenger</ulink>."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:151
+msgid ""
+"<guilabel>Windows Live Messenger</guilabel>: Your email address associated "
+"with the <ulink url=\"http://home.live.com/\">Windows Live</ulink> service."
+msgstr ""
+"<guilabel>Windows Live Messenger</guilabel>: Din e-mailadresse tilknyttet "
+"<ulink url=\"http://home.live.com/\">Windows Live</ulink>-tjenesten."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:152
+msgid ""
+"<guilabel>Yahoo Messenger</guilabel>: Your username associated with the "
+"<ulink url=\"http://messenger.yahoo.com/\">Yahoo Messenger</ulink> service."
+msgstr ""
+"<guilabel>Yahoo Messenger</guilabel>: Dit brugernavn hos <ulink "
+"url=\"http://messenger.yahoo.com/\">Yahoo Messenger</ulink>."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:153
+msgid ""
+"<guilabel>Jabber Address</guilabel>: Your username associated with the "
+"<ulink url=\"http://www.jabber.org/\">Jabber</ulink> service."
+msgstr ""
+"<guilabel>Jabber-adresse</guilabel>: Dit brugernavn hos <ulink "
+"url=\"http://www.jabber.org/\">Jabber</ulink>-tjenesten."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:154
+msgid ""
+"<guilabel>Facebook</guilabel>: Your unique username/page name associated "
+"with the <ulink url=\"https://www.facebook.com/\">Facebook</ulink> service."
+msgstr ""
+"<guilabel>Facebook</guilabel>: Dit unikke brugernavn/sidenavn hos <ulink "
+"url=\"https://www.facebook.com/\">Facebook</ulink>."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:155
+msgid ""
+"<guilabel>Twitter</guilabel>: Your username associated with the <ulink "
+"url=\"https://twitter.com/\">Twitter</ulink> service."
+msgstr ""
+"<guilabel>Twitter</guilabel>: Dit brugernavn hos <ulink "
+"url=\"https://twitter.com/\">Twitter</ulink>."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:156
+msgid ""
+"<guilabel>Skype</guilabel>: Your username associated with the <ulink "
+"url=\"http://www.skype.com/\">Skype</ulink> service."
+msgstr ""
+"<guilabel>Skype</guilabel>: Dit brugernavn hos <ulink "
+"url=\"http://www.skype.com/\">Skype</ulink>."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:157
+msgid ""
+"<guilabel>Website</guilabel>: Your website's address. Must be prepended with"
+" the appropriate protocol reference (i.e. http://)"
+msgstr ""
+"<guilabel>Hjemmeside</guilabel>: Din hjemmesideadresse. Skal angives med det"
+" rette protokolpræfiks (f.eks. http://)."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:158
+msgid ""
+"<guilabel>Location</guilabel>: Your physical location. Note that this is "
+"generally displayed along with your user information with every post, so "
+"standard caution regarding releasing personal information on the Internet "
+"should apply."
+msgstr ""
+"<guilabel>Sted</guilabel>: Din fysiske placering. Bemærk at dette som regel "
+"vises sammen med dine brugeroplysninger ved hvert indlæg, så sædvanlig "
+"forsigtighed ved offentliggørelse af personlige oplysninger på internettet "
+"bør iagttages."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:159
+msgid ""
+"<guilabel>Occupation</guilabel>: Your occupation. The information entered "
+"will appear only on the viewprofile page."
+msgstr ""
+"<guilabel>Beskæftigelse</guilabel>: Din beskæftigelse. Denne oplysning vises"
+" kun på profilsiden."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:160
+msgid ""
+"<guilabel>Interests</guilabel>: Your personal interests. The information "
+"entered here will appear only on the viewprofile page."
+msgstr ""
+"<guilabel>Interesser</guilabel>: Dine personlige interesser. Denne oplysning"
+" vises kun på profilsiden."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:161
+msgid ""
+"<guilabel>Birthday</guilabel>: Your birthday. This information is used for "
+"displaying your username in the Birthday section of the Board Index. If year"
+" is specified, your age will be displayed in your profile."
+msgstr ""
+"<guilabel>Fødselsdag</guilabel>: Din fødselsdag. Denne oplysning bruges til "
+"at vise dit brugernavn i fødselsdagssektionen på forumindekset. Angives "
+"årstallet, vises også din alder i din profil."
+
+#. (itstool) path: section/title
+#: user_guide.xml:165
+msgid "Signature"
+msgstr "Signatur"
+
+#. (itstool) path: section/para
+#: user_guide.xml:166
+msgid ""
+"Your signature appears, at your option, below every post you make. "
+"Signatures may be formatted using <link "
+"linkend=\"posting_bbcodes\">BBCode</link>. The board administrator may "
+"specifiy a maximum length for signatures. You can check this limit by noting"
+" the line <guilabel>There is a x character limit.</guilabel> above the "
+"signature editing textbox, where x is the currently set limit."
+msgstr ""
+"Din signatur vises, hvis du ønsker det, under hvert indlæg du skriver. "
+"Signaturer kan formateres med <link "
+"linkend=\"posting_bbcodes\">BBkode</link>. Boardadministratoren kan have "
+"angivet en maksimal længde for signaturer. Du kan se denne grænse ved linjen"
+" <guilabel>Der er en grænse på x tegn.</guilabel> over tekstfeltet, hvor x "
+"er den aktuelt fastsatte grænse."
+
+#. (itstool) path: section/title
+#: user_guide.xml:169
+msgid "Avatar"
+msgstr "Avatar"
+
+#. (itstool) path: section/para
+#: user_guide.xml:170
+msgid ""
+"Your avatar is an image the displays with every post you make. Depending on "
+"board settings, avatars may be completely disabled, or may appear in one (or"
+" more) of three forms: \"<guilabel>Upload from your machine</guilabel>\", "
+"\"<guilabel>Upload from a URL</guilabel>\", and \"<guilabel>Link off-"
+"site</guilabel>."
+msgstr ""
+"Din avatar er et billede, der vises ved hvert indlæg du skriver. Afhængigt "
+"af boardets indstillinger kan avatarer være helt deaktiveret, eller kan "
+"optræde på en (eller flere) af tre måder: \"<guilabel>Upload fra din "
+"maskine</guilabel>\", \"<guilabel>Upload fra ekstern URL</guilabel>\" og "
+"\"<guilabel>Link til ekstern placering</guilabel>\"."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:173
+msgid ""
+"<guilabel>Gravatar</guilabel>: If you use the Gravatar.com avatar service, "
+"you can specify your Gravatar e-mail address here to use your Gravatar image"
+" as your avatar."
+msgstr ""
+"<guilabel>Gravatar</guilabel>: Bruger du Gravatar.com's avatartjeneste, kan "
+"du angive din Gravatar-e-mailadresse her for at bruge dit Gravatar-billede "
+"som din avatar."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:174
+msgid ""
+"<guilabel>Upload from your machine</guilabel>: You may upload an avatar from"
+" your machine to be hosted on the board's server."
+msgstr ""
+"<guilabel>Upload fra din maskine</guilabel>: Du kan uploade en avatar fra "
+"din maskine og den gemmes på boardets server."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:175
+msgid ""
+"<guilabel>Upload from a URL</guilabel>: You may specify the URL of an "
+"existing image. This will cause the image to be copied to the board's server"
+" and hosted on it."
+msgstr ""
+"<guilabel>Upload fra ekstern URL</guilabel>: Du kan angive URL til et "
+"eksisterende billede. Herefter kopieres dette til boardets server og gemmes "
+"her."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:176
+msgid ""
+"<guilabel>Link off-site</guilabel>: You may specify the URL of an existing "
+"image. This will not cause the image to be hosted on the board's server, but"
+" rather hotlinked to its current location."
+msgstr ""
+"<guilabel>Link til ekstern placering</guilabel>: Du kan angive URL til et "
+"eksisterende billede. Det gemmes ikke på boardets server, der linkes blot "
+"til dette."
+
+#. (itstool) path: section/para
+#: user_guide.xml:179
+msgid ""
+"Additionally, a board administrator may opt to provide an avatar gallery for"
+" users to make use of. These images are pre-selected by the administrator "
+"and are able to be used by any of a board's members."
+msgstr ""
+"Yderligere kan boardadministratoren have valgt at tilbyde et avatargalleri "
+"til brugerne. Disse billeder er udvalgt af administratoren og kan bruges af "
+"alle boardets medlemmer."
+
+#. (itstool) path: section/title
+#: user_guide.xml:182
+msgid "Login Keys"
+msgstr "Login-nøgler"
+
+#. (itstool) path: section/para
+#: user_guide.xml:183
+msgid ""
+"If you choose to have the board log you in automatically when you visit (the"
+" \"Remember Me\" check box), you are given a login key for your browser to "
+"use when you visit the site. As long as your browser has this key, you will "
+"be automatically logged in. When you log out, the key is only deleted from "
+"your browser and not from the board."
+msgstr ""
+"Vælger du at lade boardet logge dig ind automatisk, når du besøger det "
+"(afkrydsningsfeltet \"Husk mig\"), får din browser tildelt en login-nøgle, "
+"som bruges hver gang du besøger siden. Så længe din browser har denne nøgle,"
+" bliver du automatisk logget ind. Når du logger ud, slettes nøglen kun fra "
+"din browser og ikke fra boardet."
+
+#. (itstool) path: section/para
+#: user_guide.xml:184
+msgid ""
+"This section allows you to view all of the login keys associated with your "
+"account, when they were created, and from what IP address. You can delete "
+"login keys from this page as well."
+msgstr ""
+"Dette afsnit giver dig mulighed for at se alle login-nøgler, der er "
+"tilknyttet din konto, hvornår de blev oprettet, og fra hvilken IP-adresse. "
+"Du kan også slette login-nøgler fra denne side."
+
+#. (itstool) path: note/para
+#: user_guide.xml:185
+msgid ""
+"Deleting a login key that you are currently using will log you out of the "
+"board."
+msgstr ""
+"Sletter du en login-nøgle, du i øjeblikket bruger, bliver du logget ud af "
+"boardet."
+
+#. (itstool) path: section/title
+#: user_guide.xml:188
+msgid "External Accounts"
+msgstr "Eksterne konti"
+
+#. (itstool) path: section/para
+#: user_guide.xml:189
+msgid ""
+"If the board administrator has enabled <link "
+"linkend=\"acp_client_auth\">OAuth authentication</link>, you will be able to"
+" login with your account from OAuth providers such as Bitly, Facebook, and "
+"Google."
+msgstr ""
+"Hvis boardadministratoren har aktiveret <link "
+"linkend=\"acp_client_auth\">OAuth-godkendelse</link>, vil du kunne logge ind"
+" med din konto fra OAuth-udbydere såsom Bitly, Facebook og Google."
+
+#. (itstool) path: section/para
+#: user_guide.xml:190
+msgid ""
+"Click the <guilabel>Link</guilabel> button for each service to link your "
+"accounts to the board. You will be prompted to log in again. Use your login "
+"credentials for the board. <emphasis role=\"strong\">DO NOT</emphasis> use "
+"your external account yet. When you log in, you will be sent to your account"
+" page which will show that an ID has been generated for your external "
+"account."
+msgstr ""
+"Klik på knappen <guilabel>Sammenkæd</guilabel> for hver tjeneste for at "
+"sammenkæde dine konti med boardet. Du bliver bedt om at logge ind igen. Brug"
+" dine loginoplysninger til boardet. <emphasis role=\"strong\">BRUG "
+"IKKE</emphasis> din eksterne konto endnu. Når du logger ind, sendes du til "
+"din kontoside, som vil vise, at der er genereret et ID til din eksterne "
+"konto."
+
+#. (itstool) path: section/para
+#: user_guide.xml:191
+msgid "Once an account has been linked, you can unlink it from the same page."
+msgstr ""
+"Når en konto er sammenkædet, kan du fjerne sammenkædningen fra samme side."
+
+#. (itstool) path: section/para
+#: user_guide.xml:192
+msgid ""
+"After linking the account, you can now use it to log into the board. Just "
+"click the appropriate service button on the login page."
+msgstr ""
+"Efter du har sammenkædet kontoen, kan du nu bruge den til at logge ind på "
+"boardet. Klik blot på den relevante tjenesteknap på loginsiden."
+
+#. (itstool) path: section/title
+#: user_guide.xml:196
+msgid "Preferences"
+msgstr "Boardindstillinger"
+
+#. (itstool) path: section/para
+#: user_guide.xml:197
+msgid ""
+"Preferences allow you to dictate various behaviours of the phpBB software in"
+" regards to your interaction with it."
+msgstr ""
+"Boardindstillinger giver dig mulighed for at bestemme forskellige aspekter "
+"af phpBB-softwarens opførsel i forhold til din interaktion med den."
+
+#. (itstool) path: section/title
+#: user_guide.xml:199
+msgid "Global"
+msgstr "Generelt"
+
+#. (itstool) path: section/para
+#: user_guide.xml:200
+msgid ""
+"Global settings control various overall interactions with the phpBB "
+"software."
+msgstr ""
+"Generelle indstillinger bestemmer forskellige overordnede interaktioner med "
+"phpBB-softwaren."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:203
+msgid ""
+"<guilabel>Users can contact by e-mail</guilabel>: If "
+"<guilabel>Yes</guilabel> is selected, users can e-mail you via the "
+"\"e-mail\" button in your profile."
+msgstr ""
+"<guilabel>Brugere kan kontakte mig via e-mail</guilabel>: Vælges "
+"<guilabel>Ja</guilabel>, kan brugere sende dig en e-mail via knappen "
+"\"e-mail\" i din profil."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:204
+msgid ""
+"<guilabel>Administratos can email me information</guilabel>: If "
+"<guilabel>Yes</guilabel> is selected, you will receive mass-emails sent out "
+"by the board administrator."
+msgstr ""
+"<guilabel>Administratorer kan sende mig information via e-mail</guilabel>: "
+"Vælges <guilabel>Ja</guilabel>, modtager du masse-e-mails udsendt af "
+"boardadministratoren."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:205
+msgid ""
+"<guilabel>Allow users to send you private messages</guilabel>: If "
+"<guilabel>Yes</guilabel> is selected, users can send you private messages "
+"via the board."
+msgstr ""
+"<guilabel>Tillad brugere at sende dig private beskeder</guilabel>: Vælges "
+"<guilabel>Ja</guilabel>, kan brugere sende dig private beskeder via boardet."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:206
+msgid ""
+"<guilabel>Hide my online status</guilabel>: If <guilabel>Yes</guilabel> is "
+"selected, your online status will be hidden to users. Note that "
+"administrators and moderators will still be able to view your online status."
+msgstr ""
+"<guilabel>Skjul min onlinestatus</guilabel>: Vælges <guilabel>Ja</guilabel>,"
+" skjules din onlinestatus for andre brugere. Bemærk at administratorer og "
+"redaktører stadig kan se din onlinestatus."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:207
+msgid ""
+"<guilabel>My board style</guilabel>: Allows you to specify what style the "
+"board utilizes. This setting may not be available if the board administrator"
+" has selected to override users' styles."
+msgstr ""
+"<guilabel>Min typografi</guilabel>: Giver dig mulighed for at angive hvilken"
+" typografi boardet skal anvende. Denne indstilling er muligvis ikke "
+"tilgængelig, hvis boardadministratoren har valgt at tilsidesætte brugernes "
+"typografivalg."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:208
+msgid ""
+"<guilabel>My language</guilabel>: Allows you to specify what language pack "
+"the board utilizes. Note that this setting applies only to board language "
+"strings; posts will be rendered in the language they were written."
+msgstr ""
+"<guilabel>Mit sprog</guilabel>: Giver dig mulighed for at angive hvilken "
+"sprogpakke boardet skal anvende. Bemærk at denne indstilling kun gælder "
+"boardets tekststrenge; indlæg vises på det sprog de er skrevet i."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:209
+msgid ""
+"<guilabel>My timezone</guilabel>: Allows you to specify what timezone board "
+"times should appear in."
+msgstr ""
+"<guilabel>Min tidszone</guilabel>: Giver dig mulighed for at angive hvilken "
+"tidszone tidspunkter på boardet skal vises i."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:210
+msgid ""
+"<guilabel>My date format</guilabel>: Controls what format times are rendered"
+" in. You may select one of the options in the dropdown box -- advanced users"
+" may select \"<guilabel>Custom</guilabel>\" and input a custom format (in "
+"the format of the <ulink url=\"http://www.php.net/date\">php.net date "
+"function</ulink>)."
+msgstr ""
+"<guilabel>Mit datoformat</guilabel>: Bestemmer hvordan tidspunkter vises. Du"
+" kan vælge en af mulighederne i dropdownmenuen -- øvede brugere kan vælge "
+"\"<guilabel>Brugerdefineret</guilabel>\" og angive et eget format (i "
+"formatet fra <ulink url=\"http://www.php.net/date\">PHP's date-"
+"funktion</ulink>)."
+
+#. (itstool) path: section/title
+#: user_guide.xml:215
+msgid "Posting"
+msgstr "Indlæg"
+
+#. (itstool) path: section/para
+#: user_guide.xml:216
+msgid ""
+"Posting settings control the default settings of the posting editors when "
+"you create a post. Note that these options are controllable on an individual"
+" basis while posting."
+msgstr ""
+"Disse indstillinger bestemmer standardindstillingerne for "
+"indlægsredigeringen, når du skriver et indlæg. Bemærk at disse muligheder "
+"også kan indstilles individuelt, mens du skriver."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:219
+msgid ""
+"<guilabel>Enable BBCode by default</guilabel>: When <guilabel>Yes</guilabel>"
+" is selected, BBCode is enabled within the post editor."
+msgstr ""
+"<guilabel>Aktivér BBkode som standard</guilabel>: Vælges "
+"<guilabel>Ja</guilabel>, er BBkode aktiveret i indlægseditoren."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:220
+msgid ""
+"<guilabel>Enable smiles by default</guilabel>: When <guilabel>Yes</guilabel>"
+" is selected, smiles will be rendered within your posts."
+msgstr ""
+"<guilabel>Aktivér smileys som standard</guilabel>: Vælges "
+"<guilabel>Ja</guilabel>, vises smileys i dine indlæg."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:221
+msgid ""
+"<guilabel>Attach my signature by default</guilabel>: When "
+"<guilabel>Yes</guilabel> is selected, your signature will be appended to "
+"your posts."
+msgstr ""
+"<guilabel>Tilføj min signatur som standard</guilabel>: Vælges "
+"<guilabel>Ja</guilabel>, tilføjes din signatur til dine indlæg."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:222
+msgid ""
+"<guilabel>Notify me upon replies by default</guilabel>: When "
+"<guilabel>yes</guilabel> is selected, you will be notified by email when a "
+"reply to your post is made."
+msgstr ""
+"<guilabel>Giv mig besked ved besvarelse som standard</guilabel>: Vælges "
+"<guilabel>Ja</guilabel>, får du besked via e-mail, når der svares på dit "
+"indlæg."
+
+#. (itstool) path: section/title
+#: user_guide.xml:228
+msgid "Display"
+msgstr "Visning"
+
+#. (itstool) path: section/para
+#: user_guide.xml:229
+msgid ""
+"Display settings control how posts and topics are rendered in the various "
+"board views."
+msgstr ""
+"Visningsindstillinger bestemmer hvordan indlæg og emner vises i boardets "
+"forskellige visninger."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:233
+msgid ""
+"<guilabel>Display images within posts</guilabel>: When "
+"<guilabel>Yes</guilabel> is selected, images will be displayed."
+msgstr ""
+"<guilabel>Vis billeder i indlæg</guilabel>: Vælges <guilabel>Ja</guilabel>, "
+"vises billeder."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:234
+msgid ""
+"<guilabel>Display Flash animations</guilabel>: When <guilabel>Yes</guilabel>"
+" is selected, Flash animations will be rendered."
+msgstr ""
+"<guilabel>Vis Flash-animationer</guilabel>: Vælges <guilabel>Ja</guilabel>, "
+"vises Flash-animationer."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:235
+msgid ""
+"<guilabel>Display smilies as images</guilabel>: When "
+"<guilabel>Yes</guilabel> is selected, smilies will be rendered as images "
+"instead of as their text equivalent."
+msgstr ""
+"<guilabel>Vis smileys som billeder</guilabel>: Vælges "
+"<guilabel>Ja</guilabel>, vises smileys som billeder i stedet for deres "
+"tekstform."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:236
+msgid ""
+"<guilabel>Display signatures</guilabel>: When <guilabel>yes</guilabel> is "
+"selected, user signatures will be displayed."
+msgstr ""
+"<guilabel>Vis signaturer</guilabel>: Vælges <guilabel>Ja</guilabel>, vises "
+"brugeres signaturer."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:237
+msgid ""
+"<guilabel>Display avatars</guilabel>: When <guilabel>yes</guilabel> is "
+"selected, user avatars will be shown."
+msgstr ""
+"<guilabel>Vis avatarer</guilabel>: Vælges <guilabel>Ja</guilabel>, vises "
+"brugeres avatarer."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:238
+msgid ""
+"<guilabel>Enable word censoring</guilabel>: When <guilabel>yes</guilabel> is"
+" selected, the text of posts and private messages will be censored according"
+" to the <link linkend=\"acp_posting_censors\">word cesnor list</link> "
+"defined by the administrator."
+msgstr ""
+"<guilabel>Aktivér ordcensur</guilabel>: Vælges <guilabel>Ja</guilabel>, "
+"censureres teksten i indlæg og private beskeder ifølge <link "
+"linkend=\"acp_posting_censors\">ordcensurlisten</link> defineret af "
+"administratoren."
+
+#. (itstool) path: section/para
+#: user_guide.xml:230
+msgid ""
+"The following settings control how the contents of posts and private "
+"messages are rendered. <_:itemizedlist-1/>"
+msgstr ""
+"Følgende indstillinger bestemmer hvordan indholdet af indlæg og private "
+"beskeder vises. <_:itemizedlist-1/>"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:243
+msgid ""
+"<guilabel>Display topics from previous days</guilabel>: This setting limits "
+"the age of topics which should be displayed. By default, all topics are "
+"shown."
+msgstr ""
+"<guilabel>Vis emner fra tidligere dage</guilabel>: Denne indstilling "
+"begrænser alderen på de emner, der skal vises. Som standard vises alle "
+"emner."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:244
+msgid ""
+"<guilabel>Display topics ordering by</guilabel>: This setting changes the "
+"order of how topics are shown. Topics can be ordered by "
+"<guilabel>author</guilabel>, <guilabel>post time</guilabel>, "
+"<guilabel>number of replies</guilabel>, <guilabel>subject</guilabel>, or "
+"<guilabel>number of views</guilabel>."
+msgstr ""
+"<guilabel>Sortér emner efter</guilabel>: Denne indstilling ændrer "
+"rækkefølgen emnerne vises i. Emner kan sorteres efter "
+"<guilabel>forfatter</guilabel>, <guilabel>indlægstidspunkt</guilabel>, "
+"<guilabel>antal svar</guilabel>, <guilabel>emne</guilabel> eller "
+"<guilabel>antal visninger</guilabel>."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:245
+msgid ""
+"<guilabel>Display topic order direction</guilabel>: Topics can be displayed "
+"in either <guilabel>ascending</guilabel> or <guilabel>descending</guilabel> "
+"order."
+msgstr ""
+"<guilabel>Sorteringsretning for emner</guilabel>: Emner kan vises i enten "
+"<guilabel>stigende</guilabel> eller <guilabel>faldende</guilabel> "
+"rækkefølge."
+
+#. (itstool) path: section/para
+#: user_guide.xml:241
+msgid ""
+"The following settings control how topics are displayed in the forum view. "
+"<_:itemizedlist-1/>"
+msgstr ""
+"Følgende indstillinger bestemmer hvordan emner vises i forumvisningen. "
+"<_:itemizedlist-1/>"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:250
+msgid ""
+"<guilabel>Display posts from previous days</guilabel>: This setting limits "
+"the age of posts which should be displayed. By default, all posts are shown."
+msgstr ""
+"<guilabel>Vis indlæg fra tidligere dage</guilabel>: Denne indstilling "
+"begrænser alderen på de indlæg, der skal vises. Som standard vises alle "
+"indlæg."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:251
+msgid ""
+"<guilabel>Display posts ordering by</guilabel>: This setting changes the "
+"order of how posts are shown. Posts can be ordered by "
+"<guilabel>author</guilabel>, <guilabel>post time</guilabel>, "
+"<guilabel>number of replies</guilabel>, <guilabel>subject</guilabel>, or "
+"<guilabel>number of views</guilabel>."
+msgstr ""
+"<guilabel>Sortér indlæg efter</guilabel>: Denne indstilling ændrer "
+"rækkefølgen indlæggene vises i. Indlæg kan sorteres efter "
+"<guilabel>forfatter</guilabel>, <guilabel>indlægstidspunkt</guilabel>, "
+"<guilabel>antal svar</guilabel>, <guilabel>emne</guilabel> eller "
+"<guilabel>antal visninger</guilabel>."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:252
+msgid ""
+"<guilabel>Display topic order direction</guilabel>: Posts can be displayed "
+"in either <guilabel>ascending</guilabel> or <guilabel>descending</guilabel> "
+"order."
+msgstr ""
+"<guilabel>Sorteringsretning for emner</guilabel>: Indlæg kan vises i enten "
+"<guilabel>stigende</guilabel> eller <guilabel>faldende</guilabel> "
+"rækkefølge."
+
+#. (itstool) path: section/para
+#: user_guide.xml:248
+msgid ""
+"The following settings control how posts are displayed in the topic view. "
+"<_:itemizedlist-1/>"
+msgstr ""
+"Følgende indstillinger bestemmer hvordan indlæg vises i emnevisningen. "
+"<_:itemizedlist-1/>"
+
+#. (itstool) path: section/para
+#: user_guide.xml:258
+msgid ""
+"Notification settings control which events will trigger a notification and "
+"how you will receive the notification."
+msgstr ""
+"Notifikationsindstillinger bestemmer hvilke begivenheder der udløser en "
+"notifikation, og hvordan du modtager den."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:262
+msgid ""
+"<guilabel>Someone replies to a topic you have bookmarked</guilabel>: A user "
+"has posted a reply to a topic which you have bookmarked."
+msgstr ""
+"<guilabel>Nogen svarer på et emne du har bogmærket</guilabel>: En bruger har"
+" skrevet et svar i et emne du har bogmærket."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:263
+msgid ""
+"<guilabel>Someone replies to a topic to which you are subscribed</guilabel>:"
+" A user has posted a reply to a topich which you have subscribed to."
+msgstr ""
+"<guilabel>Nogen svarer på et emne du overvåger</guilabel>: En bruger har "
+"skrevet et svar i et emne du overvåger."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:264
+msgid ""
+"<guilabel>Someone quotes you in a post</guilabel>: A post you made has been "
+"quoted by another user."
+msgstr ""
+"<guilabel>Nogen citerer dig i et indlæg</guilabel>: Et af dine indlæg er "
+"blevet citeret af en anden bruger."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:265
+msgid ""
+"<guilabel>Someone creates a topic in a forum to which you are "
+"subscribed</guilabel>: A user has posted a new topic in a forum which you "
+"have subscribed to."
+msgstr ""
+"<guilabel>Nogen opretter et emne i et forum du overvåger</guilabel>: En "
+"bruger har oprettet et nyt emne i et forum du overvåger."
+
+#. (itstool) path: section/para
+#: user_guide.xml:259
+msgid ""
+"The following settings control events related to posting. "
+"<_:itemizedlist-1/>"
+msgstr ""
+"Følgende indstillinger bestemmer begivenheder relateret til indlæg. "
+"<_:itemizedlist-1/>"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:271
+msgid ""
+"<guilabel>A post or topic needs approval</guilabel>: A user has made a new "
+"post or topic which requires approval."
+msgstr ""
+"<guilabel>Et indlæg eller emne afventer godkendelse</guilabel>: En bruger "
+"har skrevet et nyt indlæg eller emne, der kræver godkendelse."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:272
+msgid ""
+"<guilabel>Someone reports a post</guilabel>: A user has reported a post."
+msgstr ""
+"<guilabel>Nogen rapporterer et indlæg</guilabel>: En bruger har rapporteret "
+"et indlæg."
+
+#. (itstool) path: section/para
+#: user_guide.xml:268
+msgid ""
+"The following settings control events related to moderation. "
+"<_:itemizedlist-1/>"
+msgstr ""
+"Følgende indstillinger bestemmer begivenheder relateret til moderation. "
+"<_:itemizedlist-1/>"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:278
+msgid ""
+"<guilabel>Someone requests to join a group you lead</guilabel>: A user has "
+"requested to join a usergroup which you are a leader of."
+msgstr ""
+"<guilabel>Nogen anmoder om at blive medlem af en gruppe du leder</guilabel>:"
+" En bruger har anmodet om medlemskab af en brugergruppe, du er leder af."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:279
+msgid ""
+"<guilabel>Someone sends you a private message</guilabel>: You have received "
+"a private message."
+msgstr ""
+"<guilabel>Nogen sender dig en privat besked</guilabel>: Du har modtaget en "
+"privat besked."
+
+#. (itstool) path: section/para
+#: user_guide.xml:275
+msgid ""
+"The following settings control various other events. <_:itemizedlist-1/>"
+msgstr ""
+"Følgende indstillinger bestemmer diverse andre begivenheder. "
+"<_:itemizedlist-1/>"
+
+#. (itstool) path: section/title
+#: user_guide.xml:285
+msgid "Friends and Foes"
+msgstr "Venner og ignorerede brugere"
+
+#. (itstool) path: section/para
+#: user_guide.xml:286
+msgid ""
+"Users can be marked as a <guilabel>Friend</guilabel> or a "
+"<guilabel>Foe</guilabel> in order to allow for filtering of their messages. "
+"If a style supports it, posts made by users on your Foe list will be hidden "
+"from view and posts from users on your Friend list will be highlighted. "
+"Private Message rules can make use of the Friend and Foes list for filtering"
+" incoming PMs."
+msgstr ""
+"Brugere kan markeres som <guilabel>Ven</guilabel> eller <guilabel>Ignoreret "
+"bruger</guilabel> for at filtrere deres beskeder. Understøtter typografien "
+"det, skjules indlæg fra brugere på din liste over ignorerede brugere, mens "
+"indlæg fra brugere på din venneliste fremhæves. Regler for private beskeder "
+"kan gøre brug af venne- og ignorerlisten til at filtrere indkommende "
+"beskeder."
+
+#. (itstool) path: section/title
+#: user_guide.xml:289 user_guide.xml:395
+msgid "Attachments"
+msgstr "Vedhæftede filer"
+
+#. (itstool) path: section/para
+#: user_guide.xml:290
+msgid ""
+"The attachment section of the UCP shows a list of all attachments that you "
+"have uploaded to the board. Each entry contains a link to the message in "
+"which the attachment is contained, the size of the attachment, the number of"
+" times it has been downloaded, and the time at which it was uploaded. "
+"Through this page, you can delete attachments from the board. Inline "
+"references to a deleted attachment will still remain in the original post, "
+"but the attachment will not be rendered in any way other than the file name."
+msgstr ""
+"Sektionen for vedhæftede filer i UCP viser en liste over alle vedhæftede "
+"filer, du har uploadet til boardet. Hver post indeholder et link til den "
+"besked, den vedhæftede fil hører til, filens størrelse, antallet af gange "
+"den er downloadet, samt tidspunktet for upload. Fra denne side kan du slette"
+" vedhæftede filer fra boardet. Referencer til en slettet fil i indlægget "
+"forbliver, men filen vises herefter kun som filnavn, uden andet indhold."
+
+#. (itstool) path: section/title
+#: user_guide.xml:293
+msgid "Usergroups"
+msgstr "Brugergrupper"
+
+#. (itstool) path: section/para
+#: user_guide.xml:294
+msgid ""
+"Usergroup membership can be managed through the Usergroups section of the "
+"UCP. The page lists groups for which the user is a member of, a leader of, "
+"and all other usergroups. Groups which are open for membership have a radio "
+"button allowing the user to request membership. Users may also remove "
+"themselves from groups in which they hold membership. If a user has the "
+"<guilabel>Can change default usergroup</guilabel>, they change choose which "
+"group to be their default here. The default usergroup dictates the user's "
+"username color which is shown throughout the board."
+msgstr ""
+"Medlemskab af brugergrupper administreres via sektionen Brugergrupper i UCP."
+" Siden viser de grupper, brugeren er medlem af, leder for, samt alle øvrige "
+"brugergrupper. Grupper, der er åbne for medlemskab, har en radioknap, så "
+"brugeren kan anmode om medlemskab. Brugere kan også fjerne sig selv fra "
+"grupper, de er medlem af. Har brugeren tilladelsen <guilabel>Kan ændre "
+"standardbrugergruppe</guilabel>, kan brugeren her vælge hvilken gruppe der "
+"skal være dennes standardgruppe. Standardbrugergruppen bestemmer farven på "
+"brugerens brugernavn, som vises overalt på boardet."
+
+#. (itstool) path: section/para
+#: user_guide.xml:295
+msgid ""
+"Users who are designated as a group leader are able to manage the group's "
+"membership. Users can be added, removed, pending join requests can be "
+"approved or denied, and have their default usergroup changed here."
+msgstr ""
+"Brugere udpeget som gruppeleder kan administrere gruppens medlemskab. Her "
+"kan brugere tilføjes, fjernes, ventende medlemskabsanmodninger godkendes "
+"eller afvises, samt medlemmers standardbrugergruppe ændres."
+
+#. (itstool) path: authorgroup/author
+#: user_guide.xml:304
+msgid "<othername>Noxwizard</othername>"
+msgstr ""
+
+#. (itstool) path: section/title
+#: user_guide.xml:309
+msgid "Mastering the Posting Screen"
+msgstr "Mestring af indlægsskærmbilledet"
+
+#. (itstool) path: section/para
+#: user_guide.xml:310
+msgid ""
+"Posting is the primary purpose of bulletin boards. There are two main types "
+"of posts you can make: a topic or a reply. Selecting the <guilabel>New "
+"Topic</guilabel> button in a forum button will take you to the posting "
+"screen. After submitting your post, a new topic will appear in that forum "
+"with your post as the first displayed. Other users (and you as well) are now"
+" able to reply to your topic by using the <guilabel>Post Reply</guilabel> "
+"button. This will once again bring you to the posting screen, allowying you "
+"to enter your post."
+msgstr ""
+"At skrive indlæg er selve formålet med et forum. Der er to hovedtyper af "
+"indlæg, du kan skrive: et emne eller et svar. Klikker du på knappen "
+"<guilabel>Nyt emne</guilabel> i et forum, føres du til indlægsskærmbilledet."
+" Efter du har indsendt dit indlæg, vises et nyt emne i forummet med dit "
+"indlæg som det første. Andre brugere (og du selv) kan nu svare på dit emne "
+"ved at bruge knappen <guilabel>Besvar</guilabel>. Dette fører dig igen til "
+"indlægsskærmbilledet, hvor du kan skrive dit indlæg."
+
+#. (itstool) path: section/title
+#. (itstool) path: figure/title
+#: user_guide.xml:312 user_guide.xml:315
+msgid "Posting Form"
+msgstr "Skriv indlæg"
+
+#. (itstool) path: section/para
+#: user_guide.xml:313
+msgid ""
+"You will be taken to the posting form when you decide to post either a new "
+"topic or reply, where you can enter your post content."
+msgstr ""
+"Når du vil skrive et indlæg, entet et helt nyt eller som svar i et "
+"eksisterende emne, bliver du præsenteret for et skærmbillede hvor alle "
+"elementerne i indlæggets udseende og indhold er tilgængelige."
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: user_guide.xml:318
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/posting_screen.png' "
+"md5='0d14a94ea675d5eed50d417012ce1423'"
+msgstr ""
+"external ref='../images/user_guide/posting_screen.png' "
+"md5='0d14a94ea675d5eed50d417012ce1423'"
+
+#. (itstool) path: caption/para
+#: user_guide.xml:321
+msgid "The screen presented while creating a new topic."
+msgstr "Skærmbilledet der vises, når du opretter et nyt emne."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:326
+msgid ""
+"<guilabel>Topic/Post Icon</guilabel>: The topic/post icon is a small icon "
+"that will display to the left of your post subject. This helps identify your"
+" post and make it stand out, though it is completely optional."
+msgstr ""
+"<guilabel>Emne/Indlægsikon</guilabel>: Emne-/indlægsikonet er et lille "
+"billede, der vises til venstre for dit emne. Det hjælper med at identificere"
+" dit indlæg og få det til at skille sig ud, men er helt valgfrit."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:327
+msgid ""
+"<guilabel>Subject</guilabel>: If you are creating a new topic with your "
+"post, the subject is required and will become the title of the topic. If you"
+" are replying to an existing topic, this is optional, but it can be changed."
+msgstr ""
+"<guilabel>Emne</guilabel>: Skriver du et nyt emne, er angivelse af emne "
+"obligatorisk og bliver titlen på emnet. Svarer du på et eksisterende emne, "
+"er feltet valgfrit, men kan ændres."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:328
+msgid ""
+"Post Content - While not being labeled, the large text box is where your "
+"actual post content will be entered. Here, along with your text, you may use"
+" things like <link linkend=\"posting_smilies\">Smilies</link> or <link "
+"linkend=\"posting_bbcodes\">BBCode</link> if the board administrator has "
+"them enabled. Content entered as HTML will be rendered as text, HTML input "
+"is not supported."
+msgstr ""
+"Indlægsindhold - Selvom det ikke er mærket, er den store tekstboks hvor "
+"selve dit indlæg skrives. Her kan du, ud over almindelig tekst, bruge ting "
+"som <link linkend=\"posting_smilies\">smileys</link> eller <link "
+"linkend=\"posting_bbcodes\">BBkode</link>, hvis boardadministratoren har "
+"aktiveret dem. Indhold indtastet som HTML vises som almindelig tekst, HTML-"
+"input understøttes ikke."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:329
+msgid ""
+"Smilies - Smilies, or emoticons, are small images which can be inserted into"
+" your post to add expression emphasis. If Smilies are enabled, you will see "
+"the text \"<guilabel>Smilies are ON</guilabel>\" to the righthand of the "
+"Post Content box. Otherwise, you will see the text \"<guilabel>Smilies are "
+"OFF</guilabel>.\" See <link linkend=\"posting_smilies\">Posting "
+"Smilies</link> for further details."
+msgstr ""
+"Smileys - Smileys, eller emotikoner, er små billeder som kan indsættes i dit"
+" indlæg for at tilføje følelsesmæssigt udtryk. Er smileys aktiveret, ser du "
+"teksten \"<guilabel>Smileys er TIL</guilabel>\" til højre for feltet "
+"Indlægsindhold. Ellers ser du teksten \"<guilabel>Smileys er "
+"FRA</guilabel>.\" Se <link linkend=\"posting_smilies\">Smileys</link> for "
+"flere detaljer."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:330
+msgid ""
+"BBCode - BBCode is a type of formatting that can be applied to your post "
+"content if BBCode has been enabled by the board administrator. If BBCode is "
+"enabled, you will see the text \"<guilabel>BBCode is ON</guilabel>\" to the "
+"righthand of the Post Content box. Otherwise, you will see the text "
+"\"<guilabel>BBCode is OFF</guilabel>.\" See <link "
+"linkend=\"posting_bbcodes\">Posting BBCode</link> for further details."
+msgstr ""
+"BBkode - BBkode er en formateringsmetode, der kan anvendes i dit indlæg, "
+"hvis BBkode er aktiveret af boardadministratoren. Er BBkode aktiveret, ser "
+"du teksten \"<guilabel>BBkode er TIL</guilabel>\" til højre for feltet "
+"Indlægsindhold. Ellers ser du teksten \"<guilabel>BBkode er "
+"FRA</guilabel>.\" Se <link linkend=\"posting_bbcodes\">BBkoder</link> for "
+"flere detaljer."
+
+#. (itstool) path: section/title
+#: user_guide.xml:335
+msgid "Smilies"
+msgstr "Smileys"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: user_guide.xml:336
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/smilies/smile.gif' "
+"md5='805b1427686e4b3364bae67dec9aba15'"
+msgstr ""
+"external ref='../images/user_guide/smilies/smile.gif' "
+"md5='805b1427686e4b3364bae67dec9aba15'"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: user_guide.xml:336
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/smilies/wink.gif' "
+"md5='f02b549d40afaba96b0f836ba3fa065b'"
+msgstr ""
+"external ref='../images/user_guide/smilies/wink.gif' "
+"md5='f02b549d40afaba96b0f836ba3fa065b'"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: user_guide.xml:336
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/smilies/rolleyes.gif' "
+"md5='e85b73f8dca334bcfa98a08b93b31e82'"
+msgstr ""
+"external ref='../images/user_guide/smilies/rolleyes.gif' "
+"md5='e85b73f8dca334bcfa98a08b93b31e82'"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: user_guide.xml:336
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/smilies/cry.gif' "
+"md5='ecee292b2bddbf4657dbc9e9fcdc869d'"
+msgstr ""
+"external ref='../images/user_guide/smilies/cry.gif' "
+"md5='ecee292b2bddbf4657dbc9e9fcdc869d'"
+
+#. (itstool) path: section/para
+#: user_guide.xml:336
+msgid ""
+"Smilies, or emoticons, are small images which can be inserted into your post"
+" to add expression emphasis. To use Smiles, certain characters are put "
+"together to get the desired output. For example, typing :) will insert "
+"<inlinemediaobject><imageobject><imagedata "
+"fileref=\"../images/user_guide/smilies/smile.gif\"/></imageobject></inlinemediaobject>,"
+" ;) will insert <inlinemediaobject><imageobject><imagedata "
+"fileref=\"../images/user_guide/smilies/wink.gif\"/></imageobject></inlinemediaobject>,"
+" etc. Other smilies require the format :texthere: to display. For example, "
+":roll: will insert smilie whose eyes are rolling: "
+"<inlinemediaobject><imageobject><imagedata "
+"fileref=\"../images/user_guide/smilies/rolleyes.gif\"/></imageobject></inlinemediaobject>,"
+" and :cry: will insert a smilie who is crying: "
+"<inlinemediaobject><imageobject><imagedata "
+"fileref=\"../images/user_guide/smilies/cry.gif\"/></imageobject></inlinemediaobject>."
+msgstr ""
+"Smileys, eller emotikoner, er små billeder som kan indsættes i dit indlæg "
+"for at tilføje følelsesmæssigt udtryk. For at bruge smileys sammensættes "
+"bestemte tegn for at opnå det ønskede resultat. Skriver du f.eks. :) "
+"indsættes <inlinemediaobject><imageobject><imagedata "
+"fileref=\"../images/user_guide/smilies/smile.gif\"/></imageobject></inlinemediaobject>,"
+" ;) indsætter <inlinemediaobject><imageobject><imagedata "
+"fileref=\"../images/user_guide/smilies/wink.gif\"/></imageobject></inlinemediaobject>,"
+" osv. Andre smileys kræver formatet :tekst_her: for at blive vist. F.eks. "
+"indsætter :roll: en smiley med rullende øjne: "
+"<inlinemediaobject><imageobject><imagedata "
+"fileref=\"../images/user_guide/smilies/rolleyes.gif\"/></imageobject></inlinemediaobject>,"
+" og :cry: en grædende smiley: <inlinemediaobject><imageobject><imagedata "
+"fileref=\"../images/user_guide/smilies/cry.gif\"/></imageobject></inlinemediaobject>."
+
+#. (itstool) path: section/para
+#: user_guide.xml:337
+msgid ""
+"In many cases you can also select which smilie you'd like to insert by "
+"clicking its picture on the right side of the Post Content text box. When "
+"clicked, the smilie's characters will appear at the current location of the "
+"curser in the text box."
+msgstr ""
+"I mange tilfælde kan du også vælge den ønskede smiley ved at klikke på dens "
+"billede i højre side af feltet Indlægsindhold. Ved klik indsættes smileyens "
+"tegnkode på markørens aktuelle placering i tekstfeltet."
+
+#. (itstool) path: section/para
+#: user_guide.xml:338
+msgid ""
+"If you wish to be able to use these characters in your post, but not have "
+"them appear as smilies, please see <link linkend=\"posting_options\">Posting"
+" Options</link>."
+msgstr ""
+"Ønsker du at bruge disse tegnkombinationer i dit indlæg, uden at de vises "
+"som smileys, se venligst <link "
+"linkend=\"posting_options\">Indlægsindstillinger</link>."
+
+#. (itstool) path: section/title
+#: user_guide.xml:342
+msgid "BBCodes"
+msgstr "BBkoder"
+
+#. (itstool) path: section/para
+#: user_guide.xml:343
+msgid ""
+"BBCode is a type of formatting that can be applied to your post content, "
+"much like HTML. Unlike HTML, however, BBCode uses square brackets [ and ] "
+"instead of angled brackets &lt; and &gt;. Depending on the permissions the "
+"board administrator has set, you may be able to use only certain BBCodes or "
+"even none at all."
+msgstr ""
+"BBkode er en formateringsmetode, der kan anvendes på dit indlægsindhold, "
+"meget lig HTML. I modsætning til HTML bruger BBkode dog hakparenteser [ og ]"
+" i stedet for vinkelparenteser &lt; og &gt;. Afhængigt af de tilladelser "
+"boardadministratoren har fastsat, kan du muligvis kun bruge bestemte "
+"BBkoder, eller slet ingen."
+
+#. (itstool) path: section/para
+#: user_guide.xml:344
+msgid ""
+"For detailed instructions on the usage of BBCode, you can click the "
+"<guilabel>BBCode</guilabel> link to the righthand of the Post Content text "
+"box. Please note that the administrator has the option to add new and custom"
+" BBCodes, so others may be availible to you which are not on this list."
+msgstr ""
+"For detaljeret vejledning i brugen af BBkode, kan du klikke på linket "
+"<guilabel>BBkode</guilabel> til højre for feltet Indlægsindhold. Bemærk at "
+"administratoren har mulighed for at tilføje nye og brugerdefinerede BBkoder,"
+" så flere kan være tilgængelige for dig end dem på denne liste."
+
+#. (itstool) path: section/para
+#: user_guide.xml:345
+msgid "Basic BBCodes and their outputs are as follows:"
+msgstr "Grundlæggende BBkoder og deres output er som følger:"
+
+#. (itstool) path: section/para
+#: user_guide.xml:346
+msgid "[b]Boldface text[/b]: <emphasis role=\"strong\">Boldface text</emphasis>"
+msgstr "[b]Fed tekst[/b]: <emphasis role=\"strong\">Fed tekst</emphasis>"
+
+#. (itstool) path: section/para
+#: user_guide.xml:347
+msgid "[i]Italicised text[/i]: <emphasis>Italicised text</emphasis>"
+msgstr "[i]Kursiv tekst[/i]: <emphasis>Kursiv tekst</emphasis>"
+
+#. (itstool) path: section/para
+#: user_guide.xml:348
+msgid ""
+"[u]Underlined text[/u]: <emphasis role=\"underline\">Underlined "
+"text</emphasis>"
+msgstr ""
+"[u]Understreget tekst[/u]: <emphasis role=\"underline\">Understreget "
+"tekst</emphasis>"
+
+#. (itstool) path: section/para
+#: user_guide.xml:349
+msgid "[quote]Quoted text[/quote]:"
+msgstr "[quote]Citeret tekst[/quote]:"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: user_guide.xml:349
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/quoted_text.png' "
+"md5='8fb3b9c9fe03612f292590c82f7b0290'"
+msgstr ""
+"external ref='../images/user_guide/quoted_text.png' "
+"md5='8fb3b9c9fe03612f292590c82f7b0290'"
+
+#. (itstool) path: section/para
+#: user_guide.xml:350
+msgid "[quote=\"Name to quote\"]Quoted text[/quote]:"
+msgstr "[quote=\"Navn på den der citeres\"]Citeret tekst[/quote]:"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: user_guide.xml:350
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/quoted_text_author.png' "
+"md5='d108782df4a95d73f2b247f6ea776999'"
+msgstr ""
+"external ref='../images/user_guide/quoted_text_author.png' "
+"md5='d108782df4a95d73f2b247f6ea776999'"
+
+#. (itstool) path: section/para
+#: user_guide.xml:351
+msgid ""
+"[url]https://www.phpbb.com[/url]: <ulink "
+"url=\"https://www.phpbb.com\">https://www.phpbb.com</ulink>"
+msgstr ""
+"[url]https://www.phpbb.com[/url]: <ulink "
+"url=\"https://www.phpbb.com\">https://www.phpbb.com</ulink>"
+
+#. (itstool) path: section/para
+#: user_guide.xml:352
+msgid ""
+"[url=https://www.phpbb.com]Linked text[/url]: <ulink "
+"url=\"https://www.phpbb.com\">Linked text</ulink>"
+msgstr ""
+"[url=https://www.phpbb.com]Tekst indeholdende link[/url]: <ulink "
+"url=\"https://www.phpbb.com\">Tekst indeholdende link</ulink>"
+
+#. (itstool) path: section/para
+#: user_guide.xml:353
+msgid ""
+"[flash=width,height]Path to flash[/flash] will play the flash animation with"
+" the specified dimensions."
+msgstr ""
+"[flash=bredde,højde]Sti til flash[/flash] afspiller flashanimationen med de "
+"angivne dimensioner."
+
+#. (itstool) path: section/para
+#: user_guide.xml:354
+msgid ""
+"For more detailed instructions on the usage of BBCode and the many other "
+"available BBCodes, please click the <guilabel>BBCode</guilabel> link to the "
+"righthand of the Post Content text bos."
+msgstr ""
+"For mere detaljeret vejledning i brugen af BBkode og de mange andre "
+"tilgængelige BBkoder, klik venligst på linket <guilabel>BBkode</guilabel> "
+"til højre for feltet Indlægsindhold."
+
+#. (itstool) path: section/title
+#: user_guide.xml:358
+msgid "Post Options"
+msgstr "Indlægsindstillinger"
+
+#. (itstool) path: section/para
+#: user_guide.xml:359
+msgid ""
+"When posting either a new topic or reply, there are several post options "
+"that are available to you. You can view these options by selecting the "
+"<guilabel>Options</guilabel> tab from the section below the posting form. "
+"Depending on the permissions the board administrator has assigned to you or "
+"whether you are posting a topic or reply, these options will be different."
+msgstr ""
+"Når du skriver et nyt emne eller svar, har du adskillige "
+"indlægsindstillinger til rådighed. Du kan se disse indstillinger ved at "
+"vælge fanen <guilabel>Indstillinger</guilabel> i sektionen under "
+"indlægsformularen. Afhængigt af de tilladelser boardadministratoren har "
+"tildelt dig, eller om du skriver et emne eller et svar, vil disse "
+"indstillinger variere."
+
+#. (itstool) path: figure/title
+#: user_guide.xml:361
+msgid "Posting Options"
+msgstr "Indlægsindstillinger"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: user_guide.xml:364
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/posting_options.png' "
+"md5='e82b23855285d4d6054a0304ad3f80c8'"
+msgstr ""
+"external ref='../images/user_guide/posting_options.png' "
+"md5='e82b23855285d4d6054a0304ad3f80c8'"
+
+#. (itstool) path: caption/para
+#: user_guide.xml:367
+msgid "The options presented while creating a reply."
+msgstr "Indstillingerne der vises når du skriver et svar."
+
+#. (itstool) path: section/para
+#: user_guide.xml:371
+msgid ""
+"The default status of these options will depend on your <link "
+"linkend=\"ucp_posting\">Posting Defaults</link> settings on the User Control"
+" Panel's <guilabel>Board Preferences</guilabel> page."
+msgstr ""
+"Standardindstillingen for disse muligheder afhænger af dine indstillinger "
+"under <link linkend=\"ucp_posting\">Standardindstillinger for indlæg</link> "
+"på siden <guilabel>Boardindstillinger</guilabel> i Brugerkontrolpanelet."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:373
+msgid ""
+"<guilabel>Disable BBCode</guilabel>: If BBCode is enabled on the board and "
+"you are allowed to use it, this option will be available. Checking this box "
+"will not convert any BBCode in your post content into its respected output. "
+"For example, [b]Bolded text[/b] will be seen in your post as exactly "
+"[b]Bolded text[/b]."
+msgstr ""
+"<guilabel>Anvend ikke BBkode</guilabel>: Er BBkode aktiveret på boardet, og "
+"du har tilladelse til bruge den, er denne mulighed tilgængelig. Vinges "
+"boksen af konverteres ingen BBkoder i dit indlægsindhold til deres "
+"tilhørende output. F.eks. vil kombinationen [b]Fed tekst[/b] blive vist "
+"nøjagtig sådan [b]Fed tekst[/b] i dit indlæg."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:374
+msgid ""
+"<guilabel>Disable Smilies</guilabel>: If Smilies are enabled on the board "
+"and you are allowed to use them, this option will be available. Checking "
+"this box will not convert any of the smilie's characters to their respected "
+"image. For example, ;) will be seen in your post as exactly ;)."
+msgstr ""
+"<guilabel>Anvend ikke smileys</guilabel>: Er smileys aktiveret på boardet, "
+"og du har tilladelse til at bruge dem, er denne mulighed tilgængelig. Vinges"
+" boksen af konverteres ingen af smileyens tegn til deres tilhørende billede."
+" F.eks. vil ;) blive vist i dit indlæg nøjagtig som ;)."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:375
+msgid ""
+"<guilabel>Do not automatically parse URLs</guilabel>: When entering a URL "
+"directly into your post content (in the format of http://....com or "
+"www.etc.com), by default it will be converted to a clickable string of text."
+" However, if this box is checked when posting, these URLs will stay as a "
+"standard string of text."
+msgstr ""
+"<guilabel>Behandl ikke URL'er automatisk</guilabel>: Indtaster du en URL "
+"direkte i dit indlægsindhold (i formatet http://....com eller www.etc.com), "
+"konverteres den som standard til en klikbar tekststreng. Er boksen vinget af"
+" ved indsendelse, forbliver disse URL'er som en helt almindelig tekststreng."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:376
+msgid ""
+"<guilabel>Attach a signature (signatures can be altered via the "
+"UCP)</guilabel>: If this box is checked, the signature you have set in your "
+"profile will be attached to the post provided signatures have been enabled "
+"by the administrator and you have the proper permissions. For more "
+"information about signatures, please see <link linkend=\"ucp_signature\">UCP"
+" Signatures</link>."
+msgstr ""
+"<guilabel>Tilføj signatur (signaturen kan rettes i "
+"brugerkontrolpanelet)</guilabel>: Er boksen vinget af, tilføjes den signatur"
+" du har angivet i din profil til indlægget, forudsat at signaturer er "
+"aktiveret af administratoren, og du har de rette tilladelser. Læs mere om "
+"signaturer i <link linkend=\"ucp_signature\">signaturer i UCP</link>."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:377
+msgid ""
+"<guilabel>Send me an email when a reply is posted</guilabel>: If this box is"
+" checked, you will receive a notification (either by email, Jabber, etc) "
+"every time another user replies to the topic. This is called subscribing to "
+"the topic. For more information, please see <link "
+"linkend=\"ucp_subscriptions\">UCP Subscriptions</link>."
+msgstr ""
+"<guilabel>Giv mig besked ved besvarelse</guilabel>: Er boksen vinget af, "
+"modtager du en notifikation (via e-mail, Jabber osv.) hver gang en anden "
+"bruger svarer på emnet. Dette kaldes at overvåge emnet. Læs mere i <link "
+"linkend=\"ucp_subscriptions\">Overvågninger i UCP</link>."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:378
+msgid ""
+"<guilabel>Lock topic</guilabel>: Provided you have moderation permissions in"
+" this forum, checking this box will result in the topic being locked after "
+"your reply has been posted. At this point, no one but moderators or "
+"administrators may reply to the topic. For more information, please see "
+"<link linkend=\"modtools_lock\">Locking a topic or post</link>."
+msgstr ""
+"<guilabel>Lås emne</guilabel>: Har du redaktørtilladelser i dette forum, "
+"medfører afkrydsning i denne boks, at emnet låses, når dit svar er indsendt."
+" Herefter kan kun redaktører og administratorer svare i emnet. Læs mere i "
+"<link linkend=\"modtools_lock\">Lås et emne eller indlæg</link>."
+
+#. (itstool) path: section/title
+#: user_guide.xml:382
+msgid "Topic Types"
+msgstr "Emnetyper"
+
+#. (itstool) path: section/para
+#: user_guide.xml:383
+msgid ""
+"Provided you have the right permissions, you have the option of selecting "
+"various topic types when posting a new topic by using <guilabel>Post topic "
+"as</guilabel>. The four possible types are: <guilabel>Normal</guilabel>, "
+"<guilabel>Sticky</guilabel>, <guilabel>Announcement</guilabel>, and "
+"<guilabel>Global</guilabel>. By default, all new posts are "
+"<guilabel>Normal</guilabel>."
+msgstr ""
+"Har du de rette tilladelser, har du mulighed for at vælge hvilken type dit "
+"nye emne skal have med <guilabel>Skriv emne som</guilabel>. De fire mulige "
+"typer er: <guilabel>Normal</guilabel>, <guilabel>Opslag</guilabel>, "
+"<guilabel>Bekendtgørelse</guilabel> og <guilabel>Global</guilabel>. Som "
+"standard er alle nye indlæg <guilabel>Normal</guilabel>."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:385
+msgid ""
+"<guilabel>Normal</guilabel>: By selecting normal, your new topic will be a "
+"standard topic in the forum."
+msgstr ""
+"<guilabel>Normal</guilabel>: Vælger du normal, bliver dit nye emne et "
+"standardemne i forummet."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:386
+msgid ""
+"<guilabel>Sticky</guilabel>: Stickies are special topics in the forum. They "
+"are \"stuck\" to the top of the first page of the forum in which they are "
+"posted, above every Normal topic."
+msgstr ""
+"<guilabel>Opslag</guilabel>: Opslag er særlige emner i forummet. De "
+"\"fastgøres\" øverst på forummets første side, over alle normale emner."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:387
+msgid ""
+"<guilabel>Announcement</guilabel>: Announcements are much like Stickies in "
+"that they are \"stuck\" to the top of the forum. However, they are different"
+" from stickies in two ways: 1) they are above Stickies, and 2) they appear "
+"at the top of <emphasis>every</emphasis> page of the forum instead of only "
+"the first page of topics."
+msgstr ""
+"<guilabel>Bekendtgørelse</guilabel>: Bekendtgørelser ligner opslag, i det de"
+" også \"fastgøres\" øverst i forummet. De adskiller sig dog fra opslag på to"
+" måder: 1) de vises over opslag, og 2) de vises øverst på "
+"<emphasis>alle</emphasis> sider i forummet, ikke kun den første side med "
+"emner."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:388
+msgid ""
+"<guilabel>Global</guilabel>: Global, or Global Announcements, are special "
+"types of Announcements which appear at the top of every page of every forum "
+"on the board. They appear above every other type of special topic."
+msgstr ""
+"<guilabel>Global</guilabel>: Globale, eller globale bekendtgørelser, er en "
+"særlig type bekendtgørelse, som vises øverst på alle sider i alle fora på "
+"boardet. De vises over alle andre typer af særlige emner."
+
+#. (itstool) path: section/para
+#: user_guide.xml:390
+msgid ""
+"You also have the ability to specify how long the special (stickies, "
+"announcements, and global announcements) keep their type. For example, an "
+"announcement is created and specified to stay \"stuck\" for 4 days. After "
+"the 4 days are over, the announcement will automatically be switched to a "
+"Normal topic."
+msgstr ""
+"Du har også mulighed for at angive hvor længe det særlige emne (opslag, "
+"bekendtgørelse eller global bekendtgørelse) skal beholde sin type. Oprettes "
+"en bekendtgørelse f.eks. med en varighed på 4 dage, ændres emnet automatisk "
+"til et normalt emne, når de 4 dage er gået."
+
+#. (itstool) path: section/para
+#: user_guide.xml:396
+msgid ""
+"Attachments allow users to upload files and attach them to their post. The "
+"ability to attach and download attachments is determined by the \"Can attach"
+" files\" and \"Can download files\" permissions respectively."
+msgstr ""
+"Vedhæftede filer giver brugere mulighed for at uploade filer og vedhæfte dem"
+" til deres indlæg. Muligheden for at vedhæfte og downloade vedhæftede filer "
+"bestemmes af henholdsvis tilladelserne \"Kan vedhæfte filer\" og \"Kan "
+"downloade filer\"."
+
+#. (itstool) path: section/para
+#: user_guide.xml:397
+msgid ""
+"To add an attachment, find the <guilabel>Attachments</guilabel> section of "
+"the posting page and click the <guilabel>Add files</guilabel> button. A "
+"comment may be placed in the <guilabel>File comment</guilabel> text box. "
+"Clicking <guilabel>Add the file</guilabel> will upload and attach the file "
+"to the post. To upload multiple files, repeat the process. Attachments may "
+"also be uploaded by dragging and dropping a file onto the message area of "
+"the posting screen."
+msgstr ""
+"For at tilføje en vedhæftet fil, find sektionen <guilabel>Vedhæftede "
+"filer</guilabel> på indlægssiden og klik på knappen <guilabel>Tilføj "
+"filer</guilabel>. En kommentar kan angives i tekstfeltet "
+"<guilabel>Filkommentar</guilabel>. Klik på <guilabel>Tilføj filen</guilabel>"
+" for at uploade og vedhæfte filen til indlægget. Gentag processen for at "
+"uploade flere filer. Vedhæftede filer kan også uploades ved at trække og "
+"slippe en fil på indlægsfeltet."
+
+#. (itstool) path: section/para
+#: user_guide.xml:398
+msgid ""
+"To delete an attachment, find the attachments list at the bottom of the "
+"<guilabel>Attachments</guilabel> section of the posting page and click the "
+"<guilabel>Delete file</guilabel> button for the desired attachment."
+msgstr ""
+"For at slette en vedhæftet fil, find listen over vedhæftede filer nederst i "
+"sektionen <guilabel>Vedhæftede filer</guilabel> på indlægssiden og klik på "
+"knappen <guilabel>Slet fil</guilabel> for den ønskede fil."
+
+#. (itstool) path: section/para
+#: user_guide.xml:399
+msgid ""
+"Attachments can be displayed within the post text by clicking the "
+"<guilabel>Place inline</guilabel> button for the desired attachment. When an"
+" attachment is placed inline, text similar to a BBCode is inserted into the "
+"post text so that it may be moved. If an attachment is not placed inline, it"
+" will be displayed at the end of the post."
+msgstr ""
+"Vedhæftede filer kan vises inde i indlægsteksten ved at klikke på knappen "
+"<guilabel>Placér i teksten</guilabel> for den ønskede fil. Placeres en "
+"vedhæftet fil i teksten, indsættes en BBkode-lignende tekst i indlægget, så "
+"den kan flyttes. Placeres en vedhæftet fil ikke i teksten, vises den i "
+"stedet for enden af indlægget."
+
+#. (itstool) path: section/para
+#: user_guide.xml:400
+msgid ""
+"Attachments are controlled by a set of restrictions, namely file size and "
+"file type."
+msgstr ""
+"Vedhæftede filer er underlagt et sæt restriktioner, nemlig filstørrelse og "
+"filtype."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:402
+msgid ""
+"File Size: The maximum file size for uploaded files is set by the "
+"Administrator. The default is 256KiB."
+msgstr ""
+"Filstørrelse: Den maksimale størrelse for uploadede filer bestemmes af "
+"administratoren. Standardværdien er 256KiB."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:403
+msgid ""
+"File Type: The types of files allowed for upload are restricted by their "
+"file extension. The allowed extensions are set by the Administrator."
+msgstr ""
+"Filtype: De typer af filer, der må uploades, er begrænset af deres "
+"filendelse. De tilladte filendelser bestemmes af administratoren."
+
+#. (itstool) path: section/para
+#: user_guide.xml:405
+msgid ""
+"For more information on changing attachment settings, please see <link "
+"linkend=\"acp_attach_settings\">ACP Attachment Settings</link>."
+msgstr ""
+"For mere information om ændring af indstillinger for vedhæftede filer, se "
+"<link linkend=\"acp_attach_settings\">ACP-indstillinger for vedhæftede "
+"filer</link>."
+
+#. (itstool) path: section/title
+#: user_guide.xml:408
+msgid "Polls"
+msgstr "Afstemning"
+
+#. (itstool) path: section/para
+#: user_guide.xml:409
+msgid ""
+"Polls allow users to use a topic to vote about an idea or issue. Polls can "
+"only be created in the first post of a topic. The ability to create and vote"
+" in polls is determined by the \"Polls\" set by the administrator."
+msgstr ""
+"Afstemninger giver brugere mulighed for at bruge et emne til at stemme om en"
+" idé eller et emne. Afstemninger kan kun oprettes i det første indlæg i et "
+"emne. Muligheden for at oprette og stemme i afstemninger bestemmes af "
+"tilladelsen \"Afstemninger\" fastsat af administratoren."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:411
+msgid ""
+"<guilabel>Poll question</guilabel> - This is the idea or issue that is being"
+" voted on in the poll. This is required to start a poll."
+msgstr ""
+"<guilabel>Afstemningsspørgsmål</guilabel> - Dette er den idé eller det "
+"spørgsmål, der stemmes om i afstemningen. Dette er påkrævet for at starte en"
+" afstemning."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:412
+msgid ""
+"<guilabel>Poll options</guilabel> - These are the allowed answers to the "
+"poll question. When entering a poll option, each should be placed on a "
+"separate line of the textbox. At least two poll options are required."
+msgstr ""
+"<guilabel>Afstemningsmuligheder</guilabel> - Dette er de tilladte svar på "
+"afstemningsspørgsmålet. Ved angivelse af en svarmulighed, skal hver placeres"
+" på en separat linje i tekstfeltet. Mindst to svarmuligheder er påkrævede."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:413
+msgid ""
+"<guilabel>Options per user</guilabel> - This is the number of options each "
+"user may select when voting. When a user is allowed more than one option, a "
+"series of checkboxes replaces the radio buttons of the standard poll."
+msgstr ""
+"<guilabel>Afstemningsmuligheder pr. bruger</guilabel> - Dette er antallet af"
+" muligheder, hver bruger kan vælge ved afstemning. Kan en bruger vælge mere "
+"end én mulighed, erstattes den almindelige afstemnings radioknapper af en "
+"række afmærkningsbokse."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:414
+msgid ""
+"<guilabel>Run poll for</guilabel> - This is the number of days in which "
+"users can vote in the poll. Once the time has passed, no more votes can be "
+"made and the results will be displayed."
+msgstr ""
+"<guilabel>Kør afstemning i</guilabel> - Dette er antallet af dage, hvor "
+"brugere kan stemme i afstemningen. Når tiden er udløbet, kan der ikke "
+"længere afgives stemmer, og resultaterne vises."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:415
+msgid ""
+"<guilabel>Allow revoting</guilabel> - If this is chosen, users will be able "
+"re-cast their votes."
+msgstr ""
+"<guilabel>Tillad ændring af afgivne stemmer</guilabel> - Vælges dette, kan "
+"brugere ændre deres afgivne stemme."
+
+#. (itstool) path: section/para
+#: user_guide.xml:420
+msgid ""
+"When creating a post, it can be saved or loaded using the drafts feature. If"
+" the board permissions allow drafts to be saved, then "
+"<guilabel>Save</guilabel> and <guilabel>Load</guilabel> buttons will appear "
+"on the posting page."
+msgstr ""
+"Når du opretter et indlæg, kan det gemmes eller indlæses med "
+"kladdefunktionen. Tillader boardets tilladelser at kladder gemmes, vises "
+"knapperne <guilabel>Gem</guilabel> og <guilabel>Indlæs</guilabel> på "
+"indlægssiden."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:422
+msgid ""
+"<guilabel>Save</guilabel> - Saves a post as a draft. When a draft is saved, "
+"only the subject and message of the post are stored. Topic icons, "
+"attachments, etc... will be lost."
+msgstr ""
+"<guilabel>Gem</guilabel> - Gemmer et indlæg som en kladde. Når en kladde "
+"gemmes, gemmes kun indlæggets emne og besked. Emneikoner, vedhæftede filer "
+"osv. mistes."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:423
+msgid ""
+"<guilabel>Load</guilabel> - Loads a saved draft. When clicked, a listing of "
+"available drafts will appear. Click the title of the desired post to load "
+"the draft. Any information in the current post will be lost and replaced "
+"with that of the draft."
+msgstr ""
+"<guilabel>Indlæs</guilabel> - Indlæser en gemt kladde. Klikkes der her, "
+"vises en liste over tilgængelige kladder. Klik på titlen på det ønskede "
+"indlæg for at indlæse kladden. Eventuelle oplysninger i det aktuelle indlæg "
+"mistes og erstattes med kladdens indhold."
+
+#. (itstool) path: section/para
+#: user_guide.xml:425
+msgid ""
+"Once a draft is used, it is removed. For more information on managing "
+"drafts, please see <link linkend=\"ucp_drafts\">UCP Drafts</link>."
+msgstr ""
+"Når en kladde er brugt, fjernes den. For mere information om administration "
+"af kladder, se <link linkend=\"ucp_drafts\">Kladder i UCP</link>."
+
+#. (itstool) path: note/para
+#: user_guide.xml:427
+msgid ""
+"If there are no drafts available, the <guilabel>Load</guilabel> button will "
+"not appear."
+msgstr ""
+"Er der ingen tilgængelige kladder, vises knappen <guilabel>Indlæs</guilabel>"
+" ikke."
+
+#. (itstool) path: section/title
+#: user_guide.xml:432
+msgid "Communicate with Private Messages"
+msgstr "Kommunikér med private beskeder"
+
+#. (itstool) path: section/para
+#: user_guide.xml:433
+msgid ""
+"phpBB 3.3 allows its users to communicate privately by using Private "
+"Messages. To visit the Private Messages section, you either can click on the"
+" [X new messages] link on the left hand side below the forum header, or you "
+"can directly access it through the <link linkend=\"user_control_panel\">User"
+" Control Panel.</link>."
+msgstr ""
+"phpBB 3.3 giver sine brugere mulighed for at kommunikere privat ved hjælp af"
+" private beskeder. For at besøge sektionen for private beskeder, kan du "
+"enten klikke på linket [X nye beskeder] i venstre side under forumheaderen, "
+"eller tilgå den direkte via <link "
+"linkend=\"user_control_panel\">Brugerkontrolpanelet</link>."
+
+#. (itstool) path: section/para
+#: user_guide.xml:434
+msgid ""
+"Depending on the communication methods allowed by the board administrator, "
+"there can be 3 ways of being notified of a new Private Message's arrival:"
+msgstr ""
+"Afhængigt af de kommunikationsmetoder boardadministratoren tillader, kan du "
+"blive gjort opmærksom på en ny privat besked på 3 måder:"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:437
+msgid "By receiving an e-mail or Jabber message"
+msgstr "Ved at modtage en e-mail eller Jabber-besked"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:440
+msgid "An entry will appear in the notifications menu"
+msgstr "Et opslag vises i notifikationsmenuen"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:443
+msgid ""
+"The <guilabel>Private Messages [X]</guilabel> link will show the number of "
+"currently unread messages"
+msgstr ""
+"Linket <guilabel>Private beskeder [X]</guilabel> viser antallet af aktuelt "
+"ulæste beskeder"
+
+#. (itstool) path: section/para
+#: user_guide.xml:446
+msgid ""
+"You can set the options to your liking in the <link "
+"linkend=\"ucp_preferences\">Preferences section</link>."
+msgstr ""
+"Du kan indstille disse muligheder efter eget ønske under <link "
+"linkend=\"ucp_preferences\">Boardindstillinger</link>."
+
+#. (itstool) path: section/para
+#: user_guide.xml:447
+msgid ""
+"You can choose to not receive Private Messages by other users in your <link "
+"linkend=\"ucp_preferences\">Preferences</link>. Note, that moderators and "
+"administrators will still be able send you Private Messages, even if you "
+"have disabled them."
+msgstr ""
+"Du kan vælge ikke at modtage private beskeder fra andre brugere under dine "
+"<link linkend=\"ucp_preferences\">Boardindstillinger</link>. Bemærk at "
+"redaktører og administratorer stadig kan sende dig private beskeder, selv "
+"hvis du har deaktiveret dem."
+
+#. (itstool) path: note/para
+#: user_guide.xml:449
+msgid ""
+"These features are only available to registered users who have the correct "
+"permissions."
+msgstr ""
+"Disse funktioner er kun tilgængelige for tilmeldte brugere med de rette "
+"tilladelser."
+
+#. (itstool) path: section/title
+#: user_guide.xml:452
+msgid "Message display"
+msgstr "Visning af beskeder"
+
+#. (itstool) path: section/para
+#: user_guide.xml:453
+msgid ""
+"The Inbox is the default incoming folder, which contains a list of your "
+"recently received Private Messages."
+msgstr ""
+"Indbakken er standardmodtagemappen og indeholder en liste over dine senest "
+"modtagne private beskeder."
+
+#. (itstool) path: section/title
+#: user_guide.xml:456
+msgid "Composing a new message"
+msgstr "Skriv en besked"
+
+#. (itstool) path: section/para
+#: user_guide.xml:457
+msgid ""
+"The screen presented while composing a Private Message is nearly identical "
+"to the screen for creating a new post. The main difference is the addition "
+"of an address field for adding recipients."
+msgstr ""
+"Skærmbilledet der vises, når du skriver en privat besked, er næsten identisk"
+" med skærmbilledet for at skrive et nyt indlæg. Den primære forskel er "
+"tilføjelsen af et adressefelt til modtagere."
+
+#. (itstool) path: figure/title
+#: user_guide.xml:459
+msgid "Private Message Fields"
+msgstr "Felter til private beskeder"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: user_guide.xml:462
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/private_messsage_fields.png' "
+"md5='63434630caaf1b2ba1598f5a97efada5'"
+msgstr ""
+"external ref='../images/user_guide/private_messsage_fields.png' "
+"md5='63434630caaf1b2ba1598f5a97efada5'"
+
+#. (itstool) path: caption/para
+#: user_guide.xml:465
+msgid "Fields for adding recipients to a Private Message."
+msgstr "Felter til at tilføje modtagere til en privat besked."
+
+#. (itstool) path: section/para
+#: user_guide.xml:469
+msgid ""
+"Usernames should be entered into the text area and then either the "
+"<guilabel>Add</guilabel> or <guilabel>Add [BCC]</guilabel> used to add the "
+"user to the appropriate recipient list. If you are unsure of a user's name, "
+"you can use the <guilabel>Find a member</guilabel> link to search the "
+"memberlist for the user. Place a check next to the desired user(s) in the "
+"memberlist and press <guilabel>Select marked</guilabel> to add the user to "
+"the recipient field."
+msgstr ""
+"Brugernavne indtastes i tekstfeltet, hvorefter enten "
+"<guilabel>Tilføj</guilabel> eller <guilabel>Tilføj [BCC]</guilabel> bruges "
+"til at tilføje brugeren til den relevante modtagerliste. Er du usikker på en"
+" brugers navn, kan du bruge linket <guilabel>Find et medlem</guilabel> til "
+"at søge medlemslisten. Sæt et mærke ved den/de ønskede bruger(e) i "
+"medlemslisten, og klik på <guilabel>Vælg markerede</guilabel> for at tilføje"
+" brugeren til modtagerfeltet."
+
+#. (itstool) path: authorgroup/author
+#: user_guide.xml:474 user_guide.xml:490 user_guide.xml:504 user_guide.xml:520
+msgid "<othername>dhn</othername>"
+msgstr ""
+
+#. (itstool) path: section/title
+#: user_guide.xml:479
+msgid "Message Folders"
+msgstr "Beskedmapper"
+
+#. (itstool) path: section/para
+#: user_guide.xml:480
+msgid ""
+"Just like in your e-mail client, all <glossterm>private messages</glossterm>"
+" are stored in folders. Working with folders is similar to working with "
+"forums in phpBB 3.3. The <guilabel>Inbox</guilabel> is your default incoming"
+" message folder. All messages you receive will appear in here."
+msgstr ""
+"Ligesom i din e-mailklient gemmes alle <glossterm>private "
+"beskeder</glossterm> i mapper. At arbejde med mapper minder om at arbejde "
+"med fora i phpBB 3.3. <guilabel>Indbakken</guilabel> er din "
+"standardmodtagemappe. Alle beskeder du modtager, vises her."
+
+#. (itstool) path: section/para
+#: user_guide.xml:481
+msgid ""
+"<guilabel>Sent messages</guilabel> will appear in either the "
+"<guilabel>Outbox</guilabel> or the <guilabel>Sent messages</guilabel> "
+"folder. As long as the recipient(s) have not yet read the message, it will "
+"stay in the <guilabel>Outbox</guilabel>. As soon as someone reads the "
+"message it will be archived to the <guilabel>Sent messages</guilabel> "
+"folder. If the administrator allows it, you can edit messages after sending "
+"them as long as they are in the <guilabel>Outbox</guilabel> and the "
+"recipients have not yet read them."
+msgstr ""
+"<guilabel>Sendte beskeder</guilabel> vises enten i mappen "
+"<guilabel>Udbakke</guilabel> eller <guilabel>Sendte beskeder</guilabel>. Så "
+"længe modtageren/modtagerne endnu ikke har læst beskeden, forbliver den i "
+"<guilabel>Udbakken</guilabel>. Så snart nogen læser beskeden, arkiveres den "
+"til mappen <guilabel>Sendte beskeder</guilabel>. Tillader administratoren "
+"det, kan du redigere beskeder, efter de er sendt, så længe de er i "
+"<guilabel>Udbakken</guilabel>, og modtagerne endnu ikke har læst dem."
+
+#. (itstool) path: section/para
+#: user_guide.xml:482
+msgid ""
+"Each folder, including <guilabel>Sent messages</guilabel> and "
+"<guilabel>Outbox</guilabel>, can hold a board-defined amount of messages. "
+"This is a global setting that only a board administrator can change. An info"
+" text displays the current number of allowed messages and the current "
+"percentage of space your messages are using at the top of each folder. If no"
+" restriction is displayed, you are allowed unlimited messages in each "
+"folder."
+msgstr ""
+"Hver mappe, inklusive <guilabel>Sendte beskeder</guilabel> og "
+"<guilabel>Udbakke</guilabel>, kan indeholde et af boardet fastsat antal "
+"beskeder. Dette er en global indstilling, som kun en boardadministrator kan "
+"ændre. En infotekst viser det aktuelle antal tilladte beskeder samt den "
+"nuværende procentdel af pladsen dine beskeder bruger, øverst i hver mappe. "
+"Vises der ingen begrænsning, har du ubegrænset plads i den pågældende mappe."
+
+#. (itstool) path: note/para
+#: user_guide.xml:484
+msgid ""
+"Please note that the total amount of messages allowed is a per-folder "
+"setting. You can have multiple folders which each allow 50 messages for "
+"instance. If you have 3 folders, your actual global limit is 150 messages, "
+"but each folder can only contain up to 50 messages by itself. It is not "
+"possible to merge folders and have one with more messages than the limit."
+msgstr ""
+"Bemærk at det tilladte antal beskeder er en indstilling pr. mappe. Du kan "
+"have flere mapper, som hver tillader 50 beskeder. Har du 3 mapper, er din "
+"reelle globale grænse 150 beskeder, men hver mappe kan kun indeholde op til "
+"50 beskeder i sig selv. Det er ikke muligt at sammenlægge mapper og få én "
+"med flere beskeder end grænsen tillader."
+
+#. (itstool) path: section/title
+#: user_guide.xml:495
+msgid "Custom Folders"
+msgstr "Brugerdefinerede mapper"
+
+#. (itstool) path: section/para
+#: user_guide.xml:497
+msgid ""
+"If the administrator allows it, you can create your own custom "
+"<glossterm>private message</glossterm> folders in phpBB 3.3. To check "
+"whether you can add folders, visit the <guimenuitem>Edit "
+"options</guimenuitem> section of the <guilabel>private message</guilabel> "
+"area."
+msgstr ""
+"Tillader administratoren det, kan du oprette dine egne brugerdefinerede "
+"mapper til <glossterm>private beskeder</glossterm> i phpBB 3.3. For at "
+"tjekke om du kan tilføje mapper, besøg sektionen "
+"<guimenuitem>Redigeringsmuligheder</guimenuitem> under <guilabel>private "
+"beskeder</guilabel>."
+
+#. (itstool) path: section/para
+#: user_guide.xml:498
+msgid ""
+"To add a new folder, enter the folder's name into the <guilabel>Add "
+"folder</guilabel> input box. If creation was successful, your new folder "
+"will appear at the bottom of the folder list. You can then use it like a "
+"normal message folder and move messages into it or set a filter (see the "
+"section on <link linkend=\"pm_rules\">Private Message Rules</link> for more "
+"information about filters) to automatically do it for you."
+msgstr ""
+"For at oprette en ny mappe skrives navnet på den i feltet <guilabel>Tilføj "
+"mappe</guilabel>. Lykkedes oprettelsen, vises din nye mappe nederst på "
+"mappelisten. Du kan herefter bruge den som en almindelig beskedmappe og "
+"flytte beskeder til den, eller oprette et filter (se afsnittet om <link "
+"linkend=\"pm_rules\">Regler for private beskeder</link> for mere information"
+" om filtre), der automatisk gør det for dig."
+
+#. (itstool) path: section/title
+#: user_guide.xml:509
+msgid "Moving Messages"
+msgstr "Flytning af beskeder"
+
+#. (itstool) path: section/para
+#: user_guide.xml:511
+msgid ""
+"It wouldn't make sense to have custom folders if you weren't able to move "
+"messages between them. To do exactly that, visit the folder from which you "
+"want to move the messages away. Select the messages you want to move, and "
+"use the <guilabel>Moved marked</guilabel> pull-down menu to select the "
+"destination folder."
+msgstr ""
+"Det ville ikke give mening at have brugerdefinerede mapper, hvis du ikke "
+"kunne flytte beskeder mellem dem. For netop at gøre dette, besøg den mappe "
+"du vil flytte beskederne fra. Vælg de beskeder du vil flytte, og brug "
+"dropdownmenuen <guilabel>Flyt markerede</guilabel> til at vælge "
+"destinationsmappen."
+
+#. (itstool) path: note/para
+#: user_guide.xml:513
+msgid ""
+"Please note that if after the move, the destination folder would have more "
+"messages in it than the message limit allows, you will receive an error "
+"message and the move will be discarded."
+msgstr ""
+"Bemærk venligst at er destinationsmappen herefter fyldt over det tilladte "
+"antal beskeder, modtager du en fejlbesked, og flytningen annulleres."
+
+#. (itstool) path: section/title
+#: user_guide.xml:525
+msgid "Message Markers"
+msgstr "Beskedmarkeringer"
+
+#. (itstool) path: section/para
+#: user_guide.xml:527
+msgid ""
+"Messages inside folders can have colour markings. Please refer to the "
+"<guilabel>Message colours</guilabel> legend to see what each colour means. "
+"The exact type of colouring depends on the used theme. Coloured messages can"
+" have four different meanings:"
+msgstr ""
+"Beskeder i mapper kan have farvemarkeringer. Se venligst forklaringen "
+"<guilabel>Beskedfarver</guilabel> for at se hvad hver farve betyder. Den "
+"præcise farve afhænger af det anvendte tema. Farvede beskeder kan have fire "
+"forskellige betydninger:"
+
+#. (itstool) path: varlistentry/term
+#: user_guide.xml:530
+msgid "Marked message"
+msgstr "Markeret besked"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:532
+msgid ""
+"You can set a message as marked with the <guilabel>Mark as "
+"important</guilabel> option from the pull-down menu."
+msgstr ""
+"Du kan markere en besked som vigtig med muligheden <guilabel>Markér som "
+"vigtig</guilabel> i dropdownmenuen."
+
+#. (itstool) path: varlistentry/term
+#: user_guide.xml:537
+msgid "Replied to message"
+msgstr "Besvaret besked"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:539
+msgid ""
+"If you reply to a message, the message will be marked as this. This way, you"
+" can keep hold of which messages still need your attention and which "
+"messages you have already replied to."
+msgstr ""
+"Svarer du på en besked, markeres den som dette. På denne måde kan du holde "
+"styr på hvilke beskeder der stadig kræver din opmærksomhed, og hvilke du "
+"allerede har besvaret."
+
+#. (itstool) path: varlistentry/term
+#: user_guide.xml:544
+msgid "Message from a friend"
+msgstr "Besked fra en ven"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:546
+msgid ""
+"If the sender of a message is in your friends list (see the section on <link"
+" linkend=\"ucp_friends_foes\">Friends &amp; Foes</link> for more "
+"information), this colour will highlight the message."
+msgstr ""
+"Er afsenderen på din venneliste (se afsnittet om <link "
+"linkend=\"ucp_friends_foes\">Venner og ignorerede brugere</link> for mere "
+"information), fremhæves beskeden med denne farve."
+
+#. (itstool) path: varlistentry/term
+#: user_guide.xml:551
+msgid "Message from a foe"
+msgstr "Besked fra en ignoreret bruger"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:553
+msgid ""
+"If the sender of a message is one of your foes, this colour will highlight "
+"this."
+msgstr ""
+"Er afsenderen en af dine ignorerede brugere, fremhæves beskeden med denne "
+"farve."
+
+#. (itstool) path: note/para
+#: user_guide.xml:559
+msgid ""
+"Please note that a message can only have one label, and it will always be "
+"the last action you take. If you mark a message as "
+"<guilabel>important</guilabel> and reply to it afterwards, for instance, the"
+" <guilabel>replied to</guilabel> label will overwrite the "
+"<guilabel>important</guilabel> label."
+msgstr ""
+"Bemærk venligst at en besked kun kan have én mærkning, og det vil altid være"
+" den seneste handling du har foretaget. Markerer du f.eks. en besked som "
+"<guilabel>vigtig</guilabel> og besvarer den efterfølgende, vil mærkningen "
+"<guilabel>besvaret</guilabel> overskrive mærkningen "
+"<guilabel>vigtig</guilabel>."
+
+#. (itstool) path: section/title
+#: user_guide.xml:564
+msgid "Message rules"
+msgstr "Meddelelsefiltre"
+
+#. (itstool) path: section/para
+#: user_guide.xml:565
+msgid ""
+"Private Messages can be filtered by creating rules that perform actions on "
+"the message based on its metadata. When a Private Message arrives, it can be"
+" automatically sorted into specific folders, deleted, or highlighted."
+msgstr ""
+"Private beskeder kan filtreres ved at oprette regler, der udfører handlinger"
+" på beskeden baseret på dens metadata. Når en privat besked ankommer, kan "
+"den automatisk sorteres i bestemte mapper, slettes eller farvemarkeres."
+
+#. (itstool) path: note/para
+#: user_guide.xml:567
+msgid ""
+"Private Message rules cannot be edited. If a rule needs to be changed, you "
+"will need to delete the current rule and make it again."
+msgstr ""
+"Regler for private beskeder kan ikke redigeres. Skal en regel ændres, skal "
+"den nuværende regel slettes og oprettes på ny."
+
+#. (itstool) path: section/title
+#: user_guide.xml:570
+msgid "Matchable fields"
+msgstr "Felter der kan matches"
+
+#. (itstool) path: section/para
+#: user_guide.xml:571
+msgid "Messages can be filtered based on the following fields:"
+msgstr "Beskeder kan filtreres baseret på følgende felter:"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:573
+msgid "<guilabel>Subject</guilabel> - The subject of the message."
+msgstr "<guilabel>Emne</guilabel> - Beskedens emne."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:574
+msgid "<guilabel>Sender</guilabel> - The username of the message sender."
+msgstr ""
+"<guilabel>Afsender</guilabel> - Brugernavnet på den der afsendte beskeden."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:575
+msgid "<guilabel>Message</guilabel> - The content of the message."
+msgstr "<guilabel>Besked</guilabel> - Indholdet af beskeden."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:576
+msgid ""
+"<guilabel>Message status</guilabel> - Whether a message has been replied to "
+"or forwarded."
+msgstr ""
+"<guilabel>Beskedstatus</guilabel> - Om beskeden er blevet besvaret eller "
+"videresendt."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:577
+msgid ""
+"<guilabel>Sent to</guilabel> - Whether the message was sent directly to you "
+"or to a usergroup you are a member of."
+msgstr ""
+"<guilabel>Sendt til</guilabel> - Om beskeden blev sendt direkte til dig, "
+"eller til en brugergruppe du er medlem af."
+
+#. (itstool) path: section/title
+#: user_guide.xml:582
+msgid "Matching conditions"
+msgstr "Matchbetingelser"
+
+#. (itstool) path: section/para
+#: user_guide.xml:583
+msgid ""
+"Several conditions are available for filtering the fields. Not all of the "
+"conditions listed below are avaialbe for every field. The following is the "
+"full list of conditions available:"
+msgstr ""
+"Der findes flere betingelser til at filtrere felterne med. Ikke alle "
+"betingelserne nedenfor er tilgængelige for hvert felt. Følgende er den fulde"
+" liste over tilgængelige betingelser:"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:585
+msgid "<guilabel>Is like</guilabel> - The field contains the supplied string."
+msgstr ""
+"<guilabel>Indeholder</guilabel> - Feltet indeholder den angivne tekststreng."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:586
+msgid ""
+"<guilabel>Is not like</guilabel> - The field does <emphasis "
+"role=\"strong\">not</emphasis> contain the supplied string."
+msgstr ""
+"<guilabel>Indeholder ikke</guilabel> - Feltet indeholder <emphasis "
+"role=\"strong\">ikke</emphasis> den angivne tekststreng."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:587
+msgid ""
+"<guilabel>Is</guilabel> - The field matches the supplied string exactly."
+msgstr ""
+"<guilabel>Er</guilabel> - Feltet matcher præcis den angivne tekststreng."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:588
+msgid ""
+"<guilabel>Is not</guilabel> - The field's content is <emphasis "
+"role=\"strong\">not</emphasis> the same as the supplied string."
+msgstr ""
+"<guilabel>Er ikke</guilabel> - Feltets indhold er <emphasis "
+"role=\"strong\">ikke</emphasis> det samme som den angivne tekststreng."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:589
+msgid ""
+"<guilabel>Begins with</guilabel> - The field begins with the supplied "
+"string."
+msgstr ""
+"<guilabel>Begynder med</guilabel> - Feltet begynder med den angivne "
+"tekststreng."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:590
+msgid ""
+"<guilabel>Ends with</guilabel> - The field ends with the supplied string."
+msgstr ""
+"<guilabel>Slutter med</guilabel> - Feltet slutter med den angivne "
+"tekststreng."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:591
+msgid "<guilabel>Is friend</guilabel> - If the sender is on your Friend list."
+msgstr "<guilabel>Er ven</guilabel> - Hvis afsenderen står på din venneliste."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:592
+msgid "<guilabel>Is foe</guilabel> - If the sender is on your Foe list."
+msgstr ""
+"<guilabel>Er ignoreret bruger</guilabel> - Hvis afsenderen står på din liste"
+" over ignorerede brugere."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:593
+msgid ""
+"<guilabel>Is user</guilabel> - The sender's name matches the supplied "
+"string."
+msgstr ""
+"<guilabel>Er bruger</guilabel> - Afsenderens navn matcher den angivne "
+"tekststreng."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:594
+msgid ""
+"<guilabel>Is in usergroup</guilabel> - The sender belongs to the specified "
+"usergroup."
+msgstr ""
+"<guilabel>Er i brugergruppe</guilabel> - Afsenderen er medlem af den angivne"
+" brugergruppe."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:595
+msgid ""
+"<guilabel>Answered</guilabel> - Whether the message has been replied to."
+msgstr "<guilabel>Besvaret</guilabel> - Om beskeden er blevet besvaret."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:596
+msgid ""
+"<guilabel>Forwarded</guilabel> - Whether the message has been forwarded."
+msgstr "<guilabel>Videresendt</guilabel> - Om beskeden er blevet videresendt."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:597
+msgid ""
+"<guilabel>To my default usergroup</guilabel> - Whether the message has been "
+"sent to your usergroup."
+msgstr ""
+"<guilabel>Til min standardgruppe</guilabel> - Om beskeden er sendt til din "
+"brugergruppe."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:598
+msgid ""
+"<guilabel>To me</guilabel> - Whether a message has been sent directly to "
+"you."
+msgstr "<guilabel>Til mig</guilabel> - Om en besked er sendt direkte til dig."
+
+#. (itstool) path: section/para
+#: user_guide.xml:600
+msgid ""
+"The following list shows which conditions are available for each field:"
+msgstr ""
+"Følgende liste viser hvilke betingelser der er tilgængelige for hvert felt:"
+
+#. (itstool) path: varlistentry/term
+#: user_guide.xml:603
+msgid "Subject"
+msgstr "Emne"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:605
+msgid ""
+"<guilabel>Is like</guilabel>, <guilabel>Is not like</guilabel>, "
+"<guilabel>Is</guilabel>, <guilabel>Is not</guilabel>, <guilabel>Begins "
+"with</guilabel>, <guilabel>Ends with</guilabel>"
+msgstr ""
+"<guilabel>Indeholder</guilabel>, <guilabel>Indeholder ikke</guilabel>, "
+"<guilabel>Er</guilabel>, <guilabel>Er ikke</guilabel>, <guilabel>Begynder "
+"med</guilabel>, <guilabel>Slutter med</guilabel>"
+
+#. (itstool) path: varlistentry/term
+#: user_guide.xml:610
+msgid "Sender"
+msgstr "Afsender"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:612
+msgid ""
+"<guilabel>Is like</guilabel>, <guilabel>Is not like</guilabel>, "
+"<guilabel>Is</guilabel>, <guilabel>Is not</guilabel>, <guilabel>Begins "
+"with</guilabel>, <guilabel>Ends with</guilabel>, <guilabel>Is "
+"friend</guilabel>, <guilabel>Is foe</guilabel>, <guilabel>Is "
+"user</guilabel>, <guilabel>Is in usergroup</guilabel>"
+msgstr ""
+"<guilabel>Indeholder</guilabel>, <guilabel>Indeholder ikke</guilabel>, "
+"<guilabel>Er</guilabel>, <guilabel>Er ikke</guilabel>, <guilabel>Begynder "
+"med</guilabel>, <guilabel>Slutter med</guilabel>, <guilabel>Er "
+"ven</guilabel>, <guilabel>Er ignoreret bruger</guilabel>, <guilabel>Er "
+"bruger</guilabel>, <guilabel>Er i brugergruppe</guilabel>"
+
+#. (itstool) path: varlistentry/term
+#: user_guide.xml:617
+msgid "Message"
+msgstr "Besked"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:619
+msgid ""
+"<guilabel>Is like</guilabel>, <guilabel>Is not like</guilabel>, "
+"<guilabel>Is</guilabel>, <guilabel>Is not</guilabel>"
+msgstr ""
+"<guilabel>Indeholder</guilabel>, <guilabel>Indeholder ikke</guilabel>, "
+"<guilabel>Er</guilabel>, <guilabel>Er ikke</guilabel>"
+
+#. (itstool) path: varlistentry/term
+#: user_guide.xml:624
+msgid "Message status"
+msgstr "Beskedstatus"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:626
+msgid "<guilabel>Answered</guilabel>, <guilabel>Forwarded</guilabel>"
+msgstr "<guilabel>Besvaret</guilabel>, <guilabel>Videresendt</guilabel>"
+
+#. (itstool) path: varlistentry/term
+#: user_guide.xml:631
+msgid "Sent To"
+msgstr "Sendt til"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:633
+msgid ""
+"<guilabel>To my default usergroup</guilabel>, <guilabel>To me</guilabel>"
+msgstr ""
+"<guilabel>Til min standardgruppe</guilabel>, <guilabel>Til mig</guilabel>"
+
+#. (itstool) path: section/title
+#: user_guide.xml:640
+msgid "Rule action"
+msgstr "Regelhandling"
+
+#. (itstool) path: section/para
+#: user_guide.xml:641
+msgid ""
+"Once a message has been matched, an action can be perfromed on the message. "
+"The available actions are:"
+msgstr ""
+"Når en besked er matchet, kan der udføres en handling på den. De "
+"tilgængelige handlinger er:"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:643
+msgid ""
+"<guilabel>Place into folder -&gt; X</guilabel> - Places the message into the"
+" specified folder."
+msgstr ""
+"<guilabel>Placér i mappe -&gt; X</guilabel> - Placerer beskeden i den "
+"angivne mappe."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:644
+msgid ""
+"<guilabel>Mark as read</guilabel> - The message is immediately marked as "
+"read. Notifications still inform you of a new message, but the message will "
+"already be marked as read when you view your Private Message list."
+msgstr ""
+"<guilabel>Markér som læst</guilabel> - Beskeden markeres straks som læst. Du"
+" bliver stadig gjort opmærksom på den nye besked via notifikationer, men "
+"beskeden vil allerede være markeret som læst når du ser din liste over "
+"private beskeder."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:645
+msgid ""
+"<guilabel>Mark message</guilabel> - The message is marked as important and "
+"highlighted in your Private Message list."
+msgstr ""
+"<guilabel>Markér besked</guilabel> - Beskeden markeres som vigtig og "
+"fremhæves i din liste over private beskeder."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:646
+msgid ""
+"<guilabel>Delete message</guilabel> - The message is deleted instead of "
+"being shown. A message will be shown informing you that messages were "
+"received and deleted according to your message rules. Messages sent from "
+"board administrators and moderators will <emphasis "
+"role=\"strong\">not</emphasis> be deleted."
+msgstr ""
+"<guilabel>Slet besked</guilabel> - Beskeden slettes i stedet for at blive "
+"vist. Der vises en besked, der informerer om at beskeder er blevet modtaget "
+"og slettet i henhold til dine meddelelsesfiltre. Beskeder sendt fra boardets"
+" administratorer og redaktører vil <emphasis role=\"strong\">ikke</emphasis>"
+" blive slettet."
+
+#. (itstool) path: section/title
+#: user_guide.xml:652
+msgid "Search - How to Find What You are Looking For"
+msgstr "Søgning - find det du leder efter"
+
+#. (itstool) path: section/para
+#: user_guide.xml:653
+msgid ""
+"As the board grows and accumulates posts, it becomes difficult to find "
+"specific content quickly. To aid in finding posts, phpBB contains a search "
+"utility. Common searches are offered in the form of links on the index (new "
+"posts, unanswered posts, etc.), keyword searches can be performed from the "
+"header, forum view, and topic view (in supported styles), and custom search "
+"queries can be created using the Advanced Search feature."
+msgstr ""
+"Efterhånden som boardet vokser og akkumulerer indlæg, bliver det svært "
+"hurtigt at finde specifikt indhold. For at hjælpe med at finde indlæg "
+"indeholder phpBB et søgeværktøj. Almindelige søgninger tilbydes som links på"
+" indekset (nye indlæg, ubesvarede indlæg osv.), søgning på nøgleord kan "
+"udføres fra headeren, forumvisningen og emnevisningen (i understøttede "
+"typografier), og brugerdefinerede søgeforespørgsler kan oprettes med den "
+"avancerede søgefunktion."
+
+#. (itstool) path: section/title
+#: user_guide.xml:656
+msgid "Predefined searches"
+msgstr "Foruddefinerede søgninger"
+
+#. (itstool) path: section/para
+#: user_guide.xml:657
+msgid ""
+"phpBB comes with several predefined searches to easily perform certain types"
+" of queries."
+msgstr ""
+"phpBB leveres med flere foruddefinerede søgninger, så du nemt kan udføre "
+"visse typer forespørgsler."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:659
+msgid ""
+"<guilabel>View your posts</guilabel> - Returns a list of topics that you "
+"have posted in, sorted by the time of the last post in the topic."
+msgstr ""
+"<guilabel>Se dine indlæg</guilabel> - Viser en liste over emner, du har "
+"skrevet indlæg i, sorteret efter tidspunktet for det seneste indlæg i emnet."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:660
+msgid ""
+"<guilabel>View unanswered topics</guilabel> - Returns all topics which "
+"contain no replies."
+msgstr ""
+"<guilabel>Se ubesvarede emner</guilabel> - Viser alle emner, der ikke har "
+"nogen svar."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:661
+msgid ""
+"<guilabel>View unread posts</guilabel> - Returns a list of topics containing"
+" posts which you have yet to read."
+msgstr ""
+"<guilabel>Se ulæste indlæg</guilabel> - Viser en liste over emner med "
+"indlæg, du endnu ikke har læst."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:662
+msgid ""
+"<guilabel>View new posts</guilabel> - Returns a list of topics containing "
+"posts which have been made since the last time you logged in."
+msgstr ""
+"<guilabel>Se nye indlæg</guilabel> - Viser en liste over emner med indlæg, "
+"der er skrevet siden du sidst loggede ind."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:663
+msgid ""
+"<guilabel>View active topics</guilabel> - Returns a list of topics which "
+"have been posted in during the last few days. The number of days can be "
+"changed after loading the search page."
+msgstr ""
+"<guilabel>Aktive emner</guilabel> - Viser en liste over emner, der har fået "
+"indlæg i løbet af de seneste dage. Antallet af dage kan ændres efter "
+"søgesiden er indlæst."
+
+#. (itstool) path: section/title
+#: user_guide.xml:668
+msgid "Forum and topic search"
+msgstr "Søgning i fora og emner"
+
+#. (itstool) path: section/para
+#: user_guide.xml:669
+msgid ""
+"Some styles provide search fields on the forum view and the topic view. "
+"These fields allow you to perform a keyword search within the forum or "
+"within the current topic."
+msgstr ""
+"Nogle stilarter har søgefelter i forumvisningen og emnevisningen. Disse "
+"felter giver dig mulighed for at udføre en søgning på nøgleord i forummet "
+"eller det aktuelle emne."
+
+#. (itstool) path: figure/title
+#: user_guide.xml:672
+msgid "Search within topics"
+msgstr "Søgning i emner"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: user_guide.xml:675
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/search_topic.png' "
+"md5='037ea787dbcbc6399349349bcef8c1bf'"
+msgstr ""
+"external ref='../images/user_guide/search_topic.png' "
+"md5='037ea787dbcbc6399349349bcef8c1bf'"
+
+#. (itstool) path: caption/para
+#: user_guide.xml:678
+msgid "Search field within a topic."
+msgstr "Søgefelt i et emne."
+
+#. (itstool) path: section/title
+#: user_guide.xml:685
+msgid "Advanced search"
+msgstr "Avanceret søgning"
+
+#. (itstool) path: section/para
+#: user_guide.xml:686
+msgid ""
+"In addition to the predefined searches provided by phpBB, it is possible to "
+"create your own search queries. Searches can based on keywords, author, and "
+"forum selections."
+msgstr ""
+"Ud over de foruddefinerede søgninger phpBB tilbyder, er det muligt at "
+"oprette dine egne søgeforespørgsler. Søgninger kan baseres på nøgleord, "
+"forfatter og forumvalg."
+
+#. (itstool) path: section/title
+#: user_guide.xml:688
+msgid "The search query"
+msgstr "Søgeforespørgslen"
+
+#. (itstool) path: section/para
+#: user_guide.xml:689
+msgid ""
+"In order to perform a search of the board, you must specify what it is that "
+"you would like to search for. You can specify keywords to search for as well"
+" as a post author. Two query options are provided for performing the search:"
+msgstr ""
+"For at søge på boardet skal du angive hvad du ønsker at søge efter. Du kan "
+"angive nøgleord at søge efter samt en forfatter af indlæg. Der findes to "
+"muligheder for hvordan søgningen udføres:"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:691
+msgid ""
+"<guilabel>Search for all terms or use query as entered</guilabel> - If "
+"multiple keywords are provided, <emphasis role=\"strong\">all</emphasis> "
+"keywords must be found in the result. Alternatively, you can provide a query"
+" using special identifiers."
+msgstr ""
+"<guilabel>Søg efter alle ord eller brug forespørgslen som "
+"indtastet</guilabel> - Angives flere nøgleord, skal <emphasis "
+"role=\"strong\">alle</emphasis> nøgleordene findes i resultatet. Alternativt"
+" kan du angive en forespørgsel med særlige identifikatorer."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:692
+msgid ""
+"<guilabel>Search for any terms</guilabel> - If multiple keywords are "
+"provided, then results containing <emphasis role=\"strong\">any</emphasis> "
+"of the provided keywords will be returned."
+msgstr ""
+"<guilabel>Søg efter et hvilket som helst ord</guilabel> - Angives flere "
+"nøgleord, returneres resultater der indeholder <emphasis role=\"strong\">et "
+"hvilket som helst</emphasis> af de angivne nøgleord."
+
+#. (itstool) path: section/title
+#: user_guide.xml:695
+msgid "Keywords"
+msgstr "Nøgleord"
+
+#. (itstool) path: section/para
+#: user_guide.xml:696
+msgid ""
+"In addition to supplying keywords, special identifiers can be used to add or"
+" detract from the importance of certain words."
+msgstr ""
+"Ud over at angive nøgleord, kan særlige identifikatorer bruges til at "
+"tilføje eller mindske vigtigheden af bestemte ord."
+
+#. (itstool) path: variablelist/title
+#: user_guide.xml:698
+msgid "Identifiers"
+msgstr "Identifikatorer"
+
+#. (itstool) path: varlistentry/term
+#: user_guide.xml:700
+msgid "+"
+msgstr "+"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:702
+msgid ""
+"When placed before a keyword, that keyword must be found in the result text."
+msgstr ""
+"Placeret foran et nøgleord, skal dette nøgleord findes i resultatteksten."
+
+#. (itstool) path: varlistentry/term
+#: user_guide.xml:706
+msgid "-"
+msgstr "-"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:708
+msgid ""
+"When placed before a keyword, that keyword must not be present in the result"
+" text."
+msgstr ""
+"Placeret foran et nøgleord, må dette nøgleord ikke forekomme i "
+"resultatteksten."
+
+#. (itstool) path: variablelist/title
+#: user_guide.xml:710 user_guide.xml:725 user_guide.xml:746
+msgid "Examples"
+msgstr "Eksempler"
+
+#. (itstool) path: varlistentry/term
+#: user_guide.xml:712
+msgid "+dog -cat"
+msgstr "+hund -kat"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:714
+msgid "Returns results which contain the word \"dog\", but not \"cat\"."
+msgstr "Viser resultater der indeholder ordet \"hund\", men ikke \"kat\"."
+
+#. (itstool) path: varlistentry/term
+#: user_guide.xml:721
+msgid "|"
+msgstr "|"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:723
+msgid ""
+"This token can be used to separate a list of keywords, of which at least one"
+" of the keywords should be found in the text. Words may be placed inside of "
+"parentheses and combined with a + or - to indicated that at least one of the"
+" words must or must not appear in each result."
+msgstr ""
+"Dette tegn kan bruges til at adskille en liste af nøgleord, hvoraf mindst ét"
+" af nøgleordene skal findes i teksten. Ord kan placeres i parenteser og "
+"kombineres med et + eller - for at angive, at mindst ét af ordene skal eller"
+" ikke må forekomme i hvert resultat."
+
+#. (itstool) path: varlistentry/term
+#: user_guide.xml:727
+msgid "dog|cat"
+msgstr "hund|kat"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:729
+msgid "Returns results which contain either the word \"dog\" or the word \"cat\"."
+msgstr "Viser resultater der indeholder enten ordet \"hund\" eller ordet \"kat\"."
+
+#. (itstool) path: varlistentry/term
+#: user_guide.xml:733
+msgid "-(dog|cat)"
+msgstr "-(hund|kat)"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:735
+msgid "Returns results which contain neither the word \"dog\" nor the word \"cat\"."
+msgstr "Viser resultater der hverken indeholder ordet \"hund\" eller ordet \"kat\"."
+
+#. (itstool) path: varlistentry/term
+#: user_guide.xml:742
+msgid "*"
+msgstr "*"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:744
+msgid "An asterisk in a keyword allows for partial keyword matches."
+msgstr "En stjerne i et nøgleord giver mulighed for delvise nøgleordsmatch."
+
+#. (itstool) path: varlistentry/term
+#: user_guide.xml:748
+msgid "cat*"
+msgstr "kat*"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:750
+msgid ""
+"Returns results which begin with the word \"cat\", such as \"cats\" and "
+"\"catastrophe\"."
+msgstr ""
+"Viser resultater der begynder med ordet \"kat\", såsom \"katte\" og "
+"\"katastrofe\"."
+
+#. (itstool) path: section/title
+#: user_guide.xml:760
+msgid "Author"
+msgstr "Forfatter"
+
+#. (itstool) path: section/para
+#: user_guide.xml:761
+msgid ""
+"The search query can be further refined by providing the author of the post."
+" If an author is specified, then only posts made by that author which meets "
+"the query requirements will be returned. The author field allows for the use"
+" of wildcards (*) to perform partial matches on the author name."
+msgstr ""
+"Søgeforespørgslen kan indsnævres yderligere ved at angive forfatteren af "
+"indlægget. Angives en forfatter, returneres kun indlæg skrevet af denne "
+"forfatter, som opfylder forespørgslens krav. Feltet Forfatter tillader brug "
+"af jokertegn (*) til delvise match på forfatterens navn."
+
+#. (itstool) path: section/title
+#: user_guide.xml:766
+msgid "The search options"
+msgstr "Søgemulighederne"
+
+#. (itstool) path: section/para
+#: user_guide.xml:767
+msgid ""
+"Searches can be further restricted to specific forums or specific parts of "
+"the topics."
+msgstr ""
+"Søgninger kan yderligere begrænses til bestemte fora eller bestemte dele af "
+"emnerne."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:769
+msgid ""
+"<guilabel>Search in forums</guilabel> - Here you can select specific forums "
+"in which the search should be performed. Multiple forums can be selected by "
+"holding down the \"control\" or \"command\" key."
+msgstr ""
+"<guilabel>Søg i fora</guilabel> - Her kan du vælge specifikke fora, "
+"søgningen skal udføres i. Flere fora kan vælges ved at holde \"Ctrl\"- eller"
+" \"Cmd\"-tasten nede."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:770
+msgid ""
+"<guilabel>Search in subforums</guilabel> - If this option is selected, then "
+"any subforums of the selected forums will be searched as well."
+msgstr ""
+"<guilabel>Søg i underfora</guilabel> - Er denne mulighed valgt, gennemsøges "
+"også eventuelle underfora til de valgte fora."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:772
+msgid ""
+"<guilabel>Search within</guilabel> - This allows you to specify which part "
+"of the posts should be searched."
+msgstr ""
+"<guilabel>Søg i</guilabel> - Her kan du angive hvilken del af indlæggene der"
+" skal gennemsøges."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:774
+msgid ""
+"<guilabel>Post subjects and message text</guilabel> - Both the post subject "
+"and the post body will be searched."
+msgstr ""
+"<guilabel>Indlæggets overskrift og beskedfelt</guilabel> - Både emnet og "
+"selve indlægget gennemsøges."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:775
+msgid ""
+"<guilabel>Message text only</guilabel> - Only the body of the posts will be "
+"searched and not its title."
+msgstr ""
+"<guilabel>Søg kun i beskedfeltet</guilabel> - Kun selve indlæggets indhold "
+"gennemsøges, ikke dets emne."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:776
+msgid ""
+"<guilabel>Topic titles only</guilabel> - Only the topic titles will be "
+"searched."
+msgstr ""
+"<guilabel>Søg kun i emnetitler</guilabel> - Kun emnetitler gennemsøges."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:777
+msgid ""
+"<guilabel>First post of topics only</guilabel> - The first post of each "
+"topic will be searched and no other posts in the topic."
+msgstr ""
+"<guilabel>Kun emnets første indlæg</guilabel> - Kun det første indlæg i "
+"hvert emne gennemsøges, ikke øvrige indlæg i emnet."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:780
+msgid ""
+"<guilabel>Display results as</guilabel> - This option formats the search "
+"results to only show either the post contents or just topic titles."
+msgstr ""
+"<guilabel>Vis resultater som</guilabel> - Denne indstilling formaterer "
+"søgeresultaterne til kun at vise enten indlæggenes indhold eller blot "
+"emnetitler."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:781
+msgid ""
+"<guilabel>Sort results by</guilabel> - Orders the results based on either "
+"<guilabel>author</guilabel>, <guilabel>post time</guilabel>, "
+"<guilabel>forum</guilabel>, <guilabel>topic title</guilabel> or "
+"<guilabel>post subject</guilabel>. The results can be displayed in "
+"<guilabel>ascending</guilabel> or <guilabel>descending</guilabel> order."
+msgstr ""
+"<guilabel>Sortér resultater efter</guilabel> - Sorterer resultaterne efter "
+"enten <guilabel>forfatter</guilabel>, <guilabel>indlægstidspunkt</guilabel>,"
+" <guilabel>forum</guilabel>, <guilabel>emnetitel</guilabel> eller "
+"<guilabel>emne</guilabel>. Resultaterne kan vises i "
+"<guilabel>stigende</guilabel> eller <guilabel>faldende</guilabel> "
+"rækkefølge."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:782
+msgid ""
+"<guilabel>Limit results to previous</guilabel> - Limits the results to posts"
+" made in specific time frame."
+msgstr ""
+"<guilabel>Begræns resultater til foregående</guilabel> - Begrænser "
+"resultaterne til indlæg skrevet i en bestemt periode."
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:783
+msgid ""
+"<guilabel>Return first</guilabel> - Formats the results to only contain a "
+"specific number of characters of the matching posts."
+msgstr ""
+"<guilabel>Vis første</guilabel> - Formaterer resultaterne til kun at "
+"indeholde et bestemt antal tegn af de matchende indlæg."
+
+#. (itstool) path: section/title
+#: user_guide.xml:787
+msgid "Further refinement"
+msgstr "Yderligere indsnævring"
+
+#. (itstool) path: section/para
+#: user_guide.xml:788
+msgid ""
+"On the result page, it is possible to further refine your search by "
+"providing more search terms."
+msgstr ""
+"På resultatsiden er det muligt yderligere at indsnævre din søgning ved at "
+"angive flere søgeord."
+
+#. (itstool) path: figure/title
+#: user_guide.xml:790
+msgid "Search refinement"
+msgstr "Indsnævring af søgning"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: user_guide.xml:793
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/search_refinement.png' "
+"md5='652330ba4844c5163629a598fd3f285d'"
+msgstr ""
+"external ref='../images/user_guide/search_refinement.png' "
+"md5='652330ba4844c5163629a598fd3f285d'"
+
+#. (itstool) path: caption/para
+#: user_guide.xml:796
+msgid "Refining the search results to include the word \"cat\"."
+msgstr "Indsnævring af søgeresultaterne til at inkludere ordet \"kat\"."
+
+#. (itstool) path: authorgroup/author
+#: user_guide.xml:807
+msgid "<othername>pentapenguin</othername>"
+msgstr ""
+
+#. (itstool) path: section/title
+#: user_guide.xml:815
+msgid "The Memberlist - More Than Meets the Eye"
+msgstr "Medlemslisten - indeholder mere end øjet ser"
+
+#. (itstool) path: section/para
+#: user_guide.xml:816
+msgid "phpBB3 introduces several new ways to search for users."
+msgstr "phpBB3 introducerer flere nye metoder til at søge efter brugere."
+
+#. (itstool) path: figure/title
+#: user_guide.xml:819
+msgid "Sorting the memberlist"
+msgstr "Sortering af medlemslisten"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: user_guide.xml:822
+msgctxt "_"
+msgid ""
+"external ref='../images/user_guide/memberlist_sorting.png' "
+"md5='33f8e926c1247146120de8338f5d3073'"
+msgstr ""
+"external ref='../images/user_guide/memberlist_sorting.png' "
+"md5='9183af8adc9f8cd0b95401a8a6422c7a'"
+
+#. (itstool) path: caption/para
+#: user_guide.xml:825
+msgid "Choosing an option to sort the memberlist by."
+msgstr "Valg af mulighed for at sortere medlemslisten."
+
+#. (itstool) path: varlistentry/term
+#: user_guide.xml:832
+msgid "Sort By Username"
+msgstr "Sortér efter brugernavn"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:834
+msgid ""
+"If you want to find all members whose usernames start with a certain letter,"
+" then you may select the letter from the list of letters shown at the top of"
+" the memberlist. For instance, clicking \"A\" will display all usernames "
+"beginning with the letter A, while clicking \"B\" will list all usernames "
+"beginning with B. Clicking the hash (#) will display a list of usernames "
+"that do not begin with one of the twenty-six letters: in other words, "
+"numbers and other characters."
+msgstr ""
+"Ønsker du at finde alle medlemmer, hvis brugernavne begynder med et bestemt "
+"bogstav, kan du vælge bogstavet fra listen af bogstaver øverst på "
+"medlemslisten. Klikker du f.eks. på \"A\", vises alle brugernavne der "
+"begynder med bogstavet A, mens et klik på \"B\" viser alle brugernavne der "
+"begynder med B. Klikkes på nummertegnet (#), vises en liste over "
+"brugernavne, der ikke begynder med et af de 26 bogstaver: med andre ord, tal"
+" og andre tegn."
+
+#. (itstool) path: varlistentry/term
+#: user_guide.xml:839
+msgid "Sort By Column Headers"
+msgstr "Sortér efter kolonneoverskrifter"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:841
+msgid ""
+"Each of the column headings are also sort links. That means you can click "
+"<guilabel>Username</guilabel>, <guilabel>Rank</guilabel>, "
+"<guilabel>Posts</guilabel>, <guilabel>Website</guilabel>, "
+"<guilabel>Location</guilabel>, <guilabel>&gt;Joined</guilabel>, or "
+"<guilabel>Last Active</guilabel> to sort by that group. Upon clicking this "
+"for the first time, the lists will be sorted in ascending order (meaning "
+"that usernames would be listed A to Z and joined date would be listed "
+"earliest to most recent.) If you want to order the list in descending order,"
+" wait until the page has loaded in ascending order and click the column "
+"heading you wish to order by for a second time."
+msgstr ""
+"Hver af kolonneoverskrifterne er også sorteringslinks. Det betyder, at du "
+"kan klikke på <guilabel>Brugernavn</guilabel>, <guilabel>Rang</guilabel>, "
+"<guilabel>Indlæg</guilabel>, <guilabel>Hjemmeside</guilabel>, "
+"<guilabel>Sted</guilabel>, <guilabel>Tilmeldt</guilabel> eller "
+"<guilabel>Senest aktiv</guilabel> for at sortere efter denne gruppe. Klikkes"
+" der her for første gang, sorteres listen i stigende rækkefølge (hvilket "
+"betyder at brugernavne vises A til Å, og tilmeldingsdato vises fra tidligst "
+"til senest). Ønsker du at sortere listen i faldende rækkefølge, vent til "
+"siden er indlæst i stigende rækkefølge, og klik på den ønskede "
+"kolonneoverskrift endnu en gang."
+
+#. (itstool) path: varlistentry/term
+#: user_guide.xml:846
+msgid "Sort By Other Options"
+msgstr "Sortér efter andre muligheder"
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:848
+msgid ""
+"You may also sort the memberlist by using the dropdown boxes on the bottom "
+"of the page."
+msgstr ""
+"Du kan også sortere medlemslisten ved hjælp af dropdownmenuerne nederst på "
+"siden."
+
+#. (itstool) path: varlistentry/term
+#: user_guide.xml:853
+msgid "Find a Member Search Tool"
+msgstr "Søgeværktøjet \"Find et medlem\""
+
+#. (itstool) path: listitem/para
+#: user_guide.xml:855
+msgid ""
+"You can narrow down your search results using the <guilabel>Find a "
+"member</guilabel> search function. This feature allows you to find members "
+"by their username, ICQ number, AIM, YIM, MSN Messenger/Windows Live "
+"Messenger address, join date, last active date, number of posts, IP address,"
+" and usergroup membership(s). All dates should be entered in the format "
+"YYYY-MM-DD (such as 2004-02-28 to represent February 28, 2004). The asterix "
+"(*) can be used as a wildcard for partial matches, such as entering \"Ar*\" "
+"into the username field to find all usernames beginning with Ar. Press the "
+"<guilabel>Submit</guilabel> button to begin the search, or the "
+"<guilabel>Reset</guilabel> button if you wish to clear all fields and start "
+"the search again."
+msgstr ""
+"Du kan indsnævre dine søgeresultater med søgefunktionen <guilabel>Find et "
+"medlem</guilabel>. Denne funktion giver dig mulighed for at finde medlemmer "
+"ud fra brugernavn, ICQ-nummer, AIM, YIM, MSN Messenger-/Windows Live "
+"Messenger-adresse, tilmeldingsdato, senest aktiv-dato, antal indlæg, IP-"
+"adresse samt brugergruppemedlemskab(er). Alle datoer skal indtastes i "
+"formatet YYYY-MM-DD (f.eks. 2004-02-28 for at repræsentere 28. februar "
+"2004). Stjernen (*) kan bruges som jokertegn for delvise match, f.eks. ved "
+"at indtaste \"Ar*\" i brugernavnfeltet for at finde alle brugernavne der "
+"begynder med Ar. Tryk på knappen <guilabel>Send</guilabel> for at starte "
+"søgningen, eller knappen <guilabel>Nulstil</guilabel> hvis du ønsker at "
+"rydde alle felter og starte søgningen forfra."
+
+#. (itstool) path: note/para
+#: user_guide.xml:861
+msgid "The availability of the sort method selection boxes varies by style."
+msgstr "Tilgængeligheden af sorteringsmulighederne varierer efter typografi."
