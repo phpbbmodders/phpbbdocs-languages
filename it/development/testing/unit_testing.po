@@ -1,0 +1,146 @@
+# Italian translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:3
+msgid "Unit Testing"
+msgstr "Test unitari"
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:5
+msgid ""
+"Unit tests simply verify that specific portions of the source code work "
+"properly. These tests are located in the main phpBB repository at ``tests/``"
+" and are grouped into folders based on commonality between the functionality"
+" they are testing. For instance, tests that are meant to test the config "
+"will be in ``tests/config/``."
+msgstr ""
+"Gli unit test verificano semplicemente che specifiche parti del codice "
+"sorgente funzionino correttamente. Questi test si trovano nel repository "
+"principale di phpBB in ``tests/`` e sono raggruppati in cartelle in base "
+"alle affinità tra le funzionalità che testano. Ad esempio, i test destinati "
+"a testare il config si troveranno in ``tests/config/``."
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:12
+msgid "Running Unit Tests"
+msgstr "Esecuzione degli unit test"
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:14
+msgid ""
+"Information on how to run tests is available in the GitHub repository at "
+"`<https://github.com/phpbb/phpbb/blob/3.2.x/tests/RUNNING_TESTS.md>`_. You "
+"can switch the branch to check instructions for a specific version of phpBB."
+msgstr ""
+"Informazioni su come eseguire i test sono disponibili nel repository GitHub "
+"a `<https://github.com/phpbb/phpbb/blob/3.2.x/tests/RUNNING_TESTS.md>`_. "
+"Puoi cambiare branch per verificare le istruzioni relative a una specifica "
+"versione di phpBB."
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:19
+msgid "Writing Unit Tests"
+msgstr "Scrittura degli unit test"
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:21
+msgid ""
+"Files that contain tests should have a ``_test`` suffix, e.g.: "
+"``tests/demo/demo_test.php``"
+msgstr ""
+"I file che contengono test dovrebbero avere un suffisso ``_test``, ad es.: "
+"``tests/demo/demo_test.php``"
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:24
+msgid ""
+"Within unit tests, there are two categories: tests that need a database, and"
+" those that do not. **If a test does not need a database then don't use "
+"it!**"
+msgstr ""
+"All'interno degli unit test, ci sono due categorie: test che necessitano di "
+"un database e quelli che non ne hanno bisogno. **Se un test non ha bisogno "
+"di un database, non usarlo!**"
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:28
+msgid "Without a Database"
+msgstr "Senza un database"
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:56
+msgid ""
+"You may have noted, that in the test-function there is actually no data. "
+"There's a dataProvider-function stated in the comment, which is used for the"
+" test. The test is then run with every array in the dataProvider array, "
+"having the values as parameters for the test-function-call."
+msgstr ""
+"Potresti aver notato che nella funzione di test non ci sono effettivamente "
+"dati. C'è una funzione dataProvider indicata nel commento, che viene usata "
+"per il test. Il test viene quindi eseguito con ogni array nell'array "
+"dataProvider, avendo i valori come parametri per la chiamata alla funzione "
+"di test."
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:62
+msgid "Using a Database"
+msgstr "Usare un database"
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:122
+msgid "Most important to know for db-tests is:"
+msgstr "La cosa più importante da sapere per i test sul database è:"
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:124
+msgid "All data from the database is truncated first."
+msgstr "Tutti i dati del database vengono prima troncati."
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:125
+msgid ""
+"The data from the getDataSet function is loaded into the database. **No data"
+" from any other test is available!**"
+msgstr ""
+"I dati dalla funzione getDataSet vengono caricati nel database. **Non sono "
+"disponibili dati provenienti da nessun altro test!**"
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:126
+msgid ""
+"If you use a table that has a column which has no default value specified "
+"(such as text columns), be sure to specify them. (see `PHPBB3-10667 "
+"<http://tracker.phpbb.com/browse/PHPBB3-10667>`_)"
+msgstr ""
+"Se usi una tabella che ha una colonna senza un valore predefinito "
+"specificato (come le colonne di testo), assicurati di specificarli. (vedi "
+"`PHPBB3-10667 <http://tracker.phpbb.com/browse/PHPBB3-10667>`_)"
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:129
+msgid "Code of a DB-DataSet"
+msgstr "Codice di un DB-DataSet"
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:151
+msgid "Using permissions ($auth)"
+msgstr "Usare i permessi ($auth)"
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:153
+msgid ""
+"When you need to use the auth class, you should use a mock object for it. "
+"Here is a short example of how to use it. Please note, that you need to "
+"specify the result for every function and all values you use. Also when the "
+"forum_id is not casted to int, you need to specify a second row for each "
+"permission. (Marked with ``// Called without int cast`` below) For more "
+"information how these test doubles work, see: "
+"`<https://phpunit.de/manual/current/en/test-doubles.html>`_"
+msgstr ""
+"Quando hai bisogno di usare la classe auth, dovresti usare un mock object "
+"per essa. Ecco un breve esempio di come usarlo. Nota che devi specificare il"
+" risultato per ogni funzione e tutti i valori che usi. Inoltre, quando "
+"forum_id non viene convertito in int, devi specificare una seconda riga per "
+"ogni permesso. (Contrassegnata con ``// Called without int cast`` sotto) Per"
+" maggiori informazioni su come funzionano questi test double, vedi: "
+"`<https://phpunit.de/manual/current/en/test-doubles.html>`_"

@@ -1,6 +1,9 @@
 {
   "languages": {
     "da": {
+      "development": {
+        "commit": "9f7baf60ee4ef65b967a815f5b6ccde8ffe38caf"
+      },
       "documentation": {
         "commit": "d848ba6b9afb76043702533f1b3a027114d71c47"
       }
@@ -24,6 +27,9 @@
       }
     },
     "it": {
+      "development": {
+        "commit": "9f7baf60ee4ef65b967a815f5b6ccde8ffe38caf"
+      },
       "documentation": {
         "commit": "d848ba6b9afb76043702533f1b3a027114d71c47"
       }

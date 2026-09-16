@@ -1,0 +1,203 @@
+# Danish translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:3
+msgid "Module Tool"
+msgstr "Modulværktøj"
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:5
+msgid ""
+"The module tool allows you to add or remove modules in the ucp, mcp, or acp."
+msgstr ""
+"Modulværktøjet giver dig mulighed for at tilføje eller fjerne moduler i UCP,"
+" MCP eller ACP."
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:8
+msgid "Add Module"
+msgstr "Tilføj modul"
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:10
+msgid "Add a new module"
+msgstr "Tilføjer et nyt modul"
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:1
+msgid "Parameter"
+msgstr "Parameter"
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:1
+msgid "Required/Default"
+msgstr "Påkrævet/standard"
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:1
+msgid "Usage"
+msgstr "Anvendelse"
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:1
+msgid "class"
+msgstr "class"
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:1
+msgid "Required"
+msgstr "Påkrævet"
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:1
+msgid "The module class: acp, mcp, or ucp"
+msgstr "Modulklassen: acp, mcp eller ucp"
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:1
+msgid "parent"
+msgstr "parent"
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:1
+msgid "default 0"
+msgstr "standard 0"
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:1
+msgid "The parent module_id or module_langname (0 for no parent)"
+msgstr ""
+"Den overordnede module_id eller module_langname (0 for ingen overordnet)"
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:1
+msgid "data"
+msgstr "data"
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:1
+msgid "default []"
+msgstr "standard []"
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:1
+msgid ""
+"An array of the data on the new module. This can be setup in two different "
+"ways. (see below)"
+msgstr ""
+"Et array med data om det nye modul. Dette kan opsættes på to forskellige "
+"måder. (se nedenfor)"
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:1
+msgid "include_path"
+msgstr "include_path"
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:1
+msgid "default false"
+msgstr "standard false"
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:1
+msgid ""
+"Optionally specify a custom include path (only works when using the "
+"automatic module add method)"
+msgstr ""
+"Angiv valgfrit en brugerdefineret include-sti (fungerer kun ved brug af den "
+"automatiske metode til at tilføje moduler)"
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:26
+#: ../../devdocs-source-copy/migrations/tools/module.rst:124
+msgid "Manually specifying module info"
+msgstr "Manuel angivelse af modulinfo"
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:28
+msgid ""
+"The \"manual\" way for inserting a category or one module at a time. It will"
+" be merged with the base array shown a bit below, but at the very least "
+"requires ``module_langname`` to be sent, and, if you want to create a module"
+" (instead of just a category) you must send ``module_basename`` and "
+"``module_mode``."
+msgstr ""
+"Den \"manuelle\" måde til at indsætte en kategori eller ét modul ad gangen. "
+"Det vil blive fusioneret med basisarrayet vist lidt længere nede, men kræver"
+" mindst, at ``module_langname`` sendes, og hvis du vil oprette et modul (i "
+"stedet for blot en kategori), skal du sende ``module_basename`` og "
+"``module_mode``."
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:47
+#: ../../devdocs-source-copy/migrations/tools/module.rst:130
+msgid "Automatically determining module info"
+msgstr "Automatisk bestemmelse af modulinfo"
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:49
+msgid ""
+"The \"automatic\" way. For inserting multiple modules at a time based on the"
+" specs in the ``_info`` file for the module(s). For this to work the modules"
+" must be correctly setup in the ``_info`` file. An example follows (this "
+"would insert the settings, log, and flag modes from the "
+"``includes/acp/info/acp_asacp.php`` file):"
+msgstr ""
+"Den \"automatiske\" måde. Til at indsætte flere moduler ad gangen baseret på"
+" specifikationerne i ``_info``-filen for modulet/modulerne. For at dette kan"
+" fungere, skal modulerne være korrekt opsat i ``_info``-filen. Et eksempel "
+"følger (dette ville indsætte settings-, log- og flag-tilstandene fra filen "
+"``includes/acp/info/acp_asacp.php``):"
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:62
+msgid ""
+"Optionally you may omit 'modes' and it will insert all of the modules in "
+"that info file."
+msgstr ""
+"Du kan valgfrit udelade 'modes', og så indsættes alle moduler i den info-"
+"fil."
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:66
+#: ../../devdocs-source-copy/migrations/tools/module.rst:139
+msgid "Example"
+msgstr "Eksempel"
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:105
+msgid "Remove Module"
+msgstr "Fjern modul"
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:112
+msgid "Parameters"
+msgstr "Parametre"
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:1
+msgid "module"
+msgstr "module"
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:1
+msgid "default ''"
+msgstr "standard ''"
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:1
+msgid ""
+"The module_id or module_langname of the module to remove (more information "
+"below)"
+msgstr ""
+"module_id eller module_langname for det modul, der skal fjernes (mere "
+"information nedenfor)"
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:126
+msgid ""
+"The \"manual\" way. When removing the module using the manual method you may"
+" specify a string (module_langname) or an integer (module_id)"
+msgstr ""
+"Den \"manuelle\" måde. Når du fjerner modulet med den manuelle metode, kan "
+"du angive en streng (module_langname) eller et heltal (module_id)"
+
+#: ../../devdocs-source-copy/migrations/tools/module.rst:132
+msgid ""
+"The \"automatic\" way. When removing the module using the automatic method "
+"you may use the same information sent through the $data array when using the"
+" automatic method of the module_add function. Just as with the automatic add"
+" method, this will automatically find the modules listed according to the "
+"given module_basename and modes from the _info file."
+msgstr ""
+"Den \"automatiske\" måde. Når du fjerner modulet med den automatiske metode,"
+" kan du bruge de samme oplysninger, der sendes gennem arrayet $data, når du "
+"bruger den automatiske metode af funktionen module_add. Ligesom med den "
+"automatiske tilføjelsesmetode vil dette automatisk finde de moduler, der er "
+"angivet i henhold til det givne module_basename og modes fra _info-filen."

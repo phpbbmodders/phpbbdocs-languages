@@ -1,0 +1,124 @@
+# Italian translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/migrations/index.rst:3
+msgid "Migrations"
+msgstr "Migrazioni"
+
+#: ../../devdocs-source-copy/migrations/index.rst:5
+msgid ""
+"Beginning with phpBB 3.1, database updating is performed using Migrations."
+msgstr ""
+"A partire da phpBB 3.1, l'aggiornamento del database viene eseguito tramite "
+"le migrazioni."
+
+#: ../../devdocs-source-copy/migrations/index.rst:7
+msgid ""
+"Migrations was built because of the difficulties of distributed development "
+"and maintaining an updated database setup across all developers."
+msgstr ""
+"Le migrazioni sono state create a causa delle difficoltà dello sviluppo "
+"distribuito e del mantenimento di una configurazione del database aggiornata"
+" tra tutti gli sviluppatori."
+
+#: ../../devdocs-source-copy/migrations/index.rst:10
+msgid ""
+"RFC Topic if you're interested in the reasons: "
+"`<http://area51.phpbb.com/phpBB/viewtopic.php?t=41337>`_"
+msgstr ""
+"Discussione RFC se sei interessato alle motivazioni: "
+"`<http://area51.phpbb.com/phpBB/viewtopic.php?t=41337>`_"
+
+#: ../../devdocs-source-copy/migrations/index.rst:24
+msgid "What do Migrations mean for me?"
+msgstr "Cosa significano le migrazioni per te?"
+
+#: ../../devdocs-source-copy/migrations/index.rst:27
+msgid "As a user"
+msgstr "Come utente"
+
+#: ../../devdocs-source-copy/migrations/index.rst:29
+msgid ""
+"Migrations do not affect using phpBB, only writing code for it, so "
+"Administrators do not have to do anything differently."
+msgstr ""
+"Le migrazioni non influiscono sull'uso di phpBB, ma solo sulla scrittura del"
+" codice per esso, quindi gli amministratori non devono fare nulla di "
+"diverso."
+
+#: ../../devdocs-source-copy/migrations/index.rst:32
+msgid ""
+"Database updates between versions of phpBB and Extension updates will be "
+"safer and, in the unlikely event something happens during database changes, "
+"much easier to debug and correct."
+msgstr ""
+"Gli aggiornamenti del database tra le versioni di phpBB e gli aggiornamenti "
+"delle estensioni saranno più sicuri e, nell'improbabile caso in cui accada "
+"qualcosa durante le modifiche al database, molto più facili da diagnosticare"
+" e correggere."
+
+#: ../../devdocs-source-copy/migrations/index.rst:37
+msgid "As an Extension author"
+msgstr "Come autore di un'estensione"
+
+#: ../../devdocs-source-copy/migrations/index.rst:39
+msgid ""
+"Functionality (similar to UMIL for phpBB 3.0) built into phpBB for easier "
+"management of database changes between versions and helpful tools to assist "
+"making database changes."
+msgstr ""
+"Funzionalità (simile a UMIL per phpBB 3.0) integrata in phpBB per facilitare"
+" la gestione delle modifiche al database tra le versioni, con strumenti "
+"utili per assistere nelle modifiche al database."
+
+#: ../../devdocs-source-copy/migrations/index.rst:44
+msgid "As a Developer"
+msgstr "Come sviluppatore"
+
+#: ../../devdocs-source-copy/migrations/index.rst:46
+msgid ""
+"Easier collaboration with others, less time spent managing database changes "
+"between different branches and pull requests."
+msgstr ""
+"Collaborazione più semplice con altri, meno tempo speso a gestire le "
+"modifiche al database tra branch e pull request diversi."
+
+#: ../../devdocs-source-copy/migrations/index.rst:50
+msgid "How do I use Migrations?"
+msgstr "Come si usano le migrazioni?"
+
+#: ../../devdocs-source-copy/migrations/index.rst:53
+msgid "Getting started with Migrations"
+msgstr "Iniziare con le migrazioni"
+
+#: ../../devdocs-source-copy/migrations/index.rst:55
+msgid "How to create a basic Migration file :doc:`getting_started`"
+msgstr "Come creare un file di migrazione di base :doc:`getting_started`"
+
+#: ../../devdocs-source-copy/migrations/index.rst:59
+msgid "Migration Helpers"
+msgstr "Helper di migrazione"
+
+#: ../../devdocs-source-copy/migrations/index.rst:61
+msgid ""
+"How to use Migration helpers to perform basic database changes "
+":doc:`tools/index`"
+msgstr ""
+"Come usare gli helper di migrazione per eseguire modifiche di base al "
+"database :doc:`tools/index`"

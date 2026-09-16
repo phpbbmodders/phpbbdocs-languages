@@ -1,0 +1,214 @@
+# Italian translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/extensions/tutorial_authentication.rst:3
+msgid "Tutorial: Authentication"
+msgstr "Tutorial: autenticazione"
+
+#: ../../devdocs-source-copy/extensions/tutorial_authentication.rst:6
+msgid "Introduction"
+msgstr "Introduzione"
+
+#: ../../devdocs-source-copy/extensions/tutorial_authentication.rst:8
+msgid ""
+"phpBB 3.1 introduced built-in authentication plugins which you can extend or"
+" create your own."
+msgstr ""
+"phpBB 3.1 ha introdotto plugin di autenticazione integrati che puoi "
+"estendere o crearne di tuoi."
+
+#: ../../devdocs-source-copy/extensions/tutorial_authentication.rst:11
+msgid "This tutorial explains:"
+msgstr "Questo tutorial spiega:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_authentication.rst:13
+msgid "`Authentication Providers`_"
+msgstr "`Authentication Providers`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_authentication.rst:14
+msgid "`OAuth Providers`_"
+msgstr "`OAuth Providers`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_authentication.rst:17
+msgid "Authentication Providers"
+msgstr "Authentication Providers"
+
+#: ../../devdocs-source-copy/extensions/tutorial_authentication.rst:18
+msgid ""
+"phpBB 3.1 introduced support for external authentication plugins that may be"
+" used in place of the built-in authentication providers. Only one provider "
+"may currently be active at a time and the active one is chosen from the ACP."
+msgstr ""
+"phpBB 3.1 ha introdotto il supporto per plugin di autenticazione esterni che"
+" possono essere usati al posto dei provider di autenticazione integrati. "
+"Attualmente può essere attivo solo un provider alla volta e quello attivo "
+"viene scelto dall'ACP."
+
+#: ../../devdocs-source-copy/extensions/tutorial_authentication.rst:23
+msgid "Creating an Authentication Provider"
+msgstr "Creazione di un provider di autenticazione"
+
+#: ../../devdocs-source-copy/extensions/tutorial_authentication.rst:24
+msgid ""
+"Authentication providers in phpBB require a minimum of two files: a PHP "
+"class and a YAML service file."
+msgstr ""
+"I provider di autenticazione in phpBB richiedono almeno due file: una classe"
+" PHP e un file di servizio YAML."
+
+#: ../../devdocs-source-copy/extensions/tutorial_authentication.rst:28
+msgid "The class file"
+msgstr "Il file della classe"
+
+#: ../../devdocs-source-copy/extensions/tutorial_authentication.rst:29
+msgid ""
+"The provider class must implement the "
+"``\\phpbb\\auth\\provider\\provider_interface`` in order to ensure proper "
+"functionality. However, it is recommended to extend "
+"``\\phpbb\\auth\\provider\\base`` so as to not implement unneeded methods "
+"and to ensure that the provider will not break due to an update to the "
+"interface. An example authentication provider class is show below:"
+msgstr ""
+"La classe del provider deve implementare "
+"``\\phpbb\\auth\\provider\\provider_interface`` per garantire il corretto "
+"funzionamento. Si raccomanda tuttavia di estendere "
+"``\\phpbb\\auth\\provider\\base``, in modo da non implementare metodi non "
+"necessari e da garantire che il provider non si rompa a causa di un "
+"aggiornamento dell'interfaccia. Un esempio di classe provider di "
+"autenticazione è mostrato di seguito:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_authentication.rst:108
+msgid "The service file"
+msgstr "Il file di servizio"
+
+#: ../../devdocs-source-copy/extensions/tutorial_authentication.rst:109
+msgid ""
+"For proper :ref:`dependency injection <dependency-injection>` the provider "
+"must be added to ``services.yml``. The name of the service must be in the "
+"form of ``auth.provider.<service name>`` in order for phpBB to register it. "
+"The arguments are those of the provider's constructor and may be empty if no"
+" arguments are necessary. The provider must be tagged with ``{ name: "
+"auth.provider }`` in order for the class to be made available in phpBB."
+msgstr ""
+"Per una corretta :ref:`dependency injection <dependency-injection>`, il "
+"provider deve essere aggiunto a ``services.yml``. Il nome del servizio deve "
+"avere la forma ``auth.provider.<service name>`` affinché phpBB possa "
+"registrarlo. Gli argomenti sono quelli del costruttore del provider e "
+"possono essere vuoti se non sono necessari argomenti. Il provider deve "
+"essere taggato con ``{ name: auth.provider }`` affinché la classe sia resa "
+"disponibile in phpBB."
+
+#: ../../devdocs-source-copy/extensions/tutorial_authentication.rst:127
+msgid "The template file"
+msgstr "Il file di modello"
+
+#: ../../devdocs-source-copy/extensions/tutorial_authentication.rst:128
+msgid ""
+"Following the above steps renders the authentication provider visible in the"
+" ACP. However, to allow an admin to configure your plugin the available "
+"fields need to be created in order to reach the configuration from the php-"
+"auth-provider plugin. This interface is configured in HTML format in "
+"``adm/style/auth_provider_<providername>.html``."
+msgstr ""
+"Seguendo i passaggi sopra, il provider di autenticazione diventa visibile "
+"nell'ACP. Tuttavia, per permettere a un amministratore di configurare il tuo"
+" plugin, è necessario creare i campi disponibili per raggiungere la "
+"configurazione dal plugin php-auth-provider. Questa interfaccia viene "
+"configurata in formato HTML in "
+"``adm/style/auth_provider_<providername>.html``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_authentication.rst:133
+msgid ""
+"For example, the sample below is based on existing LDAP terms used to "
+"configure an HTTPS server:"
+msgstr ""
+"Ad esempio, l'esempio seguente si basa su termini LDAP esistenti usati per "
+"configurare un server HTTPS:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_authentication.rst:145
+msgid ""
+"This value can then be retrieved from the ``<provider>.php`` file like this:"
+msgstr ""
+"Questo valore può quindi essere recuperato dal file ``<provider>.php`` in "
+"questo modo:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_authentication.rst:152
+msgid "OAuth Providers"
+msgstr "Provider OAuth"
+
+#: ../../devdocs-source-copy/extensions/tutorial_authentication.rst:153
+msgid ""
+"phpBB 3.1 ships with a new authentication provider: OAuth. This provider is "
+"based on the `Lusitanian/PHPoAuthLib "
+"<https://github.com/Lusitanian/PHPoAuthLib>`_ library."
+msgstr ""
+"phpBB 3.1 viene fornito con un nuovo provider di autenticazione: OAuth. "
+"Questo provider si basa sulla libreria `Lusitanian/PHPoAuthLib "
+"<https://github.com/Lusitanian/PHPoAuthLib>`_."
+
+#: ../../devdocs-source-copy/extensions/tutorial_authentication.rst:158
+msgid "Enabling an OAuth Provider"
+msgstr "Abilitazione di un provider OAuth"
+
+#: ../../devdocs-source-copy/extensions/tutorial_authentication.rst:159
+msgid ""
+"To enable a new OAuth service in phpBB you need only create two files in "
+"your extension. The class file which defines functionality necessary for "
+"phpBB to get the data it needs from the service, and the service file which "
+"allows phpBB to find the class. To find out how you should most likely make "
+"calls to the OAuh service, it is recommended that you refer to the included "
+"OAuth services and to the examples provided by `Lusitanian/PHPoAuthLib "
+"<https://github.com/Lusitanian/PHPoAuthLib>`_."
+msgstr ""
+"Per abilitare un nuovo servizio OAuth in phpBB, devi solo creare due file "
+"nella tua estensione. Il file della classe, che definisce la funzionalità "
+"necessaria affinché phpBB ottenga i dati di cui ha bisogno dal servizio, e "
+"il file di servizio, che permette a phpBB di trovare la classe. Per scoprire"
+" come dovresti molto probabilmente effettuare chiamate al servizio OAuth, si"
+" raccomanda di fare riferimento ai servizi OAuth inclusi e agli esempi "
+"forniti da `Lusitanian/PHPoAuthLib "
+"<https://github.com/Lusitanian/PHPoAuthLib>`_."
+
+#: ../../devdocs-source-copy/extensions/tutorial_authentication.rst:167
+msgid ""
+"The example files below show the minimum needed to enable an OAuth service "
+"in phpBB. They are copies of the bitly service implementation from phpBB3's "
+"develop branch."
+msgstr ""
+"I file di esempio sotto mostrano il minimo necessario per abilitare un "
+"servizio OAuth in phpBB. Sono copie dell'implementazione del servizio bitly "
+"dal branch develop di phpBB3."
+
+#: ../../devdocs-source-copy/extensions/tutorial_authentication.rst:172
+msgid "The Class file"
+msgstr "Il file della classe"
+
+#: ../../devdocs-source-copy/extensions/tutorial_authentication.rst:271
+msgid "The Service File"
+msgstr "Il file di servizio"
+
+#: ../../devdocs-source-copy/extensions/tutorial_authentication.rst:273
+msgid ""
+"In the service file, the name of the service must be in the form of "
+"``auth.provider.oauth.service.<service name>`` in order for phpBB to "
+"properly recognise it."
+msgstr ""
+"Nel file di servizio, il nome del servizio deve avere la forma "
+"``auth.provider.oauth.service.<service name>`` affinché phpBB lo riconosca "
+"correttamente."

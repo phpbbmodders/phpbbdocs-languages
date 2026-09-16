@@ -1,0 +1,912 @@
+# Danish translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:3
+msgid "What's New for phpBB 3.2"
+msgstr "Hvad er nyt i phpBB 3.2"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:6
+msgid "Introduction"
+msgstr "Introduktion"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:8
+msgid ""
+"phpBB 3.2 (Rhea) introduces many new and updated components that extensions "
+"can take advantage of. Some of these changes may require extensions to make "
+"updates to maintain compatibility with phpBB 3.2 (some changes provide a "
+"layer of backwards compatibility with 3.1). Extension authors should review "
+"the changes documented below to see how their extensions may be affected."
+msgstr ""
+"phpBB 3.2 (Rhea) introducerer mange nye og opdaterede komponenter, som "
+"udvidelser kan gøre brug af. Nogle af disse ændringer kan kræve, at "
+"udvidelser foretager opdateringer for at bevare kompatibiliteten med phpBB "
+"3.2 (nogle ændringer giver et lag af bagudkompatibilitet med 3.1). "
+"Udvidelsesforfattere bør gennemgå de ændringer, der er dokumenteret "
+"nedenfor, for at se, hvordan deres udvidelser kan blive påvirket."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:10
+msgid "This documentation explains:"
+msgstr "Denne dokumentation forklarer:"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:12
+msgid "`New Language Object`_"
+msgstr "`Nyt Language-objekt`_"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:13
+msgid "`New BBCode Engine`_"
+msgstr "`Ny BBCode-motor`_"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:14
+msgid "`New Text Reparser`_"
+msgstr "`Ny Text Reparser`_"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:15
+msgid "`New File Uploader`_"
+msgstr "`Ny filupload`_"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:16
+msgid "`New Font Awesome Icons`_"
+msgstr "`Nye Font Awesome-ikoner`_"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:17
+msgid "`Updated Notifications`_"
+msgstr "`Opdaterede notifikationer`_"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:18
+msgid "`Updated Twig Syntax`_"
+msgstr "`Opdateret Twig-syntaks`_"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:19
+msgid "`Updated Symfony Services`_"
+msgstr "`Opdaterede Symfony-services`_"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:20
+msgid "`Updated INCLUDECSS`_"
+msgstr "`Opdateret INCLUDECSS`_"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:21
+msgid "`Additional Helpers`_"
+msgstr "`Yderligere hjælpeklasser`_"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:24
+msgid "New Language Object"
+msgstr "Nyt Language-objekt"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:27
+msgid ""
+"The following applies to phpBB 3.2 and later versions. If you must maintain "
+"backwards compatibility with phpBB 3.1, continue using the deprecated "
+"language methods from the User object."
+msgstr ""
+"Følgende gælder for phpBB 3.2 og senere versioner. Hvis du skal bevare "
+"bagudkompatibilitet med phpBB 3.1, skal du fortsætte med at bruge de "
+"forældede sprogmetoder fra User-objektet."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:29
+msgid ""
+"A new Language object has been introduced that decouples language functions "
+"from the User object. That is to say, the following language functions now "
+"belong to the ``\\phpbb\\language\\language`` class:"
+msgstr ""
+"Et nyt Language-objekt er blevet introduceret, som adskiller sprogfunktioner"
+" fra User-objektet. Det vil sige, at følgende sprogfunktioner nu hører til "
+"klassen ``\\phpbb\\language\\language``:"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:1
+msgid "Function"
+msgstr "Funktion"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:1
+msgid "Description"
+msgstr "Beskrivelse"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:1
+msgid "``lang``"
+msgstr "``lang``"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:1
+msgid "Advanced language substitution."
+msgstr "Avanceret sprogsubstitution."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:1
+msgid "``add_lang``"
+msgstr "``add_lang``"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:1
+msgid "Add Language Items."
+msgstr "Tilføj sprogelementer."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:1
+msgid "``get_plural_form``"
+msgstr "``get_plural_form``"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:1
+msgid "Determine which plural form we should use."
+msgstr "Bestem, hvilken pluralform vi bør bruge."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:1
+msgid "``set_user_language``"
+msgstr "``set_user_language``"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:1
+msgid "Function to set user's language to display."
+msgstr "Funktion til at sætte brugerens visningssprog."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:1
+msgid "``set_default_language``"
+msgstr "``set_default_language``"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:1
+msgid "Function to set the board's default language to display."
+msgstr "Funktion til at sætte forummets standardvisningssprog."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:41
+msgid ""
+"The Language object is available as a service from the DI container, and can"
+" be added to an extension's services as an argument:"
+msgstr ""
+"Language-objektet er tilgængeligt som en service fra DI-containeren og kan "
+"tilføjes til en udvidelses services som et argument:"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:48
+msgid ""
+"Language keys can be translated by calling the ``lang()`` method from the "
+"Language object:"
+msgstr ""
+"Sprognøgler kan oversættes ved at kalde metoden ``lang()`` fra Language-"
+"objektet:"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:54
+msgid ""
+"Language files can be added by calling the ``add_lang()`` method from the "
+"Language object:"
+msgstr ""
+"Sprogfiler kan tilføjes ved at kalde metoden ``add_lang()`` fra Language-"
+"objektet:"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:61
+msgid ""
+"Extension developers should note that the ``add_lang()`` method now supports"
+" adding language files from extensions, replacing the deprecated "
+"``add_lang_ext()`` method from the User object:"
+msgstr ""
+"Udvidelsesudviklere bør bemærke, at metoden ``add_lang()`` nu understøtter "
+"tilføjelse af sprogfiler fra udvidelser og erstatter den forældede metode "
+"``add_lang_ext()`` fra User-objektet:"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:69
+msgid ""
+"Note the argument order of the ``add_lang()`` method. It takes as its first "
+"argument the name of the language file, and the optional second argument is "
+"the packaged name of an extension. This is the reverse order of arguments "
+"that the deprecated ``add_lang_ext()`` from the User object used."
+msgstr ""
+"Bemærk argumentrækkefølgen for metoden ``add_lang()``. Den tager som sit "
+"første argument navnet på sprogfilen, og det valgfrie andet argument er "
+"udvidelsens pakkenavn. Dette er den omvendte rækkefølge af de argumenter, "
+"som den forældede ``add_lang_ext()`` fra User-objektet brugte."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:72
+msgid "New BBCode Engine"
+msgstr "Ny BBCode-motor"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:75
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:140
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:271
+msgid ""
+"The following applies to phpBB 3.2 and later versions. It is not backwards "
+"compatible with phpBB 3.1."
+msgstr ""
+"Følgende gælder for phpBB 3.2 og senere versioner. Det er ikke "
+"bagudkompatibelt med phpBB 3.1."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:77
+msgid ""
+"As of phpBB 3.2, a new and more powerful BBCode formatting engine has been "
+"integrated. The new engine is the third-party `s9e/TextFormatter "
+"<https://github.com/s9e/TextFormatter/>`_ library. Its integration classes "
+"can be found in ``phpBB/phpbb/textformatter``."
+msgstr ""
+"Fra og med phpBB 3.2 er en ny og mere kraftfuld BBCode-formateringsmotor "
+"blevet integreret. Den nye motor er tredjepartsbiblioteket "
+"`s9e/TextFormatter <https://github.com/s9e/TextFormatter/>`_. Dens "
+"integrationsklasser findes i ``phpBB/phpbb/textformatter``."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:79
+msgid ""
+"The new engine has already been equipped with many PHP events making it even"
+" easier than before for extensions to configure BBCodes and BBCode formatted"
+" text. The following are the new PHP events:"
+msgstr ""
+"Den nye motor er allerede blevet udstyret med mange PHP-events, hvilket gør "
+"det endnu nemmere end før for udvidelser at konfigurere BBCodes og BBCode-"
+"formateret tekst. Følgende er de nye PHP-events:"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:1
+msgid "Event"
+msgstr "Event"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:1
+msgid "``core.text_formatter_s9e_configure_before``"
+msgstr "``core.text_formatter_s9e_configure_before``"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:1
+msgid ""
+"Modify the s9e\\TextFormatter configurator before the default settings are "
+"set."
+msgstr ""
+"Ændr s9e\\TextFormatter-configuratoren, før standardindstillingerne sættes."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:1
+msgid "``core.text_formatter_s9e_configure_after``"
+msgstr "``core.text_formatter_s9e_configure_after``"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:1
+msgid ""
+"Modify the s9e\\TextFormatter configurator after the default settings are "
+"set."
+msgstr ""
+"Ændr s9e\\TextFormatter-configuratoren, efter standardindstillingerne er "
+"sat."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:1
+msgid "``core.text_formatter_s9e_parser_setup``"
+msgstr "``core.text_formatter_s9e_parser_setup``"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:1
+msgid ""
+"Configure the parser service, Can be used to: toggle features or BBCodes, "
+"register variables or custom parsers in the s9e\\TextFormatter parser, "
+"configure the s9e\\TextFormatter parser's runtime settings."
+msgstr ""
+"Konfigurer parser-servicen. Kan bruges til at: slå funktioner eller BBCodes "
+"til/fra, registrere variabler eller brugerdefinerede parsere i "
+"s9e\\TextFormatter-parseren, konfigurere s9e\\TextFormatter-parserens "
+"runtime-indstillinger."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:1
+msgid "``core.text_formatter_s9e_parse_before``"
+msgstr "``core.text_formatter_s9e_parse_before``"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:1
+msgid "Modify a text before it is parsed."
+msgstr "Ændr en tekst, før den parses."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:1
+msgid "``core.text_formatter_s9e_parse_after``"
+msgstr "``core.text_formatter_s9e_parse_after``"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:1
+msgid "Modify a parsed text in its XML form."
+msgstr "Ændr en parset tekst i dens XML-form."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:1
+msgid "``core.text_formatter_s9e_renderer_setup``"
+msgstr "``core.text_formatter_s9e_renderer_setup``"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:1
+msgid "Configure the renderer service."
+msgstr "Konfigurer renderer-servicen."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:1
+msgid "``core.text_formatter_s9e_render_before``"
+msgstr "``core.text_formatter_s9e_render_before``"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:1
+msgid "Modify a parsed text before it is rendered."
+msgstr "Ændr en parset tekst, før den rendres."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:1
+msgid "``core.text_formatter_s9e_render_after``"
+msgstr "``core.text_formatter_s9e_render_after``"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:1
+msgid "Modify a rendered text."
+msgstr "Ændr en rendret tekst."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:94
+msgid ""
+"Fortunately, the integration is pretty seamless and most existing extensions"
+" that handle messages processed by the BBCode engine should continue to work"
+" without needing any changes. For example, the following phpBB functions "
+"will continue to work as they did in phpBB 3.1:"
+msgstr ""
+"Heldigvis er integrationen ret gnidningsfri, og de fleste eksisterende "
+"udvidelser, der håndterer beskeder behandlet af BBCode-motoren, bør "
+"fortsætte med at fungere uden behov for ændringer. F.eks. vil følgende "
+"phpBB-funktioner fortsætte med at fungere, som de gjorde i phpBB 3.1:"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:96
+msgid "``decode_message()``"
+msgstr "``decode_message()``"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:97
+msgid "``generate_text_for_display()``"
+msgstr "``generate_text_for_display()``"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:98
+msgid "``generate_text_for_edit()``"
+msgstr "``generate_text_for_edit()``"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:99
+msgid "``generate_text_for_storage()``"
+msgstr "``generate_text_for_storage()``"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:100
+msgid "``strip_bbcode()``"
+msgstr "``strip_bbcode()``"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:102
+msgid "Some simple examples of what can be done with the new library include:"
+msgstr ""
+"Nogle simple eksempler på, hvad der kan gøres med det nye bibliotek, "
+"inkluderer:"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:126
+msgid ""
+"A major change introduced by the new engine is how text (in posts, PMs, "
+"signatures, etc.) is stored. In phpBB 3.1, text is stored as HTML, with "
+"BBCodes and some other features being replaced at rendering time. As of "
+"phpBB 3.2, text is stored as XML and transformed into HTML at rendering "
+"time. phpBB 3.2 has a `New Text Reparser`_ class which will convert all "
+"posts, PMs, signatures, etc. to the new format shortly after updating to 3.2"
+" (this is handled mostly by incremental cron jobs)."
+msgstr ""
+"En stor ændring, som den nye motor introducerer, er, hvordan tekst (i "
+"indlæg, PB'er, signaturer osv.) gemmes. I phpBB 3.1 gemmes tekst som HTML, "
+"hvor BBCodes og nogle andre funktioner erstattes ved rendering. Fra og med "
+"phpBB 3.2 gemmes tekst som XML og transformeres til HTML ved rendering. "
+"phpBB 3.2 har en klasse `New Text Reparser`_, som konverterer alle indlæg, "
+"PB'er, signaturer osv. til det nye format kort tid efter opdatering til 3.2 "
+"(dette håndteres for det meste af inkrementelle cron-jobs)."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:129
+msgid ""
+"Messages stored in the old HTML format will still display as normal, even "
+"before being converted to the new XML format. This ensures a seamless "
+"experience for a board's users."
+msgstr ""
+"Beskeder, der er gemt i det gamle HTML-format, vil stadig vises normalt, "
+"selv før de konverteres til det nye XML-format. Dette sikrer en gnidningsfri"
+" oplevelse for forummets brugere."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:131
+msgid ""
+"Extensions that are storing their own messages with BBCodes and smilies "
+"should consider adding a TextReparser class to ensure their messages are "
+"updated to the new XML format. See `New Text Reparser`_ for more "
+"information."
+msgstr ""
+"Udvidelser, der gemmer deres egne beskeder med BBCodes og smilies, bør "
+"overveje at tilføje en TextReparser-klasse for at sikre, at deres beskeder "
+"opdateres til det nye XML-format. Se `New Text Reparser`_ for flere "
+"oplysninger."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:134
+msgid ""
+"The s9e/TextFormatter library `documentation and cookbook "
+"<https://s9etextformatter.readthedocs.io>`_."
+msgstr ""
+"s9e/TextFormatter-bibliotekets `dokumentation og cookbook "
+"<https://s9etextformatter.readthedocs.io>`_."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:137
+msgid "New Text Reparser"
+msgstr "Ny Text Reparser"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:142
+msgid ""
+"phpBB 3.2 introduces the ``\\phpbb\\textreparser`` class to reparse stored "
+"text in the database. By reparsing, it will rebuild BBCodes, smilies and "
+"other text formatting in posts, private messages, signatures and anywhere "
+"else BBCodes are used."
+msgstr ""
+"phpBB 3.2 introducerer klassen ``\\phpbb\\textreparser`` til at reparse gemt"
+" tekst i databasen. Ved reparsing genopbygges BBCodes, smilies og anden "
+"tekstformatering i indlæg, private beskeder, signaturer og alle andre "
+"steder, hvor BBCodes bruges."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:144
+msgid ""
+"The class was conceived to provide a means to reparse BBCodes into the new "
+"XML storage format introduced by the `New BBCode engine`_. When a board is "
+"updated from 3.1 to 3.2, the reparser is called into service in two ways. "
+"First, migrations are used to reparse some of the smaller database items "
+"(forum descriptions, for example). Second, cron tasks are used to "
+"incrementally reparse the larger database items (posts & PMs)."
+msgstr ""
+"Klassen blev udtænkt til at levere en måde at reparse BBCodes til det nye "
+"XML-lagringsformat, som `New BBCode engine`_ introducerede. Når et forum "
+"opdateres fra 3.1 til 3.2, tages reparseren i brug på to måder. For det "
+"første bruges migreringer til at reparse nogle af de mindre "
+"databaseelementer (f.eks. forumbeskrivelser). For det andet bruges cron-"
+"tasks til inkrementelt at reparse de større databaseelementer (indlæg og "
+"PB'er)."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:146
+msgid ""
+"Extensions that store their own text with BBCodes, smilies, etc. should "
+"consider using the text reparser to ensure they are also updated to the new "
+"XML format. Extensions can extend the text reparser. The minimum that is "
+"required is the ``get_columns()`` method which returns an array mapping the "
+"column names of the table storing text to be reparsed, for example:"
+msgstr ""
+"Udvidelser, der gemmer deres egen tekst med BBCodes, smilies osv., bør "
+"overveje at bruge text reparseren for at sikre, at de også opdateres til det"
+" nye XML-format. Udvidelser kan udvide text reparseren. Det mindste, der "
+"kræves, er metoden ``get_columns()``, som returnerer et array, der mapper "
+"kolonnenavnene for den tabel, der gemmer den tekst, der skal reparses, "
+"f.eks.:"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:167
+msgid ""
+"Notice that the table name has not been identified yet. The table name is "
+"actually defined as an argument in the service definition of the extension's"
+" reparser class:"
+msgstr ""
+"Bemærk, at tabelnavnet endnu ikke er blevet identificeret. Tabelnavnet "
+"defineres faktisk som et argument i servicedefinitionen for udvidelsens "
+"reparser-klasse:"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:179
+msgid ""
+"The next step is to add our reparser to phpBB's cron jobs queue. To do so, "
+"we simply define a cron task service for our reparser in the following way:"
+msgstr ""
+"Det næste trin er at tilføje vores reparser til phpBB's cron-jobkø. For at "
+"gøre dette definerer vi blot en cron-task-service til vores reparser på "
+"følgende måde:"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:197
+msgid ""
+"Notice that the service is using phpBB's reparser cron task class, then uses"
+" the ``calls`` option to include our reparser. Be sure to set the calls "
+"options to your cron and reparser services we just defined."
+msgstr ""
+"Bemærk, at servicen bruger phpBB's reparser-cron-task-klasse og derefter "
+"bruger indstillingen ``calls`` til at inkludere vores reparser. Sørg for at "
+"sætte calls-indstillingerne til de cron- og reparser-services, vi lige har "
+"defineret."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:199
+msgid ""
+"Finally, to complete setting up the cron jobs, we must add two new configs "
+"to the config table using a migration:"
+msgstr ""
+"Endelig, for at fuldføre opsætningen af cron-jobbene, skal vi tilføje to nye"
+" configs til config-tabellen ved hjælp af en migrering:"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:211
+msgid ""
+"Note that these configs are the name of our text_reparser.plugin "
+"``text_reparser.acme_demo_text`` plus ``_cron_interval`` and ``_last_cron``."
+" The ``cron_interval`` should be a value in seconds to wait between jobs, in"
+" this case \"10\", and the ``last_cron`` should always be set to \"0\"."
+msgstr ""
+"Bemærk, at disse configs er navnet på vores text_reparser.plugin "
+"``text_reparser.acme_demo_text`` plus ``_cron_interval`` og ``_last_cron``. "
+"``cron_interval`` bør være en værdi i sekunder, der skal ventes mellem jobs,"
+" i dette tilfælde \"10\", og ``last_cron`` bør altid sættes til \"0\"."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:214
+msgid ""
+"In some cases you may want to run your reparser from a migration. For "
+"example, you need your stored text reparsed immediately during the extension"
+" update and do not want to wait for it to go through the cron task queue."
+msgstr ""
+"I nogle tilfælde vil du måske gerne køre din reparser fra en migrering. Du "
+"har f.eks. brug for, at din gemte tekst reparses med det samme under "
+"udvidelsesopdateringen, og du vil ikke vente på, at den går gennem cron-"
+"task-køen."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:216
+msgid ""
+"If the volume of rows that need to be reparsed is high, it must reparse "
+"incrementally, in chunks, to minimise the risk of a PHP timeout or database "
+"corruption. The following is an example of a custom function in a migration "
+"acting in incremental chunks, processing 50 rows at a time:"
+msgstr ""
+"Hvis mængden af rækker, der skal reparses, er stor, skal den reparse "
+"inkrementelt, i bidder, for at minimere risikoen for en PHP-timeout eller "
+"databasekorruption. Følgende er et eksempel på en brugerdefineret funktion i"
+" en migrering, der arbejder i inkrementelle bidder og behandler 50 rækker ad"
+" gangen:"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:256
+msgid "New File Uploader"
+msgstr "Ny filupload"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:259
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:289
+msgid ""
+"The following is a **required** change for phpBB 3.2 and later versions. It "
+"is not backwards compatible with phpBB 3.1. Extensions making this change "
+"must release a new major version dropping support for 3.1."
+msgstr ""
+"Følgende er en **påkrævet** ændring for phpBB 3.2 og senere versioner. Det "
+"er ikke bagudkompatibelt med phpBB 3.1. Udvidelser, der foretager denne "
+"ændring, skal udgive en ny hovedversion, der dropper understøttelsen af 3.1."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:261
+msgid ""
+"phpBB 3.2 introduces two new classes for uploading files: ``filespec`` and "
+"``upload``. These have been refactored and are based on the previously "
+"available ``filespec`` and ``fileupload`` classes."
+msgstr ""
+"phpBB 3.2 introducerer to nye klasser til upload af filer: ``filespec`` og "
+"``upload``. Disse er blevet refaktoreret og er baseret på de tidligere "
+"tilgængelige klasser ``filespec`` og ``fileupload``."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:263
+msgid ""
+"For information about the new classes, read :doc:`../files/overview` "
+"documentation."
+msgstr ""
+"For oplysninger om de nye klasser, læs dokumentationen "
+":doc:`../files/overview`."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:265
+msgid ""
+"To update an extension to use the new class, read the `Converting uses of "
+"fileupload class <../files/upload.html#converting-uses-of-fileupload-"
+"class>`_ documentation."
+msgstr ""
+"For at opdatere en udvidelse til at bruge den nye klasse, læs "
+"dokumentationen `Converting uses of fileupload class "
+"<../files/upload.html#converting-uses-of-fileupload-class>`_."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:268
+msgid "New Font Awesome Icons"
+msgstr "Nye Font Awesome-ikoner"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:273
+msgid ""
+"phpBB 3.2 includes the Font Awesome toolkit. It is used by the default style"
+" Prosilver, and has replaced almost every gif/png icon with a font icon."
+msgstr ""
+"phpBB 3.2 inkluderer Font Awesome-værktøjskassen. Den bruges af "
+"standardstylet Prosilver og har erstattet næsten alle gif-/png-ikoner med et"
+" fontikon."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:275
+msgid ""
+"The result of this is significant template changes to Prosilver, including "
+"some new CSS classes. Extensions written for phpBB 3.1 that make use of any "
+"of Prosilver's icons may need to be adjusted to be compatible with phpBB "
+"3.2."
+msgstr ""
+"Resultatet af dette er betydelige modelændringer i Prosilver, herunder nogle"
+" nye CSS-klasser. Udvidelser skrevet til phpBB 3.1, som gør brug af nogle af"
+" Prosilvers ikoner, kan have brug for justering for at være kompatible med "
+"phpBB 3.2."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:277
+msgid ""
+"The benefit of the new `Font Awesome icons <https://fontawesome.com>`_ is "
+"they make it easy to improve GUI elements of your extension. For example, if"
+" an extension has a \"Delete\" link or button, you can easily add a nice "
+"little Trash Can icon to the link or button:"
+msgstr ""
+"Fordelen ved de nye `Font Awesome-ikoner <https://fontawesome.com>`_ er, at "
+"de gør det nemt at forbedre GUI-elementer i din udvidelse. Hvis en udvidelse"
+" f.eks. har et \"Delete\"-link eller en \"Delete\"-knap, kan du nemt tilføje"
+" et pænt lille skraldespand-ikon til linket eller knappen:"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:286
+msgid "Updated Notifications"
+msgstr "Opdaterede notifikationer"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:291
+msgid ""
+"Extensions that make use of the phpBB's built-in notification system must "
+"make the following updates to their notification classes, if necessary. The "
+"notable changes have been made to the ``find_users_for_notification()`` and "
+"``create_insert_array()`` methods."
+msgstr ""
+"Udvidelser, der gør brug af phpBB's indbyggede notifikationssystem, skal om "
+"nødvendigt foretage følgende opdateringer af deres notifikationsklasser. De "
+"bemærkelsesværdige ændringer er foretaget i metoderne "
+"``find_users_for_notification()`` og ``create_insert_array()``."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:294
+msgid "find_users_for_notification()"
+msgstr "find_users_for_notification()"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:296
+msgid ""
+"This method must return an array of users who can see the notification. "
+"While it is the extension authors responsibility to determine how to build "
+"this array of users, an example usage in phpBB 3.1 may look like:"
+msgstr ""
+"Denne metode skal returnere et array af brugere, der kan se notifikationen. "
+"Selvom det er udvidelsesforfatterens ansvar at bestemme, hvordan dette array"
+" af brugere skal bygges, kan et eksempel på brug i phpBB 3.1 se sådan ud:"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:314
+msgid ""
+"As of phpBB 3.2 a new helper to get the list of methods enabled by default "
+"is available from the manager class, to assign as the array values in the "
+"user array:"
+msgstr ""
+"Fra og med phpBB 3.2 er en ny hjælpefunktion til at hente listen over "
+"metoder, der er aktiveret som standard, tilgængelig fra manager-klassen, til"
+" at tildeles som array-værdierne i brugerarrayet:"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:333
+msgid ""
+"Notice that we simply replaced the empty ``['']`` value assigned to each "
+"user with the new ``$this->notification_manager->get_default_methods()`` "
+"method call."
+msgstr ""
+"Bemærk, at vi blot erstattede den tomme værdi ``['']``, der var tildelt hver"
+" bruger, med det nye metodekald "
+"``$this->notification_manager->get_default_methods()``."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:336
+msgid "create_insert_array()"
+msgstr "create_insert_array()"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:338
+msgid ""
+"In phpBB 3.1, this method returned an array of data ready to be inserted "
+"into the database from the parent class:"
+msgstr ""
+"I phpBB 3.1 returnerede denne metode et array af data klar til at blive "
+"indsat i databasen fra den overordnede klasse:"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:349
+msgid ""
+"In phpBB 3.2, the data is now added to the the class data property, so it is"
+" no longer necessary to use a ``return``. Just call the method from the "
+"parent class at the end:"
+msgstr ""
+"I phpBB 3.2 tilføjes dataene nu til klassens dataegenskab, så det er ikke "
+"længere nødvendigt at bruge en ``return``. Kald blot metoden fra den "
+"overordnede klasse til sidst:"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:361
+msgid "Updated Twig Syntax"
+msgstr "Opdateret Twig-syntaks"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:364
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:459
+msgid ""
+"The following applies to phpBB 3.2 and later versions. If you must maintain "
+"backwards compatibility with phpBB 3.1, please disregard this section."
+msgstr ""
+"Følgende gælder for phpBB 3.2 og senere versioner. Hvis du skal bevare "
+"bagudkompatibilitet med phpBB 3.1, kan du se bort fra dette afsnit."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:366
+msgid ""
+"If you are already using Twig template syntax, and you have been using loop "
+"structures in your templates, you are probably familiar with the odd usage "
+"of the ``loops`` prefix required in phpBB 3.1:"
+msgstr ""
+"Hvis du allerede bruger Twig-modelsyntaks og har brugt loop-strukturer i "
+"dine modeller, er du sandsynligvis bekendt med den mærkelige brug af "
+"præfikset ``loops``, som var påkrævet i phpBB 3.1:"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:375
+msgid ""
+"As of phpBB 3.2, this requirement has been removed, allowing you to use "
+"natural Twig syntax for looped structures (i.e. the ``loops`` prefix is no "
+"longer needed):"
+msgstr ""
+"Fra og med phpBB 3.2 er dette krav blevet fjernet, hvilket gør det muligt at"
+" bruge naturlig Twig-syntaks til loop-strukturer (dvs. præfikset ``loops`` "
+"er ikke længere nødvendigt):"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:384
+msgid ""
+"If you want to maintain backwards compatibility with phpBB 3.1, you must "
+"continue using the ``loops`` prefix."
+msgstr ""
+"Hvis du vil bevare bagudkompatibilitet med phpBB 3.1, skal du fortsætte med "
+"at bruge præfikset ``loops``."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:387
+msgid "Updated Symfony Services"
+msgstr "Opdaterede Symfony-services"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:389
+msgid ""
+"The following changes are due to deprecations introduced in Symfony 2.8 "
+"(which is used in phpBB 3.2). These deprecations are being removed from "
+"Symfony 3 (which is used in phpBB 3.3)."
+msgstr ""
+"Følgende ændringer skyldes forældelser introduceret i Symfony 2.8 (som "
+"bruges i phpBB 3.2). Disse forældelser fjernes fra Symfony 3 (som bruges i "
+"phpBB 3.3)."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:392
+msgid "Deprecating special characters at the beginning of unquoted strings"
+msgstr "Forældelse af specialtegn i begyndelsen af strenge uden anførselstegn"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:395
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:439
+msgid ""
+"The following is recommended for phpBB 3.1 and later versions. It will be "
+"required from phpBB 3.3 and later."
+msgstr ""
+"Følgende anbefales for phpBB 3.1 og senere versioner. Det bliver påkrævet "
+"fra phpBB 3.3 og senere."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:397
+msgid ""
+"According to Yaml specification, unquoted strings cannot start with ``@``, "
+"``%``, `````, ``|`` or ``>``. You must wrap these strings with single or "
+"double quotes:"
+msgstr ""
+"Ifølge YAML-specifikationen må strenge uden anførselstegn ikke starte med "
+"``@``, ``%``, `````, ``|`` eller ``>``. Du skal omgive disse strenge med "
+"enkelte eller dobbelte anførselstegn:"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:410
+msgid "Deprecating Scopes and Introducing Shared Services"
+msgstr "Forældelse af scopes og introduktion af delte services"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:413
+msgid ""
+"The following is a **required** change for phpBB 3.2 and later versions. It "
+"is not backwards compatible with phpBB 3.1.  Extensions making this change "
+"must release a new major version dropping support for 3.1."
+msgstr ""
+"Følgende er en **påkrævet** ændring for phpBB 3.2 og senere versioner. Det "
+"er ikke bagudkompatibelt med phpBB 3.1. Udvidelser, der foretager denne "
+"ændring, skal udgive en ny hovedversion, der dropper understøttelsen af 3.1."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:415
+msgid ""
+"By default, all services are shared services. This means a class is "
+"instantiated once, and used each time you ask for it from the service "
+"container."
+msgstr ""
+"Som standard er alle services delte services (shared services). Dette "
+"betyder, at en klasse instantieres én gang og bruges, hver gang du beder om "
+"den fra service-containeren."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:417
+msgid ""
+"In some cases, however, it is desired to *unshare* a class, where a new "
+"instance is created each time you ask for the service. An example of this is"
+" the Notifications classes."
+msgstr ""
+"I nogle tilfælde er det dog ønskeligt at *afdele* (unshare) en klasse, hvor "
+"der oprettes en ny instans, hver gang du beder om servicen. Et eksempel på "
+"dette er notifikationsklasserne."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:419
+msgid ""
+"In phpBB 3.1, this was defined in the ``services.yml`` by setting the "
+"``scope`` option to ``prototype``:"
+msgstr ""
+"I phpBB 3.1 blev dette defineret i ``services.yml`` ved at sætte "
+"indstillingen ``scope`` til ``prototype``:"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:427
+msgid ""
+"For phpBB 3.2, instead of ``scope``, service definitions must now configure "
+"a ``shared`` option and set it to ``false`` to get the same result as in the"
+" previous prototype scope:"
+msgstr ""
+"I phpBB 3.2 skal servicedefinitioner nu, i stedet for ``scope``, konfigurere"
+" en indstilling ``shared`` og sætte den til ``false`` for at opnå samme "
+"resultat som i det tidligere prototype-scope:"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:436
+msgid "Deprecating Route Pattern"
+msgstr "Forældelse af route-mønster"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:441
+msgid ""
+"Older versions of Symfony and phpBB have allowed routes to be defined using "
+"the keyword ``pattern``:"
+msgstr ""
+"Ældre versioner af Symfony og phpBB har tilladt, at routes blev defineret "
+"ved hjælp af nøgleordet ``pattern``:"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:448
+msgid ""
+"For phpBB 3.2, route paths must instead be defined using the keyword "
+"``path``:"
+msgstr ""
+"I phpBB 3.2 skal route-stier i stedet defineres ved hjælp af nøgleordet "
+"``path``:"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:456
+msgid "Updated INCLUDECSS"
+msgstr "Opdateret INCLUDECSS"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:461
+msgid ""
+"As of phpBB 3.2, the ``INCLUDECSS`` template tag can now be called from "
+"anywhere in a template, making it just as easy and flexible to implement "
+"from any template event or file as the ``INCLUDEJS`` tag."
+msgstr ""
+"Fra og med phpBB 3.2 kan modeltagget ``INCLUDECSS`` nu kaldes fra hvor som "
+"helst i en model, hvilket gør det lige så nemt og fleksibelt at implementere"
+" fra et hvilket som helst modelevent eller fil som tagget ``INCLUDEJS``."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:463
+msgid ""
+"Previously, in phpBB 3.1, extension's could only use this tag in the "
+"``overall_header_head_append`` template event, or before including "
+"``overall_header.html`` in a custom template file."
+msgstr ""
+"Tidligere, i phpBB 3.1, kunne udvidelser kun bruge dette tag i modeleventet "
+"``overall_header_head_append``, eller før inkludering af "
+"``overall_header.html`` i en brugerdefineret modelfil."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:466
+msgid "Additional Helpers"
+msgstr "Yderligere hjælpeklasser"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:469
+msgid "New Group Helper"
+msgstr "Ny Group Helper"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:471
+msgid ""
+"phpBB 3.2 adds a new helper to simplify the job of displaying user group "
+"names."
+msgstr ""
+"phpBB 3.2 tilføjer en ny hjælpeklasse til at forenkle opgaven med at vise "
+"brugergruppenavne."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:473
+msgid ""
+"In phpBB 3.1, displaying a user group name required verbose code similar to:"
+msgstr ""
+"I phpBB 3.1 krævede visning af et brugergruppenavn omfattende kode i stil "
+"med:"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:480
+msgid ""
+"This is simpler in phpBB 3.2 with the ``get_name()`` method of the "
+"``\\phpbb\\group\\helper\\`` class:"
+msgstr ""
+"Dette er enklere i phpBB 3.2 med metoden ``get_name()`` fra klassen "
+"``\\phpbb\\group\\helper\\``:"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:488
+msgid "BBCode FAQ Controller Route"
+msgstr "BBCode FAQ Controller Route"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:490
+msgid ""
+"phpBB 3.2 now has a built-in routing definition for the BBCode FAQ page. "
+"Linking to this page is common for extensions that have their own BBCode "
+"message editor."
+msgstr ""
+"phpBB 3.2 har nu en indbygget routing-definition til BBCode FAQ-siden. At "
+"linke til denne side er almindeligt for udvidelser, der har deres egen "
+"BBCode-beskedredigering."
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:492
+msgid "In phpBB 3.1, linking to the BBCode FAQ looked like:"
+msgstr "I phpBB 3.1 så det ud til at linke til BBCode FAQ'en sådan:"
+
+#: ../../devdocs-source-copy/extensions/new_in_rhea.rst:499
+msgid ""
+"In phpBB 3.2, linking to the BBCode FAQ can be handled using the routing "
+"system:"
+msgstr ""
+"I phpBB 3.2 kan linking til BBCode FAQ'en håndteres ved hjælp af routing-"
+"systemet:"

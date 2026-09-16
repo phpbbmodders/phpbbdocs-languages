@@ -1,0 +1,583 @@
+# Danish translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/request/request.rst:3
+msgid "Request"
+msgstr "Forespørgsel"
+
+#: ../../devdocs-source-copy/request/request.rst:6
+msgid "Table of Contents"
+msgstr "Indholdsfortegnelse"
+
+#: ../../devdocs-source-copy/request/request.rst:9
+msgid "Introduction"
+msgstr "Introduktion"
+
+#: ../../devdocs-source-copy/request/request.rst:10
+msgid ""
+"The request class contains all request data and provide a clear interface to"
+" interact with that data. Preventing direct access to ``$_GET``, ``$_POST``,"
+" ``$_REQUEST``, et cetera. The request class should be fully backwards "
+"compatible and allow for the complete removal of any super global access."
+msgstr ""
+"Request-klassen indeholder alle forespørgselsdata og giver et klart "
+"interface til at interagere med disse data, hvilket forhindrer direkte "
+"adgang til ``$_GET``, ``$_POST``, ``$_REQUEST`` osv. Request-klassen bør "
+"være fuldt bagudkompatibel og muliggøre en fuldstændig fjernelse af enhver "
+"adgang til super-globaler."
+
+#: ../../devdocs-source-copy/request/request.rst:15
+msgid "Information"
+msgstr "Information"
+
+#: ../../devdocs-source-copy/request/request.rst:0
+msgid "Class"
+msgstr "Klasse"
+
+#: ../../devdocs-source-copy/request/request.rst:17
+msgid ":class:`\\\\phpbb\\\\request\\\\request`"
+msgstr ":class:`\\\\phpbb\\\\request\\\\request`"
+
+#: ../../devdocs-source-copy/request/request.rst:0
+msgid "Interface"
+msgstr "Interface"
+
+#: ../../devdocs-source-copy/request/request.rst:18
+msgid ":class:`\\\\phpbb\\\\request\\\\request_interface`"
+msgstr ":class:`\\\\phpbb\\\\request\\\\request_interface`"
+
+#: ../../devdocs-source-copy/request/request.rst:0
+msgid "Declaration"
+msgstr "Deklaration"
+
+#: ../../devdocs-source-copy/request/request.rst:19
+msgid "``- '@request'``"
+msgstr "``- '@request'``"
+
+#: ../../devdocs-source-copy/request/request.rst:22
+msgid "Super globals"
+msgstr "Super-globaler"
+
+#: ../../devdocs-source-copy/request/request.rst:23
+msgid ""
+"With this request class in place, the usage of `Super globals "
+"<https://www.php.net/manual/en/language.variables.superglobals.php>`_ should"
+" no longer be necessary and when possible avoided. Meaning that there should"
+" be no need to use any of the ``$_GET``, ``$_POST``, ``$_REQUEST``, "
+"``$_COOKIE``, ``$_FILES`` and ``$_SERVER`` variables."
+msgstr ""
+"Med denne request-klasse på plads bør brugen af `super-globaler "
+"<https://www.php.net/manual/en/language.variables.superglobals.php>`_ ikke "
+"længere være nødvendig og bør, hvor det er muligt, undgås. Det betyder, at "
+"der ikke længere skulle være behov for at bruge nogen af variablerne "
+"``$_GET``, ``$_POST``, ``$_REQUEST``, ``$_COOKIE``, ``$_FILES`` og "
+"``$_SERVER``."
+
+#: ../../devdocs-source-copy/request/request.rst:26
+msgid ""
+"The request class provides an additional layer of security for handling "
+"request data and user input. Properly sanitizing the input and casting the "
+"variables to the expected types, such as strings, integers and "
+"(multidimensional) arrays."
+msgstr ""
+"Request-klassen giver et ekstra sikkerhedslag til håndtering af "
+"forespørgselsdata og brugerinput. Den renser korrekt input og caster "
+"variablerne til de forventede typer, såsom strenge, heltal og "
+"(flerdimensionelle) arrays."
+
+#: ../../devdocs-source-copy/request/request.rst:30
+msgid "Functions"
+msgstr "Funktioner"
+
+#: ../../devdocs-source-copy/request/request.rst:31
+msgid ""
+"Below you will find some of the more commonly used functions from the "
+"request class. Each function will have corresponding code samples and a "
+"table explaining the function's parameters."
+msgstr ""
+"Nedenfor finder du nogle af de mere almindeligt brugte funktioner fra "
+"request-klassen. Hver funktion vil have tilhørende kodeeksempler og en "
+"tabel, der forklarer funktionens parametre."
+
+#: ../../devdocs-source-copy/request/request.rst:35
+msgid "is_ajax"
+msgstr "is_ajax"
+
+#: ../../devdocs-source-copy/request/request.rst:36
+msgid ""
+"Checks whether the current request is an AJAX request. Meaning that the "
+"request is made as an XMLHttpRequest. This can be useful for returning "
+"different responses."
+msgstr ""
+"Kontrollerer, om den aktuelle forespørgsel er en AJAX-forespørgsel, dvs. om "
+"den foretages som en XMLHttpRequest. Dette kan være nyttigt til at returnere"
+" forskellige svar."
+
+#: ../../devdocs-source-copy/request/request.rst:40
+msgid "Example of checking for an AJAX request"
+msgstr "Eksempel på kontrol af en AJAX-forespørgsel"
+
+#: ../../devdocs-source-copy/request/request.rst:66
+msgid "is_secure"
+msgstr "is_secure"
+
+#: ../../devdocs-source-copy/request/request.rst:67
+msgid ""
+"Checks if the current request is happening over a secure protocol: HTTPS. "
+"Useful when having to create a protocol prefix for a url or when making API "
+"calls."
+msgstr ""
+"Kontrollerer, om den aktuelle forespørgsel sker over en sikker protokol: "
+"HTTPS. Nyttigt, når man skal oprette et protokolpræfiks til en URL, eller "
+"når man foretager API-kald."
+
+#: ../../devdocs-source-copy/request/request.rst:70
+msgid "Example of checking a secure connection"
+msgstr "Eksempel på kontrol af en sikker forbindelse"
+
+#: ../../devdocs-source-copy/request/request.rst:78
+msgid "is_set"
+msgstr "is_set"
+
+#: ../../devdocs-source-copy/request/request.rst:79
+msgid ""
+"Checks whether a certain variable is set in one of the super global arrays. "
+"Optionally you can specify a specific super global in which the variable "
+"should be set. If no super global is specified, it will default to the "
+"``REQUEST`` super global, which contains ``GET``, ``POST`` and ``COOKIE``."
+msgstr ""
+"Kontrollerer, om en bestemt variabel er sat i et af super-globale-arrayerne."
+" Du kan valgfrit angive en specifik super-global, hvori variablen skal være "
+"sat. Hvis ingen super-global angives, bruges som standard super-globalen "
+"``REQUEST``, som indeholder ``GET``, ``POST`` og ``COOKIE``."
+
+#: ../../devdocs-source-copy/request/request.rst:83
+msgid "Example of checking various super globals"
+msgstr "Eksempel på kontrol af forskellige super-globaler"
+
+#: ../../devdocs-source-copy/request/request.rst:92
+#: ../../devdocs-source-copy/request/request.rst:119
+#: ../../devdocs-source-copy/request/request.rst:206
+#: ../../devdocs-source-copy/request/request.rst:237
+#: ../../devdocs-source-copy/request/request.rst:266
+#: ../../devdocs-source-copy/request/request.rst:292
+#: ../../devdocs-source-copy/request/request.rst:332
+#: ../../devdocs-source-copy/request/request.rst:379
+#: ../../devdocs-source-copy/request/request.rst:417
+msgid "Parameters"
+msgstr "Parametre"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid "Parameter"
+msgstr "Parameter"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid "Description"
+msgstr "Beskrivelse"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid "**variable**"
+msgstr "**variable**"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid "The name of the variable to check"
+msgstr "Navnet på den variabel, der skal kontrolleres"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid "**super_global**"
+msgstr "**super_global**"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid ""
+"The super global to check within for the variable. |br| Can be any of "
+"``GET|POST|REQUEST|COOKIE|SERVER|FILES``. |br| Defaults to ``REQUEST``."
+msgstr ""
+"Den super-global, hvori variablen skal kontrolleres. |br| Kan være en af "
+"``GET|POST|REQUEST|COOKIE|SERVER|FILES``. |br| ``REQUEST`` som standard."
+
+#: ../../devdocs-source-copy/request/request.rst:102
+msgid "is_set_post"
+msgstr "is_set_post"
+
+#: ../../devdocs-source-copy/request/request.rst:103
+msgid ""
+"Checks whether a certain variable was sent via a ``POST`` request. To make "
+"sure that a request was sent using ``POST`` you should call this function on"
+" at least one variable. This is a short hand for "
+"``$request->variable('variable', "
+"\\phpbb\\request\\request_interface::POST);``."
+msgstr ""
+"Kontrollerer, om en bestemt variabel blev sendt via en "
+"``POST``-forespørgsel. For at sikre dig, at en forespørgsel blev sendt med "
+"``POST``, bør du kalde denne funktion på mindst én variabel. Dette er en "
+"forkortelse for ``$request->variable('variable', "
+"\\phpbb\\request\\request_interface::POST);``."
+
+#: ../../devdocs-source-copy/request/request.rst:107
+msgid "Example of checking POST variables"
+msgstr "Eksempel på kontrol af POST-variabler"
+
+#: ../../devdocs-source-copy/request/request.rst:128
+msgid "variable"
+msgstr "variable"
+
+#: ../../devdocs-source-copy/request/request.rst:129
+msgid ""
+"This is the central function for handling any input. All variables in "
+"``GET`` or ``POST`` requests should be retrieved through this function to "
+"maximise security."
+msgstr ""
+"Dette er den centrale funktion til håndtering af al input. Alle variabler i "
+"``GET``- eller ``POST``-forespørgsler bør hentes via denne funktion for at "
+"maksimere sikkerheden."
+
+#: ../../devdocs-source-copy/request/request.rst:132
+msgid ""
+"The variable name should be the value of HTML input's name attribute to "
+"retrieve. So for ``<input name=\"subject\" type=\"text\">`` the variable "
+"name is ``subject``."
+msgstr ""
+"Variabelnavnet bør være værdien af HTML-input'ets name-attribut, der skal "
+"hentes. Så for ``<input name=\"subject\" type=\"text\">`` er variabelnavnet "
+"``subject``."
+
+#: ../../devdocs-source-copy/request/request.rst:135
+msgid ""
+"The default value should be of the exact same type of the expected input. "
+"This is necessary, as the retrieved variables are type casted to the exact "
+"same type. If no variable was available in the request, it will return the "
+"provided default value."
+msgstr ""
+"Standardværdien bør være af nøjagtig samme type som det forventede input. "
+"Dette er nødvendigt, da de hentede variabler castes til nøjagtig samme type."
+" Hvis ingen variabel var tilgængelig i forespørgslen, returneres den angivne"
+" standardværdi."
+
+#: ../../devdocs-source-copy/request/request.rst:139
+msgid ""
+"When the value that is being requested is a string or an array containing "
+"strings, the ``multibyte`` parameter should be set to ``true``. Or better "
+"said, whenever the requested value may contain any UTF-8 characters. Meaning"
+" you will not have to run the returned value through ``utf8_normalize_nfc``."
+" If set to ``false``, it will cause all bytes outside the ASCII range "
+"*(0-127)* to be replaced with question marks."
+msgstr ""
+"Når den værdi, der forespørges, er en streng eller et array indeholdende "
+"strenge, bør parameteren ``multibyte`` sættes til ``true``. Eller mere "
+"præcist, når den forespurgte værdi kan indeholde UTF-8-tegn. Det betyder, at"
+" du ikke behøver at sende den returnerede værdi gennem "
+"``utf8_normalize_nfc``. Hvis den sættes til ``false``, vil alle bytes uden "
+"for ASCII-området *(0-127)* blive erstattet med spørgsmålstegn."
+
+#: ../../devdocs-source-copy/request/request.rst:144
+msgid "Example of default usage"
+msgstr "Eksempel på standardanvendelse"
+
+#: ../../devdocs-source-copy/request/request.rst:156
+msgid ""
+"It is also possible to specify from which super global the variable should "
+"be retrieved. This can help ensuring the correct variable is returned or the"
+" form is submitted through the expected manner."
+msgstr ""
+"Det er også muligt at angive, fra hvilken super-global variablen skal "
+"hentes. Dette kan hjælpe med at sikre, at den korrekte variabel returneres, "
+"eller at formularen indsendes på den forventede måde."
+
+#: ../../devdocs-source-copy/request/request.rst:159
+msgid "Example of specifying a super global"
+msgstr "Eksempel på angivelse af en super-global"
+
+#: ../../devdocs-source-copy/request/request.rst:166
+msgid ""
+"If the default value is an array, it is possible to nest it as deeply as is "
+"required. There are no limitations for the nested depth."
+msgstr ""
+"Hvis standardværdien er et array, er det muligt at indlejre det så dybt som "
+"nødvendigt. Der er ingen begrænsning for indlejringsdybden."
+
+#: ../../devdocs-source-copy/request/request.rst:169
+msgid "Example of nesting arrays for default value"
+msgstr "Eksempel på indlejring af arrays som standardværdi"
+
+#: ../../devdocs-source-copy/request/request.rst:178
+msgid ""
+"An additional capability is the path syntax. This allows you to access a "
+"single value at a deep location (nested input) while making sure the types "
+"are still correct. This can be achieved by passing an array as the variable "
+"name. Each value in this array represent a key for the request array. The "
+"nesting increased with each value provided."
+msgstr ""
+"En yderligere funktion er stisyntaksen. Denne giver dig mulighed for at "
+"tilgå en enkelt værdi på en dyb placering (indlejret input), samtidig med at"
+" typerne stadig er korrekte. Dette kan opnås ved at sende et array som "
+"variabelnavnet. Hver værdi i dette array repræsenterer en nøgle i "
+"forespørgselsarrayet. Indlejringen øges med hver angivet værdi."
+
+#: ../../devdocs-source-copy/request/request.rst:184
+msgid "Example of the path syntax"
+msgstr "Eksempel på stisyntaksen"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid "The name of the variable to retrieve"
+msgstr "Navnet på den variabel, der skal hentes"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid "**default**"
+msgstr "**default**"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid "The default value with the correct variable type"
+msgstr "Standardværdien med den korrekte variabeltype"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid "**multibyte**"
+msgstr "**multibyte**"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid "Whether or not the variable may contain any UTF-8 characters"
+msgstr "Om variablen kan indeholde UTF-8-tegn eller ej"
+
+#: ../../devdocs-source-copy/request/request.rst:218
+msgid "file"
+msgstr "file"
+
+#: ../../devdocs-source-copy/request/request.rst:219
+msgid ""
+"This function is a shortcut to retrieve ``FILES`` variables. It returns the "
+"uploaded file's information, or an empty array if the variable does not "
+"exist in ``$_FILES``. This is a short hand for "
+"``$request->variable('variable', ['name' => 'none'], true, "
+"\\phpbb\\request\\request_interface::FILES)``"
+msgstr ""
+"Denne funktion er en genvej til at hente ``FILES``-variabler. Den returnerer"
+" information om den uploadede fil, eller et tomt array, hvis variablen ikke "
+"findes i ``$_FILES``. Dette er en forkortelse for "
+"``$request->variable('variable', ['name' => 'none'], true, "
+"\\phpbb\\request\\request_interface::FILES)``"
+
+#: ../../devdocs-source-copy/request/request.rst:223
+msgid ""
+"The variable name should be the value of HTML input's name attribute to "
+"retrieve. So for ``<input name=\"attachment\" type=\"file\">`` the variable "
+"name is ``attachment``."
+msgstr ""
+"Variabelnavnet bør være værdien af HTML-input'ets name-attribut, der skal "
+"hentes. Så for ``<input name=\"attachment\" type=\"file\">`` er "
+"variabelnavnet ``attachment``."
+
+#: ../../devdocs-source-copy/request/request.rst:226
+msgid "Example of retrieving a file"
+msgstr "Eksempel på hentning af en fil"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid "The name of the HTML file input's name attribute"
+msgstr "Navnet på HTML file input'ets name-attribut"
+
+#: ../../devdocs-source-copy/request/request.rst:246
+msgid "header"
+msgstr "header"
+
+#: ../../devdocs-source-copy/request/request.rst:247
+msgid ""
+"This function is a shortcut to retrieve the value of the client's HTTP "
+"headers."
+msgstr ""
+"Denne funktion er en genvej til at hente værdien af klientens HTTP-headere."
+
+#: ../../devdocs-source-copy/request/request.rst:249
+msgid "Example of retrieving headers"
+msgstr "Eksempel på hentning af headere"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid "The name of the header to retrieve"
+msgstr "Navnet på den header, der skal hentes"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid ""
+"The default value with the correct variable type |br| Defaults to an empty "
+"string: ``''``"
+msgstr ""
+"Standardværdien med den korrekte variabeltype |br| En tom streng som "
+"standard: ``''``"
+
+#: ../../devdocs-source-copy/request/request.rst:276
+msgid "server"
+msgstr "server"
+
+#: ../../devdocs-source-copy/request/request.rst:277
+msgid ""
+"This function is a shortcut to retrieve ``SERVER`` variables. It also "
+"provides a fallback to ``getenv()`` as some CGI setups may need it."
+msgstr ""
+"Denne funktion er en genvej til at hente ``SERVER``-variabler. Den giver "
+"også et fallback til ``getenv()``, da nogle CGI-opsætninger kan have brug "
+"for det."
+
+#: ../../devdocs-source-copy/request/request.rst:280
+msgid "Example of retrieving SERVER variables"
+msgstr "Eksempel på hentning af SERVER-variabler"
+
+#: ../../devdocs-source-copy/request/request.rst:302
+msgid "overwrite"
+msgstr "overwrite"
+
+#: ../../devdocs-source-copy/request/request.rst:303
+msgid ""
+"This function allows to overwrite or set a value in one of the super global "
+"arrays. Changes which are performed on the super globals directly will "
+"**not** have any effect on the results of other methods the request class "
+"provides. |br| Meaning that changing a super global variable like so "
+"``$_POST['variable'] = 'changed';``, |br| will not change the returned value"
+" for ``$request->variable('variable', '', true);``."
+msgstr ""
+"Denne funktion giver mulighed for at overskrive eller sætte en værdi i et af"
+" super-globale-arrayerne. Ændringer, der foretages direkte på super-"
+"globalerne, vil **ikke** have nogen effekt på resultaterne af andre metoder,"
+" som request-klassen tilbyder. |br| Det betyder, at at ændre en super-global"
+" variabel som f.eks. ``$_POST['variable'] = 'changed';``, |br| ikke vil "
+"ændre den returnerede værdi for ``$request->variable('variable', '', "
+"true);``."
+
+#: ../../devdocs-source-copy/request/request.rst:310
+msgid ""
+"Using this function should be avoided if possible! |br| It will consume "
+"twice the amount of memory of the value."
+msgstr ""
+"Brug af denne funktion bør undgås, hvis muligt! |br| Den vil forbruge "
+"dobbelt så meget hukommelse som værdien."
+
+#: ../../devdocs-source-copy/request/request.rst:313
+msgid "Example of overwriting a variable"
+msgstr "Eksempel på overskrivning af en variabel"
+
+#: ../../devdocs-source-copy/request/request.rst:322
+msgid "Example of unsetting a variable in a specific super global"
+msgstr "Eksempel på fjernelse af en variabel i en specifik super-global"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid "The name of the variable that should be overwritten"
+msgstr "Navnet på den variabel, der skal overskrives"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid "**value**"
+msgstr "**value**"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid ""
+"The value the variable should be set at. |br| Setting it to ``null`` will "
+"unset the variable."
+msgstr ""
+"Den værdi, variablen skal sættes til. |br| At sætte den til ``null`` vil "
+"fjerne variablen."
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid ""
+"The super global in which the variable should be changed. |br| Can be any of"
+" ``GET|POST|REQUEST|COOKIE|SERVER|FILES``. |br| Defaults to ``REQUEST``."
+msgstr ""
+"Den super-global, hvori variablen skal ændres. |br| Kan være en af "
+"``GET|POST|REQUEST|COOKIE|SERVER|FILES``. |br| ``REQUEST`` som standard."
+
+#: ../../devdocs-source-copy/request/request.rst:343
+msgid "variable_names"
+msgstr "variable_names"
+
+#: ../../devdocs-source-copy/request/request.rst:344
+msgid ""
+"This function returns all variable names for a specific super global. "
+"Optionally you can specify a specific super global in which the variable "
+"should be set. If no super global is specified, it will default to the "
+"``REQUEST`` super global, which contains ``GET``, ``POST`` and ``COOKIE``. "
+"It will then return all the names *(keys)* that exist for that super global."
+msgstr ""
+"Denne funktion returnerer alle variabelnavne for en specifik super-global. "
+"Du kan valgfrit angive en specifik super-global, hvori variablen skal være "
+"sat. Hvis ingen super-global angives, bruges som standard super-globalen "
+"``REQUEST``, som indeholder ``GET``, ``POST`` og ``COOKIE``. Den vil "
+"derefter returnere alle de navne *(nøgler)*, der findes for den super-"
+"global."
+
+#: ../../devdocs-source-copy/request/request.rst:349
+msgid "Example of retrieving and iterating over a super global's variables"
+msgstr "Eksempel på hentning og iteration over en super-globals variabler"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid ""
+"The super global to get the variable names from. |br| Can be any of "
+"``GET|POST|REQUEST|COOKIE|SERVER|FILES``. |br| Defaults to ``REQUEST``."
+msgstr ""
+"Den super-global, variabelnavnene skal hentes fra. |br| Kan være en af "
+"``GET|POST|REQUEST|COOKIE|SERVER|FILES``. |br| ``REQUEST`` som standard."
+
+#: ../../devdocs-source-copy/request/request.rst:389
+msgid "get_super_global"
+msgstr "get_super_global"
+
+#: ../../devdocs-source-copy/request/request.rst:390
+msgid ""
+"This function returns the original array of the requested super global. "
+"Optionally you can specify a specific super global in which the variable "
+"should be set. If no super global is specified, it will default to the "
+"``REQUEST`` super global, which contains ``GET``, ``POST`` and ``COOKIE``. "
+"It will then return the original array with all the variables for that super"
+" global."
+msgstr ""
+"Denne funktion returnerer det oprindelige array for den forespurgte super-"
+"global. Du kan valgfrit angive en specifik super-global, hvori variablen "
+"skal være sat. Hvis ingen super-global angives, bruges som standard super-"
+"globalen ``REQUEST``, som indeholder ``GET``, ``POST`` og ``COOKIE``. Den "
+"vil derefter returnere det oprindelige array med alle variablerne for den "
+"super-global."
+
+#: ../../devdocs-source-copy/request/request.rst:395
+msgid "Example of retrieving all POST variables"
+msgstr "Eksempel på hentning af alle POST-variabler"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid ""
+"The super global to get the original array from. |br| Can be any of "
+"``GET|POST|REQUEST|COOKIE|SERVER|FILES``. |br| Defaults to ``REQUEST``."
+msgstr ""
+"Den super-global, det oprindelige array skal hentes fra. |br| Kan være en af"
+" ``GET|POST|REQUEST|COOKIE|SERVER|FILES``. |br| ``REQUEST`` som standard."
+
+#: ../../devdocs-source-copy/request/request.rst:426
+msgid "request_var"
+msgstr "request_var"
+
+#: ../../devdocs-source-copy/request/request.rst:428
+msgid "Deprecated"
+msgstr "Forældet"
+
+#: ../../devdocs-source-copy/request/request.rst:431
+msgid "This function is deprecated since phpBB :guilabel:`3.1.0`"
+msgstr "Denne funktion er forældet siden phpBB :guilabel:`3.1.0`"
+
+#: ../../devdocs-source-copy/request/request.rst:433
+msgid ""
+"The ``request_var`` function was used back in the days of phpBB "
+":guilabel:`2.x` and :guilabel:`3.0`, but has been **deprecated** ever since."
+" Meaning that this function should no longer be used. Instead use the phpBB "
+"request class's variable_ function, which has more options and capabilities."
+msgstr ""
+"Funktionen ``request_var`` blev brugt tilbage i tiden med phpBB "
+":guilabel:`2.x` og :guilabel:`3.0`, men har været **forældet** siden da. Det"
+" betyder, at denne funktion ikke længere bør bruges. Brug i stedet "
+"funktionen variable_ i phpBB's request-klasse, som har flere muligheder og "
+"funktioner."

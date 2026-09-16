@@ -1,0 +1,132 @@
+# Danish translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:3
+msgid "Tutorial: Parsing text"
+msgstr "Tutorial: analyse af tekst"
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:6
+msgid "Database fields"
+msgstr "Databasefelter"
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:7
+msgid ""
+"phpBB uses the following database fields where BBCode is allowed (forum "
+"description, forum rules, post content, ...):"
+msgstr ""
+"phpBB bruger følgende databasefelter, hvor BBCode er tilladt "
+"(forumbeskrivelse, forumregler, indlægsindhold, ...):"
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:9
+msgid "**foo** - Text itself"
+msgstr "**foo** - selve teksten"
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:10
+msgid ""
+"**foo_bbcode_uid** - a randomly generated unique identifier to mark the "
+"BBCodes and used for quicker parsing"
+msgstr ""
+"**foo_bbcode_uid** - en tilfældigt genereret unik identifikator til at "
+"markere BBCodes og bruges til hurtigere analyse"
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:11
+msgid ""
+"**foo_bbcode_bitfield** - a `bit field "
+"<https://en.wikipedia.org/wiki/Bit_field>`_ containing the information which"
+" bbcode is used in the text so only the relevant ones need to be loaded from"
+" the database. **NOTE: No longer used in posts generated in phpBB 3.2+**"
+msgstr ""
+"**foo_bbcode_bitfield** - et `bitfelt "
+"<https://en.wikipedia.org/wiki/Bit_field>`_, der indeholder informationen "
+"om, hvilke bbcodes der bruges i teksten, så kun de relevante skal indlæses "
+"fra databasen. **BEMÆRK: Bruges ikke længere i indlæg genereret i phpBB "
+"3.2+**"
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:12
+msgid ""
+"**foo_options** - a bit field containing the information whether bbcode, "
+"smilies and magic urls are enabled (OPTION_FLAG_BBCODE, OPTION_FLAG_SMILIES "
+"and OPTION_FLAG_LINKS). Sometimes you will find this separated into "
+"enable_bbcode, enable_smilies and enable_magic_url"
+msgstr ""
+"**foo_options** - et bitfelt, der indeholder informationen om, hvorvidt "
+"bbcode, smileys og magiske links er aktiveret (OPTION_FLAG_BBCODE, "
+"OPTION_FLAG_SMILIES og OPTION_FLAG_LINKS). Nogle gange vil du finde dette "
+"opdelt i enable_bbcode, enable_smilies og enable_magic_url"
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:14
+msgid ""
+"Column names will vary, replace ``foo`` with the respective column name "
+"(e.g. ``text``, ``text_bbcode_uid``, ...)."
+msgstr ""
+"Kolonnenavne varierer; erstat ``foo`` med det respektive kolonnenavn (f.eks."
+" ``text``, ``text_bbcode_uid``, ...)."
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:17
+msgid "Parsing text with BBCodes & smilies"
+msgstr "Analyse af tekst med BBCodes og smileys"
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:20
+msgid "Inserting text into DB"
+msgstr "Indsættelse af tekst i databasen"
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:39
+msgid ""
+"The above method uses the bbcode options database field which is used in "
+"many places instead of enable_smiles, enable_bbcode and enable_magic_url. "
+"Here is how to insert it into the database using the enable_smilies, "
+"enable_bbcode and enable_magic_url tables."
+msgstr ""
+"Metoden ovenfor bruger databasefeltet bbcode_options, som bruges mange "
+"steder i stedet for enable_smiles, enable_bbcode og enable_magic_url. Sådan "
+"indsætter du det i databasen ved hjælp af felterne enable_smilies, "
+"enable_bbcode og enable_magic_url."
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:63
+msgid "Displaying text from DB"
+msgstr "Visning af tekst fra databasen"
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:65
+msgid ""
+"This example uses the bbcode_options field which is used in forums and "
+"groups description parsing:"
+msgstr ""
+"Dette eksempel bruger feltet bbcode_options, som bruges ved analyse af "
+"beskrivelser af forummer og grupper:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:81
+msgid ""
+"The next one uses the enable_bbcode, enable_smilies and enable_magic_url "
+"flags which can be used instead of the above method and is used in parsing "
+"posts:"
+msgstr ""
+"Det næste bruger flagene enable_bbcode, enable_smilies og enable_magic_url, "
+"som kan bruges i stedet for metoden ovenfor og bruges ved analyse af indlæg:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:101
+msgid "Generating text for editing"
+msgstr "Generering af tekst til redigering"
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:121
+msgid "Database fields for BBCode"
+msgstr "Databasefelter til BBCode"
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:123
+msgid "The following column definitions are expected for BBCodes:"
+msgstr "Følgende kolonnedefinitioner forventes for BBCodes:"

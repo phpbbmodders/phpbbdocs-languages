@@ -1,0 +1,266 @@
+# Danish translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:2
+msgid "Auth API"
+msgstr "Auth-API"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:4
+msgid "This is an explanation of how to use the phpBB auth/acl API."
+msgstr "Dette er en forklaring på, hvordan man bruger phpBB's auth/acl-API."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:11
+msgid "1. Introduction"
+msgstr "1. Introduktion"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:14
+msgid "What is it?"
+msgstr "Hvad er det?"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:16
+msgid ""
+"The ``auth`` class contains methods related to authorisation of users to "
+"access various board functions, e.g., posting, viewing, replying, logging in"
+" (and out), etc. If you need to check whether a user can carry out a task or"
+" handle user login/logouts, this class is required."
+msgstr ""
+"Klassen ``auth`` indeholder metoder relateret til autorisation af brugere "
+"til at få adgang til forskellige forumfunktioner, f.eks. skrive indlæg, se, "
+"svare, logge ind (og ud) osv. Hvis du skal kontrollere, om en bruger kan "
+"udføre en opgave, eller håndtere brugerlogin/logout, er denne klasse "
+"påkrævet."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:19
+msgid "Initialisation"
+msgstr "Initialisering"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:21
+msgid ""
+"To use any methods contained within the ``auth`` class, it first needs to be"
+" instantiated. This is best achieved early in the execution of the script in"
+" the following manner:"
+msgstr ""
+"For at bruge nogen af metoderne i klassen ``auth`` skal den først "
+"instantieres. Dette gøres bedst tidligt i scriptets udførelse på følgende "
+"måde:"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:27
+msgid ""
+"Once an instance of the class has been created you are free to call the "
+"various methods it contains. Note: if you wish to use the ``auth_admin`` "
+"methods you will need to instantiate this separately in the same way."
+msgstr ""
+"Når en instans af klassen er oprettet, kan du frit kalde de forskellige "
+"metoder, den indeholder. Bemærk: hvis du ønsker at bruge "
+"``auth_admin``-metoderne, skal du instantiere denne separat på samme måde."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:30
+msgid "2. Methods"
+msgstr "2. Metoder"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:32
+msgid "Following are the methods you are able to use."
+msgstr "Følgende er de metoder, du kan bruge."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:35
+msgid "2.i. acl"
+msgstr "2.i. acl"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:37
+msgid ""
+"The ``acl`` method is the initialisation routine for all the ACL functions. "
+"It must be called before any ACL method. It takes one parameter: an "
+"associative array containing user information."
+msgstr ""
+"Metoden ``acl`` er initialiseringsrutinen for alle ACL-funktioner. Den skal "
+"kaldes før enhver anden ACL-metode. Den tager én parameter: et associativt "
+"array indeholdende brugeroplysninger."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:43
+msgid ""
+"Where ``$userdata`` includes at least: ``user_id``, ``user_permissions``, "
+"and ``user_type``."
+msgstr ""
+"Hvor ``$userdata`` mindst indeholder: ``user_id``, ``user_permissions`` og "
+"``user_type``."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:46
+msgid "2.ii. acl_get"
+msgstr "2.ii. acl_get"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:48
+msgid ""
+"This method determines if a user can perform an action either globally or in"
+" a specific forum."
+msgstr ""
+"Denne metode afgør, om en bruger kan udføre en handling, enten globalt eller"
+" i et specifikt forum."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:54
+msgid ""
+"``option``: e.g., 'f_list', 'm_edit', 'a_adduser', etc. Use ``!option`` to "
+"negate."
+msgstr ""
+"``option``: f.eks. 'f_list', 'm_edit', 'a_adduser' osv. Brug ``!option`` for"
+" at negere."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:55
+msgid "``forum`` (optional): integer ``forum_id``."
+msgstr "``forum`` (valgfri): heltal ``forum_id``."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:57
+msgid "Returns a positive integer if allowed, zero if denied."
+msgstr "Returnerer et positivt heltal, hvis tilladt, nul hvis afvist."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:60
+msgid "2.iii. acl_gets"
+msgstr "2.iii. acl_gets"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:62
+msgid "This method checks multiple permissions at once."
+msgstr "Denne metode kontrollerer flere tilladelser på én gang."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:68
+msgid "Returns a positive integer if *any* of the permissions is granted."
+msgstr ""
+"Returnerer et positivt heltal, hvis *en eller flere* af tilladelserne er "
+"givet."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:71
+msgid "2.iv. acl_getf"
+msgstr "2.iv. acl_getf"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:73
+msgid "This method checks in which forums a user has a certain permission."
+msgstr ""
+"Denne metode kontrollerer, i hvilke fora en bruger har en bestemt "
+"tilladelse."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:79
+msgid "``option``: permission string (negation with ``!`` allowed)"
+msgstr "``option``: tilladelsesstreng (negation med ``!`` tilladt)"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:80
+msgid ""
+"``clean``: boolean. If true, only forums where permission is granted are "
+"returned."
+msgstr ""
+"``clean``: boolesk. Hvis true, returneres kun fora, hvor tilladelsen er "
+"givet."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:82
+msgid "Returns an associative array:"
+msgstr "Returnerer et associativt array:"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:89
+msgid "2.v. acl_getf_global"
+msgstr "2.v. acl_getf_global"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:91
+msgid "Checks if a user has a permission globally or in at least one forum."
+msgstr ""
+"Kontrollerer, om en bruger har en tilladelse globalt eller i mindst ét "
+"forum."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:97
+msgid "Returns a positive integer or zero."
+msgstr "Returnerer et positivt heltal eller nul."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:100
+msgid "2.vi. acl_cache"
+msgstr "2.vi. acl_cache"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:102
+msgid ""
+"**Private method.** Automatically called when needed. Generates "
+"user_permissions data."
+msgstr ""
+"**Privat metode.** Kaldes automatisk efter behov. Genererer "
+"user_permissions-data."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:105
+msgid "2.vii. acl_clear_prefetch"
+msgstr "2.vii. acl_clear_prefetch"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:107
+msgid "Clears the ``user_permissions`` column in the users table."
+msgstr "Rydder kolonnen ``user_permissions`` i brugertabellen."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:114
+msgid "Use ``$user_id = 0`` to clear cache for all users. Returns null."
+msgstr ""
+"Brug ``$user_id = 0`` for at rydde cachen for alle brugere. Returnerer null."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:117
+msgid "2.viii. acl_get_list"
+msgstr "2.viii. acl_get_list"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:119
+msgid ""
+"Returns an array describing which users have which permissions in which "
+"forums."
+msgstr ""
+"Returnerer et array, der beskriver, hvilke brugere der har hvilke "
+"tilladelser i hvilke fora."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:128
+msgid ""
+"Parameter types: - ``$user_id``: ``false``, int, or array of int - "
+"``$permissions``: ``false``, string, or array of string - ``$forum_id``: "
+"``false``, int, or array of int"
+msgstr ""
+"Parametertyper: - ``$user_id``: ``false``, int eller array af int - "
+"``$permissions``: ``false``, streng eller array af strenge - ``$forum_id``: "
+"``false``, int eller array af int"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:134
+msgid "2.ix. Miscellaneous"
+msgstr "2.ix. Diverse"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:136
+msgid "Additional methods for pulling raw permission data:"
+msgstr "Yderligere metoder til at hente rå tilladelsesdata:"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:146
+msgid ""
+"Use ``acl_raw_data`` for general queries; others are optimized for specific "
+"data."
+msgstr ""
+"Brug ``acl_raw_data`` til generelle forespørgsler; de øvrige er optimeret "
+"til specifikke data."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:149
+msgid "3. Admin Related Functions"
+msgstr "3. Administratorrelaterede funktioner"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:151
+msgid ""
+"Additional methods are available within the ``auth_admin`` class for "
+"managing permissions, options, and user cache. It is found in:"
+msgstr ""
+"Yderligere metoder er tilgængelige i klassen ``auth_admin`` til håndtering "
+"af tilladelser, indstillinger og brugercache. Den findes i:"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:157
+msgid "Instantiate separately:"
+msgstr "Instantiér separat:"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:163
+msgid "This gives access to both ``auth_admin`` and ``auth`` methods."
+msgstr "Dette giver adgang til både ``auth_admin``- og ``auth``-metoder."

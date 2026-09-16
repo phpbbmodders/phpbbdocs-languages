@@ -1,0 +1,298 @@
+# Danish translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:3
+msgid "What's New for phpBB 3.3"
+msgstr "Hvad er nyt i phpBB 3.3"
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:6
+msgid "Introduction"
+msgstr "Introduktion"
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:8
+msgid ""
+"phpBB 3.3 (Proteus) is only a minor version update to 3.2. There are, "
+"however, a few changes extension developers need to be aware of. The biggest"
+" changes to come in 3.3 are updates to many of phpBB's underlying "
+"dependencies, bringing Symfony, Twig, jQuery and PHP up to date."
+msgstr ""
+"phpBB 3.3 (Proteus) er kun en mindre versionsopdatering i forhold til 3.2. "
+"Der er dog nogle få ændringer, som udvidelsesudviklere skal være opmærksomme"
+" på. De største ændringer i 3.3 er opdateringer af mange af phpBB's "
+"underliggende afhængigheder, som bringer Symfony, Twig, jQuery og PHP up to "
+"date."
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:10
+msgid "This documentation explains:"
+msgstr "Denne dokumentation forklarer:"
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:12
+msgid "`PHP 7`_"
+msgstr "`PHP 7`_"
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:13
+msgid "`Symfony 3.4`_"
+msgstr "`Symfony 3.4`_"
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:14
+msgid "`Twig 2`_"
+msgstr "`Twig 2`_"
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:15
+msgid "`jQuery 3`_"
+msgstr "`jQuery 3`_"
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:16
+msgid "`Extension Installation Error Messages`_"
+msgstr "`Fejlmeddelelser ved udvidelsesinstallation`_"
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:19
+msgid "PHP 7"
+msgstr "PHP 7"
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:21
+msgid ""
+"PHP 7.2.0 is the minimum version required by phpBB 3.3. It is unlikely that "
+"this should cause any problems for extensions. If your PHP code worked in "
+"phpBB 3.1 or 3.2, it should work in phpBB 3.3 as well."
+msgstr ""
+"PHP 7.2.0 er den mindste version, der kræves af phpBB 3.3. Det er "
+"usandsynligt, at dette skulle give problemer for udvidelser. Hvis din PHP-"
+"kode fungerede i phpBB 3.1 eller 3.2, bør den også fungere i phpBB 3.3."
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:23
+msgid ""
+"If you intend to start using some of the new language constructs introduced "
+"in PHP 7, you must make your extension's minimum PHP requirement known to "
+"your users. This can include setting the minimum PHP version in your "
+"extension's ``composer.json`` file as well as designating phpBB 3.3 as a "
+"minimum requirement. You can also use the ``ext.php`` file to check that the"
+" minimum PHP and phpBB version requirements are satisfied in the "
+"``is_enableable()`` method, which will prevent users who do not meet the "
+"requirements from accidentally installing your extension. Examples of this "
+"can be found `here <tutorial_advanced.html#using-installation-commands-in-"
+"ext-php>`_."
+msgstr ""
+"Hvis du har til hensigt at begynde at bruge nogle af de nye "
+"sprogkonstruktioner, der er introduceret i PHP 7, skal du gøre dine brugere "
+"opmærksomme på din udvidelses minimumskrav til PHP. Dette kan omfatte at "
+"sætte minimumsversionen af PHP i din udvidelses ``composer.json``-fil samt "
+"at angive phpBB 3.3 som et minimumskrav. Du kan også bruge ``ext.php``-filen"
+" til at kontrollere, at minimumskravene til PHP- og phpBB-version er "
+"opfyldt, i metoden ``is_enableable()``, hvilket forhindrer brugere, der ikke"
+" opfylder kravene, i ved et uheld at installere din udvidelse. Eksempler på "
+"dette findes `her <tutorial_advanced.html#using-installation-commands-in-"
+"ext-php>`_."
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:26
+msgid ""
+"The minimum required version of PHP was increased to 7.2.0 with the release "
+"of phpBB 3.3.11. Prior versions of phpBB 3.3 also supported a minimum PHP "
+"version of 7.1.3."
+msgstr ""
+"Den mindst påkrævede version af PHP blev hævet til 7.2.0 med udgivelsen af "
+"phpBB 3.3.11. Tidligere versioner af phpBB 3.3 understøttede også en mindste"
+" PHP-version på 7.1.3."
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:29
+msgid "Symfony 3.4"
+msgstr "Symfony 3.4"
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:31
+msgid ""
+"Symfony has been updated to 3.4 (from 2.8). The following changes are due to"
+" deprecations introduced in Symfony 2 that have been removed from Symfony 3."
+" The following changes are **required** for phpBB 3.3 and later."
+msgstr ""
+"Symfony er blevet opdateret til 3.4 (fra 2.8). Følgende ændringer skyldes "
+"forældelser introduceret i Symfony 2, som er blevet fjernet fra Symfony 3. "
+"Følgende ændringer er **påkrævede** for phpBB 3.3 og senere."
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:34
+msgid ""
+"Although the following changes are required for phpBB 3.3, they are "
+"backwards compatible and therefore, will still work with phpBB 3.2 and 3.1."
+msgstr ""
+"Selvom følgende ændringer er påkrævede for phpBB 3.3, er de bagudkompatible "
+"og vil derfor stadig fungere med phpBB 3.2 og 3.1."
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:37
+msgid "Deprecated special characters at the beginning of unquoted strings"
+msgstr "Forældede specialtegn i begyndelsen af strenge uden anførselstegn"
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:39
+msgid ""
+"According to Yaml specification, unquoted strings cannot start with ``@``, "
+"``%``, `````, ``|`` or ``>``. You must wrap these strings with single or "
+"double quotes:"
+msgstr ""
+"Ifølge YAML-specifikationen må strenge uden anførselstegn ikke starte med "
+"``@``, ``%``, `````, ``|`` eller ``>``. Du skal omgive disse strenge med "
+"enkelte eller dobbelte anførselstegn:"
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:52
+msgid "Deprecated Route Pattern"
+msgstr "Forældet route-mønster"
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:54
+msgid ""
+"Older versions of Symfony and phpBB allowed routes to be defined using the "
+"keyword ``pattern``:"
+msgstr ""
+"Ældre versioner af Symfony og phpBB tillod, at routes blev defineret ved "
+"hjælp af nøgleordet ``pattern``:"
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:61
+msgid ""
+"For phpBB 3.3, route paths must instead be defined using the keyword "
+"``path``:"
+msgstr ""
+"I phpBB 3.3 skal route-stier i stedet defineres ved hjælp af nøgleordet "
+"``path``:"
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:69
+msgid "Twig 2"
+msgstr "Twig 2"
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:71
+msgid ""
+"Twig has been updated from version 1 to version 2. This change should not "
+"affect any Twig template syntax you may be using in your extensions."
+msgstr ""
+"Twig er blevet opdateret fra version 1 til version 2. Denne ændring bør ikke"
+" påvirke nogen Twig-modelsyntaks, du måtte bruge i dine udvidelser."
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:74
+msgid "jQuery 3"
+msgstr "jQuery 3"
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:76
+msgid ""
+"phpBB 3.3 ships with jQuery 3.4.1, updated from the much older version "
+"1.12.4 that shipped with phpBB 3.2."
+msgstr ""
+"phpBB 3.3 leveres med jQuery 3.4.1, opdateret fra den meget ældre version "
+"1.12.4, der blev leveret med phpBB 3.2."
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:78
+msgid ""
+"The developers of jQuery are very good about maintaining backwards "
+"compatibility, which means that most of your jQuery code should continue to "
+"work. The biggest changes introduced by jQuery versions 2 and 3 are dropping"
+" support for legacy browsers, in particular, Internet Explorer."
+msgstr ""
+"Udviklerne af jQuery er meget gode til at opretholde bagudkompatibilitet, "
+"hvilket betyder, at det meste af din jQuery-kode bør fortsætte med at "
+"fungere. De største ændringer, som blev introduceret med jQuery-version 2 og"
+" 3, er, at understøttelsen af forældede browsere, især Internet Explorer, er"
+" blevet droppet."
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:80
+msgid ""
+"While it's not always easy to check if an extension's jQuery code is "
+"functioning fine, jQuery provides a Migration PlugIn on their web site. You "
+"can add the un-compressed version of this PlugIn to your phpBB development "
+"board, which will output to your browser's error console any problems it "
+"finds in your jQuery code."
+msgstr ""
+"Selvom det ikke altid er nemt at kontrollere, om en udvidelses jQuery-kode "
+"fungerer korrekt, tilbyder jQuery et Migration PlugIn på deres hjemmeside. "
+"Du kan tilføje den ukomprimerede version af dette plugin til dit phpBB-"
+"udviklingsforum, som vil udskrive eventuelle problemer, det finder i din "
+"jQuery-kode, til din browsers fejlkonsol."
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:82
+msgid ""
+"The majority of any issues you may see reported by the Migration PlugIn will"
+" be warnings related to using deprecated jQuery functions (usually shortcuts"
+" or aliases such as ``click()`` or ``focus()`` which should instead be "
+"changed to the ``on()`` delegation event handler). Even if you are using "
+"deprecated functions, they will still most likely work just fine, although "
+"it is best to make any recommended updates in the event that jQuery does "
+"eventually remove deprecated functions."
+msgstr ""
+"Størstedelen af de problemer, du måtte se rapporteret af Migration "
+"PlugIn'et, vil være advarsler relateret til brug af forældede jQuery-"
+"funktioner (som regel genveje eller aliaser som ``click()`` eller "
+"``focus()``, som i stedet bør ændres til den delegerede event-handler "
+"``on()``). Selvom du bruger forældede funktioner, vil de sandsynligvis "
+"stadig fungere fint, selvom det er bedst at foretage eventuelle anbefalede "
+"opdateringer, i tilfælde af at jQuery på et tidspunkt fjerner de forældede "
+"funktioner."
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:85
+msgid "Extension Installation Error Messages"
+msgstr "Fejlmeddelelser ved udvidelsesinstallation"
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:87
+msgid ""
+"One often requested feature by extension authors finally makes its debut in "
+"phpBB 3.3: Displaying error messages to users when an extension can not be "
+"enabled!"
+msgstr ""
+"En funktion, der ofte er blevet efterspurgt af udvidelsesforfattere, "
+"debuterer endelig i phpBB 3.3: visning af fejlmeddelelser til brugerne, når "
+"en udvidelse ikke kan aktiveres!"
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:89
+msgid ""
+"Typically extension authors use their extension's ``ext.php`` file to set "
+"conditional tests to check and see if a phpBB board meets the basic "
+"requirements of their extension. If it fails, the extension is not enabled. "
+"However users are only met with an error message that their board failed to "
+"meet the extension's requirements."
+msgstr ""
+"Typisk bruger udvidelsesforfattere deres udvidelses ``ext.php``-fil til at "
+"opsætte betingede tests, der kontrollerer, om et phpBB-forum opfylder de "
+"grundlæggende krav til deres udvidelse. Hvis dette mislykkes, aktiveres "
+"udvidelsen ikke. Brugerne bliver dog kun mødt med en fejlmeddelelse om, at "
+"deres forum ikke opfyldte udvidelsens krav."
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:91
+msgid ""
+"Now extension authors can explain what the specific requirements are that "
+"caused the extension to fail to install."
+msgstr ""
+"Nu kan udvidelsesforfattere forklare, hvilke specifikke krav der "
+"forårsagede, at udvidelsen ikke kunne installeres."
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:93
+msgid ""
+"This can be done in the same ``ext.php`` file and the same "
+"``is_enableable()`` method as before. Except now, instead of only being able"
+" to return either a true or false boolean, the method allows you to return "
+"an array of error messages for each reason why an extension can not be "
+"enabled/installed."
+msgstr ""
+"Dette kan gøres i den samme ``ext.php``-fil og den samme "
+"``is_enableable()``-metode som før. Bortset fra at metoden nu, i stedet for "
+"kun at kunne returnere enten true eller false, giver dig mulighed for at "
+"returnere et array af fejlmeddelelser for hver grund til, at en udvidelse "
+"ikke kan aktiveres/installeres."
+
+#: ../../devdocs-source-copy/extensions/new_in_proteus.rst:97
+msgid ""
+"To be backwards compatible with phpBB 3.2 and 3.1, check for phpBB 3.3 or "
+"newer before using the new message system. Otherwise for older phpBB boards "
+"you must use the original method of returning a simple true/false boolean."
+msgstr ""
+"For at være bagudkompatibel med phpBB 3.2 og 3.1 skal du kontrollere for "
+"phpBB 3.3 eller nyere, før du bruger det nye meddelelsessystem. For ældre "
+"phpBB-forummer skal du ellers bruge den oprindelige metode med at returnere "
+"en simpel true/false-boolesk værdi."

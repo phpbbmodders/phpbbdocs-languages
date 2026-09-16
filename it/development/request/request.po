@@ -1,0 +1,588 @@
+# Italian translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/request/request.rst:3
+msgid "Request"
+msgstr "Request"
+
+#: ../../devdocs-source-copy/request/request.rst:6
+msgid "Table of Contents"
+msgstr "Indice dei contenuti"
+
+#: ../../devdocs-source-copy/request/request.rst:9
+msgid "Introduction"
+msgstr "Introduzione"
+
+#: ../../devdocs-source-copy/request/request.rst:10
+msgid ""
+"The request class contains all request data and provide a clear interface to"
+" interact with that data. Preventing direct access to ``$_GET``, ``$_POST``,"
+" ``$_REQUEST``, et cetera. The request class should be fully backwards "
+"compatible and allow for the complete removal of any super global access."
+msgstr ""
+"La classe request contiene tutti i dati della richiesta e fornisce "
+"un'interfaccia chiara per interagire con questi dati, impedendo l'accesso "
+"diretto a ``$_GET``, ``$_POST``, ``$_REQUEST``, ecc. La classe request "
+"dovrebbe essere pienamente retrocompatibile e consentire la completa "
+"rimozione di qualsiasi accesso alle super globali."
+
+#: ../../devdocs-source-copy/request/request.rst:15
+msgid "Information"
+msgstr "Informazioni"
+
+#: ../../devdocs-source-copy/request/request.rst:0
+msgid "Class"
+msgstr "Classe"
+
+#: ../../devdocs-source-copy/request/request.rst:17
+msgid ":class:`\\\\phpbb\\\\request\\\\request`"
+msgstr ":class:`\\\\phpbb\\\\request\\\\request`"
+
+#: ../../devdocs-source-copy/request/request.rst:0
+msgid "Interface"
+msgstr "Interfaccia"
+
+#: ../../devdocs-source-copy/request/request.rst:18
+msgid ":class:`\\\\phpbb\\\\request\\\\request_interface`"
+msgstr ":class:`\\\\phpbb\\\\request\\\\request_interface`"
+
+#: ../../devdocs-source-copy/request/request.rst:0
+msgid "Declaration"
+msgstr "Dichiarazione"
+
+#: ../../devdocs-source-copy/request/request.rst:19
+msgid "``- '@request'``"
+msgstr "``- '@request'``"
+
+#: ../../devdocs-source-copy/request/request.rst:22
+msgid "Super globals"
+msgstr "Super globali"
+
+#: ../../devdocs-source-copy/request/request.rst:23
+msgid ""
+"With this request class in place, the usage of `Super globals "
+"<https://www.php.net/manual/en/language.variables.superglobals.php>`_ should"
+" no longer be necessary and when possible avoided. Meaning that there should"
+" be no need to use any of the ``$_GET``, ``$_POST``, ``$_REQUEST``, "
+"``$_COOKIE``, ``$_FILES`` and ``$_SERVER`` variables."
+msgstr ""
+"Con questa classe request in atto, l'uso delle `super globali "
+"<https://www.php.net/manual/en/language.variables.superglobals.php>`_ non "
+"dovrebbe più essere necessario e, quando possibile, dovrebbe essere evitato."
+" Ciò significa che non dovrebbe esserci bisogno di usare nessuna delle "
+"variabili ``$_GET``, ``$_POST``, ``$_REQUEST``, ``$_COOKIE``, ``$_FILES`` e "
+"``$_SERVER``."
+
+#: ../../devdocs-source-copy/request/request.rst:26
+msgid ""
+"The request class provides an additional layer of security for handling "
+"request data and user input. Properly sanitizing the input and casting the "
+"variables to the expected types, such as strings, integers and "
+"(multidimensional) arrays."
+msgstr ""
+"La classe request fornisce un ulteriore livello di sicurezza per la gestione"
+" dei dati della richiesta e dell'input dell'utente, sanificando "
+"correttamente l'input e convertendo le variabili nei tipi previsti, come "
+"stringhe, interi e array (multidimensionali)."
+
+#: ../../devdocs-source-copy/request/request.rst:30
+msgid "Functions"
+msgstr "Funzioni"
+
+#: ../../devdocs-source-copy/request/request.rst:31
+msgid ""
+"Below you will find some of the more commonly used functions from the "
+"request class. Each function will have corresponding code samples and a "
+"table explaining the function's parameters."
+msgstr ""
+"Di seguito troverai alcune delle funzioni più comunemente usate della classe"
+" request. Ogni funzione avrà i relativi esempi di codice e una tabella che "
+"spiega i parametri della funzione."
+
+#: ../../devdocs-source-copy/request/request.rst:35
+msgid "is_ajax"
+msgstr "is_ajax"
+
+#: ../../devdocs-source-copy/request/request.rst:36
+msgid ""
+"Checks whether the current request is an AJAX request. Meaning that the "
+"request is made as an XMLHttpRequest. This can be useful for returning "
+"different responses."
+msgstr ""
+"Verifica se la richiesta corrente è una richiesta AJAX. Ciò significa che la"
+" richiesta viene effettuata come XMLHttpRequest. Questo può essere utile per"
+" restituire risposte diverse."
+
+#: ../../devdocs-source-copy/request/request.rst:40
+msgid "Example of checking for an AJAX request"
+msgstr "Esempio di verifica di una richiesta AJAX"
+
+#: ../../devdocs-source-copy/request/request.rst:66
+msgid "is_secure"
+msgstr "is_secure"
+
+#: ../../devdocs-source-copy/request/request.rst:67
+msgid ""
+"Checks if the current request is happening over a secure protocol: HTTPS. "
+"Useful when having to create a protocol prefix for a url or when making API "
+"calls."
+msgstr ""
+"Verifica se la richiesta corrente sta avvenendo tramite un protocollo "
+"sicuro: HTTPS. Utile quando bisogna creare un prefisso di protocollo per un "
+"URL o quando si effettuano chiamate API."
+
+#: ../../devdocs-source-copy/request/request.rst:70
+msgid "Example of checking a secure connection"
+msgstr "Esempio di verifica di una connessione sicura"
+
+#: ../../devdocs-source-copy/request/request.rst:78
+msgid "is_set"
+msgstr "is_set"
+
+#: ../../devdocs-source-copy/request/request.rst:79
+msgid ""
+"Checks whether a certain variable is set in one of the super global arrays. "
+"Optionally you can specify a specific super global in which the variable "
+"should be set. If no super global is specified, it will default to the "
+"``REQUEST`` super global, which contains ``GET``, ``POST`` and ``COOKIE``."
+msgstr ""
+"Verifica se una determinata variabile è impostata in uno degli array super "
+"globali. Facoltativamente puoi specificare una super globale specifica in "
+"cui la variabile dovrebbe essere impostata. Se non viene specificata alcuna "
+"super globale, verrà usata per impostazione predefinita la super globale "
+"``REQUEST``, che contiene ``GET``, ``POST`` e ``COOKIE``."
+
+#: ../../devdocs-source-copy/request/request.rst:83
+msgid "Example of checking various super globals"
+msgstr "Esempio di verifica di varie super globali"
+
+#: ../../devdocs-source-copy/request/request.rst:92
+#: ../../devdocs-source-copy/request/request.rst:119
+#: ../../devdocs-source-copy/request/request.rst:206
+#: ../../devdocs-source-copy/request/request.rst:237
+#: ../../devdocs-source-copy/request/request.rst:266
+#: ../../devdocs-source-copy/request/request.rst:292
+#: ../../devdocs-source-copy/request/request.rst:332
+#: ../../devdocs-source-copy/request/request.rst:379
+#: ../../devdocs-source-copy/request/request.rst:417
+msgid "Parameters"
+msgstr "Parametri"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid "Parameter"
+msgstr "Parametro"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid "Description"
+msgstr "Descrizione"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid "**variable**"
+msgstr "**variable**"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid "The name of the variable to check"
+msgstr "Il nome della variabile da verificare"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid "**super_global**"
+msgstr "**super_global**"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid ""
+"The super global to check within for the variable. |br| Can be any of "
+"``GET|POST|REQUEST|COOKIE|SERVER|FILES``. |br| Defaults to ``REQUEST``."
+msgstr ""
+"La super globale in cui verificare la variabile. |br| Può essere una tra "
+"``GET|POST|REQUEST|COOKIE|SERVER|FILES``. |br| Predefinita su ``REQUEST``."
+
+#: ../../devdocs-source-copy/request/request.rst:102
+msgid "is_set_post"
+msgstr "is_set_post"
+
+#: ../../devdocs-source-copy/request/request.rst:103
+msgid ""
+"Checks whether a certain variable was sent via a ``POST`` request. To make "
+"sure that a request was sent using ``POST`` you should call this function on"
+" at least one variable. This is a short hand for "
+"``$request->variable('variable', "
+"\\phpbb\\request\\request_interface::POST);``."
+msgstr ""
+"Verifica se una determinata variabile è stata inviata tramite una richiesta "
+"``POST``. Per assicurarti che una richiesta sia stata inviata usando "
+"``POST``, dovresti chiamare questa funzione su almeno una variabile. Questa "
+"è una forma abbreviata di ``$request->variable('variable', "
+"\\phpbb\\request\\request_interface::POST);``."
+
+#: ../../devdocs-source-copy/request/request.rst:107
+msgid "Example of checking POST variables"
+msgstr "Esempio di verifica delle variabili POST"
+
+#: ../../devdocs-source-copy/request/request.rst:128
+msgid "variable"
+msgstr "variable"
+
+#: ../../devdocs-source-copy/request/request.rst:129
+msgid ""
+"This is the central function for handling any input. All variables in "
+"``GET`` or ``POST`` requests should be retrieved through this function to "
+"maximise security."
+msgstr ""
+"Questa è la funzione centrale per la gestione di qualsiasi input. Tutte le "
+"variabili nelle richieste ``GET`` o ``POST`` dovrebbero essere recuperate "
+"tramite questa funzione per massimizzare la sicurezza."
+
+#: ../../devdocs-source-copy/request/request.rst:132
+msgid ""
+"The variable name should be the value of HTML input's name attribute to "
+"retrieve. So for ``<input name=\"subject\" type=\"text\">`` the variable "
+"name is ``subject``."
+msgstr ""
+"Il nome della variabile dovrebbe essere il valore dell'attributo name "
+"dell'input HTML da recuperare. Quindi per ``<input name=\"subject\" "
+"type=\"text\">`` il nome della variabile è ``subject``."
+
+#: ../../devdocs-source-copy/request/request.rst:135
+msgid ""
+"The default value should be of the exact same type of the expected input. "
+"This is necessary, as the retrieved variables are type casted to the exact "
+"same type. If no variable was available in the request, it will return the "
+"provided default value."
+msgstr ""
+"Il valore predefinito dovrebbe essere esattamente dello stesso tipo "
+"dell'input previsto. Questo è necessario, poiché le variabili recuperate "
+"vengono convertite esattamente nello stesso tipo. Se nessuna variabile era "
+"disponibile nella richiesta, verrà restituito il valore predefinito fornito."
+
+#: ../../devdocs-source-copy/request/request.rst:139
+msgid ""
+"When the value that is being requested is a string or an array containing "
+"strings, the ``multibyte`` parameter should be set to ``true``. Or better "
+"said, whenever the requested value may contain any UTF-8 characters. Meaning"
+" you will not have to run the returned value through ``utf8_normalize_nfc``."
+" If set to ``false``, it will cause all bytes outside the ASCII range "
+"*(0-127)* to be replaced with question marks."
+msgstr ""
+"Quando il valore richiesto è una stringa o un array contenente stringhe, il "
+"parametro ``multibyte`` dovrebbe essere impostato su ``true``. O meglio, "
+"ogni volta che il valore richiesto può contenere caratteri UTF-8. Ciò "
+"significa che non dovrai far passare il valore restituito attraverso "
+"``utf8_normalize_nfc``. Se impostato su ``false``, causerà la sostituzione "
+"di tutti i byte al di fuori dell'intervallo ASCII *(0-127)* con punti "
+"interrogativi."
+
+#: ../../devdocs-source-copy/request/request.rst:144
+msgid "Example of default usage"
+msgstr "Esempio di uso predefinito"
+
+#: ../../devdocs-source-copy/request/request.rst:156
+msgid ""
+"It is also possible to specify from which super global the variable should "
+"be retrieved. This can help ensuring the correct variable is returned or the"
+" form is submitted through the expected manner."
+msgstr ""
+"È anche possibile specificare da quale super globale dovrebbe essere "
+"recuperata la variabile. Questo può aiutare a garantire che venga restituita"
+" la variabile corretta o che il form venga inviato nel modo previsto."
+
+#: ../../devdocs-source-copy/request/request.rst:159
+msgid "Example of specifying a super global"
+msgstr "Esempio di specifica di una super globale"
+
+#: ../../devdocs-source-copy/request/request.rst:166
+msgid ""
+"If the default value is an array, it is possible to nest it as deeply as is "
+"required. There are no limitations for the nested depth."
+msgstr ""
+"Se il valore predefinito è un array, è possibile annidarlo quanto "
+"necessario. Non ci sono limitazioni alla profondità di annidamento."
+
+#: ../../devdocs-source-copy/request/request.rst:169
+msgid "Example of nesting arrays for default value"
+msgstr "Esempio di annidamento di array per il valore predefinito"
+
+#: ../../devdocs-source-copy/request/request.rst:178
+msgid ""
+"An additional capability is the path syntax. This allows you to access a "
+"single value at a deep location (nested input) while making sure the types "
+"are still correct. This can be achieved by passing an array as the variable "
+"name. Each value in this array represent a key for the request array. The "
+"nesting increased with each value provided."
+msgstr ""
+"Una capacità aggiuntiva è la sintassi del percorso (path syntax). Questa ti "
+"permette di accedere a un singolo valore in una posizione profonda (input "
+"annidato), assicurandoti al contempo che i tipi siano ancora corretti. "
+"Questo può essere ottenuto passando un array come nome della variabile. Ogni"
+" valore in questo array rappresenta una chiave per l'array della richiesta. "
+"L'annidamento aumenta con ogni valore fornito."
+
+#: ../../devdocs-source-copy/request/request.rst:184
+msgid "Example of the path syntax"
+msgstr "Esempio della sintassi del percorso"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid "The name of the variable to retrieve"
+msgstr "Il nome della variabile da recuperare"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid "**default**"
+msgstr "**default**"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid "The default value with the correct variable type"
+msgstr "Il valore predefinito con il tipo di variabile corretto"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid "**multibyte**"
+msgstr "**multibyte**"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid "Whether or not the variable may contain any UTF-8 characters"
+msgstr "Se la variabile può contenere o meno caratteri UTF-8"
+
+#: ../../devdocs-source-copy/request/request.rst:218
+msgid "file"
+msgstr "file"
+
+#: ../../devdocs-source-copy/request/request.rst:219
+msgid ""
+"This function is a shortcut to retrieve ``FILES`` variables. It returns the "
+"uploaded file's information, or an empty array if the variable does not "
+"exist in ``$_FILES``. This is a short hand for "
+"``$request->variable('variable', ['name' => 'none'], true, "
+"\\phpbb\\request\\request_interface::FILES)``"
+msgstr ""
+"Questa funzione è una scorciatoia per recuperare le variabili ``FILES``. "
+"Restituisce le informazioni del file caricato, oppure un array vuoto se la "
+"variabile non esiste in ``$_FILES``. Questa è una forma abbreviata di "
+"``$request->variable('variable', ['name' => 'none'], true, "
+"\\phpbb\\request\\request_interface::FILES)``"
+
+#: ../../devdocs-source-copy/request/request.rst:223
+msgid ""
+"The variable name should be the value of HTML input's name attribute to "
+"retrieve. So for ``<input name=\"attachment\" type=\"file\">`` the variable "
+"name is ``attachment``."
+msgstr ""
+"Il nome della variabile dovrebbe essere il valore dell'attributo name "
+"dell'input HTML da recuperare. Quindi per ``<input name=\"attachment\" "
+"type=\"file\">`` il nome della variabile è ``attachment``."
+
+#: ../../devdocs-source-copy/request/request.rst:226
+msgid "Example of retrieving a file"
+msgstr "Esempio di recupero di un file"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid "The name of the HTML file input's name attribute"
+msgstr "Il nome dell'attributo name dell'input file HTML"
+
+#: ../../devdocs-source-copy/request/request.rst:246
+msgid "header"
+msgstr "header"
+
+#: ../../devdocs-source-copy/request/request.rst:247
+msgid ""
+"This function is a shortcut to retrieve the value of the client's HTTP "
+"headers."
+msgstr ""
+"Questa funzione è una scorciatoia per recuperare il valore degli header HTTP"
+" del client."
+
+#: ../../devdocs-source-copy/request/request.rst:249
+msgid "Example of retrieving headers"
+msgstr "Esempio di recupero degli header"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid "The name of the header to retrieve"
+msgstr "Il nome dell'header da recuperare"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid ""
+"The default value with the correct variable type |br| Defaults to an empty "
+"string: ``''``"
+msgstr ""
+"Il valore predefinito con il tipo di variabile corretto |br| Predefinito su "
+"una stringa vuota: ``''``"
+
+#: ../../devdocs-source-copy/request/request.rst:276
+msgid "server"
+msgstr "server"
+
+#: ../../devdocs-source-copy/request/request.rst:277
+msgid ""
+"This function is a shortcut to retrieve ``SERVER`` variables. It also "
+"provides a fallback to ``getenv()`` as some CGI setups may need it."
+msgstr ""
+"Questa funzione è una scorciatoia per recuperare le variabili ``SERVER``. "
+"Fornisce anche un fallback a ``getenv()``, poiché alcune configurazioni CGI "
+"potrebbero averne bisogno."
+
+#: ../../devdocs-source-copy/request/request.rst:280
+msgid "Example of retrieving SERVER variables"
+msgstr "Esempio di recupero delle variabili SERVER"
+
+#: ../../devdocs-source-copy/request/request.rst:302
+msgid "overwrite"
+msgstr "overwrite"
+
+#: ../../devdocs-source-copy/request/request.rst:303
+msgid ""
+"This function allows to overwrite or set a value in one of the super global "
+"arrays. Changes which are performed on the super globals directly will "
+"**not** have any effect on the results of other methods the request class "
+"provides. |br| Meaning that changing a super global variable like so "
+"``$_POST['variable'] = 'changed';``, |br| will not change the returned value"
+" for ``$request->variable('variable', '', true);``."
+msgstr ""
+"Questa funzione permette di sovrascrivere o impostare un valore in uno degli"
+" array super globali. Le modifiche eseguite direttamente sulle super globali"
+" **non** avranno alcun effetto sui risultati degli altri metodi forniti "
+"dalla classe request. |br| Ciò significa che modificare una variabile super "
+"globale come ad esempio ``$_POST['variable'] = 'changed';``, |br| non "
+"cambierà il valore restituito da ``$request->variable('variable', '', "
+"true);``."
+
+#: ../../devdocs-source-copy/request/request.rst:310
+msgid ""
+"Using this function should be avoided if possible! |br| It will consume "
+"twice the amount of memory of the value."
+msgstr ""
+"L'uso di questa funzione dovrebbe essere evitato se possibile! |br| "
+"Consumerà il doppio della quantità di memoria del valore."
+
+#: ../../devdocs-source-copy/request/request.rst:313
+msgid "Example of overwriting a variable"
+msgstr "Esempio di sovrascrittura di una variabile"
+
+#: ../../devdocs-source-copy/request/request.rst:322
+msgid "Example of unsetting a variable in a specific super global"
+msgstr "Esempio di rimozione di una variabile in una specifica super globale"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid "The name of the variable that should be overwritten"
+msgstr "Il nome della variabile da sovrascrivere"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid "**value**"
+msgstr "**value**"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid ""
+"The value the variable should be set at. |br| Setting it to ``null`` will "
+"unset the variable."
+msgstr ""
+"Il valore a cui la variabile dovrebbe essere impostata. |br| Impostandola su"
+" ``null`` la variabile verrà rimossa."
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid ""
+"The super global in which the variable should be changed. |br| Can be any of"
+" ``GET|POST|REQUEST|COOKIE|SERVER|FILES``. |br| Defaults to ``REQUEST``."
+msgstr ""
+"La super globale in cui la variabile dovrebbe essere modificata. |br| Può "
+"essere una tra ``GET|POST|REQUEST|COOKIE|SERVER|FILES``. |br| Predefinita su"
+" ``REQUEST``."
+
+#: ../../devdocs-source-copy/request/request.rst:343
+msgid "variable_names"
+msgstr "variable_names"
+
+#: ../../devdocs-source-copy/request/request.rst:344
+msgid ""
+"This function returns all variable names for a specific super global. "
+"Optionally you can specify a specific super global in which the variable "
+"should be set. If no super global is specified, it will default to the "
+"``REQUEST`` super global, which contains ``GET``, ``POST`` and ``COOKIE``. "
+"It will then return all the names *(keys)* that exist for that super global."
+msgstr ""
+"Questa funzione restituisce tutti i nomi delle variabili per una specifica "
+"super globale. Facoltativamente puoi specificare una super globale specifica"
+" in cui la variabile dovrebbe essere impostata. Se non viene specificata "
+"alcuna super globale, verrà usata per impostazione predefinita la super "
+"globale ``REQUEST``, che contiene ``GET``, ``POST`` e ``COOKIE``. Restituirà"
+" quindi tutti i nomi *(chiavi)* esistenti per quella super globale."
+
+#: ../../devdocs-source-copy/request/request.rst:349
+msgid "Example of retrieving and iterating over a super global's variables"
+msgstr "Esempio di recupero e iterazione sulle variabili di una super globale"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid ""
+"The super global to get the variable names from. |br| Can be any of "
+"``GET|POST|REQUEST|COOKIE|SERVER|FILES``. |br| Defaults to ``REQUEST``."
+msgstr ""
+"La super globale da cui ottenere i nomi delle variabili. |br| Può essere una"
+" tra ``GET|POST|REQUEST|COOKIE|SERVER|FILES``. |br| Predefinita su "
+"``REQUEST``."
+
+#: ../../devdocs-source-copy/request/request.rst:389
+msgid "get_super_global"
+msgstr "get_super_global"
+
+#: ../../devdocs-source-copy/request/request.rst:390
+msgid ""
+"This function returns the original array of the requested super global. "
+"Optionally you can specify a specific super global in which the variable "
+"should be set. If no super global is specified, it will default to the "
+"``REQUEST`` super global, which contains ``GET``, ``POST`` and ``COOKIE``. "
+"It will then return the original array with all the variables for that super"
+" global."
+msgstr ""
+"Questa funzione restituisce l'array originale della super globale richiesta."
+" Facoltativamente puoi specificare una super globale specifica in cui la "
+"variabile dovrebbe essere impostata. Se non viene specificata alcuna super "
+"globale, verrà usata per impostazione predefinita la super globale "
+"``REQUEST``, che contiene ``GET``, ``POST`` e ``COOKIE``. Restituirà quindi "
+"l'array originale con tutte le variabili di quella super globale."
+
+#: ../../devdocs-source-copy/request/request.rst:395
+msgid "Example of retrieving all POST variables"
+msgstr "Esempio di recupero di tutte le variabili POST"
+
+#: ../../devdocs-source-copy/request/request.rst:1
+msgid ""
+"The super global to get the original array from. |br| Can be any of "
+"``GET|POST|REQUEST|COOKIE|SERVER|FILES``. |br| Defaults to ``REQUEST``."
+msgstr ""
+"La super globale da cui ottenere l'array originale. |br| Può essere una tra "
+"``GET|POST|REQUEST|COOKIE|SERVER|FILES``. |br| Predefinita su ``REQUEST``."
+
+#: ../../devdocs-source-copy/request/request.rst:426
+msgid "request_var"
+msgstr "request_var"
+
+#: ../../devdocs-source-copy/request/request.rst:428
+msgid "Deprecated"
+msgstr "Deprecata"
+
+#: ../../devdocs-source-copy/request/request.rst:431
+msgid "This function is deprecated since phpBB :guilabel:`3.1.0`"
+msgstr "Questa funzione è deprecata a partire da phpBB :guilabel:`3.1.0`"
+
+#: ../../devdocs-source-copy/request/request.rst:433
+msgid ""
+"The ``request_var`` function was used back in the days of phpBB "
+":guilabel:`2.x` and :guilabel:`3.0`, but has been **deprecated** ever since."
+" Meaning that this function should no longer be used. Instead use the phpBB "
+"request class's variable_ function, which has more options and capabilities."
+msgstr ""
+"La funzione ``request_var`` veniva usata ai tempi di phpBB :guilabel:`2.x` e"
+" :guilabel:`3.0`, ma da allora è stata **deprecata**. Ciò significa che "
+"questa funzione non dovrebbe più essere usata. Usa invece la funzione "
+"variable_ della classe request di phpBB, che ha più opzioni e capacità."

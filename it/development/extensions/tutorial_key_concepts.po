@@ -1,0 +1,571 @@
+# Italian translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:3
+msgid "Tutorial: Key Concepts"
+msgstr "Tutorial: concetti chiave"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:6
+msgid "Introduction"
+msgstr "Introduzione"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:8
+msgid ""
+"Before we can jump into making our extension do great things, we need to "
+"cover some key concepts and practices used in phpBB."
+msgstr ""
+"Prima di poterci lanciare nel far fare grandi cose alla nostra estensione, "
+"dobbiamo trattare alcuni concetti chiave e pratiche usate in phpBB."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:11
+msgid "This tutorial explains:"
+msgstr "Questo tutorial spiega:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:13
+msgid "`Dependency injection`_"
+msgstr "`Dependency injection`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:14
+msgid "`PHP files`_"
+msgstr "`File PHP`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:15
+msgid "`Template files`_"
+msgstr "`File di modello`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:16
+msgid "`Language files`_"
+msgstr "`File di lingua`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:17
+msgid "`Javascript and CSS files`_"
+msgstr "`File JavaScript e CSS`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:22
+msgid "Dependency injection"
+msgstr "Dependency injection"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:24
+msgid ""
+"A large portion of the phpBB codebase since 3.1 is based on a fundamental "
+"mechanism, namely dependency injection. The goal is to not have to worry "
+"about managing the different dependencies of the components you want to use "
+"(e.g. the database layer, the cache system or the current user object). It's"
+" also a means to cease using globally scoped variables."
+msgstr ""
+"Una grande parte del codice base di phpBB dalla versione 3.1 in poi si basa "
+"su un meccanismo fondamentale, ossia la dependency injection. L'obiettivo è "
+"non doversi preoccupare di gestire le diverse dipendenze dei componenti che "
+"vuoi usare (ad es. il livello del database, il sistema di cache o l'oggetto "
+"utente corrente). È anche un mezzo per smettere di usare variabili con scope"
+" globale."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:29
+msgid ""
+"Since phpBB 3.1 this has been implemented using the Symfony "
+"DependencyInjection Component. All services provided by phpBB are defined in"
+" a YAML format file in ``/config/services.yml``. Extensions can use the "
+"services defined by phpBB as well as define their own services for their PHP"
+" classes in their own ``config/services.yml``."
+msgstr ""
+"Da phpBB 3.1 in poi, questo è stato implementato usando il componente "
+"DependencyInjection di Symfony. Tutti i service forniti da phpBB sono "
+"definiti in un file in formato YAML in ``/config/services.yml``. Le "
+"estensioni possono usare i service definiti da phpBB e definire anche i "
+"propri service per le proprie classi PHP nel proprio "
+"``config/services.yml``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:33
+msgid ""
+"To provide a simple example of dependency injection in action, let's look at"
+" the constructor method for Acme Demo's controller class ``main.php``:"
+msgstr ""
+"Per fornire un semplice esempio di dependency injection in azione, diamo "
+"un'occhiata al metodo costruttore della classe controller di Acme Demo "
+"``main.php``:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:46
+msgid ""
+"As you can see, it requires the ``$config``, ``$helper``, ``$template``, and"
+" ``$user`` objects (a.k.a. services). To have these services automatically "
+"resolved by dependency injection, The Acme Demo extension must define its "
+"controller class as a service in its ``config/services.yml``:"
+msgstr ""
+"Come puoi vedere, richiede gli oggetti ``$config``, ``$helper``, "
+"``$template`` e ``$user`` (noti anche come service). Per far sì che questi "
+"service vengano risolti automaticamente dalla dependency injection, "
+"l'estensione Acme Demo deve definire la sua classe controller come service "
+"nel proprio ``config/services.yml``:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:61
+msgid ""
+"Note that ``acme.demo.controller`` is the unique service name for the class."
+" Extensions must prefix them with the vendor and extension name (in this "
+"case, ``acme.demo``) to prevent potential conflicts with other extensions or"
+" core services."
+msgstr ""
+"Nota che ``acme.demo.controller`` è il nome univoco del service per la "
+"classe. Le estensioni devono dare loro come prefisso il nome vendor e il "
+"nome dell'estensione (in questo caso, ``acme.demo``) per prevenire "
+"potenziali conflitti con altre estensioni o service del core."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:65
+msgid "The ``class`` is simply the name-spaced path to the class."
+msgstr "``class`` è semplicemente il percorso con namespace verso la classe."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:67
+msgid ""
+"The ``arguments`` are the service dependencies required by the class. It is "
+"important that the order of arguments must match the order of parameters in "
+"the ``__construct()`` method definition. Any arguments beginning with ``@`` "
+"or ``%`` symbols should be wrapped in single quotes (this will be required "
+"starting from phpBB 3.2)."
+msgstr ""
+"``arguments`` sono le dipendenze di service richieste dalla classe. È "
+"importante che l'ordine degli argomenti corrisponda all'ordine dei parametri"
+" nella definizione del metodo ``__construct()``. Qualsiasi argomento che "
+"inizia con i simboli ``@`` o ``%`` dovrebbe essere racchiuso tra virgolette "
+"singole (questo sarà richiesto a partire da phpBB 3.2)."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:72
+msgid ""
+"Most PHP files in an extension should use the dependency injection model "
+"with service definitions, particularly controllers and event listeners. The "
+"exceptions to this are any ACP/MCP/UCP files, language files and migration "
+"files (which do not currently use the service container)."
+msgstr ""
+"La maggior parte dei file PHP in un'estensione dovrebbe usare il modello di "
+"dependency injection con definizioni di service, in particolare i controller"
+" e gli event listener. Le eccezioni a questo sono i file ACP/MCP/UCP, i file"
+" di lingua e i file di migrazione (che attualmente non usano il service "
+"container)."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:78
+msgid ""
+"`Symfony: The DependencyInjection Component "
+"<https://symfony.com/doc/2.8/components/dependency_injection.html>`_"
+msgstr ""
+"`Symfony: The DependencyInjection Component "
+"<https://symfony.com/doc/2.8/components/dependency_injection.html>`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:82
+msgid "PHP files"
+msgstr "File PHP"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:84
+msgid ""
+"As part of phpBB's shift towards widespread use of object orientation, it is"
+" advisable for developers to make use of classes to organise data where "
+"appropriate. Extensions are encouraged to store related functions in "
+"classes, and classes in their own files."
+msgstr ""
+"Come parte dello spostamento di phpBB verso un uso diffuso dell'orientamento"
+" agli oggetti, si consiglia agli sviluppatori di fare uso di classi per "
+"organizzare i dati dove appropriato. Le estensioni sono incoraggiate a "
+"memorizzare le funzioni correlate in classi, e le classi nei propri file."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:88
+msgid ""
+"The naming of classes is important for consistency. All classes should be "
+"name-spaced and have a direct class to path name mapping; in other words the"
+" name-space and class name must be inclusive of the directory structure. For"
+" example:"
+msgstr ""
+"La denominazione delle classi è importante per la coerenza. Tutte le classi "
+"dovrebbero avere un namespace e avere una mappatura diretta tra classe e "
+"percorso; in altre parole, il namespace e il nome della classe devono "
+"includere la struttura delle directory. Ad esempio:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:102
+msgid ""
+"The above name-spaced code would be for a class file and path structure such"
+" as ``acme/demo/controller/main.php``."
+msgstr ""
+"Il codice con namespace sopra sarebbe per un file di classe e una struttura "
+"di percorso come ``acme/demo/controller/main.php``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:104
+msgid ""
+"Properly name-spaced classes are auto-loaded by phpBB, meaning that accessor"
+" functions do not need to be made for them to be accessible to other "
+"classes."
+msgstr ""
+"Le classi con namespace impostato correttamente vengono caricate "
+"automaticamente da phpBB, il che significa che non è necessario creare "
+"funzioni accessorie affinché siano accessibili ad altre classi."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:109
+msgid ""
+"The phpBB 3.1 `Coding Guidelines <https://area51.phpbb.com/docs/31x/coding-"
+"guidelines.html>`_ state that the closing ``?>`` is not required in PHP "
+"files, and all files should contain one extra blank line at the end."
+msgstr ""
+"Le `Coding Guidelines <https://area51.phpbb.com/docs/31x/coding-"
+"guidelines.html>`_ di phpBB 3.1 stabiliscono che il tag di chiusura ``?>`` "
+"non è richiesto nei file PHP, e che tutti i file dovrebbero contenere una "
+"riga vuota aggiuntiva alla fine."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:113
+msgid "IN_PHPBB Security"
+msgstr "Sicurezza IN_PHPBB"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:115
+msgid ""
+"PHP files that contain only classes are not required to use the ``IN_PHPBB``"
+" security test. However, if your PHP files contain any executable code not "
+"encapsulated within a class structure, such as exposed functions, "
+"``define()``, ``include()`` or ``require()`` statements, or other artifacts,"
+" then the ``IN_PHPBB`` test is required prior to any executable code:"
+msgstr ""
+"I file PHP che contengono solo classi non sono tenuti a usare il test di "
+"sicurezza ``IN_PHPBB``. Tuttavia, se i tuoi file PHP contengono codice "
+"eseguibile non incapsulato in una struttura di classe, come funzioni "
+"esposte, istruzioni ``define()``, ``include()`` o ``require()``, o altri "
+"artefatti, allora il test ``IN_PHPBB`` è richiesto prima di qualsiasi codice"
+" eseguibile:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:138
+msgid ""
+"The phpBB 3.1 `Coding Guidelines <https://area51.phpbb.com/docs/31x/coding-"
+"guidelines.html>`_."
+msgstr ""
+"Le `Coding Guidelines <https://area51.phpbb.com/docs/31x/coding-"
+"guidelines.html>`_ di phpBB 3.1."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:139
+msgid ""
+"The phpBB Customisation Database `PHP Validation Policy "
+"<https://www.phpbb.com/extensions/rules-and-policies/validation-"
+"policy/#php>`_."
+msgstr ""
+"La `PHP Validation Policy <https://www.phpbb.com/extensions/rules-and-"
+"policies/validation-policy/#php>`_ del Customisation Database di phpBB."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:143
+msgid "Template files"
+msgstr "File di modello"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:145
+msgid ""
+"Templating for extensions is no different than templating for phpBB3 in "
+"general. phpBB 3.1 has switched to the Twig template engine but retains "
+"phpBB’s original templating syntax. Therefore, either phpBB or Twig template"
+" syntax is permissible in an extension. If you are not familiar with Twig, "
+"you may use phpBB’s syntax."
+msgstr ""
+"La creazione di modelli per le estensioni non è diversa dalla creazione di "
+"modelli per phpBB3 in generale. phpBB 3.1 è passato al motore di modelli "
+"Twig, ma conserva la sintassi di modelli originale di phpBB. Pertanto, in "
+"un'estensione è ammessa sia la sintassi di modelli di phpBB che quella di "
+"Twig. Se non hai familiarità con Twig, puoi usare la sintassi di phpBB."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:149
+msgid ""
+"An extension can contain two types of template files: custom templates and "
+":ref:`template-events-label`. An extension's custom template files should "
+"have unique names, preferably prefixed with the vendor and extension names, "
+"to prevent conflicts with other extension or phpBB template files. In "
+"addition to template files, an extension can contain theme files (CSS "
+"scripts and images), Javascript files and other assets."
+msgstr ""
+"Un'estensione può contenere due tipi di file di modello: modelli "
+"personalizzati e :ref:`template-events-label`. I file di modello "
+"personalizzati di un'estensione dovrebbero avere nomi univoci, "
+"preferibilmente con il prefisso del vendor e del nome dell'estensione, per "
+"prevenire conflitti con i file di modello di altre estensioni o di phpBB. "
+"Oltre ai file di modello, un'estensione può contenere file di theme (script "
+"CSS e immagini), file JavaScript e altri asset."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:154
+msgid ""
+"Template files in an extension should be organised in a fashion similar to "
+"phpBB’s template file structure. The ``styles/`` directory should contain "
+"directories for each style you have written template files for. For example,"
+" prosilver and subsilver2. Any style that inherits from prosilver, will "
+"inherit from your extension’s prosilver directory as well."
+msgstr ""
+"I file di modello in un'estensione dovrebbero essere organizzati in modo "
+"simile alla struttura dei file di modello di phpBB. La directory ``styles/``"
+" dovrebbe contenere directory per ogni style per cui hai scritto file di "
+"modello. Ad esempio, prosilver e subsilver2. Qualsiasi style che eredita da "
+"prosilver erediterà anche dalla directory prosilver della tua estensione."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:159
+msgid ""
+"A special ``all/`` directory can be used to contain template files that can "
+"be used with any and all styles (a common JS file, for example)."
+msgstr ""
+"Una directory speciale ``all/`` può essere usata per contenere file di "
+"modello che possono essere usati con qualsiasi style (ad esempio, un file JS"
+" comune)."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:162
+msgid ""
+"Template files for the ACP should be stored in the ``adm/style/`` location, "
+"similar to phpBB’s structure."
+msgstr ""
+"I file di modello per l'ACP dovrebbero essere memorizzati nella posizione "
+"``adm/style/``, in modo simile alla struttura di phpBB."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:165
+msgid ""
+"An example directory structure for an extension with universal (all) files "
+"and theme specific files:"
+msgstr ""
+"Un esempio di struttura di directory per un'estensione con file universali "
+"(all) e file specifici del theme:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:193
+msgid ""
+"If a standard phpBB template filename is used for an extension template, "
+"then it will override the template file from phpBB. Therefore it is "
+"important to be mindful of this when naming template files. Overriding "
+"template files is not advisable for publicly released extensions as it could"
+" conflict with other extensions."
+msgstr ""
+"Se per un modello di un'estensione viene usato un nome di file di modello "
+"standard di phpBB, esso sovrascriverà il file di modello di phpBB. È quindi "
+"importante tenerne conto quando si nominano i file di modello. Sovrascrivere"
+" i file di modello non è consigliabile per le estensioni rilasciate "
+"pubblicamente, poiché potrebbe entrare in conflitto con altre estensioni."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:199
+msgid "`Twig Template Syntax <https://twig.symfony.com/>`_ at Symfony."
+msgstr "`Twig Template Syntax <https://twig.symfony.com/>`_ su Symfony."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:200
+msgid ":ref:`Tutorial: Template Syntax <tutorial-template-syntax>`."
+msgstr ":ref:`Tutorial: sintassi dei modelli <tutorial-template-syntax>`."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:201
+msgid ""
+"The phpBB Customisation Database `Template Validation Policy "
+"<https://www.phpbb.com/extensions/rules-and-policies/validation-"
+"policy/#templates>`_."
+msgstr ""
+"La `Template Validation Policy <https://www.phpbb.com/extensions/rules-and-"
+"policies/validation-policy/#templates>`_ del Customisation Database di "
+"phpBB."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:204
+msgid "Language files"
+msgstr "File di lingua"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:206
+msgid ""
+"Language files in an extension should be organised in a fashion similar to "
+"phpBB’s Language file structure. The ``language/`` directory should contain "
+"directories for each language you have a translation for. Note that the "
+"``en`` English language is required for all extensions as it is the default "
+"language in phpBB."
+msgstr ""
+"I file di lingua in un'estensione dovrebbero essere organizzati in modo "
+"simile alla struttura dei file di lingua di phpBB. La directory "
+"``language/`` dovrebbe contenere directory per ogni lingua di cui hai una "
+"traduzione. Nota che la lingua inglese ``en`` è richiesta per tutte le "
+"estensioni, poiché è la lingua predefinita in phpBB."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:210
+msgid "The Acme Demo extension's language file looks like:"
+msgstr "Il file di lingua dell'estensione Acme Demo ha questo aspetto:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:236
+msgid ""
+"Loading language files in an extension is simple enough using the "
+"``add_lang()`` method of the ``$language`` object. It takes two arguments, "
+"the first being the name of the language file (or an array of language file "
+"names) and the second being the extension vendor/package."
+msgstr ""
+"Caricare i file di lingua in un'estensione è abbastanza semplice usando il "
+"metodo ``add_lang()`` dell'oggetto ``$language``. Prende due argomenti, il "
+"primo dei quali è il nome del file di lingua (o un array di nomi di file di "
+"lingua), e il secondo è il vendor/pacchetto dell'estensione."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:242
+msgid ""
+"The Language object was introduced in 3.2 to provide a dedicated class of "
+"language methods, extracted from the User object. The previous method of "
+"using ``add_lang_ext()`` from the User object has been deprecated in 3.2, "
+"and will eventually be removed in the future."
+msgstr ""
+"L'oggetto Language è stato introdotto nella 3.2 per fornire una classe "
+"dedicata di metodi di lingua, estratta dall'oggetto User. Il metodo "
+"precedente di usare ``add_lang_ext()`` dall'oggetto User è stato deprecato "
+"nella 3.2, e alla fine verrà rimosso in futuro."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:256
+msgid ""
+"For performance reasons, it is preferred to use the above method to load "
+"language files at any point in your extension’s code execution where the "
+"language keys are needed. However, if it is absolutely necessary to load an "
+"extension's language keys globally, so they are available at all times, the "
+"``core.user_setup`` PHP event should be used."
+msgstr ""
+"Per motivi di prestazioni, è preferibile usare il metodo sopra per caricare "
+"i file di lingua in qualsiasi punto dell'esecuzione del codice della tua "
+"estensione in cui sono necessarie le chiavi di lingua. Se tuttavia è "
+"assolutamente necessario caricare le chiavi di lingua di un'estensione "
+"globalmente, in modo che siano sempre disponibili, dovrebbe essere usato il "
+"PHP event ``core.user_setup``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:262
+msgid ""
+"Language files can be given any name. However, language files that start "
+"with ``permissions_`` or ``info_acp_`` will be loaded automatically within "
+"the ACP for permission and ACP module language keys, respectively, and do "
+"not need to be loaded using the previously discussed functions or events."
+msgstr ""
+"Ai file di lingua può essere dato un nome qualsiasi. Tuttavia, i file di "
+"lingua che iniziano con ``permissions_`` o ``info_acp_`` verranno caricati "
+"automaticamente all'interno dell'ACP rispettivamente per le chiavi di lingua"
+" dei permessi e dei moduli ACP, e non devono essere caricati usando le "
+"funzioni o gli events discussi in precedenza."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:267
+msgid "Javascript and CSS files"
+msgstr "File JavaScript e CSS"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:269
+msgid ""
+"Javascript and CSS files can be stored anywhere inside your extension. "
+"However, the most common locations are within your style folders. Adding "
+"these scripts to your extension's templates can be conveniently handled "
+"using phpBB's ``{% INCLUDECSS %}`` and ``{% INCLUDEJS %}`` template syntax."
+msgstr ""
+"I file JavaScript e CSS possono essere memorizzati ovunque all'interno della"
+" tua estensione. Le posizioni più comuni sono tuttavia all'interno delle "
+"cartelle di style. L'aggiunta di questi script ai modelli della tua "
+"estensione può essere gestita comodamente usando la sintassi di modello di "
+"phpBB ``{% INCLUDECSS %}`` e ``{% INCLUDEJS %}``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:273
+msgid "The format for these INCLUDE tags takes the following form:"
+msgstr "Il formato per questi tag INCLUDE ha la seguente forma:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:281
+msgid ""
+"The INCLUDECSS tag will look in the extension's style **theme** folder for "
+"the named file, based on the current style of the user, or the all style "
+"folder if one exists. The INCLUDECSS tag will automatically generate a "
+"``<link>`` tag for the supplied CSS file in the ``<head>`` section of the "
+"HTML document."
+msgstr ""
+"Il tag INCLUDECSS cercherà il file specificato nella cartella **theme** "
+"dello style dell'estensione, in base allo style attuale dell'utente, oppure "
+"nella cartella all style se esiste. Il tag INCLUDECSS genererà "
+"automaticamente un tag ``<link>`` per il file CSS fornito nella sezione "
+"``<head>`` del documento HTML."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:285
+msgid ""
+"The INCLUDEJS tag will look in the extension's style **template** folder for"
+" the named file, based on the current style of the user, or the all style "
+"folder if one exists. The INCLUDEJS tag will automatically generate a "
+"``<script>`` tag for the supplied JS file in the footer of the HTML "
+"document."
+msgstr ""
+"Il tag INCLUDEJS cercherà il file specificato nella cartella **template** "
+"dello style dell'estensione, in base allo style attuale dell'utente, oppure "
+"nella cartella all style se esiste. Il tag INCLUDEJS genererà "
+"automaticamente un tag ``<script>`` per il file JS fornito nel footer del "
+"documento HTML."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:291
+msgid ""
+"The INCLUDECSS and INCLUDEJS tags can be used in any template event or "
+"custom template file."
+msgstr ""
+"I tag INCLUDECSS e INCLUDEJS possono essere usati in qualsiasi modelevent o "
+"file di modello personalizzato."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:293
+msgid ""
+"When including JavaScript/CSS libraries and frameworks such as jQuery-UI or "
+"Font Awesome, the potential for resource overlap between extensions can be "
+"mitigated using a simple work-around endorsed by the phpBB Extensions Team. "
+"Using the the ``{% DEFINE %}`` tag you should test if the script your "
+"extension wants to include is already defined, and if not, then include your"
+" script and define the script. For example:"
+msgstr ""
+"Quando si includono librerie e framework JavaScript/CSS come jQuery-UI o "
+"Font Awesome, la potenziale sovrapposizione di risorse tra estensioni può "
+"essere mitigata usando un semplice espediente approvato dall'Extensions Team"
+" di phpBB. Usando il tag ``{% DEFINE %}``, dovresti verificare se lo script "
+"che la tua estensione vuole includere è già definito, e se non lo è, "
+"includere il tuo script e definirlo. Ad esempio:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:305
+msgid ""
+"Some example template variable definitions to use with common libraries (the"
+" common practice should be to name the variable definition after the library"
+" filename, e.g. highslide.js becomes HIGHSLIDEJS):"
+msgstr ""
+"Alcuni esempi di definizioni di variabili di modello da usare con le "
+"librerie comuni (la pratica comune dovrebbe essere quella di nominare la "
+"definizione della variabile in base al nome del file della libreria, ad es. "
+"highslide.js diventa HIGHSLIDEJS):"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:308
+msgid "HighSlide JS: ``INCLUDED_HIGHSLIDEJS``"
+msgstr "HighSlide JS: ``INCLUDED_HIGHSLIDEJS``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:309
+msgid "Font Awesome CSS: ``INCLUDED_FONTAWESOMECSS``"
+msgstr "Font Awesome CSS: ``INCLUDED_FONTAWESOMECSS``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:310
+msgid "ColorBox JS: ``INCLUDED_COLORBOXJS``"
+msgstr "ColorBox JS: ``INCLUDED_COLORBOXJS``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:311
+msgid "ColPick JS: ``INCLUDED_COLPICKJS``"
+msgstr "ColPick JS: ``INCLUDED_COLPICKJS``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:312
+msgid "MoTools JS: ``INCLUDED_MOTOOLSJS``"
+msgstr "MoTools JS: ``INCLUDED_MOTOOLSJS``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:313
+msgid "Dojo JS: ``INCLUDED_DOJOJS``"
+msgstr "Dojo JS: ``INCLUDED_DOJOJS``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:314
+msgid "Angular JS: ``INCLUDED_ANGULARJS``"
+msgstr "Angular JS: ``INCLUDED_ANGULARJS``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:318
+msgid ""
+"The phpBB Customisation Database `JavaScript and CSS Validation Policy "
+"<https://www.phpbb.com/extensions/rules-and-policies/validation-"
+"policy/#scripts>`_."
+msgstr ""
+"La `JavaScript and CSS Validation Policy "
+"<https://www.phpbb.com/extensions/rules-and-policies/validation-"
+"policy/#scripts>`_ del Customisation Database di phpBB."
+
+#: ../../devdocs-source-copy/extensions/tutorial_key_concepts.rst:321
+msgid ""
+"Now that we've covered how PHP, template, language and asset files work in "
+"phpBB, we're ready to continue on to the next sections to learn how to build"
+" out our extension into something functional."
+msgstr ""
+"Ora che abbiamo trattato come funzionano i file PHP, di modello, di lingua e"
+" degli asset in phpBB, siamo pronti a continuare alle sezioni successive per"
+" imparare come sviluppare la nostra estensione fino a farne qualcosa di "
+"funzionale."

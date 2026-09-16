@@ -1,0 +1,249 @@
+# Italian translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/files/upload.rst:3
+msgid "The upload class"
+msgstr "La classe upload"
+
+#: ../../devdocs-source-copy/files/upload.rst:5
+msgid ""
+"The newly introduced files ``upload`` class replaces the previously existing"
+" ``fileupload`` class."
+msgstr ""
+"La classe ``upload`` di files, introdotta di recente, sostituisce la classe "
+"``fileupload`` precedentemente esistente."
+
+#: ../../devdocs-source-copy/files/upload.rst:8
+msgid "Passing settings to upload class"
+msgstr "Passaggio di impostazioni alla classe upload"
+
+#: ../../devdocs-source-copy/files/upload.rst:10
+msgid ""
+"In phpBB versions prior to 3.2, the settings like maximum image dimensions "
+"could be passed directly to the ``fileupload`` class via the constructor. "
+"Since these are now retrieved via the container infrastructure, this is no "
+"longer possible. Instead, the new ``upload`` class incorporates several "
+"methods for easily setting the necessary upload requirements:"
+msgstr ""
+"Nelle versioni di phpBB precedenti alla 3.2, le impostazioni come le "
+"dimensioni massime dell'immagine potevano essere passate direttamente alla "
+"classe ``fileupload`` tramite il costruttore. Poiché ora vengono recuperate "
+"tramite l'infrastruttura del container, questo non è più possibile. Invece, "
+"la nuova classe ``upload`` incorpora diversi metodi per impostare facilmente"
+" i requisiti di caricamento necessari:"
+
+#: ../../devdocs-source-copy/files/upload.rst:15
+msgid "``set_allowed_extensions($allowed_extensions)``"
+msgstr "``set_allowed_extensions($allowed_extensions)``"
+
+#: ../../devdocs-source-copy/files/upload.rst:16
+msgid ""
+"``set_allowed_dimensions($min_width, $min_height, $max_width, $max_height)``"
+msgstr ""
+"``set_allowed_dimensions($min_width, $min_height, $max_width, $max_height)``"
+
+#: ../../devdocs-source-copy/files/upload.rst:17
+msgid "``set_max_filesize($max_filesize)``"
+msgstr "``set_max_filesize($max_filesize)``"
+
+#: ../../devdocs-source-copy/files/upload.rst:18
+msgid "``set_disallowed_content($disallowed_content)``"
+msgstr "``set_disallowed_content($disallowed_content)``"
+
+#: ../../devdocs-source-copy/files/upload.rst:19
+msgid "``set_error_prefix($error_prefix)``"
+msgstr "``set_error_prefix($error_prefix)``"
+
+#: ../../devdocs-source-copy/files/upload.rst:21
+msgid ""
+"Each of these methods returns the current instance of the ``upload`` class "
+"allowing for chained calls:"
+msgstr ""
+"Ciascuno di questi metodi restituisce l'istanza corrente della classe "
+"``upload``, consentendo chiamate concatenate:"
+
+#: ../../devdocs-source-copy/files/upload.rst:31
+msgid "Uploading files"
+msgstr "Caricamento dei file"
+
+#: ../../devdocs-source-copy/files/upload.rst:33
+msgid ""
+"The previously existing ``form_upload()``, ``remote_upload()``, and "
+"``local_upload()`` methods no longer exist. Instead, the ``upload`` class "
+"now contains the ``handle_upload()`` method."
+msgstr ""
+"I metodi precedentemente esistenti ``form_upload()``, ``remote_upload()`` e "
+"``local_upload()`` non esistono più. Invece, la classe ``upload`` ora "
+"contiene il metodo ``handle_upload()``."
+
+#: ../../devdocs-source-copy/files/upload.rst:39
+msgid ""
+"The method expects the upload type as the first argument. Types that are "
+"available by default are"
+msgstr ""
+"Il metodo si aspetta il tipo di caricamento come primo argomento. I tipi "
+"disponibili per impostazione predefinita sono"
+
+#: ../../devdocs-source-copy/files/upload.rst:41
+msgid "``files.types.form``"
+msgstr "``files.types.form``"
+
+#: ../../devdocs-source-copy/files/upload.rst:42
+msgid "``files.types.local``"
+msgstr "``files.types.local``"
+
+#: ../../devdocs-source-copy/files/upload.rst:43
+msgid "``files.types.remote``"
+msgstr "``files.types.remote``"
+
+#: ../../devdocs-source-copy/files/upload.rst:45
+msgid ""
+"Extensions can of course add new upload types and use them provided that "
+"they implement ``phpbb\\files\\types\\type_interface``. Any arguments after "
+"the type will passed on to the upload type class. These have to implement "
+"the upload method and retrieve the passed arguments with "
+"``func_get_args()``."
+msgstr ""
+"Le estensioni possono naturalmente aggiungere nuovi tipi di caricamento e "
+"usarli, purché implementino ``phpbb\\files\\types\\type_interface``. Tutti "
+"gli argomenti successivi al tipo verranno passati alla classe del tipo di "
+"caricamento. Queste devono implementare il metodo upload e recuperare gli "
+"argomenti passati con ``func_get_args()``."
+
+#: ../../devdocs-source-copy/files/upload.rst:49
+msgid "Converting uses of ``fileupload`` class"
+msgstr "Conversione degli usi della classe ``fileupload``"
+
+#: ../../devdocs-source-copy/files/upload.rst:51
+msgid ""
+"It is recommended to use the ``files`` factory for retrieving the ``files`` "
+"classes. In this example we will however use the phpBB container."
+msgstr ""
+"Si raccomanda di usare la factory ``files`` per recuperare le classi "
+"``files``. In questo esempio useremo tuttavia il container di phpBB."
+
+#: ../../devdocs-source-copy/files/upload.rst:55
+msgid "Empty constructor"
+msgstr "Costruttore vuoto"
+
+#: ../../devdocs-source-copy/files/upload.rst:57
+msgid ""
+"In phpBB 3.1, the basic use of the ``fileupload`` class looked as follows:"
+msgstr ""
+"In phpBB 3.1, l'uso di base della classe ``fileupload`` era il seguente:"
+
+#: ../../devdocs-source-copy/files/upload.rst:68
+msgid "As of phpBB 3.2, this is changed to:"
+msgstr "A partire da phpBB 3.2, questo cambia in:"
+
+#: ../../devdocs-source-copy/files/upload.rst:80
+msgid ""
+"Services like ``phpbb\\mimetype\\guesser`` and ``phpbb\\plupload\\plupload``"
+" are no longer passed to the upload methods."
+msgstr ""
+"Servizi come ``phpbb\\mimetype\\guesser`` e ``phpbb\\plupload\\plupload`` "
+"non vengono più passati ai metodi di upload."
+
+#: ../../devdocs-source-copy/files/upload.rst:83
+msgid "The calls can of course also be chained:"
+msgstr "Le chiamate possono naturalmente anche essere concatenate:"
+
+#: ../../devdocs-source-copy/files/upload.rst:94
+msgid "Settings passed to constructor"
+msgstr "Impostazioni passate al costruttore"
+
+#: ../../devdocs-source-copy/files/upload.rst:96
+msgid ""
+"phpBB 3.1 also allowed passing the settings directly to the constructor of "
+"the ``fileupload`` class:"
+msgstr ""
+"phpBB 3.1 permetteva anche di passare le impostazioni direttamente al "
+"costruttore della classe ``fileupload``:"
+
+#: ../../devdocs-source-copy/files/upload.rst:111
+msgid ""
+"Since the ``upload`` class is retrieved with the container or the factory, "
+"passing these settings to the constructor is no longer possible. Instead, "
+"these should be passed with the accompanying ``set_`` methods:"
+msgstr ""
+"Poiché la classe ``upload`` viene recuperata con il container o la factory, "
+"non è più possibile passare queste impostazioni al costruttore. Invece, "
+"dovrebbero essere passate con i relativi metodi ``set_``:"
+
+#: ../../devdocs-source-copy/files/upload.rst:123
+msgid ""
+"This can also be chained to directly call the ``handle_upload()`` method:"
+msgstr ""
+"Questo può anche essere concatenato per chiamare direttamente il metodo "
+"``handle_upload()``:"
+
+#: ../../devdocs-source-copy/files/upload.rst:136
+msgid "Reset settings"
+msgstr "Ripristino delle impostazioni"
+
+#: ../../devdocs-source-copy/files/upload.rst:138
+msgid ""
+"The settings like maximum file size, allowed dimensions, and error prefix "
+"can easily be reset using the ``reset_vars()`` method."
+msgstr ""
+"Le impostazioni come la dimensione massima del file, le dimensioni "
+"consentite e il prefisso dell'errore possono essere facilmente ripristinate "
+"usando il metodo ``reset_vars()``."
+
+#: ../../devdocs-source-copy/files/upload.rst:142
+msgid "Perform common checks on upload"
+msgstr "Esecuzione di controlli comuni sul caricamento"
+
+#: ../../devdocs-source-copy/files/upload.rst:144
+msgid ""
+"The ``common_checks()`` method can be used to perform common checks on the "
+"``filespec`` object returned by the ``handle_upload()`` method. These "
+"include checks for the file size of the uploaded file, the file's name and "
+"extension, and disallowed file content. This can be performed by simply "
+"passing the ``filespec`` object:"
+msgstr ""
+"Il metodo ``common_checks()`` può essere usato per eseguire controlli comuni"
+" sull'oggetto ``filespec`` restituito dal metodo ``handle_upload()``. Questi"
+" includono controlli sulla dimensione del file caricato, sul nome e "
+"l'estensione del file, e sul contenuto del file non consentito. Questo può "
+"essere eseguito semplicemente passando l'oggetto ``filespec``:"
+
+#: ../../devdocs-source-copy/files/upload.rst:155
+msgid ""
+"``common_checks()`` does not have a function return. Instead, please check "
+"the ``$filespec->error`` property after running ``common_checks()``"
+msgstr ""
+"``common_checks()`` non restituisce alcun valore. Verifica invece la "
+"proprietà ``$filespec->error`` dopo aver eseguito ``common_checks()``"
+
+#: ../../devdocs-source-copy/files/upload.rst:159
+msgid "Check form for validity"
+msgstr "Verifica della validità del form"
+
+#: ../../devdocs-source-copy/files/upload.rst:161
+msgid ""
+"One can check if a form is valid for file uploads by simply passing the form"
+" name to the ``is_valid()`` method. It will return true on valid forms and "
+"false if the file was not uploaded for the specified form or the upload file"
+" was not properly set."
+msgstr ""
+"È possibile verificare se un form è valido per il caricamento di file "
+"semplicemente passando il nome del form al metodo ``is_valid()``. Restituirà"
+" true per i form validi e false se il file non è stato caricato per il form "
+"specificato o se il file di caricamento non è stato impostato correttamente."

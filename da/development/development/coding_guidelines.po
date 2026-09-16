@@ -1,0 +1,86 @@
+# Danish translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/development/coding_guidelines.rst:2
+msgid "Coding Guidelines"
+msgstr "Kodningsretningslinjer"
+
+#: ../../devdocs-source-copy/development/coding_guidelines.rst:4
+msgid ""
+"phpBB's coding guidelines are maintained in its `source code repository "
+"<https://github.com/phpbb/phpbb>`_. You can find the latest versions on "
+"area51:"
+msgstr ""
+"phpBB's kodningsretningslinjer vedligeholdes i dets `kildekode-repository "
+"<https://github.com/phpbb/phpbb>`_. Du kan finde de seneste versioner på "
+"area51:"
+
+#: ../../devdocs-source-copy/development/coding_guidelines.rst:8
+msgid ""
+"Rules for `Olympus (3.0.x) code <https://area51.phpbb.com/docs/30x/coding-"
+"guidelines.html>`_"
+msgstr ""
+"Regler for `Olympus (3.0.x)-kode <https://area51.phpbb.com/docs/30x/coding-"
+"guidelines.html>`_"
+
+#: ../../devdocs-source-copy/development/coding_guidelines.rst:9
+msgid ""
+"Rules for `Ascraeus (3.1.x) code <https://area51.phpbb.com/docs/31x/coding-"
+"guidelines.html>`_"
+msgstr ""
+"Regler for `Ascraeus (3.1.x)-kode <https://area51.phpbb.com/docs/31x/coding-"
+"guidelines.html>`_"
+
+#: ../../devdocs-source-copy/development/coding_guidelines.rst:10
+msgid ""
+"Rules for `Rhea (3.2.x) code <https://area51.phpbb.com/docs/32x/coding-"
+"guidelines.html>`_"
+msgstr ""
+"Regler for `Rhea (3.2.x)-kode <https://area51.phpbb.com/docs/32x/coding-"
+"guidelines.html>`_"
+
+#: ../../devdocs-source-copy/development/coding_guidelines.rst:11
+msgid ""
+"Rules for `Proteus (3.3.x) code <https://area51.phpbb.com/docs/33x/coding-"
+"guidelines.html>`_"
+msgstr ""
+"Regler for `Proteus (3.3.x)-kode <https://area51.phpbb.com/docs/33x/coding-"
+"guidelines.html>`_"
+
+#: ../../devdocs-source-copy/development/coding_guidelines.rst:13
+msgid ""
+"These documents are automatically updated when changes are made to them."
+msgstr ""
+"Disse dokumenter opdateres automatisk, når der foretages ændringer i dem."
+
+#: ../../devdocs-source-copy/development/coding_guidelines.rst:16
+msgid "JavaScript Linting"
+msgstr "JavaScript-linting"
+
+#: ../../devdocs-source-copy/development/coding_guidelines.rst:18
+msgid ""
+"We use JSHint and JSCS for checking the quality of the JavaScript—JSHint for"
+" linting, and JSCS for ensuring consistent code. There is a .jshintrc and a "
+".jscs file in the root of the project, and your editor probably has a plugin"
+" available which will show you when you violate these standards."
+msgstr ""
+"Vi bruger JSHint og JSCS til at kontrollere kvaliteten af JavaScript—JSHint "
+"til linting og JSCS til at sikre konsistent kode. Der findes en .jshintrc- "
+"og en .jscs-fil i roden af projektet, og din editor har sandsynligvis et "
+"tilgængeligt plugin, som viser dig, når du bryder disse standarder."

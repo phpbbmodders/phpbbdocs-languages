@@ -1,0 +1,712 @@
+# Danish translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:3
+msgid "Updating a phpBB 3.0 modification to an extension"
+msgstr "Opdatering af en phpBB 3.0-modifikation til en udvidelse"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:6
+msgid "Extension Structure"
+msgstr "Udvidelsesstruktur"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:8
+msgid ""
+"The most obvious change should be the location where the MODs / Extensions "
+"are stored. In phpBB 3.0 all files were put into the core's root folder. In "
+"phpBB 3.1 a special directory for extensions has been created. It's called "
+"``ext/``."
+msgstr ""
+"Den mest oplagte ændring er placeringen, hvor MOD'er/udvidelser gemmes. I "
+"phpBB 3.0 blev alle filer lagt i kernens rodmappe. I phpBB 3.1 er der "
+"oprettet en speciel mappe til udvidelser. Den hedder ``ext/``."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:13
+msgid "Directory"
+msgstr "Mappe"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:15
+msgid ""
+"Each extension has its own directory. However, you must also use an "
+"additional vendor directory (with your author name or author-group name). In"
+" the case of my Newspage, the files will be in"
+msgstr ""
+"Hver udvidelse har sin egen mappe. Du skal dog også bruge en ekstra vendor-"
+"mappe (med dit forfatternavn eller forfattergruppenavn). I tilfældet med min"
+" Newspage vil filerne ligge i"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:23
+msgid ""
+"There should not be a need to have files located outside of that directory. "
+"No matter which files, may it be styles, language or ACP module files. All "
+"of them should be moved into your extension's directory:"
+msgstr ""
+"Der bør ikke være behov for at have filer placeret uden for denne mappe. "
+"Uanset hvilke filer, det være sig styles, sprog eller ACP-modulfiler. De bør"
+" alle flyttes ind i din udvidelses mappe:"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:1
+msgid "new directory"
+msgstr "ny mappe"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:1
+msgid "current directory"
+msgstr "nuværende mappe"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:1
+msgid "``acp/*_module.php``"
+msgstr "``acp/*_module.php``"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:1
+msgid "``phpBB/includes/acp/``"
+msgstr "``phpBB/includes/acp/``"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:1
+msgid "``acp/*_info.php``"
+msgstr "``acp/*_info.php``"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:1
+msgid "``phpBB/includes/acp/info/``"
+msgstr "``phpBB/includes/acp/info/``"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:1
+msgid "``adm/style/``"
+msgstr "``adm/style/``"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:1
+msgid "``phpBB/adm/style/``"
+msgstr "``phpBB/adm/style/``"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:1
+msgid "``config/``"
+msgstr "``config/``"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:1
+msgid "---"
+msgstr "---"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:1
+msgid "``controller/``"
+msgstr "``controller/``"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:1
+msgid "``*.php``"
+msgstr "``*.php``"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:1
+msgid "``event/``"
+msgstr "``event/``"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:1
+msgid "``language/``"
+msgstr "``language/``"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:1
+msgid "``phpBB/language/``"
+msgstr "``phpBB/language/``"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:1
+msgid "``migrations/``"
+msgstr "``migrations/``"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:1
+msgid "``styles/``"
+msgstr "``styles/``"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:1
+msgid "``phpBB/styles/``"
+msgstr "``phpBB/styles/``"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:41
+msgid ""
+"Newly added, additional directories have already been listed. Their use will"
+" be explained in the following paragraphs."
+msgstr ""
+"Nyligt tilføjede, ekstra mapper er allerede blevet oplistet. Deres brug "
+"forklares i de følgende afsnit."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:45
+msgid "Important new files"
+msgstr "Vigtige nye filer"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:47
+msgid ""
+"There is a new file your extension needs in order to be recognised by the "
+"system. It's called ``composer.json``: it specifies the requirements of your"
+" extension as well as some author information. The layout is a simple json "
+"array, the keys should really explain enough."
+msgstr ""
+"Der er en ny fil, din udvidelse har brug for, for at blive genkendt af "
+"systemet. Den hedder ``composer.json``: den angiver din udvidelses krav samt"
+" nogle forfatteroplysninger. Layoutet er et simpelt json-array, nøglerne "
+"burde forklare tingene ret godt i sig selv."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:55
+msgid "You must not change the ``type`` element."
+msgstr "Du må ikke ændre ``type``-elementet."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:57
+msgid ""
+"In the ``require`` section you can also specify other extensions which are "
+"required in order to install this one. (*Validation for this is not yet "
+"implemented, but should be in 3.3.0*)"
+msgstr ""
+"I sektionen ``require`` kan du også angive andre udvidelser, der kræves for "
+"at installere denne. (*Validering af dette er endnu ikke implementeret, men "
+"bør være det i 3.3.0*)"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:90
+msgid ""
+"The second new file is called ``ext.php``. It can be used to extend the "
+"functionality while install/uninstalling your extension:"
+msgstr ""
+"Den anden nye fil hedder ``ext.php``. Den kan bruges til at udvide "
+"funktionaliteten, mens din udvidelse installeres/afinstalleres:"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:110
+msgid "Front-facing files, routes and services"
+msgstr "Front-facing filer, routes og services"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:112
+msgid ""
+"While in 3.0 you just created a new file in the root directory of phpBB, you"
+" must use the new controller system in 3.1 for extensions. Your links will "
+"change from something like ``phpBB/newspage.php`` to "
+"``phpBB/app.php/newspage``. If the board has enabled url rewriting, your "
+"links will look a little nicer like ``phpBB/newspage``."
+msgstr ""
+"Mens du i 3.0 blot oprettede en ny fil i phpBB's rodmappe, skal du i 3.1 "
+"bruge det nye controller-system til udvidelser. Dine links vil ændre sig fra"
+" noget som ``phpBB/newspage.php`` til ``phpBB/app.php/newspage``. Hvis "
+"forummet har aktiveret URL-omskrivning, vil dine links se lidt pænere ud som"
+" ``phpBB/newspage``."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:118
+msgid ""
+"In order to link a specific routing rule to your extension, you need to "
+"define the route in your extension's ``config/routing.yml``."
+msgstr ""
+"For at knytte en specifik routing-regel til din udvidelse skal du definere "
+"routen i din udvidelses ``config/routing.yml``."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:121
+msgid ""
+"For an easy start to the Newspage, two rules are enough. The first rule is "
+"for the basic page, currently ``newspage.php``. The second one is for the "
+"pagination, like ``newspage.php?start=5``. The first rule sets a default "
+"page (1), while the second rule requires a second part of the url to be an "
+"integer."
+msgstr ""
+"For en let start på Newspage er to regler nok. Den første regel er til den "
+"grundlæggende side, i øjeblikket ``newspage.php``. Den anden er til "
+"pagineringen, som ``newspage.php?start=5``. Den første regel sætter en "
+"standardside (1), mens den anden regel kræver, at en anden del af URL'en er "
+"et heltal."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:139
+msgid ""
+"The string we define for ``_controller`` defines a service "
+"(``nickvergessen.newspage.controller``) and a method (``base``) of the class"
+" which is then called. Services are defined in your extensions "
+"``config/services.yml``. Services are instances of classes. Services are "
+"used, so there is only one instance of the class which is used all the time."
+" You can also define the arguments for the constructor of your class. The "
+"example definition of the Newspage controller service would be something "
+"similar to:"
+msgstr ""
+"Strengen, vi definerer for ``_controller``, definerer en service "
+"(``nickvergessen.newspage.controller``) og en metode (``base``) på klassen, "
+"som derefter kaldes. Services defineres i din udvidelses "
+"``config/services.yml``. Services er instanser af klasser. Services bruges, "
+"så der kun findes én instans af klassen, som bruges hele tiden. Du kan også "
+"definere argumenterne til din klasses konstruktør. Eksempeldefinitionen af "
+"Newspage-controllerens service ville være noget i stil med:"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:165
+msgid ""
+"Any service that is previously defined in your file, or in the file of the "
+"phpBB core ``phpBB/config/services.yml``, can also be used as an argument, "
+"as well as some predefined strings (like ``core.root_path`` here)."
+msgstr ""
+"Enhver service, der tidligere er defineret i din fil, eller i phpBB-kernens "
+"fil ``phpBB/config/services.yml``, kan også bruges som et argument, ligesom "
+"nogle foruddefinerede strenge (som f.eks. ``core.root_path`` her)."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:171
+msgid ""
+"The classes from ``phpBB/ext/`` are automatically loaded by their namespace "
+"and class names, whereby backslash ( ``\\`` ) represent directories. In this"
+" case the class ``nickvergessen\\newspage\\controller\\main`` would be "
+"located in ``phpBB/ext/nickvergessen/newspage/controller/main.php``"
+msgstr ""
+"Klasserne fra ``phpBB/ext/`` autoloades automatisk ud fra deres namespace- "
+"og klassenavne, hvor bagudvendt skråstreg ( ``\\`` ) repræsenterer mapper. I"
+" dette tilfælde ville klassen ``nickvergessen\\newspage\\controller\\main`` "
+"være placeret i ``phpBB/ext/nickvergessen/newspage/controller/main.php``"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:176
+msgid ""
+"For more explanations about `Routing "
+"<https://area51.phpbb.com/docs/dev/master/extensions/tutorial_controllers.html#routing>`_"
+" and `Services "
+"<https://area51.phpbb.com/docs/dev/master/extensions/tutorial_controllers.html#dependencies>`_"
+" see our documentation."
+msgstr ""
+"For flere forklaringer om `Routing "
+"<https://area51.phpbb.com/docs/dev/master/extensions/tutorial_controllers.html#routing>`_"
+" og `Services "
+"<https://area51.phpbb.com/docs/dev/master/extensions/tutorial_controllers.html#dependencies>`_,"
+" se vores dokumentation."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:180
+msgid ""
+"In this example my **controller/main.php** would look like the following:"
+msgstr "I dette eksempel ville min **controller/main.php** se sådan ud:"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:250
+msgid ""
+"The order of arguments in services.yml should match the order of arguments "
+"passed to the class constructor ``public function __construct()``. "
+"Otherwise, an error will be thrown and the board will be broken if you try "
+"to enable the extension."
+msgstr ""
+"Rækkefølgen af argumenter i services.yml bør matche rækkefølgen af "
+"argumenter, der sendes til klassens konstruktør ``public function "
+"__construct()``. Ellers vil der blive kastet en fejl, og forummet vil gå i "
+"stykker, hvis du forsøger at aktivere udvidelsen."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:255
+msgid ""
+"You can also have multiple different methods in one controller as well as "
+"having multiple controllers, in order to organise your code a bit better."
+msgstr ""
+"Du kan også have flere forskellige metoder i én controller samt have flere "
+"controllere for at organisere din kode lidt bedre."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:259
+msgid "ACP Modules"
+msgstr "ACP-moduler"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:261
+msgid "This section also applies to MCP and UCP modules."
+msgstr "Dette afsnit gælder også for MCP- og UCP-moduler."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:263
+msgid ""
+"As mentioned before these files are also moved into your extensions "
+"directory. The info-file, currently located in "
+"``phpBB/includes/acp/info/acp_newspage.php``, is going to be "
+"``ext/nickvergessen/newspage/acp/main_info.php`` and the module itself is "
+"moved from ``phpBB/includes/acp/acp_newspage.php`` to "
+"``ext/nickvergessen/newspage/acp/main_module.php``. In order to be able to "
+"automatically load the files by their class names we need to make some "
+"adjustments to the classes themselves."
+msgstr ""
+"Som nævnt tidligere flyttes disse filer også ind i din udvidelses mappe. "
+"Info-filen, i øjeblikket placeret i "
+"``phpBB/includes/acp/info/acp_newspage.php``, bliver til "
+"``ext/nickvergessen/newspage/acp/main_info.php``, og selve modulet flyttes "
+"fra ``phpBB/includes/acp/acp_newspage.php`` til "
+"``ext/nickvergessen/newspage/acp/main_module.php``. For at kunne autoloade "
+"filerne ud fra deres klassenavne skal vi foretage nogle justeringer af selve"
+" klasserne."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:272
+msgid ""
+"As for the ``main_info.php`` we need to adjust the class name from "
+"``acp_newspage_info`` to ``main_info`` and also change the value of "
+"``'filename'`` in the returned array."
+msgstr ""
+"For ``main_info.php`` skal vi justere klassenavnet fra ``acp_newspage_info``"
+" til ``main_info`` og også ændre værdien af ``'filename'`` i det returnerede"
+" array."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:317
+msgid "In case of the module, just adjust the class name:"
+msgstr "For modulet skal du blot justere klassenavnet:"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:353
+msgid "Database Changes, UMIL replaced by Migrations"
+msgstr "Databaseændringer, UMIL erstattet af migreringer"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:357
+msgid ""
+"For more documentation about migrations, see the :doc:`../migrations/index` "
+"API and :doc:`tutorial_migrations` documentation"
+msgstr ""
+"For mere dokumentation om migreringer, se dokumentationen "
+":doc:`../migrations/index` (API) og :doc:`tutorial_migrations`"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:360
+msgid ""
+"Basically migrations do the same as your 3.0 UMIL files. It performs the "
+"database changes of your MOD/Extension. The biggest difference between "
+"migrations and UMIL is that while you had one file with one array in UMIL "
+"for all your changes, you can have multiple files in Migrations. You usually"
+" create a new migration file each time you need to introduce new database "
+"changes. But let's have a look at the Newspage again."
+msgstr ""
+"Migreringer gør grundlæggende det samme som dine UMIL-filer fra 3.0. De "
+"udfører databaseændringerne for din MOD/udvidelse. Den største forskel "
+"mellem migreringer og UMIL er, at hvor du i UMIL havde én fil med ét array "
+"til alle dine ændringer, kan du have flere filer i migreringer. Du opretter "
+"normalt en ny migreringsfil, hver gang du har brug for at introducere nye "
+"databaseændringer. Men lad os kigge på Newspage igen."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:406
+msgid "Schema Changes"
+msgstr "Skemaændringer"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:408
+msgid ""
+"The Newspage does not have any database schema changes, so I will use the "
+":doc:`../migrations/schema_changes` example from the Documentation. "
+"Basically you need to have two methods in your migration class file:"
+msgstr ""
+"Newspage har ingen databaseskemaændringer, så jeg vil bruge eksemplet fra "
+":doc:`../migrations/schema_changes` i dokumentationen. Grundlæggende skal du"
+" have to metoder i din migreringsklassefil:"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:416
+msgid "and"
+msgstr "og"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:422
+msgid "whereby both methods return an array with the changes:"
+msgstr "hvor begge metoder returnerer et array med ændringerne:"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:464
+msgid ""
+"The ``revert_schema()`` should thereby revert all changes made by the "
+"``update_schema()``."
+msgstr ""
+"``revert_schema()`` bør derved fortryde alle ændringer foretaget af "
+"``update_schema()``."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:468
+msgid "Data Changes"
+msgstr "Dataændringer"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:470
+msgid ""
+"The data changes, like adding modules, permissions and configs, are provided"
+" with the ``update_data()`` function."
+msgstr ""
+"Dataændringerne, såsom tilføjelse af moduler, tilladelser og configs, "
+"leveres med funktionen ``update_data()``."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:473
+msgid ""
+"This function returns an array as well. The example for the 1.0.0 version "
+"update from the Newspage would look like the following:"
+msgstr ""
+"Denne funktion returnerer også et array. Eksemplet for version "
+"1.0.0-opdateringen fra Newspage ville se sådan ud:"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:505
+msgid ""
+"More information about these data update tools can be found in "
+":doc:`../migrations/tools/index`."
+msgstr ""
+"Flere oplysninger om disse dataopdateringsværktøjer findes i "
+":doc:`../migrations/tools/index`."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:509
+msgid "Dependencies and finishing up migrations"
+msgstr "Afhængigheder og færdiggørelse af migreringer"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:511
+msgid ""
+"Now there are only two things your migration file still needs. The first "
+"thing is a check, which allows phpBB to see whether the migration is already"
+" installed, although it did not run yet (f.e. when updating from a 3.0 MOD "
+"to a 3.1 Extension)."
+msgstr ""
+"Nu er der kun to ting, din migreringsfil stadig mangler. Den første er en "
+"kontrol, som gør det muligt for phpBB at se, om migreringen allerede er "
+"installeret, selvom den endnu ikke er kørt (f.eks. ved opdatering fra en "
+"3.0-MOD til en 3.1-udvidelse)."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:516
+msgid ""
+"The easiest way for this to check, could be the version of the MOD, but when"
+" you add columns to tables, you can also check whether they exist:"
+msgstr ""
+"Den nemmeste måde at kontrollere dette på kunne være MOD'ens version, men "
+"når du tilføjer kolonner til tabeller, kan du også kontrollere, om de "
+"findes:"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:526
+msgid ""
+"As the migration files can have almost any name, phpBB might be unable to "
+"sort your migration files correctly. To avoid this problem, you can define a"
+" set of dependencies which must be installed before your migration can be "
+"installed. phpBB will try to install them, before installing your migration."
+" If they can not be found or installed, your installation will fail as well."
+" For the 1.0.0 migration I will only require phpBB's ``3.1.0-a1`` migration:"
+msgstr ""
+"Da migreringsfiler kan have næsten et hvilket som helst navn, kan phpBB "
+"muligvis ikke sortere dine migreringsfiler korrekt. For at undgå dette "
+"problem kan du definere et sæt afhængigheder, der skal installeres, før din "
+"migrering kan installeres. phpBB vil forsøge at installere dem, før din "
+"migrering installeres. Hvis de ikke kan findes eller installeres, vil din "
+"installation også fejle. Til 1.0.0-migreringen kræver jeg kun phpBB's "
+"``3.1.0-a1``-migrering:"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:540
+msgid ""
+"All further Newspage migrations can now require Newspage's first migration "
+"file, and thus all will be also dependent on phpBB's 3.1.0-a1 migration."
+msgstr ""
+"Alle yderligere Newspage-migreringer kan nu kræve Newspages første "
+"migreringsfil, og derved vil alle også være afhængige af phpBB's "
+"3.1.0-a1-migrering."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:543
+msgid "A complete file could look like this:"
+msgstr "En komplet fil kunne se sådan ud:"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:601
+msgid "Include extension's language files"
+msgstr "Inkludering af udvidelsens sprogfiler"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:603
+msgid ""
+"As the language files in your extension are not detected by "
+"``$user->add_lang()`` any more, you need to use the "
+"``$user->add_lang_ext()`` method. This method takes two arguments, the first"
+" one is the fullname of the extension (including the vendor) and the second "
+"one is the file name or array of file names. So in order to load the "
+"Newspage language file we call:"
+msgstr ""
+"Da sprogfilerne i din udvidelse ikke længere registreres af "
+"``$user->add_lang()``, skal du bruge metoden ``$user->add_lang_ext()``. "
+"Denne metode tager to argumenter, hvoraf det første er udvidelsens fulde "
+"navn (inklusive vendor) og det andet er filnavnet eller et array af "
+"filnavne. For at indlæse Newspages sprogfil kalder vi derfor:"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:613
+msgid ""
+"to load the language file "
+"``phpBB/ext/nickvergessen/newspage/language/en/newspage.php``"
+msgstr ""
+"for at indlæse sprogfilen "
+"``phpBB/ext/nickvergessen/newspage/language/en/newspage.php``"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:617
+msgid "File edits - Don't edit! Use Events and Listeners!"
+msgstr "Filredigeringer - undlad at redigere! Brug events og listeners!"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:619
+msgid ""
+"As for the Newspage Modification, the only thing that is now missing from "
+"completion is the link in the header section, so you can start browsing the "
+"Newspage."
+msgstr ""
+"For Newspage-modifikationen er det eneste, der nu mangler for at være "
+"færdig, linket i headersektionen, så du kan begynde at browse på Newspage."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:623
+msgid ""
+"In order to do this, the template variable used to be defined in the "
+"``page_header()`` function of phpBB along with an edit in the "
+"``overall_header.html`` template. But this is not phpBB 3.0, so we don't use"
+" file edits anymore and instead employ **events** instead. With events you "
+"can hook into several places and execute your code, without editing them."
+msgstr ""
+"For at gøre dette blev modelvariablen tidligere defineret i phpBB's funktion"
+" ``page_header()`` sammen med en ændring i modellen ``overall_header.html``."
+" Men dette er ikke phpBB 3.0, så vi bruger ikke længere filredigeringer og "
+"benytter i stedet **events**. Med events kan du hooke ind flere steder og "
+"eksekvere din kode uden at redigere dem."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:630
+msgid "php Events"
+msgstr "PHP-events"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:632
+msgid "So instead of adding"
+msgstr "Så i stedet for at tilføje"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:640
+msgid ""
+"to the ``page_header()``, we put that into an event listener, which is then "
+"called everytime ``page_header()`` itself is called."
+msgstr ""
+"til ``page_header()``, lægger vi det i en event-listener, som derefter "
+"kaldes, hver gang ``page_header()`` selv kaldes."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:643
+msgid ""
+"So we add the **event/main_listener.php** file to our extension, which "
+"implements a Symfony class:"
+msgstr ""
+"Så vi tilføjer filen **event/main_listener.php** til vores udvidelse, som "
+"implementerer en Symfony-klasse:"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:688
+msgid ""
+"In the ``getSubscribedEvents()`` method we tell the system which events we "
+"want to subscribe our new custom functions to. In our case we want to "
+"subscribe to two events: the ``core.page_header`` event and the "
+"``core.user_setup`` event (a full list of events can be found `here "
+"<https://area51.phpbb.com/docs/dev/3.3.x/extensions/events_list.html>`_):"
+msgstr ""
+"I metoden ``getSubscribedEvents()`` fortæller vi systemet, hvilke events vi "
+"vil abonnere vores nye brugerdefinerede funktioner på. I vores tilfælde vil "
+"vi abonnere på to events: eventet ``core.page_header`` og eventet "
+"``core.user_setup`` (en fuld liste over events findes `her "
+"<https://area51.phpbb.com/docs/dev/3.3.x/extensions/events_list.html>`_):"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:704
+msgid "Now we add the two functions which are called with each event:"
+msgstr "Nu tilføjer vi de to funktioner, der kaldes med hvert event:"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:729
+msgid ""
+"As a last step we need to register the event listener to the system. This is"
+" done using the ``event.listener`` tag in the ``config/service.yml``:"
+msgstr ""
+"Som et sidste trin skal vi registrere event-listeneren hos systemet. Dette "
+"gøres ved hjælp af tagget ``event.listener`` i ``config/service.yml``:"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:744
+msgid ""
+"After this is added, your listener gets called and we are done with the php-"
+"editing."
+msgstr ""
+"Når dette er tilføjet, bliver din listener kaldt, og vi er færdige med PHP-"
+"redigeringen."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:747
+msgid ""
+"Again like with the controllers, you can have multiple listeners in the "
+"``event/`` directory, as well as subscribe to multiple events with one "
+"listener."
+msgstr ""
+"Ligesom med controllerne kan du igen have flere listeners i mappen "
+"``event/`` samt abonnere på flere events med én listener."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:751
+msgid "Template Event"
+msgstr "Modelevent"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:753
+msgid ""
+"Now the only thing left is adding the code to the html output. For templates"
+" you need one file per template event."
+msgstr ""
+"Nu er det eneste tilbage at tilføje koden til HTML-outputtet. Til modeller "
+"har du brug for én fil pr. modelevent."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:756
+msgid ""
+"The filename includes the event name. In order to add the Newspage link next"
+" to the FAQ link, we need to use the ``'overall_header_navigation_prepend'``"
+" event (a full list of events can be found `here "
+"<https://area51.phpbb.com/docs/dev/3.3.x/extensions/events_list.html>`_)."
+msgstr ""
+"Filnavnet indeholder eventnavnet. For at tilføje Newspage-linket ved siden "
+"af FAQ-linket skal vi bruge eventet ``'overall_header_navigation_prepend'`` "
+"(en fuld liste over events findes `her "
+"<https://area51.phpbb.com/docs/dev/3.3.x/extensions/events_list.html>`_)."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:761
+msgid ""
+"So we add the "
+"``styles/prosilver/template/event/overall_header_navigation_prepend_listener.html``"
+" to our extensions directory and add our html code into it."
+msgstr ""
+"Så vi tilføjer "
+"``styles/prosilver/template/event/overall_header_navigation_prepend_listener.html``"
+" til vores udvidelses mappe og tilføjer vores HTML-kode i den."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:769
+msgid "And that's it. No file edits required for the template files as well."
+msgstr "Og det var det. Ingen filredigeringer krævet til modelfilerne heller."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:772
+msgid "Adding Events"
+msgstr "Tilføjelse af events"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:774
+msgid ""
+"There are already numerous events available. However, if your extension "
+"needs to make use of an event which is not yet in the phpBB code, you can "
+"request the event be added to the core by creating a ticket in the `phpBB "
+"Bug Tracker <https://tracker.phpbb.com/projects/PHPBB3>`_ and we will "
+"endeavour to include it in the next release."
+msgstr ""
+"Der findes allerede talrige events. Men hvis din udvidelse har brug for at "
+"gøre brug af et event, der endnu ikke findes i phpBB-koden, kan du anmode "
+"om, at eventet tilføjes til kernen, ved at oprette en sag i `phpBB Bug "
+"Tracker <https://tracker.phpbb.com/projects/PHPBB3>`_, og vi vil bestræbe os"
+" på at inkludere det i den næste udgivelse."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:781
+msgid "Basics finished!"
+msgstr "Det grundlæggende er færdigt!"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:783
+msgid ""
+"And that's it, the 3.0 Modification was successfully converted into a 3.1 "
+"Extension."
+msgstr ""
+"Og det var det, 3.0-modifikationen blev med succes konverteret til en "
+"3.1-udvidelse."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:787
+msgid "Compatibility"
+msgstr "Kompatibilitet"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:789
+msgid ""
+"In some cases the compatibility of functions and classes could not be kept, "
+"while increasing their power for 3.1."
+msgstr ""
+"I nogle tilfælde kunne kompatibiliteten af funktioner og klasser ikke "
+"bevares, samtidig med at deres kraft blev øget til 3.1."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:793
+msgid "Pagination"
+msgstr "Paginering"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:795
+msgid ""
+"When you use your old 3.0 code you will receive an error like the "
+"following::"
+msgstr ""
+"Når du bruger din gamle 3.0-kode, vil du modtage en fejl som følgende::"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:799
+msgid ""
+"The problem is that the pagination is no longer returned by the function, "
+"but instead automatically put into the template. Also, the function name was"
+" updated with a phpbb-prefix."
+msgstr ""
+"Problemet er, at pagineringen ikke længere returneres af funktionen, men i "
+"stedet automatisk lægges ind i modellen. Desuden blev funktionsnavnet "
+"opdateret med et phpbb-præfiks."
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:803
+msgid "The old pagination code was similar to:"
+msgstr "Den gamle pagineringskode lignede:"
+
+#: ../../devdocs-source-copy/extensions/modification_to_extension.rst:815
+msgid "The new code should look like:"
+msgstr "Den nye kode bør se sådan ud:"
