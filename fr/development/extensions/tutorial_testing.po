@@ -1,0 +1,684 @@
+# French translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:32-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:3
+msgid "Tutorial: Testing"
+msgstr "Tutoriel : tests"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:6
+msgid "Introduction"
+msgstr "Introduction"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:8
+msgid "This tutorial explains:"
+msgstr "Ce tutoriel explique :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:10
+msgid "`Unit tests`_"
+msgstr "`Tests unitaires`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:11
+msgid "`Unit tests with database interaction`_"
+msgstr "`Tests unitaires avec interaction de base de données`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:12
+msgid "`Functional testing`_"
+msgstr "`Tests fonctionnels`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:13
+msgid "`Continuous integration with Github Actions`_"
+msgstr "`Intégration continue avec GitHub Actions`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:17
+msgid ""
+"It is required to run the tests from a phpBB clone of the git repository, "
+"because the test framework is not included in the download packages."
+msgstr ""
+"Il est nécessaire d'exécuter les tests depuis un clone git du dépôt de "
+"phpBB, car le framework de test n'est pas inclus dans les paquets de "
+"téléchargement."
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:21
+msgid "Unit Tests"
+msgstr "Tests unitaires"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:23
+msgid ""
+"Since unit tests are explained in more detail in the "
+":doc:`../testing/unit_testing` section of the general testing documentation "
+"and require no changes for extensions, we only add a quick example here."
+msgstr ""
+"Les tests unitaires étant expliqués plus en détail dans la section "
+":doc:`../testing/unit_testing` de la documentation générale sur les tests, "
+"et ne nécessitant aucune modification pour les extensions, nous ajoutons ici"
+" uniquement un exemple rapide."
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:29
+msgid ""
+"If you have not yet run the tests of phpBB, it is recommended to make a "
+"break here and try to run them first. This helps to make sure, you have set "
+"up everything correctly, before writing the tests for the extension."
+msgstr ""
+"Si vous n'avez pas encore exécuté les tests de phpBB, il est recommandé de "
+"faire une pause ici et d'essayer de les exécuter d'abord. Cela permet de "
+"vous assurer que tout est correctement configuré, avant d'écrire les tests "
+"de l'extension."
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:33
+msgid ""
+"More details are explained in the :doc:`../testing/unit_testing` section."
+msgstr ""
+"Plus de détails sont expliqués dans la section "
+":doc:`../testing/unit_testing`."
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:146
+msgid "Using mocks"
+msgstr "Utiliser des mocks"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:148
+msgid ""
+"In the ``setUp()`` method we create our controller object. However, we do "
+"not use the actual phpBB classes which are used by the controller when "
+"opening the page. Instead `phpunit mocks "
+"<https://phpunit.readthedocs.io/en/7.5/test-doubles.html>`_ are injected."
+msgstr ""
+"Dans la méthode ``setUp()``, nous créons notre objet contrôleur. Cependant, "
+"nous n'utilisons pas les classes réelles de phpBB utilisées par le "
+"contrôleur lors de l'ouverture de la page. Des `mocks phpunit "
+"<https://phpunit.readthedocs.io/en/7.5/test-doubles.html>`_ sont injectés à "
+"la place."
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:154
+msgid ""
+"These mocks allow us to check how often a method is called, what the "
+"arguments are and let us specify the return value. This helps us to verify "
+"that **our** controller code behaves as expected. These mocks also help "
+"prevent getting false errors in cases where using the actual phpBB classes "
+"may behave unexpectedly."
+msgstr ""
+"Ces mocks nous permettent de vérifier combien de fois une méthode est "
+"appelée, quels sont ses arguments, et de spécifier la valeur de retour. Cela"
+" nous aide à vérifier que **notre** code de contrôleur se comporte comme "
+"prévu. Ces mocks aident également à éviter de fausses erreurs dans les cas "
+"où l'utilisation des classes réelles de phpBB pourrait se comporter de "
+"manière inattendue."
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:161
+msgid "Testing a method"
+msgstr "Tester une méthode"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:163
+msgid ""
+"In our controller we added special handling when the provided name is "
+"``bertie``. So our first test is whether the "
+"``phpbb\\controller\\helper::message()`` method is called **once** with the "
+"``NO_AUTH_SPEAKING`` error message. We also want to make sure that the "
+"``phpbb\\controller\\helper::render()`` method is not called in this case."
+msgstr ""
+"Dans notre contrôleur, nous avons ajouté un traitement spécial lorsque le "
+"nom fourni est ``bertie``. Notre premier test vérifie donc si la méthode "
+"``phpbb\\controller\\helper::message()`` est appelée **une fois** avec le "
+"message d'erreur ``NO_AUTH_SPEAKING``. Nous voulons également nous assurer "
+"que la méthode ``phpbb\\controller\\helper::render()`` n'est pas appelée "
+"dans ce cas."
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:169
+msgid ""
+"Then we call the controller's ``handle()`` method. If the methods are "
+"invoked correctly the test will pass."
+msgstr ""
+"Nous appelons ensuite la méthode ``handle()`` du contrôleur. Si les méthodes"
+" sont invoquées correctement, le test réussira."
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:190
+msgid ""
+"Make sure that the name of your testing method starts with ``test``. "
+"Otherwise the test will not be executed by phpunit."
+msgstr ""
+"Assurez-vous que le nom de votre méthode de test commence par ``test``. "
+"Sinon, le test ne sera pas exécuté par phpunit."
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:194
+msgid "Data providers"
+msgstr "Fournisseurs de données"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:196
+msgid ""
+"In most cases we will want to provide some test data to our unit test "
+"methods. A data provider is a method that returns an array of arrays "
+"containing input variables and expected output variables. The inner array "
+"contains the arguments for the ``test`` method."
+msgstr ""
+"Dans la plupart des cas, nous voudrons fournir des données de test à nos "
+"méthodes de test unitaire. Un fournisseur de données est une méthode qui "
+"renvoie un tableau de tableaux contenant les variables d'entrée et les "
+"variables de sortie attendues. Le tableau interne contient les arguments de "
+"la méthode ``test``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:211
+msgid ""
+"This data provider contains two arrays of test data, so our test will be "
+"called twice, once with the arguments:"
+msgstr ""
+"Ce fournisseur de données contient deux tableaux de données de test, notre "
+"test sera donc appelé deux fois, une première fois avec les arguments :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:214
+msgid "'foo'"
+msgstr "'foo'"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:215
+msgid "true"
+msgstr "true"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:216
+msgid "'DEMO_GOODBYE'"
+msgstr "'DEMO_GOODBYE'"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:218
+msgid "and a second time with:"
+msgstr "et une seconde fois avec :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:220
+msgid "'bar'"
+msgstr "'bar'"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:221
+msgid "false"
+msgstr "false"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:222
+msgid "'DEMO_HELLO'"
+msgstr "'DEMO_HELLO'"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:224
+msgid ""
+"In the test we then tell the ``phpbb\\config\\config`` mock to expect to be "
+"called only once, and to return the specified value (which is passed in as "
+"an argument) for the ``acme_demo_goodbye`` config variable."
+msgstr ""
+"Dans le test, nous indiquons ensuite au mock ``phpbb\\config\\config`` de "
+"s'attendre à n'être appelé qu'une seule fois, et de renvoyer la valeur "
+"spécifiée (transmise en argument) pour la variable de configuration "
+"``acme_demo_goodbye``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:242
+msgid ""
+"If we have a short look at our controller again, we see that the value of "
+"the config influences the ``\\phpbb\\language\\language::lang()`` call:"
+msgstr ""
+"Si nous jetons à nouveau un rapide coup d'œil à notre contrôleur, nous "
+"voyons que la valeur de la configuration influence l'appel "
+"``\\phpbb\\language\\language::lang()`` :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:250
+msgid ""
+"This is what we check with the third argument ``$expected_language`` of our "
+"test method:"
+msgstr ""
+"C'est ce que nous vérifions avec le troisième argument "
+"``$expected_language`` de notre méthode de test :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:260
+msgid ""
+"For more information about Mocks and phpunit, please have a look at the "
+"`phpunit Documentation <https://phpunit.readthedocs.io/en/7.5/test-"
+"doubles.html>`_."
+msgstr ""
+"Pour plus d'informations sur les mocks et phpunit, consultez la "
+"`documentation phpunit <https://phpunit.readthedocs.io/en/7.5/test-"
+"doubles.html>`_."
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:264
+msgid "phpunit configuration file"
+msgstr "Fichier de configuration phpunit"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:266
+msgid ""
+"Before we can run the tests we need to create the configuration file for "
+"phpunit. Don't be scared if you do not understand it, you should not need to"
+" edit anything in that file. The file should be stored as "
+"``ext/acme/demo/phpunit.xml.dist``:"
+msgstr ""
+"Avant de pouvoir exécuter les tests, nous devons créer le fichier de "
+"configuration pour phpunit. Ne vous inquiétez pas si vous ne le comprenez "
+"pas, vous ne devriez rien avoir à modifier dans ce fichier. Le fichier doit "
+"être stocké sous ``ext/acme/demo/phpunit.xml.dist`` :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:308
+msgid ""
+"Now we can finally run the test suite by executing the following command:"
+msgstr ""
+"Nous pouvons maintenant enfin exécuter la suite de tests en lançant la "
+"commande suivante :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:314
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:335
+msgid "Results:"
+msgstr "Résultats :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:329
+msgid ""
+"To run only the tests from one file just append the relative path to the "
+"call:"
+msgstr ""
+"Pour n'exécuter que les tests d'un seul fichier, ajoutez simplement le "
+"chemin relatif à l'appel :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:352
+msgid "Unit tests with database interaction"
+msgstr "Tests unitaires avec interaction de base de données"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:354
+msgid ""
+"When testing your own tables and columns, you can not use the normal "
+"database that phpBB's unit tests set up by default."
+msgstr ""
+"Lors du test de vos propres tables et colonnes, vous ne pouvez pas utiliser "
+"la base de données normale que les tests unitaires de phpBB configurent par "
+"défaut."
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:358
+msgid "Migration with database changes"
+msgstr "Migration avec modifications de base de données"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:360
+msgid ""
+"Our extension has a migration file "
+"``ext/acme/demo/migrations/add_database_changes.php``, which contains some "
+"database changes, so we can test them:"
+msgstr ""
+"Notre extension possède un fichier de migration "
+"``ext/acme/demo/migrations/add_database_changes.php``, qui contient quelques"
+" modifications de base de données, afin que nous puissions les tester :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:432
+msgid "Testing database changes"
+msgstr "Tester les modifications de base de données"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:434
+msgid ""
+"If we add a new test that checks for the existence of the table, we will see"
+" that the test fails:"
+msgstr ""
+"Si nous ajoutons un nouveau test vérifiant l'existence de la table, nous "
+"verrons que le test échoue :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:490
+msgid ""
+"Before we can run the database test, we need to create the fixture file we "
+"specified in the ``getDataSet()`` method. This file can be used to create "
+"database entries before each test run is executed. We will make use of this "
+"later. For now we just want to check if our tables have been created, so we "
+"specify an empty config table "
+"``ext/acme/demo/tests/migrations/database/fixtures/add_database_changes.xml``:"
+msgstr ""
+"Avant de pouvoir exécuter le test de base de données, nous devons créer le "
+"fichier de fixture spécifié dans la méthode ``getDataSet()``. Ce fichier "
+"peut être utilisé pour créer des entrées de base de données avant "
+"l'exécution de chaque test. Nous nous en servirons plus tard. Pour "
+"l'instant, nous voulons simplement vérifier si nos tables ont été créées, "
+"nous spécifions donc une table config vide "
+"``ext/acme/demo/tests/migrations/database/fixtures/add_database_changes.xml``"
+" :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:509
+msgid "Execution"
+msgstr "Exécution"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:511
+msgid "When we now execute the tests again they will fail:"
+msgstr "Si nous exécutons maintenant à nouveau les tests, ils échoueront :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:542
+msgid ""
+"In order to get our database changes executed in unit tests, we need to tell"
+" phpBB that this test needs the extension to be set up. We can do this by "
+"overwriting the ``\\phpbb_database_test_case::setup_extensions()`` method of"
+" the test and returning an array with the extension name:"
+msgstr ""
+"Afin que nos modifications de base de données soient exécutées dans les "
+"tests unitaires, nous devons indiquer à phpBB que ce test nécessite que "
+"l'extension soit configurée. Nous pouvons le faire en surchargeant la "
+"méthode ``\\phpbb_database_test_case::setup_extensions()`` du test et en "
+"renvoyant un tableau contenant le nom de l'extension :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:558
+msgid "and now the test passes successfully:"
+msgstr "et maintenant le test réussit :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:576
+msgid ""
+"As you can see, the time for the test execution went up from a few hundred "
+"milliseconds to a few seconds. This is because database tests set up the "
+"database and populate it, which just takes time."
+msgstr ""
+"Comme vous pouvez le voir, le temps d'exécution du test est passé de "
+"quelques centaines de millisecondes à quelques secondes. Cela s'explique par"
+" le fait que les tests de base de données la configurent et la peuplent, ce "
+"qui prend simplement du temps."
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:580
+msgid ""
+"Therefore it is recommended to only use database tests when you really need "
+"the database. It is better to split your test file into a database-test and "
+"a non-database one, to keep the run time short."
+msgstr ""
+"Il est donc recommandé de n'utiliser des tests de base de données que "
+"lorsque vous en avez réellement besoin. Il est préférable de scinder votre "
+"fichier de test en un fichier de test avec base de données et un autre sans,"
+" afin de garder un temps d'exécution court."
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:585
+msgid "Using fixtures"
+msgstr "Utiliser des fixtures"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:587
+msgid ""
+"Now let's make use of the fixture file to populate the database for our "
+"test. Therefore we replace the content of the "
+"``ext/acme/demo/tests/migrations/database/fixtures/add_database_changes.xml``"
+" file with the following content:"
+msgstr ""
+"Utilisons maintenant le fichier de fixture pour peupler la base de données "
+"pour notre test. Nous remplaçons donc le contenu du fichier "
+"``ext/acme/demo/tests/migrations/database/fixtures/add_database_changes.xml``"
+" par le contenu suivant :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:612
+msgid ""
+"You can leave out columns from the tables, if you do not want to specify "
+"values for them."
+msgstr ""
+"Vous pouvez omettre des colonnes des tables si vous ne souhaitez pas leur "
+"spécifier de valeurs."
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:617
+msgid ""
+"Database columns that are specified as ``TEXT_UNI`` columns need to be "
+"specified, otherwise your test will fail on some databases."
+msgstr ""
+"Les colonnes de base de données spécifiées comme colonnes ``TEXT_UNI`` "
+"doivent être renseignées, sinon votre test échouera sur certaines bases de "
+"données."
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:620
+msgid ""
+"After we added the content to the database we add a new test at the end of "
+"the file, that queries our table to the "
+"``ext/acme/demo/tests/migrations/database/add_database_changes.php`` and "
+"tests whether the values are really in the database:"
+msgstr ""
+"Après avoir ajouté le contenu à la base de données, nous ajoutons un nouveau"
+" test à la fin du fichier, qui interroge notre table dans "
+"``ext/acme/demo/tests/migrations/database/add_database_changes.php`` et "
+"vérifie que les valeurs sont bien présentes dans la base de données :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:660
+msgid "Functional testing"
+msgstr "Tests fonctionnels"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:662
+msgid ""
+"Functional tests simulate calling a URL and allow you to filter the output "
+"then and check whether certain elements have a specific content."
+msgstr ""
+"Les tests fonctionnels simulent l'appel d'une URL et vous permettent ensuite"
+" de filtrer la sortie et de vérifier si certains éléments ont un contenu "
+"spécifique."
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:667
+msgid ""
+"Again it is recommended to run the functional tests of phpBB first, before "
+"writing the tests for the extension."
+msgstr ""
+"Là encore, il est recommandé d'exécuter d'abord les tests fonctionnels de "
+"phpBB, avant d'écrire les tests de l'extension."
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:670
+msgid ""
+"More details are explained in the :doc:`../testing/functional_testing` "
+"section."
+msgstr ""
+"Plus de détails sont expliqués dans la section "
+":doc:`../testing/functional_testing`."
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:673
+msgid ""
+"Again like with the database changes we need to tell phpBB that the test "
+"depends on the extension, then phpBB will take care of enabling the "
+"extension before the test execution. Our little test opens the route we "
+"added and then checks for the right message, like the unit test we wrote in "
+"`unit tests`_ at the beginning:"
+msgstr ""
+"Là encore, comme pour les modifications de base de données, nous devons "
+"indiquer à phpBB que le test dépend de l'extension, phpBB se chargeant alors"
+" d'activer l'extension avant l'exécution du test. Notre petit test ouvre la "
+"route que nous avons ajoutée, puis vérifie le bon message, comme le test "
+"unitaire que nous avons écrit dans `tests unitaires`_ au début :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:722
+msgid "Running this test, however, will fail:"
+msgstr "L'exécution de ce test échouera cependant :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:750
+msgid ""
+"The reason is that the test suite compares the response for the correct "
+"format (valid HTML, without debug errors) and a successful status code "
+"``200``."
+msgstr ""
+"La raison est que la suite de tests compare la réponse par rapport au format"
+" correct (HTML valide, sans erreurs de débogage) et à un code de statut de "
+"succès ``200``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:753
+msgid ""
+"Therefore we need to adjust the bertie test, because we return a ``403`` "
+"status in the controller, if someone tries to talk to bertie:"
+msgstr ""
+"Nous devons donc ajuster le test bertie, car nous renvoyons un statut "
+"``403`` dans le contrôleur si quelqu'un tente de parler à bertie :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:767
+msgid "Now the tests will pass correctly:"
+msgstr "Les tests réussiront maintenant correctement :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:785
+msgid ""
+"Functional tests are **slow**. Depending on your server, it might take up to"
+" 2 seconds per page view. phpBB is installed via page views as well, which "
+"takes another 20 to 100 seconds, depending on various configurations, for "
+"the first functional tests. Subsequent functional tests **do not reinstall**"
+" the board, so they do not have the long setup time."
+msgstr ""
+"Les tests fonctionnels sont **lents**. Selon votre serveur, cela peut "
+"prendre jusqu'à 2 secondes par affichage de page. phpBB est également "
+"installé via des affichages de pages, ce qui prend 20 à 100 secondes "
+"supplémentaires, selon diverses configurations, pour les premiers tests "
+"fonctionnels. Les tests fonctionnels suivants **ne réinstallent pas** le "
+"forum, ils n'ont donc pas ce long temps de configuration."
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:792
+msgid "Continuous integration with Github Actions"
+msgstr "Intégration continue avec GitHub Actions"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:794
+msgid ""
+"As a final step in this tutorial, we want to explain how to set up automated"
+" testing of your extension using Github Actions. In order to do that, your "
+"extension must first be set up as a project repository on `GitHub "
+"<https://github.com>`_ (free of charge for public open source repositories)."
+msgstr ""
+"Comme dernière étape de ce tutoriel, nous souhaitons expliquer comment "
+"mettre en place des tests automatisés pour votre extension à l'aide de "
+"GitHub Actions. Pour cela, votre extension doit d'abord être mise en place "
+"en tant que dépôt de projet sur `GitHub <https://github.com>`_ (gratuit pour"
+" les dépôts open source publics)."
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:799
+msgid ""
+"If you need help setting up git and creating your GitHub project, please "
+"have a look at the `Help section <https://help.github.com/>`_ on Github, "
+"particularly the following two help topics:"
+msgstr ""
+"Si vous avez besoin d'aide pour configurer git et créer votre projet GitHub,"
+" consultez la `section d'aide <https://help.github.com/>`_ de GitHub, en "
+"particulier les deux sujets d'aide suivants :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:803
+msgid "`Set Up Git <https://help.github.com/articles/set-up-git>`_"
+msgstr "`Set Up Git <https://help.github.com/articles/set-up-git>`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:804
+msgid "`Create A Repo <https://help.github.com/articles/create-a-repo>`_"
+msgstr "`Create A Repo <https://help.github.com/articles/create-a-repo>`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:808
+msgid ""
+"It is recommended to use the root of the extension (``ext/acme/demo``) as "
+"the root for the Git repository. Otherwise the scripts that phpBB provides "
+"for easy test execution on Travis CI will not work correctly."
+msgstr ""
+"Il est recommandé d'utiliser la racine de l'extension (``ext/acme/demo``) "
+"comme racine du dépôt Git. Sinon, les scripts fournis par phpBB pour "
+"faciliter l'exécution des tests sur Travis CI ne fonctionneront pas "
+"correctement."
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:812
+msgid ""
+"View one of phpBB's official extension repositories as an example: `Board "
+"Rules <https://github.com/phpbb-extensions/boardrules>`_."
+msgstr ""
+"Consultez l'un des dépôts d'extensions officiels de phpBB comme exemple : "
+"`Board Rules <https://github.com/phpbb-extensions/boardrules>`_."
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:816
+msgid "Create your Github Action Workflow file"
+msgstr "Créer votre fichier de workflow GitHub Actions"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:818
+msgid ""
+"From your repository on GitHub.com, click **Add File** and select **Create "
+"new file** and name the file ``.github/workflows/tests.yml``."
+msgstr ""
+"Depuis votre dépôt sur GitHub.com, cliquez sur **Add File**, sélectionnez "
+"**Create new file**, et nommez le fichier ``.github/workflows/tests.yml``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:821
+msgid "Copy the following into the ``tests.yml`` file:"
+msgstr "Copiez le contenu suivant dans le fichier ``tests.yml`` :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:849
+msgid ""
+"You must change the ``EXTNAME`` variable to your extension's name (as you "
+"defined it in your composer.json file) in the ``with`` section at the bottom"
+" of this file."
+msgstr ""
+"Vous devez remplacer la variable ``EXTNAME`` par le nom de votre extension "
+"(tel que vous l'avez défini dans votre fichier composer.json) dans la "
+"section ``with`` en bas de ce fichier."
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:852
+msgid ""
+"To save and run your workflow, scroll to the bottom of the page and select "
+"**Create a new branch for this commit and start a pull request**. Then, to "
+"create a pull request, click **Propose new file**. After you merge this pull"
+" request, all future commits and pull requests on your master branch will "
+"trigger this CI workflow and your unit, database and functional tests will "
+"be executed."
+msgstr ""
+"Pour enregistrer et exécuter votre workflow, faites défiler jusqu'en bas de "
+"la page et sélectionnez **Create a new branch for this commit and start a "
+"pull request**. Ensuite, pour créer la pull request, cliquez sur **Propose "
+"new file**. Après avoir fusionné cette pull request, tous les futurs commits"
+" et pull requests sur votre branche master déclencheront ce workflow CI, et "
+"vos tests unitaires, de base de données et fonctionnels seront exécutés."
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:859
+msgid "Customising Your Test Workflow"
+msgstr "Personnaliser votre workflow de test"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:861
+msgid ""
+"Please refer to the `phpBB Extension Test Framework - Read Me "
+"<https://github.com/phpbb-extensions/test-framework>`_ for a complete list "
+"of configuration options and examples."
+msgstr ""
+"Reportez-vous au `phpBB Extension Test Framework - Read Me "
+"<https://github.com/phpbb-extensions/test-framework>`_ pour une liste "
+"complète des options de configuration et des exemples."
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:864
+msgid ""
+"`Configuration Options <https://github.com/phpbb-extensions/test-"
+"framework#configuration-options>`_"
+msgstr ""
+"`Configuration Options <https://github.com/phpbb-extensions/test-"
+"framework#configuration-options>`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:865
+msgid ""
+"`Configuration Examples <https://github.com/phpbb-extensions/test-"
+"framework#configuration-examples>`_"
+msgstr ""
+"`Configuration Examples <https://github.com/phpbb-extensions/test-"
+"framework#configuration-examples>`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:868
+msgid "Final Thoughts on Extension Testing"
+msgstr "Dernières réflexions sur les tests d'extensions"
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:870
+msgid ""
+"Well written tests help prevent regressions (breaking other parts of your "
+"code) by alerting you to any problems resulting from changes to your code "
+"while fixing bugs, adding new features and other code changes to your "
+"extension."
+msgstr ""
+"Des tests bien écrits aident à prévenir les régressions (casser d'autres "
+"parties de votre code) en vous alertant de tout problème résultant de "
+"modifications de votre code lors de la correction de bugs, de l'ajout de "
+"nouvelles fonctionnalités ou d'autres modifications apportées à votre "
+"extension."
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:874
+msgid ""
+"If your tests fail after committing changes, you will receive a notification"
+" email from GitHub. The logs from your Github Actions can be a little "
+"daunting at first, but once you get used to reading them they can help you "
+"pinpoint unforeseen bugs and regressions in your code that must be fixed."
+msgstr ""
+"Si vos tests échouent après la validation de modifications, vous recevrez un"
+" e-mail de notification de GitHub. Les journaux de vos GitHub Actions "
+"peuvent sembler un peu intimidants au début, mais une fois que vous vous "
+"serez habitué à les lire, ils pourront vous aider à repérer des bugs et "
+"régressions imprévus dans votre code qui doivent être corrigés."
+
+#: ../../devdocs-source-copy/extensions/tutorial_testing.rst:879
+msgid ""
+"Github Actions also provides Build Status badges. They provide you the code "
+"in markdown format so you can add the badge to your repository's README so "
+"visitors can see the build status of your extension. For example (Just "
+"change ``your-org/your-repo`` to your repository):"
+msgstr ""
+"GitHub Actions fournit également des badges de statut de build. Ils vous "
+"fournissent le code au format Markdown afin que vous puissiez ajouter le "
+"badge au README de votre dépôt, pour que les visiteurs puissent voir le "
+"statut de build de votre extension. Par exemple (remplacez simplement "
+"``your-org/your-repo`` par votre dépôt) :"

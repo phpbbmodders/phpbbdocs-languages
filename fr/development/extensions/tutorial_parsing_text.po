@@ -1,0 +1,135 @@
+# French translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:32-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:3
+msgid "Tutorial: Parsing text"
+msgstr "Tutoriel : analyse du texte"
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:6
+msgid "Database fields"
+msgstr "Champs de la base de données"
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:7
+msgid ""
+"phpBB uses the following database fields where BBCode is allowed (forum "
+"description, forum rules, post content, ...):"
+msgstr ""
+"phpBB utilise les champs de base de données suivants là où les BBCodes sont "
+"autorisés (description du forum, règles du forum, contenu des messages, ...)"
+" :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:9
+msgid "**foo** - Text itself"
+msgstr "**foo** - Le texte lui-même"
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:10
+msgid ""
+"**foo_bbcode_uid** - a randomly generated unique identifier to mark the "
+"BBCodes and used for quicker parsing"
+msgstr ""
+"**foo_bbcode_uid** - un identifiant unique généré aléatoirement pour marquer"
+" les BBCodes et permettre une analyse plus rapide"
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:11
+msgid ""
+"**foo_bbcode_bitfield** - a `bit field "
+"<https://en.wikipedia.org/wiki/Bit_field>`_ containing the information which"
+" bbcode is used in the text so only the relevant ones need to be loaded from"
+" the database. **NOTE: No longer used in posts generated in phpBB 3.2+**"
+msgstr ""
+"**foo_bbcode_bitfield** - un `champ de bits "
+"<https://en.wikipedia.org/wiki/Bit_field>`_ contenant l'information "
+"indiquant quels bbcodes sont utilisés dans le texte, afin de ne charger "
+"depuis la base de données que ceux qui sont pertinents. **REMARQUE : plus "
+"utilisé dans les messages générés depuis phpBB 3.2+**"
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:12
+msgid ""
+"**foo_options** - a bit field containing the information whether bbcode, "
+"smilies and magic urls are enabled (OPTION_FLAG_BBCODE, OPTION_FLAG_SMILIES "
+"and OPTION_FLAG_LINKS). Sometimes you will find this separated into "
+"enable_bbcode, enable_smilies and enable_magic_url"
+msgstr ""
+"**foo_options** - un champ de bits contenant l'information indiquant si les "
+"bbcodes, les smileys et les liens magiques sont activés (OPTION_FLAG_BBCODE,"
+" OPTION_FLAG_SMILIES et OPTION_FLAG_LINKS). Vous trouverez parfois cela "
+"séparé en enable_bbcode, enable_smilies et enable_magic_url"
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:14
+msgid ""
+"Column names will vary, replace ``foo`` with the respective column name "
+"(e.g. ``text``, ``text_bbcode_uid``, ...)."
+msgstr ""
+"Les noms de colonnes varient ; remplacez ``foo`` par le nom de colonne "
+"correspondant (par ex. ``text``, ``text_bbcode_uid``, ...)."
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:17
+msgid "Parsing text with BBCodes & smilies"
+msgstr "Analyser du texte avec BBCodes et smileys"
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:20
+msgid "Inserting text into DB"
+msgstr "Insérer du texte dans la base de données"
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:39
+msgid ""
+"The above method uses the bbcode options database field which is used in "
+"many places instead of enable_smiles, enable_bbcode and enable_magic_url. "
+"Here is how to insert it into the database using the enable_smilies, "
+"enable_bbcode and enable_magic_url tables."
+msgstr ""
+"La méthode ci-dessus utilise le champ bbcode_options de la base de données, "
+"utilisé à de nombreux endroits à la place de enable_smiles, enable_bbcode et"
+" enable_magic_url. Voici comment l'insérer dans la base de données à l'aide "
+"des champs enable_smilies, enable_bbcode et enable_magic_url."
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:63
+msgid "Displaying text from DB"
+msgstr "Afficher du texte depuis la base de données"
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:65
+msgid ""
+"This example uses the bbcode_options field which is used in forums and "
+"groups description parsing:"
+msgstr ""
+"Cet exemple utilise le champ bbcode_options, utilisé pour l'analyse des "
+"descriptions de forums et de groupes :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:81
+msgid ""
+"The next one uses the enable_bbcode, enable_smilies and enable_magic_url "
+"flags which can be used instead of the above method and is used in parsing "
+"posts:"
+msgstr ""
+"Le suivant utilise les indicateurs enable_bbcode, enable_smilies et "
+"enable_magic_url, qui peuvent être utilisés à la place de la méthode ci-"
+"dessus, et qui sont utilisés lors de l'analyse des messages :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:101
+msgid "Generating text for editing"
+msgstr "Générer du texte pour l'édition"
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:121
+msgid "Database fields for BBCode"
+msgstr "Champs de base de données pour les BBCodes"
+
+#: ../../devdocs-source-copy/extensions/tutorial_parsing_text.rst:123
+msgid "The following column definitions are expected for BBCodes:"
+msgstr ""
+"Les définitions de colonnes suivantes sont attendues pour les BBCodes :"

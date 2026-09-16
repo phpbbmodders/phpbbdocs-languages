@@ -1,0 +1,110 @@
+# French translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:32-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../devdocs-source-copy/migrations/schema_changes.rst:3
+msgid "Schema changes"
+msgstr "Modifications de schéma"
+
+#: ../../devdocs-source-copy/migrations/schema_changes.rst:5
+msgid ""
+"Schema changes are done in Migrations by creating an array that will be "
+"parsed by ``\\phpbb\\db\\tools::perform_schema_changes()``."
+msgstr ""
+"Les modifications de schéma s'effectuent dans les migrations en créant un "
+"tableau qui sera analysé par ``\\phpbb\\db\\tools::"
+"perform_schema_changes()``."
+
+#: ../../devdocs-source-copy/migrations/schema_changes.rst:9
+msgid "Basics"
+msgstr "Notions de base"
+
+#: ../../devdocs-source-copy/migrations/schema_changes.rst:10
+msgid ""
+"When performing schema changes, your Migrations class should contain two "
+"functions, ``update_schema`` and ``revert_schema``."
+msgstr ""
+"Lorsque vous effectuez des modifications de schéma, votre classe de "
+"migration doit contenir deux fonctions : ``update_schema`` et "
+"``revert_schema``."
+
+#: ../../devdocs-source-copy/migrations/schema_changes.rst:14
+msgid "update_schema"
+msgstr "update_schema"
+
+#: ../../devdocs-source-copy/migrations/schema_changes.rst:15
+msgid ""
+"``update_schema()`` will be called as the **first** step when installing a "
+"migration. This makes any database schema changes you need when installing "
+"the migration."
+msgstr ""
+"``update_schema()`` sera appelée comme **première** étape lors de "
+"l'installation d'une migration. Elle effectue les modifications de schéma de "
+"base de données nécessaires à l'installation de la migration."
+
+#: ../../devdocs-source-copy/migrations/schema_changes.rst:27
+msgid "revert_schema"
+msgstr "revert_schema"
+
+#: ../../devdocs-source-copy/migrations/schema_changes.rst:29
+msgid ""
+"``revert_schema()`` will be called when a Migration must be uninstalled "
+"(this could happen if the user wants/needs to revert changes by the "
+"Migration, a dependency is reverted, or the installation fails and the "
+"entire Migration is removed)."
+msgstr ""
+"``revert_schema()`` sera appelée lorsqu'une migration doit être désinstallée "
+"(cela peut se produire si l'utilisateur souhaite/doit annuler les "
+"modifications de la migration, si une dépendance est annulée, ou si "
+"l'installation échoue et que la migration entière est supprimée)."
+
+#: ../../devdocs-source-copy/migrations/schema_changes.rst:34
+msgid ""
+"The instructions in ``revert_schema()`` should effectively do the exact "
+"opposite of what ``update_schema()`` does (e.g. if a table is dropped, "
+"revert should add the table with exactly the same columns/keys as it had "
+"before it was dropped)"
+msgstr ""
+"Les instructions de ``revert_schema()`` doivent effectivement faire "
+"exactement l'inverse de ce que fait ``update_schema()`` (par exemple, si une "
+"table est supprimée, revert doit ajouter la table avec exactement les mêmes "
+"colonnes/clés qu'elle avait avant sa suppression)"
+
+#: ../../devdocs-source-copy/migrations/schema_changes.rst:47
+msgid "What to return"
+msgstr "Que renvoyer"
+
+#: ../../devdocs-source-copy/migrations/schema_changes.rst:48
+msgid ""
+"The array returned is passed directly, as is, to ``\\phpbb\\db\\tools::"
+"perform_schema_changes();``"
+msgstr ""
+"Le tableau renvoyé est transmis directement, tel quel, à "
+"``\\phpbb\\db\\tools::perform_schema_changes();``"
+
+#: ../../devdocs-source-copy/migrations/schema_changes.rst:52
+msgid "Examples"
+msgstr "Exemples"
+
+#: ../../devdocs-source-copy/migrations/schema_changes.rst:54
+msgid "**From 3_1_0_dev:**"
+msgstr "**Extrait de 3_1_0_dev :**"
+
+#: ../../devdocs-source-copy/migrations/schema_changes.rst:97
+msgid "**From style_update_p2:**"
+msgstr "**Extrait de style_update_p2 :**"

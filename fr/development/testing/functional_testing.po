@@ -1,0 +1,192 @@
+# French translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:32-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../devdocs-source-copy/testing/functional_testing.rst:3
+msgid "Functional Testing"
+msgstr "Tests fonctionnels"
+
+#: ../../devdocs-source-copy/testing/functional_testing.rst:5
+msgid ""
+"Functional tests test software the way a user would. They simulate a user "
+"browsing the website, but they do these steps in an automated way. phpBB "
+"allows you to write such tests. This document will tell you how."
+msgstr ""
+"Les tests fonctionnels testent le logiciel comme le ferait un utilisateur. "
+"Ils simulent la navigation d'un utilisateur sur le site web, mais effectuent "
+"ces étapes de manière automatisée. phpBB vous permet d'écrire de tels tests. "
+"Ce document vous explique comment procéder."
+
+#: ../../devdocs-source-copy/testing/functional_testing.rst:10
+msgid "Running Functional Tests"
+msgstr "Exécuter les tests fonctionnels"
+
+#: ../../devdocs-source-copy/testing/functional_testing.rst:12
+msgid ""
+"Information on how to run tests is available in the GitHub repository at "
+"`<https://github.com/phpbb/phpbb/blob/3.2.x/tests/RUNNING_TESTS.md>`_. You "
+"can switch the branch to check instructions for a specific version of phpBB."
+msgstr ""
+"Des informations sur l'exécution des tests sont disponibles dans le dépôt "
+"GitHub à l'adresse `<https://github.com/phpbb/phpbb/blob/3.2.x/tests/"
+"RUNNING_TESTS.md>`_. Vous pouvez changer de branche pour consulter les "
+"instructions correspondant à une version spécifique de phpBB."
+
+#: ../../devdocs-source-copy/testing/functional_testing.rst:17
+msgid "Writing Functional Tests"
+msgstr "Écrire des tests fonctionnels"
+
+#: ../../devdocs-source-copy/testing/functional_testing.rst:19
+msgid ""
+"Your test case will have to inherit from the ``phpbb_functional_test_case`` "
+"class. You will be able to make requests to a fresh phpBB installation. "
+"Also, be sure to put the file into the ``tests/functional/`` folder and to "
+"add the ``@group functional`` doc block above the class, so the tests are "
+"correctly executed."
+msgstr ""
+"Votre cas de test devra hériter de la classe ``phpbb_functional_test_case``. "
+"Vous pourrez alors effectuer des requêtes vers une installation phpBB toute "
+"neuve. Veillez également à placer le fichier dans le dossier ``tests/"
+"functional/`` et à ajouter le bloc de documentation ``@group functional`` au-"
+"dessus de la classe, afin que les tests soient correctement exécutés."
+
+#: ../../devdocs-source-copy/testing/functional_testing.rst:47
+msgid ""
+"There is a ``bootstrap()`` method where you can put code that is run before "
+"the test. Here you can set up some objects after the installation that are "
+"required for your test. Then you can define your tests, just as you would "
+"normally, by prefixing methods with ``test_``. In this case we will be "
+"testing the index."
+msgstr ""
+"Il existe une méthode ``bootstrap()`` dans laquelle vous pouvez placer du "
+"code exécuté avant le test. Vous pouvez y configurer, après l'installation, "
+"les objets requis par votre test. Vous pouvez ensuite définir vos tests, "
+"comme vous le feriez normalement, en préfixant les méthodes par ``test_``. "
+"Dans cet exemple, nous testerons la page d'accueil (index)."
+
+#: ../../devdocs-source-copy/testing/functional_testing.rst:53
+msgid "Goutte and Assertions"
+msgstr "Goutte et assertions"
+
+#: ../../devdocs-source-copy/testing/functional_testing.rst:55
+msgid ""
+"The functional testing framework is built using `Goutte <https://github.com/"
+"fabpot/Goutte>`_, which makes HTTP requests and allows us to interact with "
+"the page. The Goutte \"client\" is available in your tests through ``$this-"
+">request($method, $path)``. Alternatively you can also access it directly "
+"through ``$this->client``."
+msgstr ""
+"Le framework de tests fonctionnels est construit à partir de `Goutte "
+"<https://github.com/fabpot/Goutte>`_, qui effectue des requêtes HTTP et nous "
+"permet d'interagir avec la page. Le « client » Goutte est disponible dans "
+"vos tests via ``$this->request($method, $path)``. Vous pouvez également y "
+"accéder directement via ``$this->client``."
+
+#: ../../devdocs-source-copy/testing/functional_testing.rst:61
+msgid ""
+"When calling ``request()``, you will get a crawler, which allows you to "
+"fetch parts of the page using CSS selectors. Here is an example:"
+msgstr ""
+"Lorsque vous appelez ``request()``, vous obtenez un crawler, qui vous permet "
+"de récupérer des parties de la page à l'aide de sélecteurs CSS. Voici un "
+"exemple :"
+
+#: ../../devdocs-source-copy/testing/functional_testing.rst:82
+msgid ""
+"We perform a GET request to ``index.php``, then apply a CSS filter, querying "
+"for the .topiclist class. Then we make sure our query matched something."
+msgstr ""
+"Nous effectuons une requête GET vers ``index.php``, puis appliquons un "
+"filtre CSS en recherchant la classe .topiclist. Nous vérifions ensuite que "
+"notre requête a bien trouvé quelque chose."
+
+#: ../../devdocs-source-copy/testing/functional_testing.rst:85
+msgid ""
+"If the board's index page were broken, our test would catch this, allowing "
+"us to detect the issue and fix it. The more things you test, the more "
+"breakages you will catch early."
+msgstr ""
+"Si la page d'accueil du forum était défaillante, notre test le détecterait, "
+"nous permettant ainsi de repérer le problème et de le corriger. Plus vous "
+"testez de choses, plus tôt vous détecterez les défaillances."
+
+#: ../../devdocs-source-copy/testing/functional_testing.rst:89
+msgid ""
+"For more information what you can do with Goutte, check out the `GitHub "
+"project <https://github.com/fabpot/Goutte>`_, `Ryan Weaver's Goutte tutorial "
+"<http://www.phparch.com/2010/04/four-new-php-5-3-components-and-goutte-a-"
+"simple-web-scraper/>`_ and `Symfony's testing documentation <http://symfony."
+"com/doc/2.0/book/testing.html#the-test-client>`_."
+msgstr ""
+"Pour en savoir plus sur ce que vous pouvez faire avec Goutte, consultez le "
+"`projet GitHub <https://github.com/fabpot/Goutte>`_, le `tutoriel Goutte de "
+"Ryan Weaver <http://www.phparch.com/2010/04/four-new-php-5-3-components-and-"
+"goutte-a-simple-web-scraper/>`_ et la `documentation des tests de Symfony "
+"<http://symfony.com/doc/2.0/book/testing.html#the-test-client>`_."
+
+#: ../../devdocs-source-copy/testing/functional_testing.rst:95
+msgid "Authentication"
+msgstr "Authentification"
+
+#: ../../devdocs-source-copy/testing/functional_testing.rst:97
+msgid ""
+"Many functional tests will require the user to be logged in. To do so, you "
+"can use the ``login()`` method inherited from the "
+"``phpbb_functional_test_case`` class. This method will assign the user's SID "
+"to the inherited class property ``$this->sid``. You will need to append this "
+"to the URLs that the logged-in user will be navigating to in order to hold "
+"the session. For usage examples, view the logout test in `tests/functional/"
+"auth_test.php <https://github.com/phpbb/phpbb/blob/3.2.x/tests/functional/"
+"auth_test.php>`_."
+msgstr ""
+"De nombreux tests fonctionnels nécessitent que l'utilisateur soit connecté. "
+"Pour cela, vous pouvez utiliser la méthode ``login()`` héritée de la classe "
+"``phpbb_functional_test_case``. Cette méthode assignera le SID de "
+"l'utilisateur à la propriété de classe héritée ``$this->sid``. Vous devrez "
+"l'ajouter aux URL vers lesquelles l'utilisateur connecté naviguera afin de "
+"maintenir la session. Pour des exemples d'utilisation, consultez le test de "
+"déconnexion dans `tests/functional/auth_test.php <https://github.com/phpbb/"
+"phpbb/blob/3.2.x/tests/functional/auth_test.php>`_."
+
+#: ../../devdocs-source-copy/testing/functional_testing.rst:106
+msgid "Localisation"
+msgstr "Localisation"
+
+#: ../../devdocs-source-copy/testing/functional_testing.rst:108
+msgid ""
+"In tests, as in phpBB itself, do not use hard-coded language unless "
+"absolutely necessary. Instead, use the ``$this->add_lang()`` and ``$this-"
+">lang()`` methods. Both act very similarly to their counterparts in the "
+"``\\phpbb\\user`` class. Note that ``language/en/common.php`` is "
+"automatically loaded by the test framework."
+msgstr ""
+"Dans les tests, comme dans phpBB lui-même, n'utilisez pas de texte codé en "
+"dur pour la langue, sauf en cas d'absolue nécessité. Utilisez plutôt les "
+"méthodes ``$this->add_lang()`` et ``$this->lang()``. Toutes deux se "
+"comportent de manière très similaire à leurs équivalents de la classe "
+"``\\phpbb\\user``. Notez que ``language/en/common.php`` est automatiquement "
+"chargé par le framework de tests."
+
+#: ../../devdocs-source-copy/testing/functional_testing.rst:131
+msgid ""
+"For more usage examples, please view `tests/functional/lang_test.php "
+"<https://github.com/phpbb/phpbb/blob/3.2.x/tests/functional/lang_test.php>`_."
+msgstr ""
+"Pour davantage d'exemples d'utilisation, consultez `tests/functional/"
+"lang_test.php <https://github.com/phpbb/phpbb/blob/3.2.x/tests/functional/"
+"lang_test.php>`_."

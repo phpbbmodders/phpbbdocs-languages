@@ -1,0 +1,110 @@
+# French translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:32-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../devdocs-source-copy/migrations/tools/permission.rst:3
+msgid "Permission Tool"
+msgstr "Outil Permission"
+
+#: ../../devdocs-source-copy/migrations/tools/permission.rst:5
+msgid ""
+"The permission tool helps with adding and removing permissions, setting and "
+"unsetting permissions, and adding and removing permission roles."
+msgstr ""
+"L'outil permission aide à ajouter et supprimer des permissions, à les "
+"activer et désactiver, ainsi qu'à ajouter et supprimer des rôles de "
+"permission."
+
+#: ../../devdocs-source-copy/migrations/tools/permission.rst:9
+msgid "Add Permission"
+msgstr "Ajouter une permission"
+
+#: ../../devdocs-source-copy/migrations/tools/permission.rst:11
+msgid "Add a new permission"
+msgstr "Ajoute une nouvelle permission"
+
+#: ../../devdocs-source-copy/migrations/tools/permission.rst:18
+#: ../../devdocs-source-copy/migrations/tools/permission.rst:45
+#: ../../devdocs-source-copy/migrations/tools/permission.rst:69
+#: ../../devdocs-source-copy/migrations/tools/permission.rst:92
+#: ../../devdocs-source-copy/migrations/tools/permission.rst:113
+#: ../../devdocs-source-copy/migrations/tools/permission.rst:136
+#: ../../devdocs-source-copy/migrations/tools/permission.rst:160
+#: ../../devdocs-source-copy/migrations/tools/permission.rst:181
+msgid "Example"
+msgstr "Exemple"
+
+#: ../../devdocs-source-copy/migrations/tools/permission.rst:36
+msgid "Delete Permission"
+msgstr "Supprimer une permission"
+
+#: ../../devdocs-source-copy/migrations/tools/permission.rst:38
+msgid "Delete a permission"
+msgstr "Supprime une permission"
+
+#: ../../devdocs-source-copy/migrations/tools/permission.rst:61
+msgid "Add Role"
+msgstr "Ajouter un rôle"
+
+#: ../../devdocs-source-copy/migrations/tools/permission.rst:62
+msgid "Add a new permission role"
+msgstr "Ajoute un nouveau rôle de permission"
+
+#: ../../devdocs-source-copy/migrations/tools/permission.rst:83
+msgid "Update Permission Role"
+msgstr "Mettre à jour un rôle de permission"
+
+#: ../../devdocs-source-copy/migrations/tools/permission.rst:85
+msgid "Update a permission role"
+msgstr "Met à jour un rôle de permission"
+
+#: ../../devdocs-source-copy/migrations/tools/permission.rst:104
+msgid "Remove Role"
+msgstr "Supprimer un rôle"
+
+#: ../../devdocs-source-copy/migrations/tools/permission.rst:106
+msgid "Remove a permission role"
+msgstr "Supprime un rôle de permission"
+
+#: ../../devdocs-source-copy/migrations/tools/permission.rst:127
+msgid "Permission Set"
+msgstr "Activer une permission"
+
+#: ../../devdocs-source-copy/migrations/tools/permission.rst:129
+msgid "Set a permission (to Yes or Never)"
+msgstr "Définit une permission (sur Oui ou Jamais)"
+
+#: ../../devdocs-source-copy/migrations/tools/permission.rst:151
+msgid "Permission Unset"
+msgstr "Désactiver une permission"
+
+#: ../../devdocs-source-copy/migrations/tools/permission.rst:153
+msgid "Remove a permission (set to No)"
+msgstr "Supprime une permission (la définit sur Non)"
+
+#: ../../devdocs-source-copy/migrations/tools/permission.rst:173
+msgid "Role Exists"
+msgstr "Le rôle existe"
+
+#: ../../devdocs-source-copy/migrations/tools/permission.rst:174
+msgid ""
+"Check if a permission role exists before attempting to set/unset permissions "
+"on it (introduced in phpBB 3.3.2)"
+msgstr ""
+"Vérifie si un rôle de permission existe avant de tenter d'y activer/"
+"désactiver des permissions (introduit dans phpBB 3.3.2)"

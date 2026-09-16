@@ -1,0 +1,389 @@
+# French translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:32-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../devdocs-source-copy/development/processes.rst:2
+msgid "Development Processes"
+msgstr "Processus de développement"
+
+#: ../../devdocs-source-copy/development/processes.rst:5
+msgid "New Features"
+msgstr "Nouvelles fonctionnalités"
+
+#: ../../devdocs-source-copy/development/processes.rst:6
+msgid ""
+"This document outlines the process that is in place to propose new features "
+"that can be added to phpBB. phpBB uses this system to assure that a given "
+"feature is added as proposed and to make sure that feature requests are "
+"handled transparently by relying on community input."
+msgstr ""
+"Ce document décrit le processus mis en place pour proposer de nouvelles "
+"fonctionnalités pouvant être ajoutées à phpBB. phpBB utilise ce système pour "
+"garantir qu'une fonctionnalité donnée est ajoutée telle que proposée, et "
+"pour s'assurer que les demandes de fonctionnalités sont traitées de manière "
+"transparente en s'appuyant sur les retours de la communauté."
+
+#: ../../devdocs-source-copy/development/processes.rst:10
+msgid ""
+"When proposing features or adjustments to phpBB, there are two possible "
+"routes to take:"
+msgstr ""
+"Lorsque vous proposez des fonctionnalités ou des ajustements pour phpBB, "
+"deux voies sont possibles :"
+
+#: ../../devdocs-source-copy/development/processes.rst:12
+msgid "**Ideas**"
+msgstr "**Idées**"
+
+#: ../../devdocs-source-copy/development/processes.rst:13
+msgid ""
+"Generally more informal ideas from a user perspective. Usually short "
+"descriptions without too much technical detail."
+msgstr ""
+"Il s'agit généralement d'idées plus informelles, exprimées du point de vue "
+"de l'utilisateur. Ce sont habituellement de courtes descriptions, sans trop "
+"de détails techniques."
+
+#: ../../devdocs-source-copy/development/processes.rst:15
+msgid "**Feature Requests**"
+msgstr "**Demandes de fonctionnalités**"
+
+#: ../../devdocs-source-copy/development/processes.rst:16
+msgid ""
+"More technical proposal for new features. Should take a deeper look at the "
+"technical background and ways to implement this new feature. Base for "
+"further discussions with the development team."
+msgstr ""
+"Il s'agit d'une proposition plus technique de nouvelles fonctionnalités. "
+"Elle devrait examiner plus en profondeur le contexte technique et les moyens "
+"de mettre en œuvre cette nouvelle fonctionnalité. Elle sert de base à des "
+"discussions plus poussées avec l'équipe de développement."
+
+#: ../../devdocs-source-copy/development/processes.rst:19
+msgid ""
+"In the end, both of these will end up following the same general process:"
+msgstr "Au final, ces deux voies suivent le même processus général :"
+
+#: ../../devdocs-source-copy/development/processes.rst:24
+msgid "Ideas"
+msgstr "Idées"
+
+#: ../../devdocs-source-copy/development/processes.rst:25
+msgid ""
+"Ideas are generally more informal ideas that describe the request for a new "
+"feature from the user perspective. They are aimed at quickly gathering new "
+"ideas based on day to day use of phpBB."
+msgstr ""
+"Les idées sont généralement des idées plus informelles décrivant une demande "
+"de nouvelle fonctionnalité du point de vue de l'utilisateur. Elles visent à "
+"recueillir rapidement de nouvelles idées basées sur l'utilisation "
+"quotidienne de phpBB."
+
+#: ../../devdocs-source-copy/development/processes.rst:28
+msgid ""
+"Informal Ideas should be proposed in `phpBB Ideas <https://www.phpbb.com/"
+"community/ideas>`_. There it's possible to both gather feedback and support "
+"of other users."
+msgstr ""
+"Les idées informelles doivent être proposées sur `phpBB Ideas <https://www."
+"phpbb.com/community/ideas>`_. Il y est possible à la fois de recueillir des "
+"retours et le soutien d'autres utilisateurs."
+
+#: ../../devdocs-source-copy/development/processes.rst:31
+msgid ""
+"More detailed technical discussions should however take place in a *Feature "
+"request*."
+msgstr ""
+"Les discussions techniques plus détaillées doivent cependant avoir lieu dans "
+"une *demande de fonctionnalité*."
+
+#: ../../devdocs-source-copy/development/processes.rst:34
+msgid "Feature Requests"
+msgstr "Demandes de fonctionnalités"
+
+#: ../../devdocs-source-copy/development/processes.rst:35
+msgid ""
+"In contrast to the above mentioned *Ideas*, a *Feature Request* should be "
+"focused more on the technical solution for the proposed feature. They maybe "
+"be based on an *Idea* but that is not mandatory."
+msgstr ""
+"Contrairement aux *Idées* mentionnées ci-dessus, une *demande de "
+"fonctionnalité* doit se concentrer davantage sur la solution technique de la "
+"fonctionnalité proposée. Elle peut être basée sur une *Idée*, mais ce n'est "
+"pas obligatoire."
+
+#: ../../devdocs-source-copy/development/processes.rst:38
+msgid ""
+"New feature requests can either be started by creating a ticket in the "
+"`phpBB Tracker <https://tracker.phpbb.com/>`_ or by creating a new "
+"discussion topic on the `Area51 Forums <https://area51.phpbb.com/phpBB/>`_."
+msgstr ""
+"Une nouvelle demande de fonctionnalité peut être initiée soit en créant un "
+"ticket dans le `phpBB Tracker <https://tracker.phpbb.com/>`_, soit en créant "
+"un nouveau sujet de discussion sur les `forums Area51 <https://area51.phpbb."
+"com/phpBB/>`_."
+
+#: ../../devdocs-source-copy/development/processes.rst:41
+msgid ""
+"Try to describe the technical details of the proposed features, how it will "
+"be used, and recommendations for an possible implementation. Include your "
+"expectations of the amount of changes that are needed and attempt to discuss "
+"the complexity of the proposal."
+msgstr ""
+"Essayez de décrire les détails techniques des fonctionnalités proposées, la "
+"manière dont elles seront utilisées, ainsi que des recommandations pour une "
+"éventuelle mise en œuvre. Indiquez vos estimations quant à l'ampleur des "
+"modifications nécessaires et tentez d'aborder la complexité de la "
+"proposition."
+
+#: ../../devdocs-source-copy/development/processes.rst:45
+msgid ""
+"Members of the community will be able to participate in the discussion, give "
+"their feedback, and help with preparing a plan on how to best implement the "
+"feature in small and easy to track steps."
+msgstr ""
+"Les membres de la communauté pourront participer à la discussion, donner "
+"leur avis et aider à élaborer un plan permettant de mettre en œuvre au mieux "
+"la fonctionnalité par petites étapes faciles à suivre."
+
+#: ../../devdocs-source-copy/development/processes.rst:49
+msgid "Feature Acceptance"
+msgstr "Acceptation de la fonctionnalité"
+
+#: ../../devdocs-source-copy/development/processes.rst:50
+msgid ""
+"After a feature has been accepted by the *phpBB Development Team*, there "
+"should be at least one ticket in the `phpBB Tracker <https://tracker.phpbb."
+"com/>`_. A new feature should be split up into smaller, intermediate steps "
+"to ease implementation and review of the proposed changes. It is also "
+"possible to use *Epics* in the tracker for a better overview of necessary "
+"steps."
+msgstr ""
+"Une fois qu'une fonctionnalité a été acceptée par l'*équipe de développement "
+"de phpBB*, il doit exister au moins un ticket dans le `phpBB Tracker "
+"<https://tracker.phpbb.com/>`_. Une nouvelle fonctionnalité doit être "
+"découpée en étapes intermédiaires plus petites afin de faciliter la mise en "
+"œuvre et la relecture des modifications proposées. Il est également possible "
+"d'utiliser des *Epics* dans le tracker pour obtenir une meilleure vue "
+"d'ensemble des étapes nécessaires."
+
+#: ../../devdocs-source-copy/development/processes.rst:55
+msgid ""
+"Each step of a feature can then be reviewed and integrated separately. As a "
+"result of that, code reviews will be easier, quicker, and should also result "
+"in overall better code and features."
+msgstr ""
+"Chaque étape d'une fonctionnalité peut alors être relue et intégrée "
+"séparément. Il en résulte des relectures de code plus faciles, plus rapides, "
+"et une amélioration générale de la qualité du code et des fonctionnalités."
+
+#: ../../devdocs-source-copy/development/processes.rst:59
+msgid "Implementation & Review"
+msgstr "Mise en œuvre et relecture"
+
+#: ../../devdocs-source-copy/development/processes.rst:60
+msgid ""
+"Implementation of a feature or its intermediate steps usually follows the "
+"acceptance by the *phpBB Development Team*. All code needs to follow our "
+"`Coding Guidelines <coding_guidelines.html>`_. The implementation itself can "
+"be done by the requester, a *phpBB Development Team* member, or any other "
+"developer. Feature acceptance by the *phpBB Development Team* does not mean "
+"that implementation of it is mandatory or that it will have to be "
+"implemented by the *phpBB Development Team* itself."
+msgstr ""
+"La mise en œuvre d'une fonctionnalité ou de ses étapes intermédiaires suit "
+"généralement son acceptation par l'*équipe de développement de phpBB*. Tout "
+"le code doit respecter nos `conventions de codage <coding_guidelines."
+"html>`_. La mise en œuvre elle-même peut être réalisée par le demandeur, un "
+"membre de l'*équipe de développement de phpBB*, ou tout autre développeur. "
+"L'acceptation d'une fonctionnalité par l'*équipe de développement de phpBB* "
+"ne signifie pas que sa mise en œuvre est obligatoire, ni qu'elle devra être "
+"réalisée par l'*équipe de développement de phpBB* elle-même."
+
+#: ../../devdocs-source-copy/development/processes.rst:66
+msgid ""
+"When using external libraries, please make sure that they are compatible "
+"with our license. If you are unsure about whether a certain type of license "
+"is acceptable, please ask the *phpBB Development Team*. PHP libraries "
+"**MUST** be installed with composer and should generally be considered well "
+"maintained."
+msgstr ""
+"Lorsque vous utilisez des bibliothèques externes, veuillez vous assurer "
+"qu'elles sont compatibles avec notre licence. Si vous avez un doute sur "
+"l'acceptabilité d'un certain type de licence, veuillez consulter l'*équipe "
+"de développement de phpBB*. Les bibliothèques PHP **DOIVENT** être "
+"installées via composer et doivent, en général, être considérées comme bien "
+"maintenues."
+
+#: ../../devdocs-source-copy/development/processes.rst:70
+msgid ""
+"Once the code is ready to be reviewed, a pull request should be created in "
+"our `GitHub repository <https://github.com/phpbb/phpbb/pulls>`_. Target "
+"versions should be picked in accordance with `Target Versions`_."
+msgstr ""
+"Une fois le code prêt à être relu, une pull request doit être créée dans "
+"notre `dépôt GitHub <https://github.com/phpbb/phpbb/pulls>`_. Les versions "
+"cibles doivent être choisies conformément à `Target Versions`_."
+
+#: ../../devdocs-source-copy/development/processes.rst:74
+msgid "Finalisation / Feature Merge"
+msgstr "Finalisation / Fusion de la fonctionnalité"
+
+#: ../../devdocs-source-copy/development/processes.rst:75
+msgid ""
+"After the code has been reviewed by the *phpBB Development Team*, it is "
+"typically approved and merged. In case there are issues with the code, these "
+"should be resolved as part of the code review. It can however also make "
+"sense to create follow-up tickets to take care of some additional work or "
+"adjustments to the proposed feature."
+msgstr ""
+"Une fois le code relu par l'*équipe de développement de phpBB*, il est "
+"généralement approuvé puis fusionné. En cas de problème avec le code, celui-"
+"ci doit être résolu dans le cadre de la relecture. Il peut toutefois "
+"également être pertinent de créer des tickets de suivi pour prendre en "
+"charge des travaux supplémentaires ou des ajustements à la fonctionnalité "
+"proposée."
+
+#: ../../devdocs-source-copy/development/processes.rst:79
+msgid ""
+"Once a pull request has been merged, typical follow-up work should be adding "
+"documentation for the new feature, creating blog posts as a form of pre-"
+"announcement, or starting work on the next intermediate step."
+msgstr ""
+"Une fois une pull request fusionnée, le suivi habituel consiste à ajouter la "
+"documentation de la nouvelle fonctionnalité, à rédiger des articles de blog "
+"en guise de pré-annonce, ou à entamer le travail sur l'étape intermédiaire "
+"suivante."
+
+#: ../../devdocs-source-copy/development/processes.rst:84
+msgid "Target Versions"
+msgstr "Versions cibles"
+
+#: ../../devdocs-source-copy/development/processes.rst:85
+msgid ""
+"The appropriate target version for any given change or feature usually "
+"depends on the following attributes:"
+msgstr ""
+"La version cible appropriée pour une modification ou une fonctionnalité "
+"donnée dépend généralement des attributs suivants :"
+
+#: ../../devdocs-source-copy/development/processes.rst:87
+msgid "Type: Bugfix, behavioural change, or new feature"
+msgstr ""
+"Type : correction de bogue, changement de comportement, ou nouvelle "
+"fonctionnalité"
+
+#: ../../devdocs-source-copy/development/processes.rst:88
+msgid "Size & complexity"
+msgstr "Taille et complexité"
+
+#: ../../devdocs-source-copy/development/processes.rst:89
+msgid "Backwards compatibility (BC)"
+msgstr "Compatibilité ascendante (BC)"
+
+#: ../../devdocs-source-copy/development/processes.rst:91
+msgid ""
+"Based on these and the semantic versioning scheme these general rules should "
+"apply:"
+msgstr ""
+"Sur la base de ces attributs et du schéma de versionnage sémantique, les "
+"règles générales suivantes s'appliquent :"
+
+#: ../../devdocs-source-copy/development/processes.rst:93
+msgid "**PATCH** version releases:"
+msgstr "Versions **PATCH** :"
+
+#: ../../devdocs-source-copy/development/processes.rst:94
+msgid "Bug fixes without BC breaks"
+msgstr "Corrections de bogues sans rupture de compatibilité ascendante"
+
+#: ../../devdocs-source-copy/development/processes.rst:95
+msgid "Security fixes incl. BC breaks"
+msgstr ""
+"Correctifs de sécurité, y compris avec rupture de compatibilité ascendante"
+
+#: ../../devdocs-source-copy/development/processes.rst:96
+msgid "Minor behavioural changes without BC breaks"
+msgstr ""
+"Changements de comportement mineurs sans rupture de compatibilité ascendante"
+
+#: ../../devdocs-source-copy/development/processes.rst:97
+msgid "Minor new features without BC breaks"
+msgstr ""
+"Nouvelles fonctionnalités mineures sans rupture de compatibilité ascendante"
+
+#: ../../devdocs-source-copy/development/processes.rst:98
+msgid "Updates to third parties without BC breaks"
+msgstr ""
+"Mises à jour de bibliothèques tierces sans rupture de compatibilité "
+"ascendante"
+
+#: ../../devdocs-source-copy/development/processes.rst:100
+msgid "**MINOR** version releases:"
+msgstr "Versions **MINOR** :"
+
+#: ../../devdocs-source-copy/development/processes.rst:101
+msgid "Same as in **PATCH** version releases with addition of:"
+msgstr "Identique aux versions **PATCH**, avec en plus :"
+
+#: ../../devdocs-source-copy/development/processes.rst:103
+msgid "Bug fixes incl. BC breaks"
+msgstr ""
+"Corrections de bogues, y compris avec rupture de compatibilité ascendante"
+
+#: ../../devdocs-source-copy/development/processes.rst:104
+msgid "Major behavioural changes without BC breaks"
+msgstr ""
+"Changements de comportement majeurs sans rupture de compatibilité ascendante"
+
+#: ../../devdocs-source-copy/development/processes.rst:105
+msgid "Major new features without BC breaks"
+msgstr ""
+"Nouvelles fonctionnalités majeures sans rupture de compatibilité ascendante"
+
+#: ../../devdocs-source-copy/development/processes.rst:106
+msgid "Updates to third parties without *significant* BC breaks"
+msgstr ""
+"Mises à jour de bibliothèques tierces sans rupture *significative* de "
+"compatibilité ascendante"
+
+#: ../../devdocs-source-copy/development/processes.rst:108
+msgid "**MAJOR** version releases:"
+msgstr "Versions **MAJOR** :"
+
+#: ../../devdocs-source-copy/development/processes.rst:109
+msgid "Same as in **PATCH** and **MINOR** version releases with addition of:"
+msgstr "Identique aux versions **PATCH** et **MINOR**, avec en plus :"
+
+#: ../../devdocs-source-copy/development/processes.rst:111
+msgid "Major behavioural changes incl. BC breaks"
+msgstr ""
+"Changements de comportement majeurs, y compris avec rupture de compatibilité "
+"ascendante"
+
+#: ../../devdocs-source-copy/development/processes.rst:112
+msgid "Major new features incl. BC breaks"
+msgstr ""
+"Nouvelles fonctionnalités majeures, y compris avec rupture de compatibilité "
+"ascendante"
+
+#: ../../devdocs-source-copy/development/processes.rst:113
+msgid "Updates to third parties incl. *significant* BC breaks,"
+msgstr ""
+"Mises à jour de bibliothèques tierces, y compris avec rupture "
+"*significative* de compatibilité ascendante,"

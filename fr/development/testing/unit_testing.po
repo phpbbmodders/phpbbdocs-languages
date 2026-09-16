@@ -1,0 +1,148 @@
+# French translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:32-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:3
+msgid "Unit Testing"
+msgstr "Tests unitaires"
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:5
+msgid ""
+"Unit tests simply verify that specific portions of the source code work "
+"properly. These tests are located in the main phpBB repository at ``tests/`` "
+"and are grouped into folders based on commonality between the functionality "
+"they are testing. For instance, tests that are meant to test the config will "
+"be in ``tests/config/``."
+msgstr ""
+"Les tests unitaires vérifient simplement que des portions spécifiques du "
+"code source fonctionnent correctement. Ces tests se trouvent dans le dépôt "
+"principal de phpBB, dans ``tests/``, et sont regroupés dans des dossiers "
+"selon la fonctionnalité qu'ils testent. Par exemple, les tests destinés à "
+"tester la configuration se trouveront dans ``tests/config/``."
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:12
+msgid "Running Unit Tests"
+msgstr "Exécuter les tests unitaires"
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:14
+msgid ""
+"Information on how to run tests is available in the GitHub repository at "
+"`<https://github.com/phpbb/phpbb/blob/3.2.x/tests/RUNNING_TESTS.md>`_. You "
+"can switch the branch to check instructions for a specific version of phpBB."
+msgstr ""
+"Des informations sur l'exécution des tests sont disponibles dans le dépôt "
+"GitHub à l'adresse `<https://github.com/phpbb/phpbb/blob/3.2.x/tests/"
+"RUNNING_TESTS.md>`_. Vous pouvez changer de branche pour consulter les "
+"instructions correspondant à une version spécifique de phpBB."
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:19
+msgid "Writing Unit Tests"
+msgstr "Écrire des tests unitaires"
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:21
+msgid ""
+"Files that contain tests should have a ``_test`` suffix, e.g.: ``tests/demo/"
+"demo_test.php``"
+msgstr ""
+"Les fichiers contenant des tests doivent porter le suffixe ``_test``, par "
+"exemple : ``tests/demo/demo_test.php``"
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:24
+msgid ""
+"Within unit tests, there are two categories: tests that need a database, and "
+"those that do not. **If a test does not need a database then don't use it!**"
+msgstr ""
+"Il existe deux catégories de tests unitaires : ceux qui nécessitent une base "
+"de données, et ceux qui n'en ont pas besoin. **Si un test n'a pas besoin de "
+"base de données, n'en utilisez pas !**"
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:28
+msgid "Without a Database"
+msgstr "Sans base de données"
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:56
+msgid ""
+"You may have noted, that in the test-function there is actually no data. "
+"There's a dataProvider-function stated in the comment, which is used for the "
+"test. The test is then run with every array in the dataProvider array, "
+"having the values as parameters for the test-function-call."
+msgstr ""
+"Vous aurez peut-être remarqué qu'il n'y a en réalité aucune donnée dans la "
+"fonction de test. Une fonction dataProvider est indiquée dans le commentaire "
+"et est utilisée pour le test. Le test est alors exécuté avec chaque tableau "
+"du tableau dataProvider, ses valeurs servant de paramètres pour l'appel de "
+"la fonction de test."
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:62
+msgid "Using a Database"
+msgstr "Utiliser une base de données"
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:122
+msgid "Most important to know for db-tests is:"
+msgstr ""
+"Ce qu'il est le plus important de savoir pour les tests utilisant une base "
+"de données :"
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:124
+msgid "All data from the database is truncated first."
+msgstr "Toutes les données de la base de données sont d'abord vidées."
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:125
+msgid ""
+"The data from the getDataSet function is loaded into the database. **No data "
+"from any other test is available!**"
+msgstr ""
+"Les données provenant de la fonction getDataSet sont chargées dans la base "
+"de données. **Aucune donnée provenant d'un autre test n'est disponible !**"
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:126
+msgid ""
+"If you use a table that has a column which has no default value specified "
+"(such as text columns), be sure to specify them. (see `PHPBB3-10667 <http://"
+"tracker.phpbb.com/browse/PHPBB3-10667>`_)"
+msgstr ""
+"Si vous utilisez une table comportant une colonne sans valeur par défaut "
+"définie (comme les colonnes de texte), veillez à les spécifier. (voir "
+"`PHPBB3-10667 <http://tracker.phpbb.com/browse/PHPBB3-10667>`_)"
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:129
+msgid "Code of a DB-DataSet"
+msgstr "Code d'un DataSet de base de données"
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:151
+msgid "Using permissions ($auth)"
+msgstr "Utiliser les permissions ($auth)"
+
+#: ../../devdocs-source-copy/testing/unit_testing.rst:153
+msgid ""
+"When you need to use the auth class, you should use a mock object for it. "
+"Here is a short example of how to use it. Please note, that you need to "
+"specify the result for every function and all values you use. Also when the "
+"forum_id is not casted to int, you need to specify a second row for each "
+"permission. (Marked with ``// Called without int cast`` below) For more "
+"information how these test doubles work, see: `<https://phpunit.de/manual/"
+"current/en/test-doubles.html>`_"
+msgstr ""
+"Lorsque vous devez utiliser la classe auth, vous devriez utiliser un objet "
+"simulé (mock) à sa place. Voici un court exemple de son utilisation. Notez "
+"que vous devez spécifier le résultat pour chaque fonction ainsi que toutes "
+"les valeurs que vous utilisez. De plus, lorsque le forum_id n'est pas "
+"converti en int, vous devez spécifier une seconde ligne pour chaque "
+"permission (repérée ci-dessous par ``// Called without int cast``). Pour "
+"plus d'informations sur le fonctionnement de ces doublures de test, voir : "
+"`<https://phpunit.de/manual/current/en/test-doubles.html>`_"

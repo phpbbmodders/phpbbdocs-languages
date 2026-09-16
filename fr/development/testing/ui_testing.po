@@ -1,0 +1,184 @@
+# French translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:32-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../devdocs-source-copy/testing/ui_testing.rst:3
+msgid "UI Testing"
+msgstr "Tests d'interface utilisateur"
+
+#: ../../devdocs-source-copy/testing/ui_testing.rst:5
+msgid ""
+"UI tests extend functional tests by also supporting the execution of "
+"JavaScript and jQuery in addition to HTML only execution. They should be "
+"used in cases where functionality that is only executed with jQuery or JS "
+"should be tested. phpBB allows you to write such tests. This document will "
+"tell you how."
+msgstr ""
+"Les tests d'interface utilisateur (UI) étendent les tests fonctionnels en "
+"prenant également en charge l'exécution de JavaScript et de jQuery, en plus "
+"de l'exécution HTML seule. Ils doivent être utilisés lorsqu'une "
+"fonctionnalité qui ne s'exécute qu'avec jQuery ou JS doit être testée. phpBB "
+"vous permet d'écrire de tels tests. Ce document vous explique comment "
+"procéder."
+
+#: ../../devdocs-source-copy/testing/ui_testing.rst:11
+msgid "Running UI Tests"
+msgstr "Exécuter les tests d'interface utilisateur"
+
+#: ../../devdocs-source-copy/testing/ui_testing.rst:13
+msgid ""
+"Information on how to run ui tests is available in the GitHub repository at "
+"`<https://github.com/phpbb/phpbb/blob/3.3.x/tests/RUNNING_TESTS.md>`_. You "
+"can switch the branch to check instructions for a specific version of phpBB."
+msgstr ""
+"Des informations sur l'exécution des tests d'interface utilisateur sont "
+"disponibles dans le dépôt GitHub à l'adresse `<https://github.com/phpbb/"
+"phpbb/blob/3.3.x/tests/RUNNING_TESTS.md>`_. Vous pouvez changer de branche "
+"pour consulter les instructions correspondant à une version spécifique de "
+"phpBB."
+
+#: ../../devdocs-source-copy/testing/ui_testing.rst:18
+msgid "Writing UI Tests"
+msgstr "Écrire des tests d'interface utilisateur"
+
+#: ../../devdocs-source-copy/testing/ui_testing.rst:20
+msgid ""
+"Your test case will have to inherit from the ``phpbb_ui_test_case`` class. "
+"You will be able to make requests to a fresh phpBB installation. Also, be "
+"sure to put the file into the ``tests/ui/`` folder and to add the ``@group "
+"ui`` doc block above the class, so the tests are correctly executed."
+msgstr ""
+"Votre cas de test devra hériter de la classe ``phpbb_ui_test_case``. Vous "
+"pourrez alors effectuer des requêtes vers une installation phpBB toute "
+"neuve. Veillez également à placer le fichier dans le dossier ``tests/ui/`` "
+"et à ajouter le bloc de documentation ``@group ui`` au-dessus de la classe, "
+"afin que les tests soient correctement exécutés."
+
+#: ../../devdocs-source-copy/testing/ui_testing.rst:49
+msgid ""
+"There is a ``setUp()`` method where you can put code that is run before the "
+"test. Here you can set up some objects after the installation that are "
+"required for your test. Then you can define your tests, just as you would "
+"normally, by prefixing methods with ``test_``. In this case we will be "
+"testing the index."
+msgstr ""
+"Il existe une méthode ``setUp()`` dans laquelle vous pouvez placer du code "
+"exécuté avant le test. Vous pouvez y configurer, après l'installation, les "
+"objets requis par votre test. Vous pouvez ensuite définir vos tests, comme "
+"vous le feriez normalement, en préfixant les méthodes par ``test_``. Dans "
+"cet exemple, nous testerons la page d'accueil (index)."
+
+#: ../../devdocs-source-copy/testing/ui_testing.rst:55
+msgid "WebDriver and Assertions"
+msgstr "WebDriver et assertions"
+
+#: ../../devdocs-source-copy/testing/ui_testing.rst:57
+msgid ""
+"The UI testing framework is built using `Facebook's PHP WebDriver <https://"
+"github.com/facebook/php-webdriver>`_, which makes HTTP requests and allows "
+"us to interact with the page. The remote WebDriver is available in your "
+"tests through ``$this->visit($url)``. Alternatively, you can also use it "
+"directly via ``$this->getDriver()``. The PHP WebDriver does offer a wiki "
+"with several examples on how to use the WebDriver: `PHP WebDriver Wiki "
+"<https://github.com/facebook/php-webdriver/wiki>`_"
+msgstr ""
+"Le framework de tests d'interface utilisateur est construit à partir du `PHP "
+"WebDriver de Facebook <https://github.com/facebook/php-webdriver>`_, qui "
+"effectue des requêtes HTTP et nous permet d'interagir avec la page. Le "
+"WebDriver distant est disponible dans vos tests via ``$this->visit($url)``. "
+"Vous pouvez également l'utiliser directement via ``$this->getDriver()``. Le "
+"PHP WebDriver propose un wiki présentant plusieurs exemples d'utilisation du "
+"WebDriver : `PHP WebDriver Wiki <https://github.com/facebook/php-webdriver/"
+"wiki>`_"
+
+#: ../../devdocs-source-copy/testing/ui_testing.rst:64
+msgid "Here is an example of using the WebDriver:"
+msgstr "Voici un exemple d'utilisation du WebDriver :"
+
+#: ../../devdocs-source-copy/testing/ui_testing.rst:83
+msgid ""
+"We perform a GET request to ``index.php``, then find elements that fit into "
+"the CSS selector. Then we make sure our query matched something."
+msgstr ""
+"Nous effectuons une requête GET vers ``index.php``, puis recherchons les "
+"éléments correspondant au sélecteur CSS. Nous vérifions ensuite que notre "
+"requête a bien trouvé quelque chose."
+
+#: ../../devdocs-source-copy/testing/ui_testing.rst:86
+msgid ""
+"If the board's index page were broken, our test would catch this, allowing "
+"us to detect the issue and fix it. The more things you test, the more "
+"breakages you will catch early."
+msgstr ""
+"Si la page d'accueil du forum était défaillante, notre test le détecterait, "
+"nous permettant ainsi de repérer le problème et de le corriger. Plus vous "
+"testez de choses, plus tôt vous détecterez les défaillances."
+
+#: ../../devdocs-source-copy/testing/ui_testing.rst:91
+msgid "Authentication"
+msgstr "Authentification"
+
+#: ../../devdocs-source-copy/testing/ui_testing.rst:93
+msgid ""
+"Many ui tests will require the user to be logged in. To do so, you can use "
+"the ``login()`` and ``admin_login()`` methods inherited from the "
+"``phpbb_ui_test_case`` class. This method will assign the user's SID to the "
+"inherited class property ``$this->sid``. You will need to append this to the "
+"URLs that the logged-in user will be navigating to in order to hold the "
+"session. For usage examples, view the permission roles test in `tests/ui/"
+"permission_roles_test.php <https://github.com/phpbb/phpbb/blob/3.3.x/tests/"
+"ui/permission_roles_test.php>`_."
+msgstr ""
+"De nombreux tests d'interface utilisateur nécessitent que l'utilisateur soit "
+"connecté. Pour cela, vous pouvez utiliser les méthodes ``login()`` et "
+"``admin_login()`` héritées de la classe ``phpbb_ui_test_case``. Cette "
+"méthode assignera le SID de l'utilisateur à la propriété de classe héritée "
+"``$this->sid``. Vous devrez l'ajouter aux URL vers lesquelles l'utilisateur "
+"connecté naviguera afin de maintenir la session. Pour des exemples "
+"d'utilisation, consultez le test des rôles de permission dans `tests/ui/"
+"permission_roles_test.php <https://github.com/phpbb/phpbb/blob/3.3.x/tests/"
+"ui/permission_roles_test.php>`_."
+
+#: ../../devdocs-source-copy/testing/ui_testing.rst:102
+msgid "Localisation"
+msgstr "Localisation"
+
+#: ../../devdocs-source-copy/testing/ui_testing.rst:104
+msgid ""
+"In tests, as in phpBB itself, do not use hard-coded language unless "
+"absolutely necessary. Instead, use the ``$this->add_lang()`` and ``$this-"
+">lang()`` methods. Both act very similarly to their counterparts in the "
+"``\\phpbb\\user`` class. Note that ``language/en/common.php`` is "
+"automatically loaded by the test framework."
+msgstr ""
+"Dans les tests, comme dans phpBB lui-même, n'utilisez pas de texte codé en "
+"dur pour la langue, sauf en cas d'absolue nécessité. Utilisez plutôt les "
+"méthodes ``$this->add_lang()`` et ``$this->lang()``. Toutes deux se "
+"comportent de manière très similaire à leurs équivalents de la classe "
+"``\\phpbb\\user``. Notez que ``language/en/common.php`` est automatiquement "
+"chargé par le framework de tests."
+
+#: ../../devdocs-source-copy/testing/ui_testing.rst:127
+msgid ""
+"For more usage examples, please view `tests/ui/permission_roles_test.php "
+"<https://github.com/phpbb/phpbb/blob/3.3.x/tests/ui/permission_roles_test."
+"php>`_."
+msgstr ""
+"Pour davantage d'exemples d'utilisation, consultez `tests/ui/"
+"permission_roles_test.php <https://github.com/phpbb/phpbb/blob/3.3.x/tests/"
+"ui/permission_roles_test.php>`_."

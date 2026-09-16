@@ -1,0 +1,521 @@
+# French translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:32-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../devdocs-source-copy/language/plurals.rst:3
+msgid "Plurals"
+msgstr "Pluriels"
+
+#: ../../devdocs-source-copy/language/plurals.rst:6
+msgid "Short Example"
+msgstr "Exemple rapide"
+
+#: ../../devdocs-source-copy/language/plurals.rst:8
+msgid "The english language is very simple when it comes to plurals:"
+msgstr "La langue anglaise est très simple en ce qui concerne les pluriels :"
+
+#: ../../devdocs-source-copy/language/plurals.rst:10
+msgid "*You have 0 elephants, 1 elephant, or 2+ elephants.*"
+msgstr "*Vous avez 0 éléphant, 1 éléphant, ou 2+ éléphants.*"
+
+#: ../../devdocs-source-copy/language/plurals.rst:12
+msgid "So basically you have 2 different forms: one singular and one plural."
+msgstr ""
+"Vous avez donc essentiellement 2 formes différentes : une singulière et une "
+"plurielle."
+
+#: ../../devdocs-source-copy/language/plurals.rst:15
+msgid ""
+"But for some other languages this is quite a bit more difficult. Let's take "
+"the Bosnian language as another example:"
+msgstr ""
+"Mais pour certaines autres langues, c'est nettement plus compliqué. Prenons "
+"la langue bosnienne comme autre exemple :"
+
+#: ../../devdocs-source-copy/language/plurals.rst:18
+msgid ""
+"*You have [1/21/31] slon, [2/3/4] slona, [0/5/6] slonova and [7/8/9/11] ...*"
+msgstr ""
+"*Vous avez [1/21/31] slon, [2/3/4] slona, [0/5/6] slonova et [7/8/9/11] ...*"
+
+#: ../../devdocs-source-copy/language/plurals.rst:20
+msgid ""
+"The problem with the old system of plurals was that you would have needed to "
+"specify them all, and get a loop in there."
+msgstr ""
+"Le problème avec l'ancien système de pluriels était qu'il aurait fallu tous "
+"les spécifier, avec une boucle pour les gérer."
+
+#: ../../devdocs-source-copy/language/plurals.rst:24
+msgid ""
+"As we are not the first developers facing this problem, it was not really "
+"hard to find a suitable solution. We decided to use the system from `Unicode."
+"org`_, which is e.g. used by Mozilla."
+msgstr ""
+"N'étant pas les premiers développeurs confrontés à ce problème, il n'a pas "
+"été très difficile de trouver une solution adaptée. Nous avons décidé "
+"d'utiliser le système d'`Unicode.org`_, également utilisé par exemple par "
+"Mozilla."
+
+#: ../../devdocs-source-copy/language/plurals.rst:29
+msgid "Plural Rules"
+msgstr "Règles de pluriel"
+
+#: ../../devdocs-source-copy/language/plurals.rst:30
+msgid ""
+"So we defined the following 16 rules for plurals. First point is the "
+"language family, afterwards there are a number of rows with the following "
+"format: **<key> - <rule>: <example-numbers>**"
+msgstr ""
+"Nous avons donc défini les 16 règles suivantes pour les pluriels. Le premier "
+"point indique la famille de langues, suivi de plusieurs lignes au format "
+"suivant : **<clé> - <règle> : <nombres d'exemple>**"
+
+#: ../../devdocs-source-copy/language/plurals.rst:36
+msgid ""
+"0 is handled as a special case. If you add a key 0 to your array, that will "
+"be used in case of 0 independent of the plural rule."
+msgstr ""
+"0 est traité comme un cas particulier. Si vous ajoutez une clé 0 à votre "
+"tableau, elle sera utilisée dans le cas de 0, indépendamment de la règle de "
+"pluriel."
+
+#: ../../devdocs-source-copy/language/plurals.rst:40
+msgid "Rule #0"
+msgstr "Règle nº 0"
+
+#: ../../devdocs-source-copy/language/plurals.rst:41
+msgid ""
+"Families: Asian (Chinese, Japanese, Korean, Vietnamese), Persian, Turkic/"
+"Altaic (Turkish), Thai, Lao"
+msgstr ""
+"Familles : asiatiques (chinois, japonais, coréen, vietnamien), persan, turco-"
+"altaïques (turc), thaï, lao"
+
+#: ../../devdocs-source-copy/language/plurals.rst:42
+msgid "1 - everything: 0, 1, 2, ..."
+msgstr "1 - tout : 0, 1, 2, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:45
+msgid "Rule #1"
+msgstr "Règle nº 1"
+
+#: ../../devdocs-source-copy/language/plurals.rst:46
+msgid ""
+"Families: Germanic (Danish, Dutch, English, Faroese, Frisian, German, "
+"Norwegian, Swedish), Finno-Ugric (Estonian, Finnish, Hungarian), Language "
+"isolate (Basque), Latin/Greek (Greek), Semitic (Hebrew), Romanic (Italian, "
+"Portuguese, Spanish, Catalan)"
+msgstr ""
+"Familles : germaniques (danois, néerlandais, anglais, féroïen, frison, "
+"allemand, norvégien, suédois), finno-ougriennes (estonien, finnois, "
+"hongrois), isolat linguistique (basque), latino-grecque (grec), sémitique "
+"(hébreu), romanes (italien, portugais, espagnol, catalan)"
+
+#: ../../devdocs-source-copy/language/plurals.rst:49
+#: ../../devdocs-source-copy/language/plurals.rst:76
+#: ../../devdocs-source-copy/language/plurals.rst:97
+#: ../../devdocs-source-copy/language/plurals.rst:104
+#: ../../devdocs-source-copy/language/plurals.rst:119
+#: ../../devdocs-source-copy/language/plurals.rst:128
+#: ../../devdocs-source-copy/language/plurals.rst:138
+#: ../../devdocs-source-copy/language/plurals.rst:171
+msgid "1 - 1"
+msgstr "1 - 1"
+
+#: ../../devdocs-source-copy/language/plurals.rst:50
+msgid "2 - everything else: 0, 2, 3, ..."
+msgstr "2 - tout le reste : 0, 2, 3, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:53
+msgid "Rule #2"
+msgstr "Règle nº 2"
+
+#: ../../devdocs-source-copy/language/plurals.rst:54
+msgid "Families: Romanic (French, Portuguese, Brazilian Portuguese)"
+msgstr "Familles : romanes (français, portugais, portugais brésilien)"
+
+#: ../../devdocs-source-copy/language/plurals.rst:55
+msgid "1 - 0, 1"
+msgstr "1 - 0, 1"
+
+#: ../../devdocs-source-copy/language/plurals.rst:56
+msgid "2 - everything else: 2, 3, ..."
+msgstr "2 - tout le reste : 2, 3, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:59
+msgid "Rule #3"
+msgstr "Règle nº 3"
+
+#: ../../devdocs-source-copy/language/plurals.rst:60
+msgid "Families: Baltic (Latvian)"
+msgstr "Familles : baltes (letton)"
+
+#: ../../devdocs-source-copy/language/plurals.rst:61
+msgid "1 - 0"
+msgstr "1 - 0"
+
+#: ../../devdocs-source-copy/language/plurals.rst:62
+msgid "2 - ends in 1, excluding 11: 1, 21, ... 101, 121, ..."
+msgstr "2 - se terminant par 1, à l'exclusion de 11 : 1, 21, ... 101, 121, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:63
+msgid "3 - everything else: 2, 3, ... 10, 11, 12, ... 20, 22, ..."
+msgstr "3 - tout le reste : 2, 3, ... 10, 11, 12, ... 20, 22, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:66
+msgid "Rule #4"
+msgstr "Règle nº 4"
+
+#: ../../devdocs-source-copy/language/plurals.rst:67
+msgid "Families: Celtic (Scottish Gaelic)"
+msgstr "Familles : celtiques (gaélique écossais)"
+
+#: ../../devdocs-source-copy/language/plurals.rst:68
+msgid "1 - is 1 or 11: 1, 11"
+msgstr "1 - est 1 ou 11 : 1, 11"
+
+#: ../../devdocs-source-copy/language/plurals.rst:69
+msgid "2 - is 2 or 12: 2, 12"
+msgstr "2 - est 2 ou 12 : 2, 12"
+
+#: ../../devdocs-source-copy/language/plurals.rst:70
+msgid "3 - others between 3 and 19: 3, 4, ... 10, 13, ... 18, 19"
+msgstr "3 - autres nombres entre 3 et 19 : 3, 4, ... 10, 13, ... 18, 19"
+
+#: ../../devdocs-source-copy/language/plurals.rst:71
+msgid "4 - everything else: 0, 20, 21, ..."
+msgstr "4 - tout le reste : 0, 20, 21, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:74
+msgid "Rule #5"
+msgstr "Règle nº 5"
+
+#: ../../devdocs-source-copy/language/plurals.rst:75
+msgid "Families: Romanic (Romanian)"
+msgstr "Familles : romanes (roumain)"
+
+#: ../../devdocs-source-copy/language/plurals.rst:77
+msgid ""
+"2 - is 0 or ends in 01-19, excluding 1: 0, 2, 3, ... 19, 101, 102, ... 119, "
+"201, ..."
+msgstr ""
+"2 - est 0 ou se termine par 01-19, à l'exclusion de 1 : 0, 2, 3, ... 19, "
+"101, 102, ... 119, 201, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:78
+msgid "3 - everything else: 20, 21, ..."
+msgstr "3 - tout le reste : 20, 21, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:81
+msgid "Rule #6"
+msgstr "Règle nº 6"
+
+#: ../../devdocs-source-copy/language/plurals.rst:82
+msgid "Families: Baltic (Lithuanian)"
+msgstr "Familles : baltes (lituanien)"
+
+#: ../../devdocs-source-copy/language/plurals.rst:83
+#: ../../devdocs-source-copy/language/plurals.rst:90
+msgid "1 - ends in 1, excluding 11: 1, 21, 31, ... 101, 121, ..."
+msgstr ""
+"1 - se terminant par 1, à l'exclusion de 11 : 1, 21, 31, ... 101, 121, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:84
+msgid "2 - ends in 0 or ends in 10-20:  0, 10, 11, 12, ... 19, 20, 30, 40, ..."
+msgstr ""
+"2 - se terminant par 0 ou par 10-20 : 0, 10, 11, 12, ... 19, 20, 30, 40, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:85
+msgid "3 - everything else: 2, 3, ... 8, 9, 22, 23, ... 29, 32, 33, ..."
+msgstr "3 - tout le reste : 2, 3, ... 8, 9, 22, 23, ... 29, 32, 33, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:88
+msgid "Rule #7"
+msgstr "Règle nº 7"
+
+#: ../../devdocs-source-copy/language/plurals.rst:89
+msgid "Families: Slavic (Bosnian, Croatian, Serbian, Russian, Ukrainian)"
+msgstr "Familles : slaves (bosnien, croate, serbe, russe, ukrainien)"
+
+#: ../../devdocs-source-copy/language/plurals.rst:91
+msgid "2 - ends in 2-4, excluding 12-14: 2, 3, 4, 22, 23, 24, 32, ..."
+msgstr ""
+"2 - se terminant par 2-4, à l'exclusion de 12-14 : 2, 3, 4, 22, 23, 24, "
+"32, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:92
+msgid ""
+"3 - everything else: 0, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, "
+"19, 20, 25, 26, ..."
+msgstr ""
+"3 - tout le reste : 0, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, "
+"19, 20, 25, 26, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:95
+msgid "Rule #8"
+msgstr "Règle nº 8"
+
+#: ../../devdocs-source-copy/language/plurals.rst:96
+msgid "Families: Slavic (Slovak, Czech)"
+msgstr "Familles : slaves (slovaque, tchèque)"
+
+#: ../../devdocs-source-copy/language/plurals.rst:98
+msgid "2 - 2, 3, 4"
+msgstr "2 - 2, 3, 4"
+
+#: ../../devdocs-source-copy/language/plurals.rst:99
+msgid "3 - everything else: 0, 5, 6, 7, ..."
+msgstr "3 - tout le reste : 0, 5, 6, 7, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:102
+msgid "Rule #9"
+msgstr "Règle nº 9"
+
+#: ../../devdocs-source-copy/language/plurals.rst:103
+msgid "Families: Slavic (Polish)"
+msgstr "Familles : slaves (polonais)"
+
+#: ../../devdocs-source-copy/language/plurals.rst:105
+msgid ""
+"2 - ends in 2-4, excluding 12-14: 2, 3, 4, 22, 23, 24, 32, ... 104, 122, ..."
+msgstr ""
+"2 - se terminant par 2-4, à l'exclusion de 12-14 : 2, 3, 4, 22, 23, 24, "
+"32, ... 104, 122, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:106
+msgid ""
+"3 - everything else: 0, 5, 6, ... 11, 12, 13, 14, 15, ... 20, 21, 25, ..."
+msgstr ""
+"3 - tout le reste : 0, 5, 6, ... 11, 12, 13, 14, 15, ... 20, 21, 25, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:109
+msgid "Rule #10"
+msgstr "Règle nº 10"
+
+#: ../../devdocs-source-copy/language/plurals.rst:110
+msgid "Families: Slavic (Slovenian, Sorbian)"
+msgstr "Familles : slaves (slovène, sorabe)"
+
+#: ../../devdocs-source-copy/language/plurals.rst:111
+msgid "1 - ends in 01: 1, 101, 201, ..."
+msgstr "1 - se terminant par 01 : 1, 101, 201, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:112
+msgid "2 - ends in 02: 2, 102, 202, ..."
+msgstr "2 - se terminant par 02 : 2, 102, 202, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:113
+msgid "3 - ends in 03-04: 3, 4, 103, 104, 203, 204, ..."
+msgstr "3 - se terminant par 03-04 : 3, 4, 103, 104, 203, 204, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:114
+msgid "4 - everything else: 0, 5, 6, 7, 8, 9, 10, 11, ..."
+msgstr "4 - tout le reste : 0, 5, 6, 7, 8, 9, 10, 11, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:117
+msgid "Rule #11"
+msgstr "Règle nº 11"
+
+#: ../../devdocs-source-copy/language/plurals.rst:118
+msgid "Families: Celtic (Irish Gaeilge)"
+msgstr "Familles : celtiques (irlandais gaeilge)"
+
+#: ../../devdocs-source-copy/language/plurals.rst:120
+#: ../../devdocs-source-copy/language/plurals.rst:129
+msgid "2 - 2"
+msgstr "2 - 2"
+
+#: ../../devdocs-source-copy/language/plurals.rst:121
+msgid "3 - is 3-6: 3, 4, 5, 6"
+msgstr "3 - est 3-6 : 3, 4, 5, 6"
+
+#: ../../devdocs-source-copy/language/plurals.rst:122
+msgid "4 - is 7-10: 7, 8, 9, 10"
+msgstr "4 - est 7-10 : 7, 8, 9, 10"
+
+#: ../../devdocs-source-copy/language/plurals.rst:123
+msgid "5 - everything else: 0, 11, 12, ..."
+msgstr "5 - tout le reste : 0, 11, 12, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:126
+msgid "Rule #12"
+msgstr "Règle nº 12"
+
+#: ../../devdocs-source-copy/language/plurals.rst:127
+msgid "Families: Semitic (Arabic)"
+msgstr "Familles : sémitiques (arabe)"
+
+#: ../../devdocs-source-copy/language/plurals.rst:130
+msgid "3 - ends in 03-10: 3, 4, ... 10, 103, 104, ... 110, 203, 204, ..."
+msgstr ""
+"3 - se terminant par 03-10 : 3, 4, ... 10, 103, 104, ... 110, 203, 204, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:131
+msgid "4 - ends in 11-99: 11, ... 99, 111, 112, ..."
+msgstr "4 - se terminant par 11-99 : 11, ... 99, 111, 112, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:132
+msgid "5 - everything else: 100, 101, 102, 200, 201, 202, ..."
+msgstr "5 - tout le reste : 100, 101, 102, 200, 201, 202, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:133
+msgid "6 - 0"
+msgstr "6 - 0"
+
+#: ../../devdocs-source-copy/language/plurals.rst:136
+msgid "Rule #13"
+msgstr "Règle nº 13"
+
+#: ../../devdocs-source-copy/language/plurals.rst:137
+msgid "Families: Semitic (Maltese)"
+msgstr "Familles : sémitiques (maltais)"
+
+#: ../../devdocs-source-copy/language/plurals.rst:139
+msgid "2 - ends in 01-10: 0, 2, 3, ... 9, 10, 101, 102, ..."
+msgstr "2 - se terminant par 01-10 : 0, 2, 3, ... 9, 10, 101, 102, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:140
+#: ../../devdocs-source-copy/language/plurals.rst:173
+msgid "3 - ends in 11-19: 11, 12, ... 18, 19, 111, 112, ..."
+msgstr "3 - se terminant par 11-19 : 11, 12, ... 18, 19, 111, 112, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:141
+#: ../../devdocs-source-copy/language/plurals.rst:174
+msgid "4 - everything else: 20, 21, ..."
+msgstr "4 - tout le reste : 20, 21, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:144
+msgid "Rule #14"
+msgstr "Règle nº 14"
+
+#: ../../devdocs-source-copy/language/plurals.rst:145
+msgid "Families: Slavic (Macedonian)"
+msgstr "Familles : slaves (macédonien)"
+
+#: ../../devdocs-source-copy/language/plurals.rst:146
+msgid "1 - ends in 1: 1, 11, 21, ..."
+msgstr "1 - se terminant par 1 : 1, 11, 21, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:147
+msgid "2 - ends in 2: 2, 12, 22, ..."
+msgstr "2 - se terminant par 2 : 2, 12, 22, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:148
+msgid "3 - everything else: 0, 3, 4, ... 10, 13, 14, ... 20, 23, ..."
+msgstr "3 - tout le reste : 0, 3, 4, ... 10, 13, 14, ... 20, 23, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:151
+msgid "Rule #15"
+msgstr "Règle nº 15"
+
+#: ../../devdocs-source-copy/language/plurals.rst:152
+msgid "Families: Icelandic"
+msgstr "Familles : islandais"
+
+#: ../../devdocs-source-copy/language/plurals.rst:153
+msgid "1 - ends in 1, excluding 11: 1, 21, 31, ... 101, 121, 131, ..."
+msgstr ""
+"1 - se terminant par 1, à l'exclusion de 11 : 1, 21, 31, ... 101, 121, "
+"131, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:154
+msgid "2 - everything else: 0, 2, 3, ... 10, 11, 12, ... 20, 22, ..."
+msgstr "2 - tout le reste : 0, 2, 3, ... 10, 11, 12, ... 20, 22, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:157
+msgid "How to use the rules"
+msgstr "Comment utiliser les règles"
+
+#: ../../devdocs-source-copy/language/plurals.rst:158
+msgid ""
+"The first thing your language package needs, is a definition, which rule to "
+"use for your package. This is done in the ``language/xy/common.php`` "
+"language file at the beginning of the array, (Rule #1 is the rule for the "
+"English language and will be used by default, if you don't specify one):"
+msgstr ""
+"La première chose dont votre pack de langue a besoin est une définition "
+"indiquant quelle règle utiliser pour votre pack. Cela se fait dans le "
+"fichier de langue ``language/xy/common.php``, au début du tableau (la règle "
+"nº 1 est celle de la langue anglaise et sera utilisée par défaut si vous "
+"n'en spécifiez pas) :"
+
+#: ../../devdocs-source-copy/language/plurals.rst:167
+msgid "The following example is using rule **#13**:"
+msgstr "L'exemple suivant utilise la règle **nº 13** :"
+
+#: ../../devdocs-source-copy/language/plurals.rst:169
+msgid "It has the following rows:"
+msgstr "Elle comporte les lignes suivantes :"
+
+#: ../../devdocs-source-copy/language/plurals.rst:172
+msgid "2 - ends in 01-10: 2, 3, ... 9, 10, 101, 102, ..."
+msgstr "2 - se terminant par 01-10 : 2, 3, ... 9, 10, 101, 102, ..."
+
+#: ../../devdocs-source-copy/language/plurals.rst:176
+msgid "While the English language only has 2 rows in its array:"
+msgstr ""
+"Alors que la langue anglaise ne comporte que 2 lignes dans son tableau :"
+
+#: ../../devdocs-source-copy/language/plurals.rst:185
+msgid "You need to specify the zero-row and 4 rows for the \"plurals\":"
+msgstr ""
+"Vous devez spécifier la ligne zéro ainsi que 4 lignes pour les « pluriels » :"
+
+#: ../../devdocs-source-copy/language/plurals.rst:196
+msgid "If you require separate handling for 0, you can simple add the 0-case:"
+msgstr ""
+"Si vous avez besoin d'un traitement séparé pour 0, vous pouvez simplement "
+"ajouter le cas 0 :"
+
+#: ../../devdocs-source-copy/language/plurals.rst:208
+msgid ""
+"If you forget a line the system will automatically use the row before. So if "
+"you forget to add the *3*-row, it will use *2*-row for 11-19 as well. If "
+"there is no previous row, it uses the last row of the array."
+msgstr ""
+"Si vous oubliez une ligne, le système utilisera automatiquement la ligne "
+"précédente. Ainsi, si vous oubliez d'ajouter la ligne *3*, la ligne *2* sera "
+"également utilisée pour 11-19. S'il n'existe pas de ligne précédente, la "
+"dernière ligne du tableau est utilisée."
+
+#: ../../devdocs-source-copy/language/plurals.rst:213
+msgid ""
+"**Ensure your cases are in ascending order**, otherwise the system may "
+"produce unexpected results if any keys are missing or out of order."
+msgstr ""
+"**Assurez-vous que vos cas sont dans l'ordre croissant**, sinon le système "
+"peut produire des résultats inattendus si des clés sont manquantes ou dans "
+"le désordre."
+
+#: ../../devdocs-source-copy/language/plurals.rst:217
+msgid "Credits"
+msgstr "Crédits"
+
+#: ../../devdocs-source-copy/language/plurals.rst:218
+msgid ""
+"The system is based on `Mozilla <https://developer.mozilla.org/en/"
+"Localization_and_Plurals>`_, which uses the \"Plural Rules and Families\" "
+"from `GNU gettext documentation <http://www.gnu.org/software/gettext/manual/"
+"html_node/gettext_150.html#Plural-forms>`_."
+msgstr ""
+"Le système est basé sur `Mozilla <https://developer.mozilla.org/en/"
+"Localization_and_Plurals>`_, qui utilise les « règles et familles de "
+"pluriels » (Plural Rules and Families) de la `documentation GNU gettext "
+"<http://www.gnu.org/software/gettext/manual/html_node/gettext_150."
+"html#Plural-forms>`_."
