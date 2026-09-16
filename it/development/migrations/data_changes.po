@@ -1,0 +1,212 @@
+# Italian translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:3
+msgid "Data changes"
+msgstr "Modifiche ai dati"
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:5
+msgid ""
+"Data changes are done in Migrations by creating an array that will be parsed"
+" by ``\\phpbb\\db\\migrator::run_step()``"
+msgstr ""
+"Le modifiche ai dati vengono eseguite nelle migrazioni creando un array che "
+"verrà analizzato da ``\\phpbb\\db\\migrator::run_step()``"
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:9
+msgid "Basics"
+msgstr "Nozioni di base"
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:11
+msgid ""
+"When performing data changes, your Migrations class should contain at least "
+"one function, update_data(). You may optionally provide a function "
+"revert_data(), which will be run when the migration is removed."
+msgstr ""
+"Quando esegui modifiche ai dati, la tua classe di migrazione dovrebbe "
+"contenere almeno una funzione, update_data(). Puoi facoltativamente fornire "
+"una funzione revert_data(), che verrà eseguita quando la migrazione viene "
+"rimossa."
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:16
+msgid "update_data"
+msgstr "update_data"
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:18
+msgid ""
+"``update_data()`` will be called as the **second** step, after "
+"``update_schema()`` when installing a migration. This makes any database "
+"data changes you need when installing the migration."
+msgstr ""
+"``update_data()`` verrà chiamata come **secondo** passo, dopo "
+"``update_schema()``, durante l'installazione di una migrazione. Effettua le "
+"modifiche ai dati del database necessarie durante l'installazione della "
+"migrazione."
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:30
+msgid "revert_data"
+msgstr "revert_data"
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:32
+msgid ""
+"``revert_data()`` will be called when a Migration must be uninstalled (this "
+"could happen if the user wants/needs to revert changes by the Migration, a "
+"dependency is reverted, or the installation fails and the entire Migration "
+"is removed)."
+msgstr ""
+"``revert_data()`` verrà chiamata quando una migrazione deve essere "
+"disinstallata (questo può accadere se l'utente vuole/deve annullare le "
+"modifiche apportate dalla migrazione, se una dipendenza viene annullata, o "
+"se l'installazione fallisce e l'intera migrazione viene rimossa)."
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:37
+msgid ""
+"This function is entirely optional, **most data is automatically reverted.**"
+" All calls to the Migration Tools are automatically reverted. The only thing"
+" this should do is handle reverting any custom functions that were run if it"
+" is absolutely needed."
+msgstr ""
+"Questa funzione è del tutto opzionale, **la maggior parte dei dati viene "
+"ripristinata automaticamente.** Tutte le chiamate agli strumenti di "
+"migrazione vengono annullate automaticamente. L'unica cosa che dovrebbe fare"
+" è gestire l'annullamento di eventuali funzioni personalizzate eseguite, se "
+"assolutamente necessario."
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:51
+msgid "What to return"
+msgstr "Cosa restituire"
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:53
+msgid "An array of arrays containing instructions."
+msgstr "Un array di array contenenti istruzioni."
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:55
+msgid ""
+"These instructions can include calls to Tools. For any config settings, "
+"permission related commands, and modules, please see the related "
+"documentation under :doc:`tools/index`."
+msgstr ""
+"Queste istruzioni possono includere chiamate agli strumenti. Per le "
+"impostazioni di configurazione, i comandi relativi ai permessi e i moduli, "
+"consulta la documentazione correlata in :doc:`tools/index`."
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:61
+msgid "If (Conditional)"
+msgstr "If (condizionale)"
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:63
+msgid ""
+"If call allows you to create a basic if statement which will be checked and,"
+" if true, the attached statement will be parsed."
+msgstr ""
+"La chiamata if ti permette di creare un'istruzione if di base che verrà "
+"verificata e, se vera, l'istruzione allegata verrà analizzata."
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:67
+#: ../../devdocs-source-copy/migrations/data_changes.rst:109
+msgid "How it works"
+msgstr "Come funziona"
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:77
+#: ../../devdocs-source-copy/migrations/data_changes.rst:183
+msgid "Examples"
+msgstr "Esempi"
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:79
+msgid ""
+"if config \"captcha_gd\" is true, update \"captcha_plugin\" with "
+"\"phpbb_captcha_gd\""
+msgstr ""
+"se il config \"captcha_gd\" è true, aggiorna \"captcha_plugin\" con "
+"\"phpbb_captcha_gd\""
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:88
+msgid ""
+"if config \"allow_avatar_upload\" or \"allow_avatar_local\" is true, update "
+"\"allow_avatar\" with value \"1\""
+msgstr ""
+"se il config \"allow_avatar_upload\" o \"allow_avatar_local\" è true, "
+"aggiorna \"allow_avatar\" con il valore \"1\""
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:101
+msgid ""
+"Calls to the Migration Tools wrapped in the if conditional will **not** be "
+"automatically reverted, as if statements are ignored by the "
+"``revert_data()`` method. You must define your own ``revert_data()`` method "
+"to revert any of these data changes if necessary."
+msgstr ""
+"Le chiamate agli strumenti di migrazione racchiuse nella condizione if "
+"**non** verranno annullate automaticamente, poiché le istruzioni if vengono "
+"ignorate dal metodo ``revert_data()``. Devi definire il tuo metodo "
+"``revert_data()`` per annullare, se necessario, una qualsiasi di queste "
+"modifiche ai dati."
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:104
+msgid "Custom"
+msgstr "Personalizzato"
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:106
+msgid ""
+"Custom calls allow you to specify the callable to your own function to be "
+"called."
+msgstr ""
+"Le chiamate personalizzate ti permettono di specificare il callable della "
+"tua funzione da chiamare."
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:118
+#: ../../devdocs-source-copy/migrations/data_changes.rst:145
+msgid "Example"
+msgstr "Esempio"
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:120
+msgid "Call a function within the migrations file named some_function"
+msgstr ""
+"Chiama una funzione all'interno del file di migrazione chiamata "
+"some_function"
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:130
+msgid "The function called, must be public accessible"
+msgstr "La funzione chiamata deve essere accessibile pubblicamente"
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:133
+msgid "Multi step processes"
+msgstr "Processi a più fasi"
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:135
+msgid ""
+"If you have a function that needs to be called multiple times to complete, "
+"returning anything except null or true will cause the function to be called "
+"until null or true is returned."
+msgstr ""
+"Se hai una funzione che deve essere chiamata più volte per completarsi, "
+"restituire qualsiasi cosa diversa da null o true farà sì che la funzione "
+"venga chiamata finché non viene restituito null o true."
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:141
+msgid ""
+"This should be used when something needs to be run that can take longer than"
+" the time limit (for example, resyncing topics)."
+msgstr ""
+"Questo dovrebbe essere usato quando è necessario eseguire qualcosa che può "
+"richiedere più tempo del limite consentito (ad esempio, la "
+"risincronizzazione degli argomenti)."
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:185
+msgid "From ``\\phpbb\\db\\migration\\data\\v310\\dev``"
+msgstr "Da ``\\phpbb\\db\\migration\\data\\v310\\dev``"

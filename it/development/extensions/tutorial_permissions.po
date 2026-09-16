@@ -1,0 +1,365 @@
+# Italian translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:3
+msgid "Tutorial: Permissions"
+msgstr "Tutorial: permessi"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:6
+msgid "Introduction"
+msgstr "Introduzione"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:8
+msgid ""
+"The permission system in phpBB is used to control access to different parts "
+"of the software. It works by allowing administrators to assign certain "
+"permissions to user groups or individual users, which determine what actions"
+" they are able to perform."
+msgstr ""
+"Il sistema di permessi in phpBB viene usato per controllare l'accesso alle "
+"diverse parti del software. Funziona permettendo agli amministratori di "
+"assegnare determinati permessi a gruppi di utenti o singoli utenti, che "
+"determinano quali azioni sono in grado di eseguire."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:10
+msgid "`Create permissions`_ with a migration."
+msgstr "`Crea permessi`_ con una migrazione."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:11
+msgid "`Define permissions`_ with language keys."
+msgstr "`Definisci permessi`_ con chiavi di lingua."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:12
+msgid "`Wire up permissions`_ with events."
+msgstr "`Collega i permessi`_ con gli events."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:13
+msgid "`Checking permissions`_ with PHP."
+msgstr "`Verifica dei permessi`_ con PHP."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:14
+msgid "`Understanding Permissions`_ in phpBB."
+msgstr "`Comprendere i permessi`_ in phpBB."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:17
+msgid "Create permissions"
+msgstr "Crea permessi"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:19
+msgid "There are four permission types:"
+msgstr "Ci sono quattro tipi di permessi:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:21
+msgid "``a_*`` Administrator"
+msgstr "``a_*`` Amministratore"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:22
+msgid "``m_*`` Moderator"
+msgstr "``m_*`` Moderatore"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:23
+msgid "``u_*`` User"
+msgstr "``u_*`` Utente"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:24
+msgid "``f_*`` Forum"
+msgstr "``f_*`` Forum"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:26
+msgid ""
+"You can create new permissions for each of these types and assign them to "
+"user groups or permission roles. You can also define new roles to assign "
+"your permissions to if desired."
+msgstr ""
+"Puoi creare nuovi permessi per ciascuno di questi tipi e assegnarli a gruppi"
+" di utenti o ruoli di permesso. Puoi anche definire nuovi ruoli a cui "
+"assegnare i tuoi permessi, se lo desideri."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:30
+msgid ""
+"Permissions must first be created in a migration using the "
+":doc:`../migrations/tools/permission`. It helps with adding, removing, "
+"setting, and unsetting permissions and adding or removing permission roles. "
+"For example, to create a new User permission ``u_foo_bar`` and set it to "
+"``YES`` for the Registered Users group and the Standard User Role:"
+msgstr ""
+"I permessi devono prima essere creati in una migrazione usando "
+":doc:`../migrations/tools/permission`. Questo strumento aiuta ad aggiungere,"
+" rimuovere, impostare e rimuovere l'impostazione dei permessi, e ad "
+"aggiungere o rimuovere ruoli di permesso. Ad esempio, per creare un nuovo "
+"permesso utente ``u_foo_bar`` e impostarlo su ``YES`` per il gruppo "
+"Registered Users e lo Standard User Role:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:45
+msgid "Define permissions"
+msgstr "Definisci permessi"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:47
+msgid ""
+"Permissions must have a corresponding language key definition. All language "
+"keys for permissions should be placed in a language file that starts with "
+"``permissions_`` and the keys will be automatically loaded into the ACP "
+"language array. For example, the language file ``permissions_foobar.php``:"
+msgstr ""
+"I permessi devono avere una corrispondente definizione di chiave di lingua. "
+"Tutte le chiavi di lingua per i permessi dovrebbero essere posizionate in un"
+" file di lingua che inizia con ``permissions_``, e le chiavi verranno "
+"caricate automaticamente nell'array di lingua dell'ACP. Ad esempio, il file "
+"di lingua ``permissions_foobar.php``:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:59
+msgid "Wire up permissions"
+msgstr "Collega i permessi"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:61
+msgid ""
+"Wiring up permissions simply refers to making phpBB aware of your new "
+"permissions by adding them to the permission data array. The array uses the "
+"permission name as its key and an array value defining the permission's "
+"language key and the category it should belong to."
+msgstr ""
+"Collegare i permessi si riferisce semplicemente a rendere phpBB consapevole "
+"dei tuoi nuovi permessi aggiungendoli all'array dei dati dei permessi. "
+"L'array usa il nome del permesso come chiave e un valore array che definisce"
+" la chiave di lingua del permesso e la categoria a cui dovrebbe appartenere."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:66
+msgid ""
+"This is done in an event listener using the ``core.permissions`` event to "
+"add your new permissions to phpBB's permission data array:"
+msgstr ""
+"Questo si fa in un event listener usando l'event ``core.permissions`` per "
+"aggiungere i tuoi nuovi permessi all'array dei dati dei permessi di phpBB:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:75
+msgid ""
+"In order to support phpBB 3.2.1 or earlier versions, you can not use the "
+"``update_subarray()`` method, and must instead use the following older style"
+" of code:"
+msgstr ""
+"Per supportare phpBB 3.2.1 o versioni precedenti, non puoi usare il metodo "
+"``update_subarray()`` e devi invece usare il seguente stile di codice più "
+"vecchio:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:90
+msgid "Checking permissions"
+msgstr "Verifica dei permessi"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:92
+msgid "A user's permission can be checked by calling ``$auth->acl_get()``:"
+msgstr ""
+"Il permesso di un utente può essere verificato chiamando "
+"``$auth->acl_get()``:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:99
+msgid ""
+"If it is specific to a forum (i.e local) then pass it the forum ID as a "
+"second argument:"
+msgstr ""
+"Se è specifico per un forum (cioè locale), passagli l'ID del forum come "
+"secondo argomento:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:106
+msgid "For forums one can use the forum specific call ``$auth->acl_getf()``:"
+msgstr ""
+"Per i fora si può usare la chiamata specifica per i fora "
+"``$auth->acl_getf()``:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:113
+msgid ""
+"It is also possible to check for more than one option with ``acl_gets()``:"
+msgstr "È anche possibile verificare più di un'opzione con ``acl_gets()``:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:121
+msgid ""
+"When checking permissions, it's also important to keep in mind whether the "
+"global or local permissions should be checked. If ``acl_get`` is called "
+"without a forum id, the global permissions will be used. Instead, passing a "
+"forum id will also check the local permissions which can then potentially "
+"override a ``NO`` with a ``YES``. After checking all user, group, forum, and"
+" global permissions, the return permission is always either ``YES`` or "
+"``NO``, ``NEVER`` is only used to enforce a ``NO``."
+msgstr ""
+"Quando si verificano i permessi, è anche importante tenere presente se "
+"debbano essere verificati i permessi globali o locali. Se ``acl_get`` viene "
+"chiamato senza un id del forum, verranno usati i permessi globali. Passando "
+"invece un id del forum, verranno controllati anche i permessi locali, che "
+"possono potenzialmente sovrascrivere un ``NO`` con un ``YES``. Dopo aver "
+"verificato tutti i permessi utente, gruppo, forum e globali, il permesso "
+"restituito è sempre ``YES`` o ``NO``; ``NEVER`` viene usato solo per imporre"
+" un ``NO``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:128
+msgid "Understanding Permissions"
+msgstr "Comprendere i permessi"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:130
+msgid ""
+"Permissions in phpBB control what actions users are allowed to perform on "
+"the forum, such as creating a new topic, replying to a post, or editing a "
+"user’s profile. Each permission is assigned a value of ``YES``, ``NO``, or "
+"``NEVER``."
+msgstr ""
+"I permessi in phpBB controllano quali azioni gli utenti hanno il permesso di"
+" eseguire sul forum, come creare un nuovo argomento, rispondere a un "
+"messaggio o modificare il profilo di un utente. Ad ogni permesso viene "
+"assegnato un valore ``YES``, ``NO`` o ``NEVER``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:132
+msgid "``YES`` means that the user or group is allowed to perform the action."
+msgstr ""
+"``YES`` significa che l'utente o il gruppo ha il permesso di eseguire "
+"l'azione."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:133
+msgid ""
+"``NO`` means that the user or group is not allowed to perform the action, "
+"but it can be overruled by a ``YES`` from a group or role they are assigned "
+"to."
+msgstr ""
+"``NO`` significa che l'utente o il gruppo non ha il permesso di eseguire "
+"l'azione, ma può essere annullato da un ``YES`` proveniente da un gruppo o "
+"ruolo a cui è assegnato."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:134
+msgid ""
+"``NEVER`` means that the user or group is not allowed to perform the action "
+"and cannot be overruled by a ``YES`` from a group or role they are assigned "
+"to."
+msgstr ""
+"``NEVER`` significa che l'utente o il gruppo non ha il permesso di eseguire "
+"l'azione e non può essere annullato da un ``YES`` proveniente da un gruppo o"
+" ruolo a cui è assegnato."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:136
+msgid ""
+"When a user requests to perform an action, phpBB combines all the "
+"permissions assigned to the user through their groups, roles, and direct "
+"permission assignments. If any permission is set to ``NEVER``, it overrides "
+"all other permissions and denies the user access to that action. If a "
+"permission is set to ``NO``, it can be overridden by a ``YES`` permission "
+"from another group or role."
+msgstr ""
+"Quando un utente richiede di eseguire un'azione, phpBB combina tutti i "
+"permessi assegnati all'utente tramite i suoi gruppi, ruoli e assegnazioni "
+"dirette di permessi. Se un permesso qualsiasi è impostato su ``NEVER``, esso"
+" sovrascrive tutti gli altri permessi e nega all'utente l'accesso a "
+"quell'azione. Se un permesso è impostato su ``NO``, può essere sovrascritto "
+"da un permesso ``YES`` proveniente da un altro gruppo o ruolo."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:139
+msgid "Permission Types"
+msgstr "Tipi di permesso"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:141
+msgid "There are four types of permissions in phpBB:"
+msgstr "Ci sono quattro tipi di permessi in phpBB:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:143
+msgid ""
+"``a_*`` Administrator: These permissions are applied to users who are "
+"assigned administrator roles."
+msgstr ""
+"``a_*`` Administrator: questi permessi vengono applicati agli utenti a cui "
+"sono assegnati ruoli di amministratore."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:144
+msgid ""
+"``f_*`` Forum: These permissions are applied to individual forums and can be"
+" set for each user group or individual user."
+msgstr ""
+"``f_*`` Forum: questi permessi vengono applicati a singoli fora e possono "
+"essere impostati per ogni gruppo di utenti o singolo utente."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:145
+msgid ""
+"``m_*`` Moderator: These permissions are applied to users who are assigned "
+"moderator roles for specific forums."
+msgstr ""
+"``m_*`` Moderator: questi permessi vengono applicati agli utenti a cui sono "
+"assegnati ruoli di moderatore per fora specifici."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:146
+msgid ""
+"``u_*`` User: These permissions are applied to individual users and override"
+" the permissions set for their user group."
+msgstr ""
+"``u_*`` User: questi permessi vengono applicati a singoli utenti e "
+"sovrascrivono i permessi impostati per il loro gruppo di utenti."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:149
+msgid "Local and Global Permissions"
+msgstr "Permessi locali e globali"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:151
+msgid ""
+"Permissions can be set to apply locally or globally. Local permissions are "
+"specific to a single forum, while global permissions apply to the entire "
+"board. By default, forum permissions are set to local. Administrator and "
+"User permissions are typically set to global."
+msgstr ""
+"I permessi possono essere impostati per applicarsi localmente o globalmente."
+" I permessi locali sono specifici per un singolo forum, mentre i permessi "
+"globali si applicano all'intero forum. Per impostazione predefinita, i "
+"permessi dei fora sono impostati come locali. I permessi di amministratore e"
+" utente sono tipicamente impostati come globali."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:153
+msgid ""
+"Permission options can also be set to apply both locally and globally, which"
+" is typical for Moderator permissions. This allows some users to be granted "
+"the permission on a single forum, while others might be granted the "
+"permission board-wide."
+msgstr ""
+"Le opzioni dei permessi possono anche essere impostate per applicarsi sia "
+"localmente che globalmente, il che è tipico per i permessi di moderatore. "
+"Questo permette ad alcuni utenti di ricevere il permesso su un singolo "
+"forum, mentre ad altri potrebbe essere concesso il permesso per l'intero "
+"forum."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:156
+msgid "Roles"
+msgstr "Ruoli"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:158
+msgid ""
+"Roles are a predefined set of permission options that can be applied to "
+"users or groups. When the permission options of a role are changed, the "
+"users or groups assigned that role are automatically updated."
+msgstr ""
+"I ruoli sono un insieme predefinito di opzioni di permesso che possono "
+"essere applicate a utenti o gruppi. Quando le opzioni di permesso di un "
+"ruolo vengono modificate, gli utenti o i gruppi a cui è assegnato quel ruolo"
+" vengono aggiornati automaticamente."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:160
+msgid ""
+"The effective permission for any option is determined by a combination of "
+"the user's group membership, assigned roles, and direct permission "
+"assignments. In some cases, opposing permissions may exist, which can lead "
+"to unexpected results. It's important to carefully consider the permission "
+"settings to ensure that users are granted the appropriate level of access on"
+" the forum."
+msgstr ""
+"Il permesso effettivo per qualsiasi opzione è determinato da una "
+"combinazione dell'appartenenza ai gruppi dell'utente, dei ruoli assegnati e "
+"delle assegnazioni dirette di permessi. In alcuni casi possono esistere "
+"permessi contrastanti, il che può portare a risultati inattesi. È importante"
+" considerare attentamente le impostazioni dei permessi per garantire che "
+"agli utenti venga concesso il livello di accesso appropriato sul forum."

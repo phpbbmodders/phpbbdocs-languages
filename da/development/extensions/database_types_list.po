@@ -1,0 +1,442 @@
+# Danish translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:3
+msgid "Database Types List"
+msgstr "Liste over databasetyper"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:6
+msgid "Introduction"
+msgstr "Introduktion"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:8
+msgid ""
+"The purpose of the Database Type Map is to simplify the process of creating "
+"installations for multiple database systems. Instead of writing specific "
+"installation instructions for each individual database system, you can "
+"create a single set of instructions and use the Database Type Map to modify "
+"any supported database system with just one command. This makes it easier "
+"and more efficient to work with multiple database systems, as you don't need"
+" to write and maintain separate instructions for each one."
+msgstr ""
+"Formålet med Database Type Map er at forenkle processen med at oprette "
+"installationer til flere databasesystemer. I stedet for at skrive specifikke"
+" installationsinstruktioner til hvert enkelt databasesystem kan du oprette "
+"ét enkelt sæt instruktioner og bruge Database Type Map til at ændre ethvert "
+"understøttet databasesystem med blot én kommando. Dette gør det nemmere og "
+"mere effektivt at arbejde med flere databasesystemer, da du ikke behøver at "
+"skrive og vedligeholde separate instruktioner til hvert af dem."
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:16
+msgid ""
+"With some commands you may enter the `Zerofill "
+"<https://www.tutorialspoint.com/what-is-the-benefit-of-zerofill-in-mysql>`_,"
+" example ``INT:11``, if the field is a numeric one. With some you may enter "
+"the length of the field, example ``VARCHAR:255``, which will make a "
+"varchar(255) column in MySQL. In all of the fields supporting this, they "
+"will have a colon followed by ``%d`` meaning any number may fill the space "
+"of the ``%d``."
+msgstr ""
+"Med nogle kommandoer kan du angive `Zerofill "
+"<https://www.tutorialspoint.com/what-is-the-benefit-of-zerofill-in-mysql>`_,"
+" f.eks. ``INT:11``, hvis feltet er numerisk. Med nogle kan du angive feltets"
+" længde, f.eks. ``VARCHAR:255``, hvilket vil give en varchar(255)-kolonne i "
+"MySQL. I alle de felter, der understøtter dette, vil de have et kolon "
+"efterfulgt af ``%d``, hvilket betyder, at et hvilket som helst tal kan "
+"udfylde pladsen for ``%d``."
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:22
+msgid "Numeric"
+msgstr "Numerisk"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:28
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:60
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:85
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:117
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:146
+msgid "Command"
+msgstr "Kommando"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:29
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:61
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:86
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:118
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:147
+msgid "MySQL Equivalent"
+msgstr "MySQL-ækvivalent"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:30
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:62
+msgid "Storage Range (on MySQL)"
+msgstr "Lagerinterval (på MySQL)"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:31
+msgid "TINT:%d"
+msgstr "TINT:%d"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:32
+msgid "tinyint(%d)"
+msgstr "tinyint(%d)"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:33
+msgid "-128 to 127"
+msgstr "-128 til 127"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:34
+msgid "INT:%d"
+msgstr "INT:%d"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:35
+msgid "int(%d)"
+msgstr "int(%d)"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:36
+msgid "-2,147,483,648 to 2,147,483,648"
+msgstr "-2.147.483.648 til 2.147.483.648"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:37
+msgid "BINT"
+msgstr "BINT"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:38
+msgid "bigint(20)"
+msgstr "bigint(20)"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:39
+msgid "-9,223,372,036,854,775,808 to 9,223,372,036,854,775,808"
+msgstr "-9.223.372.036.854.775.808 til 9.223.372.036.854.775.808"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:40
+msgid "USINT"
+msgstr "USINT"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:41
+msgid "smallint(4) UNSIGNED"
+msgstr "smallint(4) UNSIGNED"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:42
+msgid "0 to 65,535"
+msgstr "0 til 65.535"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:43
+msgid "UINT"
+msgstr "UINT"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:44
+msgid "mediumint(8) UNSIGNED"
+msgstr "mediumint(8) UNSIGNED"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:45
+msgid "0 to 16,777,215"
+msgstr "0 til 16.777.215"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:46
+msgid "UINT:%d"
+msgstr "UINT:%d"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:47
+msgid "int(%d) UNSIGNED"
+msgstr "int(%d) UNSIGNED"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:48
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:51
+msgid "0 to 4,294,967,295"
+msgstr "0 til 4.294.967.295"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:49
+msgid "ULINT"
+msgstr "ULINT"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:50
+msgid "int(10) UNSIGNED"
+msgstr "int(10) UNSIGNED"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:54
+msgid "Decimal"
+msgstr "Decimal"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:63
+msgid "DECIMAL"
+msgstr "DECIMAL"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:64
+msgid "decimal(5,2)"
+msgstr "decimal(5,2)"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:65
+msgid "-999.99 to 999.99"
+msgstr "-999,99 til 999,99"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:66
+msgid "DECIMAL:%d"
+msgstr "DECIMAL:%d"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:67
+msgid "decimal(%d, 2)"
+msgstr "decimal(%d, 2)"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:68
+msgid ""
+"-(%d - 2 digits to the left of the decimal).99 to (%d - 2 digits to the left"
+" of the decimal).99"
+msgstr ""
+"-(%d - 2 cifre til venstre for decimaltegnet),99 til (%d - 2 cifre til "
+"venstre for decimaltegnet),99"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:69
+msgid "PDECIMAL"
+msgstr "PDECIMAL"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:70
+msgid "decimal(6,3)"
+msgstr "decimal(6,3)"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:71
+msgid "-999.999 to 999.999"
+msgstr "-999,999 til 999,999"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:72
+msgid "PDECIMAL:%d"
+msgstr "PDECIMAL:%d"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:73
+msgid "decimal(%d,3)"
+msgstr "decimal(%d,3)"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:74
+msgid ""
+"-(%d - 3 digits to the left of the decimal).999 to (%d - 3 digits to the "
+"left of the decimal).999"
+msgstr ""
+"-(%d - 3 cifre til venstre for decimaltegnet),999 til (%d - 3 cifre til "
+"venstre for decimaltegnet),999"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:77
+msgid "Text"
+msgstr "Tekst"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:79
+msgid ""
+"These should only be used for ASCII characters.  If you plan to use it for "
+"something like message text read the Unicode Text section"
+msgstr ""
+"Disse bør kun bruges til ASCII-tegn. Hvis du planlægger at bruge det til "
+"noget som beskedtekst, så læs afsnittet Unicode-tekst"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:87
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:119
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:148
+msgid "Explain"
+msgstr "Forklaring"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:88
+msgid "VCHAR"
+msgstr "VCHAR"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:89
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:121
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:130
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:156
+msgid "varchar(255)"
+msgstr "varchar(255)"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:90
+msgid ""
+"text for storing 255 characters (normal input field with a max of 255 chars)"
+msgstr "tekst til at gemme 255 tegn (normalt inputfelt med maks. 255 tegn)"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:91
+msgid "VCHAR:%d"
+msgstr "VCHAR:%d"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:92
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:124
+msgid "varchar(%d)"
+msgstr "varchar(%d)"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:93
+msgid ""
+"text for storing %d characters (normal input field with a max of %d chars)"
+msgstr "tekst til at gemme %d tegn (normalt inputfelt med maks. %d tegn)"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:94
+msgid "CHAR:%d"
+msgstr "CHAR:%d"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:95
+msgid "char(%d)"
+msgstr "char(%d)"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:96
+msgid ""
+"text for storing up to 30 characters (normal input field with a max of 30 "
+"chars)"
+msgstr ""
+"tekst til at gemme op til 30 tegn (normalt inputfelt med maks. 30 tegn)"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:97
+msgid "XSTEXT"
+msgstr "XSTEXT"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:98
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:101
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:104
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:133
+msgid "text"
+msgstr "text"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:99
+msgid "text for storing 100 characters"
+msgstr "tekst til at gemme 100 tegn"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:100
+msgid "STEXT"
+msgstr "STEXT"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:102
+msgid "text for storing 255 characters"
+msgstr "tekst til at gemme 255 tegn"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:103
+msgid "TEXT"
+msgstr "TEXT"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:105
+msgid "text for storing 3000 characters"
+msgstr "tekst til at gemme 3000 tegn"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:106
+msgid "MTEXT"
+msgstr "MTEXT"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:107
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:136
+msgid "mediumtext"
+msgstr "mediumtext"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:108
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:137
+msgid "(post text, large text)"
+msgstr "(indlægstekst, lang tekst)"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:111
+msgid "Unicode Text"
+msgstr "Unicode-tekst"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:120
+msgid "VCHAR_UNI"
+msgstr "VCHAR_UNI"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:122
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:131
+msgid ""
+"text for storing 255 characters (normal input field with a max of 255 "
+"single-byte chars)"
+msgstr ""
+"tekst til at gemme 255 tegn (normalt inputfelt med maks. 255 enkeltbyte-"
+"tegn)"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:123
+msgid "VCHAR_UNI:%d"
+msgstr "VCHAR_UNI:%d"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:125
+msgid ""
+"text for storing %d characters (normal input field with a max of %d single-"
+"byte chars)"
+msgstr ""
+"tekst til at gemme %d tegn (normalt inputfelt med maks. %d enkeltbyte-tegn)"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:126
+msgid "XSTEXT_UNI"
+msgstr "XSTEXT_UNI"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:127
+msgid "varchar(100)"
+msgstr "varchar(100)"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:128
+msgid "text for storing 100 characters (topic_title for example)"
+msgstr "tekst til at gemme 100 tegn (f.eks. topic_title)"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:129
+msgid "STEXT_UNI"
+msgstr "STEXT_UNI"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:132
+msgid "TEXT_UNI"
+msgstr "TEXT_UNI"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:134
+msgid ""
+"text for storing 3000 characters (short text, descriptions, comments, etc.)"
+msgstr ""
+"tekst til at gemme 3000 tegn (kort tekst, beskrivelser, kommentarer osv.)"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:135
+msgid "MTEXT_UNI"
+msgstr "MTEXT_UNI"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:140
+msgid "Miscellaneous"
+msgstr "Diverse"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:149
+msgid "BOOL"
+msgstr "BOOL"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:150
+msgid "tinyint(1) UNSIGNED"
+msgstr "tinyint(1) UNSIGNED"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:151
+msgid "Storing boolean values (true/false)"
+msgstr "Lagring af boolske værdier (true/false)"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:152
+msgid "TIMESTAMP"
+msgstr "TIMESTAMP"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:153
+msgid "int(11) UNSIGNED"
+msgstr "int(11) UNSIGNED"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:154
+msgid "For storing UNIX timestamps"
+msgstr "Til at gemme UNIX-timestamps"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:155
+msgid "VCHAR_CI"
+msgstr "VCHAR_CI"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:157
+msgid "varchar_ci for postgresql, others VCHAR"
+msgstr "varchar_ci til PostgreSQL, andre VCHAR"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:158
+msgid "VARBINARY"
+msgstr "VARBINARY"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:159
+msgid "varbinary(255)"
+msgstr "varbinary(255)"
+
+#: ../../devdocs-source-copy/extensions/database_types_list.rst:160
+msgid "Binary storage"
+msgstr "Binær lagring"

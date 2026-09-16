@@ -1,0 +1,206 @@
+# Danish translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:3
+msgid "Data changes"
+msgstr "Dataændringer"
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:5
+msgid ""
+"Data changes are done in Migrations by creating an array that will be parsed"
+" by ``\\phpbb\\db\\migrator::run_step()``"
+msgstr ""
+"Dataændringer udføres i migreringer ved at oprette et array, der bliver "
+"analyseret af ``\\phpbb\\db\\migrator::run_step()``"
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:9
+msgid "Basics"
+msgstr "Grundlæggende"
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:11
+msgid ""
+"When performing data changes, your Migrations class should contain at least "
+"one function, update_data(). You may optionally provide a function "
+"revert_data(), which will be run when the migration is removed."
+msgstr ""
+"Når du foretager dataændringer, bør din migreringsklasse indeholde mindst én"
+" funktion, update_data(). Du kan valgfrit angive en funktion revert_data(), "
+"som køres, når migreringen fjernes."
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:16
+msgid "update_data"
+msgstr "update_data"
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:18
+msgid ""
+"``update_data()`` will be called as the **second** step, after "
+"``update_schema()`` when installing a migration. This makes any database "
+"data changes you need when installing the migration."
+msgstr ""
+"``update_data()`` kaldes som **andet** trin, efter ``update_schema()``, når "
+"en migrering installeres. Dette foretager de databasedataændringer, du har "
+"brug for, når migreringen installeres."
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:30
+msgid "revert_data"
+msgstr "revert_data"
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:32
+msgid ""
+"``revert_data()`` will be called when a Migration must be uninstalled (this "
+"could happen if the user wants/needs to revert changes by the Migration, a "
+"dependency is reverted, or the installation fails and the entire Migration "
+"is removed)."
+msgstr ""
+"``revert_data()`` kaldes, når en migrering skal afinstalleres (dette kan "
+"ske, hvis brugeren ønsker/skal fortryde ændringer foretaget af migreringen, "
+"en afhængighed fortrydes, eller installationen mislykkes, og hele "
+"migreringen fjernes)."
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:37
+msgid ""
+"This function is entirely optional, **most data is automatically reverted.**"
+" All calls to the Migration Tools are automatically reverted. The only thing"
+" this should do is handle reverting any custom functions that were run if it"
+" is absolutely needed."
+msgstr ""
+"Denne funktion er helt valgfri, **de fleste data fortrydes automatisk.** "
+"Alle kald til migreringsværktøjerne fortrydes automatisk. Det eneste, denne "
+"funktion bør gøre, er at håndtere fortrydelse af eventuelle brugerdefinerede"
+" funktioner, der blev kørt, hvis det er absolut nødvendigt."
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:51
+msgid "What to return"
+msgstr "Hvad der skal returneres"
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:53
+msgid "An array of arrays containing instructions."
+msgstr "Et array af arrays, der indeholder instruktioner."
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:55
+msgid ""
+"These instructions can include calls to Tools. For any config settings, "
+"permission related commands, and modules, please see the related "
+"documentation under :doc:`tools/index`."
+msgstr ""
+"Disse instruktioner kan omfatte kald til værktøjer. For "
+"konfigurationsindstillinger, tilladelsesrelaterede kommandoer og moduler, se"
+" den relaterede dokumentation under :doc:`tools/index`."
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:61
+msgid "If (Conditional)"
+msgstr "If (betinget)"
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:63
+msgid ""
+"If call allows you to create a basic if statement which will be checked and,"
+" if true, the attached statement will be parsed."
+msgstr ""
+"If-kaldet giver dig mulighed for at oprette en grundlæggende if-sætning, som"
+" kontrolleres, og hvis den er sand, analyseres den tilknyttede sætning."
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:67
+#: ../../devdocs-source-copy/migrations/data_changes.rst:109
+msgid "How it works"
+msgstr "Sådan fungerer det"
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:77
+#: ../../devdocs-source-copy/migrations/data_changes.rst:183
+msgid "Examples"
+msgstr "Eksempler"
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:79
+msgid ""
+"if config \"captcha_gd\" is true, update \"captcha_plugin\" with "
+"\"phpbb_captcha_gd\""
+msgstr ""
+"hvis config \"captcha_gd\" er true, opdater \"captcha_plugin\" med "
+"\"phpbb_captcha_gd\""
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:88
+msgid ""
+"if config \"allow_avatar_upload\" or \"allow_avatar_local\" is true, update "
+"\"allow_avatar\" with value \"1\""
+msgstr ""
+"hvis config \"allow_avatar_upload\" eller \"allow_avatar_local\" er true, "
+"opdater \"allow_avatar\" med værdien \"1\""
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:101
+msgid ""
+"Calls to the Migration Tools wrapped in the if conditional will **not** be "
+"automatically reverted, as if statements are ignored by the "
+"``revert_data()`` method. You must define your own ``revert_data()`` method "
+"to revert any of these data changes if necessary."
+msgstr ""
+"Kald til migreringsværktøjerne, der er pakket ind i den betingede if-"
+"sætning, vil **ikke** blive fortrudt automatisk, da if-sætninger ignoreres "
+"af metoden ``revert_data()``. Du skal definere din egen "
+"``revert_data()``-metode for at fortryde disse dataændringer, hvis det er "
+"nødvendigt."
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:104
+msgid "Custom"
+msgstr "Brugerdefineret"
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:106
+msgid ""
+"Custom calls allow you to specify the callable to your own function to be "
+"called."
+msgstr ""
+"Brugerdefinerede kald giver dig mulighed for at angive den callable til din "
+"egen funktion, der skal kaldes."
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:118
+#: ../../devdocs-source-copy/migrations/data_changes.rst:145
+msgid "Example"
+msgstr "Eksempel"
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:120
+msgid "Call a function within the migrations file named some_function"
+msgstr "Kalder en funktion i migreringsfilen ved navn some_function"
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:130
+msgid "The function called, must be public accessible"
+msgstr "Den kaldte funktion skal være offentligt tilgængelig"
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:133
+msgid "Multi step processes"
+msgstr "Processer med flere trin"
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:135
+msgid ""
+"If you have a function that needs to be called multiple times to complete, "
+"returning anything except null or true will cause the function to be called "
+"until null or true is returned."
+msgstr ""
+"Hvis du har en funktion, der skal kaldes flere gange for at fuldføres, vil "
+"returnering af noget andet end null eller true medføre, at funktionen kaldes"
+" igen, indtil null eller true returneres."
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:141
+msgid ""
+"This should be used when something needs to be run that can take longer than"
+" the time limit (for example, resyncing topics)."
+msgstr ""
+"Dette bør bruges, når noget skal køres, som kan tage længere tid end "
+"tidsgrænsen (f.eks. resynkronisering af emner)."
+
+#: ../../devdocs-source-copy/migrations/data_changes.rst:185
+msgid "From ``\\phpbb\\db\\migration\\data\\v310\\dev``"
+msgstr "Fra ``\\phpbb\\db\\migration\\data\\v310\\dev``"

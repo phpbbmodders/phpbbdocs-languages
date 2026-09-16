@@ -1,0 +1,211 @@
+# Danish translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:1
+#: ../../devdocs-source-copy/migrations/dependencies.rst:3
+msgid "Dependencies"
+msgstr "Afhængigheder"
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:5
+msgid ""
+"Dependencies tell the Migrator what order Migrations must be installed in."
+msgstr ""
+"Afhængigheder fortæller Migrator'en, i hvilken rækkefølge migreringer skal "
+"installeres."
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:8
+msgid "Declaring Dependencies"
+msgstr "Deklarering af afhængigheder"
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:10
+msgid ""
+"In your Migration file, add a static public function named depends_on(), "
+"returning an array."
+msgstr ""
+"Tilføj i din migreringsfil en statisk offentlig funktion ved navn "
+"depends_on(), der returnerer et array."
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:20
+msgid ""
+"All that is needed is to add the class name(s) of the Migration(s) that the "
+"current Migration depends on."
+msgstr ""
+"Alt, der skal til, er at tilføje klassenavnet/-navnene på den/de "
+"migrering(er), som den aktuelle migrering afhænger af."
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:23
+msgid ""
+"For example, the migration ``phpbb\\db\\migration\\data\\v310\\dev`` depends"
+" on the extensions, style update, reported posts display, and timezone "
+"migrations to have already been installed."
+msgstr ""
+"F.eks. afhænger migreringen ``phpbb\\db\\migration\\data\\v310\\dev`` af, at"
+" migreringerne for udvidelser, styleopdatering, visning af rapporterede "
+"indlæg og tidszone allerede er installeret."
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:42
+msgid ""
+"It is highly recommended to add a dependency for all migrations. If the "
+"migration is the first migration of your extension just depend on the "
+"release migration of the minimum phpBB requirement of your extension, e.g. "
+"3.1.4:"
+msgstr ""
+"Det anbefales stærkt at tilføje en afhængighed for alle migreringer. Hvis "
+"migreringen er den første migrering i din udvidelse, skal du blot afhænge af"
+" udgivelsesmigreringen for udvidelsens minimumskrav til phpBB, f.eks. 3.1.4:"
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:57
+msgid "depends_on creates a tree"
+msgstr "depends_on opretter et træ"
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:59
+msgid "Imagine the following situation:"
+msgstr "Forestil dig følgende situation:"
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:1
+msgid "Migration"
+msgstr "Migrering"
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:1
+msgid "Note"
+msgstr "Bemærk"
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:1
+msgid "``migration_1``"
+msgstr "``migration_1``"
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:1
+msgid "``phpbb\\db\\migration\\data\\\\v310\\\\dev``"
+msgstr "``phpbb\\db\\migration\\data\\\\v310\\\\dev``"
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:1
+msgid "Initial release, 1.0.0, requires phpBB 3.1.0"
+msgstr "Første udgivelse, 1.0.0, kræver phpBB 3.1.0"
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:1
+msgid "``migration_2``"
+msgstr "``migration_2``"
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:1
+msgid "New feature for 1.0.1 (during development)"
+msgstr "Ny funktion til 1.0.1 (under udvikling)"
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:1
+msgid "``migration_3``"
+msgstr "``migration_3``"
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:1
+msgid "Another new feature for 1.0.1 (during development)"
+msgstr "En anden ny funktion til 1.0.1 (under udvikling)"
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:1
+msgid "``migration_4``"
+msgstr "``migration_4``"
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:1
+msgid "Modifying the feature in ``migration_2``"
+msgstr "Ændrer funktionen i ``migration_2``"
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:1
+msgid "``migration_5``"
+msgstr "``migration_5``"
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:1
+msgid "``migration_3``, ``migration_4``"
+msgstr "``migration_3``, ``migration_4``"
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:1
+msgid "Release 1.0.1"
+msgstr "Udgivelse 1.0.1"
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:71
+msgid ""
+"This dependency setup would cause the following Migrations to be "
+"additionally installed when an individual Migration was installed manually. "
+"*Assumes* ``phpbb\\db\\migration\\data\\v310\\dev`` *is already installed.*"
+msgstr ""
+"Denne afhængighedsopsætning ville medføre, at følgende migreringer også "
+"installeres, når en individuel migrering installeres manuelt. *Forudsætter, "
+"at* ``phpbb\\db\\migration\\data\\v310\\dev`` *allerede er installeret.*"
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:1
+msgid "Install"
+msgstr "Installér"
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:1
+msgid "Migrations that are installed"
+msgstr "Migreringer, der installeres"
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:1
+msgid "``migration_1``, ``migration_2``"
+msgstr "``migration_1``, ``migration_2``"
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:1
+msgid "``migration_1``, ``migration_3``"
+msgstr "``migration_1``, ``migration_3``"
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:1
+msgid "``migration_1``, ``migration_2``, ``migration_4``"
+msgstr "``migration_1``, ``migration_2``, ``migration_4``"
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:1
+msgid ""
+"``migration_1``, ``migration_2``, ``migration_4``, ``migration_3``, "
+"``migration_5``"
+msgstr ""
+"``migration_1``, ``migration_2``, ``migration_4``, ``migration_3``, "
+"``migration_5``"
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:87
+msgid "What does this mean for me?"
+msgstr "Hvad betyder dette for dig?"
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:89
+msgid ""
+"You must specify all dependencies that the current Migration has, but not "
+"any that the dependencies list as dependencies for their own installation."
+msgstr ""
+"Du skal angive alle afhængigheder, som den aktuelle migrering har, men ikke "
+"dem, som afhængighederne selv angiver som afhængigheder for deres egen "
+"installation."
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:92
+msgid ""
+"This means that ``migration_5`` doesn't need to list ``migration_1`` through"
+" ``migration_4`` as a dependency, only ``migration_3`` and ``migration_4`` "
+"because those Migrations already require ``migration_1`` and "
+"``migration_2``."
+msgstr ""
+"Dette betyder, at ``migration_5`` ikke behøver at angive ``migration_1`` til"
+" ``migration_4`` som afhængighed, kun ``migration_3`` og ``migration_4``, "
+"fordi disse migreringer allerede kræver ``migration_1`` og ``migration_2``."
+
+#: ../../devdocs-source-copy/migrations/dependencies.rst:96
+msgid ""
+"This also means that the desired order of operations is preserved. In the "
+"above example, ``migration_4`` modifies the feature in ``migration_2`` and "
+"must be applied after ``migration_2`` is installed. Similarly, in the above "
+"example, ``migration_5`` is the release of 1.0.1, which requires both of the"
+" two new features to be installed before it is 1.0.1."
+msgstr ""
+"Dette betyder også, at den ønskede rækkefølge af operationer bevares. I "
+"eksemplet ovenfor ændrer ``migration_4`` funktionen i ``migration_2`` og "
+"skal anvendes, efter at ``migration_2`` er installeret. Ligeledes er "
+"``migration_5`` i eksemplet ovenfor udgivelsen af 1.0.1, som kræver, at "
+"begge de to nye funktioner er installeret, før det er 1.0.1."

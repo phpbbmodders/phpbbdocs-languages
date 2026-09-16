@@ -1,0 +1,363 @@
+# Danish translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/development/processes.rst:2
+msgid "Development Processes"
+msgstr "Udviklingsprocesser"
+
+#: ../../devdocs-source-copy/development/processes.rst:5
+msgid "New Features"
+msgstr "Nye funktioner"
+
+#: ../../devdocs-source-copy/development/processes.rst:6
+msgid ""
+"This document outlines the process that is in place to propose new features "
+"that can be added to phpBB. phpBB uses this system to assure that a given "
+"feature is added as proposed and to make sure that feature requests are "
+"handled transparently by relying on community input."
+msgstr ""
+"Dette dokument beskriver den proces, der er indført til at foreslå nye "
+"funktioner, der kan tilføjes til phpBB. phpBB bruger dette system til at "
+"sikre, at en given funktion tilføjes som foreslået, og for at sikre, at "
+"funktionsanmodninger håndteres gennemsigtigt ved at basere sig på input fra "
+"fællesskabet."
+
+#: ../../devdocs-source-copy/development/processes.rst:10
+msgid ""
+"When proposing features or adjustments to phpBB, there are two possible "
+"routes to take:"
+msgstr ""
+"Når man foreslår funktioner eller justeringer til phpBB, er der to mulige "
+"veje at gå:"
+
+#: ../../devdocs-source-copy/development/processes.rst:12
+msgid "**Ideas**"
+msgstr "**Idéer**"
+
+#: ../../devdocs-source-copy/development/processes.rst:13
+msgid ""
+"Generally more informal ideas from a user perspective. Usually short "
+"descriptions without too much technical detail."
+msgstr ""
+"Generelt mere uformelle idéer set fra et brugerperspektiv. Som regel korte "
+"beskrivelser uden for mange tekniske detaljer."
+
+#: ../../devdocs-source-copy/development/processes.rst:15
+msgid "**Feature Requests**"
+msgstr "**Funktionsanmodninger**"
+
+#: ../../devdocs-source-copy/development/processes.rst:16
+msgid ""
+"More technical proposal for new features. Should take a deeper look at the "
+"technical background and ways to implement this new feature. Base for "
+"further discussions with the development team."
+msgstr ""
+"Mere teknisk forslag til nye funktioner. Bør se nærmere på den tekniske "
+"baggrund og måder at implementere den nye funktion på. Udgangspunkt for "
+"videre diskussioner med udviklingsteamet."
+
+#: ../../devdocs-source-copy/development/processes.rst:19
+msgid ""
+"In the end, both of these will end up following the same general process:"
+msgstr "I sidste ende vil begge disse følge den samme generelle proces:"
+
+#: ../../devdocs-source-copy/development/processes.rst:24
+msgid "Ideas"
+msgstr "Idéer"
+
+#: ../../devdocs-source-copy/development/processes.rst:25
+msgid ""
+"Ideas are generally more informal ideas that describe the request for a new "
+"feature from the user perspective. They are aimed at quickly gathering new "
+"ideas based on day to day use of phpBB."
+msgstr ""
+"Idéer er generelt mere uformelle idéer, der beskriver ønsket om en ny "
+"funktion set fra brugerens perspektiv. De sigter mod hurtigt at indsamle nye"
+" idéer baseret på den daglige brug af phpBB."
+
+#: ../../devdocs-source-copy/development/processes.rst:28
+msgid ""
+"Informal Ideas should be proposed in `phpBB Ideas "
+"<https://www.phpbb.com/community/ideas>`_. There it's possible to both "
+"gather feedback and support of other users."
+msgstr ""
+"Uformelle idéer bør foreslås på `phpBB Ideas "
+"<https://www.phpbb.com/community/ideas>`_. Der er det muligt både at "
+"indsamle feedback og opbakning fra andre brugere."
+
+#: ../../devdocs-source-copy/development/processes.rst:31
+msgid ""
+"More detailed technical discussions should however take place in a *Feature "
+"request*."
+msgstr ""
+"Mere detaljerede tekniske diskussioner bør dog finde sted i en "
+"*funktionsanmodning*."
+
+#: ../../devdocs-source-copy/development/processes.rst:34
+msgid "Feature Requests"
+msgstr "Funktionsanmodninger"
+
+#: ../../devdocs-source-copy/development/processes.rst:35
+msgid ""
+"In contrast to the above mentioned *Ideas*, a *Feature Request* should be "
+"focused more on the technical solution for the proposed feature. They maybe "
+"be based on an *Idea* but that is not mandatory."
+msgstr ""
+"I modsætning til de ovennævnte *idéer* bør en *funktionsanmodning* fokusere "
+"mere på den tekniske løsning for den foreslåede funktion. Den kan være "
+"baseret på en *idé*, men det er ikke obligatorisk."
+
+#: ../../devdocs-source-copy/development/processes.rst:38
+msgid ""
+"New feature requests can either be started by creating a ticket in the "
+"`phpBB Tracker <https://tracker.phpbb.com/>`_ or by creating a new "
+"discussion topic on the `Area51 Forums <https://area51.phpbb.com/phpBB/>`_."
+msgstr ""
+"Nye funktionsanmodninger kan enten startes ved at oprette en sag i `phpBB "
+"Tracker <https://tracker.phpbb.com/>`_ eller ved at oprette et nyt "
+"diskussionsemne på `Area51-forummene <https://area51.phpbb.com/phpBB/>`_."
+
+#: ../../devdocs-source-copy/development/processes.rst:41
+msgid ""
+"Try to describe the technical details of the proposed features, how it will "
+"be used, and recommendations for an possible implementation. Include your "
+"expectations of the amount of changes that are needed and attempt to discuss"
+" the complexity of the proposal."
+msgstr ""
+"Forsøg at beskrive de tekniske detaljer for den foreslåede funktion, hvordan"
+" den vil blive brugt, og anbefalinger til en mulig implementering. Angiv "
+"dine forventninger til omfanget af de nødvendige ændringer, og forsøg at "
+"diskutere forslagets kompleksitet."
+
+#: ../../devdocs-source-copy/development/processes.rst:45
+msgid ""
+"Members of the community will be able to participate in the discussion, give"
+" their feedback, and help with preparing a plan on how to best implement the"
+" feature in small and easy to track steps."
+msgstr ""
+"Medlemmer af fællesskabet vil kunne deltage i diskussionen, give deres "
+"feedback og hjælpe med at forberede en plan for, hvordan funktionen bedst "
+"implementeres i små og lette at spore trin."
+
+#: ../../devdocs-source-copy/development/processes.rst:49
+msgid "Feature Acceptance"
+msgstr "Godkendelse af funktion"
+
+#: ../../devdocs-source-copy/development/processes.rst:50
+msgid ""
+"After a feature has been accepted by the *phpBB Development Team*, there "
+"should be at least one ticket in the `phpBB Tracker "
+"<https://tracker.phpbb.com/>`_. A new feature should be split up into "
+"smaller, intermediate steps to ease implementation and review of the "
+"proposed changes. It is also possible to use *Epics* in the tracker for a "
+"better overview of necessary steps."
+msgstr ""
+"Efter en funktion er blevet accepteret af *phpBB Development Team*, bør der "
+"være mindst én sag i `phpBB Tracker <https://tracker.phpbb.com/>`_. En ny "
+"funktion bør opdeles i mindre, mellemliggende trin for at lette "
+"implementeringen og gennemgangen af de foreslåede ændringer. Det er også "
+"muligt at bruge *Epics* i trackeren for at få et bedre overblik over de "
+"nødvendige trin."
+
+#: ../../devdocs-source-copy/development/processes.rst:55
+msgid ""
+"Each step of a feature can then be reviewed and integrated separately. As a "
+"result of that, code reviews will be easier, quicker, and should also result"
+" in overall better code and features."
+msgstr ""
+"Hvert trin af en funktion kan derefter gennemgås og integreres separat. Som "
+"følge heraf bliver kodegennemgange nemmere, hurtigere og bør også resultere "
+"i overordnet bedre kode og funktioner."
+
+#: ../../devdocs-source-copy/development/processes.rst:59
+msgid "Implementation & Review"
+msgstr "Implementering og gennemgang"
+
+#: ../../devdocs-source-copy/development/processes.rst:60
+msgid ""
+"Implementation of a feature or its intermediate steps usually follows the "
+"acceptance by the *phpBB Development Team*. All code needs to follow our "
+"`Coding Guidelines <coding_guidelines.html>`_. The implementation itself can"
+" be done by the requester, a *phpBB Development Team* member, or any other "
+"developer. Feature acceptance by the *phpBB Development Team* does not mean "
+"that implementation of it is mandatory or that it will have to be "
+"implemented by the *phpBB Development Team* itself."
+msgstr ""
+"Implementeringen af en funktion eller dens mellemliggende trin følger "
+"normalt godkendelsen fra *phpBB Development Team*. Al kode skal følge vores "
+"`kodningsretningslinjer <coding_guidelines.html>`_. Selve implementeringen "
+"kan udføres af den, der har fremsat anmodningen, et medlem af *phpBB "
+"Development Team*, eller enhver anden udvikler. Godkendelse af en funktion "
+"fra *phpBB Development Team* betyder ikke, at implementeringen er "
+"obligatorisk, eller at den skal udføres af *phpBB Development Team* selv."
+
+#: ../../devdocs-source-copy/development/processes.rst:66
+msgid ""
+"When using external libraries, please make sure that they are compatible "
+"with our license. If you are unsure about whether a certain type of license "
+"is acceptable, please ask the *phpBB Development Team*. PHP libraries "
+"**MUST** be installed with composer and should generally be considered well "
+"maintained."
+msgstr ""
+"Når du bruger eksterne biblioteker, skal du sørge for, at de er kompatible "
+"med vores licens. Hvis du er usikker på, om en bestemt type licens er "
+"acceptabel, bedes du spørge *phpBB Development Team*. PHP-biblioteker "
+"**SKAL** installeres med composer og bør generelt anses for at være "
+"velvedligeholdte."
+
+#: ../../devdocs-source-copy/development/processes.rst:70
+msgid ""
+"Once the code is ready to be reviewed, a pull request should be created in "
+"our `GitHub repository <https://github.com/phpbb/phpbb/pulls>`_. Target "
+"versions should be picked in accordance with `Target Versions`_."
+msgstr ""
+"Når koden er klar til gennemgang, bør der oprettes en pull request i vores "
+"`GitHub-repository <https://github.com/phpbb/phpbb/pulls>`_. Målversioner "
+"bør vælges i overensstemmelse med `Målversioner`_."
+
+#: ../../devdocs-source-copy/development/processes.rst:74
+msgid "Finalisation / Feature Merge"
+msgstr "Finalisering / sammenlægning af funktion"
+
+#: ../../devdocs-source-copy/development/processes.rst:75
+msgid ""
+"After the code has been reviewed by the *phpBB Development Team*, it is "
+"typically approved and merged. In case there are issues with the code, these"
+" should be resolved as part of the code review. It can however also make "
+"sense to create follow-up tickets to take care of some additional work or "
+"adjustments to the proposed feature."
+msgstr ""
+"Efter koden er blevet gennemgået af *phpBB Development Team*, bliver den "
+"typisk godkendt og sammenlagt. Hvis der er problemer med koden, bør disse "
+"løses som en del af kodegennemgangen. Det kan dog også give mening at "
+"oprette opfølgende sager til at tage sig af yderligere arbejde eller "
+"justeringer af den foreslåede funktion."
+
+#: ../../devdocs-source-copy/development/processes.rst:79
+msgid ""
+"Once a pull request has been merged, typical follow-up work should be adding"
+" documentation for the new feature, creating blog posts as a form of pre-"
+"announcement, or starting work on the next intermediate step."
+msgstr ""
+"Når en pull request er blevet sammenlagt, bør typisk opfølgende arbejde "
+"bestå i at tilføje dokumentation for den nye funktion, oprette blogindlæg "
+"som en form for forhåndsannoncering, eller påbegynde arbejdet med det næste "
+"mellemliggende trin."
+
+#: ../../devdocs-source-copy/development/processes.rst:84
+msgid "Target Versions"
+msgstr "Målversioner"
+
+#: ../../devdocs-source-copy/development/processes.rst:85
+msgid ""
+"The appropriate target version for any given change or feature usually "
+"depends on the following attributes:"
+msgstr ""
+"Den passende målversion for en given ændring eller funktion afhænger normalt"
+" af følgende egenskaber:"
+
+#: ../../devdocs-source-copy/development/processes.rst:87
+msgid "Type: Bugfix, behavioural change, or new feature"
+msgstr "Type: fejlrettelse, adfærdsændring eller ny funktion"
+
+#: ../../devdocs-source-copy/development/processes.rst:88
+msgid "Size & complexity"
+msgstr "Størrelse og kompleksitet"
+
+#: ../../devdocs-source-copy/development/processes.rst:89
+msgid "Backwards compatibility (BC)"
+msgstr "Bagudkompatibilitet (BC)"
+
+#: ../../devdocs-source-copy/development/processes.rst:91
+msgid ""
+"Based on these and the semantic versioning scheme these general rules should"
+" apply:"
+msgstr ""
+"Baseret på disse og det semantiske versioneringsskema bør følgende generelle"
+" regler gælde:"
+
+#: ../../devdocs-source-copy/development/processes.rst:93
+msgid "**PATCH** version releases:"
+msgstr "**PATCH**-versionsudgivelser:"
+
+#: ../../devdocs-source-copy/development/processes.rst:94
+msgid "Bug fixes without BC breaks"
+msgstr "Fejlrettelser uden BC-brud"
+
+#: ../../devdocs-source-copy/development/processes.rst:95
+msgid "Security fixes incl. BC breaks"
+msgstr "Sikkerhedsrettelser inkl. BC-brud"
+
+#: ../../devdocs-source-copy/development/processes.rst:96
+msgid "Minor behavioural changes without BC breaks"
+msgstr "Mindre adfærdsændringer uden BC-brud"
+
+#: ../../devdocs-source-copy/development/processes.rst:97
+msgid "Minor new features without BC breaks"
+msgstr "Mindre nye funktioner uden BC-brud"
+
+#: ../../devdocs-source-copy/development/processes.rst:98
+msgid "Updates to third parties without BC breaks"
+msgstr "Opdateringer af tredjeparter uden BC-brud"
+
+#: ../../devdocs-source-copy/development/processes.rst:100
+msgid "**MINOR** version releases:"
+msgstr "**MINOR**-versionsudgivelser:"
+
+#: ../../devdocs-source-copy/development/processes.rst:101
+msgid "Same as in **PATCH** version releases with addition of:"
+msgstr "Det samme som i **PATCH**-versionsudgivelser, med tilføjelse af:"
+
+#: ../../devdocs-source-copy/development/processes.rst:103
+msgid "Bug fixes incl. BC breaks"
+msgstr "Fejlrettelser inkl. BC-brud"
+
+#: ../../devdocs-source-copy/development/processes.rst:104
+msgid "Major behavioural changes without BC breaks"
+msgstr "Større adfærdsændringer uden BC-brud"
+
+#: ../../devdocs-source-copy/development/processes.rst:105
+msgid "Major new features without BC breaks"
+msgstr "Større nye funktioner uden BC-brud"
+
+#: ../../devdocs-source-copy/development/processes.rst:106
+msgid "Updates to third parties without *significant* BC breaks"
+msgstr "Opdateringer af tredjeparter uden *væsentlige* BC-brud"
+
+#: ../../devdocs-source-copy/development/processes.rst:108
+msgid "**MAJOR** version releases:"
+msgstr "**MAJOR**-versionsudgivelser:"
+
+#: ../../devdocs-source-copy/development/processes.rst:109
+msgid "Same as in **PATCH** and **MINOR** version releases with addition of:"
+msgstr ""
+"Det samme som i **PATCH**- og **MINOR**-versionsudgivelser, med tilføjelse "
+"af:"
+
+#: ../../devdocs-source-copy/development/processes.rst:111
+msgid "Major behavioural changes incl. BC breaks"
+msgstr "Større adfærdsændringer inkl. BC-brud"
+
+#: ../../devdocs-source-copy/development/processes.rst:112
+msgid "Major new features incl. BC breaks"
+msgstr "Større nye funktioner inkl. BC-brud"
+
+#: ../../devdocs-source-copy/development/processes.rst:113
+msgid "Updates to third parties incl. *significant* BC breaks,"
+msgstr "Opdateringer af tredjeparter inkl. *væsentlige* BC-brud,"

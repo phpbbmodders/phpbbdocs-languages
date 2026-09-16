@@ -1,0 +1,191 @@
+# Italian translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/migrations/getting_started.rst:3
+msgid "Getting started"
+msgstr "Come iniziare"
+
+#: ../../devdocs-source-copy/migrations/getting_started.rst:5
+msgid ""
+"To get started with Migrations, we need to first create a Migration file "
+"that will hold the list of database changes."
+msgstr ""
+"Per iniziare con le migrazioni, dobbiamo prima creare un file di migrazione "
+"che conterrà l'elenco delle modifiche al database."
+
+#: ../../devdocs-source-copy/migrations/getting_started.rst:8
+msgid ""
+"Before we get started, first you should remember that with Migrations there "
+"is no limit to the number of Migration files. This means that you're free to"
+" create migration files as you need, whether you want to create a single "
+"file per version, per feature, or even for every change you make to the "
+"database -- it is entirely up to you!"
+msgstr ""
+"Prima di iniziare, dovresti ricordare che con le migrazioni non c'è limite "
+"al numero di file di migrazione. Questo significa che sei libero di creare "
+"file di migrazione secondo necessità, sia che tu voglia creare un unico file"
+" per versione, per funzionalità, o anche per ogni modifica che apporti al "
+"database: dipende interamente da te!"
+
+#: ../../devdocs-source-copy/migrations/getting_started.rst:15
+msgid "Where do I create the Migration file?"
+msgstr "Dove creo il file di migrazione?"
+
+#: ../../devdocs-source-copy/migrations/getting_started.rst:18
+msgid "Extension Author"
+msgstr "Autore di un'estensione"
+
+#: ../../devdocs-source-copy/migrations/getting_started.rst:19
+msgid ""
+"Create a directory in ``ext/vendor/extension/`` called migrations. All of "
+"your Migration files should be in this directory."
+msgstr ""
+"Crea una directory in ``ext/vendor/extension/`` chiamata migrations. Tutti i"
+" tuoi file di migrazione dovrebbero trovarsi in questa directory."
+
+#: ../../devdocs-source-copy/migrations/getting_started.rst:23
+msgid "Developer"
+msgstr "Sviluppatore"
+
+#: ../../devdocs-source-copy/migrations/getting_started.rst:25
+msgid ""
+"phpBB Migration files are in ``phpbb/db/migration/data/``. You may make a "
+"file in this directory OR make a subdirectory if you plan on creating "
+"multiple Migration files for a single feature."
+msgstr ""
+"I file di migrazione di phpBB si trovano in ``phpbb/db/migration/data/``. "
+"Puoi creare un file in questa directory OPPURE creare una sottodirectory se "
+"prevedi di creare più file di migrazione per una singola funzionalità."
+
+#: ../../devdocs-source-copy/migrations/getting_started.rst:30
+msgid "What must go in the Migration file?"
+msgstr "Cosa deve essere presente nel file di migrazione?"
+
+#: ../../devdocs-source-copy/migrations/getting_started.rst:32
+msgid ""
+"The only absolute requirement is creating a new class that extends "
+"``\\phpbb\\db\\migration\\migration``:"
+msgstr ""
+"L'unico requisito assoluto è creare una nuova classe che estende "
+"``\\phpbb\\db\\migration\\migration``:"
+
+#: ../../devdocs-source-copy/migrations/getting_started.rst:44
+msgid "What should the new migration class name be?"
+msgstr "Quale dovrebbe essere il nome della nuova classe di migrazione?"
+
+#: ../../devdocs-source-copy/migrations/getting_started.rst:46
+msgid ""
+"The class naming scheme must follow the general coding guidelines and can be"
+" whatever you want."
+msgstr ""
+"Lo schema di denominazione della classe deve seguire le linee guida generali"
+" per la scrittura del codice e può essere quello che vuoi."
+
+#: ../../devdocs-source-copy/migrations/getting_started.rst:50
+msgid "What else goes in a Migration file?"
+msgstr "Cos'altro va inserito in un file di migrazione?"
+
+#: ../../devdocs-source-copy/migrations/getting_started.rst:52
+msgid ""
+"Now you're ready to get started adding instructions so that the Migrator "
+"knows what to do when it encounters your Migration file."
+msgstr ""
+"Ora sei pronto per iniziare ad aggiungere istruzioni in modo che il Migrator"
+" sappia cosa fare quando incontra il tuo file di migrazione."
+
+#: ../../devdocs-source-copy/migrations/getting_started.rst:56
+msgid "Migration Dependencies"
+msgstr "Dipendenze della migrazione"
+
+#: ../../devdocs-source-copy/migrations/getting_started.rst:58
+msgid ""
+"Before you start making Migration files that you want to use, you should "
+"understand Migration dependencies and how they work."
+msgstr ""
+"Prima di iniziare a creare file di migrazione che vuoi usare, dovresti "
+"capire le dipendenze delle migrazioni e come funzionano."
+
+#: ../../devdocs-source-copy/migrations/getting_started.rst:61
+msgid ":doc:`dependencies`"
+msgstr ":doc:`dependencies`"
+
+#: ../../devdocs-source-copy/migrations/getting_started.rst:64
+msgid "Schema Changes"
+msgstr "Modifiche allo schema"
+
+#: ../../devdocs-source-copy/migrations/getting_started.rst:66
+msgid ""
+"If you need to make any schema changes (Creating/Changing/Removing "
+"Tables/Columns/Indexes) you should read the following page."
+msgstr ""
+"Se hai bisogno di apportare modifiche allo schema "
+"(creazione/modifica/rimozione di tabelle/colonne/indici), dovresti leggere "
+"la pagina seguente."
+
+#: ../../devdocs-source-copy/migrations/getting_started.rst:69
+msgid ":doc:`schema_changes`"
+msgstr ":doc:`schema_changes`"
+
+#: ../../devdocs-source-copy/migrations/getting_started.rst:72
+msgid "Data Changes"
+msgstr "Modifiche ai dati"
+
+#: ../../devdocs-source-copy/migrations/getting_started.rst:73
+msgid ""
+"If you need to make data changes (Config settings, Adding/Removing Modules, "
+"Adding/Removing/Setting/Unsetting Permissions, or other custom changes) you "
+"should read the following page."
+msgstr ""
+"Se hai bisogno di apportare modifiche ai dati (impostazioni di "
+"configurazione, aggiunta/rimozione di moduli, "
+"aggiunta/rimozione/impostazione/rimozione dei permessi, o altre modifiche "
+"personalizzate), dovresti leggere la pagina seguente."
+
+#: ../../devdocs-source-copy/migrations/getting_started.rst:77
+msgid ":doc:`data_changes`"
+msgstr ":doc:`data_changes`"
+
+#: ../../devdocs-source-copy/migrations/getting_started.rst:80
+msgid "Check If Effectively Installed"
+msgstr "Verifica se effettivamente installato"
+
+#: ../../devdocs-source-copy/migrations/getting_started.rst:82
+msgid ""
+"The function ``effectively_installed()`` is called before installing a "
+"Migration. This allows you to transition from a previous database installer "
+"method to Migrations easily."
+msgstr ""
+"La funzione ``effectively_installed()`` viene chiamata prima di installare "
+"una migrazione. Questo ti permette di passare facilmente da un precedente "
+"metodo di installazione del database alle migrazioni."
+
+#: ../../devdocs-source-copy/migrations/getting_started.rst:86
+msgid ""
+"**If it returns true, the Migration is marked as installed without applying "
+"any changes.** *This function is not required and typically should not be "
+"needed. This is only needed if you are trying to allow updates from a system"
+" that may currently be installed, but where migrations haven't been run yet "
+"(e.g. updating a mod from 3.0.x to 3.1.x).*"
+msgstr ""
+"**Se restituisce true, la migrazione viene contrassegnata come installata "
+"senza applicare alcuna modifica.** *Questa funzione non è obbligatoria e di "
+"solito non dovrebbe essere necessaria. È necessaria solo se stai cercando di"
+" consentire aggiornamenti da un sistema che potrebbe essere attualmente "
+"installato, ma in cui le migrazioni non sono ancora state eseguite (ad es. "
+"l'aggiornamento di una MOD da 3.0.x a 3.1.x).*"

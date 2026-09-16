@@ -1,0 +1,731 @@
+# Danish translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/db/dbal.rst:3
+msgid "Database Abstraction Layer"
+msgstr "Databaseabstraktionslag"
+
+#: ../../devdocs-source-copy/db/dbal.rst:5
+msgid ""
+"phpBB uses a **D**\\ ata\\ **B**\\ ase **A**\\ bstraction **L**\\ ayer to "
+"access the database instead of directly calling e.g. `mysql_query "
+"<http://php.net/manual/en/function.mysql-query.php>`_ functions. You usually"
+" access the :abbr:`DBAL (Database Abstraction Layer)` using the global "
+"variable ``$db``. This variable is included from :class:`common.php` through"
+" :class:`includes/compatibility_globals.php`:"
+msgstr ""
+"phpBB bruger et **D**\\ ata\\ **B**\\ ase **A**\\ bstraction **L**\\ ayer "
+"(DBAL) til at tilgå databasen i stedet for direkte at kalde f.eks. "
+"`mysql_query <http://php.net/manual/en/function.mysql-"
+"query.php>`_-funktioner. Du tilgår normalt :abbr:`DBAL (Database Abstraction"
+" Layer)` ved hjælp af den globale variabel ``$db``. Denne variabel "
+"inkluderes fra :class:`common.php` via "
+":class:`includes/compatibility_globals.php`:"
+
+#: ../../devdocs-source-copy/db/dbal.rst:14
+msgid ""
+"Some database functions are within the base driver and others are within "
+"specific database drivers. Each function below will indicate whether it is "
+"defined in the base driver or in each specific driver. The *MySQLi* specific"
+" database driver will be used in the examples throughout this page. |br| All"
+" drivers are located in the :class:`\\\\phpbb\\\\db\\\\driver` namespace. "
+"|br| Base driver is located at "
+":class:`\\\\phpbb\\\\db\\\\driver\\\\driver.php` |br| Specific driver is "
+"located at :class:`\\\\phpbb\\\\db\\\\driver\\\\mysqli.php`"
+msgstr ""
+"Nogle databasefunktioner findes i basedriveren, og andre findes i specifikke"
+" databasedrivere. Hver funktion nedenfor angiver, om den er defineret i "
+"basedriveren eller i hver specifik driver. Den specifikke databasedriver "
+"*MySQLi* vil blive brugt i eksemplerne gennem hele denne side. |br| Alle "
+"drivere findes i namespacet :class:`\\\\phpbb\\\\db\\\\driver`. |br| "
+"Basedriveren findes på :class:`\\\\phpbb\\\\db\\\\driver\\\\driver.php` |br|"
+" Den specifikke driver findes på "
+":class:`\\\\phpbb\\\\db\\\\driver\\\\mysqli.php`"
+
+#: ../../devdocs-source-copy/db/dbal.rst:22
+msgid "Connecting and disconnecting"
+msgstr "Tilslutning og frakobling"
+
+#: ../../devdocs-source-copy/db/dbal.rst:23
+msgid ""
+"Use these methods only if you cannot include :class:`common.php` (to "
+"connect) or run ``garbage_collection()`` (to disconnect; you may also use "
+"other functions that run this function, for example ``page_footer()``)."
+msgstr ""
+"Brug kun disse metoder, hvis du ikke kan inkludere :class:`common.php` (til "
+"at oprette forbindelse) eller køre ``garbage_collection()`` (til at afbryde "
+"forbindelsen; du kan også bruge andre funktioner, der kører denne funktion, "
+"f.eks. ``page_footer()``)."
+
+#: ../../devdocs-source-copy/db/dbal.rst:26
+msgid "sql_connect"
+msgstr "sql_connect"
+
+#: ../../devdocs-source-copy/db/dbal.rst:27
+msgid "Connects to the database. Defined in the specific drivers."
+msgstr ""
+"Opretter forbindelse til databasen. Defineret i de specifikke drivere."
+
+#: ../../devdocs-source-copy/db/dbal.rst:29
+#: ../../devdocs-source-copy/db/dbal.rst:85
+#: ../../devdocs-source-copy/db/dbal.rst:131
+#: ../../devdocs-source-copy/db/dbal.rst:171
+#: ../../devdocs-source-copy/db/dbal.rst:198
+#: ../../devdocs-source-copy/db/dbal.rst:239
+#: ../../devdocs-source-copy/db/dbal.rst:255
+#: ../../devdocs-source-copy/db/dbal.rst:284
+#: ../../devdocs-source-copy/db/dbal.rst:311
+#: ../../devdocs-source-copy/db/dbal.rst:338
+#: ../../devdocs-source-copy/db/dbal.rst:376
+#: ../../devdocs-source-copy/db/dbal.rst:397
+#: ../../devdocs-source-copy/db/dbal.rst:413
+#: ../../devdocs-source-copy/db/dbal.rst:454
+#: ../../devdocs-source-copy/db/dbal.rst:506
+msgid "Example:"
+msgstr "Eksempel:"
+
+#: ../../devdocs-source-copy/db/dbal.rst:38
+msgid "Example using :class:`config.php`:"
+msgstr "Eksempel med :class:`config.php`:"
+
+#: ../../devdocs-source-copy/db/dbal.rst:53
+#: ../../devdocs-source-copy/db/dbal.rst:119
+#: ../../devdocs-source-copy/db/dbal.rst:159
+#: ../../devdocs-source-copy/db/dbal.rst:183
+#: ../../devdocs-source-copy/db/dbal.rst:208
+#: ../../devdocs-source-copy/db/dbal.rst:224
+#: ../../devdocs-source-copy/db/dbal.rst:270
+#: ../../devdocs-source-copy/db/dbal.rst:299
+#: ../../devdocs-source-copy/db/dbal.rst:324
+#: ../../devdocs-source-copy/db/dbal.rst:360
+#: ../../devdocs-source-copy/db/dbal.rst:428
+#: ../../devdocs-source-copy/db/dbal.rst:443
+#: ../../devdocs-source-copy/db/dbal.rst:481
+#: ../../devdocs-source-copy/db/dbal.rst:494
+#: ../../devdocs-source-copy/db/dbal.rst:524
+msgid "Parameters"
+msgstr "Parametre"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Parameter"
+msgstr "Parameter"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Usage"
+msgstr "Anvendelse"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Host"
+msgstr "Host"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"The host of the database. |br| When using config.php you should use $dbhost "
+"instead."
+msgstr ""
+"Databasens host. |br| Når du bruger config.php, bør du bruge $dbhost i "
+"stedet."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Database User"
+msgstr "Databasebruger"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"The database user to connect to the database. |br| When using config.php you"
+" should use $dbuser instead."
+msgstr ""
+"Databasebrugeren, der forbinder til databasen. |br| Når du bruger "
+"config.php, bør du bruge $dbuser i stedet."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Database Password"
+msgstr "Databaseadgangskode"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"The password for the user to connect to the database. |br| When using "
+"config.php you should use $dbpasswd instead."
+msgstr ""
+"Adgangskoden for brugeren til at forbinde til databasen. |br| Når du bruger "
+"config.php, bør du bruge $dbpasswd i stedet."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Database Name"
+msgstr "Databasenavn"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"The database where the phpBB tables are located. |br| When using config.php "
+"you should use $dbname instead."
+msgstr ""
+"Databasen, hvor phpBB-tabellerne befinder sig. |br| Når du bruger "
+"config.php, bør du bruge $dbname i stedet."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Database Port (optional)"
+msgstr "Databaseport (valgfri)"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"The port to the database server. |br| Leave empty/false to use the default "
+"port. |br| When using config.php you should use $dbport instead."
+msgstr ""
+"Porten til databaseserveren. |br| Lad stå tom/false for at bruge "
+"standardporten. |br| Når du bruger config.php, bør du bruge $dbport i "
+"stedet."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Persistence (optional)"
+msgstr "Persistens (valgfri)"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Database connection persistence, defaults to false."
+msgstr "Persistens af databaseforbindelsen, false som standard."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "New Link (optional)"
+msgstr "Nyt link (valgfri)"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"Use a new connection to the database for this instance of the DBAL. |br| "
+"Defaults to false."
+msgstr ""
+"Brug en ny forbindelse til databasen for denne instans af DBAL. |br| false "
+"som standard."
+
+#: ../../devdocs-source-copy/db/dbal.rst:68
+msgid "sql_close"
+msgstr "sql_close"
+
+#: ../../devdocs-source-copy/db/dbal.rst:69
+msgid ""
+"Disconnects from the DB. Defined in the base driver (``_sql_close`` is "
+"defined in the specific drivers)."
+msgstr ""
+"Afbryder forbindelsen til databasen. Defineret i basedriveren "
+"(``_sql_close`` er defineret i de specifikke drivere)."
+
+#: ../../devdocs-source-copy/db/dbal.rst:71
+msgid "Example: ``$db->sql_close();``"
+msgstr "Eksempel: ``$db->sql_close();``"
+
+#: ../../devdocs-source-copy/db/dbal.rst:74
+msgid "Preparing SQL queries"
+msgstr "Forberedelse af SQL-forespørgsler"
+
+#: ../../devdocs-source-copy/db/dbal.rst:77
+msgid "sql_build_query"
+msgstr "sql_build_query"
+
+#: ../../devdocs-source-copy/db/dbal.rst:78
+msgid ""
+"Builds a full SQL statement from an array. This function should be used if "
+"you need to JOIN on more than one table to ensure the resulting statement "
+"works on all supported databases. Defined in the base driver."
+msgstr ""
+"Bygger en fuld SQL-sætning ud fra et array. Denne funktion bør bruges, hvis "
+"du skal lave JOIN på mere end én tabel, for at sikre, at den resulterende "
+"sætning fungerer på alle understøttede databaser. Defineret i basedriveren."
+
+#: ../../devdocs-source-copy/db/dbal.rst:81
+msgid ""
+"Possible types of queries: SELECT, SELECT_DISTINCT. |br| Required keys are "
+"SELECT and FROM. |br| Optional keys are LEFT_JOIN, WHERE, GROUP_BY and "
+"ORDER_BY."
+msgstr ""
+"Mulige forespørgselstyper: SELECT, SELECT_DISTINCT. |br| Obligatoriske "
+"nøgler er SELECT og FROM. |br| Valgfrie nøgler er LEFT_JOIN, WHERE, GROUP_BY"
+" og ORDER_BY."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Query Type"
+msgstr "Forespørgselstype"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Type of query which needs to be created (SELECT, SELECT_DISTINCT)"
+msgstr "Type af forespørgsel, der skal oprettes (SELECT, SELECT_DISTINCT)"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Associative array"
+msgstr "Associativt array"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"An associative array with the items to add to the query. |br| SELECT and "
+"FROM are required. |br| LEFT_JOIN, WHERE, GROUP_BY and ORDER_BY are "
+"optional."
+msgstr ""
+"Et associativt array med de elementer, der skal tilføjes til forespørgslen. "
+"|br| SELECT og FROM er obligatoriske. |br| LEFT_JOIN, WHERE, GROUP_BY og "
+"ORDER_BY er valgfrie."
+
+#: ../../devdocs-source-copy/db/dbal.rst:128
+msgid "sql_build_array"
+msgstr "sql_build_array"
+
+#: ../../devdocs-source-copy/db/dbal.rst:129
+msgid ""
+"Builds part of a SQL statement from an array. Possible types of queries: "
+"INSERT, INSERT_SELECT, UPDATE, SELECT. Defined in the base driver."
+msgstr ""
+"Bygger en del af en SQL-sætning ud fra et array. Mulige forespørgselstyper: "
+"INSERT, INSERT_SELECT, UPDATE, SELECT. Defineret i basedriveren."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"Type of query which needs to be created (UPDATE, INSERT, INSERT_SELECT or "
+"SELECT)"
+msgstr ""
+"Type af forespørgsel, der skal oprettes (UPDATE, INSERT, INSERT_SELECT eller"
+" SELECT)"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Associative array (optional)"
+msgstr "Associativt array (valgfri)"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"An associative array with the items to add to the query. |br| The key of the"
+" array is the field name, the value of the array is the value for that "
+"field. |br| If left empty, ''false'' will be returned."
+msgstr ""
+"Et associativt array med de elementer, der skal tilføjes til forespørgslen. "
+"|br| Nøglen i arrayet er feltnavnet, værdien i arrayet er værdien for det "
+"felt. |br| Hvis det efterlades tomt, returneres ''false''."
+
+#: ../../devdocs-source-copy/db/dbal.rst:168
+msgid "sql_in_set"
+msgstr "sql_in_set"
+
+#: ../../devdocs-source-copy/db/dbal.rst:169
+msgid ""
+"Builds IN, NOT IN, = and <> sql comparison string.  Defined in the base "
+"driver."
+msgstr ""
+"Bygger sammenligningsstrengen IN, NOT IN, = og <> til SQL. Defineret i "
+"basedriveren."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Column"
+msgstr "Kolonne"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Name of the sql column that shall be compared"
+msgstr "Navnet på den SQL-kolonne, der skal sammenlignes"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Array"
+msgstr "Array"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Array of values that are allowed (IN) or not allowed (NOT IN)"
+msgstr "Array af værdier, der er tilladt (IN) eller ikke tilladt (NOT IN)"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Negate (Optional)"
+msgstr "Negér (valgfri)"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "true for NOT IN (), false for IN () (default)"
+msgstr "true for NOT IN (), false for IN () (standard)"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Allow empty set (Optional)"
+msgstr "Tillad tomt sæt (valgfri)"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"If true, allow $array to be empty, this function will return 1=1 or 1=0 "
+"then. Default to false."
+msgstr ""
+"Hvis true, tillades $array at være tom, og denne funktion vil så returnere "
+"1=1 eller 1=0. false som standard."
+
+#: ../../devdocs-source-copy/db/dbal.rst:194
+msgid "sql_escape"
+msgstr "sql_escape"
+
+#: ../../devdocs-source-copy/db/dbal.rst:196
+msgid ""
+"Escapes a string in a SQL query. ``sql_escape`` is different for every DBAL "
+"driver and written specially for that driver, to be sure all characters that"
+" need escaping are escaped. Defined in the specific drivers."
+msgstr ""
+"Escaper en streng i en SQL-forespørgsel. ``sql_escape`` er forskellig for "
+"hver DBAL-driver og skrevet specielt til den driver, for at sikre, at alle "
+"tegn, der skal escapes, bliver escapet. Defineret i de specifikke drivere."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "String"
+msgstr "Streng"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "The string that needs to be escaped."
+msgstr "Strengen, der skal escapes."
+
+#: ../../devdocs-source-copy/db/dbal.rst:216
+msgid "sql_like_expression"
+msgstr "sql_like_expression"
+
+#: ../../devdocs-source-copy/db/dbal.rst:217
+msgid ""
+"Correctly adjust LIKE statements for special characters. This should be used"
+" to ensure the resulting statement works on all databases. Defined in the "
+"base driver (``_sql_like_expression`` is defined in the specific drivers)."
+msgstr ""
+"Justerer korrekt LIKE-sætninger for specialtegn. Dette bør bruges for at "
+"sikre, at den resulterende sætning fungerer på alle databaser. Defineret i "
+"basedriveren (``_sql_like_expression`` er defineret i de specifikke "
+"drivere)."
+
+#: ../../devdocs-source-copy/db/dbal.rst:221
+msgid ""
+"The ``sql_not_like_expression`` is identical to ``sql_like_expression`` "
+"apart from that it builds a NOT LIKE statement."
+msgstr ""
+"``sql_not_like_expression`` er identisk med ``sql_like_expression``, bortset"
+" fra at den bygger en NOT LIKE-sætning."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Expression"
+msgstr "Udtryk"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"The expression to use. Every wildcard is escaped, except $db->get_any_char()"
+" and $db->get_one_char()"
+msgstr ""
+"Udtrykket, der skal bruges. Ethvert jokertegn escapes, undtagen "
+"$db->get_any_char() og $db->get_one_char()"
+
+#: ../../devdocs-source-copy/db/dbal.rst:232
+msgid "get_one_char"
+msgstr "get_one_char"
+
+#: ../../devdocs-source-copy/db/dbal.rst:233
+msgid ""
+"Wildcards for matching exactly one (``_``) character within LIKE "
+"expressions."
+msgstr "Jokertegn til at matche præcis ét (``_``) tegn i LIKE-udtryk."
+
+#: ../../devdocs-source-copy/db/dbal.rst:236
+msgid "get_any_char"
+msgstr "get_any_char"
+
+#: ../../devdocs-source-copy/db/dbal.rst:237
+msgid "Wildcards for matching any (``%``) character within LIKE expressions"
+msgstr "Jokertegn til at matche et vilkårligt (``%``) tegn i LIKE-udtryk"
+
+#: ../../devdocs-source-copy/db/dbal.rst:252
+msgid "sql_lower_text"
+msgstr "sql_lower_text"
+
+#: ../../devdocs-source-copy/db/dbal.rst:253
+msgid ""
+"For running LOWER on a database text column, so it returns lowered text "
+"strings. Defined in the base driver."
+msgstr ""
+"Til at køre LOWER på en tekstkolonne i databasen, så den returnerer "
+"tekststrenge med små bogstaver. Defineret i basedriveren."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Column name"
+msgstr "Kolonnenavn"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "The column name to LOWER the value for."
+msgstr "Kolonnenavnet, der skal have værdien konverteret med LOWER."
+
+#: ../../devdocs-source-copy/db/dbal.rst:278
+msgid "Running SQL queries"
+msgstr "Kørsel af SQL-forespørgsler"
+
+#: ../../devdocs-source-copy/db/dbal.rst:281
+msgid "sql_query"
+msgstr "sql_query"
+
+#: ../../devdocs-source-copy/db/dbal.rst:282
+msgid ""
+"For selecting basic data from the database, the function ``sql_query()`` is "
+"enough. If you want to use any variable in your query, you should use (if it"
+" isn't an integer) ``$db->sql_escape()`` to be sure the data is safe. "
+"Defined in the specific drivers."
+msgstr ""
+"Til at vælge grundlæggende data fra databasen er funktionen ``sql_query()`` "
+"nok. Hvis du vil bruge en variabel i din forespørgsel, bør du bruge (hvis "
+"det ikke er et heltal) ``$db->sql_escape()`` for at sikre, at dataene er "
+"sikre. Defineret i de specifikke drivere."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Query"
+msgstr "Forespørgsel"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Contains the SQL query which shall be executed"
+msgstr "Indeholder den SQL-forespørgsel, der skal udføres"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Cache (Optional)"
+msgstr "Cache (valgfri)"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"Either 0 to avoid caching or the time in seconds which the result shall be "
+"kept in cache."
+msgstr ""
+"Enten 0 for at undgå caching eller tiden i sekunder, som resultatet skal "
+"opbevares i cache."
+
+#: ../../devdocs-source-copy/db/dbal.rst:308
+msgid "sql_query_limit"
+msgstr "sql_query_limit"
+
+#: ../../devdocs-source-copy/db/dbal.rst:309
+msgid ""
+"Gets/changes/deletes only selected number of rows. Defined in the base "
+"driver (``_sql_query_limit`` is defined in the specific drivers)."
+msgstr ""
+"Henter/ændrer/sletter kun det valgte antal rækker. Defineret i basedriveren "
+"(``_sql_query_limit`` er defineret i de specifikke drivere)."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Contains the SQL query which shall be executed."
+msgstr "Indeholder den SQL-forespørgsel, der skal udføres."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Total"
+msgstr "Total"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Number of rows which should be selected,"
+msgstr "Antal rækker, der skal vælges,"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Offset (Optional)"
+msgstr "Offset (valgfri)"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Number of rows should be skipped before starting selecting rows."
+msgstr ""
+"Antal rækker, der skal springes over, før udvælgelsen af rækker begynder."
+
+#: ../../devdocs-source-copy/db/dbal.rst:335
+msgid "sql_multi_insert"
+msgstr "sql_multi_insert"
+
+#: ../../devdocs-source-copy/db/dbal.rst:336
+msgid ""
+"Builds and runs more than one INSERT statement. Defined in the base driver."
+msgstr ""
+"Bygger og udfører mere end én INSERT-sætning. Defineret i basedriveren."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Table name"
+msgstr "Tabelnavn"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Table name to run the statements on."
+msgstr "Tabelnavnet, sætningerne skal udføres på."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Data"
+msgstr "Data"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Multi-dimensional array holding the statements data."
+msgstr "Flerdimensionelt array, der indeholder sætningernes data."
+
+#: ../../devdocs-source-copy/db/dbal.rst:369
+msgid "Methods useful after running INSERT and UPDATE queries"
+msgstr ""
+"Metoder, der er nyttige efter kørsel af INSERT- og UPDATE-forespørgsler"
+
+#: ../../devdocs-source-copy/db/dbal.rst:370
+msgid ""
+"All methods in this part of article are defined in the specific drivers."
+msgstr ""
+"Alle metoder i denne del af artiklen er defineret i de specifikke drivere."
+
+#: ../../devdocs-source-copy/db/dbal.rst:373
+msgid "sql_affectedrows"
+msgstr "sql_affectedrows"
+
+#: ../../devdocs-source-copy/db/dbal.rst:374
+msgid ""
+"Get the number of affected rows by the last INSERT, UPDATE, REPLACE or "
+"DELETE query."
+msgstr ""
+"Hent antallet af berørte rækker af den seneste INSERT-, UPDATE-, REPLACE- "
+"eller DELETE-forespørgsel."
+
+#: ../../devdocs-source-copy/db/dbal.rst:387
+msgid ""
+"Be cautious when using ``sql_affectedrows()`` to determine the number of "
+"rows affected by your query, especially with **SELECT** queries. This "
+"function's behavior can differ depending on the used database driver and "
+"whether the query was cached."
+msgstr ""
+"Vær forsigtig, når du bruger ``sql_affectedrows()`` til at bestemme antallet"
+" af rækker, der er berørt af din forespørgsel, især ved "
+"**SELECT**-forespørgsler. Denne funktions adfærd kan variere afhængigt af "
+"den anvendte databasedriver, og om forespørgslen blev cachet."
+
+#: ../../devdocs-source-copy/db/dbal.rst:390
+msgid ""
+"Do not rely solely on ``sql_affectedrows()`` to confirm the number of "
+"impacted rows. Consider alternative approaches like checking the number of "
+"rows returned by `sql_fetchrow`_ or `sql_fetchrowset`_."
+msgstr ""
+"Stol ikke udelukkende på ``sql_affectedrows()`` til at bekræfte antallet af "
+"berørte rækker. Overvej alternative tilgange, som at kontrollere antallet af"
+" rækker returneret af `sql_fetchrow`_ eller `sql_fetchrowset`_."
+
+#: ../../devdocs-source-copy/db/dbal.rst:394
+msgid "sql_nextid"
+msgstr "sql_nextid"
+
+#: ../../devdocs-source-copy/db/dbal.rst:395
+msgid ""
+"Retrieves the ID generated for an AUTO_INCREMENT column by the previous "
+"INSERT query."
+msgstr ""
+"Henter det ID, der er genereret for en AUTO_INCREMENT-kolonne af den forrige"
+" INSERT-forespørgsel."
+
+#: ../../devdocs-source-copy/db/dbal.rst:407
+msgid "Methods useful after running SELECT queries"
+msgstr "Metoder, der er nyttige efter kørsel af SELECT-forespørgsler"
+
+#: ../../devdocs-source-copy/db/dbal.rst:410
+msgid "sql_fetchfield"
+msgstr "sql_fetchfield"
+
+#: ../../devdocs-source-copy/db/dbal.rst:411
+msgid "Fetches field. Defined in the base driver."
+msgstr "Henter felt. Defineret i basedriveren."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Field"
+msgstr "Felt"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Name of the field that needs to be fetched."
+msgstr "Navnet på det felt, der skal hentes."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Row number (Optional)"
+msgstr "Rækkenummer (valgfri)"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"If false, the current row is used, else it is pointing to the row (zero-"
+"based)."
+msgstr ""
+"Hvis false, bruges den aktuelle række, ellers peger det på rækken "
+"(indekseret fra 0)."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Result (Optional)"
+msgstr "Resultat (valgfri)"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"The result that is being evaluated. |br| This result comes from a call to "
+"the sql_query method. |br| If left empty the last result will be called."
+msgstr ""
+"Resultatet, der evalueres. |br| Dette resultat kommer fra et kald til "
+"metoden sql_query. |br| Hvis det efterlades tomt, kaldes det seneste "
+"resultat."
+
+#: ../../devdocs-source-copy/db/dbal.rst:438
+msgid "sql_fetchrowset"
+msgstr "sql_fetchrowset"
+
+#: ../../devdocs-source-copy/db/dbal.rst:439
+msgid ""
+"Returns an array with the result of using the ``sql_fetchrow`` method on "
+"every row. Defined in the base driver."
+msgstr ""
+"Returnerer et array med resultatet af at bruge metoden ``sql_fetchrow`` på "
+"hver række. Defineret i basedriveren."
+
+#: ../../devdocs-source-copy/db/dbal.rst:451
+msgid "sql_fetchrow"
+msgstr "sql_fetchrow"
+
+#: ../../devdocs-source-copy/db/dbal.rst:452
+msgid "Fetches current row. Defined in the specific drivers."
+msgstr "Henter den aktuelle række. Defineret i de specifikke drivere."
+
+#: ../../devdocs-source-copy/db/dbal.rst:466
+msgid "Example with a while-loop:"
+msgstr "Eksempel med en while-løkke:"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"The result that is being evaluated. |br| The result comes from a call to the"
+" sql_query method. |br| If left empty the last result will be called."
+msgstr ""
+"Resultatet, der evalueres. |br| Resultatet kommer fra et kald til metoden "
+"sql_query. |br| Hvis det efterlades tomt, kaldes det seneste resultat."
+
+#: ../../devdocs-source-copy/db/dbal.rst:489
+msgid "sql_rowseek"
+msgstr "sql_rowseek"
+
+#: ../../devdocs-source-copy/db/dbal.rst:490
+msgid ""
+"Seeks to given row number. The row number is zero-based. Defined in the "
+"specific drivers."
+msgstr ""
+"Søger til det angivne rækkenummer. Rækkenummeret er indekseret fra 0. "
+"Defineret i de specifikke drivere."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Row number"
+msgstr "Rækkenummer"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "The number of the row which needs to be found (zero-based)."
+msgstr "Nummeret på den række, der skal findes (indekseret fra 0)."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Result"
+msgstr "Resultat"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"The result that is being evaluated. |br| This result comes from a call to "
+"sql_query method. |br| If left empty the last result will be called."
+msgstr ""
+"Resultatet, der evalueres. |br| Dette resultat kommer fra et kald til "
+"metoden sql_query. |br| Hvis det efterlades tomt, kaldes det seneste "
+"resultat."
+
+#: ../../devdocs-source-copy/db/dbal.rst:503
+msgid "sql_freeresult"
+msgstr "sql_freeresult"
+
+#: ../../devdocs-source-copy/db/dbal.rst:504
+msgid "Clears result of SELECT query. Defined in the specific drivers."
+msgstr ""
+"Rydder resultatet af en SELECT-forespørgsel. Defineret i de specifikke "
+"drivere."

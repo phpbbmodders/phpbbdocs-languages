@@ -1,0 +1,360 @@
+# Danish translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:3
+msgid "Tutorial: Permissions"
+msgstr "Tutorial: tilladelser"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:6
+msgid "Introduction"
+msgstr "Introduktion"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:8
+msgid ""
+"The permission system in phpBB is used to control access to different parts "
+"of the software. It works by allowing administrators to assign certain "
+"permissions to user groups or individual users, which determine what actions"
+" they are able to perform."
+msgstr ""
+"Tilladelsessystemet i phpBB bruges til at kontrollere adgangen til "
+"forskellige dele af softwaren. Det fungerer ved at give administratorer "
+"mulighed for at tildele bestemte tilladelser til brugergrupper eller "
+"individuelle brugere, som afgør, hvilke handlinger de kan udføre."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:10
+msgid "`Create permissions`_ with a migration."
+msgstr "`Opret tilladelser`_ med en migrering."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:11
+msgid "`Define permissions`_ with language keys."
+msgstr "`Definér tilladelser`_ med sprognøgler."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:12
+msgid "`Wire up permissions`_ with events."
+msgstr "`Sammenkobl tilladelser`_ med events."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:13
+msgid "`Checking permissions`_ with PHP."
+msgstr "`Kontrol af tilladelser`_ med PHP."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:14
+msgid "`Understanding Permissions`_ in phpBB."
+msgstr "`Forståelse af tilladelser`_ i phpBB."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:17
+msgid "Create permissions"
+msgstr "Opret tilladelser"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:19
+msgid "There are four permission types:"
+msgstr "Der findes fire tilladelsestyper:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:21
+msgid "``a_*`` Administrator"
+msgstr "``a_*`` Administrator"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:22
+msgid "``m_*`` Moderator"
+msgstr "``m_*`` Moderator"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:23
+msgid "``u_*`` User"
+msgstr "``u_*`` Bruger"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:24
+msgid "``f_*`` Forum"
+msgstr "``f_*`` Forum"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:26
+msgid ""
+"You can create new permissions for each of these types and assign them to "
+"user groups or permission roles. You can also define new roles to assign "
+"your permissions to if desired."
+msgstr ""
+"Du kan oprette nye tilladelser for hver af disse typer og tildele dem til "
+"brugergrupper eller tilladelsesroller. Du kan også definere nye roller at "
+"tildele dine tilladelser til, hvis det ønskes."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:30
+msgid ""
+"Permissions must first be created in a migration using the "
+":doc:`../migrations/tools/permission`. It helps with adding, removing, "
+"setting, and unsetting permissions and adding or removing permission roles. "
+"For example, to create a new User permission ``u_foo_bar`` and set it to "
+"``YES`` for the Registered Users group and the Standard User Role:"
+msgstr ""
+"Tilladelser skal først oprettes i en migrering ved hjælp af "
+":doc:`../migrations/tools/permission`. Dette hjælper med at tilføje, fjerne,"
+" aktivere og deaktivere tilladelser samt tilføje eller fjerne "
+"tilladelsesroller. For f.eks. at oprette en ny brugertilladelse "
+"``u_foo_bar`` og sætte den til ``YES`` for gruppen Registrerede brugere og "
+"Standard User-rollen:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:45
+msgid "Define permissions"
+msgstr "Definér tilladelser"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:47
+msgid ""
+"Permissions must have a corresponding language key definition. All language "
+"keys for permissions should be placed in a language file that starts with "
+"``permissions_`` and the keys will be automatically loaded into the ACP "
+"language array. For example, the language file ``permissions_foobar.php``:"
+msgstr ""
+"Tilladelser skal have en tilsvarende sprognøgledefinition. Alle sprognøgler "
+"til tilladelser bør placeres i en sprogfil, der starter med "
+"``permissions_``, og nøglerne indlæses automatisk i ACP-sprogarrayet. "
+"Sprogfilen ``permissions_foobar.php`` ser f.eks. sådan ud:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:59
+msgid "Wire up permissions"
+msgstr "Sammenkobl tilladelser"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:61
+msgid ""
+"Wiring up permissions simply refers to making phpBB aware of your new "
+"permissions by adding them to the permission data array. The array uses the "
+"permission name as its key and an array value defining the permission's "
+"language key and the category it should belong to."
+msgstr ""
+"At sammenkoble tilladelser betyder blot at gøre phpBB opmærksom på dine nye "
+"tilladelser ved at tilføje dem til tilladelsesdataarrayet. Arrayet bruger "
+"tilladelsesnavnet som nøgle og en arrayværdi, der definerer tilladelsens "
+"sprognøgle og den kategori, den skal tilhøre."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:66
+msgid ""
+"This is done in an event listener using the ``core.permissions`` event to "
+"add your new permissions to phpBB's permission data array:"
+msgstr ""
+"Dette gøres i en event listener ved hjælp af eventet ``core.permissions``, "
+"som tilføjer dine nye tilladelser til phpBB's tilladelsesdataarray:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:75
+msgid ""
+"In order to support phpBB 3.2.1 or earlier versions, you can not use the "
+"``update_subarray()`` method, and must instead use the following older style"
+" of code:"
+msgstr ""
+"For at understøtte phpBB 3.2.1 eller tidligere versioner kan du ikke bruge "
+"``update_subarray()``-metoden og skal i stedet bruge følgende ældre "
+"kodestil:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:90
+msgid "Checking permissions"
+msgstr "Kontrol af tilladelser"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:92
+msgid "A user's permission can be checked by calling ``$auth->acl_get()``:"
+msgstr ""
+"En brugers tilladelse kan kontrolleres ved at kalde ``$auth->acl_get()``:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:99
+msgid ""
+"If it is specific to a forum (i.e local) then pass it the forum ID as a "
+"second argument:"
+msgstr ""
+"Hvis det er specifikt for et forum (dvs. lokalt), skal du sende forum-ID'et "
+"som andet argument:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:106
+msgid "For forums one can use the forum specific call ``$auth->acl_getf()``:"
+msgstr ""
+"For fora kan man bruge det forumspecifikke kald ``$auth->acl_getf()``:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:113
+msgid ""
+"It is also possible to check for more than one option with ``acl_gets()``:"
+msgstr ""
+"Det er også muligt at kontrollere mere end én indstilling med "
+"``acl_gets()``:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:121
+msgid ""
+"When checking permissions, it's also important to keep in mind whether the "
+"global or local permissions should be checked. If ``acl_get`` is called "
+"without a forum id, the global permissions will be used. Instead, passing a "
+"forum id will also check the local permissions which can then potentially "
+"override a ``NO`` with a ``YES``. After checking all user, group, forum, and"
+" global permissions, the return permission is always either ``YES`` or "
+"``NO``, ``NEVER`` is only used to enforce a ``NO``."
+msgstr ""
+"Når du kontrollerer tilladelser, er det også vigtigt at huske på, om de "
+"globale eller lokale tilladelser skal kontrolleres. Hvis ``acl_get`` kaldes "
+"uden et forum-ID, bruges de globale tilladelser. Hvis man derimod sender et "
+"forum-ID, kontrolleres også de lokale tilladelser, som potentielt kan "
+"overskrive et ``NO`` med et ``YES``. Efter kontrol af alle bruger-, gruppe-,"
+" forum- og globale tilladelser er den returnerede tilladelse altid enten "
+"``YES`` eller ``NO``; ``NEVER`` bruges kun til at håndhæve et ``NO``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:128
+msgid "Understanding Permissions"
+msgstr "Forståelse af tilladelser"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:130
+msgid ""
+"Permissions in phpBB control what actions users are allowed to perform on "
+"the forum, such as creating a new topic, replying to a post, or editing a "
+"user’s profile. Each permission is assigned a value of ``YES``, ``NO``, or "
+"``NEVER``."
+msgstr ""
+"Tilladelser i phpBB styrer, hvilke handlinger brugere har lov til at udføre "
+"på forummet, såsom at oprette et nyt emne, svare på et indlæg eller redigere"
+" en brugers profil. Hver tilladelse tildeles en værdi på ``YES``, ``NO`` "
+"eller ``NEVER``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:132
+msgid "``YES`` means that the user or group is allowed to perform the action."
+msgstr ""
+"``YES`` betyder, at brugeren eller gruppen har lov til at udføre handlingen."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:133
+msgid ""
+"``NO`` means that the user or group is not allowed to perform the action, "
+"but it can be overruled by a ``YES`` from a group or role they are assigned "
+"to."
+msgstr ""
+"``NO`` betyder, at brugeren eller gruppen ikke har lov til at udføre "
+"handlingen, men det kan overstyres af et ``YES`` fra en gruppe eller rolle, "
+"de er tildelt."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:134
+msgid ""
+"``NEVER`` means that the user or group is not allowed to perform the action "
+"and cannot be overruled by a ``YES`` from a group or role they are assigned "
+"to."
+msgstr ""
+"``NEVER`` betyder, at brugeren eller gruppen ikke har lov til at udføre "
+"handlingen, og dette kan ikke overstyres af et ``YES`` fra en gruppe eller "
+"rolle, de er tildelt."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:136
+msgid ""
+"When a user requests to perform an action, phpBB combines all the "
+"permissions assigned to the user through their groups, roles, and direct "
+"permission assignments. If any permission is set to ``NEVER``, it overrides "
+"all other permissions and denies the user access to that action. If a "
+"permission is set to ``NO``, it can be overridden by a ``YES`` permission "
+"from another group or role."
+msgstr ""
+"Når en bruger anmoder om at udføre en handling, kombinerer phpBB alle de "
+"tilladelser, der er tildelt brugeren gennem deres grupper, roller og direkte"
+" tilladelsestildelinger. Hvis en tilladelse er sat til ``NEVER``, "
+"overskriver den alle andre tilladelser og nægter brugeren adgang til den "
+"handling. Hvis en tilladelse er sat til ``NO``, kan den overskrives af en "
+"``YES``-tilladelse fra en anden gruppe eller rolle."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:139
+msgid "Permission Types"
+msgstr "Tilladelsestyper"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:141
+msgid "There are four types of permissions in phpBB:"
+msgstr "Der findes fire typer tilladelser i phpBB:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:143
+msgid ""
+"``a_*`` Administrator: These permissions are applied to users who are "
+"assigned administrator roles."
+msgstr ""
+"``a_*`` Administrator: Disse tilladelser anvendes på brugere, der er tildelt"
+" administratorroller."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:144
+msgid ""
+"``f_*`` Forum: These permissions are applied to individual forums and can be"
+" set for each user group or individual user."
+msgstr ""
+"``f_*`` Forum: Disse tilladelser anvendes på individuelle fora og kan sættes"
+" for hver brugergruppe eller individuel bruger."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:145
+msgid ""
+"``m_*`` Moderator: These permissions are applied to users who are assigned "
+"moderator roles for specific forums."
+msgstr ""
+"``m_*`` Moderator: Disse tilladelser anvendes på brugere, der er tildelt "
+"moderatorroller for specifikke fora."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:146
+msgid ""
+"``u_*`` User: These permissions are applied to individual users and override"
+" the permissions set for their user group."
+msgstr ""
+"``u_*`` Bruger: Disse tilladelser anvendes på individuelle brugere og "
+"overskriver de tilladelser, der er sat for deres brugergruppe."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:149
+msgid "Local and Global Permissions"
+msgstr "Lokale og globale tilladelser"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:151
+msgid ""
+"Permissions can be set to apply locally or globally. Local permissions are "
+"specific to a single forum, while global permissions apply to the entire "
+"board. By default, forum permissions are set to local. Administrator and "
+"User permissions are typically set to global."
+msgstr ""
+"Tilladelser kan sættes til at gælde lokalt eller globalt. Lokale tilladelser"
+" er specifikke for et enkelt forum, mens globale tilladelser gælder for hele"
+" forummet. Som standard sættes forumtilladelser til lokale. Administrator- "
+"og brugertilladelser sættes typisk til globale."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:153
+msgid ""
+"Permission options can also be set to apply both locally and globally, which"
+" is typical for Moderator permissions. This allows some users to be granted "
+"the permission on a single forum, while others might be granted the "
+"permission board-wide."
+msgstr ""
+"Tilladelsesindstillinger kan også sættes til at gælde både lokalt og "
+"globalt, hvilket er typisk for moderatortilladelser. Dette gør det muligt, "
+"at nogle brugere får tildelt tilladelsen på et enkelt forum, mens andre "
+"måske får tildelt tilladelsen for hele forummet."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:156
+msgid "Roles"
+msgstr "Roller"
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:158
+msgid ""
+"Roles are a predefined set of permission options that can be applied to "
+"users or groups. When the permission options of a role are changed, the "
+"users or groups assigned that role are automatically updated."
+msgstr ""
+"Roller er et foruddefineret sæt af tilladelsesindstillinger, der kan "
+"anvendes på brugere eller grupper. Når en rolles tilladelsesindstillinger "
+"ændres, opdateres de brugere eller grupper, der er tildelt den rolle, "
+"automatisk."
+
+#: ../../devdocs-source-copy/extensions/tutorial_permissions.rst:160
+msgid ""
+"The effective permission for any option is determined by a combination of "
+"the user's group membership, assigned roles, and direct permission "
+"assignments. In some cases, opposing permissions may exist, which can lead "
+"to unexpected results. It's important to carefully consider the permission "
+"settings to ensure that users are granted the appropriate level of access on"
+" the forum."
+msgstr ""
+"Den effektive tilladelse for en given indstilling bestemmes af en "
+"kombination af brugerens gruppemedlemskab, tildelte roller og direkte "
+"tilladelsestildelinger. I nogle tilfælde kan der findes modstridende "
+"tilladelser, hvilket kan føre til uventede resultater. Det er vigtigt nøje "
+"at overveje tilladelsesindstillingerne for at sikre, at brugere tildeles det"
+" passende adgangsniveau på forummet."

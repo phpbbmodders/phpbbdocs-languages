@@ -1,0 +1,536 @@
+# Italian translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/language/validation.rst:3
+msgid "Language Pack Validation Policy"
+msgstr "Politica di validazione dei pacchetti lingua"
+
+#: ../../devdocs-source-copy/language/validation.rst:6
+msgid "Submission guidelines"
+msgstr "Linee guida per l'invio"
+
+#: ../../devdocs-source-copy/language/validation.rst:9
+msgid "Description"
+msgstr "Descrizione"
+
+#: ../../devdocs-source-copy/language/validation.rst:11
+msgid ""
+"Contribution description in the `Customisation Database`_ should be "
+"translated into English in addition of your local language, as some "
+"administrators might want to download your translation without speak your "
+"language."
+msgstr ""
+"La descrizione del contributo nel `Customisation Database`_ dovrebbe essere "
+"tradotta in inglese oltre che nella tua lingua locale, poiché alcuni "
+"amministratori potrebbero voler scaricare la tua traduzione senza parlare la"
+" tua lingua."
+
+#: ../../devdocs-source-copy/language/validation.rst:17
+msgid "Screenshot"
+msgstr "Screenshot"
+
+#: ../../devdocs-source-copy/language/validation.rst:19
+msgid ""
+"Contribution screenshot in the `Customisation Database`_ should only be the "
+"flag of the country whose the language is spoken. For example, the flag of "
+"France for the French language."
+msgstr ""
+"Lo screenshot del contributo nel `Customisation Database`_ dovrebbe essere "
+"solo la bandiera del paese in cui si parla la lingua. Ad esempio, la "
+"bandiera della Francia per la lingua francese."
+
+#: ../../devdocs-source-copy/language/validation.rst:24
+msgid "Demo-Link"
+msgstr "Link Demo"
+
+#: ../../devdocs-source-copy/language/validation.rst:26
+msgid ""
+"The Demo URL in the Customisation Database must be empty, unless you want to"
+" put a link to an international community (`officially`_ listed or not) "
+"related to the language of the contribution. For example, "
+"https://www.phpbb.nl/ as Demo URL concerning the `Dutch language`_ is "
+"allowed."
+msgstr ""
+"Il Demo URL nel Customisation Database deve essere vuoto, a meno che tu non "
+"voglia inserire un link a una community internazionale (elencata "
+"`officially`_ o meno) relativa alla lingua del contributo. Ad esempio, "
+"https://www.phpbb.nl/ come Demo URL relativo alla `Dutch language`_ è "
+"consentito."
+
+#: ../../devdocs-source-copy/language/validation.rst:32
+msgid "Package"
+msgstr "Pacchetto"
+
+#: ../../devdocs-source-copy/language/validation.rst:34
+msgid ""
+"The submitted ``<languagename>_<version>.zip`` must contain a "
+"``<languagename>_<version>`` folder. The files from above should be placed "
+"in this folder."
+msgstr ""
+"Il file ``<languagename>_<version>.zip`` inviato deve contenere una cartella"
+" ``<languagename>_<version>``. I file sopra indicati dovrebbero essere "
+"posizionati in questa cartella."
+
+#: ../../devdocs-source-copy/language/validation.rst:37
+msgid ""
+"Revision name in the `Customisation Database`_ should be left blank, contain"
+" the phpBB package version and/or package release name (e.g. ``3.3.10`` / "
+"``Bertie's translation` for 3.3.10) for more understanding."
+msgstr ""
+"Il nome della revisione nel `Customisation Database`_ dovrebbe essere "
+"lasciato vuoto, contenere la versione del pacchetto phpBB e/o il nome della "
+"release del pacchetto (ad es. ``3.3.10`` / ``Bertie's translation`` per "
+"3.3.10) per una maggiore chiarezza."
+
+#: ../../devdocs-source-copy/language/validation.rst:42
+msgid "Package Validation"
+msgstr "Validazione del pacchetto"
+
+#: ../../devdocs-source-copy/language/validation.rst:44
+msgid ""
+"Language packages must include all files that are included in the folders "
+"for the English language. This includes the following folders:"
+msgstr ""
+"I pacchetti lingua devono includere tutti i file inclusi nelle cartelle per "
+"la lingua inglese. Questo include le seguenti cartelle:"
+
+#: ../../devdocs-source-copy/language/validation.rst:47
+msgid "``ext/phpbb/viglink/language/en/``"
+msgstr "``ext/phpbb/viglink/language/en/``"
+
+#: ../../devdocs-source-copy/language/validation.rst:48
+msgid "``language/en/``"
+msgstr "``language/en/``"
+
+#: ../../devdocs-source-copy/language/validation.rst:49
+msgid "``styles/prosilver/theme/en/``"
+msgstr "``styles/prosilver/theme/en/``"
+
+#: ../../devdocs-source-copy/language/validation.rst:51
+msgid "Language packages must contain 1 additional files:"
+msgstr "I pacchetti lingua devono contenere 1 file aggiuntivo:"
+
+#: ../../devdocs-source-copy/language/validation.rst:53
+msgid "``language/{iso}/LICENSE``"
+msgstr "``language/{iso}/LICENSE``"
+
+#: ../../devdocs-source-copy/language/validation.rst:55
+msgid "Language packages may contain 4 more additional files:"
+msgstr "I pacchetti lingua possono contenere altri 4 file aggiuntivi:"
+
+#: ../../devdocs-source-copy/language/validation.rst:57
+msgid "``language/{iso}/AUTHORS.md``"
+msgstr "``language/{iso}/AUTHORS.md``"
+
+#: ../../devdocs-source-copy/language/validation.rst:58
+msgid "``language/{iso}/CHANGELOG.md``"
+msgstr "``language/{iso}/CHANGELOG.md``"
+
+#: ../../devdocs-source-copy/language/validation.rst:59
+msgid "``language/{iso}/README.md``"
+msgstr "``language/{iso}/README.md``"
+
+#: ../../devdocs-source-copy/language/validation.rst:60
+msgid "``language/{iso}/VERSION.md``"
+msgstr "``language/{iso}/VERSION.md``"
+
+#: ../../devdocs-source-copy/language/validation.rst:62
+msgid "No other additional files are allowed!"
+msgstr "Non sono consentiti altri file aggiuntivi!"
+
+#: ../../devdocs-source-copy/language/validation.rst:63
+msgid ""
+"All folders within the language-directories must contain an ``index.htm`` "
+"file (e.g. ``language/en/acp/index.htm``, ``language/en/index.htm``, "
+"``styles/prosilver/theme/de/index.htm``, see the `Language Pack Submission "
+"Policy`_ for a complete list.)."
+msgstr ""
+"Tutte le cartelle all'interno delle directory delle lingue devono contenere "
+"un file ``index.htm`` (ad es. ``language/en/acp/index.htm``, "
+"``language/en/index.htm``, ``styles/prosilver/theme/de/index.htm``, vedi "
+"`Language Pack Submission Policy`_ per un elenco completo)."
+
+#: ../../devdocs-source-copy/language/validation.rst:64
+msgid ""
+"An exception from this rule are the the directories for the viglink-"
+"translation and the directories which belong the phpBB package (e.g. "
+"``language/``, ``styles/``)."
+msgstr ""
+"Un'eccezione a questa regola sono le directory per la traduzione viglink e "
+"le directory che appartengono al pacchetto phpBB (ad es. ``language/``, "
+"``styles/``)."
+
+#: ../../devdocs-source-copy/language/validation.rst:67
+msgid "File Validation"
+msgstr "Validazione dei file"
+
+#: ../../devdocs-source-copy/language/validation.rst:69
+msgid "All files must be stored using ``LF`` (LineFeed / UNIX) line endings."
+msgstr ""
+"Tutti i file devono essere memorizzati usando terminazioni di riga ``LF`` "
+"(LineFeed / UNIX)."
+
+#: ../../devdocs-source-copy/language/validation.rst:70
+msgid "All ``.php`` files must have a check for the ``IN_PHPBB`` constant:"
+msgstr ""
+"Tutti i file ``.php`` devono avere un controllo per la costante "
+"``IN_PHPBB``:"
+
+#: ../../devdocs-source-copy/language/validation.rst:79
+msgid ""
+"All files containing non-english language (``.php``, ``.txt``, as well as "
+"all additional files from `Package Validation`_) must be saved as *UTF8 "
+"without BOM*."
+msgstr ""
+"Tutti i file contenenti lingua non inglese (``.php``, ``.txt``, così come "
+"tutti i file aggiuntivi di `Package Validation`_) devono essere salvati come"
+" *UTF8 senza BOM*."
+
+#: ../../devdocs-source-copy/language/validation.rst:82
+msgid ""
+"``.php`` files must **not** produce any output. There should be no "
+"characters before ``<?php``. ``.php`` files must **not** contain the closing"
+" tag ``?>``, but just end with a new line"
+msgstr ""
+"I file ``.php`` **non** devono produrre alcun output. Non dovrebbero esserci"
+" caratteri prima di ``<?php``. I file ``.php`` **non** devono contenere il "
+"tag di chiusura ``?>``, ma terminare semplicemente con una nuova riga"
+
+#: ../../devdocs-source-copy/language/validation.rst:87
+msgid "language/{iso}/iso.txt"
+msgstr "language/{iso}/iso.txt"
+
+#: ../../devdocs-source-copy/language/validation.rst:89
+msgid "The file must contain exactly 3 lines:"
+msgstr "Il file deve contenere esattamente 3 righe:"
+
+#: ../../devdocs-source-copy/language/validation.rst:91
+msgid "English language name"
+msgstr "Nome della lingua in inglese"
+
+#: ../../devdocs-source-copy/language/validation.rst:92
+msgid "Language name in the spoken language"
+msgstr "Nome della lingua nella lingua parlata"
+
+#: ../../devdocs-source-copy/language/validation.rst:93
+msgid "Author(-group) information (Plaintext only, no links allowed)"
+msgstr ""
+"Informazioni sull'autore (o gruppo di autori) (solo testo semplice, nessun "
+"link consentito)"
+
+#: ../../devdocs-source-copy/language/validation.rst:96
+msgid "\\*/index.htm"
+msgstr "\\*/index.htm"
+
+#: ../../devdocs-source-copy/language/validation.rst:98
+msgid ""
+"The ``index.htm`` files in all folders must either be completly empty, or "
+"contains the default html body:"
+msgstr ""
+"I file ``index.htm`` in tutte le cartelle devono essere completamente vuoti,"
+" oppure contenere il body HTML predefinito:"
+
+#: ../../devdocs-source-copy/language/validation.rst:115
+msgid "language/{iso}/help/\\*.php"
+msgstr "language/{iso}/help/\\*.php"
+
+#: ../../devdocs-source-copy/language/validation.rst:117
+msgid ""
+"The file must must only contain 1 array named `$lang`. No other variables "
+"are allowed."
+msgstr ""
+"Il file deve contenere solo 1 array chiamato `$lang`. Non sono consentite "
+"altre variabili."
+
+#: ../../devdocs-source-copy/language/validation.rst:118
+msgid "The array must only contain arrays with the following structure:"
+msgstr "L'array deve contenere solo array con la seguente struttura:"
+
+#: ../../devdocs-source-copy/language/validation.rst:127
+msgid "If TextA is ``--`` the entry is a headline."
+msgstr "Se TextA è ``--`` la voce è un titolo."
+
+#: ../../devdocs-source-copy/language/validation.rst:128
+msgid ""
+"If both, TextA and TextB, are ``--`` the entry causes a column switch for "
+"the 2 column page layout. A ``help/*.php`` file must contain exactly one of "
+"these entries."
+msgstr ""
+"Se sia TextA che TextB sono ``--``, la voce provoca un cambio di colonna per"
+" il layout della pagina a 2 colonne. Un file ``help/*.php`` deve contenere "
+"esattamente una di queste voci."
+
+#: ../../devdocs-source-copy/language/validation.rst:132
+msgid "For TextA and TextB normal `Key Validation`_ applies."
+msgstr "Per TextA e TextB si applica la normale `Key Validation`_."
+
+#: ../../devdocs-source-copy/language/validation.rst:135
+msgid "language/{iso}/email/\\*.txt and language/{iso}/email/short/\\*.txt"
+msgstr "language/{iso}/email/\\*.txt e language/{iso}/email/short/\\*.txt"
+
+#: ../../devdocs-source-copy/language/validation.rst:136
+msgid ""
+"Emails must only contain the subject-line, when the english email template "
+"also contains it::"
+msgstr ""
+"Le e-mail devono contenere la riga dell'oggetto solo quando il modello di "
+"e-mail inglese la contiene anch'esso::"
+
+#: ../../devdocs-source-copy/language/validation.rst:141
+msgid ""
+"Emails must only contain the ``{EMAIL_SIG}``, when the english email "
+"template also contains it. Additional the ``{EMAIL_SIG}`` must always be on "
+"it's own line, must be the last line of text and is followed by an empty new"
+" line."
+msgstr ""
+"Le e-mail devono contenere ``{EMAIL_SIG}`` solo quando il modello di e-mail "
+"inglese lo contiene anch'esso. Inoltre ``{EMAIL_SIG}`` deve sempre trovarsi "
+"su una riga a sé stante, deve essere l'ultima riga di testo ed è seguito da "
+"una nuova riga vuota."
+
+#: ../../devdocs-source-copy/language/validation.rst:144
+msgid ""
+"Emails should use all variables that are provided in the english email "
+"template, in order to provide the same information to the user."
+msgstr ""
+"Le e-mail dovrebbero usare tutte le variabili fornite nel modello di e-mail "
+"inglese, per fornire le stesse informazioni all'utente."
+
+#: ../../devdocs-source-copy/language/validation.rst:146
+msgid ""
+"Emails may only contain ``{U_BOARD}``, ``{EMAIL_SIG}`` and ``{SITENAME}`` as"
+" additional variables. No other variables are available."
+msgstr ""
+"Le e-mail possono contenere solo ``{U_BOARD}``, ``{EMAIL_SIG}`` e "
+"``{SITENAME}`` come variabili aggiuntive. Non sono disponibili altre "
+"variabili."
+
+#: ../../devdocs-source-copy/language/validation.rst:148
+msgid "Emails must not use HTML content."
+msgstr "Le e-mail non devono usare contenuto HTML."
+
+#: ../../devdocs-source-copy/language/validation.rst:149
+msgid "There must be an empty new line at the end of the file."
+msgstr "Deve esserci una nuova riga vuota alla fine del file."
+
+#: ../../devdocs-source-copy/language/validation.rst:152
+msgid "language/{iso}/\\*.php and language/{iso}/acp/\\*.php"
+msgstr "language/{iso}/\\*.php e language/{iso}/acp/\\*.php"
+
+#: ../../devdocs-source-copy/language/validation.rst:153
+msgid ""
+"The file must must only contain 1 array named ``$lang``. No other variables "
+"are allowed."
+msgstr ""
+"Il file deve contenere solo 1 array chiamato ``$lang``. Non sono consentite "
+"altre variabili."
+
+#: ../../devdocs-source-copy/language/validation.rst:155
+msgid ""
+"Language files must contain all keys, which are included in the english "
+"language file."
+msgstr ""
+"I file di lingua devono contenere tutte le chiavi incluse nel file di lingua"
+" inglese."
+
+#: ../../devdocs-source-copy/language/validation.rst:157
+msgid ""
+"Language files must only contain keys, which are also included in the "
+"english language file."
+msgstr ""
+"I file di lingua devono contenere solo chiavi che siano anche incluse nel "
+"file di lingua inglese."
+
+#: ../../devdocs-source-copy/language/validation.rst:159
+msgid "For all entries the `Key Validation`_ applies."
+msgstr "Per tutte le voci si applica la `Key Validation`_."
+
+#: ../../devdocs-source-copy/language/validation.rst:162
+msgid "Key Validation"
+msgstr "Validazione delle chiavi"
+
+#: ../../devdocs-source-copy/language/validation.rst:165
+msgid "Type"
+msgstr "Tipo"
+
+#: ../../devdocs-source-copy/language/validation.rst:167
+msgid ""
+"Entries must be of the same type as in the english language. If the entry is"
+" of type ``string``, your translation must be of type ``string``. If the "
+"english language is of type ``array`` (e.g. using plurals), your translation"
+" must be of type ``array`` aswell."
+msgstr ""
+"Le voci devono essere dello stesso tipo di quelle nella lingua inglese. Se "
+"la voce è di tipo ``string``, la tua traduzione deve essere di tipo "
+"``string``. Se la lingua inglese è di tipo ``array`` (ad es. usando i "
+"plurali), anche la tua traduzione deve essere di tipo ``array``."
+
+#: ../../devdocs-source-copy/language/validation.rst:171
+msgid ""
+"If the entry is an array, your translation must contain the same keys as the"
+" english array. Exceptions are plural forms."
+msgstr ""
+"Se la voce è un array, la tua traduzione deve contenere le stesse chiavi "
+"dell'array inglese. Fanno eccezione le forme plurali."
+
+#: ../../devdocs-source-copy/language/validation.rst:175
+msgid "String And Integer Replacements"
+msgstr "Sostituzioni di stringhe e interi"
+
+#: ../../devdocs-source-copy/language/validation.rst:177
+msgid ""
+"If the english string contains replacements, such as ``%s``, ``%1$s``, "
+"``%d`` and ``%1$d``, your string should contain the same number of "
+"replacements. Exceptions are integer replacements in plural forms. This "
+"allows you to use::"
+msgstr ""
+"Se la stringa inglese contiene sostituzioni, come ``%s``, ``%1$s``, ``%d`` e"
+" ``%1$d``, la tua stringa dovrebbe contenere lo stesso numero di "
+"sostituzioni. Fanno eccezione le sostituzioni di interi nelle forme plurali."
+" Questo ti permette di usare::"
+
+#: ../../devdocs-source-copy/language/validation.rst:183
+msgid "rather then::"
+msgstr "invece di::"
+
+#: ../../devdocs-source-copy/language/validation.rst:188
+msgid "HTML"
+msgstr "HTML"
+
+#: ../../devdocs-source-copy/language/validation.rst:190
+msgid ""
+"Strings should only contain HTML that is also included in the english "
+"strings."
+msgstr ""
+"Le stringhe dovrebbero contenere solo HTML incluso anche nelle stringhe "
+"inglesi."
+
+#: ../../devdocs-source-copy/language/validation.rst:192
+msgid ""
+"Additional ``<a href=\"\">``, ``<strong>``, ``<em>``, ``<u>`` and ``<br />``"
+" are allowed."
+msgstr ""
+"Sono consentiti ``<a href=\"\">``, ``<strong>``, ``<em>``, ``<u>`` e ``<br "
+"/>`` aggiuntivi."
+
+#: ../../devdocs-source-copy/language/validation.rst:194
+msgid "``<b>`` should not be used, use ``<strong>`` instead."
+msgstr "``<b>`` non dovrebbe essere usato, usa invece ``<strong>``."
+
+#: ../../devdocs-source-copy/language/validation.rst:195
+msgid "``<i>`` should not be used, use ``<em>`` instead."
+msgstr "``<i>`` non dovrebbe essere usato, usa invece ``<em>``."
+
+#: ../../devdocs-source-copy/language/validation.rst:196
+msgid ""
+"Strings should only close HTML which it has opened itself and should close "
+"all HTML it has opened. Exceptions here are:"
+msgstr ""
+"Le stringhe dovrebbero chiudere solo l'HTML che hanno aperto esse stesse e "
+"dovrebbero chiudere tutto l'HTML che hanno aperto. Le eccezioni qui sono:"
+
+#: ../../devdocs-source-copy/language/validation.rst:199
+msgid "``language/{iso}/install.php``"
+msgstr "``language/{iso}/install.php``"
+
+#: ../../devdocs-source-copy/language/validation.rst:200
+msgid "``INSTALL_INTRO_BODY``"
+msgstr "``INSTALL_INTRO_BODY``"
+
+#: ../../devdocs-source-copy/language/validation.rst:201
+msgid "``SUPPORT_BODY``"
+msgstr "``SUPPORT_BODY``"
+
+#: ../../devdocs-source-copy/language/validation.rst:202
+msgid "``UPDATE_INSTALLATION_EXPLAIN``"
+msgstr "``UPDATE_INSTALLATION_EXPLAIN``"
+
+#: ../../devdocs-source-copy/language/validation.rst:203
+msgid "``language/{iso}/ucp.php``"
+msgstr "``language/{iso}/ucp.php``"
+
+#: ../../devdocs-source-copy/language/validation.rst:204
+msgid "``TERMS_OF_USE_CONTENT``"
+msgstr "``TERMS_OF_USE_CONTENT``"
+
+#: ../../devdocs-source-copy/language/validation.rst:205
+msgid "``PRIVACY_POLICY``"
+msgstr "``PRIVACY_POLICY``"
+
+#: ../../devdocs-source-copy/language/validation.rst:207
+msgid ""
+"which are always inside of a ``<p>`` tag and are allowed to close it, if "
+"they reopen it later on."
+msgstr ""
+"che si trovano sempre all'interno di un tag ``<p>`` e possono chiuderlo, se "
+"lo riaprono in seguito."
+
+#: ../../devdocs-source-copy/language/validation.rst:211
+msgid "Arrays"
+msgstr "Array"
+
+#: ../../devdocs-source-copy/language/validation.rst:213
+msgid ""
+"Arrays must have the same structure and elements as the english version. "
+"Exceptions are plural forms, which may have more or less keys, depending on "
+"the plural rule."
+msgstr ""
+"Gli array devono avere la stessa struttura ed elementi della versione "
+"inglese. Fanno eccezione le forme plurali, che possono avere più o meno "
+"chiavi, a seconda della regola del plurale."
+
+#: ../../devdocs-source-copy/language/validation.rst:218
+msgid "Copyright & License"
+msgstr "Copyright e licenza"
+
+#: ../../devdocs-source-copy/language/validation.rst:221
+msgid "Copyright"
+msgstr "Copyright"
+
+#: ../../devdocs-source-copy/language/validation.rst:223
+msgid ""
+"The translation is mostly your work and you have a right to hold a copyright"
+" and names to it. Therefor a maximum of 3 links can be included as an author"
+" credit in the footer, customisable via the ``TRANSLATION_INFO`` key in "
+"``common.php``."
+msgstr ""
+"La traduzione è principalmente opera tua e hai il diritto di detenerne il "
+"copyright e i nomi. Pertanto un massimo di 3 link può essere incluso come "
+"credito d'autore nel footer, personalizzabile tramite la chiave "
+"``TRANSLATION_INFO`` in ``common.php``."
+
+#: ../../devdocs-source-copy/language/validation.rst:230
+msgid ""
+"The Translations Manager has complete discretion on what is acceptable as an"
+" author credit link."
+msgstr ""
+"Il Translations Manager ha piena discrezionalità su ciò che è accettabile "
+"come link di credito d'autore."
+
+#: ../../devdocs-source-copy/language/validation.rst:234
+msgid "License"
+msgstr "Licenza"
+
+#: ../../devdocs-source-copy/language/validation.rst:236
+msgid ""
+"All translations must be released under `GNU General Public License 2.0 "
+"<http://www.opensource.org/licenses/gpl-2.0.php>`_"
+msgstr ""
+"Tutte le traduzioni devono essere rilasciate sotto la `GNU General Public "
+"License 2.0 <http://www.opensource.org/licenses/gpl-2.0.php>`_"

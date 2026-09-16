@@ -1,0 +1,461 @@
+# Danish translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:3
+msgid "Tutorial: Getting Started"
+msgstr "Tutorial: kom godt i gang"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:6
+msgid "Introduction"
+msgstr "Introduktion"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:8
+msgid "Welcome to phpBB's extension development tutorial and documentation."
+msgstr ""
+"Velkommen til phpBB's tutorial og dokumentation for udvidelsesudvikling."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:10
+msgid ""
+"These tutorial pages are based on phpBB's `Acme Demo "
+"<https://github.com/phpbb/phpbb-ext-acme-demo>`_ extension. This simple "
+"extension demonstrates many common features of an extension, including using"
+" a front-controller page, modifying phpBB through core events and template "
+"events, modifying the database using migrations, and setting up an ACP "
+"module for configuration settings."
+msgstr ""
+"Disse tutorial-sider er baseret på phpBB's udvidelse `Acme Demo "
+"<https://github.com/phpbb/phpbb-ext-acme-demo>`_. Denne simple udvidelse "
+"demonstrerer mange almindelige funktioner i en udvidelse, herunder brug af "
+"en front-controller-side, ændring af phpBB via kerne-events og modelevents, "
+"ændring af databasen ved hjælp af migreringer samt opsætning af et ACP-modul"
+" til konfigurationsindstillinger."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:15
+msgid "This tutorial covers the basic creation of extensions:"
+msgstr "Denne tutorial dækker den grundlæggende oprettelse af udvidelser:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:17
+msgid "`Extension folder`_"
+msgstr "`Udvidelsesmappe`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:18
+msgid "`Composer JSON`_"
+msgstr "`Composer JSON`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:22
+msgid ""
+"The :doc:`skeleton_extension` is a tool to help developers rapidly generate "
+"the initial files and components needed to start developing new extensions "
+"for phpBB."
+msgstr ""
+":doc:`skeleton_extension` er et værktøj, der hjælper udviklere med hurtigt "
+"at generere de indledende filer og komponenter, der er nødvendige for at "
+"begynde at udvikle nye udvidelser til phpBB."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:27
+msgid "Extension Folder"
+msgstr "Udvidelsesmappe"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:29
+msgid ""
+"All extensions must be located within the ``ext/`` folder which can be found"
+" in phpBB's root folder."
+msgstr ""
+"Alle udvidelser skal være placeret i mappen ``ext/``, som findes i phpBB's "
+"rodmappe."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:31
+msgid ""
+"Extensions are packaged using a folder structure as follows: "
+"``vendor/extname``."
+msgstr ""
+"Udvidelser pakkes ved hjælp af følgende mappestruktur: ``vendor/extname``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:33
+msgid ""
+"Thus, an extension should be located in the phpBB directory as follows: "
+"``phpBB/ext/vendor/extname``."
+msgstr ""
+"En udvidelse bør derfor være placeret i phpBB-mappen som følger: "
+"``phpBB/ext/vendor/extname``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:35
+msgid ""
+"The vendor name can be the author's username or any other name you choose to"
+" group your extensions by. The extension name is the name of the extension. "
+"In this tutorial we will use ``acme`` as the vendor name and ``demo`` as the"
+" extension name."
+msgstr ""
+"Vendor-navnet kan være forfatterens brugernavn eller et hvilket som helst "
+"andet navn, du vælger at gruppere dine udvidelser efter. Udvidelsesnavnet er"
+" navnet på udvidelsen. I denne tutorial bruger vi ``acme`` som vendor-navn "
+"og ``demo`` som udvidelsesnavn."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:41
+msgid ""
+"Both the vendor and extension names must start with a lowercase letter, "
+"followed by lowercase letters and numbers only. **Uppercase letters, "
+"underscores, dashes and other characters are not permitted.** The following "
+"is an example of an allowed vendor and extension name: "
+"``iamuser1/iamanextension``."
+msgstr ""
+"Både vendor- og udvidelsesnavnet skal starte med et lille bogstav, "
+"efterfulgt af kun små bogstaver og tal. **Store bogstaver, understregninger,"
+" bindestreger og andre tegn er ikke tilladt.** Følgende er et eksempel på et"
+" tilladt vendor- og udvidelsesnavn: ``iamuser1/iamanextension``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:47
+msgid "Composer JSON"
+msgstr "Composer JSON"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:49
+msgid ""
+"Every extension requires a meta data file named ``composer.json`` in order "
+"for phpBB to identify your extension. This file contains basic information "
+"about an extension as well its dependencies. It is written using the JSON "
+"format and must be stored in the root folder of the extension, e.g. "
+"``phpBB/ext/acme/demo/composer.json``."
+msgstr ""
+"Hver udvidelse kræver en metadatafil ved navn ``composer.json``, for at "
+"phpBB kan identificere din udvidelse. Denne fil indeholder grundlæggende "
+"oplysninger om en udvidelse samt dens afhængigheder. Den skrives i JSON-"
+"format og skal gemmes i udvidelsens rodmappe, f.eks. "
+"``phpBB/ext/acme/demo/composer.json``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:53
+msgid ""
+"The information in ``composer.json`` will be used by the Extensions Manager "
+"in the ACP. The details of the meta data are explained below the sample, but"
+" for now let's have a look at the complete file:"
+msgstr ""
+"Oplysningerne i ``composer.json`` bruges af Extensions Manager i ACP. "
+"Detaljerne for metadataene forklares under eksemplet, men lad os for nu "
+"kigge på den komplette fil:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:92
+msgid ""
+"It is important to remember that the last item or object in any JSON array "
+"must not contain a trailing comma."
+msgstr ""
+"Det er vigtigt at huske, at det sidste element eller objekt i et JSON-array "
+"ikke må indeholde et afsluttende komma."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "Field"
+msgstr "Felt"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "Required"
+msgstr "Påkrævet"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "Content"
+msgstr "Indhold"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "``name``"
+msgstr "``name``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "Yes"
+msgstr "Ja"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid ""
+"The vendor name and extension name, separated by ``/``, matching the folder "
+"structure."
+msgstr ""
+"Vendor-navnet og udvidelsesnavnet, adskilt af ``/``, svarende til "
+"mappestrukturen."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "``type``"
+msgstr "``type``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "The type of package. It should always be ``phpbb-extension``."
+msgstr "Typen af pakke. Den bør altid være ``phpbb-extension``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "``description``"
+msgstr "``description``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "A short description of your extension, may be empty (but not skipped)."
+msgstr ""
+"En kort beskrivelse af din udvidelse, må være tom (men ikke udelades)."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "``homepage``"
+msgstr "``homepage``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "No"
+msgstr "Nej"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid ""
+"A valid URL. It is recommended to use the link to the contribution in the "
+"customisation database, or to the repository of your extension (if you are "
+"using a public one like GitHub)."
+msgstr ""
+"En gyldig URL. Det anbefales at bruge linket til bidraget i customisation "
+"database, eller til din udvidelses repository (hvis du bruger en offentlig "
+"en som f.eks. GitHub)."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "``version``"
+msgstr "``version``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid ""
+"The version of your extension. This should follow the format of X.Y.Z with "
+"an optional suffix of -dev, -patch, -alpha, -beta or -RC."
+msgstr ""
+"Din udvidelses version. Denne bør følge formatet X.Y.Z med et valgfrit "
+"suffiks -dev, -patch, -alpha, -beta eller -RC."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "``time``"
+msgstr "``time``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid ""
+"The release date of your extension. Must be in YYYY-MM-DD or YYYY-MM-DD "
+"HH:MM:SS format."
+msgstr ""
+"Udgivelsesdatoen for din udvidelse. Skal være i formatet YYYY-MM-DD eller "
+"YYYY-MM-DD HH:MM:SS."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "``keywords``"
+msgstr "``keywords``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "An array of keywords related to the extension."
+msgstr "Et array af nøgleord relateret til udvidelsen."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "``license``"
+msgstr "``license``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid ""
+"The license of the package. This can be either a string or an array of "
+"strings. Typically extensions should be licensed under the same GPL-2.0 "
+"license as phpBB."
+msgstr ""
+"Licensen for pakken. Dette kan enten være en streng eller et array af "
+"strenge. Typisk bør udvidelser licenseres under den samme GPL-2.0-licens som"
+" phpBB."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "``authors``"
+msgstr "``authors``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "An array of authors of the extension. See `authors`_ for more details."
+msgstr "Et array af udvidelsens forfattere. Se `authors`_ for flere detaljer."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "``require``"
+msgstr "``require``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid ""
+"An array of requirements of the extension. See `require`_ for more details."
+msgstr "Et array af udvidelsens krav. Se `require`_ for flere detaljer."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "``require-dev``"
+msgstr "``require-dev``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid ""
+"An array of development requirements of the extension. See `require-dev`_ "
+"for more details."
+msgstr ""
+"Et array af udvidelsens udviklingskrav. Se `require-dev`_ for flere "
+"detaljer."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "``extra``"
+msgstr "``extra``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "An array of arbitrary extra data. See `extra`_ for more details."
+msgstr "Et array af vilkårlige ekstra data. Se `extra`_ for flere detaljer."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:122
+msgid "authors"
+msgstr "authors"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:124
+msgid ""
+"You may have unlimited authors. At least one author is highly recommended."
+msgstr ""
+"Du kan have et ubegrænset antal forfattere. Mindst én forfatter anbefales "
+"stærkt."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "The name of an author."
+msgstr "Navnet på en forfatter."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "``email``"
+msgstr "``email``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "An email address of the author."
+msgstr "En e-mailadresse for forfatteren."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "A URL pointing to the website of the author."
+msgstr "En URL, der peger på forfatterens hjemmeside."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "``role``"
+msgstr "``role``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid ""
+"Role can be used to specify what the author did for the extension (e.g. "
+"Developer, Translator, Supporter, etc.)"
+msgstr ""
+"Role kan bruges til at angive, hvad forfatteren bidrog med til udvidelsen "
+"(f.eks. Developer, Translator, Supporter osv.)"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:137
+msgid "require"
+msgstr "require"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:139
+msgid ""
+"List the dependencies required by the extension, i.e. the PHP version and "
+"`third party libraries <https://packagist.org/>`_."
+msgstr ""
+"Angiv de afhængigheder, udvidelsen kræver, dvs. PHP-versionen og "
+"`tredjepartsbiblioteker <https://packagist.org/>`_."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "``php``"
+msgstr "``php``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid ""
+"The minimum-stability version of PHP required by the extension. phpBB 3.2 "
+"requires PHP 5.4.0 or higher, so the version comparison is ``>= 5.4.0``."
+msgstr ""
+"Den mindste stabile version af PHP, som udvidelsen kræver. phpBB 3.2 kræver "
+"PHP 5.4.0 eller nyere, så versionssammenligningen er ``>= 5.4.0``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "``composer/installers``"
+msgstr "``composer/installers``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid ""
+"Recommended by phpBB. This will install extensions to the correct location "
+"in phpBB when installed via Composer."
+msgstr ""
+"Anbefalet af phpBB. Dette vil installere udvidelser på det korrekte sted i "
+"phpBB, når de installeres via Composer."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:151
+msgid "require-dev"
+msgstr "require-dev"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:153
+msgid ""
+"In the optional ``require-dev`` section you can list the dependencies of the"
+" extension which are only required for development. Acme Demo uses the "
+"`Extension Pre Validator Tool <https://packagist.org/packages/phpbb/epv>`_ "
+"from the phpBB Extensions Team to perform some basic validation when running"
+" tests on Travis CI (see :doc:`tutorial_testing`). Since we always want to "
+"have the newest version, we require ``dev-master``."
+msgstr ""
+"I den valgfrie sektion ``require-dev`` kan du angive udvidelsens "
+"afhængigheder, som kun kræves til udvikling. Acme Demo bruger `Extension Pre"
+" Validator Tool <https://packagist.org/packages/phpbb/epv>`_ fra phpBB's "
+"Extensions Team til at udføre nogle grundlæggende valideringer, når der "
+"køres tests på Travis CI (se :doc:`tutorial_testing`). Da vi altid ønsker at"
+" have den nyeste version, kræver vi ``dev-master``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:160
+msgid "extra"
+msgstr "extra"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:162
+msgid ""
+"This section can contain virtually any arbitrary data according to the "
+"composer specification. However, phpBB requires two special entries in this "
+"array for extensions:"
+msgstr ""
+"Denne sektion kan indeholde stort set alle vilkårlige data i henhold til "
+"composer-specifikationen. phpBB kræver dog to specielle elementer i dette "
+"array for udvidelser:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "``display-name``"
+msgstr "``display-name``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "The name of your extension, e.g. Acme Demo Extension."
+msgstr "Navnet på din udvidelse, f.eks. Acme Demo Extension."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid "``soft-require``"
+msgstr "``soft-require``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:1
+msgid ""
+"The minimum-stability version of phpBB required by the extension. In this "
+"case we require any 3.1 version, which is done by prefixing it with a ``~``:"
+" ``\"phpbb/phpbb\": \"~3.2\"``."
+msgstr ""
+"Den mindste stabile version af phpBB, som udvidelsen kræver. I dette "
+"tilfælde kræver vi en hvilken som helst 3.1-version, hvilket gøres ved at "
+"give den præfikset ``~``: ``\"phpbb/phpbb\": \"~3.2\"``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:175
+msgid ""
+"A complete explanation of all JSON schema fields available in a "
+"composer.json file can be found here: "
+"https://getcomposer.org/doc/04-schema.md"
+msgstr ""
+"En komplet forklaring af alle JSON-skemafelter, der er tilgængelige i en "
+"composer.json-fil, findes her: https://getcomposer.org/doc/04-schema.md"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:177
+msgid ""
+"More information on specifying package version constraints can be found "
+"here: https://getcomposer.org/doc/articles/versions.md#basic-constraints"
+msgstr ""
+"Flere oplysninger om angivelse af pakkeversionsbegrænsninger findes her: "
+"https://getcomposer.org/doc/articles/versions.md#basic-constraints"
+
+#: ../../devdocs-source-copy/extensions/tutorial_basics.rst:179
+msgid ""
+"So far, our extension has no functionality yet. Continue on to the next "
+"sections to learn more about how to write an extension that will do "
+"something useful."
+msgstr ""
+"Indtil videre har vores udvidelse endnu ingen funktionalitet. Fortsæt til de"
+" næste afsnit for at lære mere om, hvordan man skriver en udvidelse, der vil"
+" gøre noget nyttigt."

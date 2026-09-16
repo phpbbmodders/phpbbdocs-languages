@@ -1,0 +1,526 @@
+# Danish translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/language/validation.rst:3
+msgid "Language Pack Validation Policy"
+msgstr "Valideringspolitik for sprogpakker"
+
+#: ../../devdocs-source-copy/language/validation.rst:6
+msgid "Submission guidelines"
+msgstr "Retningslinjer for indsendelse"
+
+#: ../../devdocs-source-copy/language/validation.rst:9
+msgid "Description"
+msgstr "Beskrivelse"
+
+#: ../../devdocs-source-copy/language/validation.rst:11
+msgid ""
+"Contribution description in the `Customisation Database`_ should be "
+"translated into English in addition of your local language, as some "
+"administrators might want to download your translation without speak your "
+"language."
+msgstr ""
+"Beskrivelsen af bidraget i `Customisation Database`_ bør oversættes til "
+"engelsk ud over dit lokale sprog, da nogle administratorer måske vil "
+"downloade din oversættelse uden at tale dit sprog."
+
+#: ../../devdocs-source-copy/language/validation.rst:17
+msgid "Screenshot"
+msgstr "Skærmbillede"
+
+#: ../../devdocs-source-copy/language/validation.rst:19
+msgid ""
+"Contribution screenshot in the `Customisation Database`_ should only be the "
+"flag of the country whose the language is spoken. For example, the flag of "
+"France for the French language."
+msgstr ""
+"Skærmbilledet til bidraget i `Customisation Database`_ bør kun være flaget "
+"for det land, hvor sproget tales. For eksempel Frankrigs flag for det "
+"franske sprog."
+
+#: ../../devdocs-source-copy/language/validation.rst:24
+msgid "Demo-Link"
+msgstr "Demo-link"
+
+#: ../../devdocs-source-copy/language/validation.rst:26
+msgid ""
+"The Demo URL in the Customisation Database must be empty, unless you want to"
+" put a link to an international community (`officially`_ listed or not) "
+"related to the language of the contribution. For example, "
+"https://www.phpbb.nl/ as Demo URL concerning the `Dutch language`_ is "
+"allowed."
+msgstr ""
+"Demo-URL'en i Customisation Database skal være tom, medmindre du ønsker at "
+"angive et link til et internationalt fællesskab (`officially`_ opført eller "
+"ej) relateret til bidragets sprog. For eksempel er https://www.phpbb.nl/ som"
+" Demo-URL vedrørende `Dutch language`_ tilladt."
+
+#: ../../devdocs-source-copy/language/validation.rst:32
+msgid "Package"
+msgstr "Pakke"
+
+#: ../../devdocs-source-copy/language/validation.rst:34
+msgid ""
+"The submitted ``<languagename>_<version>.zip`` must contain a "
+"``<languagename>_<version>`` folder. The files from above should be placed "
+"in this folder."
+msgstr ""
+"Den indsendte ``<languagename>_<version>.zip`` skal indeholde en mappe "
+"``<languagename>_<version>``. Filerne ovenfor bør placeres i denne mappe."
+
+#: ../../devdocs-source-copy/language/validation.rst:37
+msgid ""
+"Revision name in the `Customisation Database`_ should be left blank, contain"
+" the phpBB package version and/or package release name (e.g. ``3.3.10`` / "
+"``Bertie's translation` for 3.3.10) for more understanding."
+msgstr ""
+"Revisionsnavnet i `Customisation Database`_ bør lades tomt, indeholde phpBB-"
+"pakkeversionen og/eller pakkeudgivelsesnavnet (f.eks. ``3.3.10`` / "
+"``Bertie's translation`` for 3.3.10) for bedre forståelse."
+
+#: ../../devdocs-source-copy/language/validation.rst:42
+msgid "Package Validation"
+msgstr "Validering af pakke"
+
+#: ../../devdocs-source-copy/language/validation.rst:44
+msgid ""
+"Language packages must include all files that are included in the folders "
+"for the English language. This includes the following folders:"
+msgstr ""
+"Sprogpakker skal inkludere alle filer, der er inkluderet i mapperne for det "
+"engelske sprog. Dette omfatter følgende mapper:"
+
+#: ../../devdocs-source-copy/language/validation.rst:47
+msgid "``ext/phpbb/viglink/language/en/``"
+msgstr "``ext/phpbb/viglink/language/en/``"
+
+#: ../../devdocs-source-copy/language/validation.rst:48
+msgid "``language/en/``"
+msgstr "``language/en/``"
+
+#: ../../devdocs-source-copy/language/validation.rst:49
+msgid "``styles/prosilver/theme/en/``"
+msgstr "``styles/prosilver/theme/en/``"
+
+#: ../../devdocs-source-copy/language/validation.rst:51
+msgid "Language packages must contain 1 additional files:"
+msgstr "Sprogpakker skal indeholde 1 yderligere fil:"
+
+#: ../../devdocs-source-copy/language/validation.rst:53
+msgid "``language/{iso}/LICENSE``"
+msgstr "``language/{iso}/LICENSE``"
+
+#: ../../devdocs-source-copy/language/validation.rst:55
+msgid "Language packages may contain 4 more additional files:"
+msgstr "Sprogpakker kan indeholde 4 yderligere filer:"
+
+#: ../../devdocs-source-copy/language/validation.rst:57
+msgid "``language/{iso}/AUTHORS.md``"
+msgstr "``language/{iso}/AUTHORS.md``"
+
+#: ../../devdocs-source-copy/language/validation.rst:58
+msgid "``language/{iso}/CHANGELOG.md``"
+msgstr "``language/{iso}/CHANGELOG.md``"
+
+#: ../../devdocs-source-copy/language/validation.rst:59
+msgid "``language/{iso}/README.md``"
+msgstr "``language/{iso}/README.md``"
+
+#: ../../devdocs-source-copy/language/validation.rst:60
+msgid "``language/{iso}/VERSION.md``"
+msgstr "``language/{iso}/VERSION.md``"
+
+#: ../../devdocs-source-copy/language/validation.rst:62
+msgid "No other additional files are allowed!"
+msgstr "Ingen andre yderligere filer er tilladt!"
+
+#: ../../devdocs-source-copy/language/validation.rst:63
+msgid ""
+"All folders within the language-directories must contain an ``index.htm`` "
+"file (e.g. ``language/en/acp/index.htm``, ``language/en/index.htm``, "
+"``styles/prosilver/theme/de/index.htm``, see the `Language Pack Submission "
+"Policy`_ for a complete list.)."
+msgstr ""
+"Alle mapper i sprogmapperne skal indeholde en fil ``index.htm`` (f.eks. "
+"``language/en/acp/index.htm``, ``language/en/index.htm``, "
+"``styles/prosilver/theme/de/index.htm``, se `Language Pack Submission "
+"Policy`_ for en komplet liste)."
+
+#: ../../devdocs-source-copy/language/validation.rst:64
+msgid ""
+"An exception from this rule are the the directories for the viglink-"
+"translation and the directories which belong the phpBB package (e.g. "
+"``language/``, ``styles/``)."
+msgstr ""
+"En undtagelse fra denne regel er mapperne til viglink-oversættelsen og de "
+"mapper, der tilhører phpBB-pakken (f.eks. ``language/``, ``styles/``)."
+
+#: ../../devdocs-source-copy/language/validation.rst:67
+msgid "File Validation"
+msgstr "Validering af filer"
+
+#: ../../devdocs-source-copy/language/validation.rst:69
+msgid "All files must be stored using ``LF`` (LineFeed / UNIX) line endings."
+msgstr ""
+"Alle filer skal gemmes med linjeafslutninger af typen ``LF`` (LineFeed / "
+"UNIX)."
+
+#: ../../devdocs-source-copy/language/validation.rst:70
+msgid "All ``.php`` files must have a check for the ``IN_PHPBB`` constant:"
+msgstr "Alle ``.php``-filer skal have en kontrol af konstanten ``IN_PHPBB``:"
+
+#: ../../devdocs-source-copy/language/validation.rst:79
+msgid ""
+"All files containing non-english language (``.php``, ``.txt``, as well as "
+"all additional files from `Package Validation`_) must be saved as *UTF8 "
+"without BOM*."
+msgstr ""
+"Alle filer, der indeholder ikke-engelsk sprog (``.php``, ``.txt``, samt alle"
+" yderligere filer fra `Validering af pakke`_), skal gemmes som *UTF8 uden "
+"BOM*."
+
+#: ../../devdocs-source-copy/language/validation.rst:82
+msgid ""
+"``.php`` files must **not** produce any output. There should be no "
+"characters before ``<?php``. ``.php`` files must **not** contain the closing"
+" tag ``?>``, but just end with a new line"
+msgstr ""
+"``.php``-filer må **ikke** producere nogen output. Der bør ikke være tegn "
+"før ``<?php``. ``.php``-filer må **ikke** indeholde den afsluttende tag "
+"``?>``, men blot slutte med en ny linje"
+
+#: ../../devdocs-source-copy/language/validation.rst:87
+msgid "language/{iso}/iso.txt"
+msgstr "language/{iso}/iso.txt"
+
+#: ../../devdocs-source-copy/language/validation.rst:89
+msgid "The file must contain exactly 3 lines:"
+msgstr "Filen skal indeholde nøjagtigt 3 linjer:"
+
+#: ../../devdocs-source-copy/language/validation.rst:91
+msgid "English language name"
+msgstr "Engelsk sprognavn"
+
+#: ../../devdocs-source-copy/language/validation.rst:92
+msgid "Language name in the spoken language"
+msgstr "Sprognavn på det talte sprog"
+
+#: ../../devdocs-source-copy/language/validation.rst:93
+msgid "Author(-group) information (Plaintext only, no links allowed)"
+msgstr ""
+"Oplysninger om forfatter(gruppe) (kun almindelig tekst, ingen links tilladt)"
+
+#: ../../devdocs-source-copy/language/validation.rst:96
+msgid "\\*/index.htm"
+msgstr "\\*/index.htm"
+
+#: ../../devdocs-source-copy/language/validation.rst:98
+msgid ""
+"The ``index.htm`` files in all folders must either be completly empty, or "
+"contains the default html body:"
+msgstr ""
+"Filerne ``index.htm`` i alle mapper skal enten være helt tomme eller "
+"indeholde standard-HTML-brødteksten:"
+
+#: ../../devdocs-source-copy/language/validation.rst:115
+msgid "language/{iso}/help/\\*.php"
+msgstr "language/{iso}/help/\\*.php"
+
+#: ../../devdocs-source-copy/language/validation.rst:117
+msgid ""
+"The file must must only contain 1 array named `$lang`. No other variables "
+"are allowed."
+msgstr ""
+"Filen må kun indeholde 1 array ved navn `$lang`. Ingen andre variabler er "
+"tilladt."
+
+#: ../../devdocs-source-copy/language/validation.rst:118
+msgid "The array must only contain arrays with the following structure:"
+msgstr "Arrayet må kun indeholde arrays med følgende struktur:"
+
+#: ../../devdocs-source-copy/language/validation.rst:127
+msgid "If TextA is ``--`` the entry is a headline."
+msgstr "Hvis TextA er ``--``, er posten en overskrift."
+
+#: ../../devdocs-source-copy/language/validation.rst:128
+msgid ""
+"If both, TextA and TextB, are ``--`` the entry causes a column switch for "
+"the 2 column page layout. A ``help/*.php`` file must contain exactly one of "
+"these entries."
+msgstr ""
+"Hvis både TextA og TextB er ``--``, forårsager posten et kolonneskift for "
+"det 2-kolonne sidelayout. En fil ``help/*.php`` skal indeholde nøjagtigt én "
+"af disse poster."
+
+#: ../../devdocs-source-copy/language/validation.rst:132
+msgid "For TextA and TextB normal `Key Validation`_ applies."
+msgstr "For TextA og TextB gælder den normale `Validering af nøgle`_."
+
+#: ../../devdocs-source-copy/language/validation.rst:135
+msgid "language/{iso}/email/\\*.txt and language/{iso}/email/short/\\*.txt"
+msgstr "language/{iso}/email/\\*.txt and language/{iso}/email/short/\\*.txt"
+
+#: ../../devdocs-source-copy/language/validation.rst:136
+msgid ""
+"Emails must only contain the subject-line, when the english email template "
+"also contains it::"
+msgstr ""
+"E-mails må kun indeholde emnelinjen, når den engelske e-mailskabelon også "
+"indeholder den::"
+
+#: ../../devdocs-source-copy/language/validation.rst:141
+msgid ""
+"Emails must only contain the ``{EMAIL_SIG}``, when the english email "
+"template also contains it. Additional the ``{EMAIL_SIG}`` must always be on "
+"it's own line, must be the last line of text and is followed by an empty new"
+" line."
+msgstr ""
+"E-mails må kun indeholde ``{EMAIL_SIG}``, når den engelske e-mailskabelon "
+"også indeholder den. Derudover skal ``{EMAIL_SIG}`` altid stå på sin egen "
+"linje, skal være den sidste tekstlinje og efterfølges af en tom ny linje."
+
+#: ../../devdocs-source-copy/language/validation.rst:144
+msgid ""
+"Emails should use all variables that are provided in the english email "
+"template, in order to provide the same information to the user."
+msgstr ""
+"E-mails bør bruge alle variabler, der leveres i den engelske e-mailskabelon,"
+" for at give brugeren de samme oplysninger."
+
+#: ../../devdocs-source-copy/language/validation.rst:146
+msgid ""
+"Emails may only contain ``{U_BOARD}``, ``{EMAIL_SIG}`` and ``{SITENAME}`` as"
+" additional variables. No other variables are available."
+msgstr ""
+"E-mails må kun indeholde ``{U_BOARD}``, ``{EMAIL_SIG}`` og ``{SITENAME}`` "
+"som yderligere variabler. Ingen andre variabler er tilgængelige."
+
+#: ../../devdocs-source-copy/language/validation.rst:148
+msgid "Emails must not use HTML content."
+msgstr "E-mails må ikke bruge HTML-indhold."
+
+#: ../../devdocs-source-copy/language/validation.rst:149
+msgid "There must be an empty new line at the end of the file."
+msgstr "Der skal være en tom ny linje i slutningen af filen."
+
+#: ../../devdocs-source-copy/language/validation.rst:152
+msgid "language/{iso}/\\*.php and language/{iso}/acp/\\*.php"
+msgstr "language/{iso}/\\*.php and language/{iso}/acp/\\*.php"
+
+#: ../../devdocs-source-copy/language/validation.rst:153
+msgid ""
+"The file must must only contain 1 array named ``$lang``. No other variables "
+"are allowed."
+msgstr ""
+"Filen må kun indeholde 1 array ved navn ``$lang``. Ingen andre variabler er "
+"tilladt."
+
+#: ../../devdocs-source-copy/language/validation.rst:155
+msgid ""
+"Language files must contain all keys, which are included in the english "
+"language file."
+msgstr ""
+"Sprogfiler skal indeholde alle nøgler, der er inkluderet i den engelske "
+"sprogfil."
+
+#: ../../devdocs-source-copy/language/validation.rst:157
+msgid ""
+"Language files must only contain keys, which are also included in the "
+"english language file."
+msgstr ""
+"Sprogfiler må kun indeholde nøgler, der også er inkluderet i den engelske "
+"sprogfil."
+
+#: ../../devdocs-source-copy/language/validation.rst:159
+msgid "For all entries the `Key Validation`_ applies."
+msgstr "For alle poster gælder `Validering af nøgle`_."
+
+#: ../../devdocs-source-copy/language/validation.rst:162
+msgid "Key Validation"
+msgstr "Validering af nøgle"
+
+#: ../../devdocs-source-copy/language/validation.rst:165
+msgid "Type"
+msgstr "Type"
+
+#: ../../devdocs-source-copy/language/validation.rst:167
+msgid ""
+"Entries must be of the same type as in the english language. If the entry is"
+" of type ``string``, your translation must be of type ``string``. If the "
+"english language is of type ``array`` (e.g. using plurals), your translation"
+" must be of type ``array`` aswell."
+msgstr ""
+"Poster skal være af samme type som i det engelske sprog. Hvis posten er af "
+"typen ``string``, skal din oversættelse være af typen ``string``. Hvis det "
+"engelske sprog er af typen ``array`` (f.eks. ved brug af flertalsformer), "
+"skal din oversættelse også være af typen ``array``."
+
+#: ../../devdocs-source-copy/language/validation.rst:171
+msgid ""
+"If the entry is an array, your translation must contain the same keys as the"
+" english array. Exceptions are plural forms."
+msgstr ""
+"Hvis posten er et array, skal din oversættelse indeholde de samme nøgler som"
+" det engelske array. Undtagelser er flertalsformer."
+
+#: ../../devdocs-source-copy/language/validation.rst:175
+msgid "String And Integer Replacements"
+msgstr "Erstatninger af strenge og heltal"
+
+#: ../../devdocs-source-copy/language/validation.rst:177
+msgid ""
+"If the english string contains replacements, such as ``%s``, ``%1$s``, "
+"``%d`` and ``%1$d``, your string should contain the same number of "
+"replacements. Exceptions are integer replacements in plural forms. This "
+"allows you to use::"
+msgstr ""
+"Hvis den engelske streng indeholder erstatninger, såsom ``%s``, ``%1$s``, "
+"``%d`` og ``%1$d``, bør din streng indeholde det samme antal erstatninger. "
+"Undtagelser er heltalserstatninger i flertalsformer. Dette giver dig "
+"mulighed for at bruge::"
+
+#: ../../devdocs-source-copy/language/validation.rst:183
+msgid "rather then::"
+msgstr "i stedet for::"
+
+#: ../../devdocs-source-copy/language/validation.rst:188
+msgid "HTML"
+msgstr "HTML"
+
+#: ../../devdocs-source-copy/language/validation.rst:190
+msgid ""
+"Strings should only contain HTML that is also included in the english "
+"strings."
+msgstr ""
+"Strenge bør kun indeholde HTML, der også er inkluderet i de engelske "
+"strenge."
+
+#: ../../devdocs-source-copy/language/validation.rst:192
+msgid ""
+"Additional ``<a href=\"\">``, ``<strong>``, ``<em>``, ``<u>`` and ``<br />``"
+" are allowed."
+msgstr ""
+"Yderligere ``<a href=\"\">``, ``<strong>``, ``<em>``, ``<u>`` og ``<br />`` "
+"er tilladt."
+
+#: ../../devdocs-source-copy/language/validation.rst:194
+msgid "``<b>`` should not be used, use ``<strong>`` instead."
+msgstr "``<b>`` bør ikke bruges, brug ``<strong>`` i stedet."
+
+#: ../../devdocs-source-copy/language/validation.rst:195
+msgid "``<i>`` should not be used, use ``<em>`` instead."
+msgstr "``<i>`` bør ikke bruges, brug ``<em>`` i stedet."
+
+#: ../../devdocs-source-copy/language/validation.rst:196
+msgid ""
+"Strings should only close HTML which it has opened itself and should close "
+"all HTML it has opened. Exceptions here are:"
+msgstr ""
+"Strenge bør kun lukke HTML, som de selv har åbnet, og bør lukke al HTML, de "
+"har åbnet. Undtagelser her er:"
+
+#: ../../devdocs-source-copy/language/validation.rst:199
+msgid "``language/{iso}/install.php``"
+msgstr "``language/{iso}/install.php``"
+
+#: ../../devdocs-source-copy/language/validation.rst:200
+msgid "``INSTALL_INTRO_BODY``"
+msgstr "``INSTALL_INTRO_BODY``"
+
+#: ../../devdocs-source-copy/language/validation.rst:201
+msgid "``SUPPORT_BODY``"
+msgstr "``SUPPORT_BODY``"
+
+#: ../../devdocs-source-copy/language/validation.rst:202
+msgid "``UPDATE_INSTALLATION_EXPLAIN``"
+msgstr "``UPDATE_INSTALLATION_EXPLAIN``"
+
+#: ../../devdocs-source-copy/language/validation.rst:203
+msgid "``language/{iso}/ucp.php``"
+msgstr "``language/{iso}/ucp.php``"
+
+#: ../../devdocs-source-copy/language/validation.rst:204
+msgid "``TERMS_OF_USE_CONTENT``"
+msgstr "``TERMS_OF_USE_CONTENT``"
+
+#: ../../devdocs-source-copy/language/validation.rst:205
+msgid "``PRIVACY_POLICY``"
+msgstr "``PRIVACY_POLICY``"
+
+#: ../../devdocs-source-copy/language/validation.rst:207
+msgid ""
+"which are always inside of a ``<p>`` tag and are allowed to close it, if "
+"they reopen it later on."
+msgstr ""
+"som altid er inde i en ``<p>``-tag og har lov til at lukke den, hvis de "
+"genåbner den senere."
+
+#: ../../devdocs-source-copy/language/validation.rst:211
+msgid "Arrays"
+msgstr "Arrays"
+
+#: ../../devdocs-source-copy/language/validation.rst:213
+msgid ""
+"Arrays must have the same structure and elements as the english version. "
+"Exceptions are plural forms, which may have more or less keys, depending on "
+"the plural rule."
+msgstr ""
+"Arrays skal have samme struktur og elementer som den engelske version. "
+"Undtagelser er flertalsformer, som kan have flere eller færre nøgler, "
+"afhængigt af flertalsreglen."
+
+#: ../../devdocs-source-copy/language/validation.rst:218
+msgid "Copyright & License"
+msgstr "Ophavsret og licens"
+
+#: ../../devdocs-source-copy/language/validation.rst:221
+msgid "Copyright"
+msgstr "Ophavsret"
+
+#: ../../devdocs-source-copy/language/validation.rst:223
+msgid ""
+"The translation is mostly your work and you have a right to hold a copyright"
+" and names to it. Therefor a maximum of 3 links can be included as an author"
+" credit in the footer, customisable via the ``TRANSLATION_INFO`` key in "
+"``common.php``."
+msgstr ""
+"Oversættelsen er hovedsageligt dit eget arbejde, og du har ret til at have "
+"ophavsret og navne til den. Derfor kan der medtages maksimalt 3 links som "
+"forfatterkredit i sidefoden, som kan tilpasses via nøglen "
+"``TRANSLATION_INFO`` i ``common.php``."
+
+#: ../../devdocs-source-copy/language/validation.rst:230
+msgid ""
+"The Translations Manager has complete discretion on what is acceptable as an"
+" author credit link."
+msgstr ""
+"Translations Manager har fuld skønsbeføjelse over, hvad der er acceptabelt "
+"som forfatterkreditlink."
+
+#: ../../devdocs-source-copy/language/validation.rst:234
+msgid "License"
+msgstr "Licens"
+
+#: ../../devdocs-source-copy/language/validation.rst:236
+msgid ""
+"All translations must be released under `GNU General Public License 2.0 "
+"<http://www.opensource.org/licenses/gpl-2.0.php>`_"
+msgstr ""
+"Alle oversættelser skal udgives under `GNU General Public License 2.0 "
+"<http://www.opensource.org/licenses/gpl-2.0.php>`_"

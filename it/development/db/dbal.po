@@ -1,0 +1,733 @@
+# Italian translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/db/dbal.rst:3
+msgid "Database Abstraction Layer"
+msgstr "Livello di astrazione del database"
+
+#: ../../devdocs-source-copy/db/dbal.rst:5
+msgid ""
+"phpBB uses a **D**\\ ata\\ **B**\\ ase **A**\\ bstraction **L**\\ ayer to "
+"access the database instead of directly calling e.g. `mysql_query "
+"<http://php.net/manual/en/function.mysql-query.php>`_ functions. You usually"
+" access the :abbr:`DBAL (Database Abstraction Layer)` using the global "
+"variable ``$db``. This variable is included from :class:`common.php` through"
+" :class:`includes/compatibility_globals.php`:"
+msgstr ""
+"phpBB usa un **D**\\ ata\\ **B**\\ ase **A**\\ bstraction **L**\\ ayer per "
+"accedere al database invece di chiamare direttamente, ad es., le funzioni "
+"`mysql_query <http://php.net/manual/en/function.mysql-query.php>`_. "
+"Solitamente si accede al :abbr:`DBAL (Database Abstraction Layer)` usando la"
+" variabile globale ``$db``. Questa variabile viene inclusa da "
+":class:`common.php` tramite :class:`includes/compatibility_globals.php`:"
+
+#: ../../devdocs-source-copy/db/dbal.rst:14
+msgid ""
+"Some database functions are within the base driver and others are within "
+"specific database drivers. Each function below will indicate whether it is "
+"defined in the base driver or in each specific driver. The *MySQLi* specific"
+" database driver will be used in the examples throughout this page. |br| All"
+" drivers are located in the :class:`\\\\phpbb\\\\db\\\\driver` namespace. "
+"|br| Base driver is located at "
+":class:`\\\\phpbb\\\\db\\\\driver\\\\driver.php` |br| Specific driver is "
+"located at :class:`\\\\phpbb\\\\db\\\\driver\\\\mysqli.php`"
+msgstr ""
+"Alcune funzioni del database si trovano nel driver di base e altre nei "
+"driver specifici del database. Ogni funzione riportata di seguito indicherà "
+"se è definita nel driver di base o in ogni driver specifico. Il driver di "
+"database specifico *MySQLi* verrà usato negli esempi in tutta questa pagina."
+" |br| Tutti i driver si trovano nel namespace "
+":class:`\\\\phpbb\\\\db\\\\driver`. |br| Il driver di base si trova in "
+":class:`\\\\phpbb\\\\db\\\\driver\\\\driver.php` |br| Il driver specifico si"
+" trova in :class:`\\\\phpbb\\\\db\\\\driver\\\\mysqli.php`"
+
+#: ../../devdocs-source-copy/db/dbal.rst:22
+msgid "Connecting and disconnecting"
+msgstr "Connessione e disconnessione"
+
+#: ../../devdocs-source-copy/db/dbal.rst:23
+msgid ""
+"Use these methods only if you cannot include :class:`common.php` (to "
+"connect) or run ``garbage_collection()`` (to disconnect; you may also use "
+"other functions that run this function, for example ``page_footer()``)."
+msgstr ""
+"Usa questi metodi solo se non puoi includere :class:`common.php` (per "
+"connetterti) o eseguire ``garbage_collection()`` (per disconnetterti; puoi "
+"anche usare altre funzioni che eseguono questa funzione, ad esempio "
+"``page_footer()``)."
+
+#: ../../devdocs-source-copy/db/dbal.rst:26
+msgid "sql_connect"
+msgstr "sql_connect"
+
+#: ../../devdocs-source-copy/db/dbal.rst:27
+msgid "Connects to the database. Defined in the specific drivers."
+msgstr "Si connette al database. Definito nei driver specifici."
+
+#: ../../devdocs-source-copy/db/dbal.rst:29
+#: ../../devdocs-source-copy/db/dbal.rst:85
+#: ../../devdocs-source-copy/db/dbal.rst:131
+#: ../../devdocs-source-copy/db/dbal.rst:171
+#: ../../devdocs-source-copy/db/dbal.rst:198
+#: ../../devdocs-source-copy/db/dbal.rst:239
+#: ../../devdocs-source-copy/db/dbal.rst:255
+#: ../../devdocs-source-copy/db/dbal.rst:284
+#: ../../devdocs-source-copy/db/dbal.rst:311
+#: ../../devdocs-source-copy/db/dbal.rst:338
+#: ../../devdocs-source-copy/db/dbal.rst:376
+#: ../../devdocs-source-copy/db/dbal.rst:397
+#: ../../devdocs-source-copy/db/dbal.rst:413
+#: ../../devdocs-source-copy/db/dbal.rst:454
+#: ../../devdocs-source-copy/db/dbal.rst:506
+msgid "Example:"
+msgstr "Esempio:"
+
+#: ../../devdocs-source-copy/db/dbal.rst:38
+msgid "Example using :class:`config.php`:"
+msgstr "Esempio usando :class:`config.php`:"
+
+#: ../../devdocs-source-copy/db/dbal.rst:53
+#: ../../devdocs-source-copy/db/dbal.rst:119
+#: ../../devdocs-source-copy/db/dbal.rst:159
+#: ../../devdocs-source-copy/db/dbal.rst:183
+#: ../../devdocs-source-copy/db/dbal.rst:208
+#: ../../devdocs-source-copy/db/dbal.rst:224
+#: ../../devdocs-source-copy/db/dbal.rst:270
+#: ../../devdocs-source-copy/db/dbal.rst:299
+#: ../../devdocs-source-copy/db/dbal.rst:324
+#: ../../devdocs-source-copy/db/dbal.rst:360
+#: ../../devdocs-source-copy/db/dbal.rst:428
+#: ../../devdocs-source-copy/db/dbal.rst:443
+#: ../../devdocs-source-copy/db/dbal.rst:481
+#: ../../devdocs-source-copy/db/dbal.rst:494
+#: ../../devdocs-source-copy/db/dbal.rst:524
+msgid "Parameters"
+msgstr "Parametri"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Parameter"
+msgstr "Parametro"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Usage"
+msgstr "Uso"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Host"
+msgstr "Host"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"The host of the database. |br| When using config.php you should use $dbhost "
+"instead."
+msgstr ""
+"L'host del database. |br| Quando usi config.php dovresti invece usare "
+"$dbhost."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Database User"
+msgstr "Utente del database"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"The database user to connect to the database. |br| When using config.php you"
+" should use $dbuser instead."
+msgstr ""
+"L'utente del database per connettersi al database. |br| Quando usi "
+"config.php dovresti invece usare $dbuser."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Database Password"
+msgstr "Password del database"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"The password for the user to connect to the database. |br| When using "
+"config.php you should use $dbpasswd instead."
+msgstr ""
+"La password dell'utente per connettersi al database. |br| Quando usi "
+"config.php dovresti invece usare $dbpasswd."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Database Name"
+msgstr "Nome del database"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"The database where the phpBB tables are located. |br| When using config.php "
+"you should use $dbname instead."
+msgstr ""
+"Il database in cui si trovano le tabelle phpBB. |br| Quando usi config.php "
+"dovresti invece usare $dbname."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Database Port (optional)"
+msgstr "Porta del database (opzionale)"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"The port to the database server. |br| Leave empty/false to use the default "
+"port. |br| When using config.php you should use $dbport instead."
+msgstr ""
+"La porta del server di database. |br| Lascia vuoto/false per usare la porta "
+"predefinita. |br| Quando usi config.php dovresti invece usare $dbport."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Persistence (optional)"
+msgstr "Persistenza (opzionale)"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Database connection persistence, defaults to false."
+msgstr "Persistenza della connessione al database, predefinita su false."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "New Link (optional)"
+msgstr "Nuovo collegamento (opzionale)"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"Use a new connection to the database for this instance of the DBAL. |br| "
+"Defaults to false."
+msgstr ""
+"Usa una nuova connessione al database per questa istanza del DBAL. |br| "
+"Predefinito su false."
+
+#: ../../devdocs-source-copy/db/dbal.rst:68
+msgid "sql_close"
+msgstr "sql_close"
+
+#: ../../devdocs-source-copy/db/dbal.rst:69
+msgid ""
+"Disconnects from the DB. Defined in the base driver (``_sql_close`` is "
+"defined in the specific drivers)."
+msgstr ""
+"Si disconnette dal database. Definito nel driver di base (``_sql_close`` è "
+"definito nei driver specifici)."
+
+#: ../../devdocs-source-copy/db/dbal.rst:71
+msgid "Example: ``$db->sql_close();``"
+msgstr "Esempio: ``$db->sql_close();``"
+
+#: ../../devdocs-source-copy/db/dbal.rst:74
+msgid "Preparing SQL queries"
+msgstr "Preparazione delle query SQL"
+
+#: ../../devdocs-source-copy/db/dbal.rst:77
+msgid "sql_build_query"
+msgstr "sql_build_query"
+
+#: ../../devdocs-source-copy/db/dbal.rst:78
+msgid ""
+"Builds a full SQL statement from an array. This function should be used if "
+"you need to JOIN on more than one table to ensure the resulting statement "
+"works on all supported databases. Defined in the base driver."
+msgstr ""
+"Costruisce una dichiarazione SQL completa da un array. Questa funzione "
+"dovrebbe essere usata se hai bisogno di eseguire JOIN su più di una tabella,"
+" per garantire che l'istruzione risultante funzioni su tutti i database "
+"supportati. Definita nel driver di base."
+
+#: ../../devdocs-source-copy/db/dbal.rst:81
+msgid ""
+"Possible types of queries: SELECT, SELECT_DISTINCT. |br| Required keys are "
+"SELECT and FROM. |br| Optional keys are LEFT_JOIN, WHERE, GROUP_BY and "
+"ORDER_BY."
+msgstr ""
+"Tipi di query possibili: SELECT, SELECT_DISTINCT. |br| Le chiavi "
+"obbligatorie sono SELECT e FROM. |br| Le chiavi opzionali sono LEFT_JOIN, "
+"WHERE, GROUP_BY e ORDER_BY."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Query Type"
+msgstr "Tipo di query"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Type of query which needs to be created (SELECT, SELECT_DISTINCT)"
+msgstr "Tipo di query da creare (SELECT, SELECT_DISTINCT)"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Associative array"
+msgstr "Array associativo"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"An associative array with the items to add to the query. |br| SELECT and "
+"FROM are required. |br| LEFT_JOIN, WHERE, GROUP_BY and ORDER_BY are "
+"optional."
+msgstr ""
+"Un array associativo con gli elementi da aggiungere alla query. |br| SELECT "
+"e FROM sono obbligatori. |br| LEFT_JOIN, WHERE, GROUP_BY e ORDER_BY sono "
+"opzionali."
+
+#: ../../devdocs-source-copy/db/dbal.rst:128
+msgid "sql_build_array"
+msgstr "sql_build_array"
+
+#: ../../devdocs-source-copy/db/dbal.rst:129
+msgid ""
+"Builds part of a SQL statement from an array. Possible types of queries: "
+"INSERT, INSERT_SELECT, UPDATE, SELECT. Defined in the base driver."
+msgstr ""
+"Costruisce parte di una dichiarazione SQL da un array. Tipi di query "
+"possibili: INSERT, INSERT_SELECT, UPDATE, SELECT. Definita nel driver di "
+"base."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"Type of query which needs to be created (UPDATE, INSERT, INSERT_SELECT or "
+"SELECT)"
+msgstr "Tipo di query da creare (UPDATE, INSERT, INSERT_SELECT o SELECT)"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Associative array (optional)"
+msgstr "Array associativo (opzionale)"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"An associative array with the items to add to the query. |br| The key of the"
+" array is the field name, the value of the array is the value for that "
+"field. |br| If left empty, ''false'' will be returned."
+msgstr ""
+"Un array associativo con gli elementi da aggiungere alla query. |br| La "
+"chiave dell'array è il nome del campo, il valore dell'array è il valore di "
+"quel campo. |br| Se lasciato vuoto, verrà restituito ''false''."
+
+#: ../../devdocs-source-copy/db/dbal.rst:168
+msgid "sql_in_set"
+msgstr "sql_in_set"
+
+#: ../../devdocs-source-copy/db/dbal.rst:169
+msgid ""
+"Builds IN, NOT IN, = and <> sql comparison string.  Defined in the base "
+"driver."
+msgstr ""
+"Costruisce la stringa di confronto SQL IN, NOT IN, = e <>. Definita nel "
+"driver di base."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Column"
+msgstr "Colonna"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Name of the sql column that shall be compared"
+msgstr "Nome della colonna SQL da confrontare"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Array"
+msgstr "Array"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Array of values that are allowed (IN) or not allowed (NOT IN)"
+msgstr "Array di valori consentiti (IN) o non consentiti (NOT IN)"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Negate (Optional)"
+msgstr "Nega (opzionale)"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "true for NOT IN (), false for IN () (default)"
+msgstr "true per NOT IN (), false per IN () (predefinito)"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Allow empty set (Optional)"
+msgstr "Consenti insieme vuoto (opzionale)"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"If true, allow $array to be empty, this function will return 1=1 or 1=0 "
+"then. Default to false."
+msgstr ""
+"Se true, consente a $array di essere vuoto; in tal caso questa funzione "
+"restituirà 1=1 o 1=0. Predefinito su false."
+
+#: ../../devdocs-source-copy/db/dbal.rst:194
+msgid "sql_escape"
+msgstr "sql_escape"
+
+#: ../../devdocs-source-copy/db/dbal.rst:196
+msgid ""
+"Escapes a string in a SQL query. ``sql_escape`` is different for every DBAL "
+"driver and written specially for that driver, to be sure all characters that"
+" need escaping are escaped. Defined in the specific drivers."
+msgstr ""
+"Applica l'escape a una stringa in una query SQL. ``sql_escape`` è diverso "
+"per ogni driver DBAL e scritto appositamente per quel driver, per "
+"assicurarsi che tutti i caratteri che necessitano di escape lo ricevano. "
+"Definita nei driver specifici."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "String"
+msgstr "Stringa"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "The string that needs to be escaped."
+msgstr "La stringa a cui deve essere applicato l'escape."
+
+#: ../../devdocs-source-copy/db/dbal.rst:216
+msgid "sql_like_expression"
+msgstr "sql_like_expression"
+
+#: ../../devdocs-source-copy/db/dbal.rst:217
+msgid ""
+"Correctly adjust LIKE statements for special characters. This should be used"
+" to ensure the resulting statement works on all databases. Defined in the "
+"base driver (``_sql_like_expression`` is defined in the specific drivers)."
+msgstr ""
+"Adatta correttamente le istruzioni LIKE per i caratteri speciali. Dovrebbe "
+"essere usata per garantire che l'istruzione risultante funzioni su tutti i "
+"database. Definita nel driver di base (``_sql_like_expression`` è definita "
+"nei driver specifici)."
+
+#: ../../devdocs-source-copy/db/dbal.rst:221
+msgid ""
+"The ``sql_not_like_expression`` is identical to ``sql_like_expression`` "
+"apart from that it builds a NOT LIKE statement."
+msgstr ""
+"``sql_not_like_expression`` è identica a ``sql_like_expression``, tranne per"
+" il fatto che costruisce un'istruzione NOT LIKE."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Expression"
+msgstr "Espressione"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"The expression to use. Every wildcard is escaped, except $db->get_any_char()"
+" and $db->get_one_char()"
+msgstr ""
+"L'espressione da usare. Ogni carattere jolly viene sottoposto a escape, "
+"tranne $db->get_any_char() e $db->get_one_char()"
+
+#: ../../devdocs-source-copy/db/dbal.rst:232
+msgid "get_one_char"
+msgstr "get_one_char"
+
+#: ../../devdocs-source-copy/db/dbal.rst:233
+msgid ""
+"Wildcards for matching exactly one (``_``) character within LIKE "
+"expressions."
+msgstr ""
+"Carattere jolly per far corrispondere esattamente un (``_``) carattere "
+"all'interno delle espressioni LIKE."
+
+#: ../../devdocs-source-copy/db/dbal.rst:236
+msgid "get_any_char"
+msgstr "get_any_char"
+
+#: ../../devdocs-source-copy/db/dbal.rst:237
+msgid "Wildcards for matching any (``%``) character within LIKE expressions"
+msgstr ""
+"Carattere jolly per far corrispondere un qualsiasi (``%``) carattere "
+"all'interno delle espressioni LIKE"
+
+#: ../../devdocs-source-copy/db/dbal.rst:252
+msgid "sql_lower_text"
+msgstr "sql_lower_text"
+
+#: ../../devdocs-source-copy/db/dbal.rst:253
+msgid ""
+"For running LOWER on a database text column, so it returns lowered text "
+"strings. Defined in the base driver."
+msgstr ""
+"Per eseguire LOWER su una colonna di testo del database, in modo che "
+"restituisca stringhe di testo in minuscolo. Definita nel driver di base."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Column name"
+msgstr "Nome della colonna"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "The column name to LOWER the value for."
+msgstr "Il nome della colonna di cui rendere minuscolo il valore."
+
+#: ../../devdocs-source-copy/db/dbal.rst:278
+msgid "Running SQL queries"
+msgstr "Esecuzione delle query SQL"
+
+#: ../../devdocs-source-copy/db/dbal.rst:281
+msgid "sql_query"
+msgstr "sql_query"
+
+#: ../../devdocs-source-copy/db/dbal.rst:282
+msgid ""
+"For selecting basic data from the database, the function ``sql_query()`` is "
+"enough. If you want to use any variable in your query, you should use (if it"
+" isn't an integer) ``$db->sql_escape()`` to be sure the data is safe. "
+"Defined in the specific drivers."
+msgstr ""
+"Per selezionare dati di base dal database, la funzione ``sql_query()`` è "
+"sufficiente. Se vuoi usare una variabile qualsiasi nella tua query, dovresti"
+" usare (se non è un intero) ``$db->sql_escape()`` per assicurarti che i dati"
+" siano sicuri. Definita nei driver specifici."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Query"
+msgstr "Query"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Contains the SQL query which shall be executed"
+msgstr "Contiene la query SQL da eseguire"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Cache (Optional)"
+msgstr "Cache (opzionale)"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"Either 0 to avoid caching or the time in seconds which the result shall be "
+"kept in cache."
+msgstr ""
+"0 per evitare la cache, oppure il tempo in secondi per cui il risultato deve"
+" essere mantenuto in cache."
+
+#: ../../devdocs-source-copy/db/dbal.rst:308
+msgid "sql_query_limit"
+msgstr "sql_query_limit"
+
+#: ../../devdocs-source-copy/db/dbal.rst:309
+msgid ""
+"Gets/changes/deletes only selected number of rows. Defined in the base "
+"driver (``_sql_query_limit`` is defined in the specific drivers)."
+msgstr ""
+"Ottiene/modifica/elimina solo il numero selezionato di righe. Definita nel "
+"driver di base (``_sql_query_limit`` è definita nei driver specifici)."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Contains the SQL query which shall be executed."
+msgstr "Contiene la query SQL da eseguire."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Total"
+msgstr "Totale"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Number of rows which should be selected,"
+msgstr "Numero di righe da selezionare,"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Offset (Optional)"
+msgstr "Offset (opzionale)"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Number of rows should be skipped before starting selecting rows."
+msgstr "Numero di righe da saltare prima di iniziare a selezionare le righe."
+
+#: ../../devdocs-source-copy/db/dbal.rst:335
+msgid "sql_multi_insert"
+msgstr "sql_multi_insert"
+
+#: ../../devdocs-source-copy/db/dbal.rst:336
+msgid ""
+"Builds and runs more than one INSERT statement. Defined in the base driver."
+msgstr ""
+"Costruisce ed esegue più di un'istruzione INSERT. Definita nel driver di "
+"base."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Table name"
+msgstr "Nome della tabella"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Table name to run the statements on."
+msgstr "Nome della tabella su cui eseguire le istruzioni."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Data"
+msgstr "Dati"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Multi-dimensional array holding the statements data."
+msgstr "Array multidimensionale che contiene i dati delle istruzioni."
+
+#: ../../devdocs-source-copy/db/dbal.rst:369
+msgid "Methods useful after running INSERT and UPDATE queries"
+msgstr "Metodi utili dopo l'esecuzione di query INSERT e UPDATE"
+
+#: ../../devdocs-source-copy/db/dbal.rst:370
+msgid ""
+"All methods in this part of article are defined in the specific drivers."
+msgstr ""
+"Tutti i metodi in questa parte dell'articolo sono definiti nei driver "
+"specifici."
+
+#: ../../devdocs-source-copy/db/dbal.rst:373
+msgid "sql_affectedrows"
+msgstr "sql_affectedrows"
+
+#: ../../devdocs-source-copy/db/dbal.rst:374
+msgid ""
+"Get the number of affected rows by the last INSERT, UPDATE, REPLACE or "
+"DELETE query."
+msgstr ""
+"Ottiene il numero di righe interessate dall'ultima query INSERT, UPDATE, "
+"REPLACE o DELETE."
+
+#: ../../devdocs-source-copy/db/dbal.rst:387
+msgid ""
+"Be cautious when using ``sql_affectedrows()`` to determine the number of "
+"rows affected by your query, especially with **SELECT** queries. This "
+"function's behavior can differ depending on the used database driver and "
+"whether the query was cached."
+msgstr ""
+"Fai attenzione quando usi ``sql_affectedrows()`` per determinare il numero "
+"di righe interessate dalla tua query, specialmente con le query **SELECT**. "
+"Il comportamento di questa funzione può variare a seconda del driver di "
+"database usato e se la query è stata memorizzata nella cache."
+
+#: ../../devdocs-source-copy/db/dbal.rst:390
+msgid ""
+"Do not rely solely on ``sql_affectedrows()`` to confirm the number of "
+"impacted rows. Consider alternative approaches like checking the number of "
+"rows returned by `sql_fetchrow`_ or `sql_fetchrowset`_."
+msgstr ""
+"Non affidarti esclusivamente a ``sql_affectedrows()`` per confermare il "
+"numero di righe interessate. Considera approcci alternativi come controllare"
+" il numero di righe restituite da `sql_fetchrow`_ o `sql_fetchrowset`_."
+
+#: ../../devdocs-source-copy/db/dbal.rst:394
+msgid "sql_nextid"
+msgstr "sql_nextid"
+
+#: ../../devdocs-source-copy/db/dbal.rst:395
+msgid ""
+"Retrieves the ID generated for an AUTO_INCREMENT column by the previous "
+"INSERT query."
+msgstr ""
+"Recupera l'ID generato per una colonna AUTO_INCREMENT dalla precedente query"
+" INSERT."
+
+#: ../../devdocs-source-copy/db/dbal.rst:407
+msgid "Methods useful after running SELECT queries"
+msgstr "Metodi utili dopo l'esecuzione di query SELECT"
+
+#: ../../devdocs-source-copy/db/dbal.rst:410
+msgid "sql_fetchfield"
+msgstr "sql_fetchfield"
+
+#: ../../devdocs-source-copy/db/dbal.rst:411
+msgid "Fetches field. Defined in the base driver."
+msgstr "Recupera un campo. Definita nel driver di base."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Field"
+msgstr "Campo"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Name of the field that needs to be fetched."
+msgstr "Nome del campo da recuperare."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Row number (Optional)"
+msgstr "Numero di riga (opzionale)"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"If false, the current row is used, else it is pointing to the row (zero-"
+"based)."
+msgstr ""
+"Se false, viene usata la riga corrente, altrimenti punta alla riga (a "
+"partire da zero)."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Result (Optional)"
+msgstr "Risultato (opzionale)"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"The result that is being evaluated. |br| This result comes from a call to "
+"the sql_query method. |br| If left empty the last result will be called."
+msgstr ""
+"Il risultato in fase di valutazione. |br| Questo risultato proviene da una "
+"chiamata al metodo sql_query. |br| Se lasciato vuoto verrà chiamato l'ultimo"
+" risultato."
+
+#: ../../devdocs-source-copy/db/dbal.rst:438
+msgid "sql_fetchrowset"
+msgstr "sql_fetchrowset"
+
+#: ../../devdocs-source-copy/db/dbal.rst:439
+msgid ""
+"Returns an array with the result of using the ``sql_fetchrow`` method on "
+"every row. Defined in the base driver."
+msgstr ""
+"Restituisce un array con il risultato dell'uso del metodo ``sql_fetchrow`` "
+"su ogni riga. Definita nel driver di base."
+
+#: ../../devdocs-source-copy/db/dbal.rst:451
+msgid "sql_fetchrow"
+msgstr "sql_fetchrow"
+
+#: ../../devdocs-source-copy/db/dbal.rst:452
+msgid "Fetches current row. Defined in the specific drivers."
+msgstr "Recupera la riga corrente. Definita nei driver specifici."
+
+#: ../../devdocs-source-copy/db/dbal.rst:466
+msgid "Example with a while-loop:"
+msgstr "Esempio con un ciclo while:"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"The result that is being evaluated. |br| The result comes from a call to the"
+" sql_query method. |br| If left empty the last result will be called."
+msgstr ""
+"Il risultato in fase di valutazione. |br| Il risultato proviene da una "
+"chiamata al metodo sql_query. |br| Se lasciato vuoto verrà chiamato l'ultimo"
+" risultato."
+
+#: ../../devdocs-source-copy/db/dbal.rst:489
+msgid "sql_rowseek"
+msgstr "sql_rowseek"
+
+#: ../../devdocs-source-copy/db/dbal.rst:490
+msgid ""
+"Seeks to given row number. The row number is zero-based. Defined in the "
+"specific drivers."
+msgstr ""
+"Si sposta al numero di riga specificato. Il numero di riga parte da zero. "
+"Definita nei driver specifici."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Row number"
+msgstr "Numero di riga"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "The number of the row which needs to be found (zero-based)."
+msgstr "Il numero della riga da trovare (a partire da zero)."
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid "Result"
+msgstr "Risultato"
+
+#: ../../devdocs-source-copy/db/dbal.rst:1
+msgid ""
+"The result that is being evaluated. |br| This result comes from a call to "
+"sql_query method. |br| If left empty the last result will be called."
+msgstr ""
+"Il risultato in fase di valutazione. |br| Questo risultato proviene da una "
+"chiamata al metodo sql_query. |br| Se lasciato vuoto verrà chiamato l'ultimo"
+" risultato."
+
+#: ../../devdocs-source-copy/db/dbal.rst:503
+msgid "sql_freeresult"
+msgstr "sql_freeresult"
+
+#: ../../devdocs-source-copy/db/dbal.rst:504
+msgid "Clears result of SELECT query. Defined in the specific drivers."
+msgstr ""
+"Cancella il risultato della query SELECT. Definita nei driver specifici."

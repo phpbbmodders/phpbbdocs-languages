@@ -1,0 +1,569 @@
+# Italian translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:3
+msgid "Tutorial: Working With BBCodes"
+msgstr "Tutorial: lavorare con i BBCode"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:6
+msgid "Introduction"
+msgstr "Introduzione"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:8
+msgid ""
+"phpBB 3.2 introduced an all new BBCode engine powered by the "
+"s9e/TextFormatter library. This tutorial explains several ways extensions "
+"can tap into the new BBCode engine to manipulate and create more powerful "
+"BBCodes."
+msgstr ""
+"phpBB 3.2 ha introdotto un motore BBCode completamente nuovo, alimentato "
+"dalla libreria s9e/TextFormatter. Questo tutorial spiega diversi modi in cui"
+" le estensioni possono sfruttare il nuovo motore BBCode per manipolare e "
+"creare BBCode più potenti."
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:12
+msgid "This tutorial explains:"
+msgstr "Questo tutorial spiega:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:14
+msgid "`Toggle BBCodes On / Off`_"
+msgstr "`Attivare/disattivare i BBCode`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:15
+msgid "`Executing PHP Code With BBCodes`_"
+msgstr "`Eseguire codice PHP con i BBCode`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:16
+msgid "`Template Parameters`_"
+msgstr "`Parametri di modello`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:17
+msgid "`Registering Custom Variables`_"
+msgstr "`Registrazione di variabili personalizzate`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:18
+msgid "`Enable Text Formatter Plugins`_"
+msgstr "`Abilitazione dei plugin di Text Formatter`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:21
+msgid "Toggle BBCodes On / Off"
+msgstr "Attivare/disattivare i BBCode"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:23
+msgid ""
+"BBCodes and other tags can be toggled before or after parsing using any of "
+"the following events:"
+msgstr ""
+"I BBCode e altri tag possono essere attivati/disattivati prima o dopo il "
+"parsing usando uno qualsiasi dei seguenti events:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "Event"
+msgstr "Event"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "Description"
+msgstr "Descrizione"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "``core.text_formatter_s9e_parser_setup``"
+msgstr "``core.text_formatter_s9e_parser_setup``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "Triggers once, when the text Parser service is first created."
+msgstr ""
+"Si attiva una volta, quando il service text Parser viene creato per la prima"
+" volta."
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "``core.text_formatter_s9e_parse_before``"
+msgstr "``core.text_formatter_s9e_parse_before``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "Triggers every time text is parsed, before parsing begins."
+msgstr ""
+"Si attiva ogni volta che il testo viene parsato, prima dell'inizio del "
+"parsing."
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "``core.text_formatter_s9e_parse_after``"
+msgstr "``core.text_formatter_s9e_parse_after``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid ""
+"Triggers every time text is parsed, **after** parsing has completed. This "
+"can be used to restore values to their original state, for example."
+msgstr ""
+"Si attiva ogni volta che il testo viene parsato, **dopo** il completamento "
+"del parsing. Può essere usato, ad esempio, per ripristinare i valori al loro"
+" stato originale."
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:33
+msgid ""
+"Most common operations are available through the Parser service using the "
+"``phpbb\\textformatter\\parser_interface`` API. This includes the functions:"
+msgstr ""
+"Le operazioni più comuni sono disponibili tramite il service Parser usando "
+"l'API ``phpbb\\textformatter\\parser_interface``. Questo include le "
+"funzioni:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "Function"
+msgstr "Funzione"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "``disable_bbcode($name)``"
+msgstr "``disable_bbcode($name)``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "Disable a BBCode"
+msgstr "Disabilita un BBCode"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "``disable_bbcodes()``"
+msgstr "``disable_bbcodes()``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "Disable BBCodes in general"
+msgstr "Disabilita i BBCode in generale"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "``disable_censor()``"
+msgstr "``disable_censor()``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "Disable the censor"
+msgstr "Disabilita il censore"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "``disable_magic_url()``"
+msgstr "``disable_magic_url()``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "Disable magic URLs"
+msgstr "Disabilita gli URL magici"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "``disable_smilies()``"
+msgstr "``disable_smilies()``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "Disable smilies"
+msgstr "Disabilita gli smilies"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "``enable_bbcode($name)``"
+msgstr "``enable_bbcode($name)``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "Enable a specific BBCode"
+msgstr "Abilita uno specifico BBCode"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "``enable_bbcodes()``"
+msgstr "``enable_bbcodes()``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "Enable BBCodes in general"
+msgstr "Abilita i BBCode in generale"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "``enable_censor()``"
+msgstr "``enable_censor()``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "Enable the censor"
+msgstr "Abilita il censore"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "``enable_magic_url()``"
+msgstr "``enable_magic_url()``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "Enable magic URLs"
+msgstr "Abilita gli URL magici"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "``enable_smilies()``"
+msgstr "``enable_smilies()``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "Enable smilies"
+msgstr "Abilita gli smilies"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:51
+msgid ""
+"For more advanced functions, the instance of ``s9e\\TextFormatter\\Parser`` "
+"can be retrieved via ``get_parser()`` to access its API."
+msgstr ""
+"Per funzioni più avanzate, l'istanza di ``s9e\\TextFormatter\\Parser`` può "
+"essere recuperata tramite ``get_parser()`` per accedere alla sua API."
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:53
+msgid ""
+"The following sample code shows how BBCodes can be toggled and manipulated "
+"using a PHP event listener:"
+msgstr ""
+"Il seguente codice di esempio mostra come i BBCode possono essere "
+"attivati/disattivati e manipolati usando un PHP event listener:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:82
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:303
+msgid ""
+"`phpBB API Documentation "
+"<https://area51.phpbb.com/docs/code/3.3.x/phpbb/textformatter/parser_interface.html>`_"
+msgstr ""
+"`phpBB API Documentation "
+"<https://area51.phpbb.com/docs/code/3.3.x/phpbb/textformatter/parser_interface.html>`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:83
+msgid ""
+"`Runtime configuration - s9e\\\\TextFormatter "
+"<https://s9etextformatter.readthedocs.io/Getting_started/Runtime_configuration/>`_"
+msgstr ""
+"`Runtime configuration - s9e\\\\TextFormatter "
+"<https://s9etextformatter.readthedocs.io/Getting_started/Runtime_configuration/>`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:87
+msgid "Executing PHP Code With BBCodes"
+msgstr "Eseguire codice PHP con i BBCode"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:89
+msgid ""
+"Extensions can configure BBCodes to execute PHP functions. This makes it "
+"possible to create BBCodes that do a lot more than just generically format "
+"text."
+msgstr ""
+"Le estensioni possono configurare i BBCode per eseguire funzioni PHP. Questo"
+" rende possibile creare BBCode che fanno molto di più che formattare "
+"genericamente il testo."
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:92
+msgid ""
+"In the following simple example, we re-configure the ``QUOTE`` tag (which "
+"handles the ``[quote]`` BBCode) to run a PHP method to read and change its "
+"attributes during parsing based on who is being quoted in the BBCode."
+msgstr ""
+"Nel seguente semplice esempio, riconfiguriamo il tag ``QUOTE`` (che gestisce"
+" il BBCode ``[quote]``) per eseguire un metodo PHP che legge e cambia i suoi"
+" attributi durante il parsing in base a chi viene citato nel BBCode."
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:136
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:305
+msgid ""
+"`Attribute filters - s9e\\\\TextFormatter "
+"<https://s9etextformatter.readthedocs.io/Filters/Attribute_filters/>`_"
+msgstr ""
+"`Attribute filters - s9e\\\\TextFormatter "
+"<https://s9etextformatter.readthedocs.io/Filters/Attribute_filters/>`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:137
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:306
+msgid ""
+"`Tag filters - s9e\\\\TextFormatter "
+"<https://s9etextformatter.readthedocs.io/Filters/Tag_filters/>`_"
+msgstr ""
+"`Tag filters - s9e\\\\TextFormatter "
+"<https://s9etextformatter.readthedocs.io/Filters/Tag_filters/>`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:138
+msgid ""
+"`Callback signatures - s9e\\\\TextFormatter "
+"<https://s9etextformatter.readthedocs.io/Filters/Callback_signature/>`_"
+msgstr ""
+"`Callback signatures - s9e\\\\TextFormatter "
+"<https://s9etextformatter.readthedocs.io/Filters/Callback_signature/>`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:142
+msgid "Template Parameters"
+msgstr "Parametri di modello"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:144
+msgid ""
+"Some of phpBB's template variables can be used in BBCodes to produce dynamic"
+" output. For example, to create a BBCode that will only show its content to "
+"registered users."
+msgstr ""
+"Alcune delle variabili di modello di phpBB possono essere usate nei BBCode "
+"per produrre output dinamico. Ad esempio, per creare un BBCode che mostrerà "
+"il proprio contenuto solo agli utenti registrati."
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:147
+msgid "Default phpBB template parameters:"
+msgstr "Parametri di modello predefiniti di phpBB:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "Variable"
+msgstr "Variabile"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "``S_IS_BOT``"
+msgstr "``S_IS_BOT``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "Whether the current user is a bot."
+msgstr "Se l'utente corrente è un bot."
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "``S_REGISTERED_USER``"
+msgstr "``S_REGISTERED_USER``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "Whether the current user is registered."
+msgstr "Se l'utente corrente è registrato."
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "``S_USER_LOGGED_IN``"
+msgstr "``S_USER_LOGGED_IN``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "Whether the current user is logged in."
+msgstr "Se l'utente corrente è loggato."
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "``S_VIEWCENSORS``"
+msgstr "``S_VIEWCENSORS``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "Whether the current user's preferences are set to hide censored words."
+msgstr ""
+"Se le preferenze dell'utente corrente sono impostate per nascondere le "
+"parole censurate."
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "``S_VIEWFLASH``"
+msgstr "``S_VIEWFLASH``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid ""
+"Whether the current user's preferences are set to display Flash objects."
+msgstr ""
+"Se le preferenze dell'utente corrente sono impostate per visualizzare "
+"oggetti Flash."
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "``S_VIEWIMG``"
+msgstr "``S_VIEWIMG``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "Whether the current user's preferences are set to display images."
+msgstr ""
+"Se le preferenze dell'utente corrente sono impostate per visualizzare le "
+"immagini."
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "``S_VIEWSMILIES``"
+msgstr "``S_VIEWSMILIES``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "Whether the current user's preferences are set to display smilies."
+msgstr ""
+"Se le preferenze dell'utente corrente sono impostate per visualizzare gli "
+"smilies."
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "``STYLE_ID``"
+msgstr "``STYLE_ID``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "ID of the current style."
+msgstr "ID dello style corrente."
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "``T_SMILIES_PATH``"
+msgstr "``T_SMILIES_PATH``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "Path to the smilies directory."
+msgstr "Percorso della directory degli smilies."
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:163
+msgid ""
+"In the following example, we will use the Configurator to create a custom "
+"BBCode dynamically that only registered users can see the contents of:"
+msgstr ""
+"Nel seguente esempio, useremo il Configurator per creare dinamicamente un "
+"BBCode personalizzato di cui solo gli utenti registrati possono vedere il "
+"contenuto:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:207
+msgid ""
+"Notice in the code above, a test is used to check the value of the template "
+"variable ``S_USER_LOGGED_IN`` and the appropriate BBCode HTML output is "
+"generated."
+msgstr ""
+"Nota che nel codice sopra viene usato un test per controllare il valore "
+"della variabile di modello ``S_USER_LOGGED_IN``, e viene generato l'output "
+"HTML appropriato del BBCode."
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:210
+msgid "Template parameters can also be set using any of the following events:"
+msgstr ""
+"I parametri di modello possono anche essere impostati usando uno qualsiasi "
+"dei seguenti events:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "``core.text_formatter_s9e_renderer_setup``"
+msgstr "``core.text_formatter_s9e_renderer_setup``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "Triggers once, when the renderer service is created."
+msgstr "Si attiva una volta, quando viene creato il service renderer."
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "``core.text_formatter_s9e_render_before``"
+msgstr "``core.text_formatter_s9e_render_before``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "Triggers every time a text is rendered, before the HTML is produced."
+msgstr ""
+"Si attiva ogni volta che un testo viene renderizzato, prima che venga "
+"prodotto l'HTML."
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid "``core.text_formatter_s9e_render_after``"
+msgstr "``core.text_formatter_s9e_render_after``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:1
+msgid ""
+"Triggers every time a text is rendered, *after* the HTML is produced. It can"
+" be used to restore values to their original state."
+msgstr ""
+"Si attiva ogni volta che un testo viene renderizzato, *dopo* che l'HTML è "
+"stato prodotto. Può essere usato per ripristinare i valori al loro stato "
+"originale."
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:220
+msgid ""
+"In the following simple example, we set a template parameter to generate a "
+"random number in every text. The number changes every time a new text is "
+"rendered. Although this serves no practical application, it does illustrate "
+"how this can be used in conjunction with the events and techniques above to "
+"pragmatically create your own template parameters, in addition to the "
+"default one's already available in phpBB."
+msgstr ""
+"Nel seguente semplice esempio, impostiamo un parametro di modello per "
+"generare un numero casuale in ogni testo. Il numero cambia ogni volta che "
+"viene renderizzato un nuovo testo. Sebbene questo non serva ad alcuna "
+"applicazione pratica, illustra come questo possa essere usato insieme agli "
+"events e alle tecniche sopra per creare pragmaticamente i tuoi parametri di "
+"modello, oltre a quelli predefiniti già disponibili in phpBB."
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:245
+msgid ""
+"`Template parameters - s9e\\\\TextFormatter "
+"<https://s9etextformatter.readthedocs.io/Templating/Template_parameters/>`_"
+msgstr ""
+"`Template parameters - s9e\\\\TextFormatter "
+"<https://s9etextformatter.readthedocs.io/Templating/Template_parameters/>`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:246
+msgid ""
+"`Use template parameters - s9e\\\\TextFormatter "
+"<https://s9etextformatter.readthedocs.io/Plugins/BBCodes/Use_template_parameters/>`_"
+msgstr ""
+"`Use template parameters - s9e\\\\TextFormatter "
+"<https://s9etextformatter.readthedocs.io/Plugins/BBCodes/Use_template_parameters/>`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:250
+msgid "Registering Custom Variables"
+msgstr "Registrazione di variabili personalizzate"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:252
+msgid ""
+"It is possible to register custom variables to be used during parsing. For "
+"instance, phpBB uses ``max_font_size`` to limit the values used in the "
+"``[font]`` tag dynamically. Callbacks used during parsing must be static and"
+" serializable as the parser itself is cached in a serialized form. However, "
+"custom variables are set at parsing time and are not limited to scalar "
+"types. For instance, they can be used to access the current user object "
+"during parsing."
+msgstr ""
+"È possibile registrare variabili personalizzate da usare durante il parsing."
+" Ad esempio, phpBB usa ``max_font_size`` per limitare dinamicamente i valori"
+" usati nel tag ``[font]``. I callback usati durante il parsing devono essere"
+" statici e serializzabili, poiché il parser stesso viene memorizzato nella "
+"cache in forma serializzata. Le variabili personalizzate vengono tuttavia "
+"impostate al momento del parsing e non sono limitate a tipi scalari. Ad "
+"esempio, possono essere usate per accedere all'oggetto utente corrente "
+"durante il parsing."
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:258
+msgid ""
+"In the following example, we add an attribute filter to modify URLs used in "
+"``[url]`` BBCodes and links. In addition to the attribute's value (the URL) "
+"we request that the custom variable ``my.id`` be passed as the second "
+"parameter. It's a good idea to namespace the variable names to avoid "
+"collisions with other extensions or phpBB itself."
+msgstr ""
+"Nel seguente esempio, aggiungiamo un filtro di attributo per modificare gli "
+"URL usati nei BBCode ``[url]`` e nei link. Oltre al valore dell'attributo "
+"(l'URL), richiediamo che la variabile personalizzata ``my.id`` venga passata"
+" come secondo parametro. È una buona idea dare un namespace ai nomi delle "
+"variabili per evitare collisioni con altre estensioni o con phpBB stesso."
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:263
+msgid ""
+"The ``core.text_formatter_s9e_parser_setup`` event uses "
+"``$event['parser']->set_var()`` to set a value for ``my.id`` variable once "
+"per initialization. The ``core.text_formatter_s9e_parse_before`` event could"
+" be used to set the value before each parsing."
+msgstr ""
+"L'event ``core.text_formatter_s9e_parser_setup`` usa "
+"``$event['parser']->set_var()`` per impostare un valore per la variabile "
+"``my.id`` una volta per inizializzazione. L'event "
+"``core.text_formatter_s9e_parse_before`` potrebbe essere usato per impostare"
+" il valore prima di ogni parsing."
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:304
+msgid ""
+"`Callback signature - s9e\\\\TextFormatter "
+"<https://s9etextformatter.readthedocs.io/Filters/Callback_signature/>`_"
+msgstr ""
+"`Callback signature - s9e\\\\TextFormatter "
+"<https://s9etextformatter.readthedocs.io/Filters/Callback_signature/>`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:309
+msgid "Enable Text Formatter Plugins"
+msgstr "Abilitazione dei plugin di Text Formatter"
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:311
+msgid ""
+"The Text Formatter library has a collection of plugins that can be enabled "
+"through an extension, such as MediaEmbed, Pipe Tables, etc."
+msgstr ""
+"La libreria Text Formatter ha una raccolta di plugin che possono essere "
+"abilitati tramite un'estensione, come MediaEmbed, Pipe Tables, ecc."
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:314
+msgid ""
+"Plugins can be toggled via the ``configurator`` var available through the "
+"``core.text_formatter_s9e_configure_before`` and "
+"``core.text_formatter_s9e_configure_after`` events which respectively "
+"trigger before and after the default settings are configured."
+msgstr ""
+"I plugin possono essere attivati/disattivati tramite la variabile "
+"``configurator`` disponibile attraverso gli events "
+"``core.text_formatter_s9e_configure_before`` e "
+"``core.text_formatter_s9e_configure_after``, che si attivano rispettivamente"
+" prima e dopo che le impostazioni predefinite vengono configurate."
+
+#: ../../devdocs-source-copy/extensions/tutorial_bbcodes.rst:357
+msgid "`s9e\\\\TextFormatter  <https://s9etextformatter.readthedocs.io>`_"
+msgstr "`s9e\\\\TextFormatter  <https://s9etextformatter.readthedocs.io>`_"
