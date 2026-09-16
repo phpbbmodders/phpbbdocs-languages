@@ -1,0 +1,419 @@
+# French translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:32-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:3
+msgid "Tutorial: Modules"
+msgstr "Tutoriel : modules"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:6
+msgid "Introduction"
+msgstr "Introduction"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:8
+msgid ""
+"In phpBB you can create your own modules for the User, Moderator and "
+"Administration Control Panels. This modular approach has many advantages "
+"over creating settings pages from scratch:"
+msgstr ""
+"Dans phpBB, vous pouvez créer vos propres modules pour les panneaux de "
+"contrôle Utilisateur, Modérateur et Administration. Cette approche modulaire"
+" offre de nombreux avantages par rapport à la création de pages de "
+"paramètres à partir de zéro :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:12
+msgid "You can manage modules in the ACP."
+msgstr "Vous pouvez gérer les modules dans l'ACP."
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:13
+msgid "You don't have to directly handle authorisation."
+msgstr "Vous n'avez pas à gérer directement les autorisations."
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:14
+msgid "You get a navigation tree built-in to the system."
+msgstr "Vous disposez d'une arborescence de navigation intégrée au système."
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:15
+msgid ""
+"The module templates already contain features like pagination, breadcrumbs "
+"and confirmation messages."
+msgstr ""
+"Les modèles de module contiennent déjà des fonctionnalités telles que la "
+"pagination, le fil d'Ariane et les messages de confirmation."
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:18
+msgid "This tutorial explains:"
+msgstr "Ce tutoriel explique :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:20
+msgid "`Creating Control Panel Modules`_"
+msgstr "`Créer des modules de panneau de contrôle`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:21
+msgid "`Installing Control Panel Modules`_"
+msgstr "`Installer des modules de panneau de contrôle`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:24
+msgid ""
+"This tutorial describes how to create an ACP module. To create MCP or UCP "
+"modules, you usually only need to replace all occurrences of \"acp\" with "
+"\"mcp\" or \"ucp\"."
+msgstr ""
+"Ce tutoriel décrit comment créer un module ACP. Pour créer des modules MCP "
+"ou UCP, il suffit généralement de remplacer toutes les occurrences de « acp "
+"» par « mcp » ou « ucp »."
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:30
+msgid "Creating Control Panel Modules"
+msgstr "Créer des modules de panneau de contrôle"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:32
+msgid "A module requires three files:"
+msgstr "Un module nécessite trois fichiers :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:34
+msgid "`Module info`_"
+msgstr "`Informations du module`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:35
+msgid "`Module class`_"
+msgstr "`Classe du module`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:36
+msgid "`Module template`_"
+msgstr "`Modèle du module`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:39
+msgid "Module info"
+msgstr "Informations du module"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:41
+msgid ""
+"The module info class simply contains a method that returns an array of "
+"information describing the module. Information like the name of the module, "
+"available modes and required permissions."
+msgstr ""
+"La classe d'informations du module contient simplement une méthode renvoyant"
+" un tableau d'informations décrivant le module : nom du module, modes "
+"disponibles et permissions requises."
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:45
+msgid ""
+"This file must always end in ``*_info.php`` and should be stored in the "
+"``acp/`` folder of the extension. For this tutorial, we will use "
+"``ext/acme/demo/acp/main_info.php``:"
+msgstr ""
+"Ce fichier doit toujours se terminer par ``*_info.php`` et doit être stocké "
+"dans le dossier ``acp/`` de l'extension. Pour ce tutoriel, nous utiliserons "
+"``ext/acme/demo/acp/main_info.php`` :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:73
+msgid ""
+"The ``main_info`` class has only one method ``module()`` which returns an "
+"array with the following information:"
+msgstr ""
+"La classe ``main_info`` ne possède qu'une seule méthode, ``module()``, qui "
+"renvoie un tableau contenant les informations suivantes :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:1
+msgid "Key"
+msgstr "Clé"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:1
+msgid "Content"
+msgstr "Contenu"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:1
+msgid "``filename``"
+msgstr "``filename``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:1
+msgid ""
+"Fully name-spaced path to the `Module class`_, starting with a leading "
+"slash."
+msgstr ""
+"Chemin complet avec espace de noms vers la `classe du module`_, commençant "
+"par une barre oblique."
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:1
+msgid "``title``"
+msgstr "``title``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:1
+msgid ""
+"Language key for the module-title that is displayed in the ACP module "
+"management section."
+msgstr ""
+"Clé de langue pour le titre du module affiché dans la section de gestion des"
+" modules de l'ACP."
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:1
+msgid "``modes``"
+msgstr "``modes``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:1
+msgid ""
+"Contains an array of modes for the module. See the next table for more "
+"details."
+msgstr ""
+"Contient un tableau des modes du module. Voir le tableau suivant pour plus "
+"de détails."
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:86
+msgid ""
+"Note that we have defined one mode named ``settings`` with the following "
+"information:"
+msgstr ""
+"Notez que nous avons défini un mode nommé ``settings`` avec les informations"
+" suivantes :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:1
+msgid ""
+"Language key of the mode-title that is displayed in the ACP module "
+"management section."
+msgstr ""
+"Clé de langue du titre du mode affiché dans la section de gestion des "
+"modules de l'ACP."
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:1
+msgid "``auth``"
+msgstr "``auth``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:1
+msgid ""
+"An authorisation key used to control access to the mode. The extension "
+"vendor/name ``acme/demo`` is required to ensure the extension is enabled. "
+"Optionally we also specify that the user must have, in this case, the "
+"``a_board`` permission."
+msgstr ""
+"Une clé d'autorisation utilisée pour contrôler l'accès au mode. Le "
+"vendor/nom d'extension ``acme/demo`` est requis pour s'assurer que "
+"l'extension est activée. Nous précisons également, de façon facultative, que"
+" l'utilisateur doit posséder, dans ce cas, la permission ``a_board``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:1
+msgid "``cat``"
+msgstr "``cat``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:1
+msgid ""
+"References the parent category the mode belongs to. Should typically contain"
+" the language key of the parent category."
+msgstr ""
+"Référence la catégorie parente à laquelle appartient le mode. Doit "
+"généralement contenir la clé de langue de la catégorie parente."
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:101
+msgid "Module class"
+msgstr "Classe du module"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:103
+msgid ""
+"The module class contains the actual code for the module. This file will "
+"also be stored in the ``acp/`` folder of the extension. For this tutorial, "
+"we will use ``ext/acme/demo/acp/main_module.php``:"
+msgstr ""
+"La classe du module contient le code réel du module. Ce fichier sera lui "
+"aussi stocké dans le dossier ``acp/`` de l'extension. Pour ce tutoriel, nous"
+" utiliserons ``ext/acme/demo/acp/main_module.php`` :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:146
+msgid ""
+"The module itself must contain a ``main($id, $mode)`` method, which takes "
+"the ``id`` of the module in the database and the ``mode`` being called as "
+"arguments."
+msgstr ""
+"Le module lui-même doit contenir une méthode ``main($id, $mode)``, qui prend"
+" comme arguments l'``id`` du module dans la base de données et le ``mode`` "
+"appelé."
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:150
+msgid ""
+"In the code of the ``main`` method, we first set the name of the `Module "
+"template`_ file that is used to render the module, and the page title is "
+"assigned a language key."
+msgstr ""
+"Dans le code de la méthode ``main``, nous définissons d'abord le nom du "
+"fichier de `modèle du module`_ utilisé pour afficher le module, puis une clé"
+" de langue est attribuée au titre de la page."
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:156
+msgid ""
+"To strengthen the form against security vulnerabilities, we use a form key "
+"check to verify that the form being submitting is valid. This is done by "
+"calling ``add_form_key('acme_demo_settings')`` when displaying the form and "
+"then later checking the form key when it is being submitted:"
+msgstr ""
+"Afin de renforcer le formulaire contre les failles de sécurité, nous "
+"utilisons une vérification de clé de formulaire pour vérifier que le "
+"formulaire soumis est valide. Cela se fait en appelant "
+"``add_form_key('acme_demo_settings')`` lors de l'affichage du formulaire, "
+"puis en vérifiant plus tard la clé de formulaire lors de sa soumission :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:171
+msgid ""
+"The form key should be unique for every form. The key can be any string "
+"value, but extensions should include their vendor and extension names."
+msgstr ""
+"La clé de formulaire doit être unique pour chaque formulaire. Elle peut être"
+" n'importe quelle chaîne de caractères, mais les extensions devraient y "
+"inclure leur vendor et leur nom d'extension."
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:175
+msgid ""
+"If the form key passes, we set the configuration value to the submitted "
+"value and display a success message to the user:"
+msgstr ""
+"Si la clé de formulaire est valide, nous définissons la valeur de "
+"configuration sur la valeur soumise et affichons un message de succès à "
+"l'utilisateur :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:183
+msgid ""
+"At the end of the method we assign two template variables. The first "
+"contains the current value of the config value. The second contains the "
+"``u_action`` class property which holds the URL of the current form action."
+msgstr ""
+"À la fin de la méthode, nous assignons deux variables de modèle. La première"
+" contient la valeur actuelle de la valeur de configuration. La seconde "
+"contient la propriété de classe ``u_action``, qui contient l'URL de l'action"
+" du formulaire actuel."
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:189
+msgid "Module template"
+msgstr "Modèle du module"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:191
+msgid ""
+"Our ACP module now needs the template file we assigned to it in the `Module "
+"class`_. We will use ``ext/acme/demo/adm/style/acp_demo_body.html``."
+msgstr ""
+"Notre module ACP a désormais besoin du fichier de modèle que nous lui avons "
+"assigné dans la `classe du module`_. Nous utiliserons "
+"``ext/acme/demo/adm/style/acp_demo_body.html``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:196
+msgid ""
+"The ACP differs from the MCP and UCP in that it has its own style. The MCP "
+"and UCP use the main board style, i.e. prosilver. Therefore, ACP template "
+"files must be stored in ``./adm/style/`` while MCP and UCP template files "
+"are stored in ``./styles/prosilver/template/``."
+msgstr ""
+"L'ACP diffère du MCP et de l'UCP en ce qu'il possède son propre style. Le "
+"MCP et l'UCP utilisent le style principal du forum, c'est-à-dire prosilver. "
+"Par conséquent, les fichiers de modèles de l'ACP doivent être stockés dans "
+"``./adm/style/``, tandis que les fichiers de modèles du MCP et de l'UCP sont"
+" stockés dans ``./styles/prosilver/template/``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:226
+msgid ""
+"This template renders out a form with a single option for toggling the "
+"*acme_demo_goodbye* setting via two radio buttons, and two input buttons to "
+"submit or reset the form. Note that the ``{{ S_FORM_TOKEN }}`` template "
+"variable is required as part of the `form key`_ security check."
+msgstr ""
+"Ce modèle affiche un formulaire avec une seule option permettant de basculer"
+" le paramètre *acme_demo_goodbye* via deux boutons radio, ainsi que deux "
+"boutons pour soumettre ou réinitialiser le formulaire. Notez que la variable"
+" de modèle ``{{ S_FORM_TOKEN }}`` est requise dans le cadre de la "
+"vérification de sécurité de la `clé de formulaire`_."
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:232
+msgid "Module language keys"
+msgstr "Clés de langue du module"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:234
+msgid ""
+"Between our module class and template files, we have added some new language"
+" keys. We can add them to our language array in "
+"``acme/demo/language/en/demo.php``:"
+msgstr ""
+"Entre notre classe de module et nos fichiers de modèles, nous avons ajouté "
+"quelques nouvelles clés de langue. Nous pouvons les ajouter à notre tableau "
+"de langue dans ``acme/demo/language/en/demo.php`` :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:246
+msgid ""
+"Recall that we load our language file globally throughout phpBB via the "
+"``core.user_setup`` event in our event listener. Since we do not recommend "
+"doing this all the time, an alternative method to autoload a language file "
+"in the ACP is to prefix the file name with ``info_acp_*.php`` for module "
+"language keys or ``permissions_*.php`` for permission language keys."
+msgstr ""
+"Rappelons que nous chargeons notre fichier de langue globalement dans tout "
+"phpBB via l'événement ``core.user_setup`` de notre écouteur d'événement. "
+"Comme nous ne recommandons pas de faire cela systématiquement, une méthode "
+"alternative pour charger automatiquement un fichier de langue dans l'ACP "
+"consiste à préfixer le nom du fichier par ``info_acp_*.php`` pour les clés "
+"de langue de module, ou ``permissions_*.php`` pour les clés de langue de "
+"permission."
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:254
+msgid "Installing Control Panel Modules"
+msgstr "Installer des modules de panneau de contrôle"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:256
+msgid ""
+"The module is now complete, but it will not show up in the ACP yet. To "
+"install the module to the database when the extension is enabled, we need a "
+"Migration."
+msgstr ""
+"Le module est désormais complet, mais il ne s'affichera pas encore dans "
+"l'ACP. Pour installer le module dans la base de données lors de l'activation"
+" de l'extension, nous avons besoin d'une migration."
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:259
+msgid ""
+"Migration files must be stored in the ``migrations/`` folder of the "
+"extension. For the Acme Demo, we need a migration that will install the "
+"following data:"
+msgstr ""
+"Les fichiers de migration doivent être stockés dans le dossier "
+"``migrations/`` de l'extension. Pour Acme Demo, nous avons besoin d'une "
+"migration qui installera les données suivantes :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:262
+msgid ""
+"A configuration value named ``acme_demo_goodbye`` that can be set by the "
+"administrator."
+msgstr ""
+"Une valeur de configuration nommée ``acme_demo_goodbye`` pouvant être "
+"définie par l'administrateur."
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:263
+msgid "The ACP module data."
+msgstr "Les données du module ACP."
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:320
+msgid ""
+"To learn more about migrations, please have a look at the "
+":doc:`../migrations/index` documentation."
+msgstr ""
+"Pour en savoir plus sur les migrations, consultez la documentation "
+":doc:`../migrations/index`."
+
+#: ../../devdocs-source-copy/extensions/tutorial_modules.rst:323
+msgid ""
+"At this point we have completed the Acme Demo extension! There is more that "
+"extensions can do, however, than what we learned from the Acme Demo. "
+"Continue on to the next sections to learn how to do more with extensions."
+msgstr ""
+"À ce stade, nous avons terminé l'extension Acme Demo ! Les extensions "
+"peuvent cependant faire bien plus que ce que nous avons appris avec Acme "
+"Demo. Passez aux sections suivantes pour apprendre à en tirer davantage "
+"parti."

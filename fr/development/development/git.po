@@ -1,0 +1,1065 @@
+# French translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:32-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../devdocs-source-copy/development/git.rst:3
+#: ../../devdocs-source-copy/development/git.rst:149
+msgid "Git"
+msgstr "Git"
+
+#: ../../devdocs-source-copy/development/git.rst:5
+msgid ""
+"phpBB uses Git for its version control system. The phpBB Git repository is "
+"hosted on GitHub at `<https://github.com/phpbb/phpbb>`_."
+msgstr ""
+"phpBB utilise Git comme système de contrôle de version. Le dépôt Git de "
+"phpBB est hébergé sur GitHub à `<https://github.com/phpbb/phpbb>`_."
+
+#: ../../devdocs-source-copy/development/git.rst:8
+msgid "This documentation explains how to contribute to phpBB development:"
+msgstr ""
+"Cette documentation explique comment contribuer au développement de phpBB :"
+
+#: ../../devdocs-source-copy/development/git.rst:10
+msgid "`Basics`_"
+msgstr "`Notions de base`_"
+
+#: ../../devdocs-source-copy/development/git.rst:11
+msgid "`Branch Names`_"
+msgstr "`Noms de branche`_"
+
+#: ../../devdocs-source-copy/development/git.rst:12
+msgid "`Commit Messages`_"
+msgstr "`Messages de commit`_"
+
+#: ../../devdocs-source-copy/development/git.rst:13
+msgid "`Developers`_"
+msgstr "`Développeurs`_"
+
+#: ../../devdocs-source-copy/development/git.rst:14
+msgid "`Windows`_"
+msgstr "`Windows`_"
+
+#: ../../devdocs-source-copy/development/git.rst:15
+msgid "`Further reading`_"
+msgstr "`Pour aller plus loin`_"
+
+#: ../../devdocs-source-copy/development/git.rst:16
+msgid "`External links`_"
+msgstr "`Liens externes`_"
+
+#: ../../devdocs-source-copy/development/git.rst:19
+msgid "Basics"
+msgstr "Notions de base"
+
+#: ../../devdocs-source-copy/development/git.rst:22
+msgid "phpBB Repository"
+msgstr "Dépôt phpBB"
+
+#: ../../devdocs-source-copy/development/git.rst:25
+msgid "Forking and Cloning"
+msgstr "Fork et clonage"
+
+#: ../../devdocs-source-copy/development/git.rst:26
+msgid ""
+"To contribute to phpBB development, you should sign up for a `GitHub "
+"<https://github.com>`_ user account if you don't already have one."
+msgstr ""
+"Pour contribuer au développement de phpBB, vous devez créer un compte "
+"utilisateur `GitHub <https://github.com>`_ si vous n'en avez pas déjà un."
+
+#: ../../devdocs-source-copy/development/git.rst:29
+msgid ""
+"Begin by forking the `phpBB repository <https://github.com/phpbb/phpbb>`_ to"
+" your account, by clicking the \"Fork\" button at phpBB's repository."
+msgstr ""
+"Commencez par forker le `dépôt phpBB <https://github.com/phpbb/phpbb>`_ vers"
+" votre compte, en cliquant sur le bouton « Fork » sur le dépôt de phpBB."
+
+#: ../../devdocs-source-copy/development/git.rst:32
+msgid ""
+"Clone your fork of phpBB's repository to your computer: ``git clone "
+"git://github.com/<my_github_name>/phpbb.git``"
+msgstr ""
+"Clonez votre fork du dépôt de phpBB sur votre ordinateur : ``git clone "
+"git://github.com/<my_github_name>/phpbb.git``"
+
+#: ../../devdocs-source-copy/development/git.rst:35
+msgid ""
+"See `Set Up Git <https://help.github.com/articles/set-up-git>`_ for help on "
+"setting up Git."
+msgstr ""
+"Consultez `Set Up Git <https://help.github.com/articles/set-up-git>`_ pour "
+"obtenir de l'aide sur la configuration de Git."
+
+#: ../../devdocs-source-copy/development/git.rst:38
+msgid "Branches"
+msgstr "Branches"
+
+#: ../../devdocs-source-copy/development/git.rst:39
+msgid ""
+"`master <http://github.com/phpbb/phpbb/tree/master>`_ - The latest unstable "
+"development version with new features etc."
+msgstr ""
+"`master <http://github.com/phpbb/phpbb/tree/master>`_ - La dernière version "
+"de développement instable, avec les nouvelles fonctionnalités, etc."
+
+#: ../../devdocs-source-copy/development/git.rst:40
+msgid ""
+"`3.3.x <http://github.com/phpbb/phpbb/tree/3.3.x>`_ - Development branch of "
+"the 3.3 line. Bug fixes and minor feature changes are applied here."
+msgstr ""
+"`3.3.x <http://github.com/phpbb/phpbb/tree/3.3.x>`_ - Branche de "
+"développement de la ligne 3.3. Les corrections de bugs et les modifications "
+"mineures de fonctionnalités y sont appliquées."
+
+#: ../../devdocs-source-copy/development/git.rst:41
+msgid ""
+"`3.2.x <http://github.com/phpbb/phpbb/tree/3.2.x>`_ - Development branch of "
+"the 3.2 line. Bug fixes and minor feature changes are applied here."
+msgstr ""
+"`3.2.x <http://github.com/phpbb/phpbb/tree/3.2.x>`_ - Branche de "
+"développement de la ligne 3.2. Les corrections de bugs et les modifications "
+"mineures de fonctionnalités y sont appliquées."
+
+#: ../../devdocs-source-copy/development/git.rst:42
+msgid ""
+"`3.1.x <http://github.com/phpbb/phpbb/tree/3.1.x>`_ - Development branch of "
+"the stable 3.1 line. phpBB 3.1 has reached its End of Life and is therefore "
+"no longer maintained."
+msgstr ""
+"`3.1.x <http://github.com/phpbb/phpbb/tree/3.1.x>`_ - Branche de "
+"développement de la ligne stable 3.1. phpBB 3.1 a atteint sa fin de vie et "
+"n'est donc plus maintenu."
+
+#: ../../devdocs-source-copy/development/git.rst:43
+msgid ""
+"`3.0.x <http://github.com/phpbb/phpbb/tree/3.0.x>`_ - Development branch of "
+"the stable 3.0 line. phpBB 3.0 has reached its End of Life and is therefore "
+"no longer maintained."
+msgstr ""
+"`3.0.x <http://github.com/phpbb/phpbb/tree/3.0.x>`_ - Branche de "
+"développement de la ligne stable 3.0. phpBB 3.0 a atteint sa fin de vie et "
+"n'est donc plus maintenu."
+
+#: ../../devdocs-source-copy/development/git.rst:44
+msgid ""
+"`2.0.x <http://github.com/phpbb/phpbb/tree/2.0.x>`_ - Development branch of "
+"the deprecated 2.0 line."
+msgstr ""
+"`2.0.x <http://github.com/phpbb/phpbb/tree/2.0.x>`_ - Branche de "
+"développement de la ligne obsolète 2.0."
+
+#: ../../devdocs-source-copy/development/git.rst:47
+msgid "Tags"
+msgstr "Tags"
+
+#: ../../devdocs-source-copy/development/git.rst:48
+msgid ""
+"Tags are released versions. Stable ones get merged into the master branch."
+msgstr ""
+"Les tags sont des versions publiées. Les versions stables sont fusionnées "
+"dans la branche master."
+
+#: ../../devdocs-source-copy/development/git.rst:50
+msgid "release-3.Y.Z-aX - Alpha release X of the 3.Y.Z line."
+msgstr "release-3.Y.Z-aX - Version alpha X de la ligne 3.Y.Z."
+
+#: ../../devdocs-source-copy/development/git.rst:51
+msgid "release-3.Y.Z-bX - Beta release X of the 3.Y.Z line."
+msgstr "release-3.Y.Z-bX - Version bêta X de la ligne 3.Y.Z."
+
+#: ../../devdocs-source-copy/development/git.rst:52
+msgid "release-3.Y.Z-RCX - Release candidate X of the stable 3.Y.Z release."
+msgstr "release-3.Y.Z-RCX - Version candidate X de la version stable 3.Y.Z."
+
+#: ../../devdocs-source-copy/development/git.rst:53
+msgid "release-3.Y.Z - Stable 3.Y.Z release."
+msgstr "release-3.Y.Z - Version stable 3.Y.Z."
+
+#: ../../devdocs-source-copy/development/git.rst:54
+msgid "release-2.0.X - Deprecated stable 2.0.X release."
+msgstr "release-2.0.X - Version stable obsolète 2.0.X."
+
+#: ../../devdocs-source-copy/development/git.rst:56
+msgid ""
+"This means all bug-fix development should take place on the 3.2.x branch, "
+"and will be merged into higher branches, including master. All feature "
+"development should take place in master. Read more about the workflow in the"
+" next section."
+msgstr ""
+"Cela signifie que tout développement de correctifs doit avoir lieu sur la "
+"branche 3.2.x, et sera fusionné dans les branches supérieures, y compris "
+"master. Tout développement de fonctionnalités doit avoir lieu dans master. "
+"Pour en savoir plus sur le workflow, consultez la section suivante."
+
+#: ../../devdocs-source-copy/development/git.rst:61
+msgid "How to contribute?"
+msgstr "Comment contribuer ?"
+
+#: ../../devdocs-source-copy/development/git.rst:62
+msgid ""
+"When fixing a bug, please post in the `bug tracker "
+"<https://tracker.phpbb.com>`__. When adding a feature to 3.x post your patch"
+" for review in a new topic on the `[3.x] Discussion forum "
+"<https://area51.phpbb.com/phpBB/viewforum.php?f=81>`__ at Area51. Please "
+"either provide a link to your commit or branch on GitHub or attach a patch "
+"created with ``git format-patch``. For larger features or changes consider "
+"adding it as an idea to `phpBB Ideas "
+"<https://www.phpbb.com/community/ideas>`_ or posting an RFC on Area51 first."
+msgstr ""
+"Lorsque vous corrigez un bug, veuillez poster dans le `bug tracker "
+"<https://tracker.phpbb.com>`__. Lorsque vous ajoutez une fonctionnalité à "
+"3.x, postez votre patch pour révision dans un nouveau sujet du `forum de "
+"discussion [3.x] <https://area51.phpbb.com/phpBB/viewforum.php?f=81>`__ sur "
+"Area51. Veuillez fournir soit un lien vers votre commit ou votre branche sur"
+" GitHub, soit joindre un patch créé avec ``git format-patch``. Pour des "
+"fonctionnalités ou modifications plus importantes, envisagez de l'ajouter "
+"comme idée sur `phpBB Ideas <https://www.phpbb.com/community/ideas>`_ ou de "
+"poster d'abord une RFC sur Area51."
+
+#: ../../devdocs-source-copy/development/git.rst:70
+msgid "Branch Names"
+msgstr "Noms de branche"
+
+#: ../../devdocs-source-copy/development/git.rst:71
+msgid ""
+"Branch names must have a prefix ending with a slash. There are only 3 types "
+"of prefixes allowed:"
+msgstr ""
+"Les noms de branche doivent avoir un préfixe se terminant par une barre "
+"oblique. Seuls 3 types de préfixes sont autorisés :"
+
+#: ../../devdocs-source-copy/development/git.rst:73
+msgid "``feature/`` followed by a feature name for branches adding a feature."
+msgstr ""
+"``feature/`` suivi d'un nom de fonctionnalité pour les branches ajoutant une"
+" fonctionnalité."
+
+#: ../../devdocs-source-copy/development/git.rst:74
+msgid ""
+"``task/`` followed by a task name for branches which neither adding a "
+"feature nor fixing bugs."
+msgstr ""
+"``task/`` suivi d'un nom de tâche pour les branches qui n'ajoutent ni "
+"fonctionnalité ni correction de bug."
+
+#: ../../devdocs-source-copy/development/git.rst:75
+msgid "``ticket/`` followed by a ticket number for branches fixing bugs."
+msgstr ""
+"``ticket/`` suivi d'un numéro de ticket pour les branches corrigeant des "
+"bugs."
+
+#: ../../devdocs-source-copy/development/git.rst:77
+msgid "Branch naming examples:"
+msgstr "Exemples de nommage de branches :"
+
+#: ../../devdocs-source-copy/development/git.rst:79
+msgid "``feature/feature-name`` for features."
+msgstr "``feature/feature-name`` pour les fonctionnalités."
+
+#: ../../devdocs-source-copy/development/git.rst:80
+msgid "``task/task-name`` for tasks."
+msgstr "``task/task-name`` pour les tâches."
+
+#: ../../devdocs-source-copy/development/git.rst:81
+msgid "``ticket/12345`` for bugs fixes."
+msgstr "``ticket/12345`` pour les corrections de bugs."
+
+#: ../../devdocs-source-copy/development/git.rst:83
+msgid ""
+"When branches go into the main phpBB repository they are renamed to "
+"**<category>/<user>/<name-or-id>**"
+msgstr ""
+"Lorsque les branches sont intégrées au dépôt principal de phpBB, elles sont "
+"renommées en **<category>/<user>/<name-or-id>**"
+
+#: ../../devdocs-source-copy/development/git.rst:84
+msgid ""
+"or **user/<category>/<name-or-id>** to make clear from which developer's "
+"repository the branch was merged."
+msgstr ""
+"ou **user/<category>/<name-or-id>** pour indiquer clairement depuis le dépôt"
+" de quel développeur la branche a été fusionnée."
+
+#: ../../devdocs-source-copy/development/git.rst:87
+msgid "Commit Messages"
+msgstr "Messages de commit"
+
+#: ../../devdocs-source-copy/development/git.rst:88
+msgid ""
+"You should always `create a ticket <https://tracker.phpbb.com>`_ before "
+"starting work. It is important that every commit references a ticket. It "
+"does not matter what state that ticket is in. No line should contain more "
+"than 79 characters. The first line should be followed by a blank line. This "
+"means you should not break the first sentence of your message! The purpose "
+"of this is to maintain useful --oneline logs which only display the first "
+"line of every message. A good commit message then looks like this:"
+msgstr ""
+"Vous devez toujours `créer un ticket <https://tracker.phpbb.com>`_ avant de "
+"commencer à travailler. Il est important que chaque commit référence un "
+"ticket, quel que soit son état. Aucune ligne ne doit contenir plus de 79 "
+"caractères. La première ligne doit être suivie d'une ligne vide. Cela "
+"signifie que vous ne devez pas couper la première phrase de votre message ! "
+"Le but est de conserver des logs --oneline utiles, qui n'affichent que la "
+"première ligne de chaque message. Un bon message de commit ressemble alors à"
+" ceci :"
+
+#: ../../devdocs-source-copy/development/git.rst:108
+msgid "An example:"
+msgstr "Un exemple :"
+
+#: ../../devdocs-source-copy/development/git.rst:124
+msgid ""
+"The structure of a commit message which is verified by the commit-msg hook "
+"is as follows:"
+msgstr ""
+"La structure d'un message de commit, vérifiée par le hook commit-msg, est la"
+" suivante :"
+
+#: ../../devdocs-source-copy/development/git.rst:135
+msgid ""
+"The required components are the summary, branch, and list of tickets; the "
+"description is optional. Both the description and ticket list must be "
+"preceded by a **single** empty line. The description element is unrestricted"
+" length and may contain any number of empty lines to separate paragraphs; "
+"each ticket in the list must be on its own line. If the branch is a "
+"[ticket/] branch, the ticket list must contain a matching ticket, finally "
+"the ticket list may not contain any duplicates."
+msgstr ""
+"Les éléments obligatoires sont le résumé, la branche et la liste des tickets"
+" ; la description est facultative. La description et la liste des tickets "
+"doivent toutes deux être précédées d'une **seule** ligne vide. L'élément "
+"description n'a pas de longueur limitée et peut contenir n'importe quel "
+"nombre de lignes vides pour séparer les paragraphes ; chaque ticket de la "
+"liste doit figurer sur sa propre ligne. Si la branche est une branche "
+"[ticket/], la liste des tickets doit contenir un ticket correspondant ; "
+"enfin, la liste des tickets ne doit contenir aucun doublon."
+
+#: ../../devdocs-source-copy/development/git.rst:143
+msgid "Developers"
+msgstr "Développeurs"
+
+#: ../../devdocs-source-copy/development/git.rst:144
+msgid "Review `Forking and Cloning`_."
+msgstr "Consultez `Fork et clonage`_."
+
+#: ../../devdocs-source-copy/development/git.rst:147
+msgid "Configuration"
+msgstr "Configuration"
+
+#: ../../devdocs-source-copy/development/git.rst:150
+msgid "Add your Username to Git on your system:"
+msgstr "Ajoutez votre nom d'utilisateur à Git sur votre système :"
+
+#: ../../devdocs-source-copy/development/git.rst:156
+msgid "Add your E-mail address to Git on your system:"
+msgstr "Ajoutez votre adresse e-mail à Git sur votre système :"
+
+#: ../../devdocs-source-copy/development/git.rst:162
+msgid ""
+"Add the upstream remote (you can change 'upstream' to whatever you like):"
+msgstr ""
+"Ajoutez le dépôt distant upstream (vous pouvez remplacer 'upstream' par ce "
+"que vous voulez) :"
+
+#: ../../devdocs-source-copy/development/git.rst:169
+msgid ""
+"The *upstream* remote url **is** the phpBB GitHub repo. Your cloned fork of "
+"the phpBB GitHub repo will, by default, use the *origin* remote url."
+msgstr ""
+"L'URL du dépôt distant *upstream* **est** le dépôt GitHub de phpBB. Votre "
+"fork cloné du dépôt GitHub de phpBB utilisera, par défaut, l'URL du dépôt "
+"distant *origin*."
+
+#: ../../devdocs-source-copy/development/git.rst:173
+msgid "Composer"
+msgstr "Composer"
+
+#: ../../devdocs-source-copy/development/git.rst:174
+msgid ""
+"To be able to run an installation from the repo (and not from a pre-built "
+"package) you need to run the following shell commands to install phpBB's "
+"dependencies."
+msgstr ""
+"Pour pouvoir exécuter une installation depuis le dépôt (et non depuis un "
+"package pré-construit), vous devez exécuter les commandes shell suivantes "
+"afin d'installer les dépendances de phpBB."
+
+#: ../../devdocs-source-copy/development/git.rst:182
+msgid "Ignore any *abandoned package* warnings."
+msgstr "Ignorez tout avertissement *abandoned package*."
+
+#: ../../devdocs-source-copy/development/git.rst:186
+msgid ""
+"`Introduction - Composer <https://getcomposer.org/doc/00-intro.md>`_ for "
+"further information."
+msgstr ""
+"`Introduction - Composer <https://getcomposer.org/doc/00-intro.md>`_ pour "
+"plus d'informations."
+
+#: ../../devdocs-source-copy/development/git.rst:190
+msgid "Hooks"
+msgstr "Hooks"
+
+#: ../../devdocs-source-copy/development/git.rst:191
+msgid ""
+"The phpBB repository contains some client-side hooks that can aid "
+"development. They are located in the ``git-tools/hooks`` directory. These "
+"hooks do things like preparing and validating commit messages, checking for "
+"PHP syntax errors. There is a script to set them up (which symlinks them "
+"into ``.git/hooks``)."
+msgstr ""
+"Le dépôt phpBB contient des hooks côté client qui peuvent faciliter le "
+"développement. Ils se trouvent dans le répertoire ``git-tools/hooks``. Ces "
+"hooks effectuent des tâches telles que la préparation et la validation des "
+"messages de commit, ou la vérification des erreurs de syntaxe PHP. Un script"
+" permet de les installer (il crée des liens symboliques vers "
+"``.git/hooks``)."
+
+#: ../../devdocs-source-copy/development/git.rst:201
+msgid ""
+"In case you get an error, stating the hooks already exist. Simply remove all"
+" files from ``.git/hooks`` and re-run the install command."
+msgstr ""
+"Si vous obtenez une erreur indiquant que les hooks existent déjà, supprimez "
+"simplement tous les fichiers de ``.git/hooks`` et relancez la commande "
+"d'installation."
+
+#: ../../devdocs-source-copy/development/git.rst:204
+msgid ""
+"Once these hooks are installed, you simply need to run ``git commit`` to "
+"commit new changes. Depending on your environment, you will be prompted to "
+"add a commit message using `Vim <http://vimdoc.sourceforge.net/htmldoc/>`__ "
+"or `Emacs "
+"<https://www.gnu.org/software/emacs/manual/html_node/emacs/Help.html>`__. "
+"The hooks will take care of formatting your entire commit message in the "
+"required format (see `Commit Messages`_)."
+msgstr ""
+"Une fois ces hooks installés, il vous suffit d'exécuter ``git commit`` pour "
+"valider vos nouvelles modifications. Selon votre environnement, il vous sera"
+" demandé de saisir un message de commit avec `Vim "
+"<http://vimdoc.sourceforge.net/htmldoc/>`__ ou `Emacs "
+"<https://www.gnu.org/software/emacs/manual/html_node/emacs/Help.html>`__. "
+"Les hooks se chargeront de formater l'intégralité de votre message de commit"
+" dans le format requis (voir `Messages de commit`_)."
+
+#: ../../devdocs-source-copy/development/git.rst:212
+msgid "Creating local branches"
+msgstr "Créer des branches locales"
+
+#: ../../devdocs-source-copy/development/git.rst:213
+msgid ""
+"To work on phpBB you need to create local branches of whichever develop "
+"branch (e.g. *master*) you need. Issue the following command to perform this"
+" operation:"
+msgstr ""
+"Pour travailler sur phpBB, vous devez créer des branches locales à partir de"
+" la branche de développement dont vous avez besoin (par ex. *master*). "
+"Exécutez la commande suivante pour effectuer cette opération :"
+
+#: ../../devdocs-source-copy/development/git.rst:221
+msgid "Workflow"
+msgstr "Workflow"
+
+#: ../../devdocs-source-copy/development/git.rst:224
+msgid "Pulling in upstream changes"
+msgstr "Récupérer les modifications upstream"
+
+#: ../../devdocs-source-copy/development/git.rst:225
+msgid ""
+"You will need to merge in changes made to the upstream repository for them "
+"to appear in your fork, the steps to do this follow. We're assuming you are "
+"performing this on the **master** branch, but it could be a bug fix branch "
+"or a develop release branch, so ensure you are on the correct branch using "
+"``git branch`` and change with ``git checkout`` if required."
+msgstr ""
+"Vous devrez fusionner les modifications apportées au dépôt upstream pour "
+"qu'elles apparaissent dans votre fork ; les étapes pour cela suivent. Nous "
+"supposons que vous effectuez cette opération sur la branche **master**, mais"
+" il pourrait s'agir d'une branche de correction de bug ou d'une branche de "
+"développement ; assurez-vous donc d'être sur la bonne branche à l'aide de "
+"``git branch`` et changez de branche avec ``git checkout`` si nécessaire."
+
+#: ../../devdocs-source-copy/development/git.rst:230
+msgid "1. Pull the changes from the upstream **master** branch: ::"
+msgstr ""
+"1. Récupérez les modifications depuis la branche **master** upstream : ::"
+
+#: ../../devdocs-source-copy/development/git.rst:235
+msgid ""
+"2. Push the changes back to your fork (substitute master for the current "
+"branch): ::"
+msgstr ""
+"2. Poussez les modifications vers votre fork (remplacez master par la "
+"branche actuelle) : ::"
+
+#: ../../devdocs-source-copy/development/git.rst:240
+msgid ""
+"The following image visualises the phpBB branching model. It may help you to"
+" understand the different branches this section refers to later."
+msgstr ""
+"L'image suivante illustre le modèle de branches de phpBB. Elle peut vous "
+"aider à comprendre les différentes branches évoquées plus loin dans cette "
+"section."
+
+#: ../../devdocs-source-copy/development/git.rst:246
+msgid "Bug fixing"
+msgstr "Correction de bugs"
+
+#: ../../devdocs-source-copy/development/git.rst:247
+msgid ""
+"Ensure you are using the correct develop branch (e.g. *3.2.x*) first and not"
+" the *master* branch. In this example we are using 3.2.x."
+msgstr ""
+"Assurez-vous d'abord d'utiliser la bonne branche de développement (par ex. "
+"*3.2.x*) et non la branche *master*. Dans cet exemple, nous utilisons 3.2.x."
+
+#: ../../devdocs-source-copy/development/git.rst:262
+msgid "Starting a new feature"
+msgstr "Démarrer une nouvelle fonctionnalité"
+
+#: ../../devdocs-source-copy/development/git.rst:263
+msgid ""
+"Ensure you are using the correct develop branch (e.g. *master*) first.  In "
+"this example we are using master."
+msgstr ""
+"Assurez-vous d'abord d'utiliser la bonne branche de développement (par ex. "
+"*master*). Dans cet exemple, nous utilisons master."
+
+#: ../../devdocs-source-copy/development/git.rst:277
+msgid "Collaborating with other developers on a feature"
+msgstr "Collaborer avec d'autres développeurs sur une fonctionnalité"
+
+#: ../../devdocs-source-copy/development/git.rst:278
+msgid ""
+"You have pushed a new feature to GitHub and another developer has worked on "
+"it. This is how you can integrate their changes into your own feature "
+"branch."
+msgstr ""
+"Vous avez poussé une nouvelle fonctionnalité sur GitHub et un autre "
+"développeur y a travaillé. Voici comment intégrer ses modifications dans "
+"votre propre branche de fonctionnalité."
+
+#: ../../devdocs-source-copy/development/git.rst:291
+msgid "Merging a feature or bugfix branch"
+msgstr "Fusionner une branche de fonctionnalité ou de correction de bug"
+
+#: ../../devdocs-source-copy/development/git.rst:292
+msgid ""
+"Once a feature or bug-fix is complete it can be merged back into the master "
+"branch. To preserve history we never fast-forward such merges. In this "
+"example we will merge the bug-fix created earlier into 3.2.x. We then merge "
+"the changes into 3.3.x and then merge 3.3.x into master to keep these "
+"branches up to date."
+msgstr ""
+"Une fois qu'une fonctionnalité ou une correction de bug est terminée, elle "
+"peut être fusionnée dans la branche master. Pour préserver l'historique, "
+"nous ne faisons jamais de fast-forward pour ces fusions. Dans cet exemple, "
+"nous allons fusionner la correction de bug créée précédemment dans 3.2.x. "
+"Nous fusionnons ensuite les modifications dans 3.3.x, puis 3.3.x dans "
+"master, afin de maintenir ces branches à jour."
+
+#: ../../devdocs-source-copy/development/git.rst:307
+msgid ""
+"Additionally the merge.log config setting of Git is set to true, producing a"
+" summary of merged commits."
+msgstr ""
+"De plus, le paramètre de configuration merge.log de Git est défini sur true,"
+" ce qui produit un résumé des commits fusionnés."
+
+#: ../../devdocs-source-copy/development/git.rst:310
+msgid "Merging into phpBB repository"
+msgstr "Fusionner dans le dépôt phpBB"
+
+#: ../../devdocs-source-copy/development/git.rst:311
+msgid ""
+"This *only* applies to Development Team Members. The following steps should "
+"be taken when merging a topic branch into the phpBB repository."
+msgstr ""
+"Ceci ne s'applique *qu'aux* membres de l'équipe de développement. Les étapes"
+" suivantes doivent être suivies lors de la fusion d'une branche de sujet "
+"dans le dépôt phpBB."
+
+#: ../../devdocs-source-copy/development/git.rst:316
+msgid ""
+"Note that tests should be run prior to merging to the official repository. "
+"Tests are run for each push to a pull request by `Github Actions "
+"<https://github.com/phpbb/phpbb/actions>`_ but it is a good idea to run them"
+" yourself as well. For more information, read :doc:`../testing/index`."
+msgstr ""
+"Notez que les tests doivent être exécutés avant la fusion dans le dépôt "
+"officiel. Les tests sont exécutés pour chaque push sur une pull request par "
+"`Github Actions <https://github.com/phpbb/phpbb/actions>`_, mais il est "
+"recommandé de les exécuter vous-même également. Pour plus d'informations, "
+"consultez :doc:`../testing/index`."
+
+#: ../../devdocs-source-copy/development/git.rst:321
+msgid "Merging only to master"
+msgstr "Fusionner uniquement dans master"
+
+#: ../../devdocs-source-copy/development/git.rst:324
+msgid ""
+"The *upstream* remote below is pointing to the official phpBB repository, "
+"and *origin* points to your fork."
+msgstr ""
+"Le dépôt distant *upstream* ci-dessous pointe vers le dépôt officiel de "
+"phpBB, et *origin* pointe vers votre fork."
+
+#: ../../devdocs-source-copy/development/git.rst:338
+msgid "Merging to 3.3.x"
+msgstr "Fusionner dans 3.3.x"
+
+#: ../../devdocs-source-copy/development/git.rst:341
+#: ../../devdocs-source-copy/development/git.rst:390
+msgid "**ALL** merges to 3.3.x **must** also be merged to master!"
+msgstr ""
+"**TOUTES** les fusions vers 3.3.x **doivent** également être fusionnées vers"
+" master !"
+
+#: ../../devdocs-source-copy/development/git.rst:360
+msgid "Merging to 3.2.x"
+msgstr "Fusionner dans 3.2.x"
+
+#: ../../devdocs-source-copy/development/git.rst:363
+#: ../../devdocs-source-copy/development/git.rst:406
+msgid "**ALL** merges to 3.2.x **must** also be merged to 3.3.x and master!"
+msgstr ""
+"**TOUTES** les fusions vers 3.2.x **doivent** également être fusionnées vers"
+" 3.3.x et master !"
+
+#: ../../devdocs-source-copy/development/git.rst:387
+msgid "Merging to 3.3.x and master with different patches"
+msgstr "Fusionner dans 3.3.x et master avec des patchs différents"
+
+#: ../../devdocs-source-copy/development/git.rst:392
+msgid "Patch author creates fix-3.3"
+msgstr "L'auteur du patch crée fix-3.3"
+
+#: ../../devdocs-source-copy/development/git.rst:393
+#: ../../devdocs-source-copy/development/git.rst:411
+msgid "Patch author merges his fix-3.3 into a fix-master branch"
+msgstr "L'auteur du patch fusionne son fix-3.3 dans une branche fix-master"
+
+#: ../../devdocs-source-copy/development/git.rst:394
+#: ../../devdocs-source-copy/development/git.rst:412
+msgid "Patch author changes fix-master until it works as expected"
+msgstr ""
+"L'auteur du patch modifie fix-master jusqu'à ce qu'il fonctionne comme prévu"
+
+#: ../../devdocs-source-copy/development/git.rst:395
+msgid "Patch author sends 2 Pull Requests"
+msgstr "L'auteur du patch envoie 2 pull requests"
+
+#: ../../devdocs-source-copy/development/git.rst:396
+#: ../../devdocs-source-copy/development/git.rst:415
+msgid "Merger merges Authors fix-3.3 into his 3.3.x"
+msgstr "Le fusionneur fusionne le fix-3.3 de l'auteur dans son 3.3.x"
+
+#: ../../devdocs-source-copy/development/git.rst:397
+#: ../../devdocs-source-copy/development/git.rst:416
+msgid "Merger merges Authors fix-master into his master"
+msgstr "Le fusionneur fusionne le fix-master de l'auteur dans son master"
+
+#: ../../devdocs-source-copy/development/git.rst:398
+#: ../../devdocs-source-copy/development/git.rst:418
+msgid "Merger merges his 3.3.x into master (should work fast-forward)"
+msgstr ""
+"Le fusionneur fusionne son 3.3.x dans master (devrait fonctionner en fast-"
+"forward)"
+
+#: ../../devdocs-source-copy/development/git.rst:399
+#: ../../devdocs-source-copy/development/git.rst:419
+msgid "Merger verifies the results"
+msgstr "Le fusionneur vérifie les résultats"
+
+#: ../../devdocs-source-copy/development/git.rst:400
+msgid "Merger pushes 3.3.x and master to phpbb"
+msgstr "Le fusionneur pousse 3.3.x et master vers phpbb"
+
+#: ../../devdocs-source-copy/development/git.rst:403
+msgid "Merging to 3.2.x, 3.3.x and master with different patches"
+msgstr "Fusionner dans 3.2.x, 3.3.x et master avec des patchs différents"
+
+#: ../../devdocs-source-copy/development/git.rst:408
+msgid "Patch author creates fix-3.2"
+msgstr "L'auteur du patch crée fix-3.2"
+
+#: ../../devdocs-source-copy/development/git.rst:409
+msgid "Patch author merges his fix-3.2 into a fix-3.3 branch"
+msgstr "L'auteur du patch fusionne son fix-3.2 dans une branche fix-3.3"
+
+#: ../../devdocs-source-copy/development/git.rst:410
+msgid "Patch author changes fix-3.3 until it works as expected"
+msgstr ""
+"L'auteur du patch modifie fix-3.3 jusqu'à ce qu'il fonctionne comme prévu"
+
+#: ../../devdocs-source-copy/development/git.rst:413
+msgid "Patch author sends 3 Pull Requests"
+msgstr "L'auteur du patch envoie 3 pull requests"
+
+#: ../../devdocs-source-copy/development/git.rst:414
+msgid "Merger merges Authors fix-3.2 into his 3.2.x"
+msgstr "Le fusionneur fusionne le fix-3.2 de l'auteur dans son 3.2.x"
+
+#: ../../devdocs-source-copy/development/git.rst:417
+msgid "Merger merges his 3.2.x into 3.3.x (should work fast-forward)"
+msgstr ""
+"Le fusionneur fusionne son 3.2.x dans 3.3.x (devrait fonctionner en fast-"
+"forward)"
+
+#: ../../devdocs-source-copy/development/git.rst:420
+msgid "Merger pushes 3.2.x, 3.3.x and master to phpbb"
+msgstr "Le fusionneur pousse 3.2.x, 3.3.x et master vers phpbb"
+
+#: ../../devdocs-source-copy/development/git.rst:423
+msgid "Fixing merge conflicts"
+msgstr "Résoudre les conflits de fusion"
+
+#: ../../devdocs-source-copy/development/git.rst:424
+msgid ""
+"Merge conflicts **must** always be solved by using the `git rebase` "
+"functionality. **Do not** merge the base branch, e.g. `master`, in order to "
+"solve potential merge conflicts or in order to update your branch."
+msgstr ""
+"Les conflits de fusion **doivent** toujours être résolus à l'aide de la "
+"fonctionnalité `git rebase`. **Ne fusionnez pas** la branche de base, par "
+"ex. `master`, afin de résoudre d'éventuels conflits de fusion ou de mettre à"
+" jour votre branche."
+
+#: ../../devdocs-source-copy/development/git.rst:428
+msgid "To update your branch, you can often run a simple rebase:"
+msgstr ""
+"Pour mettre à jour votre branche, vous pouvez souvent exécuter un simple "
+"rebase :"
+
+#: ../../devdocs-source-copy/development/git.rst:430
+msgid "Checkout your feature or bugfix branch"
+msgstr "Basculez sur votre branche de fonctionnalité ou de correction de bug"
+
+#: ../../devdocs-source-copy/development/git.rst:431
+msgid ""
+"Make sure there are no unstaged changes and that your branch has already "
+"been pushed to your remote (this can later allow you to undo your rebase "
+"changes)"
+msgstr ""
+"Assurez-vous qu'il n'y a pas de modifications non indexées et que votre "
+"branche a déjà été poussée vers votre dépôt distant (cela vous permettra "
+"plus tard d'annuler vos modifications de rebase)"
+
+#: ../../devdocs-source-copy/development/git.rst:432
+msgid "Run git rebase"
+msgstr "Exécutez git rebase"
+
+#: ../../devdocs-source-copy/development/git.rst:433
+msgid "Force push your branch to your remote"
+msgstr "Forcez le push de votre branche vers votre dépôt distant"
+
+#: ../../devdocs-source-copy/development/git.rst:435
+msgid "The commands for this are as follows:"
+msgstr "Les commandes pour cela sont les suivantes :"
+
+#: ../../devdocs-source-copy/development/git.rst:444
+msgid ""
+"In case you think something went wrong or there are too many merge "
+"conflicts, you can abort the rebase by running:"
+msgstr ""
+"Si vous pensez qu'un problème est survenu ou qu'il y a trop de conflits de "
+"fusion, vous pouvez abandonner le rebase en exécutant :"
+
+#: ../../devdocs-source-copy/development/git.rst:450
+msgid ""
+"More difficult rebases and when switching the base branch, it makes sense to"
+" use the three-way `--onto` for rebasing:"
+msgstr ""
+"Pour les rebases plus complexes et lors du changement de branche de base, il"
+" est pertinent d'utiliser le rebase à trois voies `--onto` :"
+
+#: ../../devdocs-source-copy/development/git.rst:456
+msgid "Where"
+msgstr "Où"
+
+#: ../../devdocs-source-copy/development/git.rst:458
+msgid ""
+"`new_base_branch` is the new base branch your bugfix branch should be based "
+"on"
+msgstr ""
+"`new_base_branch` est la nouvelle branche de base sur laquelle votre branche"
+" de correction de bug doit être basée"
+
+#: ../../devdocs-source-copy/development/git.rst:459
+msgid ""
+"`old_base_branch` is the old base branch your bugfix branch is based on "
+"before the rebase"
+msgstr ""
+"`old_base_branch` est l'ancienne branche de base sur laquelle votre branche "
+"de correction de bug était basée avant le rebase"
+
+#: ../../devdocs-source-copy/development/git.rst:460
+msgid "`ticket/12345` is the name of your bugfix or feature branch"
+msgstr ""
+"`ticket/12345` est le nom de votre branche de correction de bug ou de "
+"fonctionnalité"
+
+#: ../../devdocs-source-copy/development/git.rst:463
+msgid "Windows"
+msgstr "Windows"
+
+#: ../../devdocs-source-copy/development/git.rst:465
+msgid ""
+"**If you use git on Windows** you should disable the ``AutoCrlf`` which "
+"automatically translates ``\\n`` to ``\\r\\n``."
+msgstr ""
+"**Si vous utilisez git sur Windows**, vous devriez désactiver ``AutoCrlf``, "
+"qui traduit automatiquement ``\\n`` en ``\\r\\n``."
+
+#: ../../devdocs-source-copy/development/git.rst:468
+msgid ""
+"**If you don't use TortoiseGit:** To do that you must use the following "
+"command:"
+msgstr ""
+"**Si vous n'utilisez pas TortoiseGit :** Pour cela, vous devez utiliser la "
+"commande suivante :"
+
+#: ../../devdocs-source-copy/development/git.rst:474
+msgid ""
+"If you want to apply to all repositories you may use the ``--global`` "
+"option. Like this:"
+msgstr ""
+"Si vous souhaitez appliquer cela à tous les dépôts, vous pouvez utiliser "
+"l'option ``--global``. Comme ceci :"
+
+#: ../../devdocs-source-copy/development/git.rst:480
+msgid ""
+"The difference is that, if you don't use the global option, any new "
+"repository you create will not have this option properly set for phpBB "
+"development which may cause errors to occur while committing or when "
+"executing any php file."
+msgstr ""
+"La différence est que, si vous n'utilisez pas l'option globale, tout nouveau"
+" dépôt que vous créez n'aura pas cette option correctement définie pour le "
+"développement de phpBB, ce qui peut provoquer des erreurs lors de la "
+"validation ou de l'exécution de fichiers PHP."
+
+#: ../../devdocs-source-copy/development/git.rst:484
+msgid ""
+"**For those who use** `TortoiseGit <http://code.google.com/p/tortoisegit/>`_"
+" **(and used to work with TortoiseSVN):**"
+msgstr ""
+"**Pour ceux qui utilisent** `TortoiseGit "
+"<http://code.google.com/p/tortoisegit/>`_ **(et qui avaient l'habitude de "
+"travailler avec TortoiseSVN) :**"
+
+#: ../../devdocs-source-copy/development/git.rst:487
+msgid ""
+"When you use TortoiseGit the first time, you need to disable ``AutoCrlf`` in"
+" *Settings* > *Git* > *Config*, so your line-ends are not changed from LF to"
+" CR-LF. You also need to edit the local ``.git/config`` and add the "
+"following code, so you can correctly merge branches (*you need to do that on"
+" every git repository you have*):"
+msgstr ""
+"Lorsque vous utilisez TortoiseGit pour la première fois, vous devez "
+"désactiver ``AutoCrlf`` dans *Settings* > *Git* > *Config*, afin que vos "
+"fins de ligne ne soient pas changées de LF à CR-LF. Vous devez également "
+"modifier le fichier local ``.git/config`` et ajouter le code suivant, afin "
+"de pouvoir fusionner correctement les branches (*vous devez faire cela pour "
+"chaque dépôt git que vous possédez*) :"
+
+#: ../../devdocs-source-copy/development/git.rst:498
+msgid "Create your own SSH key"
+msgstr "Créez votre propre clé SSH"
+
+#: ../../devdocs-source-copy/development/git.rst:501
+msgid "http://help.github.com/win-set-up-git/"
+msgstr "http://help.github.com/win-set-up-git/"
+
+#: ../../devdocs-source-copy/development/git.rst:503
+msgid "TortoiseGit will automatically use the SSH key"
+msgstr "TortoiseGit utilisera automatiquement la clé SSH"
+
+#: ../../devdocs-source-copy/development/git.rst:507
+msgid ""
+"I used the OpenSSH option during installation, so I am not sure if this "
+"works for the other option or if you are supposed to do it some other way."
+msgstr ""
+"J'ai utilisé l'option OpenSSH lors de l'installation, donc je ne suis pas "
+"sûr que cela fonctionne avec l'autre option, ou si vous êtes censé procéder "
+"autrement."
+
+#: ../../devdocs-source-copy/development/git.rst:511
+msgid "Clone"
+msgstr "Cloner"
+
+#: ../../devdocs-source-copy/development/git.rst:513
+msgid ""
+"Then simply clone the repository to your local system and the rest is mostly"
+" like TortoiseSVN."
+msgstr ""
+"Clonez ensuite simplement le dépôt sur votre système local ; le reste "
+"fonctionne globalement comme avec TortoiseSVN."
+
+#: ../../devdocs-source-copy/development/git.rst:517
+msgid "Commands"
+msgstr "Commandes"
+
+#: ../../devdocs-source-copy/development/git.rst:1
+msgid "**Pull**"
+msgstr "**Pull**"
+
+#: ../../devdocs-source-copy/development/git.rst:1
+msgid "Grab the updates from upstream"
+msgstr "Récupère les mises à jour depuis upstream"
+
+#: ../../devdocs-source-copy/development/git.rst:1
+msgid "**Commit**"
+msgstr "**Commit**"
+
+#: ../../devdocs-source-copy/development/git.rst:1
+msgid ""
+"Commit the changes **locally** (you must Push or Sync to commit the changes "
+"to the repository)"
+msgstr ""
+"Valide les modifications **localement** (vous devez faire Push ou Sync pour "
+"valider les modifications dans le dépôt)"
+
+#: ../../devdocs-source-copy/development/git.rst:1
+msgid "**Push**"
+msgstr "**Push**"
+
+#: ../../devdocs-source-copy/development/git.rst:1
+msgid "Push the changes that were made locally to the online repository"
+msgstr "Pousse les modifications effectuées localement vers le dépôt en ligne"
+
+#: ../../devdocs-source-copy/development/git.rst:1
+msgid "**Sync**"
+msgstr "**Sync**"
+
+#: ../../devdocs-source-copy/development/git.rst:1
+msgid "Pushes/Pulls changes with more options"
+msgstr "Pousse/récupère les modifications avec plus d'options"
+
+#: ../../devdocs-source-copy/development/git.rst:529
+msgid ""
+"Always **Pull** first, then **Commit**, then **Push**; this will help you to"
+" not end up with merge conflicts."
+msgstr ""
+"Faites toujours **Pull** en premier, puis **Commit**, puis **Push** ; cela "
+"vous aidera à éviter les conflits de fusion."
+
+#: ../../devdocs-source-copy/development/git.rst:533
+msgid "Further reading"
+msgstr "Pour aller plus loin"
+
+#: ../../devdocs-source-copy/development/git.rst:535
+msgid "`Git Community Book (online) <http://book.git-scm.com/>`__"
+msgstr "`Git Community Book (en ligne) <http://book.git-scm.com/>`__"
+
+#: ../../devdocs-source-copy/development/git.rst:536
+msgid "`Pro Git Book (online) <http://progit.org/book/>`__"
+msgstr "`Pro Git Book (en ligne) <http://progit.org/book/>`__"
+
+#: ../../devdocs-source-copy/development/git.rst:537
+msgid "`GitCasts <http://gitcasts.com/>`__"
+msgstr "`GitCasts <http://gitcasts.com/>`__"
+
+#: ../../devdocs-source-copy/development/git.rst:538
+msgid ""
+"`Getting Git <http://www.techscreencast.com/tool/versioncontrol/railsconf-"
+"git-talk/810>`__"
+msgstr ""
+"`Getting Git <http://www.techscreencast.com/tool/versioncontrol/railsconf-"
+"git-talk/810>`__"
+
+#: ../../devdocs-source-copy/development/git.rst:539
+msgid ""
+"`RailsConf 2008 <http://en.oreilly.com/rails2008/public/content/home>`__ Git"
+" Talk by Scott Chacon"
+msgstr ""
+"`RailsConf 2008 <http://en.oreilly.com/rails2008/public/content/home>`__ Git"
+" Talk par Scott Chacon"
+
+#: ../../devdocs-source-copy/development/git.rst:540
+msgid "`Official Git Documentation <http://git-scm.com/documentation>`__"
+msgstr ""
+"`Documentation officielle de Git <http://git-scm.com/documentation>`__"
+
+#: ../../devdocs-source-copy/development/git.rst:541
+msgid ""
+"`Git Crash Course for SVN users <http://git-scm.com/course/svn.html>`__"
+msgstr ""
+"`Cours accéléré de Git pour utilisateurs SVN <http://git-"
+"scm.com/course/svn.html>`__"
+
+#: ../../devdocs-source-copy/development/git.rst:542
+msgid "`GitHub Guides <http://github.com/guides/home>`__"
+msgstr "`Guides GitHub <http://github.com/guides/home>`__"
+
+#: ../../devdocs-source-copy/development/git.rst:543
+msgid "`Learn.GitHub <http://learn.github.com/>`__"
+msgstr "`Learn.GitHub <http://learn.github.com/>`__"
+
+#: ../../devdocs-source-copy/development/git.rst:544
+msgid "`Git for the lazy <http://www.spheredev.org/wiki/Git_for_the_lazy>`__"
+msgstr ""
+"`Git pour les paresseux <http://www.spheredev.org/wiki/Git_for_the_lazy>`__"
+
+#: ../../devdocs-source-copy/development/git.rst:547
+msgid "External links"
+msgstr "Liens externes"
+
+#: ../../devdocs-source-copy/development/git.rst:549
+msgid "`Official Git homepage <https://git-scm.com/>`__"
+msgstr "`Site officiel de Git <https://git-scm.com/>`__"
+
+#: ../../devdocs-source-copy/development/git.rst:550
+msgid "`GitHub <https://github.com/>`__"
+msgstr "`GitHub <https://github.com/>`__"
+
+#: ../../devdocs-source-copy/development/git.rst:551
+msgid "`phpBB GitHub account <https://github.com/phpbb>`__"
+msgstr "`Compte GitHub de phpBB <https://github.com/phpbb>`__"
+
+#: ../../devdocs-source-copy/development/git.rst:552
+msgid ""
+"`phpBB Extensions GitHub account <https://github.com/phpbb-extensions>`__"
+msgstr ""
+"`Compte GitHub des extensions phpBB <https://github.com/phpbb-extensions>`__"
+
+#: ../../devdocs-source-copy/development/git.rst:553
+msgid ""
+"`TortoiseGit <https://tortoisegit.org/>`__ - A windows Git client based on "
+"TortoiseSVN"
+msgstr ""
+"`TortoiseGit <https://tortoisegit.org/>`__ - Un client Git Windows basé sur "
+"TortoiseSVN"
+
+#: ../../devdocs-source-copy/development/git.rst:554
+msgid ""
+"`TortoiseGit on github <https://github.com/TortoiseGit/TortoiseGit/>`__ - "
+"GitHub repository"
+msgstr ""
+"`TortoiseGit sur github <https://github.com/TortoiseGit/TortoiseGit/>`__ - "
+"Dépôt GitHub"
+
+#: ../../devdocs-source-copy/development/git.rst:555
+msgid ""
+"`Open Source Contribution Etiquette "
+"<http://tirania.org/blog/archive/2010/Dec-31.html>`__"
+msgstr ""
+"`Étiquette de contribution Open Source "
+"<http://tirania.org/blog/archive/2010/Dec-31.html>`__"

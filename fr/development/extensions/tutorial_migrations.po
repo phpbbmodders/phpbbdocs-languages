@@ -1,0 +1,288 @@
+# French translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:32-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:3
+msgid "Tutorial: Migrations"
+msgstr "Tutoriel : migrations"
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:6
+msgid "Introduction"
+msgstr "Introduction"
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:8
+msgid "This tutorial explains:"
+msgstr "Ce tutoriel explique :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:10
+msgid "Migrations: Database changes"
+msgstr "Migrations : modifications de la base de données"
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:13
+msgid "Migrations"
+msgstr "Migrations"
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:15
+msgid ""
+"Migrations are a means of facilitating database changes, much in the same "
+"way UMIL was used in phpBB 3.0. Through Migrations, extension developers are"
+" able to easily modify and add new schema and data to the database as "
+"required by an extension."
+msgstr ""
+"Les migrations sont un moyen de faciliter les modifications de la base de "
+"données, un peu à la manière dont UMIL était utilisé dans phpBB 3.0. Grâce "
+"aux migrations, les développeurs d'extensions peuvent facilement modifier et"
+" ajouter de nouveaux schémas et données à la base de données, selon les "
+"besoins d'une extension."
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:20
+msgid ""
+"Read the Migrations: :doc:`../migrations/getting_started` Developer Docs for"
+" in-depth migration documentation. We will briefly summarise the key "
+"concepts of migrations here."
+msgstr ""
+"Consultez la documentation développeur Migrations : "
+":doc:`../migrations/getting_started` pour une documentation approfondie sur "
+"les migrations. Nous allons ici résumer brièvement les concepts clés des "
+"migrations."
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:26
+msgid ""
+"The phpBB Customisation Database `Migrations Validation Policy "
+"<https://www.phpbb.com/extensions/rules-and-policies/validation-"
+"policy/#migrations>`_."
+msgstr ""
+"La `politique de validation des migrations "
+"<https://www.phpbb.com/extensions/rules-and-policies/validation-"
+"policy/#migrations>`_ de la base de personnalisations phpBB."
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:29
+msgid "Database changes"
+msgstr "Modifications de la base de données"
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:32
+msgid "Schema changes"
+msgstr "Modifications de schéma"
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:34
+msgid ""
+"The ``update_schema()`` method is for facilitating schema changes, such as "
+"adding new tables, columns, keys and indexes."
+msgstr ""
+"La méthode ``update_schema()`` sert à faciliter les modifications de schéma,"
+" telles que l'ajout de nouvelles tables, colonnes, clés et index."
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:37
+msgid ""
+"The ``revert_schema()`` method should always be including to undo any "
+"changes introduced by the ``update_schema()`` method."
+msgstr ""
+"La méthode ``revert_schema()`` doit toujours être incluse pour annuler les "
+"modifications introduites par la méthode ``update_schema()``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:40
+msgid "We recommend putting schema changes in their own migration."
+msgstr ""
+"Nous recommandons de placer les modifications de schéma dans leur propre "
+"migration."
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:42
+msgid "Learn more: :doc:`../migrations/schema_changes`."
+msgstr "En savoir plus : :doc:`../migrations/schema_changes`."
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:45
+msgid "Data changes"
+msgstr "Modifications de données"
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:47
+msgid ""
+"The ``update_data()`` method is for inserting, updating and dropping field "
+"data."
+msgstr ""
+"La méthode ``update_data()`` sert à insérer, mettre à jour et supprimer des "
+"données de champs."
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:50
+msgid ""
+"The ``revert_data()`` method is optional and can be used to undo data "
+"changes. Normally, the ``update_data()`` method is automatically reverted "
+"during a purge step, reversing any of the changes introduced by the "
+"migration tools. Using the ``revert_data()`` method is only needed to "
+"perform additional changes during an extension's uninstall, such as "
+"performing a custom functions."
+msgstr ""
+"La méthode ``revert_data()`` est facultative et peut être utilisée pour "
+"annuler des modifications de données. Normalement, la méthode "
+"``update_data()`` est automatiquement annulée lors d'une étape de purge, "
+"annulant toute modification introduite par les outils de migration. Utiliser"
+" la méthode ``revert_data()`` n'est nécessaire que pour effectuer des "
+"modifications supplémentaires lors de la désinstallation d'une extension, "
+"comme l'exécution d'une fonction personnalisée."
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:57
+msgid "We recommend putting data changes in their own migration."
+msgstr ""
+"Nous recommandons de placer les modifications de données dans leur propre "
+"migration."
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:59
+msgid "Learn more: :doc:`../migrations/data_changes`."
+msgstr "En savoir plus : :doc:`../migrations/data_changes`."
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:62
+msgid "Migration tools"
+msgstr "Outils de migration"
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:64
+msgid ":doc:`../migrations/tools/config`"
+msgstr ":doc:`../migrations/tools/config`"
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:65
+msgid "The config tool helps adding, updating, and removing config items."
+msgstr ""
+"L'outil config aide à ajouter, mettre à jour et supprimer des éléments de "
+"configuration."
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:67
+msgid ":doc:`../migrations/tools/config_text`"
+msgstr ":doc:`../migrations/tools/config_text`"
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:68
+msgid ""
+"The config_text tool helps adding, updating, and removing config_text items."
+" The config_text table is used to store options with an arbitrary length "
+"value in a TEXT column. In contrast to config values, config_text are not "
+"cached or prefetched."
+msgstr ""
+"L'outil config_text aide à ajouter, mettre à jour et supprimer des éléments "
+"config_text. La table config_text sert à stocker des options dont la valeur,"
+" de longueur arbitraire, est placée dans une colonne TEXT. Contrairement aux"
+" valeurs config, les valeurs config_text ne sont ni mises en cache ni "
+"préchargées."
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:73
+msgid ":doc:`../migrations/tools/module`"
+msgstr ":doc:`../migrations/tools/module`"
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:74
+msgid "The module tool helps adding and removing ACP, MCP, and UCP modules."
+msgstr ""
+"L'outil module aide à ajouter et supprimer des modules ACP, MCP et UCP."
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:76
+msgid ":doc:`../migrations/tools/permission`"
+msgstr ":doc:`../migrations/tools/permission`"
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:77
+msgid ""
+"The permission tool helps adding, removing, setting, and unsetting "
+"permissions and adding or removing permission roles."
+msgstr ""
+"L'outil permission aide à ajouter, supprimer, activer et désactiver des "
+"permissions, ainsi qu'à ajouter ou supprimer des rôles de permission."
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:81
+msgid "Migration dependencies"
+msgstr "Dépendances de migration"
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:84
+msgid "depends_on()"
+msgstr "depends_on()"
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:86
+msgid ""
+"The ``depends_on()`` method is used to define a migration's dependencies. "
+"Dependencies tell the migrator what order migrations must be installed in."
+msgstr ""
+"La méthode ``depends_on()`` sert à définir les dépendances d'une migration. "
+"Les dépendances indiquent au migrator dans quel ordre les migrations doivent"
+" être installées."
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:89
+msgid "Learn more: :doc:`../migrations/dependencies`."
+msgstr "En savoir plus : :doc:`../migrations/dependencies`."
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:92
+msgid "effectively_installed()"
+msgstr "effectively_installed()"
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:94
+msgid ""
+"The ``effectively_installed()`` method is used primarily to help transition "
+"from a previous database installer method (such as a MOD that used UMIL) to "
+"migrations. However, we recommend using it all the time to ensure safer "
+"migrations."
+msgstr ""
+"La méthode ``effectively_installed()`` sert principalement à faciliter la "
+"transition depuis une ancienne méthode d'installation de base de données "
+"(comme un MOD utilisant UMIL) vers les migrations. Nous recommandons "
+"toutefois de toujours l'utiliser afin de garantir des migrations plus sûres."
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:99
+msgid ""
+"When effectively_installed returns true, the migration is deemed to already "
+"have been installed, meaning the migration will be skipped. This helps "
+"prevent rewriting (or overwriting) existing changes to the database that may"
+" have already been put in place by a previous migration or MOD installation."
+msgstr ""
+"Lorsque effectively_installed renvoie true, la migration est considérée "
+"comme déjà installée, ce qui signifie qu'elle sera ignorée. Cela permet "
+"d'éviter de réécrire (ou d'écraser) des modifications existantes de la base "
+"de données qui auraient déjà été mises en place par une migration précédente"
+" ou l'installation d'un MOD."
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:105
+msgid ""
+"For example, in the following code the migration would not be applied if the"
+" specified config value already exists in the database:"
+msgstr ""
+"Par exemple, dans le code suivant, la migration ne serait pas appliquée si "
+"la valeur de configuration spécifiée existe déjà dans la base de données :"
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:117
+msgid ""
+"As a general rule, migrations should never be changed once they have been "
+"installed. Changing a migration in an extension that has already been "
+"installed could prevent it from reverting database changes or uninstalling "
+"successfully. In order to make subsequent changes to the database, new "
+"migrations should be created to implement the additional changes or updates."
+" The only exceptions to this rule are to fix SQL and logic errors or bugs, "
+"as long as they do not alter the database changes that have already been "
+"made or the dependencies listed in the migration's ``depends_on()`` method."
+msgstr ""
+"En règle générale, les migrations ne devraient jamais être modifiées une "
+"fois installées. Modifier une migration dans une extension déjà installée "
+"pourrait l'empêcher d'annuler les modifications de la base de données ou "
+"d'être désinstallée avec succès. Pour apporter des modifications ultérieures"
+" à la base de données, de nouvelles migrations doivent être créées pour "
+"mettre en œuvre les modifications ou mises à jour supplémentaires. Les "
+"seules exceptions à cette règle sont la correction d'erreurs SQL et logiques"
+" ou de bugs, tant qu'elles ne modifient pas les changements de base de "
+"données déjà effectués ni les dépendances listées dans la méthode "
+"``depends_on()`` de la migration."
+
+#: ../../devdocs-source-copy/extensions/tutorial_migrations.rst:126
+msgid ""
+"Once you are familiar with how Migrations work, continue on to the next "
+"section to learn how to create and install an ACP module that will allow us "
+"to configure some settings for the Acme Demo extension."
+msgstr ""
+"Une fois que vous êtes familiarisé avec le fonctionnement des migrations, "
+"passez à la section suivante pour apprendre à créer et installer un module "
+"ACP qui nous permettra de configurer certains paramètres de l'extension Acme"
+" Demo."

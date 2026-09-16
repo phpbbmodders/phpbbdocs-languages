@@ -1,0 +1,270 @@
+# French translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:32-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:2
+msgid "Auth API"
+msgstr "API Auth"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:4
+msgid "This is an explanation of how to use the phpBB auth/acl API."
+msgstr "Ceci explique comment utiliser l'API auth/acl de phpBB."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:11
+msgid "1. Introduction"
+msgstr "1. Introduction"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:14
+msgid "What is it?"
+msgstr "Qu'est-ce que c'est ?"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:16
+msgid ""
+"The ``auth`` class contains methods related to authorisation of users to "
+"access various board functions, e.g., posting, viewing, replying, logging in "
+"(and out), etc. If you need to check whether a user can carry out a task or "
+"handle user login/logouts, this class is required."
+msgstr ""
+"La classe ``auth`` contient des méthodes liées à l'autorisation des "
+"utilisateurs à accéder aux différentes fonctions du forum, par exemple "
+"poster, consulter, répondre, se connecter (et se déconnecter), etc. Si vous "
+"devez vérifier si un utilisateur peut effectuer une action ou gérer les "
+"connexions/déconnexions des utilisateurs, cette classe est requise."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:19
+msgid "Initialisation"
+msgstr "Initialisation"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:21
+msgid ""
+"To use any methods contained within the ``auth`` class, it first needs to be "
+"instantiated. This is best achieved early in the execution of the script in "
+"the following manner:"
+msgstr ""
+"Pour utiliser l'une des méthodes de la classe ``auth``, celle-ci doit "
+"d'abord être instanciée. Il est préférable de le faire tôt dans l'exécution "
+"du script, de la manière suivante :"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:27
+msgid ""
+"Once an instance of the class has been created you are free to call the "
+"various methods it contains. Note: if you wish to use the ``auth_admin`` "
+"methods you will need to instantiate this separately in the same way."
+msgstr ""
+"Une fois qu'une instance de la classe a été créée, vous êtes libre d'appeler "
+"les différentes méthodes qu'elle contient. Remarque : si vous souhaitez "
+"utiliser les méthodes de ``auth_admin``, vous devrez l'instancier "
+"séparément, de la même manière."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:30
+msgid "2. Methods"
+msgstr "2. Méthodes"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:32
+msgid "Following are the methods you are able to use."
+msgstr "Voici les méthodes que vous pouvez utiliser."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:35
+msgid "2.i. acl"
+msgstr "2.i. acl"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:37
+msgid ""
+"The ``acl`` method is the initialisation routine for all the ACL functions. "
+"It must be called before any ACL method. It takes one parameter: an "
+"associative array containing user information."
+msgstr ""
+"La méthode ``acl`` est la routine d'initialisation de toutes les fonctions "
+"ACL. Elle doit être appelée avant toute autre méthode ACL. Elle prend un "
+"paramètre : un tableau associatif contenant les informations de "
+"l'utilisateur."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:43
+msgid ""
+"Where ``$userdata`` includes at least: ``user_id``, ``user_permissions``, "
+"and ``user_type``."
+msgstr ""
+"Où ``$userdata`` contient au moins : ``user_id``, ``user_permissions``, et "
+"``user_type``."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:46
+msgid "2.ii. acl_get"
+msgstr "2.ii. acl_get"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:48
+msgid ""
+"This method determines if a user can perform an action either globally or in "
+"a specific forum."
+msgstr ""
+"Cette méthode détermine si un utilisateur peut effectuer une action, soit "
+"globalement, soit dans un forum spécifique."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:54
+msgid ""
+"``option``: e.g., 'f_list', 'm_edit', 'a_adduser', etc. Use ``!option`` to "
+"negate."
+msgstr ""
+"``option`` : par exemple 'f_list', 'm_edit', 'a_adduser', etc. Utilisez ``!"
+"option`` pour la négation."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:55
+msgid "``forum`` (optional): integer ``forum_id``."
+msgstr "``forum`` (facultatif) : l'entier ``forum_id``."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:57
+msgid "Returns a positive integer if allowed, zero if denied."
+msgstr "Renvoie un entier positif si autorisé, zéro si refusé."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:60
+msgid "2.iii. acl_gets"
+msgstr "2.iii. acl_gets"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:62
+msgid "This method checks multiple permissions at once."
+msgstr "Cette méthode vérifie plusieurs permissions à la fois."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:68
+msgid "Returns a positive integer if *any* of the permissions is granted."
+msgstr "Renvoie un entier positif si *l'une* des permissions est accordée."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:71
+msgid "2.iv. acl_getf"
+msgstr "2.iv. acl_getf"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:73
+msgid "This method checks in which forums a user has a certain permission."
+msgstr ""
+"Cette méthode vérifie dans quels forums un utilisateur dispose d'une "
+"permission donnée."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:79
+msgid "``option``: permission string (negation with ``!`` allowed)"
+msgstr ""
+"``option`` : chaîne de permission (la négation avec ``!`` est autorisée)"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:80
+msgid ""
+"``clean``: boolean. If true, only forums where permission is granted are "
+"returned."
+msgstr ""
+"``clean`` : booléen. Si vrai, seuls les forums où la permission est accordée "
+"sont renvoyés."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:82
+msgid "Returns an associative array:"
+msgstr "Renvoie un tableau associatif :"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:89
+msgid "2.v. acl_getf_global"
+msgstr "2.v. acl_getf_global"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:91
+msgid "Checks if a user has a permission globally or in at least one forum."
+msgstr ""
+"Vérifie si un utilisateur dispose d'une permission globalement ou dans au "
+"moins un forum."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:97
+msgid "Returns a positive integer or zero."
+msgstr "Renvoie un entier positif ou zéro."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:100
+msgid "2.vi. acl_cache"
+msgstr "2.vi. acl_cache"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:102
+msgid ""
+"**Private method.** Automatically called when needed. Generates "
+"user_permissions data."
+msgstr ""
+"**Méthode privée.** Appelée automatiquement lorsque nécessaire. Génère les "
+"données user_permissions."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:105
+msgid "2.vii. acl_clear_prefetch"
+msgstr "2.vii. acl_clear_prefetch"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:107
+msgid "Clears the ``user_permissions`` column in the users table."
+msgstr "Vide la colonne ``user_permissions`` de la table des utilisateurs."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:114
+msgid "Use ``$user_id = 0`` to clear cache for all users. Returns null."
+msgstr ""
+"Utilisez ``$user_id = 0`` pour vider le cache de tous les utilisateurs. "
+"Renvoie null."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:117
+msgid "2.viii. acl_get_list"
+msgstr "2.viii. acl_get_list"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:119
+msgid ""
+"Returns an array describing which users have which permissions in which "
+"forums."
+msgstr ""
+"Renvoie un tableau décrivant quels utilisateurs disposent de quelles "
+"permissions dans quels forums."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:128
+msgid ""
+"Parameter types: - ``$user_id``: ``false``, int, or array of int - "
+"``$permissions``: ``false``, string, or array of string - ``$forum_id``: "
+"``false``, int, or array of int"
+msgstr ""
+"Types de paramètres : - ``$user_id`` : ``false``, un entier, ou un tableau "
+"d'entiers - ``$permissions`` : ``false``, une chaîne, ou un tableau de "
+"chaînes - ``$forum_id`` : ``false``, un entier, ou un tableau d'entiers"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:134
+msgid "2.ix. Miscellaneous"
+msgstr "2.ix. Divers"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:136
+msgid "Additional methods for pulling raw permission data:"
+msgstr ""
+"Méthodes supplémentaires pour extraire les données brutes de permission :"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:146
+msgid ""
+"Use ``acl_raw_data`` for general queries; others are optimized for specific "
+"data."
+msgstr ""
+"Utilisez ``acl_raw_data`` pour des requêtes générales ; les autres sont "
+"optimisées pour des données spécifiques."
+
+#: ../../devdocs-source-copy/auth/authentication.rst:149
+msgid "3. Admin Related Functions"
+msgstr "3. Fonctions liées à l'administration"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:151
+msgid ""
+"Additional methods are available within the ``auth_admin`` class for "
+"managing permissions, options, and user cache. It is found in:"
+msgstr ""
+"Des méthodes supplémentaires sont disponibles dans la classe ``auth_admin`` "
+"pour gérer les permissions, les options et le cache utilisateur. Elle se "
+"trouve dans :"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:157
+msgid "Instantiate separately:"
+msgstr "Instanciez-la séparément :"
+
+#: ../../devdocs-source-copy/auth/authentication.rst:163
+msgid "This gives access to both ``auth_admin`` and ``auth`` methods."
+msgstr "Cela donne accès aux méthodes de ``auth_admin`` et de ``auth``."

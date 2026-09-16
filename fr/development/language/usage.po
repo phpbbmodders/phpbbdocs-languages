@@ -1,0 +1,294 @@
+# French translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:32-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../devdocs-source-copy/language/usage.rst:3
+msgid "Using the Language System"
+msgstr "Utiliser le système de langue"
+
+#: ../../devdocs-source-copy/language/usage.rst:5
+msgid ""
+"phpBB uses a language system to guarantee easy localisation. All strings "
+"presented to the user are first looked up in an internal dictionary. Thus it "
+"is also a requirement for Extensions to use said system for all output "
+"presented to the user. This chapter will show you how to use the language "
+"system and how to add your custom entries."
+msgstr ""
+"phpBB utilise un système de langue afin de garantir une localisation facile. "
+"Toutes les chaînes présentées à l'utilisateur sont d'abord recherchées dans "
+"un dictionnaire interne. Les extensions doivent donc également utiliser ce "
+"système pour toute sortie présentée à l'utilisateur. Ce chapitre vous "
+"montrera comment utiliser le système de langue et comment ajouter vos "
+"propres entrées."
+
+#: ../../devdocs-source-copy/language/usage.rst:11
+msgid ""
+"We generally refer to the name of the word in the dictionary as **language "
+"key** or **language variable**, to the returned value as **language value** "
+"or **language string**. Both together are a **language entry**. Language "
+"entries are collected in language files."
+msgstr ""
+"Nous désignons généralement le nom du mot dans le dictionnaire par **clé de "
+"langue** ou **variable de langue**, et la valeur renvoyée par **valeur de "
+"langue** ou **chaîne de langue**. Les deux réunis constituent une **entrée "
+"de langue**. Les entrées de langue sont regroupées dans des fichiers de "
+"langue."
+
+#: ../../devdocs-source-copy/language/usage.rst:18
+msgid ""
+"By convention, the language key should always be all-uppercase, using "
+"underscores to separate words."
+msgstr ""
+"Par convention, la clé de langue doit toujours être entièrement en "
+"majuscules, avec des tirets bas (underscores) pour séparer les mots."
+
+#: ../../devdocs-source-copy/language/usage.rst:22
+msgid "Using the Language System in php"
+msgstr "Utiliser le système de langue en PHP"
+
+#: ../../devdocs-source-copy/language/usage.rst:24
+msgid ""
+"The object holding the language dictionary for the current user is the "
+"``$language`` object (``phpbb\\language\\language`` class). To get the "
+"translation of a language entry inside of php code, call the "
+"``phpbb\\language\\language::lang()`` method:"
+msgstr ""
+"L'objet contenant le dictionnaire de langue de l'utilisateur courant est "
+"l'objet ``$language`` (classe ``phpbb\\language\\language``). Pour obtenir "
+"la traduction d'une entrée de langue au sein du code PHP, appelez la méthode "
+"``phpbb\\language\\language::lang()`` :"
+
+#: ../../devdocs-source-copy/language/usage.rst:32
+msgid ""
+"You can also insert values into translated string. Use ``%s`` as "
+"placeholders for string in the language string and ``%d`` for integers:"
+msgstr ""
+"Vous pouvez également insérer des valeurs dans la chaîne traduite. Utilisez "
+"``%s`` comme espace réservé pour une chaîne dans la chaîne de langue, et "
+"``%d`` pour les entiers :"
+
+#: ../../devdocs-source-copy/language/usage.rst:47
+msgid ""
+"When using ``%d`` for plurals make sure to allow translators to use plurals "
+"according to their language. For more information see: :doc:`plurals`"
+msgstr ""
+"Lorsque vous utilisez ``%d`` pour les pluriels, veillez à permettre aux "
+"traducteurs d'utiliser les pluriels propres à leur langue. Pour plus "
+"d'informations, voir : :doc:`plurals`"
+
+#: ../../devdocs-source-copy/language/usage.rst:52
+msgid ""
+"Many functions in phpBB automatically translate their arguments; passing the "
+"language key as an argument is usually enough."
+msgstr ""
+"De nombreuses fonctions de phpBB traduisent automatiquement leurs "
+"arguments ; il suffit généralement de transmettre la clé de langue en "
+"argument."
+
+#: ../../devdocs-source-copy/language/usage.rst:55
+msgid ""
+"The dictionary is not loaded into memory all at once, but is split up in "
+"several files, which have to be manually loaded on demand. The files are "
+"stored inside the language directory, named after its `language tag <https://"
+"area51.phpbb.com/docs/master/coding-guidelines.html#translation>`_, where "
+"one subdirectory is used for each installed language. The default language "
+"files are in the root of that subdirectory, while ACP language files go into "
+"the ``/acp`` subdirectory; email templates are placed in the ``/email`` "
+"subdirectory."
+msgstr ""
+"Le dictionnaire n'est pas chargé en mémoire en une seule fois, mais réparti "
+"dans plusieurs fichiers, qui doivent être chargés manuellement à la demande. "
+"Les fichiers sont stockés dans le répertoire de langue, nommé d'après sa "
+"`balise de langue <https://area51.phpbb.com/docs/master/coding-guidelines."
+"html#translation>`_, un sous-répertoire étant utilisé pour chaque langue "
+"installée. Les fichiers de langue par défaut se trouvent à la racine de ce "
+"sous-répertoire, tandis que les fichiers de langue de l'ACP se trouvent dans "
+"le sous-répertoire ``/acp`` ; les modèles d'e-mail se trouvent dans le sous-"
+"répertoire ``/email``."
+
+#: ../../devdocs-source-copy/language/usage.rst:66
+msgid ""
+"Files for extensions should be placed in the extension's ``/language`` "
+"directory."
+msgstr ""
+"Les fichiers des extensions doivent être placés dans le répertoire ``/"
+"language`` de l'extension."
+
+#: ../../devdocs-source-copy/language/usage.rst:70
+msgid "Loading language files"
+msgstr "Charger les fichiers de langue"
+
+#: ../../devdocs-source-copy/language/usage.rst:73
+msgid "Loading from phpBB core"
+msgstr "Chargement depuis le cœur de phpBB"
+
+#: ../../devdocs-source-copy/language/usage.rst:75
+msgid ""
+"Additional language files can be loaded during user setup via the call to "
+"the ``phpbb\\user::setup()`` method at the top of each accessible file. To "
+"do so, pass the name with the subdirectory but without extension as argument "
+"of setup."
+msgstr ""
+"Des fichiers de langue supplémentaires peuvent être chargés lors de la "
+"configuration de l'utilisateur via l'appel à la méthode ``phpbb\\user::"
+"setup()`` en haut de chaque fichier accessible. Pour ce faire, transmettez "
+"le nom avec le sous-répertoire mais sans extension comme argument de setup."
+
+#: ../../devdocs-source-copy/language/usage.rst:85
+msgid ""
+"Since ``phpbb\\user::setup()`` must only be called once, "
+"``phpbb\\language\\language::add_lang()`` has to be used, to load additional "
+"language files, after ``phpbb\\user::setup()`` has already been called."
+msgstr ""
+"Comme ``phpbb\\user::setup()`` ne doit être appelée qu'une seule fois, il "
+"faut utiliser ``phpbb\\language\\language::add_lang()`` pour charger des "
+"fichiers de langue supplémentaires une fois que ``phpbb\\user::setup()`` a "
+"déjà été appelée."
+
+#: ../../devdocs-source-copy/language/usage.rst:96
+msgid "Loading from an extension"
+msgstr "Chargement depuis une extension"
+
+#: ../../devdocs-source-copy/language/usage.rst:98
+msgid ""
+"To load a file from an extension you need to use "
+"``phpbb\\language\\language::add_lang()`` which takes the array of language "
+"files as a first argument and the vendor + extension name as a second "
+"argument."
+msgstr ""
+"Pour charger un fichier depuis une extension, vous devez utiliser "
+"``phpbb\\language\\language::add_lang()``, qui prend le tableau des fichiers "
+"de langue comme premier argument, et le nom du fournisseur (vendor) + le nom "
+"de l'extension comme second argument."
+
+#: ../../devdocs-source-copy/language/usage.rst:110
+msgid "Using the Language System in template files"
+msgstr "Utiliser le système de langue dans les fichiers de gabarit (template)"
+
+#: ../../devdocs-source-copy/language/usage.rst:112
+msgid ""
+"Language entries in :ref:`Template Syntax <tutorial-template-syntax>` are a "
+"major improvement since phpBB 3.0. There is no longer a need to manually "
+"assign these in the PHP file; language entries of loaded language files can "
+"be used automatically."
+msgstr ""
+"Les entrées de langue dans la :ref:`syntaxe des gabarits <tutorial-template-"
+"syntax>` constituent une amélioration majeure depuis phpBB 3.0. Il n'est "
+"plus nécessaire de les assigner manuellement dans le fichier PHP ; les "
+"entrées de langue des fichiers de langue chargés peuvent être utilisées "
+"automatiquement."
+
+#: ../../devdocs-source-copy/language/usage.rst:118
+msgid ""
+"To use the language entry with the key ``MY_KEY`` in a template file, just "
+"write ``{L_MY_KEY}`` in the template (phpBB syntax) or ``{{ lang('MY_KEY') }}"
+"`` (new twig syntax)."
+msgstr ""
+"Pour utiliser l'entrée de langue portant la clé ``MY_KEY`` dans un fichier "
+"de gabarit, il suffit d'écrire ``{L_MY_KEY}`` dans le gabarit (syntaxe "
+"phpBB) ou ``{{ lang('MY_KEY') }}`` (nouvelle syntaxe twig)."
+
+#: ../../devdocs-source-copy/language/usage.rst:123
+msgid "Javascript"
+msgstr "JavaScript"
+
+#: ../../devdocs-source-copy/language/usage.rst:125
+msgid ""
+"If the language entry is going to be used inside of JavaScript, it must be "
+"properly escaped. This is easy to achieve by using ``{LA_MY_KEY}`` in the "
+"template (phpBB syntax) or ``{{ lang('MY_KEY')|e('js') }}`` (new twig "
+"syntax)."
+msgstr ""
+"Si l'entrée de langue doit être utilisée au sein de JavaScript, elle doit "
+"être correctement échappée. Cela s'obtient facilement en utilisant "
+"``{LA_MY_KEY}`` dans le gabarit (syntaxe phpBB) ou ``{{ lang('MY_KEY')|"
+"e('js') }}`` (nouvelle syntaxe twig)."
+
+#: ../../devdocs-source-copy/language/usage.rst:131
+msgid ""
+"When using language entries in the JavaScript context with the new twig "
+"syntax, the following methods are possible:"
+msgstr ""
+"Lorsque vous utilisez des entrées de langue dans un contexte JavaScript avec "
+"la nouvelle syntaxe twig, les méthodes suivantes sont possibles :"
+
+#: ../../devdocs-source-copy/language/usage.rst:134
+msgid ""
+"``{{ lang('MY_KEY')|escape('js') }}`` Twig's native JavaScript context "
+"escape filter."
+msgstr ""
+"``{{ lang('MY_KEY')|escape('js') }}`` Le filtre d'échappement natif de Twig "
+"pour le contexte JavaScript."
+
+#: ../../devdocs-source-copy/language/usage.rst:135
+msgid ""
+"``{{ lang('MY_KEY')|e('js') }}`` Short-hand version for calling ``escape`` "
+"using ``e``."
+msgstr ""
+"``{{ lang('MY_KEY')|e('js') }}`` Version abrégée pour appeler ``escape`` via "
+"``e``."
+
+#: ../../devdocs-source-copy/language/usage.rst:136
+msgid ""
+"``{{ lang('MY_KEY')|escape('addslashes') }}`` phpBB's legacy addslashes "
+"escape filter."
+msgstr ""
+"``{{ lang('MY_KEY')|escape('addslashes') }}`` L'ancien filtre d'échappement "
+"addslashes de phpBB."
+
+#: ../../devdocs-source-copy/language/usage.rst:137
+msgid ""
+"``{{ lang('MY_KEY')|e('addslashes') }}`` Short-hand version for calling "
+"``escape`` using ``e``."
+msgstr ""
+"``{{ lang('MY_KEY')|e('addslashes') }}`` Version abrégée pour appeler "
+"``escape`` via ``e``."
+
+#: ../../devdocs-source-copy/language/usage.rst:140
+msgid "Add new entries"
+msgstr "Ajouter de nouvelles entrées"
+
+#: ../../devdocs-source-copy/language/usage.rst:142
+msgid ""
+"New language files should always be placed in their own files in the "
+"extensions directory."
+msgstr ""
+"Les nouveaux fichiers de langue doivent toujours être placés dans leurs "
+"propres fichiers, dans le répertoire des extensions."
+
+#: ../../devdocs-source-copy/language/usage.rst:147
+msgid ""
+"When defining log entries and module names, make sure to load the language "
+"file, when the entries are being used."
+msgstr ""
+"Lorsque vous définissez des entrées de journal et des noms de module, "
+"veillez à charger le fichier de langue au moment où ces entrées sont "
+"utilisées."
+
+#: ../../devdocs-source-copy/language/usage.rst:152
+msgid ""
+"When writing or editing a language file, make sure to save it using utf-8 "
+"encoding **without BOM** (`Byte Order Mark <http://en.wikipedia.org/wiki/"
+"Byte_Order_Mark>`_). Otherwise the forum will not function properly. Some "
+"editors call that mode \"utf8 cookie\"."
+msgstr ""
+"Lorsque vous écrivez ou modifiez un fichier de langue, veillez à "
+"l'enregistrer en encodage UTF-8 **sans BOM** (`Byte Order Mark <http://en."
+"wikipedia.org/wiki/Byte_Order_Mark>`_). Dans le cas contraire, le forum ne "
+"fonctionnera pas correctement. Certains éditeurs appellent ce mode « utf8 "
+"cookie »."
