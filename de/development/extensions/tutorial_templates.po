@@ -1,0 +1,731 @@
+# German translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:5
+msgid "Tutorial: Template syntax"
+msgstr "Tutorial: Template-Syntax"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:8
+msgid "Introduction"
+msgstr "Einführung"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:10
+msgid ""
+"Starting with version 3.1, phpBB is using the Twig template engine. This "
+"tutorial will cover some of the details on the implementation of Twig's "
+"syntax in phpBB and its extensions, however more extensive documentation for"
+" Twig can be found here: `Twig Documentation "
+"<https://twig.symfony.com/doc/2.x/>`_."
+msgstr ""
+"Ab Version 3.1 verwendet phpBB die Twig-Template-Engine. Dieses Tutorial "
+"behandelt einige Details zur Implementierung der Twig-Syntax in phpBB und "
+"seinen Erweiterungen, eine umfangreichere Dokumentation zu Twig findest du "
+"jedoch hier: `Twig Documentation <https://twig.symfony.com/doc/2.x/>`_."
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:17
+msgid "Assigning data in PHP"
+msgstr "Zuweisen von Daten in PHP"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:20
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:133
+msgid "Variables"
+msgstr "Variablen"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:22
+msgid "Assign a single variable:"
+msgstr "Eine einzelne Variable zuweisen:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:28
+msgid "Assigning multiple variables:"
+msgstr "Mehrere Variablen zuweisen:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:39
+msgid "Default Template Variables"
+msgstr "Standard-Template-Variablen"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:41
+msgid ""
+"There are some variables set in phpBB's page_header function that are common"
+" to all templates and which may be useful to a style or extension author."
+msgstr ""
+"Es gibt einige in der page_header-Funktion von phpBB festgelegte Variablen, "
+"die allen Templates gemein sind und für einen Style- oder Erweiterungsautor "
+"nützlich sein können."
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:47
+msgid "Template variable"
+msgstr "Template-Variable"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:48
+msgid "Description"
+msgstr "Beschreibung"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:49
+msgid "Sample output"
+msgstr "Beispielausgabe"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:50
+msgid "``T_ASSETS_PATH``"
+msgstr "``T_ASSETS_PATH``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:51
+msgid ""
+"The path to assets files (``assets`` path in root of phpBB installation)"
+msgstr ""
+"Der Pfad zu Asset-Dateien (``assets``-Pfad im Stammverzeichnis der phpBB-"
+"Installation)"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:52
+msgid "``./assets``"
+msgstr "``./assets``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:53
+msgid "``T_THEME_PATH``"
+msgstr "``T_THEME_PATH``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:54
+msgid ""
+"The path to the currently selected style's theme folder (where all the css "
+"files are stored)"
+msgstr ""
+"Der Pfad zum Theme-Ordner des aktuell ausgewählten Styles (wo alle CSS-"
+"Dateien gespeichert sind)"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:55
+msgid "``./styles/prosilver/theme``"
+msgstr "``./styles/prosilver/theme``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:56
+msgid "``T_TEMPLATE_PATH``"
+msgstr "``T_TEMPLATE_PATH``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:57
+msgid "The path to the currently selected style's template folder"
+msgstr "Der Pfad zum Template-Ordner des aktuell ausgewählten Styles"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:58
+msgid "``./styles/prosilver/template``"
+msgstr "``./styles/prosilver/template``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:59
+msgid "``T_IMAGES_PATH``"
+msgstr "``T_IMAGES_PATH``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:60
+msgid "The path to phpBB's image folder"
+msgstr "Der Pfad zum Bilderordner von phpBB"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:61
+msgid "``./images``"
+msgstr "``./images``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:62
+msgid "``T_SMILIES_PATH``"
+msgstr "``T_SMILIES_PATH``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:63
+msgid "The path to the smiley folder"
+msgstr "Der Pfad zum Smiley-Ordner"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:64
+msgid "``./images/similies``"
+msgstr "``./images/similies``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:65
+msgid "``T_AVATAR_PATH``"
+msgstr "``T_AVATAR_PATH``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:66
+msgid "The path to the avatar upload folder"
+msgstr "Der Pfad zum Avatar-Upload-Ordner"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:67
+msgid "``./images/avatars/upload``"
+msgstr "``./images/avatars/upload``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:68
+msgid "``T_AVATAR_GALLERY_PATH``"
+msgstr "``T_AVATAR_GALLERY_PATH``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:69
+msgid "The path to the avatar gallery folder"
+msgstr "Der Pfad zum Avatar-Galerie-Ordner"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:70
+msgid "``./images/avatars/gallery``"
+msgstr "``./images/avatars/gallery``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:71
+msgid "``T_ICONS_PATH``"
+msgstr "``T_ICONS_PATH``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:72
+msgid "The path to topic icons folder"
+msgstr "Der Pfad zum Themen-Icon-Ordner"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:73
+msgid "``./images/icons``"
+msgstr "``./images/icons``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:74
+msgid "``T_RANKS_PATH``"
+msgstr "``T_RANKS_PATH``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:75
+msgid "The path to the rank images"
+msgstr "Der Pfad zu den Rangbildern"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:76
+msgid "``./images/ranks``"
+msgstr "``./images/ranks``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:77
+msgid "``T_UPLOAD_PATH``"
+msgstr "``T_UPLOAD_PATH``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:78
+msgid "The path to phpBB's upload folder (shouldn't be used directly)."
+msgstr ""
+"Der Pfad zum Upload-Ordner von phpBB (sollte nicht direkt verwendet werden)."
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:79
+msgid "``./files``"
+msgstr "``./files``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:82
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:145
+msgid "Blocks"
+msgstr "Blöcke"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:84
+msgid ""
+"Blocks are used to assign any number of items of the same type, e.g. topics "
+"or posts (\"foreach loop\")."
+msgstr ""
+"Blöcke werden verwendet, um eine beliebige Anzahl von Elementen desselben "
+"Typs zuzuweisen, z. B. Themen oder Beiträge (\"foreach-Schleife\")."
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:96
+msgid "Nested loops:"
+msgstr "Verschachtelte Schleifen:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:114
+msgid ""
+"The blocks and nested loops can then be used accordingly in HTML files (see "
+"`Syntax elements`_)."
+msgstr ""
+"Die Blöcke und verschachtelten Schleifen können dann entsprechend in HTML-"
+"Dateien verwendet werden (siehe `Syntax elements`_)."
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:117
+msgid "Syntax elements"
+msgstr "Syntaxelemente"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:119
+msgid ""
+"This section will highlight Twig syntax elements in the template engine. The"
+" older phpBB specific syntax will be deprecated in a later version of phpBB."
+" It is therefore recommended to use the documented Twig syntax instead:"
+msgstr ""
+"Dieser Abschnitt hebt Twig-Syntaxelemente in der Template-Engine hervor. Die"
+" ältere, phpBB-spezifische Syntax wird in einer späteren Version von phpBB "
+"als veraltet markiert. Es wird daher empfohlen, stattdessen die "
+"dokumentierte Twig-Syntax zu verwenden:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:124
+msgid "Comments"
+msgstr "Kommentare"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:126
+msgid "To make comments inside the template you can use ``{# #}``:"
+msgstr ""
+"Um Kommentare innerhalb des Templates zu erstellen, kannst du ``{# #}`` "
+"verwenden:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:135
+msgid ""
+"Variables in phpBB take the form of ``{{ X_YYYYY }}``, where the data is "
+"assigned from the source. However, most language strings are not assigned "
+"from the source. When a language variable is found, denoted as ``{{ "
+"lang('YYYYYY') }}``, phpBB first checks if an assigned variable with that "
+"name exists. If it does, it uses that. If not, it checks if an existing "
+"string defined in the language file exists."
+msgstr ""
+"Variablen in phpBB haben die Form ``{{ X_YYYYY }}``, wobei die Daten aus der"
+" Quelle zugewiesen werden. Die meisten Sprachzeichenketten werden jedoch "
+"nicht aus der Quelle zugewiesen. Wenn eine Sprachvariable gefunden wird, "
+"gekennzeichnet als ``{{ lang('YYYYYY') }}``, prüft phpBB zunächst, ob eine "
+"zugewiesene Variable mit diesem Namen existiert. Wenn ja, wird diese "
+"verwendet. Wenn nicht, wird geprüft, ob eine in der Sprachdatei definierte "
+"bestehende Zeichenkette existiert."
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:140
+msgid ""
+"By using the language variable format, phpBB allows for more flexibility in "
+"the customization of language strings. This allows for easy modifications of"
+" language strings in the language files without having to modify the source "
+"code directly."
+msgstr ""
+"Durch die Verwendung des Sprachvariablenformats ermöglicht phpBB mehr "
+"Flexibilität bei der Anpassung von Sprachzeichenketten. Dies ermöglicht "
+"einfache Änderungen an Sprachzeichenketten in den Sprachdateien, ohne den "
+"Quellcode direkt ändern zu müssen."
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:147
+msgid "The basic block level loop takes the form:"
+msgstr "Die grundlegende Block-Ebenen-Schleife hat die Form:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:155
+msgid "A further extension to begin is to use ``else`` in a loop:"
+msgstr ""
+"Eine weitere Erweiterung für den Anfang besteht darin, ``else`` in einer "
+"Schleife zu verwenden:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:165
+msgid ""
+"This will cause the markup between ``else`` and ``endfor`` to be output if "
+"the loop contains no values. This is useful for forums with no topics (for "
+"example) ... in some ways it replaces \"bits of\" the existing \"switch\" "
+"type control (the rest being replaced by conditionals, see below)."
+msgstr ""
+"Dies führt dazu, dass das Markup zwischen ``else`` und ``endfor`` ausgegeben"
+" wird, wenn die Schleife keine Werte enthält. Dies ist zum Beispiel nützlich"
+" für Foren ohne Themen ... in gewisser Weise ersetzt es \"Teile\" der "
+"bestehenden \"switch\"-artigen Steuerung (der Rest wird durch Bedingungen "
+"ersetzt, siehe unten)."
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:169
+msgid ""
+"You can also check if your loop has any content similar to using ``count()``"
+" in PHP:"
+msgstr ""
+"Du kannst auch prüfen, ob deine Schleife Inhalt hat, ähnlich der Verwendung "
+"von ``count()`` in PHP:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:179
+msgid ""
+"``loops.loopname|length`` will output the size of the block array. This "
+"makes sense if you want to prevent, for example, an empty ``<select>`` tag, "
+"which would not be HTML valid."
+msgstr ""
+"``loops.loopname|length`` gibt die Größe des Block-Arrays aus. Dies ist "
+"sinnvoll, wenn du zum Beispiel ein leeres ``<select>``-Tag verhindern "
+"möchtest, das kein gültiges HTML wäre."
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:182
+msgid ""
+"You can also access specific iterations of a loop using the following "
+"special variables:"
+msgstr ""
+"Du kannst auch mithilfe der folgenden speziellen Variablen auf bestimmte "
+"Iterationen einer Schleife zugreifen:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:187
+msgid "``loop.index``"
+msgstr "``loop.index``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:188
+msgid "The current iteration of the loop. (1 indexed)"
+msgstr "Die aktuelle Iteration der Schleife. (1-indexiert)"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:189
+msgid "``loop.index0``"
+msgstr "``loop.index0``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:190
+msgid "The current iteration of the loop. (0 indexed)"
+msgstr "Die aktuelle Iteration der Schleife. (0-indexiert)"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:191
+msgid "``loop.revindex``"
+msgstr "``loop.revindex``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:192
+msgid "The number of iterations from the end of the loop (1 indexed)"
+msgstr "Die Anzahl der Iterationen vom Ende der Schleife (1-indexiert)"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:193
+msgid "``loop.revindex0``"
+msgstr "``loop.revindex0``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:194
+msgid "The number of iterations from the end of the loop (0 indexed)"
+msgstr "Die Anzahl der Iterationen vom Ende der Schleife (0-indexiert)"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:195
+msgid "``loop.first``"
+msgstr "``loop.first``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:196
+msgid "True if first iteration"
+msgstr "True bei der ersten Iteration"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:197
+msgid "``loop.last``"
+msgstr "``loop.last``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:198
+msgid "True if last iteration"
+msgstr "True bei der letzten Iteration"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:199
+msgid "``loop.length``"
+msgstr "``loop.length``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:200
+msgid "The number of items in the sequence"
+msgstr "Die Anzahl der Elemente in der Sequenz"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:201
+msgid "``loop.parent``"
+msgstr "``loop.parent``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:202
+msgid "The parent context"
+msgstr "Der übergeordnete Kontext"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:205
+msgid "Including files"
+msgstr "Einbinden von Dateien"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:207
+msgid "phpBB has the ability to include other HTML, Javascript and CSS files:"
+msgstr ""
+"phpBB hat die Möglichkeit, andere HTML-, JavaScript- und CSS-Dateien "
+"einzubinden:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:215
+msgid ""
+"You can introduce new templates (i.e. other than those in the default set) "
+"using this system and include them as you wish ... perhaps useful for a "
+"common \"menu\" bar or similar."
+msgstr ""
+"Mit diesem System kannst du neue Templates einführen (d. h. andere als die "
+"im Standardsatz enthaltenen) und sie nach Belieben einbinden ... vielleicht "
+"nützlich für eine gemeinsame \"Menü\"-Leiste oder Ähnliches."
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:219
+msgid "Conditionals/Control structures"
+msgstr "Bedingungen/Kontrollstrukturen"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:221
+msgid ""
+"Conditionals and control structures can be used similar to Twig. A simple "
+"example of this is:"
+msgstr ""
+"Bedingungen und Kontrollstrukturen können ähnlich wie in Twig verwendet "
+"werden. Ein einfaches Beispiel hierfür ist:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:229
+msgid "The expression can take many forms:"
+msgstr "Der Ausdruck kann viele Formen annehmen:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:237
+msgid ""
+"This will output the markup if the current iteration of a loop is an even "
+"value. You can use various comparison methods (standard as well as "
+"equivalent textual versions noted in square brackets) including:"
+msgstr ""
+"Dies gibt das Markup aus, wenn die aktuelle Iteration einer Schleife ein "
+"gerader Wert ist. Du kannst verschiedene Vergleichsmethoden verwenden "
+"(Standard- sowie äquivalente Textversionen in eckigen Klammern), darunter:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:240
+msgid "``==`` [``eq``]"
+msgstr "``==`` [``eq``]"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:241
+msgid "``!=`` [``neq``, ``ne``]"
+msgstr "``!=`` [``neq``, ``ne``]"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:242
+msgid "``<>`` (same as ``!=``)"
+msgstr "``<>`` (dasselbe wie ``!=``)"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:243
+msgid "``!==`` (not equivalent in value and type)"
+msgstr "``!==`` (nicht gleichwertig in Wert und Typ)"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:244
+msgid "``===`` (equivalent in value and type)"
+msgstr "``===`` (gleichwertig in Wert und Typ)"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:245
+msgid "``>`` [``gt``]"
+msgstr "``>`` [``gt``]"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:246
+msgid "``<`` [``lt``]"
+msgstr "``<`` [``lt``]"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:247
+msgid "``>=`` [``gte``]"
+msgstr "``>=`` [``gte``]"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:248
+msgid "``<=`` [``lte``]"
+msgstr "``<=`` [``lte``]"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:249
+msgid "``&&`` [``and``]"
+msgstr "``&&`` [``and``]"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:250
+msgid "``||`` [``or``]"
+msgstr "``||`` [``or``]"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:251
+msgid "``%`` [``mod``]"
+msgstr "``%`` [``mod``]"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:252
+msgid "``!`` [``not``]"
+msgstr "``!`` [``not``]"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:253
+msgid "``+``"
+msgstr "``+``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:254
+msgid "``-``"
+msgstr "``-``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:255
+msgid "``*``"
+msgstr "``*``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:256
+msgid "``/``"
+msgstr "``/``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:257
+msgid "``<<`` (bitwise shift left)"
+msgstr "``<<`` (Bitweiser Linksshift)"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:258
+msgid "``>>`` (bitwise shift right)"
+msgstr "``>>`` (Bitweiser Rechtsshift)"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:259
+msgid "``|`` (bitwise or)"
+msgstr "``|`` (Bitweises Oder)"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:260
+msgid "``^`` (bitwise xor)"
+msgstr "``^`` (Bitweises Xor)"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:261
+msgid "``&`` (bitwise and)"
+msgstr "``&`` (Bitweises Und)"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:262
+msgid "``~`` (bitwise not)"
+msgstr "``~`` (Bitweises Nicht)"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:263
+msgid "``is`` (can be used to join comparison operations)"
+msgstr ""
+"``is`` (kann verwendet werden, um Vergleichsoperationen zu verknüpfen)"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:265
+msgid ""
+"Basic parenthesis can also be used to enforce good old BODMAS rules. "
+"Additionally some basic comparison types are defined:"
+msgstr ""
+"Einfache Klammern können auch verwendet werden, um die guten alten BODMAS-"
+"Regeln durchzusetzen. Zusätzlich sind einige grundlegende Vergleichstypen "
+"definiert:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:267
+msgid "``even``"
+msgstr "``even``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:268
+msgid "``odd``"
+msgstr "``odd``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:269
+msgid "``div``"
+msgstr "``div``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:271
+msgid ""
+"Beyond the simple use of IF you can also do a sequence of comparisons using "
+"the following:"
+msgstr ""
+"Über die einfache Verwendung von IF hinaus kannst du auch eine Sequenz von "
+"Vergleichen mit Folgendem durchführen:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:288
+msgid ""
+"Each statement will be tested in turn and the relevant output generated when"
+" a match (if a match) is found. It is not necessary to always use "
+"``elseif``, ``else`` can be used alone to match \"everything else\"."
+msgstr ""
+"Jede Anweisung wird der Reihe nach getestet, und die entsprechende Ausgabe "
+"wird erzeugt, wenn eine Übereinstimmung (falls vorhanden) gefunden wird. Es "
+"ist nicht notwendig, immer ``elseif`` zu verwenden, ``else`` kann allein "
+"verwendet werden, um \"alles andere\" abzudecken."
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:291
+msgid ""
+"This can also be used to for example assign different stylesheets on even "
+"row count than on uneven ones:"
+msgstr ""
+"Dies kann auch verwendet werden, um zum Beispiel bei gerader Zeilenanzahl "
+"andere Stylesheets als bei ungerader zuzuweisen:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:305
+msgid "Other elements can also be added:"
+msgstr "Es können auch andere Elemente hinzugefügt werden:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:323
+msgid ""
+"This will output the row cell in purple for the first two rows, blue for "
+"rows 2 to 5, green for rows 5 to 10 and red for remainder. So, you could "
+"produce a \"nice\" gradient effect, for example."
+msgstr ""
+"Dies gibt die Zeilenzelle für die ersten beiden Zeilen in Lila, für die "
+"Zeilen 2 bis 5 in Blau, für die Zeilen 5 bis 10 in Grün und für den Rest in "
+"Rot aus. So könntest du zum Beispiel einen \"schönen\" Farbverlaufseffekt "
+"erzeugen."
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:326
+msgid ""
+"You could use ``if`` to do common checks on for example the login state of a"
+" user:"
+msgstr ""
+"Du könntest ``if`` verwenden, um gängige Prüfungen durchzuführen, zum "
+"Beispiel auf den Anmeldestatus eines Benutzers:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:335
+msgid "User variables"
+msgstr "Benutzervariablen"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:337
+msgid ""
+"You can also define simple (boolean, integer or double) variables from "
+"inside the template. This is for example useful if you dont want to copy & "
+"paste complex ``if`` expressions over and over again:"
+msgstr ""
+"Du kannst auch einfache (boolesche, ganzzahlige oder Double-)Variablen "
+"innerhalb des Templates definieren. Dies ist zum Beispiel nützlich, wenn du "
+"komplexe ``if``-Ausdrücke nicht immer wieder kopieren und einfügen möchtest:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:354
+msgid "The ``DEFINE`` keyword does have some restrictions on its use:"
+msgstr ""
+"Das Schlüsselwort ``DEFINE`` hat einige Einschränkungen bei seiner "
+"Verwendung:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:356
+msgid "There **MUST** be exactly one space before and after the ``=``"
+msgstr "Vor und nach dem ``=`` **MUSS** genau ein Leerzeichen stehen"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:357
+msgid "You **MUST** use single quotes"
+msgstr "Du **MUSST** einfache Anführungszeichen verwenden"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:359
+msgid "An example of this:"
+msgstr "Ein Beispiel hierfür:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:371
+msgid "User variables can be cleared (unset) using:"
+msgstr "Benutzervariablen können mit Folgendem gelöscht (unset) werden:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:378
+msgid "Language variables"
+msgstr "Sprachvariablen"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:380
+msgid ""
+"You can use and interact with language variables in multiple ways. phpBB "
+"extends the standard twig syntax with the following functions to be able to "
+"use language variables within twig based template code:"
+msgstr ""
+"Du kannst auf mehrere Arten mit Sprachvariablen arbeiten und interagieren. "
+"phpBB erweitert die Standard-Twig-Syntax um die folgenden Funktionen, um "
+"Sprachvariablen innerhalb von Twig-basiertem Template-Code verwenden zu "
+"können:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:383
+msgid "``lang``"
+msgstr "``lang``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:384
+msgid ""
+"Get output for a language variable similar to using ``{{ L_FOO }}``. The "
+"following two lines output the same result:"
+msgstr ""
+"Ausgabe für eine Sprachvariable erhalten, ähnlich der Verwendung von ``{{ "
+"L_FOO }}``. Die folgenden beiden Zeilen geben dasselbe Ergebnis aus:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:393
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:411
+msgid "It supports the same parameter syntax as ``$language->lang()``:"
+msgstr "Sie unterstützt dieselbe Parametersyntax wie ``$language->lang()``:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:399
+msgid "For language variables in Javascript, please use ``lang_js``."
+msgstr "Für Sprachvariablen in JavaScript verwende bitte ``lang_js``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:401
+msgid "``lang_js``"
+msgstr "``lang_js``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:402
+msgid ""
+"Get output for language variable in JS code. This should be used instead of "
+"the previously used ``LA_`` prefix. The following two lines output the same "
+"result:"
+msgstr ""
+"Ausgabe für eine Sprachvariable in JS-Code erhalten. Dies sollte anstelle "
+"des zuvor verwendeten Präfixes ``LA_`` verwendet werden. Die folgenden "
+"beiden Zeilen geben dasselbe Ergebnis aus:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:417
+msgid "Essentially this is the equivalent of:"
+msgstr "Im Wesentlichen ist dies das Äquivalent zu:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:423
+msgid "``lang_defined``"
+msgstr "``lang_defined``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:424
+msgid ""
+"Checks whether a language variable is defined. Can be used to check for "
+"existence of a language variable before calling ``lang`` or ``lang_js``."
+msgstr ""
+"Prüft, ob eine Sprachvariable definiert ist. Kann verwendet werden, um die "
+"Existenz einer Sprachvariable zu prüfen, bevor ``lang`` oder ``lang_js`` "
+"aufgerufen wird."
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:433
+msgid "``lang_raw``"
+msgstr "``lang_raw``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_templates.rst:434
+msgid ""
+"Outputs the raw value of a language variable, e.g. a string or array. It can"
+" be used to access entries of a language array in the template code."
+msgstr ""
+"Gibt den Rohwert einer Sprachvariable aus, z. B. eine Zeichenkette oder ein "
+"Array. Sie kann verwendet werden, um im Template-Code auf Einträge eines "
+"Sprach-Arrays zuzugreifen."

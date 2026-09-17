@@ -1,0 +1,325 @@
+# German translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: de_x_sie\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:3
+msgid "Getting started"
+msgstr "Erste Schritte"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:5
+msgid ""
+"The command line interface (CLI) is a useful utility for phpBB "
+"administrators who have access to a shell (or SSH) on the server they run "
+"phpBB on, as well as for extension developers. It provides CLI commands for "
+"managing config values, extensions, running database migration, purging the "
+"cache, and more."
+msgstr ""
+"Die Kommandozeilenschnittstelle (CLI) ist ein nützliches Werkzeug für phpBB-"
+"Administratoren, die Zugriff auf eine Shell (oder SSH) auf dem Server haben,"
+" auf dem sie phpBB betreiben, sowie für Erweiterungsentwickler. Sie bietet "
+"CLI-Befehle zur Verwaltung von Config-Werten und Erweiterungen, zum "
+"Ausführen von Datenbankmigrationen, zum Leeren des Caches und mehr."
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:7
+msgid ""
+"Most operating systems ship with a built in command line application. For "
+"Mac OS and Ubuntu it is called \"Terminal\" and for Windows it is called "
+"\"Command Prompt\". Third party software such as `PuTTY "
+"<http://www.putty.org>`_ and `iTerm <https://www.iterm2.com>`_ can also be "
+"used."
+msgstr ""
+"Die meisten Betriebssysteme werden mit einer integrierten "
+"Kommandozeilenanwendung ausgeliefert. Bei Mac OS und Ubuntu heißt sie "
+"\"Terminal\" und bei Windows \"Eingabeaufforderung\". Es kann auch "
+"Drittanbieter-Software wie `PuTTY <http://www.putty.org>`_ und `iTerm "
+"<https://www.iterm2.com>`_ verwendet werden."
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:9
+msgid ""
+"To use phpBB's CLI on a web server, you will need SSH access to your web "
+"server. You can find out from your web hosting company if they offer SSH "
+"access and how to log into your web server from the CLI."
+msgstr ""
+"Um die CLI von phpBB auf einem Webserver zu verwenden, benötigen Sie SSH-"
+"Zugriff auf Ihren Webserver. Bei Ihrem Webhosting-Anbieter können Sie "
+"erfahren, ob SSH-Zugriff angeboten wird und wie Sie sich von der CLI aus auf"
+" Ihrem Webserver anmelden können."
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:11
+msgid ""
+"Once you have accessed your web server via SSH, or if you are in a localhost"
+" development environment, you simply need to navigate to your phpBB forum "
+"directory via the ``cd`` command:"
+msgstr ""
+"Sobald Sie über SSH auf Ihren Webserver zugegriffen haben, oder wenn Sie "
+"sich in einer lokalen Entwicklungsumgebung befinden, müssen Sie einfach mit "
+"dem Befehl ``cd`` zu Ihrem phpBB-Forumverzeichnis navigieren:"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:17
+msgid ""
+"From there, issuing commands is simply a matter of calling phpBB's CLI "
+"application."
+msgstr ""
+"Von dort aus ist das Ausführen von Befehlen einfach eine Frage des Aufrufs "
+"der CLI-Anwendung von phpBB."
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:23
+msgid ""
+"*If everything is working correctly, the above command should output "
+"information about the currently installed phpBB CLI console. If you receive "
+"an error message, make sure you have navigated into the root directory of "
+"your forum.*"
+msgstr ""
+"*Wenn alles korrekt funktioniert, sollte der obige Befehl Informationen über"
+" die aktuell installierte phpBB-CLI-Konsole ausgeben. Wenn Sie eine "
+"Fehlermeldung erhalten, stellen Sie sicher, dass Sie in das Stammverzeichnis"
+" Ihres Forums navigiert sind.*"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:26
+msgid "General commands"
+msgstr "Allgemeine Befehle"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:28
+msgid ""
+"The ``list`` command will show a list of all available commands available "
+"for phpBB's CLI."
+msgstr ""
+"Der Befehl ``list`` zeigt eine Liste aller verfügbaren Befehle für die CLI "
+"von phpBB an."
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:34
+msgid "The ``help`` command will display general help for using phpBB's CLI."
+msgstr ""
+"Der Befehl ``help`` zeigt allgemeine Hilfe zur Verwendung der CLI von phpBB "
+"an."
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:41
+msgid "Using commands"
+msgstr "Verwenden von Befehlen"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:43
+msgid ""
+"All phpBB commands (as described when running the ``list`` command) have "
+"integrated help documentation available within the CLI. Use the ``--help`` "
+"or ``-h`` option with any of phpBB's CLI commands to view detailed help for "
+"that command."
+msgstr ""
+"Alle phpBB-Befehle (wie beim Ausführen des Befehls ``list`` beschrieben) "
+"verfügen über eine integrierte Hilfedokumentation innerhalb der CLI. "
+"Verwende die Option ``--help`` oder ``-h`` mit einem beliebigen CLI-Befehl "
+"von phpBB, um detaillierte Hilfe zu diesem Befehl anzuzeigen."
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:49
+msgid ""
+"The above command will display information about the arguments and options "
+"that can be used with the specified command, in this example ``config:set``."
+" For example, the above command will output:"
+msgstr ""
+"Der obige Befehl zeigt Informationen zu den Argumenten und Optionen an, die "
+"mit dem angegebenen Befehl verwendet werden können, in diesem Beispiel "
+"``config:set``. Der obige Befehl gibt zum Beispiel Folgendes aus:"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:56
+msgid ""
+"Arguments or options shown inside of brackets indicates that they are "
+"optional to use. This shows us that the ``key`` and ``value`` arguments are "
+"required. However, the ``-d`` or ``--dynamic`` options available for this "
+"command are optional. Also note that ``-d`` is shorthand for ``--dynamic``. "
+"Most options have a shorthand equivalent."
+msgstr ""
+"Argumente oder Optionen, die in Klammern angezeigt werden, sind optional zu "
+"verwenden. Dies zeigt uns, dass die Argumente ``key`` und ``value`` "
+"erforderlich sind. Die für diesen Befehl verfügbaren Optionen ``-d`` oder "
+"``--dynamic`` sind hingegen optional. Beachte außerdem, dass ``-d`` die "
+"Kurzform von ``--dynamic`` ist. Die meisten Optionen haben ein "
+"entsprechendes Kürzel."
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:59
+msgid "General options"
+msgstr "Allgemeine Optionen"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:61
+msgid "Common options that can be used with any of phpBB's CLI commands."
+msgstr ""
+"Häufige Optionen, die mit jedem CLI-Befehl von phpBB verwendet werden "
+"können."
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:1
+msgid "Option"
+msgstr "Option"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:1
+msgid "Usage"
+msgstr "Verwendung"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:1
+msgid "``--help, -h``"
+msgstr "``--help, -h``"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:1
+msgid "Display a help message"
+msgstr "Eine Hilfenachricht anzeigen"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:1
+msgid "``--quiet, -q``"
+msgstr "``--quiet, -q``"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:1
+msgid "Do not output any message"
+msgstr "Keine Nachricht ausgeben"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:1
+msgid "``--verbose, -v, -vv, -vvv``"
+msgstr "``--verbose, -v, -vv, -vvv``"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:1
+msgid ""
+"Increase the verbosity of messages: 1 for normal output, 2 for more verbose "
+"output and 3 for debug"
+msgstr ""
+"Die Ausführlichkeit der Nachrichten erhöhen: 1 für normale Ausgabe, 2 für "
+"ausführlichere Ausgabe und 3 für Debug"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:1
+msgid "``--version, -V``"
+msgstr "``--version, -V``"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:1
+msgid "Display this application version"
+msgstr "Die Version dieser Anwendung anzeigen"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:1
+msgid "``--ansi``"
+msgstr "``--ansi``"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:1
+msgid "Force ANSI (colors) output"
+msgstr "ANSI-Ausgabe (Farben) erzwingen"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:1
+msgid "``--no-ansi``"
+msgstr "``--no-ansi``"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:1
+msgid "Disable ANSI (colors) output"
+msgstr "ANSI-Ausgabe (Farben) deaktivieren"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:1
+msgid "``--no-interaction, -n``"
+msgstr "``--no-interaction, -n``"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:1
+msgid "Do not ask any interactive question"
+msgstr "Keine interaktive Frage stellen"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:1
+msgid "``--safe-mode``"
+msgstr "``--safe-mode``"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:1
+msgid "Run in Safe Mode (without extensions)"
+msgstr "Im abgesicherten Modus ausführen (ohne Erweiterungen)"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:77
+msgid "Install phpBB using the CLI"
+msgstr "phpBB mit der CLI installieren"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:79
+msgid ""
+"The phpBB CLI installer uses a YAML file populated with the data needed to "
+"configure a database for a new phpBB installation. You can find a sample "
+"configuration file in ``docs/install-config.sample.yml``. Copy this file to "
+"``install/install-config.yml``. Adjust the sample parameters to your needs."
+"  For example, a MySQL database using the ``mysqli`` interface hosted on a "
+"``localhost`` server with the root user ``bertie`` and password "
+"``bertiepasswd`` and named ``bertiedb`` would look like:"
+msgstr ""
+"Der phpBB-CLI-Installer verwendet eine YAML-Datei, die mit den Daten gefüllt"
+" ist, die zur Konfiguration einer Datenbank für eine neue phpBB-Installation"
+" benötigt werden. Eine Beispielkonfigurationsdatei finden Sie in "
+"``docs/install-config.sample.yml``. Kopieren Sie diese Datei nach "
+"``install/install-config.yml``. Passen Sie die Beispielparameter an Ihre "
+"Bedürfnisse an. Eine MySQL-Datenbank, die die ``mysqli``-Schnittstelle "
+"verwendet, auf einem ``localhost``-Server gehostet wird, mit dem Root-"
+"Benutzer ``bertie`` und dem Passwort ``bertiepasswd`` und die ``bertiedb`` "
+"heißt, würde zum Beispiel so aussehen:"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:122
+msgid ""
+"You can adjust additional settings like the admin's username, email address "
+"and the board info. Make sure the file is readable by the CLI."
+msgstr ""
+"Sie können zusätzliche Einstellungen wie den Benutzernamen des "
+"Administrators, die E-Mail-Adresse und die Forumsinformationen anpassen. "
+"Stellen Sie sicher, dass die Datei von der CLI gelesen werden kann."
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:124
+msgid "To install the board, run the following command:"
+msgstr "Um das Forum zu installieren, führe den folgenden Befehl aus:"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:130
+msgid ""
+"The installer will start now and show its progress during the installation."
+msgstr ""
+"Der Installer startet nun und zeigt seinen Fortschritt während der "
+"Installation an."
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:133
+msgid "Update phpBB using the CLI"
+msgstr "phpBB mit der CLI aktualisieren"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:135
+msgid ""
+"Much like installing from the CLI, phpBB can also be updated from the CLI "
+"using a YAML file with update instructions. You can find a sample update "
+"configuration file in ``docs/update-config.sample.yml``. Copy this file to "
+"``install/update-config.yml``."
+msgstr ""
+"Ähnlich wie bei der Installation über die CLI kann phpBB auch über die CLI "
+"mit einer YAML-Datei mit Update-Anweisungen aktualisiert werden. Eine "
+"Beispiel-Update-Konfigurationsdatei finden Sie in ``docs/update-"
+"config.sample.yml``. Kopieren Sie diese Datei nach ``install/update-"
+"config.yml``."
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:143
+msgid ""
+"In this state, the updater will update your phpBB database and it will also "
+"replace all phpBB files with the updated files, giving you a complete "
+"upgrade."
+msgstr ""
+"In diesem Zustand aktualisiert der Updater Ihre phpBB-Datenbank und ersetzt "
+"außerdem alle phpBB-Dateien durch die aktualisierten Dateien, sodass Sie ein"
+" vollständiges Upgrade erhalten."
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:145
+msgid ""
+"However, if you have already replaced the files via the filesystem or FTP, "
+"you can choose to update the database only by changing the ``type`` from "
+"``all` to ``db_only``:"
+msgstr ""
+"Wenn Sie die Dateien jedoch bereits über das Dateisystem oder FTP ersetzt "
+"haben, können Sie sich dafür entscheiden, nur die Datenbank zu "
+"aktualisieren, indem Sie ``type`` von ``all`` auf ``db_only`` ändern:"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:152
+msgid "To update the board, run the following command:"
+msgstr "Um das Forum zu aktualisieren, führe den folgenden Befehl aus:"
+
+#: ../../devdocs-source-copy/cli/getting_started.rst:158
+msgid "The updater will start and show its progress."
+msgstr "Der Updater startet und zeigt seinen Fortschritt an."

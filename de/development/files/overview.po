@@ -1,0 +1,151 @@
+# German translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/files/overview.rst:3
+msgid "The files classes"
+msgstr "Die Klassen von files"
+
+#: ../../devdocs-source-copy/files/overview.rst:5
+msgid ""
+"phpBB 3.2 introduces two new classes for uploading files: filespec and "
+"upload. These have been refactored and are based on the previously available"
+" filespec and fileupload classes. In addition to that, there is also a "
+"factory class which can be used for easy access to the files classes."
+msgstr ""
+"phpBB 3.2 führt zwei neue Klassen zum Hochladen von Dateien ein: filespec "
+"und upload. Diese wurden überarbeitet und basieren auf den zuvor verfügbaren"
+" Klassen filespec und fileupload. Zusätzlich gibt es eine Factory-Klasse, "
+"die für einen einfachen Zugriff auf die files-Klassen verwendet werden kann."
+
+#: ../../devdocs-source-copy/files/overview.rst:11
+msgid ""
+"The previously used file ``functions_upload.php`` no longer exists. Instead,"
+" the newly added classes should be passed to your classes, controllers, etc."
+" using the container infrastructure."
+msgstr ""
+"Die zuvor verwendete Datei ``functions_upload.php`` existiert nicht mehr. "
+"Stattdessen sollten die neu hinzugefügten Klassen deinen Klassen, "
+"Controllern usw. über die Container-Infrastruktur übergeben werden."
+
+#: ../../devdocs-source-copy/files/overview.rst:16
+msgid "Overview of available classes"
+msgstr "Übersicht der verfügbaren Klassen"
+
+#: ../../devdocs-source-copy/files/overview.rst:19
+msgid "factory"
+msgstr "factory"
+
+#: ../../devdocs-source-copy/files/overview.rst:20
+msgid "``\\phpbb\\files\\factory``"
+msgstr "``\\phpbb\\files\\factory``"
+
+#: ../../devdocs-source-copy/files/overview.rst:22
+msgid ""
+"Provides easier access to files classes, e.g. inside the files classes "
+"themselves."
+msgstr ""
+"Bietet einfacheren Zugriff auf files-Klassen, z. B. innerhalb der files-"
+"Klassen selbst."
+
+#: ../../devdocs-source-copy/files/overview.rst:26
+msgid "filespec"
+msgstr "filespec"
+
+#: ../../devdocs-source-copy/files/overview.rst:27
+msgid "``\\phpbb\\files\\filespec``"
+msgstr "``\\phpbb\\files\\filespec``"
+
+#: ../../devdocs-source-copy/files/overview.rst:29
+msgid ""
+"Responsible for holding all file relevant information, as well as doing "
+"file-specific operations."
+msgstr ""
+"Zuständig für das Speichern aller dateirelevanten Informationen sowie für "
+"dateispezifische Operationen."
+
+#: ../../devdocs-source-copy/files/overview.rst:33
+msgid "upload"
+msgstr "upload"
+
+#: ../../devdocs-source-copy/files/overview.rst:34
+msgid "``\\phpbb\\files\\upload``"
+msgstr "``\\phpbb\\files\\upload``"
+
+#: ../../devdocs-source-copy/files/overview.rst:36
+msgid ""
+"Used for actual file uploads. Is also used for checking for valid files and "
+"moving files."
+msgstr ""
+"Wird für tatsächliche Datei-Uploads verwendet. Wird auch zur Prüfung "
+"gültiger Dateien und zum Verschieben von Dateien verwendet."
+
+#: ../../devdocs-source-copy/files/overview.rst:40
+msgid "Using the container to retrieve the classes"
+msgstr "Verwendung des Containers zum Abrufen der Klassen"
+
+#: ../../devdocs-source-copy/files/overview.rst:42
+msgid "The files classes can easily be retrieved using the container:"
+msgstr "Die files-Klassen lassen sich einfach über den Container abrufen:"
+
+#: ../../devdocs-source-copy/files/overview.rst:50
+msgid ""
+"The filespec and upload classes are defined with the prototype scope. This "
+"results in the container returning a new instance of these classes every "
+"time one calls the get() method."
+msgstr ""
+"Die Klassen filespec und upload sind mit dem Scope prototype definiert. Dies"
+" führt dazu, dass der Container jedes Mal, wenn man die Methode get() "
+"aufruft, eine neue Instanz dieser Klassen zurückgibt."
+
+#: ../../devdocs-source-copy/files/overview.rst:54
+msgid ""
+"If a class outside the prototype scope gets passed an instance of the upload"
+" or filespec class, the class will always use the same instance. As a result"
+" of that, it is recommended to use the factory for retrieving a new instance"
+" of the required class(es) during runtime."
+msgstr ""
+"Wenn einer Klasse außerhalb des Scopes prototype eine Instanz der Klasse "
+"upload oder filespec übergeben wird, verwendet diese Klasse immer dieselbe "
+"Instanz. Daher wird empfohlen, die Factory zu verwenden, um während der "
+"Laufzeit eine neue Instanz der benötigten Klasse(n) abzurufen."
+
+#: ../../devdocs-source-copy/files/overview.rst:59
+msgid "Using the factory to retrieve the classes"
+msgstr "Verwendung der Factory zum Abrufen der Klassen"
+
+#: ../../devdocs-source-copy/files/overview.rst:61
+msgid ""
+"The factory class can be used to retrieve the files classes without the need"
+" to use the container itself. It can be passed as a service to a class:"
+msgstr ""
+"Die Factory-Klasse kann verwendet werden, um die files-Klassen abzurufen, "
+"ohne den Container selbst nutzen zu müssen. Sie kann einer Klasse als "
+"Service übergeben werden:"
+
+#: ../../devdocs-source-copy/files/overview.rst:71
+msgid "Of course, the class can also be instantiated manually:"
+msgstr "Natürlich kann die Klasse auch manuell instanziiert werden:"
+
+#: ../../devdocs-source-copy/files/overview.rst:77
+msgid ""
+"Once the factory is available, the other class can be retrieved using the "
+"``get()`` method:"
+msgstr ""
+"Sobald die Factory verfügbar ist, kann die andere Klasse mit der Methode "
+"``get()`` abgerufen werden:"

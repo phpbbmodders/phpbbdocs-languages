@@ -1,0 +1,65 @@
+# German translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: de_x_sie\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/migrations/tools/config_text.rst:3
+msgid "Config Text Tool"
+msgstr "Config-Text-Werkzeug"
+
+#: ../../devdocs-source-copy/migrations/tools/config_text.rst:5
+msgid ""
+"The config_text tool helps adding, updating, and removing config_text "
+"settings. The config_text table is used to store options with an arbitrary "
+"length value in a TEXT column. In contrast to config values, config_text are"
+" not cached or prefetched."
+msgstr ""
+"Das config_text-Werkzeug hilft beim Hinzufügen, Aktualisieren und Entfernen "
+"von config_text-Einstellungen. Die config_text-Tabelle wird verwendet, um "
+"Optionen mit einem Wert beliebiger Länge in einer TEXT-Spalte zu speichern. "
+"Im Gegensatz zu config-Werten werden config_text-Werte nicht gecacht oder "
+"vorab geladen."
+
+#: ../../devdocs-source-copy/migrations/tools/config_text.rst:11
+msgid "Add Config_Text Setting"
+msgstr "Config_Text-Einstellung hinzufügen"
+
+#: ../../devdocs-source-copy/migrations/tools/config_text.rst:13
+msgid "Add a new config_text setting"
+msgstr "Eine neue config_text-Einstellung hinzufügen"
+
+#: ../../devdocs-source-copy/migrations/tools/config_text.rst:20
+#: ../../devdocs-source-copy/migrations/tools/config_text.rst:42
+#: ../../devdocs-source-copy/migrations/tools/config_text.rst:63
+msgid "Example"
+msgstr "Beispiel"
+
+#: ../../devdocs-source-copy/migrations/tools/config_text.rst:33
+msgid "Update Config_Text Setting"
+msgstr "Config_Text-Einstellung aktualisieren"
+
+#: ../../devdocs-source-copy/migrations/tools/config_text.rst:35
+msgid "Update a config_text setting"
+msgstr "Eine config_text-Einstellung aktualisieren"
+
+#: ../../devdocs-source-copy/migrations/tools/config_text.rst:54
+msgid "Delete Config_Text Setting"
+msgstr "Config_Text-Einstellung löschen"
+
+#: ../../devdocs-source-copy/migrations/tools/config_text.rst:56
+msgid "Delete a config_text setting"
+msgstr "Eine config_text-Einstellung löschen"
