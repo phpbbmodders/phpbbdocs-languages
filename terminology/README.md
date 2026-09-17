@@ -4,7 +4,8 @@ Per-language translation-quality writeups: terminology audits (does the
 translation quote phpBB's real UI strings correctly?), human-review
 notes for a native speaker, and supplementary glossaries for terms with
 no confirmed match yet. Each language's own `README.md` indexes its
-detailed files.
+detailed files and marks which ones are Claude's own read-only
+reference versus a translator's actual task.
 
 - [German (de_x_sie)](de_x_sie/README.md)
 - [German (de)](de/README.md)
