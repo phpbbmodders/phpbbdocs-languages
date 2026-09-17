@@ -13,16 +13,28 @@ full workflow.
 ```text
 <lang>/
 ├── language.toml        # code, name, native_name, locale, status
-└── documentation/
-    └── <chapter>.po      # one catalog per end-user chapter
+├── documentation/
+│   └── <chapter>.po      # one catalog per end-user chapter
+└── development/
+    └── <docname>.po       # one catalog per dev-docs page, mirroring the upstream RST tree
 metadata/
 └── source.json           # per-language recorded upstream source revision
-terminology/               # shared translator reference (not yet populated)
+terminology/
+└── <lang>/               # terminology audits, human-review notes, supplementary glossaries
 ```
 
 Generated POT templates and reconstructed output are never committed
 here — see phpbbdocs-hugo's `translation.conf`/`.gitignore` for where
 those live as build artifacts.
+
+## Terminology
+
+[`terminology/`](terminology/) holds each language's translation-quality
+writeups: a terminology audit against phpBB's real UI strings, human-review
+notes for a native speaker, and a supplementary glossary for unconfirmed
+terms. See [`terminology/README.md`](terminology/README.md) for the index,
+and phpbbdocs-hugo's `docs/translation-process-prompt.md` for the audit
+process that produces this content.
 
 ## Contributing
 
