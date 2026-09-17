@@ -1,0 +1,18 @@
+# CODEOWNERS
+#
+# Maps each language's PO catalogs to that language's translator, so
+# they're automatically requested for review on changes to their own
+# language. This does not restrict who can open a PR touching that
+# path -- anyone can still contribute to any language -- it just adds
+# the assigned translator as an auto-requested reviewer.
+#
+# See phpbbdocs-hugo's docs/translation-process-prompt.md and the
+# Translator Workflow wiki page for how translators are onboarded.
+#
+# No entries yet. Add one per line as translators join, in the form:
+#   /<code>/ @their-github-username
+#   /terminology/<code>/ @their-github-username
+#
+# Example, once someone joins as the German (de) translator:
+#   /de/ @their-github-username
+#   /terminology/de/ @their-github-username
