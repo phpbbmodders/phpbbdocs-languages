@@ -1,0 +1,1796 @@
+# English translations for Project name not set package.
+# Copyright (C) 
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:3
+msgid "Tutorial: Notifications"
+msgstr "Tutorial: Notifications"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:7
+msgid "This tutorial explains:"
+msgstr "This tutorial explains:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:10
+msgid "Introduction"
+msgstr "Introduction"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:11
+msgid ""
+"The notification system was introduced with the release of phpBB :guilabel:"
+"`3.1`. Since then it has seen further developments and enhancements for "
+"users and extension developers. In :guilabel:`3.2` the notification system "
+"was heavily refactored making it faster and more efficient."
+msgstr ""
+"The notification system was introduced with the release of phpBB :guilabel:"
+"`3.1`. Since then it has seen further developments and enhancements for "
+"users and extension developers. In :guilabel:`3.2` the notification system "
+"was heavily refactored making it faster and more efficient."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:15
+msgid ""
+"phpBB users have complete control over their personal notification "
+"interactions. They can set their own preferences for notification methods or "
+"disable them all together. Mark notifications as read when necessary, even "
+"though in a lot of cases this is done automatically."
+msgstr ""
+"phpBB users have complete control over their personal notification "
+"interactions. They can set their own preferences for notification methods or "
+"disable them all together. Mark notifications as read when necessary, even "
+"though in a lot of cases this is done automatically."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:19
+msgid ""
+"In phpBB there are two default notification methods: email-based and board-"
+"based notifications. The email method is only available when the ''board-"
+"wide emails'' setting has been enabled by the board administrator in the "
+"ACP. Extensions, however, can create and add their own notification methods."
+msgstr ""
+"In phpBB there are two default notification methods: email-based and board-"
+"based notifications. The email method is only available when the ''board-"
+"wide emails'' setting has been enabled by the board administrator in the "
+"ACP. Extensions, however, can create and add their own notification methods."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:23
+msgid ""
+"This tutorial will document how and extension can leverage the notification "
+"system by creating a notification based on some sort of triggering event "
+"(such as replying to a post), sending the notification via either the board, "
+"email or some other custom methods, and managing its notifications."
+msgstr ""
+"This tutorial will document how and extension can leverage the notification "
+"system by creating a notification based on some sort of triggering event "
+"(such as replying to a post), sending the notification via either the board, "
+"email or some other custom methods, and managing its notifications."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:29
+msgid "File Structure"
+msgstr "File Structure"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:30
+msgid ""
+"This is an overview of the file structure needed for a notification to "
+"function within an extension. In total there are 7 files that will be "
+"covered in this tutorial, to create and send notifications. These files will "
+"be referenced throughout this tutorial."
+msgstr ""
+"This is an overview of the file structure needed for a notification to "
+"function within an extension. In total there are 7 files that will be "
+"covered in this tutorial, to create and send notifications. These files will "
+"be referenced throughout this tutorial."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:35
+msgid "|fa-user| vendor"
+msgstr "|fa-user| vendor"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:36
+msgid "└─ |fa-ext| extension"
+msgstr "└─ |fa-ext| extension"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:37
+msgid "|nbsp| ├─ |fa-folder| config"
+msgstr "|nbsp| ├─ |fa-folder| config"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:38
+msgid "|nbsp| │ |nbsp| └─ |fa-file| services.yml"
+msgstr "|nbsp| │ |nbsp| └─ |fa-file| services.yml"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:39
+msgid "|nbsp| ├─ |fa-folder| event"
+msgstr "|nbsp| ├─ |fa-folder| event"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:40
+msgid "|nbsp| │ |nbsp| └─ |fa-file| listener.php"
+msgstr "|nbsp| │ |nbsp| └─ |fa-file| listener.php"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:41
+msgid "|nbsp| ├─ |fa-folder| language"
+msgstr "|nbsp| ├─ |fa-folder| language"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:42
+msgid "|nbsp| │ |nbsp| |nbsp| └─ |fa-folder| en"
+msgstr "|nbsp| │ |nbsp| |nbsp| └─ |fa-folder| en"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:43
+msgid "|nbsp| │ |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| └─ |fa-folder| email"
+msgstr ""
+"|nbsp| │ |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| └─ |fa-folder| email"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:44
+msgid ""
+"|nbsp| │ |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| │ |nbsp| |nbsp| └─ |fa-"
+"folder| short"
+msgstr ""
+"|nbsp| │ |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| │ |nbsp| |nbsp| └─ |fa-"
+"folder| short"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:45
+msgid ""
+"|nbsp| │ |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| │ |nbsp| |nbsp| │ |nbsp| |"
+"nbsp| └─ |fa-file| sample.txt"
+msgstr ""
+"|nbsp| │ |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| │ |nbsp| |nbsp| │ |nbsp| |"
+"nbsp| └─ |fa-file| sample.txt"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:46
+msgid ""
+"|nbsp| │ |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| │ |nbsp| |nbsp| └─ |fa-"
+"file| sample.txt"
+msgstr ""
+"|nbsp| │ |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| │ |nbsp| |nbsp| └─ |fa-"
+"file| sample.txt"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:47
+msgid ""
+"|nbsp| │ |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| └─ |fa-file| "
+"extension_common.php"
+msgstr ""
+"|nbsp| │ |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| └─ |fa-file| "
+"extension_common.php"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:48
+msgid "|nbsp| ├─ |fa-folder| notification"
+msgstr "|nbsp| ├─ |fa-folder| notification"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:49
+msgid "|nbsp| │ |nbsp| |nbsp| └─ |fa-folder| type"
+msgstr "|nbsp| │ |nbsp| |nbsp| └─ |fa-folder| type"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:50
+msgid ""
+"|nbsp| │ |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| └─ |fa-file| sample.php"
+msgstr ""
+"|nbsp| │ |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| └─ |fa-file| sample.php"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:51
+msgid "|nbsp| └─ |fa-file| ext.php"
+msgstr "|nbsp| └─ |fa-file| ext.php"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:55
+msgid "Creating a Notification Type"
+msgstr "Creating a Notification Type"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:56
+msgid ""
+"The first thing is to determine a name for the type of notification we will "
+"create. For the purposes of this tutorial we will name it ''sample''. All "
+"extensions should always use their vendor and name as prefixes, so the "
+"notification type name we'll be using is: ``vendor.extension.notification."
+"type.sample``."
+msgstr ""
+"The first thing is to determine a name for the type of notification we will "
+"create. For the purposes of this tutorial we will name it ''sample''. All "
+"extensions should always use their vendor and name as prefixes, so the "
+"notification type name we'll be using is: ``vendor.extension.notification."
+"type.sample``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:61
+msgid "Registering as a Symfony Service"
+msgstr "Registering as a Symfony Service"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:62
+msgid ""
+"Now our notification type must be registered as a Symfony service in our "
+"extension's :class:`services.yml`. As with any service declaration, it will "
+"need a service identifier and the class argument (we will discuss what goes "
+"into our :class:`sample` class a little later). However, notification types "
+"also require three additional parameters: ``parent``, ``shared`` and "
+"``tags`` parameters."
+msgstr ""
+"Now our notification type must be registered as a Symfony service in our "
+"extension's :class:`services.yml`. As with any service declaration, it will "
+"need a service identifier and the class argument (we will discuss what goes "
+"into our :class:`sample` class a little later). However, notification types "
+"also require three additional parameters: ``parent``, ``shared`` and "
+"``tags`` parameters."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:67
+msgid ""
+"The ``parent`` parameter will declare the parent service of our "
+"notification. In other words, our notification will be a child class and it "
+"will inherit from a core phpBB notification service, in this case phpBB's "
+"base notification class/service."
+msgstr ""
+"The ``parent`` parameter will declare the parent service of our "
+"notification. In other words, our notification will be a child class and it "
+"will inherit from a core phpBB notification service, in this case phpBB's "
+"base notification class/service."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:70
+msgid ""
+"The ``shared`` parameter should be set to ``flase`` which will make sure "
+"that each time this notification type is requested, a new instance is "
+"created. This will prevent any data from one notification instance being "
+"inadvertently mixed up with another."
+msgstr ""
+"The ``shared`` parameter should be set to ``flase`` which will make sure "
+"that each time this notification type is requested, a new instance is "
+"created. This will prevent any data from one notification instance being "
+"inadvertently mixed up with another."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:73
+msgid ""
+"Finally ``tags`` is used to tag our service as a notification type. This is "
+"how phpBB will know this is part of its notification system."
+msgstr ""
+"Finally ``tags`` is used to tag our service as a notification type. This is "
+"how phpBB will know this is part of its notification system."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:75
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:97
+msgid ":class:`vendor/extension/config/services.yml`"
+msgstr ":class:`vendor/extension/config/services.yml`"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:85
+msgid ""
+"However, for the purposes of this tutorial, we are going to need two "
+"additional services in our notification type. We will be using the "
+"Controller helper object (:class:`\\\\phpbb\\\\controller\\\\helper`) to "
+"create a route (see get_url_) and the User loader object (:class:`\\\\phpbb\\"
+"\\user_loader`) to display a user's details (see get_title_ and "
+"get_avatar_). But because we are defining a ``parent``, we can not also use "
+"the ``arguments`` parameter. We either have to define all ``arguments``, "
+"including the ones from the parent, or we can use the ``calls`` parameter to "
+"call functions when our notification is instantiated that will load these "
+"additional object functions, as shown below. You can read more about this in "
+"`Additional services`_."
+msgstr ""
+"However, for the purposes of this tutorial, we are going to need two "
+"additional services in our notification type. We will be using the "
+"Controller helper object (:class:`\\\\phpbb\\\\controller\\\\helper`) to "
+"create a route (see get_url_) and the User loader object (:class:`\\\\phpbb\\"
+"\\user_loader`) to display a user's details (see get_title_ and "
+"get_avatar_). But because we are defining a ``parent``, we can not also use "
+"the ``arguments`` parameter. We either have to define all ``arguments``, "
+"including the ones from the parent, or we can use the ``calls`` parameter to "
+"call functions when our notification is instantiated that will load these "
+"additional object functions, as shown below. You can read more about this in "
+"`Additional services`_."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:94
+msgid ""
+"The first argument in the call is the name of the ``set_`` function we are "
+"going to call and create in our :class:`sample` class. The second argument "
+"is an array with service definitions that our ``set_`` functions will be "
+"adding to our :class:`sample` class."
+msgstr ""
+"The first argument in the call is the name of the ``set_`` function we are "
+"going to call and create in our :class:`sample` class. The second argument "
+"is an array with service definitions that our ``set_`` functions will be "
+"adding to our :class:`sample` class."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:112
+msgid "Altering an Extension's State"
+msgstr "Altering an Extension's State"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:113
+msgid ""
+"The next thing that we need to do, is a bit of house-keeping that is "
+"required for every extension that is creating its own notifications, the "
+"enabling, disabling and purging of our notification type when our "
+"extension's state changes. In other words, when an extension is enabled/"
+"disabled, the notification type must also enabled/disabled. Or when the "
+"extension's data is deleted, the notification type's data is purged from the "
+"database as well. If this is not done or set up correctly, it will throw "
+"uncaught exceptions, making the board inaccessible."
+msgstr ""
+"The next thing that we need to do, is a bit of house-keeping that is "
+"required for every extension that is creating its own notifications, the "
+"enabling, disabling and purging of our notification type when our "
+"extension's state changes. In other words, when an extension is enabled/"
+"disabled, the notification type must also enabled/disabled. Or when the "
+"extension's data is deleted, the notification type's data is purged from the "
+"database as well. If this is not done or set up correctly, it will throw "
+"uncaught exceptions, making the board inaccessible."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:119
+msgid ""
+"In order to achieve this, three functions have to be added to the :class:"
+"`ext.php`. Each function will retrieve the notification manager from the "
+"service container and perform their respective action."
+msgstr ""
+"In order to achieve this, three functions have to be added to the :class:"
+"`ext.php`. Each function will retrieve the notification manager from the "
+"service container and perform their respective action."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:122
+msgid ":class:`vendor/extension/ext.php`"
+msgstr ":class:`vendor/extension/ext.php`"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:198
+msgid "Defining Language Strings"
+msgstr "Defining Language Strings"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:199
+msgid ""
+"Next we can start defining some language strings that will be used by the "
+"notification. This specific language file contains all possible language "
+"strings that can be used in a notification. You can remove any strings that "
+"you will not need."
+msgstr ""
+"Next we can start defining some language strings that will be used by the "
+"notification. This specific language file contains all possible language "
+"strings that can be used in a notification. You can remove any strings that "
+"you will not need."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:204
+msgid ""
+"This language file will be included during a user's setup later on in this "
+"tutorial, meaning that they will be globally available. However, there are a "
+"few strings that are only needed in the :abbr:`UCP (User Control Panel)`. "
+"Ideally these strings should be defined in a separate file, namely :class:"
+"`info_ucp_extension.php`. Using this naming convention (:class:`info_ucp_*."
+"php`) will automatically include it only in the UCP. But for the sake of "
+"this tutorial, they are all being defined in this one language file."
+msgstr ""
+"This language file will be included during a user's setup later on in this "
+"tutorial, meaning that they will be globally available. However, there are a "
+"few strings that are only needed in the :abbr:`UCP (User Control Panel)`. "
+"Ideally these strings should be defined in a separate file, namely :class:"
+"`info_ucp_extension.php`. Using this naming convention (:class:`info_ucp_*."
+"php`) will automatically include it only in the UCP. But for the sake of "
+"this tutorial, they are all being defined in this one language file."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:210
+msgid ":class:`vendor/extension/language/en/extension_common.php`"
+msgstr ":class:`vendor/extension/language/en/extension_common.php`"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:236
+msgid ""
+"Now lets create the sample Email template file, which is also located in the "
+"language directory. The variables used in this file are defined in "
+"get_email_template_variables_. The first line of the file should begin with "
+"``Subject:``, followed by the actual email subject and an empty line. It is "
+"possible to use variables in the subject line as well."
+msgstr ""
+"Now lets create the sample Email template file, which is also located in the "
+"language directory. The variables used in this file are defined in "
+"get_email_template_variables_. The first line of the file should begin with "
+"``Subject:``, followed by the actual email subject and an empty line. It is "
+"possible to use variables in the subject line as well."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:241
+msgid ":class:`vendor/extension/language/en/email/sample.txt`"
+msgstr ":class:`vendor/extension/language/en/email/sample.txt`"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:262
+msgid "It is a good practise to always use the following layout:"
+msgstr "It is a good practise to always use the following layout:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:275
+msgid "The Notification Type Class"
+msgstr "The Notification Type Class"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:276
+msgid ""
+"The following example shows what is needed as the bare minimum for a "
+"notification type class. `All the functions <Notification Type Class "
+"Functions_>`_ will be discussed later on."
+msgstr ""
+"The following example shows what is needed as the bare minimum for a "
+"notification type class. `All the functions <Notification Type Class "
+"Functions_>`_ will be discussed later on."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:279
+msgid ""
+"We have defined the :class:`base` notification type class as a ``parent`` "
+"when we were `Registering as a Symfony Service`_. Therefore it is important "
+"that our notification type class extends the :class:`base` class."
+msgstr ""
+"We have defined the :class:`base` notification type class as a ``parent`` "
+"when we were `Registering as a Symfony Service`_. Therefore it is important "
+"that our notification type class extends the :class:`base` class."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:282
+msgid ":class:`/vendor/extension/notification/type/sample.php`"
+msgstr ":class:`/vendor/extension/notification/type/sample.php`"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:296
+msgid ""
+"It is also possible to extend other notification types, rather than the :"
+"class:`base` class. |br| For example, if you want to extend the :class:"
+"`post` notification type instead: |br| you will have to register that as the "
+"service's parent: ``parent: notification.type.post`` |br| and extend that "
+"class instead: ``class sample extends \\phpbb\\notification\\type\\post``"
+msgstr ""
+"It is also possible to extend other notification types, rather than the :"
+"class:`base` class. |br| For example, if you want to extend the :class:"
+"`post` notification type instead: |br| you will have to register that as the "
+"service's parent: ``parent: notification.type.post`` |br| and extend that "
+"class instead: ``class sample extends \\phpbb\\notification\\type\\post``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:302
+msgid "Notification Type Class Functions"
+msgstr "Notification Type Class Functions"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:303
+msgid ""
+"Now it is time to dive into the wonderful world of our notification type "
+"class. We will try to cover all the functions that are possible for you to "
+"use. We will also mention whether each function is required or optional to "
+"use."
+msgstr ""
+"Now it is time to dive into the wonderful world of our notification type "
+"class. We will try to cover all the functions that are possible for you to "
+"use. We will also mention whether each function is required or optional to "
+"use."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:308
+msgid "Base Services"
+msgstr "Base Services"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:309
+msgid ""
+"The base notification type class (:class:`\\\\phpbb\\\\notification\\\\type\\"
+"\\base`) already has a few available services which can be used in our "
+"class's functions."
+msgstr ""
+"The base notification type class (:class:`\\\\phpbb\\\\notification\\\\type\\"
+"\\base`) already has a few available services which can be used in our "
+"class's functions."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "Object"
+msgstr "Object"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "Class"
+msgstr "Class"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "``$auth``"
+msgstr "``$auth``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid ":class:`\\\\phpbb\\\\auth\\\\auth`"
+msgstr ":class:`\\\\phpbb\\\\auth\\\\auth`"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "``$db``"
+msgstr "``$db``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid ":class:`\\\\phpbb\\\\db\\\\driver\\\\driver_interface`"
+msgstr ":class:`\\\\phpbb\\\\db\\\\driver\\\\driver_interface`"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "``$language``"
+msgstr "``$language``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid ":class:`\\\\phpbb\\\\language\\\\language`"
+msgstr ":class:`\\\\phpbb\\\\language\\\\language`"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "``$user``"
+msgstr "``$user``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid ":class:`\\\\phpbb\\\\user`"
+msgstr ":class:`\\\\phpbb\\\\user`"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "``$phpbb_root_path``"
+msgstr "``$phpbb_root_path``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid ":class:`string` phpBB root path"
+msgstr ":class:`string` phpBB root path"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "``$php_ext``"
+msgstr "``$php_ext``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid ":class:`string` php File extension"
+msgstr ":class:`string` php File extension"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "``$user_notifications_table``"
+msgstr "``$user_notifications_table``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid ":class:`string` User notifications table"
+msgstr ":class:`string` User notifications table"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:324
+msgid "Additional Services"
+msgstr "Additional Services"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:325
+msgid ""
+"As mentioned earlier in `Registering as a Symfony Service`_, we want to use "
+"two additional services. And because we are using the ``calls`` construct, "
+"rather than overriding the parent's ``__construct()``, we have to define the "
+"functions that are being called. You can use this construct for any "
+"registered Symfony service that you may need to inject."
+msgstr ""
+"As mentioned earlier in `Registering as a Symfony Service`_, we want to use "
+"two additional services. And because we are using the ``calls`` construct, "
+"rather than overriding the parent's ``__construct()``, we have to define the "
+"functions that are being called. You can use this construct for any "
+"registered Symfony service that you may need to inject."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:361
+msgid "Required Class Functions"
+msgstr "Required Class Functions"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:363
+msgid ""
+"The following functions must be implemented in every notification type class."
+msgstr ""
+"The following functions must be implemented in every notification type class."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:366
+msgid "get_type"
+msgstr "get_type"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:367
+msgid ""
+"This should return the service identifier as defined in `Registering as a "
+"Symfony Service`_."
+msgstr ""
+"This should return the service identifier as defined in `Registering as a "
+"Symfony Service`_."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:382
+msgid "notification_option"
+msgstr "notification_option"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:383
+msgid ""
+"This variable array defines two language strings from our notification that "
+"will appear in the :abbr:`UCP (User Control Panel)`. |br| The ``group`` is "
+"for the category under which the the notification type will show up. |br| "
+"The ``lang`` is for the actual notification type."
+msgstr ""
+"This variable array defines two language strings from our notification that "
+"will appear in the :abbr:`UCP (User Control Panel)`. |br| The ``group`` is "
+"for the category under which the the notification type will show up. |br| "
+"The ``lang`` is for the actual notification type."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:387
+msgid ""
+"It is also possible to define an ``id`` in these options. Usually this isn't "
+"needed for most extensions. The ``id`` variable is used to concatenate "
+"multiple notification types into one. So if you have multiple notification "
+"types that should show up as a single type in the user's preferences, you "
+"can set the same ``id`` on all those types."
+msgstr ""
+"It is also possible to define an ``id`` in these options. Usually this isn't "
+"needed for most extensions. The ``id`` variable is used to concatenate "
+"multiple notification types into one. So if you have multiple notification "
+"types that should show up as a single type in the user's preferences, you "
+"can set the same ``id`` on all those types."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:393
+msgid ""
+"If you do not wish to display this notification in the user's preferences, "
+"you can omit this variable and also make sure to set the is_available_ "
+"function to return ``false``."
+msgstr ""
+"If you do not wish to display this notification in the user's preferences, "
+"you can omit this variable and also make sure to set the is_available_ "
+"function to return ``false``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:411
+msgid "is_available"
+msgstr "is_available"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:412
+msgid ""
+"This function determines if this notification type should show in the :abbr:"
+"`UCP (User Control Panel)`. You can simply set it to ``true`` or check some "
+"configuration or authentication settings, or anything else for that matter, "
+"as long as it always returns either a ``true`` or ``false`` boolean. In the "
+"example below we will make displaying the notification in the UCP dependent "
+"on whether private messages are enabled and the user is authorised to read "
+"them."
+msgstr ""
+"This function determines if this notification type should show in the :abbr:"
+"`UCP (User Control Panel)`. You can simply set it to ``true`` or check some "
+"configuration or authentication settings, or anything else for that matter, "
+"as long as it always returns either a ``true`` or ``false`` boolean. In the "
+"example below we will make displaying the notification in the UCP dependent "
+"on whether private messages are enabled and the user is authorised to read "
+"them."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:418
+msgid ""
+"If this function returns ``false``, the notification type will not appear in "
+"the UCP. This simply means that a user can not change their preferences in "
+"regards to this notification type and thus can not enable/disable it. "
+"Remember that if this function could return ``false``, make sure the "
+"`notification_option`_ array is set."
+msgstr ""
+"If this function returns ``false``, the notification type will not appear in "
+"the UCP. This simply means that a user can not change their preferences in "
+"regards to this notification type and thus can not enable/disable it. "
+"Remember that if this function could return ``false``, make sure the "
+"`notification_option`_ array is set."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:438
+msgid "get_item_id"
+msgstr "get_item_id"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:439
+msgid ""
+"This function should return the identifier for the item this notification "
+"belongs to. Usually this refers to some sort of entity, like a forum, topic, "
+"post, etc... If you do not have any specific item, you can have a look at "
+"the `Custom Item Identifier`_."
+msgstr ""
+"This function should return the identifier for the item this notification "
+"belongs to. Usually this refers to some sort of entity, like a forum, topic, "
+"post, etc... If you do not have any specific item, you can have a look at "
+"the `Custom Item Identifier`_."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:443
+msgid ""
+"Just to be clear, this identifier is not the actual notification identifier "
+"(``notification_id``). However, it is used - in conjunction with the `parent "
+"identifier <get_item_parent_id_>`_ - to create an index. For example, when a "
+"notification with an item/parent id is sent to a user, and that user still "
+"has not read a prior notification with the same item/parent id combination, "
+"the new notification will not be sent. This is to prevent spamming the user "
+"with notifications about the same item over and over."
+msgstr ""
+"Just to be clear, this identifier is not the actual notification identifier "
+"(``notification_id``). However, it is used - in conjunction with the `parent "
+"identifier <get_item_parent_id_>`_ - to create an index. For example, when a "
+"notification with an item/parent id is sent to a user, and that user still "
+"has not read a prior notification with the same item/parent id combination, "
+"the new notification will not be sent. This is to prevent spamming the user "
+"with notifications about the same item over and over."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:465
+msgid "get_item_parent_id"
+msgstr "get_item_parent_id"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:466
+msgid ""
+"This function should return the identifier for the parent of the item this "
+"notification belongs to. Usually this refers to some sort of parent entity "
+"for the `item identifier <get_item_id_>`_, like a forum, topic, post, etc... "
+"For example, when the item is a topic, the parent is the forum. When the "
+"item is a post, the parent is the topic. And so on, and so forth. If there "
+"is no parent for the item, you can set this to return zero: ``return 0;``."
+msgstr ""
+"This function should return the identifier for the parent of the item this "
+"notification belongs to. Usually this refers to some sort of parent entity "
+"for the `item identifier <get_item_id_>`_, like a forum, topic, post, etc... "
+"For example, when the item is a topic, the parent is the forum. When the "
+"item is a post, the parent is the topic. And so on, and so forth. If there "
+"is no parent for the item, you can set this to return zero: ``return 0;``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:487
+msgid "find_users_for_notification"
+msgstr "find_users_for_notification"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:488
+msgid ""
+"This function is responsible for finding the users that need to be notified. "
+"It should return an array with the user identifiers as keys and the "
+"notification methods as values. There are various helper functions that help "
+"you achieve the desired outcome."
+msgstr ""
+"This function is responsible for finding the users that need to be notified. "
+"It should return an array with the user identifiers as keys and the "
+"notification methods as values. There are various helper functions that help "
+"you achieve the desired outcome."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:493
+msgid "check_user_notification_options"
+msgstr "check_user_notification_options"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:494
+msgid ""
+"You can send an array of user identifiers to this function. It will then "
+"check the available notification methods for each user. If the notification "
+"type is available in the :abbr:`UCP (User Control Panel)`, it will check the "
+"user's preferences. Otherwise it will use the default notification methods; "
+"the board method and the email method (if *board-wide emails* is enabled). "
+"The array that is returned by this function can be used as a return value "
+"for find_users_for_notification_."
+msgstr ""
+"You can send an array of user identifiers to this function. It will then "
+"check the available notification methods for each user. If the notification "
+"type is available in the :abbr:`UCP (User Control Panel)`, it will check the "
+"user's preferences. Otherwise it will use the default notification methods; "
+"the board method and the email method (if *board-wide emails* is enabled). "
+"The array that is returned by this function can be used as a return value "
+"for find_users_for_notification_."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:501
+msgid "get_authorised_recipients"
+msgstr "get_authorised_recipients"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:502
+msgid ""
+"If your notification is for an event within a specific forum, you might want "
+"to check the users' authentication. This can be done using this function, "
+"which will check all users' ``f_read`` permission for the provided "
+"``forum_id``. The array that is returned by this function is already put "
+"through check_user_notification_options_."
+msgstr ""
+"If your notification is for an event within a specific forum, you might want "
+"to check the users' authentication. This can be done using this function, "
+"which will check all users' ``f_read`` permission for the provided "
+"``forum_id``. The array that is returned by this function is already put "
+"through check_user_notification_options_."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:525
+msgid ""
+"The ``forum_id`` variable below is not set in this tutorial, just shown as "
+"an example."
+msgstr ""
+"The ``forum_id`` variable below is not set in this tutorial, just shown as "
+"an example."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:535
+msgid "users_to_query"
+msgstr "users_to_query"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:536
+msgid ""
+"This function should return an array of user identifiers for the users whose "
+"username need to be displayed, or for users whose avatar will be shown next "
+"to the notification text. Behind the scenes, the Notification manager object "
+"(:class:`\\\\phpbb\\\\notification\\\\manager`) will retrieve all "
+"identifiers from all the notifications that need to be displayed. It will "
+"then use a single SQL query to retrieve all the data for these users, rather "
+"than each notification having to query a user's data separately."
+msgstr ""
+"This function should return an array of user identifiers for the users whose "
+"username need to be displayed, or for users whose avatar will be shown next "
+"to the notification text. Behind the scenes, the Notification manager object "
+"(:class:`\\\\phpbb\\\\notification\\\\manager`) will retrieve all "
+"identifiers from all the notifications that need to be displayed. It will "
+"then use a single SQL query to retrieve all the data for these users, rather "
+"than each notification having to query a user's data separately."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:545
+msgid ""
+"As a rule of thumb, all the user ids that will be used in the "
+"``$user_loader`` should be returned here."
+msgstr ""
+"As a rule of thumb, all the user ids that will be used in the "
+"``$user_loader`` should be returned here."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:560
+msgid "get_title"
+msgstr "get_title"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:561
+msgid ""
+"This should return the main text for the notification. Usually the action "
+"that was taken that resulted in this notification. Commonly the action is "
+"made bold and everything else is regular, as shown in the `language file`_."
+msgstr ""
+"This should return the main text for the notification. Usually the action "
+"that was taken that resulted in this notification. Commonly the action is "
+"made bold and everything else is regular, as shown in the `language file`_."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:565
+msgid ""
+"Note that our language string has a string placeholder ``%s`` which is why "
+"we also send the sender's username as the second argument. The username can "
+"be easily retrieved by the ``$user_loader`` object. All the data for this "
+"user has already been queried, as we provided the user identifier in the "
+"users_to_query_ function. So no additional SQL queries will be run."
+msgstr ""
+"Note that our language string has a string placeholder ``%s`` which is why "
+"we also send the sender's username as the second argument. The username can "
+"be easily retrieved by the ``$user_loader`` object. All the data for this "
+"user has already been queried, as we provided the user identifier in the "
+"users_to_query_ function. So no additional SQL queries will be run."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:586
+msgid "get_url"
+msgstr "get_url"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:587
+msgid ""
+"This should return the URL the user is sent to when clicking on the "
+"notification. This function is required in your notification type, even if "
+"there is no URL to send the user to, in which case it should return an empty "
+"string: ``return '';``."
+msgstr ""
+"This should return the URL the user is sent to when clicking on the "
+"notification. This function is required in your notification type, even if "
+"there is no URL to send the user to, in which case it should return an empty "
+"string: ``return '';``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:591
+msgid ""
+"There are usually two ways to create the required URL. Either through "
+"``append_sid()`` or using the *Controller helper object*. The first one is "
+"commonly used when sending a user to a page within the phpBB core, such as "
+"viewforum, viewtopic or the ucp. The second one is commonly used when "
+"sending a user to a page within an extension, which often use routes."
+msgstr ""
+"There are usually two ways to create the required URL. Either through "
+"``append_sid()`` or using the *Controller helper object*. The first one is "
+"commonly used when sending a user to a page within the phpBB core, such as "
+"viewforum, viewtopic or the ucp. The second one is commonly used when "
+"sending a user to a page within an extension, which often use routes."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:596
+msgid "Returning a URL with the ``append_sid`` option"
+msgstr "Returning a URL with the ``append_sid`` option"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:615
+msgid ""
+"We have added the *Controller helper object* in the `Additional Services`_ "
+"section."
+msgstr ""
+"We have added the *Controller helper object* in the `Additional Services`_ "
+"section."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:617
+msgid "Returning a URL with the Controller helper object"
+msgstr "Returning a URL with the Controller helper object"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:628
+msgid "get_email_template"
+msgstr "get_email_template"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:629
+msgid ""
+"If you do not want to make use of the email notification method, this should "
+"return ``false`` and users will not be able to select the email method in "
+"their notification preferences."
+msgstr ""
+"If you do not want to make use of the email notification method, this should "
+"return ``false`` and users will not be able to select the email method in "
+"their notification preferences."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:632
+msgid ""
+"However, if you do want to make use of the email notification method, you "
+"should return the email *template* file here. It is not a template file like "
+"you may be used to, as it is not located in the :class:`styles/all/template` "
+"directory. Rather, it is located in the language's :class:`email` directory, "
+"as shown in the `File Structure`."
+msgstr ""
+"However, if you do want to make use of the email notification method, you "
+"should return the email *template* file here. It is not a template file like "
+"you may be used to, as it is not located in the :class:`styles/all/template` "
+"directory. Rather, it is located in the language's :class:`email` directory, "
+"as shown in the `File Structure`."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:636
+msgid ""
+"You can, or rather should, use the ``@vendor_extension/`` prefix to indicate "
+"your extension's path. The *default* directory, as mentioned, is the :class:"
+"`email` directory and in our case, the filename is :class:`sample`. So the "
+"file name should be appended to the prefix, so that will result in "
+"``@vendor_extension/sample``. If your email template is located in a "
+"subdirectory of the :class:`email` directory, you will have to indicate that "
+"in the path, e.g.: ``@vendor_extension/subdirectory/sample``."
+msgstr ""
+"You can, or rather should, use the ``@vendor_extension/`` prefix to indicate "
+"your extension's path. The *default* directory, as mentioned, is the :class:"
+"`email` directory and in our case, the filename is :class:`sample`. So the "
+"file name should be appended to the prefix, so that will result in "
+"``@vendor_extension/sample``. If your email template is located in a "
+"subdirectory of the :class:`email` directory, you will have to indicate that "
+"in the path, e.g.: ``@vendor_extension/subdirectory/sample``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:654
+msgid ""
+"There is also a third notification method, Jabber, which uses the :class:"
+"`email/short` directory for its template files. This notification method is "
+"closely tied to the email method, so it is important to also supply that "
+"template file, even though the content might be identical to the email "
+"template."
+msgstr ""
+"There is also a third notification method, Jabber, which uses the :class:"
+"`email/short` directory for its template files. This notification method is "
+"closely tied to the email method, so it is important to also supply that "
+"template file, even though the content might be identical to the email "
+"template."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:660
+msgid ""
+"Make sure to have both :class:`language/en/email/sample.txt` and :class:"
+"`language/en/email/short/sample.txt` in your extension's language directory "
+"to prevent errors."
+msgstr ""
+"Make sure to have both :class:`language/en/email/sample.txt` and :class:"
+"`language/en/email/short/sample.txt` in your extension's language directory "
+"to prevent errors."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:664
+msgid "get_email_template_variables"
+msgstr "get_email_template_variables"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:665
+msgid ""
+"If you are not making use of the email notification method, this should "
+"return an empty ``array()``. But if you are using the email method, then you "
+"should use this function to define the variables that are used in your "
+"`email template`_. However, note that the phpBB core already defines some "
+"*default* variables for you:"
+msgstr ""
+"If you are not making use of the email notification method, this should "
+"return an empty ``array()``. But if you are using the email method, then you "
+"should use this function to define the variables that are used in your "
+"`email template`_. However, note that the phpBB core already defines some "
+"*default* variables for you:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "Variable"
+msgstr "Variable"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "Description"
+msgstr "Description"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "Defined in"
+msgstr "Defined in"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "``USERNAME``"
+msgstr "``USERNAME``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "The recipient's username"
+msgstr "The recipient's username"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid ""
+":class:`\\\\phpbb\\\\notification\\\\method\\\\messenger_base` "
+"``notify_using_messenger()``"
+msgstr ""
+":class:`\\\\phpbb\\\\notification\\\\method\\\\messenger_base` "
+"``notify_using_messenger()``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "``U_NOTIFICATION_SETTINGS``"
+msgstr "``U_NOTIFICATION_SETTINGS``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "The recipient's notification preferences URL"
+msgstr "The recipient's notification preferences URL"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "``EMAIL_SIG``"
+msgstr "``EMAIL_SIG``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "The board's email signature"
+msgstr "The board's email signature"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid ":class:`includes/functions_messenger.php` ``send()``"
+msgstr ":class:`includes/functions_messenger.php` ``send()``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "``SITENAME``"
+msgstr "``SITENAME``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "The board's site name"
+msgstr "The board's site name"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "``U_BOARD``"
+msgstr "``U_BOARD``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "The board's URL"
+msgstr "The board's URL"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:679
+msgid ""
+"When specifying additional template variables such as URLs, you must make "
+"sure they are absolute URLs. They have to include the *full* URL: ``https://"
+"www.example.com/forum/ucp.php`` rather than just ``./ucp.php``. The example "
+"below will show you how to achieve this for both regular URLs and URLs "
+"generated from Symfony routes."
+msgstr ""
+"When specifying additional template variables such as URLs, you must make "
+"sure they are absolute URLs. They have to include the *full* URL: ``https://"
+"www.example.com/forum/ucp.php`` rather than just ``./ucp.php``. The example "
+"below will show you how to achieve this for both regular URLs and URLs "
+"generated from Symfony routes."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:705
+msgid "Optional Class Functions"
+msgstr "Optional Class Functions"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:707
+msgid ""
+"The following functions are optional and can be omitted if your notification "
+"does not need to use them."
+msgstr ""
+"The following functions are optional and can be omitted if your notification "
+"does not need to use them."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:710
+msgid "get_avatar"
+msgstr "get_avatar"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:711
+msgid ""
+"The user identifiers returned by the users_to_query_ function are added to "
+"the User loader object. Unfortunately, that object is not available by "
+"default in the `Base Services`_. This was why we added it in the `Additional "
+"Services`_ section."
+msgstr ""
+"The user identifiers returned by the users_to_query_ function are added to "
+"the User loader object. Unfortunately, that object is not available by "
+"default in the `Base Services`_. This was why we added it in the `Additional "
+"Services`_ section."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:715
+msgid ""
+"So we use the convenient function, applicably named, ``get_avatar()`` that "
+"is available from the User loader. And we supply three parameters. The first "
+"being the user identifier from whom we want to show the avatar. The second "
+"is a boolean, indicating that the user does not have to be queried from the "
+"database, as that is already done. And the third is also a boolean, "
+"indicating that the avatar image should be lazy loaded in the HTML. As the "
+"notification GUI is a dropdown and not visible immediately, lazy loading is "
+"more beneficial for a page's load time."
+msgstr ""
+"So we use the convenient function, applicably named, ``get_avatar()`` that "
+"is available from the User loader. And we supply three parameters. The first "
+"being the user identifier from whom we want to show the avatar. The second "
+"is a boolean, indicating that the user does not have to be queried from the "
+"database, as that is already done. And the third is also a boolean, "
+"indicating that the avatar image should be lazy loaded in the HTML. As the "
+"notification GUI is a dropdown and not visible immediately, lazy loading is "
+"more beneficial for a page's load time."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:721
+msgid ""
+"If you do not wish to display an avatar next to the notification text, you "
+"can omit this function all together."
+msgstr ""
+"If you do not wish to display an avatar next to the notification text, you "
+"can omit this function all together."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:736
+msgid "get_forum"
+msgstr "get_forum"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:737
+msgid ""
+"If you want to provide the name of the forum that triggered this "
+"notification, that is possible through this function. For example, when a "
+"new topic is posted in a forum. This function can be omitted if no forum "
+"name is required or available. It will be prefixed by the *Forum:* string:"
+msgstr ""
+"If you want to provide the name of the forum that triggered this "
+"notification, that is possible through this function. For example, when a "
+"new topic is posted in a forum. This function can be omitted if no forum "
+"name is required or available. It will be prefixed by the *Forum:* string:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:742
+msgid "*Forum:* The forum name"
+msgstr "*Forum:* The forum name"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:746
+msgid ""
+"The ``forum_name`` variable below is not set in this tutorial, just shown as "
+"an example."
+msgstr ""
+"The ``forum_name`` variable below is not set in this tutorial, just shown as "
+"an example."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:764
+msgid "get_reason"
+msgstr "get_reason"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:765
+msgid ""
+"If you want to provide a literal reason for this notification, that is "
+"possible through this function. For example, the reason provided when "
+"creating or closing a report, or for editing or deleting a post. This "
+"function can be omitted if no reason is required. It will be prefixed by the "
+"*Reason:* string:"
+msgstr ""
+"If you want to provide a literal reason for this notification, that is "
+"possible through this function. For example, the reason provided when "
+"creating or closing a report, or for editing or deleting a post. This "
+"function can be omitted if no reason is required. It will be prefixed by the "
+"*Reason:* string:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:770
+msgid "*Reason:* This is a sample reason"
+msgstr "*Reason:* This is a sample reason"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:788
+msgid "get_reference"
+msgstr "get_reference"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:789
+msgid ""
+"If you want to provide an additional reference for this notification, that "
+"is possible through this notification. For example, the subject of a private "
+"message, post or topic. This function can be omitted if no reference is "
+"required. It will be encapsulated in double quotes:"
+msgstr ""
+"If you want to provide an additional reference for this notification, that "
+"is possible through this notification. For example, the subject of a private "
+"message, post or topic. This function can be omitted if no reference is "
+"required. It will be encapsulated in double quotes:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:794
+msgid "\"The message subject\""
+msgstr "\"The message subject\""
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:812
+msgid "get_style_class"
+msgstr "get_style_class"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:813
+msgid ""
+"It is also possible to add a custom CSS class to the notification row. This "
+"can be useful if you want to change the default styling of the notification "
+"text. For example, when the notification is about a report or a disapproval. "
+"Providing a string of classes here will add them to the notification. This "
+"function can be omitted if no additional CSS class is required."
+msgstr ""
+"It is also possible to add a custom CSS class to the notification row. This "
+"can be useful if you want to change the default styling of the notification "
+"text. For example, when the notification is about a report or a disapproval. "
+"Providing a string of classes here will add them to the notification. This "
+"function can be omitted if no additional CSS class is required."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:832
+msgid "get_redirect_url"
+msgstr "get_redirect_url"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:833
+msgid ""
+"This function can return a different URL than get_url_. The URL returned by "
+"this function will be used to ``redirect()`` the user after they mark the "
+"notification as read. By default this URL is the same as the URL returned by "
+"get_url_. So if you do not need to provide a different *\"mark read\"*-URL, "
+"you can omit this function."
+msgstr ""
+"This function can return a different URL than get_url_. The URL returned by "
+"this function will be used to ``redirect()`` the user after they mark the "
+"notification as read. By default this URL is the same as the URL returned by "
+"get_url_. So if you do not need to provide a different *\"mark read\"*-URL, "
+"you can omit this function."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:838
+msgid ""
+"For example, the :class:`post` notification uses this to send the user to "
+"first unread post in a topic."
+msgstr ""
+"For example, the :class:`post` notification uses this to send the user to "
+"first unread post in a topic."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:853
+msgid "get_data"
+msgstr "get_data"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:854
+msgid ""
+"This is a helper function, commonly used within functions that are called "
+"when displaying this notification type. These *display functions* often need "
+"to access some data specific to a certain notification, such as a "
+"``message_id``. To retrieve those data variables, you can use this function, "
+"with the variable name as an argument: ``$this->get_data('key')``."
+msgstr ""
+"This is a helper function, commonly used within functions that are called "
+"when displaying this notification type. These *display functions* often need "
+"to access some data specific to a certain notification, such as a "
+"``message_id``. To retrieve those data variables, you can use this function, "
+"with the variable name as an argument: ``$this->get_data('key')``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:860
+msgid ""
+"All data that you have to retrieve, must be inserted upon creation of the "
+"notification. |br| This is done through the create_insert_array_ function."
+msgstr ""
+"All data that you have to retrieve, must be inserted upon creation of the "
+"notification. |br| This is done through the create_insert_array_ function."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:870
+msgid "create_insert_array"
+msgstr "create_insert_array"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:871
+msgid ""
+"This function is responsible for inserting data specific to this "
+"notification type. This data will be stored in the database and used when "
+"displaying the notification."
+msgstr ""
+"This function is responsible for inserting data specific to this "
+"notification type. This data will be stored in the database and used when "
+"displaying the notification."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:874
+msgid ""
+"The ``$data`` parameter will contain the array that is being sent when "
+"`Sending a Notification`_. So, all data that is needed for creating and "
+"displaying the notification has to be included."
+msgstr ""
+"The ``$data`` parameter will contain the array that is being sent when "
+"`Sending a Notification`_. So, all data that is needed for creating and "
+"displaying the notification has to be included."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:877
+msgid ""
+"However, only the data that is needed for displaying the notification must "
+"be inserted. If you've paid close attention, you will have noticed that we "
+"use four data variables. Namely ``user_id``, ``sender_id``, ``message_id`` "
+"and ``message_subject``. But the ``user_id`` is only required when creating "
+"the notification, and not needed when displaying it. So this variable does "
+"not have to be stored in the database. All other variables can be inserted "
+"using the ``set_data('key', 'value')`` helper function."
+msgstr ""
+"However, only the data that is needed for displaying the notification must "
+"be inserted. If you've paid close attention, you will have noticed that we "
+"use four data variables. Namely ``user_id``, ``sender_id``, ``message_id`` "
+"and ``message_subject``. But the ``user_id`` is only required when creating "
+"the notification, and not needed when displaying it. So this variable does "
+"not have to be stored in the database. All other variables can be inserted "
+"using the ``set_data('key', 'value')`` helper function."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:886
+msgid ""
+"As a rule of thumb, only the data you get through ``get_data()`` has to be "
+"set through ``set_data()``."
+msgstr ""
+"As a rule of thumb, only the data you get through ``get_data()`` has to be "
+"set through ``set_data()``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:908
+msgid "Sending a Notification"
+msgstr "Sending a Notification"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:909
+msgid ""
+"Now that we've set up our notification type class, it's time to start "
+"sending the notification. We know what data we need, so we can collect that "
+"when the event is triggered."
+msgstr ""
+"Now that we've set up our notification type class, it's time to start "
+"sending the notification. We know what data we need, so we can collect that "
+"when the event is triggered."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:912
+msgid ""
+"Sending a notification is done with the Notification manager object (:class:"
+"`\\\\phpbb\\\\notification\\\\manager`). This service can be injected with "
+"the ``- '@notification_manager'`` service declaration."
+msgstr ""
+"Sending a notification is done with the Notification manager object (:class:"
+"`\\\\phpbb\\\\notification\\\\manager`). This service can be injected with "
+"the ``- '@notification_manager'`` service declaration."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:915
+msgid ""
+"Then you can use the notification manager to send the notification. This is "
+"done with the ``add_notifications`` function. The notification type (:class:"
+"`vendor.extension.notification.type.sample`) should be provided as the first "
+"argument, and all the ``$data`` that we need in our notification type as the "
+"second argument."
+msgstr ""
+"Then you can use the notification manager to send the notification. This is "
+"done with the ``add_notifications`` function. The notification type (:class:"
+"`vendor.extension.notification.type.sample`) should be provided as the first "
+"argument, and all the ``$data`` that we need in our notification type as the "
+"second argument."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:920
+msgid ""
+"Below you'll find a simple example on how to send the notification. It's "
+"possible to send a notification from anywhere. This example uses an event "
+"listener, but it is also possible to send it from a controller."
+msgstr ""
+"Below you'll find a simple example on how to send the notification. It's "
+"possible to send a notification from anywhere. This example uses an event "
+"listener, but it is also possible to send it from a controller."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:924
+msgid ":class:`\\\\vendor\\\\extension\\\\event\\\\listener`"
+msgstr ":class:`\\\\vendor\\\\extension\\\\event\\\\listener`"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:959
+msgid "Updating a Notification"
+msgstr "Updating a Notification"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:960
+msgid ""
+"Updating a notification is done with the Notification manager object (:class:"
+"`\\\\phpbb\\\\notification\\\\manager`). This service can be injected with "
+"the ``- '@notification_manager'`` service declaration."
+msgstr ""
+"Updating a notification is done with the Notification manager object (:class:"
+"`\\\\phpbb\\\\notification\\\\manager`). This service can be injected with "
+"the ``- '@notification_manager'`` service declaration."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:963
+msgid ""
+"Then you can use the notification manager to update the notification. This "
+"is done with the ``update_notifications`` function. The notification type (:"
+"class:`vendor.extension.notification.type.sample`) should be provided as the "
+"first argument, and all the ``$data`` that we need in our notification type "
+"as the second argument. Optionally you can send a third argument, "
+"``$options``, to specify which notification should be updated. The options "
+"that can be defined are listed below:"
+msgstr ""
+"Then you can use the notification manager to update the notification. This "
+"is done with the ``update_notifications`` function. The notification type (:"
+"class:`vendor.extension.notification.type.sample`) should be provided as the "
+"first argument, and all the ``$data`` that we need in our notification type "
+"as the second argument. Optionally you can send a third argument, "
+"``$options``, to specify which notification should be updated. The options "
+"that can be defined are listed below:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "``item_id``"
+msgstr "``item_id``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "The item identifier for the notification. |br| Defaults to get_item_id_"
+msgstr ""
+"The item identifier for the notification. |br| Defaults to get_item_id_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "``item_parent_id``"
+msgstr "``item_parent_id``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "The item's parent identifier for the notification. |br| Optional"
+msgstr "The item's parent identifier for the notification. |br| Optional"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "``user_id``"
+msgstr "``user_id``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "The user identifier for who received the notification. |br| Optional"
+msgstr "The user identifier for who received the notification. |br| Optional"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "``read``"
+msgstr "``read``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid ""
+"A boolean indicating whether the notification has been read. |br| Optional"
+msgstr ""
+"A boolean indicating whether the notification has been read. |br| Optional"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1001
+msgid ""
+"Now let's step through how the above example works. The notification type "
+"will be created as if it was being sent. Then, rather than inserting the "
+"notification, it will retrieve the data created by the create_insert_array_ "
+"function. That data is turned into an SQL :class:`UPDATE` statement ``$db-"
+">sql_create_array('UPDATE', $data)``. And the ``$options`` provided are "
+"turned into an SQL :class:`WHERE` statement."
+msgstr ""
+"Now let's step through how the above example works. The notification type "
+"will be created as if it was being sent. Then, rather than inserting the "
+"notification, it will retrieve the data created by the create_insert_array_ "
+"function. That data is turned into an SQL :class:`UPDATE` statement ``$db-"
+">sql_create_array('UPDATE', $data)``. And the ``$options`` provided are "
+"turned into an SQL :class:`WHERE` statement."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1009
+msgid ""
+"The data retrieved from create_insert_array_ are not database columns. |br| "
+"The data is put through ``serialize()`` and and stored in the :class:"
+"`notification_data` column."
+msgstr ""
+"The data retrieved from create_insert_array_ are not database columns. |br| "
+"The data is put through ``serialize()`` and and stored in the :class:"
+"`notification_data` column."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1012
+msgid ""
+"The data is retrieved by the ``create_update_array`` function in the "
+"notification type :class:`base` class. First it creates the insert array and "
+"then unsets a few variables that should not be updated: ``user_id``, "
+"``notification_id``, ``notification_time`` and ``notification_read`` *(which "
+"is the indicator for whether or not the notification has already been "
+"read)*. If you want to update any of these variables as well, you will have "
+"to override the :class:`base` ``create_update_array`` function."
+msgstr ""
+"The data is retrieved by the ``create_update_array`` function in the "
+"notification type :class:`base` class. First it creates the insert array and "
+"then unsets a few variables that should not be updated: ``user_id``, "
+"``notification_id``, ``notification_time`` and ``notification_read`` *(which "
+"is the indicator for whether or not the notification has already been "
+"read)*. If you want to update any of these variables as well, you will have "
+"to override the :class:`base` ``create_update_array`` function."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1018
+msgid ""
+"It is also possible to handle the update process for your notification type "
+"completely yourself. This is done by creating an ``update_notifications`` "
+"function in your notification type class. Have a look at the :class:`quote` "
+"type to see an example."
+msgstr ""
+"It is also possible to handle the update process for your notification type "
+"completely yourself. This is done by creating an ``update_notifications`` "
+"function in your notification type class. Have a look at the :class:`quote` "
+"type to see an example."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1023
+msgid "Deleting a Notification"
+msgstr "Deleting a Notification"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1024
+msgid ""
+"Sometimes it is necessary to delete a notification. For example when a "
+"private message is deleted before it is read, or a topic with unapproved "
+"post notifications is deleted. In each of these cases the cause for the "
+"notification has been deleted, making the notification irrelevant."
+msgstr ""
+"Sometimes it is necessary to delete a notification. For example when a "
+"private message is deleted before it is read, or a topic with unapproved "
+"post notifications is deleted. In each of these cases the cause for the "
+"notification has been deleted, making the notification irrelevant."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1030
+msgid ""
+"Deleting a notification is handled using the ``delete_notifications`` "
+"function located in the notification manager object (:class:`\\\\phpbb\\"
+"\\notification\\\\manager`). Typically you would use an appropriate event "
+"listener to call ``delete_notifications``, such as when an action occurs "
+"that would make your notification irrelevant."
+msgstr ""
+"Deleting a notification is handled using the ``delete_notifications`` "
+"function located in the notification manager object (:class:`\\\\phpbb\\"
+"\\notification\\\\manager`). Typically you would use an appropriate event "
+"listener to call ``delete_notifications``, such as when an action occurs "
+"that would make your notification irrelevant."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1035
+msgid ""
+"This function is very simple to use, and requires only a few basic "
+"parameters:"
+msgstr ""
+"This function is very simple to use, and requires only a few basic "
+"parameters:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1038
+msgid "delete_notifications"
+msgstr "delete_notifications"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1041
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1088
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1104
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1125
+msgid "Parameters"
+msgstr "Parameters"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "Parameter"
+msgstr "Parameter"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "**notification_type**"
+msgstr "**notification_type**"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid ""
+"The notification service identifier. |br| Can be a single string or an array "
+"of service identifiers. |br| In this example: ``vendor.extension."
+"notification.type.sample``."
+msgstr ""
+"The notification service identifier. |br| Can be a single string or an array "
+"of service identifiers. |br| In this example: ``vendor.extension."
+"notification.type.sample``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "**item_id**"
+msgstr "**item_id**"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid ""
+"The item identifier(s). |br| The item id for which you want to delete "
+"notifications. |br| Can be a single integer or an array of integers. Only "
+"item identifiers for the provided |br| notification type(s) will be deleted."
+msgstr ""
+"The item identifier(s). |br| The item id for which you want to delete "
+"notifications. |br| Can be a single integer or an array of integers. Only "
+"item identifiers for the provided |br| notification type(s) will be deleted."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "**parent_id**"
+msgstr "**parent_id**"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid ""
+"The parent identifier(s). |br| The parent id for which you want to delete "
+"notifications. |br| Can be a single integer or an array of integers. Use "
+"this argument to delete the |br| notifications that only belong to the given "
+"parent identifier(s). Default is |br| false to ignore parent identifiers."
+msgstr ""
+"The parent identifier(s). |br| The parent id for which you want to delete "
+"notifications. |br| Can be a single integer or an array of integers. Use "
+"this argument to delete the |br| notifications that only belong to the given "
+"parent identifier(s). Default is |br| false to ignore parent identifiers."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "**user_id**"
+msgstr "**user_id**"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid ""
+"The user identifier(s). |br| The user id for whom you want to delete "
+"notifications. |br| Can be a single integer or an array of integers. Use "
+"this argument to delete the |br| notifications for a given user or "
+"collection of users. Default is false to ignore |br| specific users."
+msgstr ""
+"The user identifier(s). |br| The user id for whom you want to delete "
+"notifications. |br| Can be a single integer or an array of integers. Use "
+"this argument to delete the |br| notifications for a given user or "
+"collection of users. Default is false to ignore |br| specific users."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1063
+msgid "Marking a Notification"
+msgstr "Marking a Notification"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1064
+msgid ""
+"Notifications are automatically marked as read when they are clicked in the "
+"notifications dropdown. Or when marking forums or topics as read, their "
+"respective notifications are marked as well. However, sometimes it may "
+"preferable to manually mark a notification as read or unread."
+msgstr ""
+"Notifications are automatically marked as read when they are clicked in the "
+"notifications dropdown. Or when marking forums or topics as read, their "
+"respective notifications are marked as well. However, sometimes it may "
+"preferable to manually mark a notification as read or unread."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1068
+msgid ""
+"There are three methods available for marking a notification, all of these "
+"are located in the Notification Manager object (:class:`\\\\phpbb\\"
+"\\notification\\\\manager`). The distinct difference between these methods "
+"is how they determine which notifications should be marked. Either through "
+"their item id, parent id or the actual notification id. When marking "
+"notifications by their item id or parent id, it will automatically mark them "
+"for all available notification methods. But when marking notifications by "
+"their actual id, you will have to provide the specific notification method "
+"yourself."
+msgstr ""
+"There are three methods available for marking a notification, all of these "
+"are located in the Notification Manager object (:class:`\\\\phpbb\\"
+"\\notification\\\\manager`). The distinct difference between these methods "
+"is how they determine which notifications should be marked. Either through "
+"their item id, parent id or the actual notification id. When marking "
+"notifications by their item id or parent id, it will automatically mark them "
+"for all available notification methods. But when marking notifications by "
+"their actual id, you will have to provide the specific notification method "
+"yourself."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1075
+msgid "Deprecated"
+msgstr "Deprecated"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1078
+msgid ""
+"This following functions are deprecated since phpBB :guilabel:`3.2.0`: |br| "
+"``mark_notifications_read`` |br| ``mark_notifications_read_by_parent``"
+msgstr ""
+"This following functions are deprecated since phpBB :guilabel:`3.2.0`: |br| "
+"``mark_notifications_read`` |br| ``mark_notifications_read_by_parent``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1082
+msgid ""
+"The following is a quick summary of the three methods available for marking "
+"notifications and their arguments."
+msgstr ""
+"The following is a quick summary of the three methods available for marking "
+"notifications and their arguments."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1085
+msgid "mark_notifications"
+msgstr "mark_notifications"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid ""
+"Can be a single string or an array of service identifiers. |br| In this "
+"example: ``vendor.extension.notification.type.sample``."
+msgstr ""
+"Can be a single string or an array of service identifiers. |br| In this "
+"example: ``vendor.extension.notification.type.sample``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid ""
+"The item identifier(s). |br| The item id(s) for notifications you want to "
+"mark read. |br| Can be a single integer or an array of integers. "
+"Alternatively, it is also possible to pass |br| false to mark read for all "
+"item ids."
+msgstr ""
+"The item identifier(s). |br| The item id(s) for notifications you want to "
+"mark read. |br| Can be a single integer or an array of integers. "
+"Alternatively, it is also possible to pass |br| false to mark read for all "
+"item ids."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid ""
+"The user identifier(s). |br| The user id(s) for whom you want to mark "
+"notifications read. |br| Can be a single integer or an array of integers. "
+"Alternatively, it is also possible to pass |br| false to mark read for all "
+"user ids."
+msgstr ""
+"The user identifier(s). |br| The user id(s) for whom you want to mark "
+"notifications read. |br| Can be a single integer or an array of integers. "
+"Alternatively, it is also possible to pass |br| false to mark read for all "
+"user ids."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "**time**"
+msgstr "**time**"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid ""
+"UNIX timestamp to use as a cut off. |br| Mark notifications sent before this "
+"time as read. All notifications created after this |br| time will not be "
+"marked read. The default value is false, which will mark all as read."
+msgstr ""
+"UNIX timestamp to use as a cut off. |br| Mark notifications sent before this "
+"time as read. All notifications created after this |br| time will not be "
+"marked read. The default value is false, which will mark all as read."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "**mark_read**"
+msgstr "**mark_read**"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid ""
+"Whether to mark the notification as *read* or *unread*. |br| Defaults to "
+"*read*."
+msgstr ""
+"Whether to mark the notification as *read* or *unread*. |br| Defaults to "
+"*read*."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1101
+msgid "mark_notifications_by_parent"
+msgstr "mark_notifications_by_parent"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid ""
+"The parent identifier(s). |br| The item parent id(s) for notifications you "
+"want to mark read. |br| Can be a single integer or an array of integers. "
+"Alternatively, it is also possible to pass |br| false to mark read for all "
+"item parent ids."
+msgstr ""
+"The parent identifier(s). |br| The item parent id(s) for notifications you "
+"want to mark read. |br| Can be a single integer or an array of integers. "
+"Alternatively, it is also possible to pass |br| false to mark read for all "
+"item parent ids."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1117
+msgid "mark_notifications_by_id"
+msgstr "mark_notifications_by_id"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1118
+msgid ""
+"Thus far we haven't had to work with the actual identifier of the "
+"notification itself, instead using the notification's item and parent ids. "
+"This is usually because in the core of phpBB's execution, we may never know "
+"or have access to the notification's actual id, as most of the notification "
+"handling is done through the distinct item and/or parent ids. However, there "
+"can be times where it is more convenient or accurate to work directly with "
+"the notification's unique id. For example, when the notifications are listed "
+"in the :abbr:`UCP (User Control Panel)` and a user can select specific "
+"notifications to be marked as read."
+msgstr ""
+"Thus far we haven't had to work with the actual identifier of the "
+"notification itself, instead using the notification's item and parent ids. "
+"This is usually because in the core of phpBB's execution, we may never know "
+"or have access to the notification's actual id, as most of the notification "
+"handling is done through the distinct item and/or parent ids. However, there "
+"can be times where it is more convenient or accurate to work directly with "
+"the notification's unique id. For example, when the notifications are listed "
+"in the :abbr:`UCP (User Control Panel)` and a user can select specific "
+"notifications to be marked as read."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "**method_name**"
+msgstr "**method_name**"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid ""
+"The notification method service identifier |br| For example: ``notification."
+"method.board``"
+msgstr ""
+"The notification method service identifier |br| For example: ``notification."
+"method.board``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid "**notification_id**"
+msgstr "**notification_id**"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1
+msgid ""
+"The notification identifier(s) |br| Can be an integer or array of integers."
+msgstr ""
+"The notification identifier(s) |br| Can be an integer or array of integers."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1137
+msgid "Advanced Lessons"
+msgstr "Advanced Lessons"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1140
+msgid "Custom Item Identifier"
+msgstr "Custom Item Identifier"
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1141
+msgid ""
+"Sometimes you can not use a “normal” item identifier, such as a "
+"``topic_id``, ``post_id`` or ``msg_id``. In this case you will need to "
+"create a custom notification counter in your extension. You add it through a "
+"migration, where it is added to the config table. For example with the "
+"following code: ``['config.add', ['vendor_extension_notification_id', 0]]``."
+msgstr ""
+"Sometimes you can not use a “normal” item identifier, such as a "
+"``topic_id``, ``post_id`` or ``msg_id``. In this case you will need to "
+"create a custom notification counter in your extension. You add it through a "
+"migration, where it is added to the config table. For example with the "
+"following code: ``['config.add', ['vendor_extension_notification_id', 0]]``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1148
+msgid ""
+"Read more about this in the `Add config setting <../migrations/tools/config."
+"html#add-config-setting>`__ section."
+msgstr ""
+"Read more about this in the `Add config setting <../migrations/tools/config."
+"html#add-config-setting>`__ section."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1150
+msgid ""
+"Then when sending a notification, you will have to increment the identifier "
+"and use that as the item id. You can use the Config object's (:class:`\\"
+"\\phpbb\\\\config\\\\config`) ``increment()`` function to achieve this."
+msgstr ""
+"Then when sending a notification, you will have to increment the identifier "
+"and use that as the item id. You can use the Config object's (:class:`\\"
+"\\phpbb\\\\config\\\\config`) ``increment()`` function to achieve this."
+
+#: ../../devdocs-source-copy/extensions/tutorial_notifications.rst:1162
+msgid ""
+"You can use this custom notification identifier in the get_item_id_ function."
+msgstr ""
+"You can use this custom notification identifier in the get_item_id_ function."
