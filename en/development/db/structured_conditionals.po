@@ -1,0 +1,562 @@
+# English translations for Project name not set package.
+# Copyright (C) 
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:3
+msgid "The boolean structure system"
+msgstr "The boolean structure system"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:6
+msgid "Intro"
+msgstr "Intro"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:8
+msgid ""
+"This feature helps extension authors to edit SQL queries in an easy and "
+"quick way without the need to parse the SQL queries, most likely, using "
+"regex and complex text editing. Instead of a single string, this allows "
+"editing the WHERE clause in an SQL query by adding, removing and editing php "
+"arrays. Using this method, finding the portion of the query to edit should "
+"be much more straightforward."
+msgstr ""
+"This feature helps extension authors to edit SQL queries in an easy and "
+"quick way without the need to parse the SQL queries, most likely, using "
+"regex and complex text editing. Instead of a single string, this allows "
+"editing the WHERE clause in an SQL query by adding, removing and editing php "
+"arrays. Using this method, finding the portion of the query to edit should "
+"be much more straightforward."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:11
+msgid ""
+"If done correctly, incompatibilities between extensions that use the same "
+"SQL query can be averted. Where a regex match could easly force the author "
+"into making very complex matches. With this, finding and replacing the "
+"content is just tree-like transversal as they are only arrays. Compatibility "
+"between extensions becomes much easier."
+msgstr ""
+"If done correctly, incompatibilities between extensions that use the same "
+"SQL query can be averted. Where a regex match could easly force the author "
+"into making very complex matches. With this, finding and replacing the "
+"content is just tree-like transversal as they are only arrays. Compatibility "
+"between extensions becomes much easier."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:13
+msgid ""
+"Althought this will definitely reduce the probability of inter-"
+"incompatibilities between extensions, it is not magic. This is just a tool "
+"that helps solving the same issue."
+msgstr ""
+"Althought this will definitely reduce the probability of inter-"
+"incompatibilities between extensions, it is not magic. This is just a tool "
+"that helps solving the same issue."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:17
+msgid "Main use-case ideals"
+msgstr "Main use-case ideals"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:19
+msgid "To flexibly the build of the WHERE clause in SQL queries"
+msgstr "To flexibly the build of the WHERE clause in SQL queries"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:20
+msgid ""
+"To ease, simplify and prevent errors when doing SQL query editing by phpBB's "
+"extensions"
+msgstr ""
+"To ease, simplify and prevent errors when doing SQL query editing by phpBB's "
+"extensions"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:23
+msgid "Why not..."
+msgstr "Why not..."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:25
+msgid ""
+"Doctrine dbal -> The issue with Doctrine dbal is that its query builder is "
+"not ready for the 2nd major use case listed above. There is no way of "
+"altering an SQL query. If you want to alter something, you have to rebuild "
+"the whole SQL query."
+msgstr ""
+"Doctrine dbal -> The issue with Doctrine dbal is that its query builder is "
+"not ready for the 2nd major use case listed above. There is no way of "
+"altering an SQL query. If you want to alter something, you have to rebuild "
+"the whole SQL query."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:26
+msgid ""
+"Linq -> I didn't know the assistance of Linq until today. From what I "
+"searched, not only it has the same issue as Doctrine, while also its "
+"interface is unnecessarily complex for the common folk who just wants to "
+"change a small amount of information."
+msgstr ""
+"Linq -> I didn't know the assistance of Linq until today. From what I "
+"searched, not only it has the same issue as Doctrine, while also its "
+"interface is unnecessarily complex for the common folk who just wants to "
+"change a small amount of information."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:30
+msgid "The Data structure"
+msgstr "The Data structure"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:32
+msgid ""
+"This builder uses a tree-like information organization for the boolean "
+"comparisons in SQL queries. Each node of such tree is a php array. Each node "
+"can have one of 3 formats:"
+msgstr ""
+"This builder uses a tree-like information organization for the boolean "
+"comparisons in SQL queries. Each node of such tree is a php array. Each node "
+"can have one of 3 formats:"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:37
+msgid "type1"
+msgstr "type1"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:39
+msgid "The 1st type contains 3 elements:"
+msgstr "The 1st type contains 3 elements:"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:41
+msgid "Left hand, operator, right hand. E.g."
+msgstr "Left hand, operator, right hand. E.g."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:53
+msgid ""
+"For the operator, there are 6 special values (everything else is taken "
+"literally):"
+msgstr ""
+"For the operator, there are 6 special values (everything else is taken "
+"literally):"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:55
+msgid "IN"
+msgstr "IN"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:56
+msgid "NOT_IN"
+msgstr "NOT_IN"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:57
+msgid "LIKE"
+msgstr "LIKE"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:58
+msgid "NOT_LIKE"
+msgstr "NOT_LIKE"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:59
+msgid "IS"
+msgstr "IS"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:60
+msgid "IS_NOT"
+msgstr "IS_NOT"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:62
+msgid ""
+"All of them are special because they call the dbal's methods to process the "
+"data. For example, if you use the **IN** operator, it calls $db-"
+">sql_in_set() with the right hand data."
+msgstr ""
+"All of them are special because they call the dbal's methods to process the "
+"data. For example, if you use the **IN** operator, it calls $db-"
+">sql_in_set() with the right hand data."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:66
+msgid "type2"
+msgstr "type2"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:68
+msgid ""
+"The 2nd type is variable length. It is identified by having the string "
+"'AND', 'OR' or 'NOT' in the first position of the array."
+msgstr ""
+"The 2nd type is variable length. It is identified by having the string "
+"'AND', 'OR' or 'NOT' in the first position of the array."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:70
+msgid ""
+"The first element contains the boolean operator that is used to join "
+"together all its other elements."
+msgstr ""
+"The first element contains the boolean operator that is used to join "
+"together all its other elements."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:72
+msgid "E.g."
+msgstr "E.g."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:82
+msgid "which outputs (after reindenting)"
+msgstr "which outputs (after reindenting)"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:92
+msgid "type3"
+msgstr "type3"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:94
+msgid ""
+"The 3rd type has 5 elements Left hand, operator, sub query operator, sub "
+"query SELECT type, the sub query."
+msgstr ""
+"The 3rd type has 5 elements Left hand, operator, sub query operator, sub "
+"query SELECT type, the sub query."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:97
+msgid ""
+"This is used when you require a subquery in your DB query. Essentially, what "
+"this does is that it will call sql_build_query() recursively with the 4th "
+"and the 5th elements."
+msgstr ""
+"This is used when you require a subquery in your DB query. Essentially, what "
+"this does is that it will call sql_build_query() recursively with the 4th "
+"and the 5th elements."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:113
+msgid "Why arrays?"
+msgstr "Why arrays?"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:115
+msgid "The motivation to use arrays comes from the needs:"
+msgstr "The motivation to use arrays comes from the needs:"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:117
+msgid "This is information that is going to be used quite a lot."
+msgstr "This is information that is going to be used quite a lot."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:118
+msgid ""
+"1.1. In the ideal case, every SQL query with either an ON or a WHERE clause "
+"(just about all) will use this."
+msgstr ""
+"1.1. In the ideal case, every SQL query with either an ON or a WHERE clause "
+"(just about all) will use this."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:119
+msgid "The implementation on which this works on top of already uses arrays."
+msgstr "The implementation on which this works on top of already uses arrays."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:120
+msgid "Editing arrays is a quite trivial task for any piece of code."
+msgstr "Editing arrays is a quite trivial task for any piece of code."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:123
+msgid "Why not Objects?"
+msgstr "Why not Objects?"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:125
+msgid "Tranversing Objects forming a tree is **seriously slow** in php."
+msgstr "Tranversing Objects forming a tree is **seriously slow** in php."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:126
+msgid ""
+"1.1. This wouldn't much be noticed on vanilla phpBB but, as you add "
+"extensions, it would easily be dead slow."
+msgstr ""
+"1.1. This wouldn't much be noticed on vanilla phpBB but, as you add "
+"extensions, it would easily be dead slow."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:127
+msgid "Doing this with immutable objects is completely unviable."
+msgstr "Doing this with immutable objects is completely unviable."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:128
+msgid ""
+"2.1. It would require the code that manipulates it to know how to rebuild "
+"everything related for almost any change."
+msgstr ""
+"2.1. It would require the code that manipulates it to know how to rebuild "
+"everything related for almost any change."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:129
+msgid "Mutable objects with an easy-enough-to-use API is hell to design."
+msgstr "Mutable objects with an easy-enough-to-use API is hell to design."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:130
+msgid ""
+"3.1. How would a script know how to specify the changes that are required to "
+"make without using a complex API? 3.2. How would a user script swiftly test "
+"if a query has the correct format?"
+msgstr ""
+"3.1. How would a script know how to specify the changes that are required to "
+"make without using a complex API? 3.2. How would a user script swiftly test "
+"if a query has the correct format?"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:133
+msgid "Mostly due to those reasons above arrays was decided as the medium."
+msgstr "Mostly due to those reasons above arrays was decided as the medium."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:136
+msgid "How to use"
+msgstr "How to use"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:138
+msgid ""
+"This system is used when building queries using the db's sql_build_query() "
+"method."
+msgstr ""
+"This system is used when building queries using the db's sql_build_query() "
+"method."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:140
+msgid ""
+"While building the array to send to it as the 2nd parameter, when writing "
+"the WHERE clause, you may use this system instead of simply typing a string "
+"or making your own accumulator of conditionals."
+msgstr ""
+"While building the array to send to it as the 2nd parameter, when writing "
+"the WHERE clause, you may use this system instead of simply typing a string "
+"or making your own accumulator of conditionals."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:142
+msgid ""
+"For the sake of the examples below, I will simulate an execution that exists "
+"in phpBB and assume that the query has to go through an event that does a "
+"small change to it."
+msgstr ""
+"For the sake of the examples below, I will simulate an execution that exists "
+"in phpBB and assume that the query has to go through an event that does a "
+"small change to it."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:146
+msgid "How to use in phpBB"
+msgstr "How to use in phpBB"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:147
+msgid ""
+"In the ideal situation, all DB queries that may use multiple stages where "
+"SQL data is manipulated or changed should use this, specially if they also "
+"go through an event."
+msgstr ""
+"In the ideal situation, all DB queries that may use multiple stages where "
+"SQL data is manipulated or changed should use this, specially if they also "
+"go through an event."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:151
+msgid "Translate SQL to the structured conditional"
+msgstr "Translate SQL to the structured conditional"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:152
+msgid ""
+"Here's a step-by-step guide to transform a query made using a string into "
+"the format that this feature uses."
+msgstr ""
+"Here's a step-by-step guide to transform a query made using a string into "
+"the format that this feature uses."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:154
+msgid "Now imagine you want something like this (source: viewforum.php:277):"
+msgstr "Now imagine you want something like this (source: viewforum.php:277):"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:167
+msgid ""
+"Looks quite direct to the point, right? OK, **step1**, prepare it for "
+"sql_build_query();"
+msgstr ""
+"Looks quite direct to the point, right? OK, **step1**, prepare it for "
+"sql_build_query();"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:170
+msgid ""
+"According to the manual for this transformation, it should look like this:"
+msgstr ""
+"According to the manual for this transformation, it should look like this:"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:189
+msgid ""
+"That's fine and all but it does not use this processor yet. **Step 2** Now "
+"to focus on the WHERE clause only"
+msgstr ""
+"That's fine and all but it does not use this processor yet. **Step 2** Now "
+"to focus on the WHERE clause only"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:193
+msgid ""
+"Hum... Let's see... There's a set of AND's to join in. Let's start there."
+msgstr ""
+"Hum... Let's see... There's a set of AND's to join in. Let's start there."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:207
+msgid "Inside the set of AND's, one of them is a set of OR's."
+msgstr "Inside the set of AND's, one of them is a set of OR's."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:223
+msgid ""
+"There! Better! But it still isn't that easy to work with. There's a string "
+"for each comparison. BUT! If I use the type1 array mentioned above, I can "
+"separate each one of those into a single thing! In this case..."
+msgstr ""
+"There! Better! But it still isn't that easy to work with. There's a string "
+"for each comparison. BUT! If I use the type1 array mentioned above, I can "
+"separate each one of those into a single thing! In this case..."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:238
+msgid ""
+"There you go! No variable interpolation, no explicit string concatenation, "
+"in case of a requirement to build it or change it later, it becomes a very "
+"straightforward task (see next section) and all data is properly escaped."
+msgstr ""
+"There you go! No variable interpolation, no explicit string concatenation, "
+"in case of a requirement to build it or change it later, it becomes a very "
+"straightforward task (see next section) and all data is properly escaped."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:240
+msgid ""
+"Just for the last piece of code in this section, here's how the full SQL "
+"query should be written when using this system:"
+msgstr ""
+"Just for the last piece of code in this section, here's how the full SQL "
+"query should be written when using this system:"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:265
+msgid "Modify the structured conditional in an extension"
+msgstr "Modify the structured conditional in an extension"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:266
+msgid ""
+"One of the major reasons why this feature is designed in this very way is "
+"mostly because of what is exemplified in this section. Same as the sub-"
+"section above, I will present you practical example(s) on how to use this "
+"feature. Piking up the code above as an example:"
+msgstr ""
+"One of the major reasons why this feature is designed in this very way is "
+"mostly because of what is exemplified in this section. Same as the sub-"
+"section above, I will present you practical example(s) on how to use this "
+"feature. Piking up the code above as an example:"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:289
+msgid ""
+"Imagine you are building an extension that requires modifying that query "
+"above. For example, you want to make topic_last_post_time as a forced "
+"requirement for this query. In other words, you want the query to be like "
+"this:"
+msgstr ""
+"Imagine you are building an extension that requires modifying that query "
+"above. For example, you want to make topic_last_post_time as a forced "
+"requirement for this query. In other words, you want the query to be like "
+"this:"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:306
+msgid ""
+"Just as a good practice and to help other extension writers to modify this "
+"query in an easier way, let's make it like this instead:"
+msgstr ""
+"Just as a good practice and to help other extension writers to modify this "
+"query in an easier way, let's make it like this instead:"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:324
+msgid ""
+"Do notice that I kept the OR clause. This is just so that these changes have "
+"as little chance as possible to break other extensions. Anyway, moving on."
+msgstr ""
+"Do notice that I kept the OR clause. This is just so that these changes have "
+"as little chance as possible to break other extensions. Anyway, moving on."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:327
+msgid "In your function:"
+msgstr "In your function:"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:334
+msgid ""
+"You will have an $event['sql'] which will contain the query. Below, I use "
+"nesting of \"if\", if you prefer, you may use exceptions instead. In order "
+"to access what we want, we can do it like this:"
+msgstr ""
+"You will have an $event['sql'] which will contain the query. Below, I use "
+"nesting of \"if\", if you prefer, you may use exceptions instead. In order "
+"to access what we want, we can do it like this:"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:380
+msgid ""
+"If you are thinking: Eh?!??!? That's too complicated... How is this better "
+"than before?!?!"
+msgstr ""
+"If you are thinking: Eh?!??!? That's too complicated... How is this better "
+"than before?!?!"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:383
+msgid ""
+"Well, I'm just safeguarding myself above. I'm just doing in a way to make "
+"sure it will surely work. If you don't feel like it, however, then this is "
+"enough:"
+msgstr ""
+"Well, I'm just safeguarding myself above. I'm just doing in a way to make "
+"sure it will surely work. If you don't feel like it, however, then this is "
+"enough:"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:395
+msgid "Or to protect yourself slightly:"
+msgstr "Or to protect yourself slightly:"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:414
+msgid ""
+"I've shown you the above one first because I wanted you to experience the "
+"will to do everybody's work the easiest and most flexible way."
+msgstr ""
+"I've shown you the above one first because I wanted you to experience the "
+"will to do everybody's work the easiest and most flexible way."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:416
+msgid "**Example 2:**"
+msgstr "**Example 2:**"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:418
+msgid ""
+"Now imagining that you want to add a condition to the OR statement list. For "
+"example, you want sticky posts to not be counted."
+msgstr ""
+"Now imagining that you want to add a condition to the OR statement list. For "
+"example, you want sticky posts to not be counted."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:421
+msgid ""
+"The long/self.protected way uses just about the same formula as 3 samples "
+"above. The short way is about as much as this:"
+msgstr ""
+"The long/self.protected way uses just about the same formula as 3 samples "
+"above. The short way is about as much as this:"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:441
+msgid ""
+"... And you are done. No Regex, no need to write down your own 'OR' or "
+"anything like that. As a bonus, if what you write follows basic rules on how "
+"SQL is written, it is guaranteed that the output will be valid SQL."
+msgstr ""
+"... And you are done. No Regex, no need to write down your own 'OR' or "
+"anything like that. As a bonus, if what you write follows basic rules on how "
+"SQL is written, it is guaranteed that the output will be valid SQL."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:445
+msgid "Usage examples"
+msgstr "Usage examples"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:446
+msgid "Here I present code samples that exemplify how to use this system."
+msgstr "Here I present code samples that exemplify how to use this system."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:449
+msgid "In phpBB's code"
+msgstr "In phpBB's code"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:510
+msgid "In phpBB's extensions code"
+msgstr "In phpBB's extensions code"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:524
+msgid "More will come as people submit more useful examples"
+msgstr "More will come as people submit more useful examples"
