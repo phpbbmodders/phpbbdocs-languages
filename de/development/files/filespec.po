@@ -1,0 +1,166 @@
+# German translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/files/filespec.rst:3
+msgid "The filespec class"
+msgstr "Die Klasse filespec"
+
+#: ../../devdocs-source-copy/files/filespec.rst:5
+msgid ""
+"The newly introduced files ``filespec`` class replaces the previously "
+"existing ``filespec`` class."
+msgstr ""
+"Die neu eingeführte Klasse ``filespec`` von files ersetzt die zuvor "
+"bestehende Klasse ``filespec``."
+
+#: ../../devdocs-source-copy/files/filespec.rst:8
+msgid "Passing settings to filespec class"
+msgstr "Übergabe von Einstellungen an die Klasse filespec"
+
+#: ../../devdocs-source-copy/files/filespec.rst:10
+msgid ""
+"In phpBB versions prior to 3.2, the ``$upload_ary`` and "
+"``$upload_namespace`` were passed to the ``filespec`` class via the "
+"constructor. Since these are now retrieved via the container infrastructure,"
+" this is no longer possible. Instead, the new ``filespec`` class "
+"incorporates 2 methods for easily setting the necessary data:"
+msgstr ""
+"In phpBB-Versionen vor 3.2 wurden ``$upload_ary`` und ``$upload_namespace`` "
+"über den Konstruktor an die Klasse ``filespec`` übergeben. Da diese nun über"
+" die Container-Infrastruktur abgerufen werden, ist dies nicht mehr möglich. "
+"Stattdessen enthält die neue Klasse ``filespec`` 2 Methoden, um die "
+"notwendigen Daten einfach zu setzen:"
+
+#: ../../devdocs-source-copy/files/filespec.rst:15
+msgid "``set_upload_ary($upload_ary)``"
+msgstr "``set_upload_ary($upload_ary)``"
+
+#: ../../devdocs-source-copy/files/filespec.rst:16
+msgid "``set_upload_namespace($namespace)``"
+msgstr "``set_upload_namespace($namespace)``"
+
+#: ../../devdocs-source-copy/files/filespec.rst:18
+msgid ""
+"Each of these methods returns the current instance of the ``filespec`` class"
+" allowing for chained calls:"
+msgstr ""
+"Jede dieser Methoden gibt die aktuelle Instanz der Klasse ``filespec`` "
+"zurück, was verkettete Aufrufe ermöglicht:"
+
+#: ../../devdocs-source-copy/files/filespec.rst:26
+msgid "Retrieving property values"
+msgstr "Abrufen von Eigenschaftswerten"
+
+#: ../../devdocs-source-copy/files/filespec.rst:28
+msgid ""
+"Values of ``filespec`` properties can easily be retrieved with the ``get()``"
+" method. Simply pass the name of the property to retrieve and it will "
+"returns its value."
+msgstr ""
+"Werte von ``filespec``-Eigenschaften lassen sich einfach mit der Methode "
+"``get()`` abrufen. Übergib einfach den Namen der abzurufenden Eigenschaft, "
+"und ihr Wert wird zurückgegeben."
+
+#: ../../devdocs-source-copy/files/filespec.rst:37
+msgid ""
+"``get()`` will return false if the specified property does not exist or if "
+"the class was not properly initialized."
+msgstr ""
+"``get()`` gibt false zurück, wenn die angegebene Eigenschaft nicht existiert"
+" oder die Klasse nicht korrekt initialisiert wurde."
+
+#: ../../devdocs-source-copy/files/filespec.rst:40
+msgid "Clean file name"
+msgstr "Dateinamen bereinigen"
+
+#: ../../devdocs-source-copy/files/filespec.rst:42
+msgid ""
+"``filespec`` supports several ways of cleaning the filename depending on the"
+" specified mode with the ``clean_filename()`` method. Possible modes are:"
+msgstr ""
+"``filespec`` unterstützt mehrere Möglichkeiten, den Dateinamen je nach "
+"angegebenem Modus mit der Methode ``clean_filename()`` zu bereinigen. "
+"Mögliche Modi sind:"
+
+#: ../../devdocs-source-copy/files/filespec.rst:46
+msgid "avatar"
+msgstr "avatar"
+
+#: ../../devdocs-source-copy/files/filespec.rst:47
+msgid "Builds name based on specified prefix and ID"
+msgstr "Erstellt den Namen basierend auf dem angegebenen Präfix und der ID"
+
+#: ../../devdocs-source-copy/files/filespec.rst:48
+msgid "real"
+msgstr "real"
+
+#: ../../devdocs-source-copy/files/filespec.rst:49
+msgid ""
+"Creates a lowercase name and removes some possibly troublesome characters"
+msgstr ""
+"Erstellt einen Namen in Kleinbuchstaben und entfernt einige möglicherweise "
+"problematische Zeichen"
+
+#: ../../devdocs-source-copy/files/filespec.rst:50
+msgid "unique"
+msgstr "unique"
+
+#: ../../devdocs-source-copy/files/filespec.rst:51
+msgid "Creates unique filename without extension"
+msgstr "Erstellt einen eindeutigen Dateinamen ohne Erweiterung"
+
+#: ../../devdocs-source-copy/files/filespec.rst:52
+msgid "unique_ext"
+msgstr "unique_ext"
+
+#: ../../devdocs-source-copy/files/filespec.rst:53
+msgid "Creates unique filename with extension"
+msgstr "Erstellt einen eindeutigen Dateinamen mit Erweiterung"
+
+#: ../../devdocs-source-copy/files/filespec.rst:56
+msgid "Move file to location"
+msgstr "Datei an einen Ort verschieben"
+
+#: ../../devdocs-source-copy/files/filespec.rst:58
+msgid ""
+"It is possible to move the uploaded file to a specified location with the "
+"``move_file()`` method."
+msgstr ""
+"Es ist möglich, die hochgeladene Datei mit der Methode ``move_file()`` an "
+"einen angegebenen Ort zu verschieben."
+
+#: ../../devdocs-source-copy/files/filespec.rst:64
+msgid "``$destination``: Path to move file to"
+msgstr "``$destination``: Pfad, an den die Datei verschoben werden soll"
+
+#: ../../devdocs-source-copy/files/filespec.rst:66
+msgid "``$overwrite``: Whether existing files should be overwritten"
+msgstr "``$overwrite``: Ob bestehende Dateien überschrieben werden sollen"
+
+#: ../../devdocs-source-copy/files/filespec.rst:68
+msgid "``$skip_image_check``: Whether to skip if the image is valid"
+msgstr ""
+"``$skip_image_check``: Ob die Gültigkeitsprüfung des Bildes übersprungen "
+"werden soll"
+
+#: ../../devdocs-source-copy/files/filespec.rst:70
+msgid "``$chmod``: Permission mask file should be set to with ``chmod()``"
+msgstr ""
+"``$chmod``: Berechtigungsmaske, auf die die Datei mit ``chmod()`` gesetzt "
+"werden soll"

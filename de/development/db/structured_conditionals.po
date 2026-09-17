@@ -1,0 +1,585 @@
+# German translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:3
+msgid "The boolean structure system"
+msgstr "Das boolesche Strukturensystem"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:6
+msgid "Intro"
+msgstr "Einleitung"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:8
+msgid ""
+"This feature helps extension authors to edit SQL queries in an easy and "
+"quick way without the need to parse the SQL queries, most likely, using "
+"regex and complex text editing. Instead of a single string, this allows "
+"editing the WHERE clause in an SQL query by adding, removing and editing php"
+" arrays. Using this method, finding the portion of the query to edit should "
+"be much more straightforward."
+msgstr ""
+"Diese Funktion hilft Erweiterungsautoren, SQL-Abfragen einfach und schnell "
+"zu bearbeiten, ohne die SQL-Abfragen mit Regex und komplexer Textbearbeitung"
+" parsen zu müssen. Anstelle einer einzelnen Zeichenkette ermöglicht dies das"
+" Bearbeiten der WHERE-Klausel in einer SQL-Abfrage durch Hinzufügen, "
+"Entfernen und Bearbeiten von PHP-Arrays. Mit dieser Methode sollte das "
+"Auffinden des zu bearbeitenden Abfrageteils viel unkomplizierter sein."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:11
+msgid ""
+"If done correctly, incompatibilities between extensions that use the same "
+"SQL query can be averted. Where a regex match could easly force the author "
+"into making very complex matches. With this, finding and replacing the "
+"content is just tree-like transversal as they are only arrays. Compatibility"
+" between extensions becomes much easier."
+msgstr ""
+"Wenn dies richtig gemacht wird, können Inkompatibilitäten zwischen "
+"Erweiterungen, die dieselbe SQL-Abfrage verwenden, vermieden werden. Ein "
+"Regex-Abgleich könnte den Autor leicht zwingen, sehr komplexe Abgleiche zu "
+"erstellen. Damit ist das Auffinden und Ersetzen des Inhalts nur ein "
+"baumartiges Durchlaufen, da es sich lediglich um Arrays handelt. Die "
+"Kompatibilität zwischen Erweiterungen wird dadurch viel einfacher."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:13
+msgid ""
+"Althought this will definitely reduce the probability of inter-"
+"incompatibilities between extensions, it is not magic. This is just a tool "
+"that helps solving the same issue."
+msgstr ""
+"Obwohl dies die Wahrscheinlichkeit von Inkompatibilitäten zwischen "
+"Erweiterungen definitiv verringert, ist es keine Magie. Es ist lediglich ein"
+" Werkzeug, das dabei hilft, dasselbe Problem zu lösen."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:17
+msgid "Main use-case ideals"
+msgstr "Hauptanwendungsziele"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:19
+msgid "To flexibly the build of the WHERE clause in SQL queries"
+msgstr "Den Aufbau der WHERE-Klausel in SQL-Abfragen flexibel zu gestalten"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:20
+msgid ""
+"To ease, simplify and prevent errors when doing SQL query editing by phpBB's"
+" extensions"
+msgstr ""
+"Das Bearbeiten von SQL-Abfragen durch phpBBs Erweiterungen zu erleichtern, "
+"zu vereinfachen und Fehler zu vermeiden"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:23
+msgid "Why not..."
+msgstr "Warum nicht..."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:25
+msgid ""
+"Doctrine dbal -> The issue with Doctrine dbal is that its query builder is "
+"not ready for the 2nd major use case listed above. There is no way of "
+"altering an SQL query. If you want to alter something, you have to rebuild "
+"the whole SQL query."
+msgstr ""
+"Doctrine dbal -> Das Problem bei Doctrine dbal ist, dass sein Query Builder "
+"für den zweiten oben genannten Hauptanwendungsfall nicht geeignet ist. Es "
+"gibt keine Möglichkeit, eine SQL-Abfrage zu ändern. Möchtest du etwas "
+"ändern, musst du die gesamte SQL-Abfrage neu aufbauen."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:26
+msgid ""
+"Linq -> I didn't know the assistance of Linq until today. From what I "
+"searched, not only it has the same issue as Doctrine, while also its "
+"interface is unnecessarily complex for the common folk who just wants to "
+"change a small amount of information."
+msgstr ""
+"Linq -> Ich kannte die Unterstützung von Linq bis heute nicht. Nach meiner "
+"Recherche hat es nicht nur dasselbe Problem wie Doctrine, sondern auch seine"
+" Schnittstelle ist unnötig komplex für die meisten Leute, die nur eine "
+"kleine Menge an Informationen ändern möchten."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:30
+msgid "The Data structure"
+msgstr "Die Datenstruktur"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:32
+msgid ""
+"This builder uses a tree-like information organization for the boolean "
+"comparisons in SQL queries. Each node of such tree is a php array. Each node"
+" can have one of 3 formats:"
+msgstr ""
+"Dieser Builder verwendet eine baumartige Informationsorganisation für die "
+"booleschen Vergleiche in SQL-Abfragen. Jeder Knoten eines solchen Baums ist "
+"ein PHP-Array. Jeder Knoten kann eines von 3 Formaten haben:"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:37
+msgid "type1"
+msgstr "type1"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:39
+msgid "The 1st type contains 3 elements:"
+msgstr "Der 1. Typ enthält 3 Elemente:"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:41
+msgid "Left hand, operator, right hand. E.g."
+msgstr "Linke Seite, Operator, rechte Seite. Z. B."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:53
+msgid ""
+"For the operator, there are 6 special values (everything else is taken "
+"literally):"
+msgstr ""
+"Für den Operator gibt es 6 Sonderwerte (alles andere wird wörtlich "
+"genommen):"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:55
+msgid "IN"
+msgstr "IN"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:56
+msgid "NOT_IN"
+msgstr "NOT_IN"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:57
+msgid "LIKE"
+msgstr "LIKE"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:58
+msgid "NOT_LIKE"
+msgstr "NOT_LIKE"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:59
+msgid "IS"
+msgstr "IS"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:60
+msgid "IS_NOT"
+msgstr "IS_NOT"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:62
+msgid ""
+"All of them are special because they call the dbal's methods to process the "
+"data. For example, if you use the **IN** operator, it calls "
+"$db->sql_in_set() with the right hand data."
+msgstr ""
+"Alle sind besonders, weil sie die Methoden der DBAL aufrufen, um die Daten "
+"zu verarbeiten. Verwendest du z. B. den Operator **IN**, wird "
+"$db->sql_in_set() mit den Daten der rechten Seite aufgerufen."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:66
+msgid "type2"
+msgstr "type2"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:68
+msgid ""
+"The 2nd type is variable length. It is identified by having the string "
+"'AND', 'OR' or 'NOT' in the first position of the array."
+msgstr ""
+"Der 2. Typ hat eine variable Länge. Er wird daran erkannt, dass an erster "
+"Stelle des Arrays die Zeichenkette 'AND', 'OR' oder 'NOT' steht."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:70
+msgid ""
+"The first element contains the boolean operator that is used to join "
+"together all its other elements."
+msgstr ""
+"Das erste Element enthält den booleschen Operator, mit dem alle anderen "
+"Elemente verknüpft werden."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:72
+msgid "E.g."
+msgstr "Z. B."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:82
+msgid "which outputs (after reindenting)"
+msgstr "was (nach Neueinrückung) folgendes ausgibt"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:92
+msgid "type3"
+msgstr "type3"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:94
+msgid ""
+"The 3rd type has 5 elements Left hand, operator, sub query operator, sub "
+"query SELECT type, the sub query."
+msgstr ""
+"Der 3. Typ hat 5 Elemente: linke Seite, Operator, Subquery-Operator, "
+"Subquery-SELECT-Typ, die Subquery."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:97
+msgid ""
+"This is used when you require a subquery in your DB query. Essentially, what"
+" this does is that it will call sql_build_query() recursively with the 4th "
+"and the 5th elements."
+msgstr ""
+"Dies wird verwendet, wenn du eine Subquery in deiner Datenbankabfrage "
+"benötigst. Im Wesentlichen ruft dies sql_build_query() rekursiv mit dem 4. "
+"und 5. Element auf."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:113
+msgid "Why arrays?"
+msgstr "Warum Arrays?"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:115
+msgid "The motivation to use arrays comes from the needs:"
+msgstr ""
+"Die Motivation, Arrays zu verwenden, ergibt sich aus folgenden Bedürfnissen:"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:117
+msgid "This is information that is going to be used quite a lot."
+msgstr "Dies sind Informationen, die recht häufig verwendet werden."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:118
+msgid ""
+"1.1. In the ideal case, every SQL query with either an ON or a WHERE clause "
+"(just about all) will use this."
+msgstr ""
+"1.1. Im Idealfall wird dies von jeder SQL-Abfrage mit einer ON- oder WHERE-"
+"Klausel (praktisch allen) verwendet."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:119
+msgid "The implementation on which this works on top of already uses arrays."
+msgstr "Die Implementierung, auf der dies aufbaut, verwendet bereits Arrays."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:120
+msgid "Editing arrays is a quite trivial task for any piece of code."
+msgstr ""
+"Das Bearbeiten von Arrays ist für jeden Code eine recht triviale Aufgabe."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:123
+msgid "Why not Objects?"
+msgstr "Warum nicht Objekte?"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:125
+msgid "Tranversing Objects forming a tree is **seriously slow** in php."
+msgstr ""
+"Das Durchlaufen von Objekten, die einen Baum bilden, ist in PHP **erheblich "
+"langsam**."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:126
+msgid ""
+"1.1. This wouldn't much be noticed on vanilla phpBB but, as you add "
+"extensions, it would easily be dead slow."
+msgstr ""
+"1.1. Bei purem phpBB würde man das kaum bemerken, aber sobald man "
+"Erweiterungen hinzufügt, wäre es leicht extrem langsam."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:127
+msgid "Doing this with immutable objects is completely unviable."
+msgstr ""
+"Dies mit unveränderlichen (immutable) Objekten zu tun, ist völlig "
+"unpraktikabel."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:128
+msgid ""
+"2.1. It would require the code that manipulates it to know how to rebuild "
+"everything related for almost any change."
+msgstr ""
+"2.1. Der Code, der es manipuliert, müsste wissen, wie er für praktisch jede "
+"Änderung alles Zugehörige neu aufbaut."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:129
+msgid "Mutable objects with an easy-enough-to-use API is hell to design."
+msgstr ""
+"Veränderliche (mutable) Objekte mit einer ausreichend einfach nutzbaren API "
+"zu entwerfen, ist die Hölle."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:130
+msgid ""
+"3.1. How would a script know how to specify the changes that are required to"
+" make without using a complex API? 3.2. How would a user script swiftly test"
+" if a query has the correct format?"
+msgstr ""
+"3.1. Woher sollte ein Skript wissen, wie es die erforderlichen Änderungen "
+"angeben soll, ohne eine komplexe API zu verwenden? 3.2. Wie sollte ein "
+"Benutzerskript schnell testen, ob eine Abfrage das richtige Format hat?"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:133
+msgid "Mostly due to those reasons above arrays was decided as the medium."
+msgstr ""
+"Hauptsächlich aus den oben genannten Gründen wurde entschieden, Arrays als "
+"Medium zu verwenden."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:136
+msgid "How to use"
+msgstr "Verwendung"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:138
+msgid ""
+"This system is used when building queries using the db's sql_build_query() "
+"method."
+msgstr ""
+"Dieses System wird beim Aufbau von Abfragen mit der Methode "
+"sql_build_query() der Datenbank verwendet."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:140
+msgid ""
+"While building the array to send to it as the 2nd parameter, when writing "
+"the WHERE clause, you may use this system instead of simply typing a string "
+"or making your own accumulator of conditionals."
+msgstr ""
+"Beim Aufbau des als 2. Parameter zu übergebenden Arrays kannst du beim "
+"Schreiben der WHERE-Klausel dieses System verwenden, anstatt einfach eine "
+"Zeichenkette einzugeben oder deinen eigenen Akkumulator für Bedingungen zu "
+"erstellen."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:142
+msgid ""
+"For the sake of the examples below, I will simulate an execution that exists"
+" in phpBB and assume that the query has to go through an event that does a "
+"small change to it."
+msgstr ""
+"Für die folgenden Beispiele simuliere ich eine Ausführung, die in phpBB "
+"existiert, und nehme an, dass die Abfrage ein Event durchlaufen muss, das "
+"eine kleine Änderung daran vornimmt."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:146
+msgid "How to use in phpBB"
+msgstr "Verwendung in phpBB"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:147
+msgid ""
+"In the ideal situation, all DB queries that may use multiple stages where "
+"SQL data is manipulated or changed should use this, specially if they also "
+"go through an event."
+msgstr ""
+"Im Idealfall sollten alle Datenbankabfragen, die mehrere Phasen durchlaufen,"
+" in denen SQL-Daten manipuliert oder geändert werden, dies verwenden, "
+"insbesondere wenn sie auch ein Event durchlaufen."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:151
+msgid "Translate SQL to the structured conditional"
+msgstr "SQL in die strukturierte Bedingung übersetzen"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:152
+msgid ""
+"Here's a step-by-step guide to transform a query made using a string into "
+"the format that this feature uses."
+msgstr ""
+"Hier ist eine Schritt-für-Schritt-Anleitung, um eine mit einer Zeichenkette "
+"erstellte Abfrage in das von dieser Funktion verwendete Format umzuwandeln."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:154
+msgid "Now imagine you want something like this (source: viewforum.php:277):"
+msgstr "Stell dir nun vor, du möchtest so etwas (Quelle: viewforum.php:277):"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:167
+msgid ""
+"Looks quite direct to the point, right? OK, **step1**, prepare it for "
+"sql_build_query();"
+msgstr ""
+"Sieht ziemlich direkt aus, oder? OK, **Schritt 1**, bereite es für "
+"sql_build_query() vor;"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:170
+msgid ""
+"According to the manual for this transformation, it should look like this:"
+msgstr "Gemäß der Anleitung für diese Umwandlung sollte es so aussehen:"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:189
+msgid ""
+"That's fine and all but it does not use this processor yet. **Step 2** Now "
+"to focus on the WHERE clause only"
+msgstr ""
+"Das ist soweit in Ordnung, verwendet aber noch nicht diesen Prozessor. "
+"**Schritt 2** Konzentrieren wir uns nun nur auf die WHERE-Klausel"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:193
+msgid ""
+"Hum... Let's see... There's a set of AND's to join in. Let's start there."
+msgstr ""
+"Hm... mal sehen... Es gibt eine Reihe von AND-Verknüpfungen. Fangen wir dort"
+" an."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:207
+msgid "Inside the set of AND's, one of them is a set of OR's."
+msgstr ""
+"Innerhalb der AND-Reihe ist eine davon eine Reihe von OR-Verknüpfungen."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:223
+msgid ""
+"There! Better! But it still isn't that easy to work with. There's a string "
+"for each comparison. BUT! If I use the type1 array mentioned above, I can "
+"separate each one of those into a single thing! In this case..."
+msgstr ""
+"So! Besser! Aber es ist immer noch nicht so einfach zu handhaben. Es gibt "
+"eine Zeichenkette für jeden Vergleich. ABER! Wenn ich das oben erwähnte "
+"type1-Array verwende, kann ich jeden davon in ein einzelnes Ding auftrennen!"
+" In diesem Fall..."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:238
+msgid ""
+"There you go! No variable interpolation, no explicit string concatenation, "
+"in case of a requirement to build it or change it later, it becomes a very "
+"straightforward task (see next section) and all data is properly escaped."
+msgstr ""
+"Bitte sehr! Keine Variableninterpolation, keine explizite "
+"Zeichenkettenverkettung; sollte es später aufgebaut oder geändert werden "
+"müssen, wird dies zu einer sehr unkomplizierten Aufgabe (siehe nächster "
+"Abschnitt), und alle Daten werden korrekt escaped."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:240
+msgid ""
+"Just for the last piece of code in this section, here's how the full SQL "
+"query should be written when using this system:"
+msgstr ""
+"Nur für das letzte Codestück in diesem Abschnitt: So sollte die vollständige"
+" SQL-Abfrage bei Verwendung dieses Systems geschrieben werden:"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:265
+msgid "Modify the structured conditional in an extension"
+msgstr "Änderung der strukturierten Bedingung in einer Erweiterung"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:266
+msgid ""
+"One of the major reasons why this feature is designed in this very way is "
+"mostly because of what is exemplified in this section. Same as the sub-"
+"section above, I will present you practical example(s) on how to use this "
+"feature. Piking up the code above as an example:"
+msgstr ""
+"Einer der Hauptgründe, warum diese Funktion genau so gestaltet ist, liegt "
+"größtenteils an dem, was in diesem Abschnitt veranschaulicht wird. Wie im "
+"vorherigen Unterabschnitt zeige ich dir praktische Beispiele zur Verwendung "
+"dieser Funktion. Als Beispiel greife ich den obigen Code auf:"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:289
+msgid ""
+"Imagine you are building an extension that requires modifying that query "
+"above. For example, you want to make topic_last_post_time as a forced "
+"requirement for this query. In other words, you want the query to be like "
+"this:"
+msgstr ""
+"Stell dir vor, du entwickelst eine Erweiterung, die die obige Abfrage ändern"
+" muss. Du möchtest z. B. topic_last_post_time als zwingende Anforderung für "
+"diese Abfrage festlegen. Mit anderen Worten, die Abfrage soll so aussehen:"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:306
+msgid ""
+"Just as a good practice and to help other extension writers to modify this "
+"query in an easier way, let's make it like this instead:"
+msgstr ""
+"Als gute Praxis und um anderen Erweiterungsentwicklern zu helfen, diese "
+"Abfrage einfacher zu ändern, machen wir es stattdessen so:"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:324
+msgid ""
+"Do notice that I kept the OR clause. This is just so that these changes have"
+" as little chance as possible to break other extensions. Anyway, moving on."
+msgstr ""
+"Beachte, dass ich die OR-Klausel beibehalten habe. Dies dient lediglich "
+"dazu, dass diese Änderungen so wenig wie möglich andere Erweiterungen "
+"beeinträchtigen. Machen wir weiter."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:327
+msgid "In your function:"
+msgstr "In deiner Funktion:"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:334
+msgid ""
+"You will have an $event['sql'] which will contain the query. Below, I use "
+"nesting of \"if\", if you prefer, you may use exceptions instead. In order "
+"to access what we want, we can do it like this:"
+msgstr ""
+"Du hast ein $event['sql'], das die Abfrage enthält. Im Folgenden verwende "
+"ich verschachtelte \"if\"-Anweisungen; wenn du möchtest, kannst du "
+"stattdessen auch Exceptions verwenden. Um auf das zuzugreifen, was wir "
+"möchten, können wir es so machen:"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:380
+msgid ""
+"If you are thinking: Eh?!??!? That's too complicated... How is this better "
+"than before?!?!"
+msgstr ""
+"Falls du denkst: Wie bitte?!??!? Das ist zu kompliziert... Wie ist das "
+"besser als vorher?!?!"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:383
+msgid ""
+"Well, I'm just safeguarding myself above. I'm just doing in a way to make "
+"sure it will surely work. If you don't feel like it, however, then this is "
+"enough:"
+msgstr ""
+"Nun, oben sichere ich mich nur ab. Ich mache es einfach so, um "
+"sicherzustellen, dass es garantiert funktioniert. Wenn du darauf keine Lust "
+"hast, reicht jedoch Folgendes:"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:395
+msgid "Or to protect yourself slightly:"
+msgstr "Oder um dich etwas abzusichern:"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:414
+msgid ""
+"I've shown you the above one first because I wanted you to experience the "
+"will to do everybody's work the easiest and most flexible way."
+msgstr ""
+"Ich habe dir das obige zuerst gezeigt, weil ich wollte, dass du den Willen "
+"erlebst, die Arbeit für alle so einfach und flexibel wie möglich zu "
+"gestalten."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:416
+msgid "**Example 2:**"
+msgstr "**Beispiel 2:**"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:418
+msgid ""
+"Now imagining that you want to add a condition to the OR statement list. For"
+" example, you want sticky posts to not be counted."
+msgstr ""
+"Stell dir nun vor, du möchtest der OR-Anweisungsliste eine Bedingung "
+"hinzufügen. Zum Beispiel möchtest du, dass angeheftete Beiträge nicht "
+"gezählt werden."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:421
+msgid ""
+"The long/self.protected way uses just about the same formula as 3 samples "
+"above. The short way is about as much as this:"
+msgstr ""
+"Der lange/selbst-abgesicherte Weg verwendet ungefähr dieselbe Formel wie die"
+" 3 obigen Beispiele. Der kurze Weg sieht in etwa so aus:"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:441
+msgid ""
+"... And you are done. No Regex, no need to write down your own 'OR' or "
+"anything like that. As a bonus, if what you write follows basic rules on how"
+" SQL is written, it is guaranteed that the output will be valid SQL."
+msgstr ""
+"... und schon bist du fertig. Kein Regex, kein Bedarf, dein eigenes 'OR' "
+"oder Ähnliches zu schreiben. Als Bonus ist garantiert, dass die Ausgabe "
+"gültiges SQL ist, sofern das Geschriebene den grundlegenden Regeln zur SQL-"
+"Schreibweise folgt."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:445
+msgid "Usage examples"
+msgstr "Verwendungsbeispiele"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:446
+msgid "Here I present code samples that exemplify how to use this system."
+msgstr ""
+"Hier präsentiere ich Codebeispiele, die veranschaulichen, wie dieses System "
+"verwendet wird."
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:449
+msgid "In phpBB's code"
+msgstr "Im Code von phpBB"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:510
+msgid "In phpBB's extensions code"
+msgstr "Im Code der Erweiterungen von phpBB"
+
+#: ../../devdocs-source-copy/db/structured_conditionals.rst:524
+msgid "More will come as people submit more useful examples"
+msgstr ""
+"Es werden weitere Beispiele folgen, sobald Leute nützlichere Beispiele "
+"einreichen"

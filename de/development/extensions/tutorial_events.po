@@ -1,0 +1,510 @@
+# German translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:3
+msgid "Tutorial: Events and Listeners"
+msgstr "Tutorial: Events und Listener"
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:6
+msgid "Introduction"
+msgstr "Einführung"
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:8
+msgid ""
+"phpBB 3.1 introduced a system of events throughout the codebase and template"
+" files that allow extensions to use listeners to add features, inject code, "
+"and modify existing functionality and behaviour."
+msgstr ""
+"phpBB 3.1 führte ein System von Events im gesamten Code und in den Template-"
+"Dateien ein, das Erweiterungen ermöglicht, mithilfe von Listenern Funktionen"
+" hinzuzufügen, Code einzuschleusen und bestehende Funktionalität und "
+"Verhalten zu verändern."
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:12
+msgid "This tutorial explains how to use events and listeners:"
+msgstr "Dieses Tutorial erklärt, wie man Events und Listener verwendet:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:14
+msgid "`Template Events & Listeners`_"
+msgstr "`Template Events & Listeners`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:15
+msgid "`PHP Core Events & Listeners`_"
+msgstr "`PHP Core Events & Listeners`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:21
+msgid "Template Events & Listeners"
+msgstr "Template-Events und Listener"
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:23
+msgid ""
+"Template events allow extensions to inject code into the template files. "
+"Events can be found throughout the template structure of phpBB's styles, "
+"providing multiple useful injection points. A typical template event looks "
+"like:"
+msgstr ""
+"Template-Events ermöglichen Erweiterungen, Code in die Template-Dateien "
+"einzuschleusen. Events finden sich in der gesamten Template-Struktur der "
+"Styles von phpBB und bieten mehrere nützliche Einschleusungspunkte. Ein "
+"typisches Template-Event sieht so aus:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:33
+msgid ""
+"View the full list of `Template events "
+"<https://area51.phpbb.com/docs/dev/3.3.x/extensions/events_list.html#template-"
+"events>`_."
+msgstr ""
+"Sieh dir die vollständige Liste der `Template events "
+"<https://area51.phpbb.com/docs/dev/3.3.x/extensions/events_list.html#template-"
+"events>`_ an."
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:36
+msgid "Listening for an event"
+msgstr "Auf ein Event hören"
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:38
+msgid ""
+"To *subscribe* to a template event, we must create a *listener*, a template "
+"file with exactly the same name as the identifier of the template event we "
+"want to use, and place it in the ``event/`` subdirectory of a style’s "
+"template folder."
+msgstr ""
+"Um ein Template-Event zu *abonnieren*, müssen wir einen *Listener* "
+"erstellen, eine Template-Datei mit exakt demselben Namen wie der Bezeichner "
+"des Template-Events, das wir verwenden möchten, und sie im Unterverzeichnis "
+"``event/`` des Template-Ordners eines Styles platzieren."
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:42
+msgid ""
+"For example, we will use the ``overall_header_navigation_prepend`` event to "
+"add a new link before the existing links in the board's navigation bar. The "
+"listener for this event will be:"
+msgstr ""
+"Zum Beispiel verwenden wir das Event ``overall_header_navigation_prepend``, "
+"um einen neuen Link vor den bestehenden Links in der Navigationsleiste des "
+"Forums hinzuzufügen. Der Listener für dieses Event lautet:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:52
+msgid ""
+"If you want a template listener to be used by all styles, it should be "
+"placed in the ``all/`` style directory, e.g. "
+"``vendor/extname/styles/all/template/event/``. This helps prevent code "
+"duplication and eases style file management."
+msgstr ""
+"Wenn du möchtest, dass ein Template-Listener von allen Styles verwendet "
+"wird, sollte er im ``all/``-Style-Verzeichnis platziert werden, z. B. "
+"``vendor/extname/styles/all/template/event/``. Dies hilft, Code-Duplizierung"
+" zu vermeiden, und erleichtert die Verwaltung der Style-Dateien."
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:56
+msgid ""
+"The prosilver and subsilver2 directories should be used for template files "
+"that must be custom tailored to each style. Similarly, if a 3rd-party style "
+"requires additional customisation to maintain compatibility, a folder for "
+"that style should be included with those template files."
+msgstr ""
+"Die Verzeichnisse prosilver und subsilver2 sollten für Template-Dateien "
+"verwendet werden, die für jeden Style individuell angepasst werden müssen. "
+"Wenn ein Drittanbieter-Style ebenso zusätzliche Anpassungen benötigt, um die"
+" Kompatibilität zu wahren, sollte ein Ordner für diesen Style mit diesen "
+"Template-Dateien eingeschlossen werden."
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:61
+msgid ""
+"To add ACP template listeners, place those files in "
+"``vendor/extname/adm/style/event/``."
+msgstr ""
+"Um ACP-Template-Listener hinzuzufügen, platziere diese Dateien in "
+"``vendor/extname/adm/style/event/``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:63
+msgid ""
+"Inside the template listener, we will create a nav-bar link. This consists "
+"of a simple list element, with a link and a description:"
+msgstr ""
+"Innerhalb des Template-Listeners erstellen wir einen Navigationsleisten-"
+"Link. Dieser besteht aus einem einfachen Listenelement mit einem Link und "
+"einer Beschreibung:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:74
+msgid ""
+"Once the template listener has been created, you should be able to see the "
+"new link in the board's nav-bar, with the icon of the FAQ link and the text "
+"``DEMO_PAGE``. We will fix the link text in the next section."
+msgstr ""
+"Sobald der Template-Listener erstellt wurde, solltest du den neuen Link in "
+"der Navigationsleiste des Forums sehen können, mit dem Icon des FAQ-Links "
+"und dem Text ``DEMO_PAGE``. Wir werden den Linktext im nächsten Abschnitt "
+"korrigieren."
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:80
+msgid ""
+"If the link does not appear, you may need to purge the board cache from the "
+"main page of the ACP. You can also enable ``DEBUG_MODE`` in your "
+"``config.php`` file, which will force the template engine to always look for"
+" template listeners when a page is being rendered."
+msgstr ""
+"Wenn der Link nicht angezeigt wird, musst du möglicherweise den Forencache "
+"über die Hauptseite des ACP leeren. Du kannst auch ``DEBUG_MODE`` in deiner "
+"``config.php``-Datei aktivieren, wodurch die Template-Engine gezwungen wird,"
+" beim Rendern einer Seite immer nach Template-Listenern zu suchen."
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:85
+msgid ""
+"It's important to understand that when phpBB compiles the templates, there "
+"is no current system for determining the priority in which template "
+"listeners from different extensions subscribed to the same event are "
+"compiled. In rare cases some extensions could cause a conflict, in which "
+"case the recommendation is for the extension authors to work together on a "
+"solution for their conflicting template listeners."
+msgstr ""
+"Es ist wichtig zu verstehen, dass es beim Kompilieren der Templates durch "
+"phpBB derzeit kein System gibt, um die Priorität zu bestimmen, in der "
+"Template-Listener verschiedener Erweiterungen, die dasselbe Event abonniert "
+"haben, kompiliert werden. In seltenen Fällen könnten manche Erweiterungen "
+"einen Konflikt verursachen; in diesem Fall wird empfohlen, dass die "
+"Erweiterungsautoren gemeinsam an einer Lösung für ihre kollidierenden "
+"Template-Listener arbeiten."
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:94
+msgid "PHP Core Events & Listeners"
+msgstr "PHP-Core-Events und Listener"
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:96
+msgid ""
+"Events allow extensions to execute code in many locations within core phpBB "
+"code, without modifying any of the code. That way extensions can easily add "
+"features, remove functionality or modify behaviour, while maintaining "
+"compatibility and simple update procedures."
+msgstr ""
+"Events ermöglichen Erweiterungen, Code an vielen Stellen innerhalb des "
+"phpBB-Kerncodes auszuführen, ohne den Code zu verändern. So können "
+"Erweiterungen leicht Funktionen hinzufügen, Funktionalität entfernen oder "
+"Verhalten ändern, während die Kompatibilität und einfache Update-Verfahren "
+"erhalten bleiben."
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:102
+msgid "Terminology"
+msgstr "Terminologie"
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:104
+msgid "Events"
+msgstr "Events"
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:105
+msgid ""
+"Events are dispatched at various places in the core phpBB code. Listeners in"
+" extensions subscribe to these events. They are able to execute code "
+"whenever the respective event has occurred. An alternative name for events "
+"is “hook locations”."
+msgstr ""
+"Events werden an verschiedenen Stellen im phpBB-Kerncode ausgelöst. Listener"
+" in Erweiterungen abonnieren diese Events. Sie können Code ausführen, sobald"
+" das jeweilige Event eingetreten ist. Ein alternativer Name für Events ist "
+"„hook locations“."
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:109
+msgid "Listeners"
+msgstr "Listener"
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:110
+msgid ""
+"Listeners are triggered by events. They are methods that can process "
+"incoming data and manipulate variables in the scope of the event. So they "
+"can change phpBB's behaviour, add new functionality or if used in the "
+"context of templates, modify the output. Numerous listeners form part of a "
+"subscriber. An alternative name for listeners is \"hooks\"."
+msgstr ""
+"Listener werden durch Events ausgelöst. Es handelt sich um Methoden, die "
+"eingehende Daten verarbeiten und Variablen im Geltungsbereich des Events "
+"verändern können. So können sie das Verhalten von phpBB ändern, neue "
+"Funktionen hinzufügen oder, wenn im Kontext von Templates verwendet, die "
+"Ausgabe verändern. Zahlreiche Listener bilden zusammen einen Subscriber. Ein"
+" alternativer Name für Listener ist \"Hooks\"."
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:118
+msgid ""
+"View the full list of supported `PHP events "
+"<https://area51.phpbb.com/docs/dev/3.3.x/extensions/events_list.html#php-"
+"events>`_."
+msgstr ""
+"Sieh dir die vollständige Liste der unterstützten `PHP events "
+"<https://area51.phpbb.com/docs/dev/3.3.x/extensions/events_list.html#php-"
+"events>`_ an."
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:121
+msgid "The event listener"
+msgstr "Der Event-Listener"
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:123
+msgid ""
+"In the previous section we created a template listener that adds a link for "
+"the Acme Demo extension to phpBB's nav-bar. We will now use PHP events to "
+"load a language file that contains the ``DEMO_PAGE`` language key so that "
+"our nav-bar link will display with the correct text."
+msgstr ""
+"Im vorherigen Abschnitt haben wir einen Template-Listener erstellt, der "
+"einen Link für die Acme-Demo-Erweiterung zur Navigationsleiste von phpBB "
+"hinzufügt. Wir verwenden nun PHP-Events, um eine Sprachdatei zu laden, die "
+"den Sprachschlüssel ``DEMO_PAGE`` enthält, damit unser Navigationsleisten-"
+"Link mit dem richtigen Text angezeigt wird."
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:128
+msgid ""
+"To do so, we need to create a PHP event listener class (a.k.a. subscriber "
+"class). This class includes a set of listener methods, each of which can "
+"*subscribe* to PHP events in phpBB's codebase. The listener class must be "
+"created in the ``event/`` subdirectory of the extension directory or it will"
+" not work. It must also conform to the following requirements:"
+msgstr ""
+"Dazu müssen wir eine PHP-Event-Listener-Klasse (auch Subscriber-Klasse "
+"genannt) erstellen. Diese Klasse enthält eine Reihe von Listener-Methoden, "
+"von denen jede PHP-Events im Code von phpBB *abonnieren* kann. Die Listener-"
+"Klasse muss im Unterverzeichnis ``event/`` des Erweiterungsverzeichnisses "
+"erstellt werden, sonst funktioniert sie nicht. Sie muss außerdem den "
+"folgenden Anforderungen entsprechen:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:134
+msgid ""
+"Follow extension class name-spacing conventions: "
+"``vendor\\extname\\event\\subscribername.php``."
+msgstr ""
+"Folge den Namensraum-Konventionen der Erweiterungsklasse: "
+"``vendor\\extname\\event\\subscribername.php``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:135
+msgid ""
+"Implement Symfony's "
+"``Symfony\\Component\\EventDispatcher\\EventSubscriberInterface`` interface."
+msgstr ""
+"Implementiere die Schnittstelle "
+"``Symfony\\Component\\EventDispatcher\\EventSubscriberInterface`` von "
+"Symfony."
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:137
+msgid ""
+"Use the static method ``getSubscribedEvents()`` to subscribe methods in the "
+"listener to specific events, the keys of which contain event names and the "
+"values of which contain listener function names."
+msgstr ""
+"Verwende die statische Methode ``getSubscribedEvents()``, um Methoden im "
+"Listener bei bestimmten Events zu abonnieren, deren Schlüssel Event-Namen "
+"und deren Werte Listener-Funktionsnamen enthalten."
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:141
+msgid ""
+"In the Acme Demo extension, we want to load our language file everywhere. "
+"Therefore we will subscribe a listener function to phpBB's "
+"``core.user_setup`` event:"
+msgstr ""
+"In der Acme-Demo-Erweiterung möchten wir unsere Sprachdatei überall laden. "
+"Daher abonnieren wir eine Listener-Funktion beim Event ``core.user_setup`` "
+"von phpBB:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:183
+msgid "So what is the ``main_listener.php`` class above actually doing?"
+msgstr "Was macht die obige Klasse ``main_listener.php`` also tatsächlich?"
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:185
+msgid ""
+"The ``getSubscribedEvents()`` method is subscribing our listener function "
+"``load_language_on_setup()`` to the event named ``core.user_setup``. This "
+"means that when this event occurs, our function will execute."
+msgstr ""
+"Die Methode ``getSubscribedEvents()`` abonniert unsere Listener-Funktion "
+"``load_language_on_setup()`` beim Event mit dem Namen ``core.user_setup``. "
+"Das bedeutet, dass unsere Funktion ausgeführt wird, sobald dieses Event "
+"eintritt."
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:191
+msgid ""
+"You can assign multiple listener functions to a single event using an array:"
+msgstr ""
+"Du kannst mithilfe eines Arrays mehrere Listener-Funktionen einem einzelnen "
+"Event zuweisen:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:197
+msgid ""
+"The ``load_language_on_setup()`` listener method simply adds our language "
+"file to phpBB's language data array. Generally speaking, a listener is "
+"simply a public function in the subscriber class, referred to in the array "
+"returned by ``getSubscribedEvents()``. It takes one argument, ``$event``. "
+"This parameter allows you to access and modify the variables that are given "
+"to the event from the core code. In this case we are modifying the "
+"``lang_set_ext`` variable by adding Acme Demo's language file to it."
+msgstr ""
+"Die Listener-Methode ``load_language_on_setup()`` fügt einfach unsere "
+"Sprachdatei zum Sprachdaten-Array von phpBB hinzu. Allgemein gesprochen ist "
+"ein Listener einfach eine öffentliche Funktion in der Subscriber-Klasse, auf"
+" die im von ``getSubscribedEvents()`` zurückgegebenen Array verwiesen wird. "
+"Sie nimmt ein Argument, ``$event``, entgegen. Dieser Parameter ermöglicht "
+"dir den Zugriff auf und die Änderung der Variablen, die dem Event vom "
+"Kerncode übergeben werden. In diesem Fall verändern wir die Variable "
+"``lang_set_ext``, indem wir die Sprachdatei von Acme Demo hinzufügen."
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:207
+msgid ""
+"Note how the ``lang_set_ext`` event variable is first copied by assigning it"
+" to a local variable, then modified, and then copied back. This shortcut "
+"does not work: ``$event['foo']['bar'] = $baz;`` This is because the event "
+"variables are overloaded, which is a limitation in PHP."
+msgstr ""
+"Beachte, wie die Event-Variable ``lang_set_ext`` zunächst kopiert wird, "
+"indem sie einer lokalen Variable zugewiesen, dann verändert und schließlich "
+"zurückkopiert wird. Diese Abkürzung funktioniert nicht: "
+"``$event['foo']['bar'] = $baz;`` Dies liegt daran, dass die Event-Variablen "
+"überladen sind, was eine Einschränkung in PHP darstellt."
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:213
+msgid "Registering the listener"
+msgstr "Den Listener registrieren"
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:215
+msgid ""
+"To have phpBB autoload and execute our event listener class, we need to "
+"create a service definition for it. This is done by creating a "
+"``config/services.yml`` file in the extension:"
+msgstr ""
+"Damit phpBB unsere Event-Listener-Klasse automatisch lädt und ausführt, "
+"müssen wir dafür eine Service-Definition erstellen. Dies geschieht durch das"
+" Erstellen einer ``config/services.yml``-Datei in der Erweiterung:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:229
+msgid ""
+"YAML files are indentation sensitive. They require an indentation size of 4 "
+"spaces per indent, **do not use tabs**."
+msgstr ""
+"YAML-Dateien sind bezüglich der Einrückung empfindlich. Sie erfordern eine "
+"Einrückungsgröße von 4 Leerzeichen pro Einrückung, **verwende keine Tabs**."
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:232
+msgid ""
+"The first line tells phpBB that a list of services is being registered. On "
+"the next line we specify the name of the service, which is for our event "
+"listener in this case."
+msgstr ""
+"Die erste Zeile teilt phpBB mit, dass eine Liste von Services registriert "
+"wird. In der nächsten Zeile geben wir den Namen des Services an, der in "
+"diesem Fall für unseren Event-Listener steht."
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:238
+msgid "Service names must be prefixed with your vendor and extension name."
+msgstr ""
+"Servicenamen müssen mit deinem Vendor- und Erweiterungsnamen versehen "
+"werden."
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:240
+msgid ""
+"The ``class`` attribute must contain the name-space and class name of the "
+"service being registered. The name-space depends on the file's location, "
+"within the ``ext/`` directory. Thus, the file "
+"``ext/acme/demo/event/main_listener.php`` has the namespace "
+"``acme\\demo\\event`` and class name ``main_listener``. The full name of the"
+" class is therefore ``acme\\demo\\event\\main_listener`` which is what we "
+"need to specify here."
+msgstr ""
+"Das Attribut ``class`` muss den Namensraum und den Klassennamen des zu "
+"registrierenden Services enthalten. Der Namensraum hängt vom Speicherort der"
+" Datei innerhalb des Verzeichnisses ``ext/`` ab. Die Datei "
+"``ext/acme/demo/event/main_listener.php`` hat somit den Namensraum "
+"``acme\\demo\\event`` und den Klassennamen ``main_listener``. Der "
+"vollständige Name der Klasse lautet daher "
+"``acme\\demo\\event\\main_listener``, was wir hier angeben müssen."
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:247
+msgid ""
+"The ``tags`` attribute tells phpBB that the service is an event listener."
+msgstr ""
+"Das Attribut ``tags`` teilt phpBB mit, dass der Service ein Event-Listener "
+"ist."
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:249
+msgid ""
+"Once the services YAML file has been created (or modified), phpBB's cache "
+"needs to be purged. After purging the cache in the ACP, the description of "
+"the link in the navigation bar should now display ``Demo`` instead of "
+"``DEMO_PAGE``."
+msgstr ""
+"Sobald die Services-YAML-Datei erstellt (oder geändert) wurde, muss der "
+"Cache von phpBB geleert werden. Nach dem Leeren des Caches im ACP sollte die"
+" Beschreibung des Links in der Navigationsleiste nun ``Demo`` statt "
+"``DEMO_PAGE`` anzeigen."
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:256
+msgid ""
+"phpBB’s core PHP and template files have been prepared with dozens of event "
+"locations. However, if there are no events where your extension may need "
+"one, the phpBB development team welcomes event requests at the `area51.com "
+"Event Requests <https://area51.phpbb.com/phpBB/viewforum.php?f=111>`_ forum."
+msgstr ""
+"Die PHP-Kern- und Template-Dateien von phpBB wurden mit Dutzenden von Event-"
+"Stellen vorbereitet. Wenn es jedoch keine Events dort gibt, wo deine "
+"Erweiterung eines benötigt, freut sich das phpBB-Entwicklungsteam über "
+"Event-Anfragen im Forum `area51.com Event Requests "
+"<https://area51.phpbb.com/phpBB/viewforum.php?f=111>`_."
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:262
+msgid "Prioritising event listeners (optional)"
+msgstr "Priorisieren von Event-Listenern (optional)"
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:264
+msgid ""
+"Sometimes different extensions can run into problems when competing for use "
+"of the same PHP core events. In trying to resolve these issues, the "
+"extension developer may want to prioritise their extension over others, so "
+"that their extension will be triggered before other extensions."
+msgstr ""
+"Manchmal können verschiedene Erweiterungen in Probleme geraten, wenn sie um "
+"die Nutzung derselben PHP-Core-Events konkurrieren. Um diese Probleme zu "
+"lösen, möchte der Erweiterungsentwickler möglicherweise seine Erweiterung "
+"gegenüber anderen priorisieren, sodass seine Erweiterung vor anderen "
+"Erweiterungen ausgelöst wird."
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:269
+msgid ""
+"In such cases, the ``getSubscribedEvents()`` method provides an argument for"
+" setting a priority for event listener methods. For example:"
+msgstr ""
+"In solchen Fällen bietet die Methode ``getSubscribedEvents()`` ein Argument "
+"zum Festlegen einer Priorität für Event-Listener-Methoden. Zum Beispiel:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:281
+msgid ""
+"In this example, ``$priority`` is an integer, the value of which defaults to"
+" 0. Setting this integer to higher values equals more importance and "
+"therefore that listener will be triggered earlier than others subscribed to "
+"this event."
+msgstr ""
+"In diesem Beispiel ist ``$priority`` eine Ganzzahl, deren Standardwert 0 "
+"ist. Das Setzen dieser Ganzzahl auf höhere Werte entspricht einer höheren "
+"Wichtigkeit, sodass dieser Listener früher ausgelöst wird als andere, die "
+"dieses Event abonniert haben."
+
+#: ../../devdocs-source-copy/extensions/tutorial_events.rst:285
+msgid ""
+"We have now used events and listeners to modify phpBB and insert a nice link"
+" into the nav-bar. However, the link still does not work yet. Continue on to"
+" the next section to learn how to use controllers and routing to make our "
+"nav-bar link open up a custom user facing page."
+msgstr ""
+"Wir haben nun Events und Listener verwendet, um phpBB zu verändern und einen"
+" schönen Link in die Navigationsleiste einzufügen. Der Link funktioniert "
+"jedoch noch nicht. Fahre mit dem nächsten Abschnitt fort, um zu lernen, wie "
+"man mit Controllern und Routing dafür sorgt, dass unser Navigationsleisten-"
+"Link eine benutzerdefinierte, für Nutzer sichtbare Seite öffnet."

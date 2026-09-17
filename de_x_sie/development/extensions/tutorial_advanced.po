@@ -1,0 +1,1030 @@
+# German translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: de_x_sie\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:3
+msgid "Tutorial: Advanced Lessons"
+msgstr "Tutorial: Fortgeschrittene Lektionen"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:6
+msgid "Introduction"
+msgstr "Einführung"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:8
+msgid "This tutorial explains:"
+msgstr "Dieses Tutorial erklärt:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:10
+msgid "`Adding a PHP event to your extension`_"
+msgstr "`Adding a PHP event to your extension`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:11
+msgid "`Adding a template event to your extension`_"
+msgstr "`Adding a template event to your extension`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:12
+msgid "`Using installation commands in ext.php`_"
+msgstr "`Using installation commands in ext.php`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:13
+msgid "`Using service collections`_"
+msgstr "`Using service collections`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:14
+msgid "`Using the phpBB finder tool`_"
+msgstr "`Using the phpBB finder tool`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:15
+msgid "`Using service replacement`_"
+msgstr "`Using service replacement`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:16
+msgid "`Using service decoration`_"
+msgstr "`Using service decoration`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:17
+msgid "`Replacing the phpBB Datetime class`_"
+msgstr "`Replacing the phpBB Datetime class`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:18
+msgid "`Extension version checking`_"
+msgstr "`Extension version checking`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:19
+msgid "`Implementing Filesystem changes to phpBB`_"
+msgstr "`Implementing Filesystem changes to phpBB`_"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:22
+msgid "Adding a PHP event to your extension"
+msgstr "Hinzufügen eines PHP-Events zu Ihrer Erweiterung"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:23
+msgid ""
+"You can add PHP events to your own extension, allowing other extensions to "
+"hook into parts of your extension to add functionality or modify its "
+"behaviour. Basically, this involves you, the extension author, making your "
+"own events at key points in the code of your extension that other extensions"
+" can then listen for. If your extension is not enabled, the relevant code in"
+" other extensions will be ignored. When your extension is enabled and the "
+"event in question is called, the listeners in the other enabled extensions "
+"will be run."
+msgstr ""
+"Sie können Ihrer eigenen Erweiterung PHP-Events hinzufügen, die es anderen "
+"Erweiterungen ermöglichen, sich in Teile Ihrer Erweiterung einzuklinken, um "
+"Funktionalität hinzuzufügen oder ihr Verhalten zu ändern. Im Grunde bedeutet"
+" dies, dass Sie als Erweiterungsautor eigene Events an Schlüsselstellen im "
+"Code Ihrer Erweiterung erstellen, die andere Erweiterungen dann abhören "
+"können. Ist Ihre Erweiterung nicht aktiviert, wird der entsprechende Code in"
+" anderen Erweiterungen ignoriert. Ist Ihre Erweiterung aktiviert und wird "
+"das betreffende Event aufgerufen, werden die Listener in den anderen "
+"aktivierten Erweiterungen ausgeführt."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:31
+msgid "This is what an event looks like:"
+msgstr "So sieht ein Event aus:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:47
+msgid ""
+"You will need to replace ``identifier`` with the name of your event. This "
+"must be prefixed by your vendor and extension name and use only underscores "
+"and lowercase letters for the prefix and name which have to be separated "
+"with a dot."
+msgstr ""
+"Sie müssen ``identifier`` durch den Namen Ihres Events ersetzen. Dieser muss"
+" mit Ihrem Vendor- und Erweiterungsnamen versehen sein und darf für das "
+"Präfix und den Namen, die durch einen Punkt getrennt werden müssen, nur "
+"Unterstriche und Kleinbuchstaben verwenden."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:51
+msgid ""
+"Furthermore, ``var1`` and ``var2`` refer to the implied variables ``$var1`` "
+"and ``$var2`` from the current scope. These are passed into the event and "
+"are available through the $event array. They can be used and altered as "
+"needed and then passed back from the event. When making a custom event, be "
+"sure to provide as many variables from the event's scope as you can for "
+"listeners to use."
+msgstr ""
+"``var1`` und ``var2`` beziehen sich außerdem auf die implizierten Variablen "
+"``$var1`` und ``$var2`` aus dem aktuellen Geltungsbereich. Diese werden dem "
+"Event übergeben und sind über das $event-Array verfügbar. Sie können nach "
+"Bedarf verwendet und verändert und dann vom Event zurückgegeben werden. Wenn"
+" Sie ein eigenes Event erstellen, achten Sie darauf, so viele Variablen aus "
+"dem Geltungsbereich des Events wie möglich für Listener bereitzustellen."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:58
+msgid ""
+"It is important once you create an event that is contained in a full release"
+" that you do not change the event's identifier or otherwise alter the event "
+"in such a way that breaks backwards compatibility unless absolutely "
+"necessary. Otherwise, other extensions may break without warning! It is "
+"probably best to publish a list of events provided by your extension and "
+"make public note of any event changes prior to releasing a new version."
+msgstr ""
+"Sobald Sie ein Event erstellt haben, das in einer vollständigen Version "
+"enthalten ist, ist es wichtig, dass Sie den Bezeichner des Events nicht "
+"ändern oder das Event anderweitig so verändern, dass die "
+"Abwärtskompatibilität gebrochen wird, es sei denn, dies ist absolut "
+"notwendig. Andernfalls können andere Erweiterungen ohne Vorwarnung "
+"kaputtgehen! Es ist wahrscheinlich am besten, eine Liste der von Ihrer "
+"Erweiterung bereitgestellten Events zu veröffentlichen und vor der "
+"Veröffentlichung einer neuen Version öffentlich auf etwaige Event-Änderungen"
+" hinzuweisen."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:65
+msgid ""
+"If an event does not need any arguments, you can use this short version:"
+msgstr ""
+"Wenn ein Event keine Argumente benötigt, können Sie diese Kurzversion "
+"verwenden:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:72
+msgid ""
+"The ``$phpbb_dispatcher`` object is available from phpBB's dependency "
+"injection container or as a global variable, so if you do not pass it as a "
+"parameter to your method, use global ``$phpbb_dispatcher`` to make it "
+"available."
+msgstr ""
+"Das Objekt ``$phpbb_dispatcher`` ist über den Dependency-Injection-Container"
+" von phpBB oder als globale Variable verfügbar. Wenn Sie es also nicht als "
+"Parameter an Ihre Methode übergeben, verwenden Sie global "
+"``$phpbb_dispatcher``, um es verfügbar zu machen."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:77
+msgid "Adding a template event to your extension"
+msgstr "Hinzufügen eines Template-Events zu Ihrer Erweiterung"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:78
+msgid ""
+"Besides PHP events there are also template events. Template events can be "
+"used to extend the template of an extension, so other extensions can "
+"manipulate the output of your extension. To create a template event you "
+"simply add the EVENT tag to your template:"
+msgstr ""
+"Neben PHP-Events gibt es auch Template-Events. Template-Events können "
+"verwendet werden, um das Template einer Erweiterung zu erweitern, damit "
+"andere Erweiterungen die Ausgabe Ihrer Erweiterung verändern können. Um ein "
+"Template-Event zu erstellen, fügen Sie einfach das EVENT-Tag zu Ihrem "
+"Template hinzu:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:87
+msgid ""
+"The event can be used in the same way as the template events in the phpBB "
+"Core. See :doc:`tutorial_events` on how to use these events."
+msgstr ""
+"Das Event kann auf die gleiche Weise wie die Template-Events im phpBB-Kern "
+"verwendet werden. Siehe :doc:`tutorial_events`, um zu erfahren, wie man "
+"diese Events verwendet."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:90
+msgid ""
+"You must always prefix your event names with your vendor and extension name."
+" Make sure to only use underscores, numbers and lowercase letters."
+msgstr ""
+"Sie müssen Ihre Event-Namen immer mit Ihrem Vendor- und Erweiterungsnamen "
+"versehen. Achten Sie darauf, nur Unterstriche, Zahlen und Kleinbuchstaben zu"
+" verwenden."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:94
+msgid ""
+"Like with PHP events you should not change the identifier of the event after"
+" a release of your extension. Other extensions might already be using your "
+"event and would risk breaking."
+msgstr ""
+"Wie bei PHP-Events sollten Sie den Bezeichner des Events nach der "
+"Veröffentlichung Ihrer Erweiterung nicht ändern. Andere Erweiterungen "
+"könnten Ihr Event bereits verwenden und würden riskieren, kaputtzugehen."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:99
+msgid ""
+"It is not recommended to reuse existing event names in different locations. "
+"This should only be done if the code (nested HTML elements) around the event"
+" is the same for both locations. Also think about other extensions: do they "
+"always want to listen to both places, or just one? In case of doubt: use a "
+"new and unique event."
+msgstr ""
+"Es wird nicht empfohlen, bestehende Event-Namen an verschiedenen Stellen "
+"wiederzuverwenden. Dies sollte nur getan werden, wenn der Code "
+"(verschachtelte HTML-Elemente) um das Event herum an beiden Stellen gleich "
+"ist. Denke auch an andere Erweiterungen: möchten sie immer beide Stellen "
+"abhören oder nur eine? Im Zweifelsfall: verwende ein neues, eindeutiges "
+"Event."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:106
+msgid "Using installation commands in ext.php"
+msgstr "Verwenden von Installationsbefehlen in ext.php"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:107
+msgid ""
+"There are times when an extension may need to execute code while it is being"
+" enabled, disabled or purged. Some examples may be to check that the board "
+"meets the requirements of the extension, or to run some sort of set-up or "
+"clean-up processes."
+msgstr ""
+"Es gibt Zeiten, in denen eine Erweiterung Code ausführen muss, während sie "
+"aktiviert, deaktiviert oder gelöscht wird. Einige Beispiele wären das "
+"Prüfen, ob das Forum die Anforderungen der Erweiterung erfüllt, oder das "
+"Ausführen einer Art von Einrichtungs- oder Bereinigungsprozessen."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:112
+msgid ""
+"This is done by adding a class to the root directory of an extension called "
+"``ext.php``. It must extend ``\\phpbb\\extension\\base``. Extending the base"
+" class permits custom code to be executed during the enabling, disabling or "
+"purging of an extension with the following inherited methods:"
+msgstr ""
+"Dies geschieht, indem eine Klasse namens ``ext.php`` zum Stammverzeichnis "
+"einer Erweiterung hinzugefügt wird. Sie muss ``\\phpbb\\extension\\base`` "
+"erweitern. Das Erweitern der Basisklasse ermöglicht die Ausführung von "
+"benutzerdefiniertem Code während der Aktivierung, Deaktivierung oder "
+"Löschung einer Erweiterung mit den folgenden geerbten Methoden:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:117
+msgid "``is_enableable()``"
+msgstr "``is_enableable()``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:118
+msgid "``enable_step()``"
+msgstr "``enable_step()``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:119
+msgid "``disable_step()``"
+msgstr "``disable_step()``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:120
+msgid "``purge_step()``"
+msgstr "``purge_step()``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:122
+msgid ""
+"Suppose an extension wants to strictly requires phpBB 3.1.5 or later. We can"
+" override the ``is_enableable()`` method, and use it to check phpBB's "
+"version, and return a boolean result."
+msgstr ""
+"Angenommen, eine Erweiterung möchte streng phpBB 3.1.5 oder neuer "
+"voraussetzen. Wir können die Methode ``is_enableable()`` überschreiben und "
+"sie verwenden, um die Version von phpBB zu prüfen und einen booleschen Wert "
+"zurückzugeben."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:141
+msgid ""
+"If false is returned, the extension will not be installed and the user will "
+"be notified their board does not meet the requirements of the extension. If "
+"it returns true, installation will proceed."
+msgstr ""
+"Wird false zurückgegeben, wird die Erweiterung nicht installiert und der "
+"Benutzer wird darüber informiert, dass sein Forum die Anforderungen der "
+"Erweiterung nicht erfüllt. Wird true zurückgegeben, wird mit der "
+"Installation fortgefahren."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:145
+msgid ""
+"The ``ext.php`` class may contain any special installation commands in the "
+"``enable_step()``, ``disable_step()`` and ``purge_step()`` methods. As it "
+"is, these methods are defined in ``\\phpbb\\extension\\base``, which this "
+"class extends, but you can overwrite them to give special instructions to "
+"each step. For example:"
+msgstr ""
+"Die Klasse ``ext.php`` kann beliebige spezielle Installationsbefehle in den "
+"Methoden ``enable_step()``, ``disable_step()`` und ``purge_step()`` "
+"enthalten. So wie sie ist, sind diese Methoden in "
+"``\\phpbb\\extension\\base`` definiert, das diese Klasse erweitert, aber Sie"
+" können sie überschreiben, um jedem Schritt spezielle Anweisungen zu geben. "
+"Zum Beispiel:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:164
+msgid ""
+"Notice that we execute our code only if the incoming ``$old_state`` is "
+"false. Once we have finished we must return an arbitrary value. Otherwise, "
+"we simply return the state of the parent class."
+msgstr ""
+"Beachte, dass wir unseren Code nur ausführen, wenn der eingehende "
+"``$old_state`` false ist. Sobald wir fertig sind, müssen wir einen "
+"beliebigen Wert zurückgeben. Andernfalls geben wir einfach den Zustand der "
+"übergeordneten Klasse zurück."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:168
+msgid ""
+"The phpBB `Board Rules <https://github.com/phpbb-"
+"extensions/boardrules/blob/master/ext.php>`_ extension shows another example"
+" of this in order to prepare the notifications system for the extension when"
+" enabling, disabling and deleting the extension."
+msgstr ""
+"Die phpBB-Erweiterung `Board Rules <https://github.com/phpbb-"
+"extensions/boardrules/blob/master/ext.php>`_ zeigt ein weiteres Beispiel "
+"hierfür, um das Benachrichtigungssystem der Erweiterung beim Aktivieren, "
+"Deaktivieren und Löschen der Erweiterung vorzubereiten."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:173
+msgid ""
+"The enable/disable/purge step methods allow for large processes to be paused"
+" and resumed. If the returned value from the step method is not false, then "
+"the returned value will be serialised and stored in the database. When the "
+"step method is called again, the last known state will be de-serialised, and"
+" it will continue to be executed until such time as false is returned."
+msgstr ""
+"Die enable-/disable-/purge-Schrittmethoden ermöglichen es, große Prozesse zu"
+" pausieren und fortzusetzen. Wenn der von der Schrittmethode zurückgegebene "
+"Wert nicht false ist, wird der zurückgegebene Wert serialisiert und in der "
+"Datenbank gespeichert. Wenn die Schrittmethode erneut aufgerufen wird, wird "
+"der zuletzt bekannte Zustand deserialisiert, und die Ausführung wird "
+"fortgesetzt, bis false zurückgegeben wird."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:180
+msgid ""
+"The serialised data is stored in the *phpbb_ext* table under the *ext_state*"
+" field. Developers should never manipulate this field directly as the "
+"serialisation is handled internally by phpBB."
+msgstr ""
+"Die serialisierten Daten werden in der Tabelle *phpbb_ext* unter dem Feld "
+"*ext_state* gespeichert. Entwickler sollten dieses Feld niemals direkt "
+"manipulieren, da die Serialisierung intern von phpBB gehandhabt wird."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:185
+msgid "Using service collections"
+msgstr "Verwenden von Service-Collections"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:186
+msgid ""
+"In 3.1, a new concept is that of \"services\". You can read up on exactly "
+"what a service is `here "
+"<https://symfony.com/doc/current/book/service_container.html>`_. The rest of"
+" this guide will assume you have basic knowledge of services and how to use "
+"them. A service collection is basically what it sounds like: a collection of"
+" services. Basically, when you define your service, you give it a special "
+"\"tag\", which associates it with a collection of services. Later on, this "
+"can be used to easily get a list of services for use by your extension."
+msgstr ""
+"In 3.1 ist ein neues Konzept das der \"Services\". Was genau ein Service "
+"ist, können Sie `hier "
+"<https://symfony.com/doc/current/book/service_container.html>`_ nachlesen. "
+"Im Rest dieser Anleitung wird davon ausgegangen, dass Sie grundlegende "
+"Kenntnisse über Services und deren Verwendung haben. Eine Service-Collection"
+" ist im Grunde das, wonach es klingt: eine Sammlung von Services. Wenn Sie "
+"Ihren Service definieren, geben Sie ihm im Grunde einen speziellen \"Tag\", "
+"der ihn mit einer Sammlung von Services verknüpft. Später kann dies "
+"verwendet werden, um leicht eine Liste von Services für die Verwendung durch"
+" Ihre Erweiterung zu erhalten."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:195
+msgid ""
+"To use this, you first create a service for your service collection. This "
+"will actually point to a core phpBB object called "
+"``phpbb\\di\\service_collection``."
+msgstr ""
+"Um dies zu verwenden, erstellen Sie zunächst einen Service für Ihre Service-"
+"Collection. Dieser verweist tatsächlich auf ein phpBB-Kernobjekt namens "
+"``phpbb\\di\\service_collection``."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:207
+msgid "Of course the service name and the tag name may be whatever you like."
+msgstr ""
+"Natürlich können der Servicename und der Tag-Name beliebig gewählt werden."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:210
+msgid ""
+"To prevent duplicates in your tag you should use a unique tag name, "
+"preferably in the form of vendor.extname.tag_name."
+msgstr ""
+"Um Duplikate in Ihrem Tag zu vermeiden, sollten Sie einen eindeutigen Tag-"
+"Namen verwenden, vorzugsweise in der Form vendor.extname.tag_name."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:213
+msgid "Now, when you want to add a service to your collection, just tag it:"
+msgstr ""
+"Wenn Sie nun einen Service zu Ihrer Collection hinzufügen möchten, taggen "
+"Sie ihn einfach:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:222
+msgid ""
+"Notice that the tag \"name\" value here corresponds to the tag \"tag\" value"
+" in the previous service collection definition. Also, keep in mind that if "
+"the class (in this case, ``thing_one``) extends another class, you will need"
+" to provide the correct services and values for any parameters defined in "
+"the constructor of the parent class, if necessary."
+msgstr ""
+"Beachten Sie, dass der \"name\"-Wert des Tags hier dem \"tag\"-Wert in der "
+"vorherigen Service-Collection-Definition entspricht. Denken Sie außerdem "
+"daran, dass, wenn die Klasse (in diesem Fall ``thing_one``) eine andere "
+"Klasse erweitert, Sie bei Bedarf die richtigen Services und Werte für alle "
+"im Konstruktor der übergeordneten Klasse definierten Parameter angeben "
+"müssen."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:228
+msgid ""
+"Finally, to use the collection of services, just pass the first service as "
+"an argument to another service class. For instance, let's say I have a "
+"manager object for my foobar extension and I want the manager to know about "
+"all of the services in the \"foobar_collection\" service. When defining the "
+"manager class, just give it the service collection as an argument."
+msgstr ""
+"Um die Sammlung von Services schließlich zu verwenden, übergeben Sie einfach"
+" den ersten Service als Argument an eine andere Service-Klasse. Angenommen, "
+"ich habe ein Manager-Objekt für meine foobar-Erweiterung, und ich möchte, "
+"dass der Manager über alle Services im Service \"foobar_collection\" "
+"Bescheid weiß. Beim Definieren der Manager-Klasse geben Sie ihr einfach die "
+"Service-Collection als Argument."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:240
+msgid ""
+"That argument will return an instance of ``phpbb\\di\\service_collection``, "
+"which extends ``ArrayObject`` so it can be used as an array containing the "
+"service name of each item in the collection as the key, and an instance of "
+"each of the service items as the corresponding value."
+msgstr ""
+"Dieses Argument gibt eine Instanz von ``phpbb\\di\\service_collection`` "
+"zurück, die ``ArrayObject`` erweitert, sodass sie als Array verwendet werden"
+" kann, das den Servicenamen jedes Elements in der Collection als Schlüssel "
+"und eine Instanz jedes Service-Elements als entsprechenden Wert enthält."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:245
+msgid ""
+"This system is used in the core for several features, including "
+"notifications and authentication providers."
+msgstr ""
+"Dieses System wird im Kern für mehrere Funktionen verwendet, einschließlich "
+"Benachrichtigungen und Authentifizierungsanbietern."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:249
+msgid "Ordered service collection"
+msgstr "Geordnete Service-Collection"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:251
+msgid "Ordered service collections were introduced in phpBB 3.2."
+msgstr "Geordnete Service-Collections wurden in phpBB 3.2 eingeführt."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:253
+msgid ""
+"Ordered service collections allow you to define the order in which services "
+"are loaded, which is especially useful in cases where service priority "
+"and/or dependency requires they be loaded in a specified order."
+msgstr ""
+"Geordnete Service-Collections ermöglichen es Ihnen, die Reihenfolge "
+"festzulegen, in der Services geladen werden, was besonders in Fällen "
+"nützlich ist, in denen Service-Priorität und/oder -Abhängigkeit erfordern, "
+"dass sie in einer bestimmten Reihenfolge geladen werden."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:257
+msgid ""
+"Ordered service collections are based on a normal service collection, but "
+"the collection is sorted with `ksort <https://php.net/ksort>`_. The usage of"
+" the sorted service collection is nearly the same as a normal service "
+"collection, except instead of using ``service_collection`` you should use "
+"``ordered_service_collection``:"
+msgstr ""
+"Geordnete Service-Collections basieren auf einer normalen Service-"
+"Collection, aber die Collection wird mit `ksort <https://php.net/ksort>`_ "
+"sortiert. Die Verwendung der sortierten Service-Collection ist nahezu "
+"dieselbe wie bei einer normalen Service-Collection, außer dass Sie anstelle "
+"von ``service_collection`` ``ordered_service_collection`` verwenden sollten:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:271
+msgid "And adding a service to the ordered service collection:"
+msgstr "Und das Hinzufügen eines Services zur geordneten Service-Collection:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:286
+msgid "Using the phpBB finder tool"
+msgstr "Verwenden des phpBB-Finder-Werkzeugs"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:287
+msgid ""
+"This is probably the least used method because it requires a rigid file and "
+"directory naming structure, but in doing so it provides the most reliable "
+"organisation of files, so you can always be sure where to look if you want "
+"to find a certain feature. The extension finder object is used to traverse "
+"the directory tree to look for files that are located in specific folders "
+"and adhere to a set of requirements. It is used, for example, to locate "
+"migration files, both in the core, and in extensions, without those files "
+"having to be registered as services."
+msgstr ""
+"Dies ist wahrscheinlich die am wenigsten verwendete Methode, da sie eine "
+"strikte Datei- und Verzeichnisbenennungsstruktur erfordert, aber dadurch "
+"bietet sie die zuverlässigste Organisation von Dateien, sodass Sie immer "
+"sicher sein können, wo Sie suchen müssen, wenn Sie eine bestimmte Funktion "
+"finden möchten. Das Extension-Finder-Objekt wird verwendet, um den "
+"Verzeichnisbaum zu durchlaufen und nach Dateien zu suchen, die sich in "
+"bestimmten Ordnern befinden und einer Reihe von Anforderungen entsprechen. "
+"Es wird zum Beispiel verwendet, um Migrationsdateien zu finden, sowohl im "
+"Kern als auch in Erweiterungen, ohne dass diese Dateien als Services "
+"registriert werden müssen."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:296
+msgid ""
+"The ``\\phpbb\\extension\\finder`` is available from the service container "
+"as ``ext.finder`` and can be used as follows. The following example is part "
+"of what is used to find all routing files, both for extensions and core "
+"routes."
+msgstr ""
+"Der ``\\phpbb\\extension\\finder`` ist über den Service-Container als "
+"``ext.finder`` verfügbar und kann wie folgt verwendet werden. Das folgende "
+"Beispiel ist Teil dessen, was verwendet wird, um alle Routing-Dateien zu "
+"finden, sowohl für Erweiterungen als auch für Kernrouten."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:307
+msgid ""
+"As you can see, you are able to chain method calls together (ending with "
+"``find()``). Check out the class definition for more information about the "
+"different methods that are available (such as specifying a different "
+"directory for extensions than core files, and getting class names based on "
+"files it finds). The return of the ``find()`` method is an array of file "
+"paths that match the given criteria."
+msgstr ""
+"Wie Sie sehen, können Sie Methodenaufrufe miteinander verketten (endend mit "
+"``find()``). Werfen Sie einen Blick auf die Klassendefinition für weitere "
+"Informationen über die verschiedenen verfügbaren Methoden (wie das Angeben "
+"eines anderen Verzeichnisses für Erweiterungen als für Kerndateien und das "
+"Abrufen von Klassennamen basierend auf gefundenen Dateien). Die Rückgabe der"
+" Methode ``find()`` ist ein Array von Dateipfaden, die den angegebenen "
+"Kriterien entsprechen."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:313
+msgid ""
+"For example, assume you have an extension and you need to get a collection "
+"of all PNG image files from one of its directories. You could use the "
+"extension manager to load the finder, and traverse the extension's image "
+"directory as follows:"
+msgstr ""
+"Angenommen, Sie haben eine Erweiterung und müssen eine Sammlung aller PNG-"
+"Bilddateien aus einem ihrer Verzeichnisse erhalten. Sie könnten den "
+"Extension Manager verwenden, um den Finder zu laden, und das Bildverzeichnis"
+" der Erweiterung wie folgt durchlaufen:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:326
+msgid ""
+"The ``$images`` array would look something like (as you can see the image "
+"paths are contained in the array keys):"
+msgstr ""
+"Das Array ``$images`` würde in etwa so aussehen (wie Sie sehen, sind die "
+"Bildpfade in den Array-Schlüsseln enthalten):"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:337
+msgid ""
+"The method ``find_from_extension`` used above will only search in the "
+"specified extension. If you want to search for png files in the entire "
+"extension directory you can use:"
+msgstr ""
+"Die oben verwendete Methode ``find_from_extension`` sucht nur in der "
+"angegebenen Erweiterung. Wenn Sie im gesamten Erweiterungsverzeichnis nach "
+"PNG-Dateien suchen möchten, können Sie Folgendes verwenden:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:351
+msgid ""
+"Depending on how the Finder class is configured, the find method searches "
+"both the phpBB core files and the extensions directories. You can use the "
+"``extension_*`` methods in the Finder class to configure extension specific "
+"searches, and you can use the ``core_*`` methods to configure core specific "
+"searches."
+msgstr ""
+"Je nachdem, wie die Finder-Klasse konfiguriert ist, durchsucht die find-"
+"Methode sowohl die phpBB-Kerndateien als auch die Erweiterungsverzeichnisse."
+" Sie können die ``extension_*``-Methoden in der Finder-Klasse verwenden, um "
+"erweiterungsspezifische Suchen zu konfigurieren, und die "
+"``core_*``-Methoden, um kernspezifische Suchen zu konfigurieren."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:357
+msgid "Using service replacement"
+msgstr "Verwenden von Service-Ersetzung"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:359
+msgid ""
+"Only use service replacement if your extensions needs to be compatible with "
+"phpBB 3.1. For 3.2 and later, see `Using service decoration`_."
+msgstr ""
+"Verwenden Sie Service-Ersetzung nur, wenn Ihre Erweiterung mit phpBB 3.1 "
+"kompatibel sein muss. Für 3.2 und später siehe `Using service decoration`_."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:363
+msgid ""
+"You can't assume the order of a service is defined in phpBB if other "
+"extensions are installed. Be really carefully when using service "
+"replacement."
+msgstr ""
+"Sie können nicht davon ausgehen, dass die Reihenfolge eines Services in "
+"phpBB festgelegt ist, wenn andere Erweiterungen installiert sind. Seien Sie "
+"wirklich vorsichtig bei der Verwendung von Service-Ersetzung."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:366
+msgid ""
+"With service replacement you can replace an existing service in phpBB (or in"
+" an extension) with your own service. Your replacement should type match the"
+" original service (so if the original service implements an interface, you "
+"should at least implement that same interface. If it is a concrete class, "
+"you will need to extend that class). The best way to accomplish this is by "
+"extending the original class, and only replace the features you want to "
+"change."
+msgstr ""
+"Mit Service-Ersetzung können Sie einen bestehenden Service in phpBB (oder in"
+" einer Erweiterung) durch Ihren eigenen Service ersetzen. Ihr Ersatz sollte "
+"typmäßig zum ursprünglichen Service passen (wenn der ursprüngliche Service "
+"also eine Schnittstelle implementiert, sollten Sie mindestens dieselbe "
+"Schnittstelle implementieren. Handelt es sich um eine konkrete Klasse, "
+"müssen Sie diese Klasse erweitern). Der beste Weg, dies zu erreichen, "
+"besteht darin, die ursprüngliche Klasse zu erweitern und nur die Funktionen "
+"zu ersetzen, die Sie ändern möchten."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:373
+msgid ""
+"To replace a core phpBB service, you simply name your extension's service "
+"name with the same name as the service in phpBB's core."
+msgstr ""
+"Um einen phpBB-Kern-Service zu ersetzen, benennen Sie einfach den "
+"Servicenamen Ihrer Erweiterung mit demselben Namen wie den Service im Kern "
+"von phpBB."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:376
+msgid ""
+"For example, to replace the config class, replace the ``config`` service in "
+"phpBB with your own implementation:"
+msgstr ""
+"Um zum Beispiel die config-Klasse zu ersetzen, ersetzen Sie den Service "
+"``config`` in phpBB durch Ihre eigene Implementierung:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:388
+msgid ""
+"The original config class in ``\\phpbb\\config\\db`` does not implement an "
+"interface. This means you need to extend the original "
+"``\\phpbb\\config\\db``, otherwise the type won't match the type hinting in "
+"the constructors which use the config service. If the original service "
+"implements an interface directly, and all type hints are referencing the "
+"interface, you are not required to extend the original class and should "
+"instead implement the interface."
+msgstr ""
+"Die ursprüngliche config-Klasse in ``\\phpbb\\config\\db`` implementiert "
+"keine Schnittstelle. Das bedeutet, Sie müssen das ursprüngliche "
+"``\\phpbb\\config\\db`` erweitern, sonst passt der Typ nicht zum Type "
+"Hinting in den Konstruktoren, die den config-Service verwenden. Wenn der "
+"ursprüngliche Service direkt eine Schnittstelle implementiert und alle Type "
+"Hints auf die Schnittstelle verweisen, müssen Sie die ursprüngliche Klasse "
+"nicht erweitern und sollten stattdessen die Schnittstelle implementieren."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:396
+msgid ""
+"If you are using EPV in a Github repository, or during submission to the "
+"extensions database at phpBB.com, you will receive a warning that your "
+"service configuration doesn't follow the extensions database policies. As "
+"you are overwriting a core service, you can simply ignore this message. "
+"However, in all cases you should inform the phpBB extensions team why you "
+"received the warning."
+msgstr ""
+"Wenn Sie EPV in einem GitHub-Repository oder während der Einreichung bei der"
+" Extensions Database auf phpBB.com verwenden, erhalten Sie eine Warnung, "
+"dass Ihre Service-Konfiguration nicht den Richtlinien der Extensions "
+"Database entspricht. Da Sie einen Kern-Service überschreiben, können Sie "
+"diese Meldung einfach ignorieren. In jedem Fall sollten Sie jedoch das phpBB"
+" Extensions Team darüber informieren, warum Sie die Warnung erhalten haben."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:403
+msgid "Using service decoration"
+msgstr "Verwenden von Service-Dekoration"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:405
+msgid ""
+"Read about Service Decoration at `Symfony "
+"<https://symfony.com/doc/current/components/dependency_injection/advanced.html#decorating-"
+"services>`_ for complete documentation."
+msgstr ""
+"Lies über Service-Dekoration bei `Symfony "
+"<https://symfony.com/doc/current/components/dependency_injection/advanced.html#decorating-"
+"services>`_ für die vollständige Dokumentation."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:409
+msgid ""
+"From phpBB 3.2, you can use service decoration as the preferred method to "
+"replace existing services, in the core or from other extensions. Decoration "
+"will update an existing service with a new name, leaving it intact so that "
+"it can be referenced in the new service."
+msgstr ""
+"Ab phpBB 3.2 können Sie Service-Dekoration als bevorzugte Methode verwenden,"
+" um bestehende Services im Kern oder von anderen Erweiterungen zu ersetzen. "
+"Die Dekoration aktualisiert einen bestehenden Service mit einem neuen Namen "
+"und lässt ihn intakt, sodass er im neuen Service referenziert werden kann."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:414
+msgid ""
+"For example, to replace ``config`` with ``acme.demo.decorated.config``, "
+"simply add the ``decorates`` option to its service definition:"
+msgstr ""
+"Um zum Beispiel ``config`` durch ``acme.demo.decorated.config`` zu ersetzen,"
+" füge einfach die Option ``decorates`` zu seiner Service-Definition hinzu:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:423
+msgid ""
+"In Symfony, the old config service will have been renamed to "
+"``acme.demo.decorated.config.inner``, so you can inject it into your new "
+"service by adding it to your service's arguments:"
+msgstr ""
+"In Symfony wird der alte config-Service in "
+"``acme.demo.decorated.config.inner`` umbenannt, sodass Sie ihn in Ihren "
+"neuen Service einschleusen können, indem Sie ihn zu den Argumenten Ihres "
+"Services hinzufügen:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:434
+msgid ""
+"Again, keep in mind that your new class type matches the original class."
+msgstr ""
+"Denken Sie auch hier daran, dass der Typ Ihrer neuen Klasse der "
+"ursprünglichen Klasse entspricht."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:437
+msgid "Replacing the phpBB Datetime class"
+msgstr "Ersetzen der phpBB-Datetime-Klasse"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:438
+msgid ""
+"If you want to replace the phpBB Datetime class, for example to use a "
+"different type of calendar, you can set the ``datetime.class`` parameter in "
+"your `services.yml`:"
+msgstr ""
+"Wenn Sie die phpBB-Datetime-Klasse ersetzen möchten, zum Beispiel um einen "
+"anderen Kalendertyp zu verwenden, können Sie den Parameter "
+"``datetime.class`` in Ihrer `services.yml` festlegen:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:447
+msgid "Your class should extend the phpBB datetime class ``\\phpbb\\datetime``."
+msgstr ""
+"Ihre Klasse sollte die phpBB-datetime-Klasse ``\\phpbb\\datetime`` "
+"erweitern."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:450
+msgid "Extension version checking"
+msgstr "Erweiterungsversionsprüfung"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:451
+msgid ""
+"The extension manager can check for the latest version of your extension, "
+"and notify users when their installation of your extension is out of date."
+msgstr ""
+"Der Extension Manager kann nach der neuesten Version Ihrer Erweiterung "
+"suchen und Benutzer benachrichtigen, wenn ihre Installation Ihrer "
+"Erweiterung veraltet ist."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:456
+msgid ""
+"Extensions released through phpBB's Customisation Database will have this "
+"feature provided for free, and can ignore this section."
+msgstr ""
+"Erweiterungen, die über die Customisation Database von phpBB veröffentlicht "
+"werden, erhalten diese Funktion kostenlos und können diesen Abschnitt "
+"ignorieren."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:459
+msgid ""
+"This requires the ``version-check`` meta data in your extension's "
+"``composer.json`` file:"
+msgstr ""
+"Dies erfordert die Metadaten ``version-check`` in der Datei "
+"``composer.json`` Ihrer Erweiterung:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:1
+msgid "Parameter"
+msgstr "Parameter"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:1
+msgid "Description"
+msgstr "Beschreibung"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:1
+msgid "``host``"
+msgstr "``host``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:1
+msgid "Full URL to the host domain server."
+msgstr "Vollständige URL zum Host-Domainserver."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:1
+msgid "``directory``"
+msgstr "``directory``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:1
+msgid ""
+"Path from the domain root to the directory containing the file, starting "
+"with a leading slash."
+msgstr ""
+"Pfad vom Domain-Stamm zum Verzeichnis, das die Datei enthält, beginnend mit "
+"einem führenden Schrägstrich."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:1
+msgid "``filename``"
+msgstr "``filename``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:1
+msgid "A JSON file containing the latest version information."
+msgstr "Eine JSON-Datei, die die neuesten Versionsinformationen enthält."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:1
+msgid "``ssl``"
+msgstr "``ssl``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:1
+msgid "true or false depending on the host domain server running ssl"
+msgstr "true oder false, je nachdem, ob der Host-Domainserver SSL verwendet"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:482
+msgid ""
+"Notice that a JSON file is required, hosted from your own server. In the "
+"example above it would be: "
+"``http://my.site.com/versions/acme_version_file.json``"
+msgstr ""
+"Beachten Sie, dass eine JSON-Datei erforderlich ist, die auf Ihrem eigenen "
+"Server gehostet wird. Im obigen Beispiel wäre das: "
+"``http://my.site.com/versions/acme_version_file.json``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:485
+msgid "The content of the JSON file should look like:"
+msgstr "Der Inhalt der JSON-Datei sollte wie folgt aussehen:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:515
+msgid ""
+"The branches \"stable\" and \"unstable\" are optional, but at least one of "
+"them has to be defined. The Extension Manager has a setting that allows "
+"admins to check for unstable versions. For this reason, stable branches "
+"should only be used for stable release versions suitable for a live forum. "
+"The unstable branch can be used to provide links to versions in development."
+msgstr ""
+"Die Branches \"stable\" und \"unstable\" sind optional, aber mindestens "
+"einer davon muss definiert werden. Der Extension Manager verfügt über eine "
+"Einstellung, die es Administratoren ermöglicht, nach instabilen Versionen zu"
+" suchen. Aus diesem Grund sollten stable-Branches nur für stabile Release-"
+"Versionen verwendet werden, die für ein Live-Forum geeignet sind. Der "
+"unstable-Branch kann verwendet werden, um Links zu Versionen in Entwicklung "
+"bereitzustellen."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:1
+msgid "``current``"
+msgstr "``current``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:1
+msgid "The current version of the extension in a given branch."
+msgstr "Die aktuelle Version der Erweiterung in einem bestimmten Branch."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:1
+msgid "``announcement``"
+msgstr "``announcement``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:1
+msgid ""
+"A URL to a page about this version of the extension (e.g. a topic in phpBB's"
+" Extensions in Development forum)."
+msgstr ""
+"Eine URL zu einer Seite über diese Version der Erweiterung (z. B. ein Thema "
+"im Forum Extensions in Development von phpBB)."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:1
+msgid "``download``"
+msgstr "``download``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:1
+msgid "(Optional) A URL to download this version of the extension."
+msgstr "(Optional) Eine URL zum Herunterladen dieser Version der Erweiterung."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:1
+msgid "``eol``"
+msgstr "``eol``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:1
+msgid "This is currently not being used yet. Use ``null``"
+msgstr "Dies wird derzeit noch nicht verwendet. Verwende ``null``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:1
+msgid "``security``"
+msgstr "``security``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:1
+msgid "This is currently not being used yet. Use ``false``"
+msgstr "Dies wird derzeit noch nicht verwendet. Verwende ``false``"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:532
+msgid "Implementing Filesystem changes to phpBB"
+msgstr "Implementieren von Dateisystemänderungen an phpBB"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:533
+msgid ""
+"In certain scenarios, an extension may need to implement filesystem changes "
+"within phpBB beyond the extension's self-contained structure. While this "
+"approach is generally discouraged, there are specific conditions where it "
+"may be appropriate. Extensions can safely add or remove files and folders "
+"within phpBB’s  ``files``, ``images``, and ``store`` directories, as these "
+"are designed to hold user-generated content and are typically not replaced "
+"during phpBB or extension updates."
+msgstr ""
+"In bestimmten Szenarien muss eine Erweiterung möglicherweise "
+"Dateisystemänderungen innerhalb von phpBB vornehmen, die über die "
+"eigenständige Struktur der Erweiterung hinausgehen. Obwohl dieser Ansatz im "
+"Allgemeinen nicht empfohlen wird, gibt es bestimmte Bedingungen, unter denen"
+" er angemessen sein kann. Erweiterungen können sicher Dateien und Ordner "
+"innerhalb der Verzeichnisse ``files``, ``images`` und ``store`` von phpBB "
+"hinzufügen oder entfernen, da diese dafür ausgelegt sind, von Benutzern "
+"erzeugte Inhalte aufzunehmen, und in der Regel bei Updates von phpBB oder "
+"Erweiterungen nicht ersetzt werden."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:539
+msgid ""
+"There are two primary methods for implementing filesystem changes in phpBB "
+"through an extension:"
+msgstr ""
+"Es gibt zwei primäre Methoden zur Implementierung von Dateisystemänderungen "
+"in phpBB durch eine Erweiterung:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:541
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:547
+msgid "Using Migrations"
+msgstr "Verwendung von Migrationen"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:542
+msgid "Using the Extension Enabling Process (ext.php)"
+msgstr "Verwendung des Erweiterungsaktivierungsprozesses (ext.php)"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:544
+msgid ""
+"Below are examples of how to create a directory named ``acme_demo_dir`` in "
+"the ``store`` directory for storing additional extension-related files."
+msgstr ""
+"Im Folgenden finden Sie Beispiele dafür, wie man ein Verzeichnis namens "
+"``acme_demo_dir`` im Verzeichnis ``store`` erstellt, um zusätzliche "
+"erweiterungsbezogene Dateien zu speichern."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:548
+msgid ""
+"While migrations are generally designed for database changes, they offer "
+"specific advantages when managing filesystem changes:"
+msgstr ""
+"Obwohl Migrationen im Allgemeinen für Datenbankänderungen konzipiert sind, "
+"bieten sie spezifische Vorteile bei der Verwaltung von "
+"Dateisystemänderungen:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:550
+msgid ""
+"Existence Check: Use the ``effectively_installed`` method to check if the "
+"files or directories exist already."
+msgstr ""
+"Existenzprüfung: Verwende die Methode ``effectively_installed``, um zu "
+"prüfen, ob die Dateien oder Verzeichnisse bereits existieren."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:551
+msgid ""
+"Installation Order: Use the ``depends_on`` method to ensure the directory is"
+" created at the correct stage during the extension’s installation process."
+msgstr ""
+"Installationsreihenfolge: Verwende die Methode ``depends_on``, um "
+"sicherzustellen, dass das Verzeichnis in der richtigen Phase während des "
+"Installationsprozesses der Erweiterung erstellt wird."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:552
+msgid ""
+"Run separate (optional) filesystem processes during installation and "
+"uninstallation."
+msgstr ""
+"Führen Sie separate (optionale) Dateisystemprozesse während der Installation"
+" und Deinstallation aus."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:636
+msgid "Using ext.php"
+msgstr "Verwendung von ext.php"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:637
+msgid ""
+"Filesystem changes can also be implemented within the extension’s "
+"``ext.php`` file. This method is preferable if:"
+msgstr ""
+"Dateisystemänderungen können auch innerhalb der Datei ``ext.php`` der "
+"Erweiterung implementiert werden. Diese Methode ist vorzuziehen, wenn:"
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:639
+msgid ""
+"The changes have no specific requirements or dependencies that need "
+"monitoring through a migration step."
+msgstr ""
+"Die Änderungen keine spezifischen Anforderungen oder Abhängigkeiten haben, "
+"die über einen Migrationsschritt überwacht werden müssen."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:640
+msgid ""
+"The changes should occur at a particular stage, such as enabling, disabling,"
+" or deleting the extension."
+msgstr ""
+"Die Änderungen zu einem bestimmten Zeitpunkt erfolgen sollen, wie beim "
+"Aktivieren, Deaktivieren oder Löschen der Erweiterung."
+
+#: ../../devdocs-source-copy/extensions/tutorial_advanced.rst:702
+msgid ""
+"By leveraging one of these methods, you can implement necessary filesystem "
+"changes while maintaining compatibility with phpBB’s structure and best "
+"practices."
+msgstr ""
+"Durch die Nutzung einer dieser Methoden können Sie notwendige "
+"Dateisystemänderungen implementieren und gleichzeitig die Kompatibilität mit"
+" der Struktur und den Best Practices von phpBB wahren."

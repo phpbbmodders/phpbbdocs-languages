@@ -1,0 +1,452 @@
+# German translations for Project name not set package.
+# Copyright (C)
+# This file is distributed under the same license as the Project name not set package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Project name not set\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 06:48-0500\n"
+"PO-Revision-Date: 2026-09-16 06:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: de_x_sie\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:3
+msgid "Using PhpStorm With phpBB"
+msgstr "PhpStorm mit phpBB verwenden"
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:5
+msgid ""
+"PhpStorm is an IDE (Integrated Development Environment) and is the preferred"
+" development platform of the phpBB development team."
+msgstr ""
+"PhpStorm ist eine IDE (Integrated Development Environment) und die "
+"bevorzugte Entwicklungsplattform des phpBB-Entwicklungsteams."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:7
+msgid "This guide explains how to setup PhpStorm for development with phpBB."
+msgstr ""
+"Diese Anleitung erklärt, wie Sie PhpStorm für die Entwicklung mit phpBB "
+"einrichten."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:10
+msgid "Create a New Project"
+msgstr "Ein neues Projekt erstellen"
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:12
+msgid ""
+"First you will need to get a copy of phpBB's development repository from "
+"GitHub."
+msgstr ""
+"Zunächst müssen Sie sich eine Kopie des Entwicklungs-Repositorys von phpBB "
+"von GitHub besorgen."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:14
+msgid ""
+"Visit the `phpBB repository <https://github.com/phpbb/phpbb>`_ and fork it "
+"to your GitHub account."
+msgstr ""
+"Besuchen Sie das `phpBB-Repository <https://github.com/phpbb/phpbb>`_ und "
+"forken Sie es in Ihr GitHub-Konto."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:16
+msgid "Clone your new phpBB fork to your computer."
+msgstr "Klonen Sie Ihren neuen phpBB-Fork auf Ihren Computer."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:18
+msgid "Open PhpStorm"
+msgstr "Öffne PhpStorm"
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:20
+msgid ""
+"Choose \"Create New Project from Existing Files\" and follow the Wizard's "
+"steps."
+msgstr ""
+"Wähle \"Create New Project from Existing Files\" und folge den Schritten des"
+" Assistenten."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:22
+msgid ""
+"Depending on your local environment, typically the best choise is \"Source "
+"files are in a local directory, no web server is yet configured\". You can "
+"always set up the web server later."
+msgstr ""
+"Je nach Ihrer lokalen Umgebung ist meist \"Source files are in a local "
+"directory, no web server is yet configured\" die beste Wahl. Sie können den "
+"Webserver jederzeit später einrichten."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:24
+msgid ""
+"Select the phpBB project folder you cloned from GitHub and click \"Project "
+"Root\". Then click \"Finish\"."
+msgstr ""
+"Wählen Sie den phpBB-Projektordner, den Sie von GitHub geklont haben, und "
+"klicken Sie auf \"Project Root\". Klicken Sie dann auf \"Finish\"."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:27
+msgid "Code Style"
+msgstr "Codestil"
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:29
+msgid ""
+"Setting up PhpStorm to honor phpBB's coding style guide will ensure you are "
+"always writing code that meets phpBB's requirements. These settings are "
+"configured in PhpStorm's Settings/Preferences, under **Editor > Code "
+"Style**."
+msgstr ""
+"Wenn Sie PhpStorm so einrichten, dass es phpBBs Coding-Style-Guide beachtet,"
+" stellen Sie sicher, dass Sie immer Code schreiben, der phpBBs Anforderungen"
+" entspricht. Diese Einstellungen finden Sie in PhpStorms "
+"Settings/Preferences unter **Editor > Code Style**."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:31
+msgid ""
+"Before changing settings, it's a good idea to create a phpBB \"Scheme\" in "
+"the Code Style settings pane. This phpBB scheme can be applied to any phpBB "
+"project you create in PhpStorm."
+msgstr ""
+"Bevor Sie Einstellungen ändern, ist es sinnvoll, im Code-Style-"
+"Einstellungsbereich ein phpBB-\"Scheme\" zu erstellen. Dieses phpBB-Scheme "
+"kann auf jedes phpBB-Projekt angewendet werden, das Sie in PhpStorm "
+"erstellen."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:33
+msgid ""
+"For your convenience we have provided an XML export of the following code "
+"style settings for phpBB (see `phpBB Code Style Scheme`_). You can import "
+"these settings into your project and all the following styling settings will"
+" be configured for you."
+msgstr ""
+"Zu Ihrer Bequemlichkeit haben wir einen XML-Export der folgenden Codestil-"
+"Einstellungen für phpBB bereitgestellt (siehe `phpBB Code Style Scheme`_). "
+"Sie können diese Einstellungen in Ihr Projekt importieren, und alle "
+"folgenden Stileinstellungen werden für Sie konfiguriert."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:36
+msgid "PHP"
+msgstr "PHP"
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:39
+msgid "Tabs & Indents"
+msgstr "Tabs und Einrückungen"
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:41
+#: ../../devdocs-source-copy/development/phpstorm.rst:56
+msgid ""
+"Tabs should be used (not spaces). All tab and indent sizes should be set to "
+"4 spaces. Also be sure \"Keep indents on empty lines\" is NOT checked."
+msgstr ""
+"Es sollten Tabs verwendet werden (keine Leerzeichen). Alle Tab- und "
+"Einrückungsgrößen sollten auf 4 Leerzeichen gesetzt werden. Achte auch "
+"darauf, dass \"Keep indents on empty lines\" NICHT aktiviert ist."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:44
+msgid "Spaces"
+msgstr "Leerzeichen"
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:46
+msgid ""
+"There are many settings for handling spaces, and the defaults should work "
+"for the most part. The general rule is single-spaces should surround all "
+"operators and parentheses (except for function declarations/calls)."
+msgstr ""
+"Es gibt viele Einstellungen zur Behandlung von Leerzeichen, und die "
+"Standardwerte sollten größtenteils passen. Die allgemeine Regel ist, dass "
+"einzelne Leerzeichen alle Operatoren und Klammern umgeben sollten (außer bei"
+" Funktionsdeklarationen/-aufrufen)."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:49
+msgid "Wrapping and Braces"
+msgstr "Umbrüche und geschweifte Klammern"
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:51
+msgid "The general rule here is that braces always go on new lines."
+msgstr ""
+"Die allgemeine Regel hier ist, dass geschweifte Klammern immer in einer "
+"neuen Zeile stehen."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:54
+msgid "CSS, JavaScript, HTML, Twig"
+msgstr "CSS, JavaScript, HTML, Twig"
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:60
+msgid "JSON & YAML"
+msgstr "JSON und YAML"
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:62
+msgid ""
+"Json and Yaml files uses 4 spaces over tabs, so tab character should be "
+"disabled and 4 spaces the indent size."
+msgstr ""
+"Json- und Yaml-Dateien verwenden 4 Leerzeichen statt Tabs, daher sollte das "
+"Tab-Zeichen deaktiviert und die Einrückungsgröße auf 4 Leerzeichen gesetzt "
+"werden."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:65
+msgid "Inspections"
+msgstr "Inspektionen"
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:67
+msgid ""
+"One of the most powerful features of an IDE like PhpStorm is its ability to "
+"inspect your code and provide, in real time, errors and warnings. An IDE is "
+"fully aware of how phpBB's codebase is designed to work, and how all of its "
+"classes and functions interact with each other. Inspections can instantly "
+"show you, for example, if you are using a function incorrectly, calling non-"
+"existent methods, missing arguments, etc."
+msgstr ""
+"Eine der leistungsfähigsten Funktionen einer IDE wie PhpStorm ist ihre "
+"Fähigkeit, Ihren Code zu inspizieren und in Echtzeit Fehler und Warnungen "
+"anzuzeigen. Eine IDE weiß genau, wie phpBBs Codebasis funktionieren soll und"
+" wie all ihre Klassen und Funktionen miteinander interagieren. Inspektionen "
+"können Ihnen sofort anzeigen, wenn Sie z. B. eine Funktion falsch verwenden,"
+" nicht existierende Methoden aufrufen, Argumente fehlen usw."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:69
+msgid ""
+"The default inspection settings should work just fine. However there are a "
+"couple adjustments that might be desired:"
+msgstr ""
+"Die Standard-Inspektionseinstellungen sollten gut funktionieren. Es gibt "
+"jedoch ein paar Anpassungen, die wünschenswert sein könnten:"
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:71
+msgid ""
+"If PhpStorm is not connected to your database server, you may want to turn "
+"off **SQL > SQL Dialect Detection** and **SQL > No data sources configured**"
+" warnings."
+msgstr ""
+"Wenn PhpStorm nicht mit Ihrem Datenbankserver verbunden ist, möchten Sie "
+"vielleicht die Warnungen **SQL > SQL Dialect Detection** und **SQL > No data"
+" sources configured** deaktivieren."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:72
+msgid ""
+"phpBB uses fully qualified namespaces, so you can turn off this inspection "
+"warning **PHP > Code Style > Unnecessary fully qualified name**."
+msgstr ""
+"phpBB verwendet vollständig qualifizierte Namespaces, daher können Sie die "
+"Inspektionswarnung **PHP > Code Style > Unnecessary fully qualified name** "
+"deaktivieren."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:73
+msgid ""
+"You may enable additional JavaScript inspections. Under **JavaScript > Code "
+"quality tools**, you can enable JSCS, JSHint, JSlint and/or ESLint. phpBB "
+"comes with configuration files for JSHint and JSCS. With these inspections "
+"enabled, you can use the configuration files provided by phpBB instead of "
+"PhpStorm's default settings. To do so, point PhpStorm to the custom "
+"configuration files under **Language & Frameworks > JavaScript > Code "
+"Quality Tools**. Point JSHint to `.jshintrc` and point JSCS to `.jscsrc`."
+msgstr ""
+"Sie können zusätzliche JavaScript-Inspektionen aktivieren. Unter "
+"**JavaScript > Code quality tools** können Sie JSCS, JSHint, JSlint und/oder"
+" ESLint aktivieren. phpBB wird mit Konfigurationsdateien für JSHint und JSCS"
+" ausgeliefert. Mit aktivierten Inspektionen können Sie die von phpBB "
+"bereitgestellten Konfigurationsdateien statt der Standardeinstellungen von "
+"PhpStorm verwenden. Verweisen Sie dazu PhpStorm unter **Language & "
+"Frameworks > JavaScript > Code Quality Tools** auf die benutzerdefinierten "
+"Konfigurationsdateien. Verweisen Sie JSHint auf `.jshintrc` und JSCS auf "
+"`.jscsrc`."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:75
+msgid ""
+"JSCS is not bundled with PhpStorm. The JSCS tool is run through NodeJS. To "
+"use JSCS, make sure the NodeJS framework is downloaded and installed on your"
+" computer. Then you can install JSCS via the npm package manager and "
+"configure the JSCS options in PhpStorm to use the JSCS package. For more "
+"information review `PhpStorm's documentation "
+"<https://www.jetbrains.com/help/phpstorm/10.0/using-javascript-code-quality-"
+"tools.html#JSCS>`_."
+msgstr ""
+"JSCS ist nicht in PhpStorm enthalten. Das JSCS-Tool wird über NodeJS "
+"ausgeführt. Um JSCS zu verwenden, stellen Sie sicher, dass das NodeJS-"
+"Framework auf Ihrem Computer heruntergeladen und installiert ist. "
+"Anschließend können Sie JSCS über den npm-Paketmanager installieren und die "
+"JSCS-Optionen in PhpStorm so konfigurieren, dass das JSCS-Paket verwendet "
+"wird. Weitere Informationen finden Sie in der `PhpStorm-Dokumentation "
+"<https://www.jetbrains.com/help/phpstorm/10.0/using-javascript-code-quality-"
+"tools.html#JSCS>`_."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:77
+msgid ""
+"phpBB uses jQuery. The Javascript inspections need to be made aware of "
+"jQuery to avoid any false warnings/errors. To do this, simply go to "
+"**Languages & Frameworks > JavaScript > Libraries** and enable jQuery. If "
+"jQuery is not in the list, you can use the \"Download\" button to download a"
+" copy of jQuery to PhpStorm."
+msgstr ""
+"phpBB verwendet jQuery. Die JavaScript-Inspektionen müssen jQuery kennen, um"
+" falsche Warnungen/Fehler zu vermeiden. Gehen Sie dazu einfach zu "
+"**Languages & Frameworks > JavaScript > Libraries** und aktivieren Sie "
+"jQuery. Falls jQuery nicht in der Liste steht, können Sie über die "
+"Schaltfläche \"Download\" eine Kopie von jQuery für PhpStorm herunterladen."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:80
+msgid "Plugins"
+msgstr "Plugins"
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:82
+msgid ""
+"Adding plugins to PhpStorm can bring even more features, tools, inspectors "
+"and code quality analysis to your IDE."
+msgstr ""
+"Das Hinzufügen von Plugins zu PhpStorm kann Ihrer IDE noch mehr Funktionen, "
+"Werkzeuge, Inspektoren und Codequalitätsanalysen bringen."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:85
+msgid "EditorConfig"
+msgstr "EditorConfig"
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:87
+msgid ""
+"phpBB uses an EditorConfig profile. Install the EditorConfig plug-in to take"
+" advantage of it. This nifty plug-in will automatically make sure your PHP, "
+"CSS, JS, HTML, YML and MD files will always correctly use tabs or spaces as "
+"required by the file type, trim trailing whitespaces, and ensure all files "
+"have a new empty line at the end."
+msgstr ""
+"phpBB verwendet ein EditorConfig-Profil. Installieren Sie das EditorConfig-"
+"Plugin, um davon zu profitieren. Dieses praktische Plugin sorgt automatisch "
+"dafür, dass Ihre PHP-, CSS-, JS-, HTML-, YML- und MD-Dateien immer die vom "
+"Dateityp geforderten Tabs oder Leerzeichen korrekt verwenden, überflüssige "
+"Leerzeichen am Zeilenende entfernt und sicherstellt, dass alle Dateien am "
+"Ende eine neue leere Zeile haben."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:90
+msgid "Languages & Frameworks"
+msgstr "Sprachen und Frameworks"
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:92
+msgid ""
+"PHP inspections are dependent upon the PHP language level (i.e. PHP 5.3, "
+"5.4, 7.0, etc.). You should set the **PHP language level** to the minimum "
+"version phpBB supports. This is to ensure you don't accidentally write code "
+"that may be valid in PHP 5.6, but incompatible with PHP 5.4 (which phpBB "
+"supports). The **PHP interpreter** should be set to whatever PHP binary is "
+"available in the drop down menu. If no interpreter is found, you need to "
+"direct it to your PHP executable on your system (e.g.: /usr/bin/php)."
+msgstr ""
+"PHP-Inspektionen hängen vom PHP-Sprachlevel ab (z. B. PHP 5.3, 5.4, 7.0 "
+"usw.). Sie sollten das **PHP language level** auf die von phpBB unterstützte"
+" Mindestversion setzen. So stellen Sie sicher, dass Sie nicht versehentlich "
+"Code schreiben, der zwar in PHP 5.6 gültig, aber mit PHP 5.4 (das phpBB "
+"unterstützt) inkompatibel ist. Der **PHP interpreter** sollte auf die im "
+"Dropdown-Menü verfügbare PHP-Binärdatei gesetzt werden. Wird kein "
+"Interpreter gefunden, müssen Sie ihn auf die PHP-Ausführungsdatei Ihres "
+"Systems verweisen (z. B.: /usr/bin/php)."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:95
+msgid "PHPUnit Testing"
+msgstr "PHPUnit-Tests"
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:97
+msgid ""
+"While it's possible to run PHPUnit tests in PhpStorm directly from the "
+"Terminal window, PHPUnit testing is also built into PhpStorm as a Run/Debug "
+"action. The benefit of this, is testing can more easily be paused or "
+"aborted. Failed tests can be re-run without having to run the entire test "
+"suite. Best of all the failed test reporting has hyperlinks to the failing "
+"code points, making it much easier to jump to the problem tests and phpBB "
+"code and debug them."
+msgstr ""
+"Es ist zwar möglich, PHPUnit-Tests in PhpStorm direkt über das "
+"Terminalfenster auszuführen, aber PHPUnit-Tests sind auch als Run/Debug-"
+"Aktion in PhpStorm integriert. Der Vorteil dabei ist, dass das Testen "
+"leichter pausiert oder abgebrochen werden kann. Fehlgeschlagene Tests können"
+" erneut ausgeführt werden, ohne die gesamte Testsuite laufen zu müssen. Am "
+"besten ist, dass der Bericht zu fehlgeschlagenen Tests Hyperlinks zu den "
+"fehlerhaften Codestellen enthält, was es viel einfacher macht, zu den "
+"problematischen Tests und dem phpBB-Code zu springen und sie zu debuggen."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:99
+msgid ""
+"This assumes you already have PHPUnit testing configured and working from "
+"the command line interface. Read the :doc:`../testing/index` documentation "
+"for more information."
+msgstr ""
+"Dies setzt voraus, dass Sie PHPUnit-Tests bereits konfiguriert haben und sie"
+" über die Kommandozeile funktionieren. Lesen Sie die Dokumentation "
+":doc:`../testing/index` für weitere Informationen."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:101
+msgid "To set up PHPunit within PhpStorm, go to:"
+msgstr "Um PHPUnit innerhalb von PhpStorm einzurichten, gehe zu:"
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:103
+msgid "**Run > Edit Configurations**"
+msgstr "**Run > Edit Configurations**"
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:105
+msgid ""
+"Hit the **+** to create a new PHPUnit configuration and give it a name, like"
+" 'phpBB tests'."
+msgstr ""
+"Klicke auf **+**, um eine neue PHPUnit-Konfiguration zu erstellen, und gib "
+"ihr einen Namen wie 'phpBB tests'."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:107
+msgid "Set **Test Runner** to **Defined in configuration file**."
+msgstr "Setze **Test Runner** auf **Defined in configuration file**."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:109
+msgid ""
+"Check **Use alternative configuration file** and point it to the "
+"**phpunit.xml.dist** file in the phpBB project root."
+msgstr ""
+"Aktiviere **Use alternative configuration file** und verweise auf die Datei "
+"**phpunit.xml.dist** im Wurzelverzeichnis des phpBB-Projekts."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:111
+msgid ""
+"Set **Command Line > Custom working directory** to the phpBB project root."
+msgstr ""
+"Setze **Command Line > Custom working directory** auf das Wurzelverzeichnis "
+"des phpBB-Projekts."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:113
+msgid ""
+"Now you can choose **Run > phpBB tests** and the unit tests should run "
+"within PhpStorm."
+msgstr ""
+"Jetzt können Sie **Run > phpBB tests** wählen, und die Unit-Tests sollten "
+"innerhalb von PhpStorm ausgeführt werden."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:115
+msgid ""
+"If you are writing extensions for phpBB, you can set up PHPUnit test "
+"configurations for each extension as well. Just change each configuration to"
+" use the extension's configuration file instead of phpBB's."
+msgstr ""
+"Wenn Sie Erweiterungen für phpBB schreiben, können Sie auch für jede "
+"Erweiterung PHPUnit-Testkonfigurationen einrichten. Ändern Sie dazu einfach "
+"jede Konfiguration so, dass sie die Konfigurationsdatei der Erweiterung "
+"anstelle der von phpBB verwendet."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:118
+msgid "PhpStorm Setting Exports for phpBB"
+msgstr "PhpStorm-Einstellungsexporte für phpBB"
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:120
+msgid ""
+"What follows is the code style we recommend for your phpBB project in "
+"PhpStorm. Copy and save this code block as ``phpbb.xml``. Then in PhpStorm, "
+"go to **Settings > Editor > Code Style**. Click the setting cog icon next to"
+" **Scheme** and choose **Import Scheme...** and import the ``phpbb.xml`` "
+"file."
+msgstr ""
+"Im Folgenden finden Sie den Codestil, den wir für Ihr phpBB-Projekt in "
+"PhpStorm empfehlen. Kopieren und speichern Sie diesen Codeblock als "
+"``phpbb.xml``. Gehen Sie dann in PhpStorm zu **Settings > Editor > Code "
+"Style**. Klicken Sie auf das Zahnrad-Symbol neben **Scheme**, wählen Sie "
+"**Import Scheme...** und importieren Sie die Datei ``phpbb.xml``."
+
+#: ../../devdocs-source-copy/development/phpstorm.rst:123
+msgid "phpBB Code Style Scheme"
+msgstr "phpBB-Codestil-Scheme"
