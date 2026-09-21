@@ -12,7 +12,7 @@ does not have to rediscover it. Nothing here is a translator task.
 This project belongs to the [phpbbmodders](https://github.com/phpbbmodders)
 organization. Any contact with the Czech pack's maintainers or with
 phpBB.com about the points below comes from William Jacoby
-([bonelifer](https://github.com/bonelifer)), owner and admin of phpbbmodders.
+([bonelifer](https://github.com/bonelifer)).
 
 ## Reference source
 
