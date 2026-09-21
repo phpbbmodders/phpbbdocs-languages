@@ -12,6 +12,7 @@ reference versus a translator's actual task.
 - [French (fr)](fr/README.md)
 - [Danish (da)](da/README.md)
 - [Italian (it)](it/README.md)
+- [Czech (cs)](cs/README.md)
 
 A language with no writeup yet (currently English) has no entry here.
 Add a new language's directory to this list as soon as it gets its
